@@ -8,6 +8,9 @@
 
 .sff-form__content-wrap {
   padding: 0 64px;
+  @media (max-width: 991px) {
+    padding: 0;
+  }
 }
 .comp {
   margin-bottom: $default-component-margin;

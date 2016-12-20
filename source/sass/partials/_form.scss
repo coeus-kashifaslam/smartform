@@ -1,0 +1,77 @@
+.form__elem {
+  @extend .comp;
+  padding: 30px;
+  border: 1px solid $default-border-color;
+  > p {
+    margin: 0;
+  }
+  .form-control {
+    box-shadow: none;
+    border-radius: 0;
+    border: 1px solid $default-border-color;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+.sff-form__body {
+  border: 1px solid $default-border-color;
+  padding: 30px 15px;
+}
+.sff-form__legend {
+  border: 0 none;
+}
+.form__legend {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+.form__elem__no-border {
+  border: 0 none;
+  padding: 0;
+}
+.form__elem__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.form__elem__help-text {
+  margin-bottom: 25px;
+}
+.form__elem__error-text {
+  font-size: 12px;
+  font-weight: 700;
+  color: red;
+  margin-top: 12px;
+}
+
+
+//checkbox
+.form-checkbox {
+  + label {
+    span {
+      &:before {
+        content: '';
+        position: absolute;
+        border-radius: 0;
+        left: 0;
+        top: 0;
+        border: 1px solid #d9dcdc;
+        width: 33px;
+        height: 33px;
+        background: none;
+      }
+    }
+  }
+  &:checked {
+    + label {
+      span {
+        &:after {
+          content: $icon-tick;
+          font-size: 22px;
+          position: absolute;
+          left: 5px;
+          top: 5px;
+        }
+      }
+    }
+  }
+}

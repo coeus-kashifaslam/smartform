@@ -1,5 +1,5 @@
 @import "../../bower_components/bootstrap/dist/sass/bootstrap";
-@import "../../bower_components/font-awesome/scss/font-awesome";
+@import "../../bower_components/font-awesome/sass/font-awesome";
 
 @import "core/fonts";
 @import "core/vars";
@@ -9,4 +9,8 @@
 @import "partials/languages";
 @import "partials/banner";
 @import "partials/breadcrumb";
+@import "partials/form";
+@import "partials/free-text";
+@import "partials/picture";
+@import "partials/prosAndcons";
 
