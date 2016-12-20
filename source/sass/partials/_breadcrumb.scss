@@ -1,0 +1,574 @@
+.wizard__breadcrumb-list * {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.wizardSliderBox {
+  height: auto;
+  padding: 15px 15px 35px 15px;
+  background-color: $breadcrumb-fill;
+  border: 1px solid $default-border-color;
+  margin: 0 auto;
+  @media (max-width: 767px) {
+    padding-bottom: 15px;
+  }
+}
+.wizard__breadcrumb-list {
+  margin: 0 auto !important;
+  padding: 0;
+  display: table;
+  width: 100%;
+  max-width: 590px;
+  overflow: visible;
+
+  > li {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0;
+    position: relative;
+    text-align: center;
+
+    //circles
+    .bubble {
+      margin: 0;
+      height: 40px;
+      width: 40px;
+      text-align: center;
+      border: 1px solid $breadcrumb-border;
+      background: white;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    //circles Text to align middle
+    .bubble__number {
+      line-height: 2.5;
+      font-family: $breadcrumb-font;
+      font-size: $breadcrumb-font-size;
+      color: $breadcrumb-normal-text;
+      .fa {
+        display: none;
+        font-size: 18px;
+        color: $breadcrumb-check-color;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-top: -9px;
+        margin-left: -9px;
+      }
+    }
+
+
+    //Step Title
+    .step__title {
+      left: 0;
+      margin: 5px 0 0;
+      padding: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      position: absolute;
+      right: 0;
+      font-family: $breadcrumb-font;
+      font-size: $breadcrumb-font-size;
+      color: $breadcrumb-normal-text;
+    }
+
+    //Outer Borders or lines
+    &:after {
+      content: '';
+      background: white;
+      position: absolute;
+      height: 14px;
+      top: 13px;
+      border-color: $breadcrumb-after-border;
+      border-style: solid;
+      border-width: 1px;
+      z-index: 2;
+    }
+
+    //Inner Fill
+    &:before {
+      content: '';
+      position: absolute;
+      height: 6px;
+      top: 17px;
+      z-index: 3;
+      background: transparent;
+    }
+
+    //Excluding border for last Circle
+    &:last-child {
+      &:after,
+      &:before {
+        border: 0 none;
+        background: transparent;
+      }
+    }
+
+
+    &:first-child {
+      text-align: left;
+      .step__title {
+        text-align: center;
+        transform: translateX(-43%);
+        -webkit-transform: translateX(-43%);
+      }
+    }
+    &:last-child {
+      text-align: right;
+      .step__title {
+        text-align: center;
+        transform: translateX(43%);
+        -webkit-transform: translateX(43%);
+      }
+    }
+
+    &:first-child,
+    &:last-child {
+      .bubble {
+        text-align: center;
+      }
+      .step__title {
+        top: 40px;
+      }
+    }
+
+
+
+
+    //Active Step Styles
+    &.active {
+      .step__title {
+        font-weight: 700;
+        color: $breadcrumb-active-text;
+      }
+    }
+    &.active,
+    &.completed{
+      .bubble {
+        color: transparent;
+      }
+      .bubble__number {
+        border: 7px solid $breadcrumb-color;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        color: transparent;
+        background: transparent;
+        display: inline-block;
+        height: 14px;
+        width: 14px;
+        line-height: 1;
+        margin-top: 6px;
+        position: relative;
+      }
+    }
+
+    //Completed Step Styles
+    &.completed {
+      .bubble__number {
+        background: $breadcrumb-color;
+        width: 28px;
+        height: 28px;
+        border: 0 none !important;
+        .fa {
+          display: block;
+        }
+      }
+      &:before {
+        background: $breadcrumb-color;
+      }
+    }
+  }
+}
+
+
+
+
+
+//Two Steps Wizard Specific Styles
+.wizard__breadcrumb-list {
+  &.wizard__two-step {
+    > li {
+      &:after {
+        left: 39px;
+        right: -256px;
+      }
+      &:before {
+        left: 32px;
+        right: -262px;
+      }
+    }
+  }
+}
+
+
+//Three Steps Wizard Specific Styles
+.wizard__breadcrumb-list {
+  &.wizard__three-step {
+    > li {
+      &:after {
+        left: 39px;
+        right: auto;
+        width: 237px;
+      }
+      &:before {
+        left: 33px;
+        right: auto;
+        width: 250px;
+      }
+      &:nth-child(1) {
+        .step__title {
+          transform: translateX(-40%);
+          -webkit-transform: translateX(-40%);
+        }
+      }
+      &:nth-child(2) {
+        &:after {
+          left: 117px;
+          right: auto;
+          width: 237px;
+        }
+        &:before {
+          left: 110px;
+          right: auto;
+          width: 250px;
+        }
+      }
+      &:nth-child(3) {
+        .step__title {
+          transform: translateX(40%);
+          -webkit-transform: translateX(40%);
+        }
+      }
+    }
+  }
+}
+
+//Four Steps Wizard Specific Styles
+.wizard__breadcrumb-list {
+  &.wizard__four-step {
+    > li {
+      width: 25%;
+      &:after {
+        left: 39px;
+        right: auto;
+        width: 146px;
+      }
+      &:before {
+        left: 33px;
+        right: auto;
+        width: 160px;
+      }
+      &:nth-child(1) {
+        .step__title {
+          transform: translateX(-35%);
+          -webkit-transform: translateX(-35%);
+        }
+      }
+      &:nth-child(2){
+        .bubble {
+          margin-left: -37px;
+        }
+        .step__title {
+          transform: translateX(-12%);
+          -webkit-transform: translateX(-12%);
+        }
+        &:after {
+          left: 73px;
+          right: auto;
+          width: 148px;
+        }
+        &:before {
+          left: 67px;
+          right: auto;
+          width: 161px;
+        }
+      }
+      &:nth-child(3){
+        .bubble {
+          margin-right: -37px;
+        }
+        .step__title {
+          transform: translateX(12%);
+          -webkit-transform: translateX(12%);
+        }
+        &:after {
+          left: 110px;
+          right: auto;
+          width: 145px;
+        }
+        &:before {
+          left: 103px;
+          right: auto;
+          width: 161px;
+        }
+      }
+      &:nth-child(4) {
+        .step__title {
+          transform: translateX(35%);
+          -webkit-transform: translateX(35%);
+        }
+      }
+    }
+  }
+}
+
+
+//Five Steps Wizard Specific Styles
+.wizard__breadcrumb-list {
+  &.wizard__five-step {
+    > li {
+      width: 20%;
+      &:after {
+        left: 39px;
+        right: auto;
+        width: 100.5px;
+      }
+      &:before {
+        left: 33px;
+        right: auto;
+        width: 115px;
+      }
+      &:nth-child(1) {
+        .step__title {
+          transform: translateX(-33%);
+          -webkit-transform: translateX(-33%);
+        }
+      }
+      &:nth-child(2){
+        .bubble {
+          margin-left: -37px;
+        }
+        .step__title {
+          transform: translateX(-15%);
+          -webkit-transform: translateX(-15%);
+        }
+        &:after {
+          left: 58.5px;
+          right: auto;
+          width: 99.5px;
+        }
+        &:before {
+          left: 52px;
+          right: auto;
+          width: 113px;
+        }
+      }
+      &:nth-child(3){
+        &:after {
+          left: 77px;
+          right: auto;
+          width: 100px;
+        }
+        &:before {
+          left: 71px;
+          right: auto;
+          width: 113px;
+        }
+      }
+      &:nth-child(4){
+        .bubble {
+          margin-right: -37px;
+        }
+        .step__title {
+          transform: translateX(15%);
+          -webkit-transform: translateX(15%);
+        }
+        &:after {
+          left: 96px;
+          right: auto;
+          width: 101px;
+        }
+        &:before {
+          left: 89px;
+          right: auto;
+          width: 115px;
+        }
+      }
+      &:nth-child(5) {
+        .step__title {
+          transform: translateX(33%);
+          -webkit-transform: translateX(33%);
+        }
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 767px) {
+  .wizard__breadcrumb-list {
+    width: 290px;
+    margin: 0 auto !important;
+    > li {
+      .step__title {
+        display: none;
+      }
+    }
+  }
+
+  //Media Two Steps Wizard Specific Styles
+  .wizard__breadcrumb-list {
+    &.wizard__two-step {
+      > li {
+        &:before {
+          left: 33px;
+          right: auto;
+          width: 224px;
+        }
+        &:after {
+          left: 39.6px;
+          right: auto;
+          width: 211.2px;
+        }
+      }
+    }
+  }
+
+
+  //Media Three Steps Wizard Specific Styles
+  .wizard__breadcrumb-list {
+    &.wizard__three-step {
+      > li {
+        &:before {
+          left: 33px;
+          right: auto;
+          width: 102px;
+        }
+        &:after {
+          left: 39px;
+          right: auto;
+          width: 87.4px;
+        }
+        &:nth-child(2) {
+          &:after {
+            left: 67px;
+            right: auto;
+            width: 87px;
+          }
+          &:before {
+            left: 60px;
+            right: auto;
+            width: 100px;
+          }
+        }
+      }
+    }
+  }
+
+
+
+  //Media Four Steps Wizard Specific Styles
+  .wizard__breadcrumb-list {
+    &.wizard__four-step {
+      > li {
+        &:before {
+          left: 33px;
+          right: auto;
+          width: 60px;
+        }
+        &:after {
+          left: 39px;
+          right: auto;
+          width: 46.5px;
+        }
+        &:nth-child(2) {
+          .bubble {
+            margin-left: -10px;
+          }
+          &:after {
+            left: 49.5px;
+            right: auto;
+            width: 45.7px;
+          }
+          &:before {
+            left: 43px;
+            right: auto;
+            width: 60px;
+          }
+        }
+        &:nth-child(3) {
+          .bubble {
+            margin-right: -10px;
+          }
+          &:after {
+            left: 59.5px;
+            right: auto;
+            width: 46.4px;
+          }
+          &:before {
+            left: 53px;
+            right: auto;
+            width: 60px;
+          }
+        }
+      }
+    }
+  }
+
+
+  //Media Four Steps Wizard Specific Styles
+  .wizard__breadcrumb-list {
+    &.wizard__five-step {
+      > li {
+        &:after {
+          left: 39px;
+          right: auto;
+          width: 24.6px;
+        }
+        &:before {
+          left: 33px;
+          right: auto;
+          width: 40px;
+        }
+        &:nth-child(2) {
+          .bubble {
+            margin-left: -10px;
+          }
+          &:after {
+            left: 42px;
+            right: auto;
+            width: 26.7px;
+          }
+          &:before {
+            left: 36px;
+            right: auto;
+            width: 40px;
+          }
+        }
+        &:nth-child(3) {
+          &:after {
+            left: 47px;
+            right: auto;
+            width: 26.7px;
+          }
+          &:before {
+            left: 40px;
+            right: auto;
+            width: 40px;
+          }
+        }
+        &:nth-child(4) {
+          .bubble {
+            margin-right: -10px;
+          }
+          &:after {
+            left: 52px;
+            right: auto;
+            width: 24.7px;
+          }
+          &:before {
+            left: 45px;
+            right: auto;
+            width: 40px;
+          }
+        }
+      }
+    }
+  }
+}

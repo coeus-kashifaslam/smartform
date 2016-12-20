@@ -1,0 +1,24 @@
+body {
+  font-family: $font-regular;
+  font-size: $default-font-size;
+  color: $default-text-color;
+  background: $default-body-bg;
+}
+
+.form__legend {
+  color: $default-header-color;
+  font {
+    size: $default-header-size;
+    family: $default-header-font-family;
+    weight: $default-header-font-weight;
+  }
+}
+
+.comp__title {
+  color: $default-subHeader-color;
+  font {
+    size: $default-subHeader-size;
+    family: $default-subHeader-font-family;
+    weight: $default-subHeader-font-weight;
+  }
+}

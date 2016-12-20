@@ -1,9 +1,23 @@
-<!doctype html>
-<html lang="en">
-    {% include template/_shared/head.html %}
-<body>
+{% extends 'template/layouts/default.html' %}
+
+{% block content %}
+
+
+{% include 'template/includes/languages.html' %}
 
 
 
-</body>
-</html>
+{% include 'template/includes/banner.html' %}
+{#
+    This component is commented. It shows the state when backgroundColor color is set to true.
+    {% set backgroundColor= 'true'%}
+    {% include 'template/includes/banner.html' %}
+#}
+
+
+{% include 'template/includes/breadcrumb.html' %}
+
+
+
+
+{% endblock %}

@@ -1,0 +1,56 @@
+//Icons
+$icon-exclamation: "\e900";
+$icon-star: "\e901";
+$icon-tick: "\e902";
+
+
+$font-regular: 'Roboto', sans-serif;
+$font-light: 'RobotoLight', sans-serif;
+$font-bold: 'RobotoBold', sans-serif;
+
+
+//Defaults
+$white: #fff;
+$black: #000;
+$default-body-bg: #efefef;
+$default-theme: #2DA137;
+$default-border-color: #dfdae0;
+$default-font-size: 16px;
+$default-text-color: #707070;
+$default-component-margin: 32px;
+
+//Header Title
+$default-header-color: #424242;
+$default-header-size: 24px;
+$default-header-font-family: $font-bold;
+$default-header-font-weight: 700;
+
+
+//Subheader
+$default-subHeader-color: #4c4c4c;
+$default-subHeader-size: 20px;
+$default-subHeader-font-family: $font-regular;
+$default-subHeader-font-weight: 700;
+
+
+//Form Control
+$default-formControl-font-family: $font-light;
+$default-formControl-font-wight: 400;
+
+
+
+//Star
+$default-star-color: #bdbdbd;
+$sudo-star-color: #fee923;
+
+
+//Breadcrumb
+$breadcrumb-fill: #fafafa;
+$breadcrumb-border: #ccc;
+$breadcrumb-after-border: #ccc #fff;
+$breadcrumb-color: #00aaff;
+$breadcrumb-check-color: $white;
+$breadcrumb-font: $font-regular;
+$breadcrumb-font-size: 16px;
+$breadcrumb-normal-text: #888888;
+$breadcrumb-active-text: #000099;

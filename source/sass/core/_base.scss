@@ -1,0 +1,14 @@
+//Form Base
+.sff-form__body {
+  max-width: 960px;
+  background: $white;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.sff-form__content-wrap {
+  padding: 0 64px;
+}
+.comp {
+  margin-bottom: $default-component-margin;
+}

@@ -14,10 +14,10 @@
 	newer = require('gulp-newer'),
 	imacss = require('gulp-imacss'),	
 
-	preprocess = require('gulp-preprocess'),
+	njk = require('gulp-nunjucks'),
 
-	pleeease = require('gulp-pleeease'),
 	sass = require('gulp-sass'),
+	pleeease = require('gulp-pleeease'),
 	compass = require ('gulp-compass'),
 
 	jshint = require('gulp-jshint'),
@@ -74,13 +74,14 @@
 		image: 'source/images'
 	},
 
+
 /*
  * Source and Destination Assets
  * ...
  */
 	html = {
 		in: source + '*.html',
-		out: destination,
+		out: destination
 	},
 
 	styles = {
@@ -90,10 +91,9 @@
 
 	scripts = {
 		in: [
-			'bower_components/jquery/jquery.js',
-			'bower_components/bootstrap/dist/js/bootstrap.js',
-			source + 'js/**/*.js',
-			source + 'js/*.js'
+			// Add All vendor paths here
+			source + 'js/*.js',
+			source + 'js/**/*.js'
 		],
 		out: destination + 'js/',
 		filename: 'main.js'
@@ -149,7 +149,6 @@ gulp.task('browsersync', function(){
 });
 
 
-
 /*
  * Task to Build HTML from templates and minify HTMl for Production
  * ...
@@ -157,7 +156,7 @@ gulp.task('browsersync', function(){
 gulp.task('html', function(){
 	return gulp
 	.src(html.in)
-	.pipe(preprocess())
+	.pipe(njk.compile())
 	.pipe(gulp.dest(html.out));
 });
 
@@ -222,12 +221,12 @@ gulp.task('scripts', function(){
 	return gulp
 	.src(scripts.in)
 	.pipe(newer(scripts.out))
-	//.pipe(jshint())
-	//.pipe(jshint.reporter('default'))
+	.pipe(jshint())
+	.pipe(jshint.reporter('default'))
 	// .pipe(jshint.reporter('fail'))
 	.pipe(concat(scripts.filename))
-	// .pipe(stripdebug())
-	// .pipe(uglify())
+	.pipe(stripdebug())
+	.pipe(uglify())
 	.pipe(gulp.dest(scripts.out));
 });
 

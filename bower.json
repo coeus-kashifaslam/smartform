@@ -1,12 +1,12 @@
 {
-  "name": "smartform",
+  "name": "starter",
   "description": "",
   "main": "build/index.html",
   "authors": [
     "coeus-kashifaslam <kashif.aslam@coeus-solutions.de>"
   ],
   "license": "ISC",
-  "homepage": "https://github.com/coeus-kashifaslam/smartform",
+  "homepage": "https://github.com/coeus-kashifaslam/starter",
   "private": true,
   "ignore": [
     "**/.*",
@@ -15,8 +15,7 @@
     "test",
     "tests"
   ],
-  "dependencies": {
-    "jquery": "1.9.1",
+  "devDependencies": {
     "bootstrap": "^3.3.7",
     "font-awesome": "fontawesome#^4.7.0"
   }

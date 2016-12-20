@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype"), url("../fonts/Roboto-Regular.svg#Roboto-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoLight';
+  src: url("../fonts/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Light.woff") format("woff"), url("../fonts/Roboto-Light.ttf") format("truetype"), url("../fonts/Roboto-Light.svg#Roboto-Light") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoBold';
+  src: url("../fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.ttf") format("truetype"), url("../fonts/Roboto-Bold.svg#Roboto-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?kj3mbw");
+  src: url("../fonts/icomoon.eot?kj3mbw#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?kj3mbw") format("truetype"), url("../fonts/icomoon.woff?kj3mbw") format("woff"), url("../fonts/icomoon.svg?kj3mbw#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icomoon-icon-"], [class*=" icomoon-icon-"], %iconfont-icomoon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icomoon-icon-exclamation:before {
+  content: "\e900";
+}
+
+.icomoon-icon-star:before {
+  content: "\e901";
+}
+
+.icomoon-icon-tick:before {
+  content: "\e902";
+}
+
+
+%default-font {
+  font-family: 'Roboto', sans-serif;
+}
+%default-font-light {
+  font-family: 'RobotoLight', sans-serif;
+}
+%default-font-bold {
+  font-family: 'RobotoBold', sans-serif;
+}
