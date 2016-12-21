@@ -10526,7 +10526,62 @@ body {
 }
 
 /* line 8, H:/Projects/smartform/build/css/sff-form.css */
-.sff-form__body {
+.form__elem input[type=text], .form__elem input[type=password], .form__elem input[type=email], .form__elem textarea {
+    font-family: RobotoLight,sans-serif;
+    font-size: 16px;
+    color: #888;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.form__elem input[type=text]::-webkit-input-placeholder, .form__elem input[type=password]::-webkit-input-placeholder, .form__elem input[type=email]::-webkit-input-placeholder, .form__elem textarea::-webkit-input-placeholder {
+    font-family: RobotoLight,sans-serif;
+    font-size: 16px;
+    color: #888;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.form__elem input[type=text]:-moz-placeholder, .form__elem input[type=password]:-moz-placeholder, .form__elem input[type=email]:-moz-placeholder, .form__elem textarea:-moz-placeholder {
+    font-family: RobotoLight,sans-serif;
+    font-size: 16px;
+    color: #888;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.form__elem input[type=text]::-moz-placeholder, .form__elem input[type=password]::-moz-placeholder, .form__elem input[type=email]::-moz-placeholder, .form__elem textarea::-moz-placeholder {
+    font-family: RobotoLight,sans-serif;
+    font-size: 16px;
+    color: #888;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.form__elem input[type=text]:-ms-input-placeholder, .form__elem input[type=password]:-ms-input-placeholder, .form__elem input[type=email]:-ms-input-placeholder, .form__elem textarea:-ms-input-placeholder {
+    font-family: RobotoLight,sans-serif;
+    font-size: 16px;
+    color: #888;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.form__elem input[type=text]:focus::-webkit-input-placeholder, .form__elem input[type=password]:focus::-webkit-input-placeholder, .form__elem input[type=email]:focus::-webkit-input-placeholder, .form__elem textarea:focus::-webkit-input-placeholder {
+    color: #fff;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.form__elem input[type=text]:focus:-moz-placeholder, .form__elem input[type=password]:focus:-moz-placeholder, .form__elem input[type=email]:focus:-moz-placeholder, .form__elem textarea:focus:-moz-placeholder {
+    color: #fff;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.form__elem input[type=text]:focus::-moz-placeholder, .form__elem input[type=password]:focus::-moz-placeholder, .form__elem input[type=email]:focus::-moz-placeholder, .form__elem textarea:focus::-moz-placeholder {
+    color: #fff;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.form__elem input[type=text]:focus:-ms-input-placeholder, .form__elem input[type=password]:focus:-ms-input-placeholder, .form__elem input[type=email]:focus:-ms-input-placeholder, .form__elem textarea:focus:-ms-input-placeholder {
+    color: #fff;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.sff-form__content-body {
     border: 1px solid #dfdae0;
     padding: 30px 15px;
 }
@@ -10565,6 +10620,7 @@ body {
     font-weight: 700;
     color: red;
     margin-top: 12px;
+    margin-bottom: 0;
 }
 
 /* line 8, H:/Projects/smartform/build/css/sff-form.css */
@@ -11168,6 +11224,32 @@ body {
 .cons__list li:before {
     content: "";
     color: #bc1818;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.form-dropdown {
+    height: 40px;
+    display: inline-block;
+    font-size: 16px;
+    max-width: 300px;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.form-textarea {
+    resize: none;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.elem__long-text__one-col .form-textarea {
+    border: 0 none;
+    padding: 7px 0 0;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.elem__long-text__two-col .form-textarea {
+    height: 150px;
+    width: 100%;
+    padding: 15px;
 }
 
 @media print {

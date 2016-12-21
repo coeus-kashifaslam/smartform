@@ -1,3 +1,9 @@
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+}
 .form__elem {
   @extend .comp;
   padding: 30px;
@@ -13,8 +19,26 @@
       box-shadow: none;
     }
   }
+  input[type='text'],
+  input[type='password'],
+  input[type='email'],
+  textarea {
+    font-family: $font-light;
+    font-size: $default-font-size;
+    color: $default-input-font-color;
+    @include placeholder {
+      font-family: $font-light;
+      font-size: $default-font-size;
+      color: $default-input-font-color;
+    }
+    &:focus {
+      @include placeholder {
+        color: $white;
+      }
+    }
+  }
 }
-.sff-form__body {
+.sff-form__content-body {
   border: 1px solid $default-border-color;
   padding: 30px 15px;
 }
@@ -41,6 +65,7 @@
   font-weight: 700;
   color: red;
   margin-top: 12px;
+  margin-bottom: 0;
 }
 
 
