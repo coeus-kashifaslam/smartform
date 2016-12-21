@@ -1,0 +1,144 @@
+.form__elem {
+  @extend .comp;
+  padding: 30px;
+  border: 1px solid $default-border-color;
+  > p {
+    margin: 0;
+  }
+  .form-control {
+    box-shadow: none;
+    border-radius: 0;
+    border: 1px solid $default-border-color;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+.sff-form__body {
+  border: 1px solid $default-border-color;
+  padding: 30px 15px;
+}
+.sff-form__legend {
+  border: 0 none;
+}
+.form__legend {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+.form__elem__no-border {
+  border: 0 none;
+  padding: 0;
+}
+.form__elem__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.form__elem__help-text {
+  margin-bottom: 25px;
+}
+.form__elem__error-text {
+  font-size: 12px;
+  font-weight: 700;
+  color: red;
+  margin-top: 12px;
+}
+
+
+//checkbox
+.elem-type__checkbox,
+.elem-type__radio {
+  min-height: 33px;
+  .form-checkbox,
+  .form-radio {
+    + label {
+      font-weight: normal;
+      margin: 0;
+      display: block;
+      padding-left: 45px;
+      padding-top: 5px;
+      word-wrap: break-word;
+    }
+  }
+}
+.elem-type__checkbox {
+  position: relative;
+}
+.form-checkbox {
+  display: none;
+  + label {
+    span {
+      cursor: pointer;
+      &:before {
+        content: '';
+        position: absolute;
+        border-radius: 0;
+        left: 0;
+        top: 0;
+        border: 1px solid $default-border-color;
+        width: 33px;
+        height: 33px;
+        background: none;
+      }
+    }
+  }
+  &:checked {
+    + label {
+      span {
+        &:after {
+          @extend %iconfont-icomoon;
+          color: $default-theme;
+          content: $icon-tick;
+          font-size: 22px;
+          position: absolute;
+          left: 5px;
+          top: 5px;
+        }
+      }
+    }
+  }
+}
+
+
+//radio
+.elem-type__radio {
+  position: relative;
+}
+.form-radio {
+  display: none;
+  + label {
+    span {
+      cursor: pointer;
+      &:before {
+        content: '';
+        position: absolute;
+        border-radius: 50%;
+        left: 0;
+        top: 0;
+        //top: 50%;
+        //margin-top: -16px;
+        border: 1px solid $default-border-color;
+        width: 33px;
+        height: 33px;
+        background: none;
+      }
+    }
+  }
+  &:checked {
+    + label {
+      span {
+        &:after {
+          content: '';
+          background: $default-theme;
+          border-radius: 50%;
+          position: absolute;
+          width: 21px;
+          height: 21px;
+          left: 6px;
+          top: 6px;
+          //top: 50%;
+          //margin-top: -10px;
+        }
+      }
+    }
+  }
+}

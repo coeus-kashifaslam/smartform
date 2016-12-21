@@ -10428,7 +10428,7 @@ button.close {
 }
 
 /* line 8, H:/Projects/smartform/build/css/sff-form.css */
-[class^=icomoon-icon-], [class*=" icomoon-icon-"] {
+[class^=icomoon-icon-], [class*=" icomoon-icon-"], .form-checkbox:checked + label span:after {
     font-family: icomoon !important;
     speak: none;
     font-style: normal;
@@ -10500,6 +10500,164 @@ body {
 /* line 8, H:/Projects/smartform/build/css/sff-form.css */
 .comp, .form__elem {
     margin-bottom: 32px;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.form__elem {
+    padding: 30px;
+    border: 1px solid #dfdae0;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.form__elem > p {
+    margin: 0;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.form__elem .form-control {
+    box-shadow: none;
+    border-radius: 0;
+    border: 1px solid #dfdae0;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.form__elem .form-control:focus {
+    box-shadow: none;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.sff-form__body {
+    border: 1px solid #dfdae0;
+    padding: 30px 15px;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.sff-form__legend {
+    border: 0 none;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.form__legend {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.form__elem__no-border {
+    border: 0 none;
+    padding: 0;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.form__elem__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.form__elem__help-text {
+    margin-bottom: 25px;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.form__elem__error-text {
+    font-size: 12px;
+    font-weight: 700;
+    color: red;
+    margin-top: 12px;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.elem-type__checkbox, .elem-type__radio {
+    min-height: 33px;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.elem-type__checkbox .form-checkbox + label, .elem-type__checkbox .form-radio + label, .elem-type__radio .form-checkbox + label, .elem-type__radio .form-radio + label {
+    font-weight: 400;
+    margin: 0;
+    display: block;
+    padding-left: 45px;
+    padding-top: 5px;
+    word-wrap: break-word;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.elem-type__checkbox {
+    position: relative;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.form-checkbox {
+    display: none;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.form-checkbox + label span {
+    cursor: pointer;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.form-checkbox + label span:before {
+    content: '';
+    position: absolute;
+    border-radius: 0;
+    left: 0;
+    top: 0;
+    border: 1px solid #dfdae0;
+    width: 33px;
+    height: 33px;
+    background: none;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.form-checkbox:checked + label span:after {
+    color: #2da137;
+    content: "";
+    font-size: 22px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.elem-type__radio {
+    position: relative;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.form-radio {
+    display: none;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.form-radio + label span {
+    cursor: pointer;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.form-radio + label span:before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    border: 1px solid #dfdae0;
+    width: 33px;
+    height: 33px;
+    background: none;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.form-radio:checked + label span:after {
+    content: '';
+    background: #2da137;
+    border-radius: 50%;
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    left: 6px;
+    top: 6px;
 }
 
 /* line 8, H:/Projects/smartform/build/css/sff-form.css */
@@ -10953,93 +11111,6 @@ body {
 .wizard__breadcrumb-list.wizard__five-step > li:nth-child(5) .step__title {
     transform: translateX(33%);
     -webkit-transform: translateX(33%);
-}
-
-/* line 8, H:/Projects/smartform/build/css/sff-form.css */
-.form__elem {
-    padding: 30px;
-    border: 1px solid #dfdae0;
-}
-
-/* line 8, H:/Projects/smartform/build/css/sff-form.css */
-.form__elem > p {
-    margin: 0;
-}
-
-/* line 8, H:/Projects/smartform/build/css/sff-form.css */
-.form__elem .form-control {
-    box-shadow: none;
-    border-radius: 0;
-    border: 1px solid #dfdae0;
-}
-
-/* line 8, H:/Projects/smartform/build/css/sff-form.css */
-.form__elem .form-control:focus {
-    box-shadow: none;
-}
-
-/* line 8, H:/Projects/smartform/build/css/sff-form.css */
-.sff-form__body {
-    border: 1px solid #dfdae0;
-    padding: 30px 15px;
-}
-
-/* line 8, H:/Projects/smartform/build/css/sff-form.css */
-.sff-form__legend {
-    border: 0 none;
-}
-
-/* line 8, H:/Projects/smartform/build/css/sff-form.css */
-.form__legend {
-    margin-top: 0;
-    margin-bottom: 25px;
-}
-
-/* line 8, H:/Projects/smartform/build/css/sff-form.css */
-.form__elem__no-border {
-    border: 0 none;
-    padding: 0;
-}
-
-/* line 8, H:/Projects/smartform/build/css/sff-form.css */
-.form__elem__title {
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
-/* line 8, H:/Projects/smartform/build/css/sff-form.css */
-.form__elem__help-text {
-    margin-bottom: 25px;
-}
-
-/* line 8, H:/Projects/smartform/build/css/sff-form.css */
-.form__elem__error-text {
-    font-size: 12px;
-    font-weight: 700;
-    color: red;
-    margin-top: 12px;
-}
-
-/* line 8, H:/Projects/smartform/build/css/sff-form.css */
-.form-checkbox + label span:before {
-    content: '';
-    position: absolute;
-    border-radius: 0;
-    left: 0;
-    top: 0;
-    border: 1px solid #d9dcdc;
-    width: 33px;
-    height: 33px;
-    background: none;
-}
-
-/* line 8, H:/Projects/smartform/build/css/sff-form.css */
-.form-checkbox:checked + label span:after {
-    content: "";
-    font-size: 22px;
-    position: absolute;
-    left: 5px;
-    top: 5px;
 }
 
 /* line 8, H:/Projects/smartform/build/css/sff-form.css */

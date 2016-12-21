@@ -5,12 +5,14 @@
 @import "core/vars";
 @import "core/typo";
 @import "core/base";
+@import "core/form";
+@import "core/languages";
+@import "core/banner";
+@import "core/breadcrumb";
 
-@import "partials/languages";
-@import "partials/banner";
-@import "partials/breadcrumb";
-@import "partials/form";
 @import "partials/free-text";
 @import "partials/picture";
 @import "partials/prosAndcons";
+@import "partials/legat-text";
+@import "partials/yes-no";
 

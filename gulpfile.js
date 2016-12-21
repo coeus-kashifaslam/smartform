@@ -165,7 +165,7 @@ gulp.task('html', function(){
  * Task to Merge and Compile Sass files
  * ...
  */
-gulp.task('sass',['imageuri'], function(){
+gulp.task('sass', function(){
 	return gulp.src(styles.in)
 	.pipe (compass(compassOptions))
 	.pipe(pleeease(pleeeaseOptions))
@@ -238,7 +238,7 @@ gulp.task('scripts', function(){
  */
 gulp.task('default', ['html', 'browsersync', 'sass', 'fonts', 'images', 'scripts'] , function() {
 	gulp.watch(watch.html, ['html', browsersync.reload]);
-	gulp.watch([watch.sass, imageuri.in],['sass']);
+	gulp.watch(watch.sass,['sass']);
 	gulp.watch(watch.fonts, ['fonts']);
 	gulp.watch(watch.images, ['images']);
 	gulp.watch(watch.scripts, ['scripts', browsersync.reload]);
