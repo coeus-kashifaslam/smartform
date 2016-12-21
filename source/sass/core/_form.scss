@@ -33,7 +33,7 @@
     }
     &:focus {
       @include placeholder {
-        color: $white;
+        color: rgba($white, 0);
       }
     }
   }

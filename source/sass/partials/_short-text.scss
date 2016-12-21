@@ -1,0 +1,10 @@
+.form-short-text {
+  height: 35px;
+  border: 0 none;
+  padding: 0;
+}
+.form__elem {
+  .form-short-text {
+    @extend .form-short-text;
+  }
+}
