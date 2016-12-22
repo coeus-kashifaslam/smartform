@@ -1,0 +1,12 @@
+@media (max-width: 767px) {
+  .form__elem__options-row {
+    > div {
+      + div {
+        margin-top: 25px;
+        &.clearfix {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

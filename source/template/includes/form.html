@@ -6,7 +6,7 @@
                 <legend class="sff-form__legend">
                     <h1 class="form__legend">Form Name Goes Here</h1>
                 </legend>
-                <fieldset>
+                <div class="form-fieldset">
 
                     {% include 'template/components/short-text.html' %}
                     {% set singleCol = 'true' %}
@@ -25,10 +25,9 @@
                     {% set excludeBorder= 'false' %}
                     {% include 'template/components/free-text.html' %}
 
-                    {% set excludeBorder= 'true' %}
-                    {% include 'template/components/free-text.html' %}
 
-                </fieldset>
+
+                </div>
             </form>
         </div>
         <div class="sff-form__footer">

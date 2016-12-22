@@ -8,3 +8,10 @@
     @extend .form-short-text;
   }
 }
+
+@media (max-width: 767px) {
+  .form-short-text {
+    border: 1px solid $default-border-color;
+    padding: 7px 15px;
+  }
+}

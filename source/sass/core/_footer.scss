@@ -40,3 +40,14 @@
       margin-left: 10px;
   }
 }
+
+@media (max-width: 767px) {
+  .page__footer__quick-links {
+    text-align: center;
+    > li {
+      a {
+        font-size: 11px;
+      }
+    }
+  }
+}

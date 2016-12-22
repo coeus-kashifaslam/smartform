@@ -573,3 +573,16 @@
     }
   }
 }
+
+
+@media (max-width: 767px) {
+  .comp__breadcrumb {
+    .sff-form__content-wrap {
+      padding: 0;
+    }
+    .wizardSliderBox {
+      border-left: 0 none;
+      border-right: 0 none;
+    }
+  }
+}
