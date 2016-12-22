@@ -1,0 +1,42 @@
+.page__footer {
+  .sff-form__content-wrap {
+    background: $default-footer-bg;
+  }
+}
+.page__footer-wrap {
+  padding: 15px 0;
+}
+.page__footer__quick-links {
+  padding: 12px 0 12px 1px;
+  margin: 0;
+  > li {
+    padding: 0;
+    &:after {
+      content: '|';
+      padding: 0 5px;
+      color: $default-footer-link;
+    }
+    &:last-child {
+      &:after {
+        content: '';
+        padding: 0;
+      }
+    }
+    a {
+      @extend %default-font;
+      font-size: 13px;
+      color: $default-footer-link;
+      text-transform: uppercase;
+    }
+  }
+}
+.power-by__info {
+  margin: 0;
+  text-align: right;
+  font-size: 12px;
+  color: $black;
+  @extend %default-font;
+  .power-by__logo {
+      margin-left: 10px;
+  }
+}

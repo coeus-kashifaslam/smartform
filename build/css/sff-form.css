@@ -10456,6 +10456,16 @@ button.close {
 }
 
 /* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.page__footer__quick-links > li a, .power-by__info {
+    font-family: Roboto,sans-serif;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.sff-form__submit {
+    font-family: RobotoBold,sans-serif;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
 .row__pros-cons li:before {
     font-family: FontAwesome;
 }
@@ -10493,13 +10503,13 @@ body {
 }
 
 /* line 8, H:/Projects/smartform/build/css/sff-form.css */
-.sff-form__content-wrap {
-    padding: 0 64px;
+.comp, .form__elem {
+    margin-bottom: 32px;
 }
 
 /* line 8, H:/Projects/smartform/build/css/sff-form.css */
-.comp, .form__elem {
-    margin-bottom: 32px;
+.sff-form__content-wrap {
+    padding: 0 64px;
 }
 
 /* line 8, H:/Projects/smartform/build/css/sff-form.css */
@@ -10584,6 +10594,7 @@ body {
 .sff-form__content-body {
     border: 1px solid #dfdae0;
     padding: 30px 15px;
+    margin-bottom: 45px;
 }
 
 /* line 8, H:/Projects/smartform/build/css/sff-form.css */
@@ -10714,6 +10725,40 @@ body {
     height: 21px;
     left: 6px;
     top: 6px;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.sff-form__footer {
+    text-align: right;
+    padding-bottom: 50px;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.sff-form__submit {
+    box-shadow: none;
+    text-shadow: none;
+    border-radius: 0;
+    border: 0 none;
+    width: 272px;
+    height: 48px;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #fff;
+    -webkit-transition: all .3 ease;
+    transition: all .3 ease;
+    background: #2da137;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.sff-form__submit:hover, .sff-form__submit:focus {
+    -webkit-transition: all .3 ease;
+    transition: all .3 ease;
+    background: #2da137;
+    outline: none;
+    box-shadow: none;
+    text-shadow: none;
 }
 
 /* line 8, H:/Projects/smartform/build/css/sff-form.css */
@@ -11168,6 +11213,60 @@ body {
 .wizard__breadcrumb-list.wizard__five-step > li:nth-child(5) .step__title {
     transform: translateX(33%);
     -webkit-transform: translateX(33%);
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.page__footer .sff-form__content-wrap {
+    background: #fafafa;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.page__footer-wrap {
+    padding: 15px 0;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.page__footer__quick-links {
+    padding: 12px 0 12px 1px;
+    margin: 0;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.page__footer__quick-links > li {
+    padding: 0;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.page__footer__quick-links > li:after {
+    content: '|';
+    padding: 0 5px;
+    color: #2da137;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.page__footer__quick-links > li:last-child:after {
+    content: '';
+    padding: 0;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.page__footer__quick-links > li a {
+    font-size: 13px;
+    color: #2da137;
+    text-transform: uppercase;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.power-by__info {
+    margin: 0;
+    text-align: right;
+    font-size: 12px;
+    color: #000;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.power-by__info .power-by__logo {
+    margin-left: 10px;
 }
 
 /* line 8, H:/Projects/smartform/build/css/sff-form.css */

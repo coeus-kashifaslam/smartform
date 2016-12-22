@@ -233,7 +233,7 @@ gulp.task('scripts', function(){
 
 /*
  * Default Task
- * Watching All of the writtend tasks
+ * Watching All of the written tasks
  * ...
  */
 gulp.task('default', ['html', 'browsersync', 'sass', 'fonts', 'images', 'scripts'] , function() {

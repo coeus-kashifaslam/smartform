@@ -4,7 +4,21 @@
 <body>
 
 <div class="sff-form__body">
+    {% include 'template/includes/languages.html' %}
+
+    {% include 'template/includes/banner.html' %}
+
+    {#
+    This component is commented. It shows the state when backgroundColor color is set to true.
+    {% set backgroundColor= 'true' %}
+    {% include 'template/includes/banner.html' %}
+    #}
+
+    {% include 'template/includes/breadcrumb.html' %}
+
     {% block content %}{% endblock %}
+
+    {% include 'template/includes/footer.html' %}
 </div>
 
 {% include 'template/includes/javascripts.html' %}

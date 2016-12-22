@@ -4,6 +4,15 @@
   &::-moz-placeholder          {@content}
   &:-ms-input-placeholder      {@content}
 }
+.sff-form__content-wrap {
+  padding: 0 64px;
+  @media (max-width: 991px) {
+    padding: 0 15px;
+  }
+  @media (max-width: 767px) {
+    padding: 0;
+  }
+}
 .form__elem {
   @extend .comp;
   padding: 30px;
@@ -41,6 +50,7 @@
 .sff-form__content-body {
   border: 1px solid $default-border-color;
   padding: 30px 15px;
+  margin-bottom: 45px;
 }
 .sff-form__legend {
   border: 0 none;
@@ -166,4 +176,35 @@
       }
     }
   }
+}
+
+
+.sff-form__footer {
+  text-align: right;
+  padding-bottom: 50px;
+}
+.sff-form__submit {
+  box-shadow: none;
+  text-shadow: none;
+  border-radius: 0;
+  border: 0 none;
+  @extend %default-font-bold;
+  width: 272px;
+  height: 48px;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: $white;
+  transition: all 0.3 ease;
+  background: $default-theme;
+  &:hover,
+  &:focus {
+    transition: all 0.3 ease;
+    background: $default-theme;
+    outline: none;
+    box-shadow: none;
+    text-shadow: none;
+  }
+
 }
