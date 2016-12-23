@@ -224,9 +224,9 @@ gulp.task('scripts', function(){
 	.pipe(jshint())
 	.pipe(jshint.reporter('default'))
 	// .pipe(jshint.reporter('fail'))
-	.pipe(concat(scripts.filename))
-	.pipe(stripdebug())
-	.pipe(uglify())
+	// .pipe(concat(scripts.filename))
+	// .pipe(stripdebug())
+	// .pipe(uglify())
 	.pipe(gulp.dest(scripts.out));
 });
 

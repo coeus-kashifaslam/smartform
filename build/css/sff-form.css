@@ -10428,7 +10428,7 @@ button.close {
 }
 
 /* line 8, H:/Projects/smartform/build/css/sff-form.css */
-[class^=icomoon-icon-], [class*=" icomoon-icon-"], .form-checkbox:checked + label span:after {
+.ico, .form-checkbox:checked + label span:after {
     font-family: icomoon !important;
     speak: none;
     font-style: normal;
@@ -10441,17 +10441,17 @@ button.close {
 }
 
 /* line 8, H:/Projects/smartform/build/css/sff-form.css */
-.icomoon-icon-exclamation:before {
+.ico-exclamation:before {
     content: "\e900";
 }
 
 /* line 8, H:/Projects/smartform/build/css/sff-form.css */
-.icomoon-icon-star:before {
+.ico-star:before {
     content: "\e901";
 }
 
 /* line 8, H:/Projects/smartform/build/css/sff-form.css */
-.icomoon-icon-tick:before {
+.ico-tick:before {
     content: "\e902";
 }
 
@@ -10461,7 +10461,7 @@ button.close {
 }
 
 /* line 8, H:/Projects/smartform/build/css/sff-form.css */
-.sff-form__submit {
+.sff-form__submit, .rating-comp__value-count {
     font-family: RobotoBold,sans-serif;
 }
 
@@ -11357,6 +11357,77 @@ body {
     height: 35px;
     border: 0 none;
     padding: 0;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.rating-comp__row {
+    margin-bottom: 15px;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.rating__container .row:last-child .rating-comp__row {
+    margin-bottom: 0;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.rating-comp__col-icons {
+    text-align: right;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.rating-comp__icons-list {
+    margin: 0;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.rating-comp__icons-list input[type=radio] {
+    display: none;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.rating-comp__icons-list li {
+    padding: 0;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.rating-comp__label {
+    padding-top: 10px;
+    margin: 0;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.rating-comp__value-count {
+    font-size: 32px;
+    color: #4c4c4c;
+    margin: 0;
+    width: 50px;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.rating-comp__value-count, .rating-comp__icons-list {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.rating-comp__separater {
+    width: 100%;
+    height: 1px;
+    background: #dfdae0;
+    margin-bottom: 15px;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.rating-comp__icon-single {
+    color: #bdbdbd;
+    font-size: 37px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.rating-comp__selection-type__continuous .rating-comp__hover .rating-comp__icon-single, .rating-comp__selection-type__continuous .rating-comp__selected .rating-comp__icon-single {
+    color: #fee923;
 }
 
 @media print {

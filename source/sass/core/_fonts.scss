@@ -25,7 +25,7 @@
   font-weight: normal;
   font-style: normal;
 }
-[class^="icomoon-icon-"], [class*=" icomoon-icon-"], %iconfont-icomoon {
+.ico, %iconfont-icomoon {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: none;
@@ -39,15 +39,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icomoon-icon-exclamation:before {
+.ico-exclamation:before {
   content: "\e900";
 }
 
-.icomoon-icon-star:before {
+.ico-star:before {
   content: "\e901";
 }
 
-.icomoon-icon-tick:before {
+.ico-tick:before {
   content: "\e902";
 }
 
