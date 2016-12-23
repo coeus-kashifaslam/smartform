@@ -9,9 +9,9 @@
                 <div class="form-fieldset">
 
                     {% include 'template/components/short-text.html' %}
+
                     {% set singleCol = 'true' %}
                     {% include 'template/components/long-text.html' %}
-
                     {% set singleCol = 'false' %}
                     {% include 'template/components/long-text.html' %}
 
@@ -23,6 +23,8 @@
                     {% include 'template/components/picture.html' %}
 
                     {% set excludeBorder= 'false' %}
+                    {% include 'template/components/free-text.html' %}
+                    {% set excludeBorder= 'true' %}
                     {% include 'template/components/free-text.html' %}
 
 

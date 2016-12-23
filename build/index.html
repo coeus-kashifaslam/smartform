@@ -78,24 +78,29 @@
                 <div class="form-fieldset">
 
                     <!--Short text Start-->
-<article class="form__elem elem__short-text">
-    <h3 class="form__elem__title">Short Text</h3>
-    <div class="form__elem__body">
-        <div class="elem-type__short-text">
-            <input type="text" class="form-control form-short-text" placeholder="Some placeholder">
+<article class="form__elem">
+    <div class="elem__short-text">
+        <h3 class="form__elem__title">Short Text</h3>
+        <div class="form__elem__body">
+            <p class="form__elem__help-text">Help Text goes here</p>
+            <div class="elem-type__short-text">
+                <input type="text" class="form-control form-short-text" placeholder="Some placeholder">
+            </div>
+            <p class="form__elem__error-text">This is error Message</p>
         </div>
-        <p class="form__elem__error-text">This is error Message</p>
     </div>
 </article>
 <!--Short text End-->
 
+
                     
                     <!--Long text Start-->
-<article class="form__elem elem__long-text">
-    <h3 class="form__elem__title">Long Text</h3>
-    <div class="form__elem__body">
+<article class="form__elem">
+    <div class="elem__long-text">
+        <h3 class="form__elem__title">Long Text</h3>
+        <div class="form__elem__body">
 
-       
+            
             <!--Add this for single Column layout-->
             <div class="elem__long-text__one-col">
                 <p class="form__elem__help-text">Help Text goes here</p>
@@ -106,19 +111,20 @@
             <p class="form__elem__error-text">This is error Message</p>
             <!--/ .Add this for single Column layout-->
 
-       
+            
+        </div>
     </div>
 </article>
 <!--Long text End-->
 
-
                     
                     <!--Long text Start-->
-<article class="form__elem elem__long-text">
-    <h3 class="form__elem__title">Long Text</h3>
-    <div class="form__elem__body">
+<article class="form__elem">
+    <div class="elem__long-text">
+        <h3 class="form__elem__title">Long Text</h3>
+        <div class="form__elem__body">
 
-       
+            
             <!--Add this for Multi Column layout-->
             <div class="elem__long-text__two-col">
                 <div class="row">
@@ -135,167 +141,180 @@
                 </div>
             </div>
             <!--/ .Add this for Multi Column layout-->
-       
+            
+        </div>
     </div>
 </article>
 <!--Long text End-->
 
 
                     <!--Drodown Start-->
-<article class="form__elem elem__dropdown">
-    <h3 class="form__elem__title">Dropdown</h3>
-    <div class="form__elem__body">
-        <p class="form__elem__help-text">Help Text goes here</p>
-        <div class="elem-type__dropdown">
-            <select name="dropdown" class="form-control form-dropdown">
-                <option value="value01">Option 01</option>
-                <option value="value02">Option 02</option>
-                <option value="value03">Option 03</option>
-                <option value="value04">Option 04</option>
-                <option value="value05">Option 05</option>
-            </select>
+<article class="form__elem">
+    <div class="elem__dropdown">
+        <h3 class="form__elem__title">Dropdown</h3>
+        <div class="form__elem__body">
+            <p class="form__elem__help-text">Help Text goes here</p>
+            <div class="elem-type__dropdown">
+                <select name="dropdown" class="form-control form-dropdown">
+                    <option value="value01">Option 01</option>
+                    <option value="value02">Option 02</option>
+                    <option value="value03">Option 03</option>
+                    <option value="value04">Option 04</option>
+                    <option value="value05">Option 05</option>
+                </select>
+            </div>
+            <p class="form__elem__error-text">This is error Message</p>
         </div>
-        <p class="form__elem__error-text">This is error Message</p>
     </div>
 </article>
 <!--Drodown End-->
 
                     <!--Multiple Choice Start-->
-<article class="form__elem elem__multiple-choice">
-    <h3 class="form__elem__title">Multiple Choice</h3>
-    <div class="form__elem__body">
-        <p class="form__elem__help-text">Help Text goes here</p>
+<article class="form__elem">
+    <div class="elem__multiple-choice">
+        <h3 class="form__elem__title">Multiple Choice</h3>
+        <div class="form__elem__body">
+            <p class="form__elem__help-text">Help Text goes here</p>
 
-        <div class="row form__elem__options-row">
-            <div class="col-sm-4">
-                <div class="elem-type__checkbox">
-                    <input type="checkbox" class="form-checkbox" name="multiple-choic" id="checkbox1">
-                    <label for="checkbox1">
-                        <span>Checkbox 1</span>
-                    </label>
+            <div class="row form__elem__options-row">
+                <div class="col-sm-4">
+                    <div class="elem-type__checkbox">
+                        <input type="checkbox" class="form-checkbox" name="multiple-choic" id="checkbox1">
+                        <label for="checkbox1">
+                            <span>Checkbox 1</span>
+                        </label>
+                    </div>
                 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="elem-type__checkbox">
-                    <input type="checkbox" class="form-checkbox" name="multiple-choic" id="checkbox2">
-                    <label for="checkbox2">
-                        <span>Checkbox 2</span>
-                    </label>
+                <div class="col-sm-4">
+                    <div class="elem-type__checkbox">
+                        <input type="checkbox" class="form-checkbox" name="multiple-choic" id="checkbox2">
+                        <label for="checkbox2">
+                            <span>Checkbox 2</span>
+                        </label>
+                    </div>
                 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="elem-type__checkbox">
-                    <input type="checkbox" class="form-checkbox" name="multiple-choic" id="checkbox3">
-                    <label for="checkbox3">
-                        <span>Checkbox3sadasdfafasdasdasfasfasfasfasfasfasfasfasfasfasf </span>
-                    </label>
+                <div class="col-sm-4">
+                    <div class="elem-type__checkbox">
+                        <input type="checkbox" class="form-checkbox" name="multiple-choic" id="checkbox3">
+                        <label for="checkbox3">
+                            <span>Checkbox3sadasdfafasdasdasfasfasfasfasfasfasfasfasfasfasf </span>
+                        </label>
+                    </div>
                 </div>
+                <div class="clearfix"></div>
             </div>
-            <div class="clearfix"></div>
+
+            <p class="form__elem__error-text">This is error Message</p>
         </div>
-
-        <p class="form__elem__error-text">This is error Message</p>
     </div>
 </article>
 <!--Multiple Choice End-->
 
                     <!--Yes No Start-->
-<article class="form__elem elem__yes-no">
-    <h3 class="form__elem__title">Yes No</h3>
-    <div class="form__elem__body">
-        <p class="form__elem__help-text">Help Text goes here</p>
+<article class="form__elem">
+    <div class="elem__yes-no">
+        <h3 class="form__elem__title">Yes No</h3>
+        <div class="form__elem__body">
+            <p class="form__elem__help-text">Help Text goes here</p>
 
-        <div class="row form__elem__options-row">
-            <div class="col-sm-4">
-                <div class="elem-type__radio">
-                    <input type="radio" class="form-radio" name="radio" id="radio1">
-                    <label for="radio1">
-                        <span>Radio 1</span>
-                    </label>
+            <div class="row form__elem__options-row">
+                <div class="col-sm-4">
+                    <div class="elem-type__radio">
+                        <input type="radio" class="form-radio" name="radio" id="radio1">
+                        <label for="radio1">
+                            <span>Radio 1</span>
+                        </label>
+                    </div>
                 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="elem-type__radio">
-                    <input type="radio" class="form-radio" name="radio" id="radio2">
-                    <label for="radio2">
-                        <span>Radio 2</span>
-                    </label>
+                <div class="col-sm-4">
+                    <div class="elem-type__radio">
+                        <input type="radio" class="form-radio" name="radio" id="radio2">
+                        <label for="radio2">
+                            <span>Radio 2</span>
+                        </label>
+                    </div>
                 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="elem-type__radio">
-                    <input type="radio" class="form-radio" name="radio" id="radio3">
-                    <label for="radio3">
-                        <span>Radio3sadasdfafasdasdasfasfasfasfasfasfasfasfasfasfasf </span>
-                    </label>
+                <div class="col-sm-4">
+                    <div class="elem-type__radio">
+                        <input type="radio" class="form-radio" name="radio" id="radio3">
+                        <label for="radio3">
+                            <span>Radio3sadasdfafasdasdasfasfasfasfasfasfasfasfasfasfasf </span>
+                        </label>
+                    </div>
                 </div>
+                <div class="clearfix"></div>
             </div>
-            <div class="clearfix"></div>
+
+            <p class="form__elem__error-text">This is error Message</p>
         </div>
-
-        <p class="form__elem__error-text">This is error Message</p>
     </div>
 </article>
 <!--Yes No End-->
 
                     <!--Legal text Start-->
-<article class="form__elem elem__legal-text">
-    <h3 class="form__elem__title">Legal Text</h3>
-    <div class="form__elem__body">
-        <p class="form__elem__help-text">Help Text goes here</p>
-        <div class="elem-type__checkbox">
-            <input type="checkbox" class="form-checkbox" name="legal-text" id="legal-text">
-            <label for="legal-text">
-                <span>Legal Text</span>
-            </label>
+<article class="form__elem">
+    <div class="elem__legal-text">
+        <h3 class="form__elem__title">Legal Text</h3>
+        <div class="form__elem__body">
+            <p class="form__elem__help-text">Help Text goes here</p>
+            <div class="elem-type__checkbox">
+                <input type="checkbox" class="form-checkbox" name="legal-text" id="legal-text">
+                <label for="legal-text">
+                    <span>Legal Text</span>
+                </label>
+            </div>
+            <p class="form__elem__error-text">This is error Message</p>
         </div>
-        <p class="form__elem__error-text">This is error Message</p>
     </div>
 </article>
 <!--Legal text End-->
 
                     <!--Pros and Cons Start-->
-<article class="form__elem elem__pros-cons">
-    <h3 class="form__elem__title">Pros and cons</h3>
-    <div class="form__elem__body">
-        <p class="form__elem__help-text">Help Text goes here</p>
-        <div class="row row__pros-cons">
-            <div class="col-sm-6 pros">
-                <ul class="list-unstyled pros__list">
-                    <li>
-                        <input type="text" class="form-control">
-                    </li>
-                    <li>
-                        <input type="text" class="form-control">
-                        <span class="remove-li fa fa-remove"></span>
-                    </li>
-                </ul>
+<article class="form__elem">
+    <div class="elem__pros-cons">
+        <h3 class="form__elem__title">Pros and cons</h3>
+        <div class="form__elem__body">
+            <p class="form__elem__help-text">Help Text goes here</p>
+            <div class="row row__pros-cons">
+                <div class="col-sm-6 pros">
+                    <ul class="list-unstyled pros__list">
+                        <li>
+                            <input type="text" class="form-control">
+                        </li>
+                        <li>
+                            <input type="text" class="form-control">
+                            <span class="remove-li fa fa-remove"></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 cons">
+                    <ul class="list-unstyled cons__list">
+                        <li>
+                            <input type="text" class="form-control">
+                        </li>
+                        <li>
+                            <input type="text" class="form-control">
+                            <span class="remove-li fa fa-remove"></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
             </div>
-            <div class="col-sm-6 cons">
-                <ul class="list-unstyled cons__list">
-                    <li>
-                        <input type="text" class="form-control">
-                    </li>
-                    <li>
-                        <input type="text" class="form-control">
-                        <span class="remove-li fa fa-remove"></span>
-                    </li>
-                </ul>
-            </div>
-            <div class="clearfix"></div>
+            <p class="form__elem__error-text">This is error Message</p>
         </div>
-        <p class="form__elem__error-text">This is error Message</p>
     </div>
 </article>
 <!--Pros and Cons End-->
 
                     <!--Picture Start-->
-<article class="form__elem elem__picture">
-    <h3 class="form__elem__title">Add a picture</h3>
-    <div class="form__elem__body">
-        <p class="form__elem__help-text">Help Text goes here</p>
-        <input type="file" class="control__select-avatar">
-        <p class="form__elem__error-text">This is error Message</p>
+<article class="form__elem">
+    <div class="elem__picture">
+        <h3 class="form__elem__title">Add a picture</h3>
+        <div class="form__elem__body">
+            <p class="form__elem__help-text">Help Text goes here</p>
+            <input type="file" class="control__select-avatar">
+            <p class="form__elem__error-text">This is error Message</p>
+        </div>
     </div>
 </article>
 <!--Picture End-->
@@ -304,14 +323,33 @@
                     
                     <!--Free text Start-->
 
-<article class="form__elem elem__free-text">
+<article class="form__elem">
 
-    <h3 class="form__elem__title">Free Test</h3>
-    <div class="form__elem__body">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet corporis
-        deserunt earum excepturi, praesentium tempora voluptas? Accusantium consectetur debitis illo illum
-        maiores nesciunt, reprehenderit. Aliquam dolor earum molestias numquam voluptatibus.</p>
-        <p class="form__elem__error-text">This is error Message</p>
+    <div class="elem__free-text">
+        <h3 class="form__elem__title">Free Test</h3>
+        <div class="form__elem__body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet corporis
+                deserunt earum excepturi, praesentium tempora voluptas? Accusantium consectetur debitis illo illum
+                maiores nesciunt, reprehenderit. Aliquam dolor earum molestias numquam voluptatibus.</p>
+            <p class="form__elem__error-text">This is error Message</p>
+        </div>
+    </div>
+</article>
+<!--Free text End-->
+
+                    
+                    <!--Free text Start-->
+
+<article class="form__elem form__elem__no-border">
+
+    <div class="elem__free-text">
+        <h3 class="form__elem__title">Free Test</h3>
+        <div class="form__elem__body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet corporis
+                deserunt earum excepturi, praesentium tempora voluptas? Accusantium consectetur debitis illo illum
+                maiores nesciunt, reprehenderit. Aliquam dolor earum molestias numquam voluptatibus.</p>
+            <p class="form__elem__error-text">This is error Message</p>
+        </div>
     </div>
 </article>
 <!--Free text End-->
