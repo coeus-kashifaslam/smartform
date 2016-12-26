@@ -1,6 +1,8 @@
 $(document).ready(function (){
-    var ratingList = $('.rating-comp__selection-type__continuous');
-    var ratingListItem = $('.rating-comp__selection-type__continuous > li');
+    var ratingList = $('.rating-comp__icons-list');
+    var ratingContinuous = $('.rating-comp__selection-type__continuous > li');
+    var ratingsingle = $('.rating-comp__selection-type__single > li');
+    var ratingListItem = $('.rating-comp__icons-list > li');
     $(ratingListItem).hover(
         function() {
             var $this = $(this);
@@ -13,10 +15,16 @@ $(document).ready(function (){
         }
     );
 
-    $(ratingListItem).on('click', function () {
+    $(ratingContinuous).on('click', function () {
         var $this = $(this);
         $this.closest(ratingList).find('> li').removeAttr('class');
         $this.addClass('rating-comp__selected');
         $this.prevAll().addClass('rating-comp__selected');
+    });
+
+    $(ratingsingle).on('click', function () {
+        var $this = $(this);
+        $this.closest(ratingList).find('> li').removeAttr('class');
+        $this.addClass('rating-comp__selected');
     });
 });

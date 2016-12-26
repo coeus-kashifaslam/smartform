@@ -2,45 +2,60 @@
 <div class="row">
     <div class="rating-comp__row">
         <div class="col-sm-7 rating-comp__col-label">
+            {% if ratingType == 'total' %}
+            <p class="rating-comp__label rating-comp__label__bold">Total:</p>
+            {% else %}
             <p class="rating-comp__label">Rating Quesion Label Goes here</p>
+            {% endif %}
         </div>
         <div class="col-sm-5 rating-comp__col-icons">
-            <ul class="list-inline rating-comp__icons-list rating-comp__selection-type__continuous">
-                <li>
-                    <input type="radio" name="rating-radio" value="radio1">
-                    <div class="rating-comp__icon-single">
-                        <i class="ico ico-star"></i>
-                    </div>
-                </li>
-                <li>
-                    <input type="radio" name="rating-radio" value="radio2">
-                    <div class="rating-comp__icon-single">
-                        <i class="ico ico-star"></i>
-                    </div>
-                </li>
-                <li>
-                    <input type="radio" name="rating-radio" value="radio3">
-                    <div class="rating-comp__icon-single">
-                        <i class="ico ico-star"></i>
-                    </div>
-                </li>
-                <li>
-                    <input type="radio" name="rating-radio" value="radio4">
-                    <div class="rating-comp__icon-single">
-                        <i class="ico ico-star"></i>
-                    </div>
-                </li>
-                <li>
-                    <input type="radio" name="rating-radio" value="radio5">
-                    <div class="rating-comp__icon-single">
-                        <i class="ico ico-star"></i>
-                    </div>
-                </li>
-            </ul>
-            <p class="rating-comp__value-count">
-                <span class="rating-comp__value-count__calculated">4</span>/<span class="rating-comp__value-count__total">5</span>
-            </p>
-            <div class="clearfix"></div>
+            <div class="rating-comp__col-icons__open">
+                <!--To add border around ratig element add this class in above div tag (rating-comp__col-icons__bordered)-->
+
+                <ul class="list-inline rating-comp__icons-list rating-comp__selection-type__continuous">
+                    <!--to show larg stars on mobile add this class in above ul tag (rating-comp__icons-count__large)-->
+
+                    <li>
+                        <input type="radio" name="rating-radio" value="radio1">
+                        <div class="rating-comp__icon-single">
+                            <i class="ico ico-star"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" name="rating-radio" value="radio2">
+                        <div class="rating-comp__icon-single">
+                            <i class="ico ico-star"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" name="rating-radio" value="radio3">
+                        <div class="rating-comp__icon-single">
+                            <i class="ico ico-star"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" name="rating-radio" value="radio4">
+                        <div class="rating-comp__icon-single">
+                            <i class="ico ico-star"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" name="rating-radio" value="radio5">
+                        <div class="rating-comp__icon-single">
+                            <i class="ico ico-star"></i>
+                        </div>
+                    </li>
+                </ul>
+                {% if ratingNumber == 'false' %}
+                <p class="rating-comp__value-count"></p>
+                {% else %}
+                <p class="rating-comp__value-count">
+                    <span class="rating-comp__value-count__calculated">4</span>/<span
+                        class="rating-comp__value-count__total">5</span>
+                </p>
+                {% endif %}
+                <div class="clearfix"></div>
+            </div>
         </div>
         <div class="clearfix"></div>
     </div>

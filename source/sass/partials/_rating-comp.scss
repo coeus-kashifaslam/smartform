@@ -13,6 +13,11 @@
 .rating-comp__col-icons {
   text-align: right;
 }
+.rating-comp__col-icons__bordered {
+  display: inline-block;
+  border: 1px solid $default-border-color;
+  padding: 0 10px;
+}
 .rating-comp__icons-list {
   margin: 0;
   input[type='radio'] {
@@ -25,6 +30,11 @@
 .rating-comp__label {
   padding-top: 10px;
   margin: 0;
+  &.rating-comp__label__bold {
+    font-size: $default-font-size + 2;
+    color: $default-header-color;
+    font-weight: 700;
+  }
 }
 .rating-comp__value-count {
   @extend %default-font-bold;
@@ -55,6 +65,36 @@
   .rating-comp__selected {
     .rating-comp__icon-single {
       color: $sudo-rating-color;
+    }
+  }
+}
+.rating-comp__selection-type__single {
+  .rating-comp__hover {
+    color: inherit;
+  }
+  .rating-comp__selected {
+    .rating-comp__icon-single {
+      color: $sudo-rating-color;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .rating-comp__icons-count__large {
+    .rating-comp__icon-single {
+      font-size: 54px;
+    }
+  }
+  .rating-comp__col-icons {
+    text-align: left;
+  }
+  .rating-comp__value-count {
+    display: none;
+  }
+  .rating-comp__separater {
+    display: none;
+    + .row {
+      border-top: 1px solid $default-border-color;
+      padding-top: 15px;
     }
   }
 }
