@@ -132,6 +132,11 @@
       font-size: 54px;
     }
   }
+  .rating-comp__icons-count__small {
+    .rating-comp__icon-single {
+      font-size: 22px;
+    }
+  }
   .rating-comp__col-icons {
     text-align: left;
   }
@@ -143,6 +148,11 @@
     + .row {
       border-top: 1px solid $default-border-color;
       padding-top: 15px;
+    }
+  }
+  .rating-comp__hover__current {
+    .rating-comp__tooltip {
+      display: none;
     }
   }
 }

@@ -13085,6 +13085,10 @@ body {
         font-size: 54px;
     }
     /* line 8, H:/Projects/smartform/build/css/sff-form.css */
+    .rating-comp__icons-count__small .rating-comp__icon-single {
+        font-size: 22px;
+    }
+    /* line 8, H:/Projects/smartform/build/css/sff-form.css */
     .rating-comp__col-icons {
         text-align: left;
     }
@@ -13100,6 +13104,10 @@ body {
     .rating-comp__separater + .row {
         border-top: 1px solid #dfdae0;
         padding-top: 15px;
+    }
+    /* line 8, H:/Projects/smartform/build/css/sff-form.css */
+    .rating-comp__hover__current .rating-comp__tooltip {
+        display: none;
     }
 }
 
