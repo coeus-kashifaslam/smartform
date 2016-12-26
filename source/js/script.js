@@ -6,11 +6,11 @@ $(document).ready(function (){
     $(ratingListItem).hover(
         function() {
             var $this = $(this);
-            $this.addClass('rating-comp__hover');
+            $this.addClass('rating-comp__hover rating-comp__hover__current');
             $this.prevAll().addClass('rating-comp__hover');
         }, function() {
             var $this = $(this);
-            $this.removeClass('rating-comp__hover');
+            $this.removeClass('rating-comp__hover rating-comp__hover__current');
             $this.prevAll().removeClass('rating-comp__hover');
         }
     );

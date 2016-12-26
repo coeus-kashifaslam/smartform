@@ -1,14 +1,35 @@
 <!--Rating Comp Start-->
 <div class="row">
+
     <div class="rating-comp__row">
+
+        {% if ratingComp == 'ranking' %}
+        <div class="col-sm-4 rating-comp__col-label">
+        {% else %}
         <div class="col-sm-7 rating-comp__col-label">
+        {% endif %}
+
             {% if ratingType == 'total' %}
+
+                {% if ratingComp == 'ranking' %}
+            <p class="rating-comp__label rating-comp__label__bold">Total: <span class="rating-comp__value-count__calculated">4</span>/<span
+                class="rating-comp__value-count__total">5</span>
+                {% else %}
             <p class="rating-comp__label rating-comp__label__bold">Total:</p>
+                {% endif %}
+
             {% else %}
-            <p class="rating-comp__label">Rating Quesion Label Goes here</p>
+            <p class="rating-comp__label">Rating Quesion Label</p>
             {% endif %}
+
         </div>
+
+        {% if ratingComp == 'ranking' %}
+        <div class="col-sm-8 rating-comp__col-icons">
+        {% else %}
         <div class="col-sm-5 rating-comp__col-icons">
+        {% endif %}
+
             <div class="rating-comp__col-icons__open">
                 <!--To add border around ratig element add this class in above div tag (rating-comp__col-icons__bordered)-->
 
@@ -20,11 +41,17 @@
                         <div class="rating-comp__icon-single">
                             <i class="ico ico-star"></i>
                         </div>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
                     </li>
                     <li>
                         <input type="radio" name="rating-radio" value="radio2">
                         <div class="rating-comp__icon-single">
                             <i class="ico ico-star"></i>
+                        </div>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
                         </div>
                     </li>
                     <li>
@@ -32,11 +59,17 @@
                         <div class="rating-comp__icon-single">
                             <i class="ico ico-star"></i>
                         </div>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
                     </li>
                     <li>
                         <input type="radio" name="rating-radio" value="radio4">
                         <div class="rating-comp__icon-single">
                             <i class="ico ico-star"></i>
+                        </div>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
                         </div>
                     </li>
                     <li>
@@ -44,15 +77,81 @@
                         <div class="rating-comp__icon-single">
                             <i class="ico ico-star"></i>
                         </div>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
                     </li>
+
+                    <!--Showing more than 5 elements only in case of ranking scale-->
+                    {% if ratingComp == 'ranking' %}
+                    <li>
+                        <input type="radio" name="rating-radio" value="radio1">
+                        <div class="rating-comp__icon-single">
+                            <i class="ico ico-star"></i>
+                        </div>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" name="rating-radio" value="radio2">
+                        <div class="rating-comp__icon-single">
+                            <i class="ico ico-star"></i>
+                        </div>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" name="rating-radio" value="radio3">
+                        <div class="rating-comp__icon-single">
+                            <i class="ico ico-star"></i>
+                        </div>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" name="rating-radio" value="radio4">
+                        <div class="rating-comp__icon-single">
+                            <i class="ico ico-star"></i>
+                        </div>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" name="rating-radio" value="radio5">
+                        <div class="rating-comp__icon-single">
+                            <i class="ico ico-star"></i>
+                        </div>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" name="rating-radio" value="radio5">
+                        <div class="rating-comp__icon-single">
+                            <i class="ico ico-star"></i>
+                        </div>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li>
+                    {% else %} {% endif %}
+                    <!--Showing more than 5 elements only in case of ranking scale-->
+
                 </ul>
-                {% if ratingNumber == 'false' %}
-                <p class="rating-comp__value-count"></p>
+                {% if ratingComp == 'ranking' %}
                 {% else %}
-                <p class="rating-comp__value-count">
-                    <span class="rating-comp__value-count__calculated">4</span>/<span
-                        class="rating-comp__value-count__total">5</span>
-                </p>
+                    {% if ratingNumber == 'false' %}
+                    <p class="rating-comp__value-count"></p>
+                    {% else %}
+                    <p class="rating-comp__value-count">
+                        <span class="rating-comp__value-count__calculated">4</span>/<span
+                            class="rating-comp__value-count__total">5</span>
+                    </p>
+                    {% endif %}
                 {% endif %}
                 <div class="clearfix"></div>
             </div>
