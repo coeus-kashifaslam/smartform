@@ -1,0 +1,20 @@
+<!--Rating Start-->
+<article class="form__elem">
+    <div class="elem__rating elem__seller-rating">
+        <h3 class="form__elem__title">Rating</h3>
+        <div class="form__elem__body">
+            <p class="form__elem__help-text">Help Text goes here</p>
+            <div class="rating__container">
+                {% set ratingNumber = 'false' %}
+                {% include 'template/components/rating-comp.html' %}
+                {% include 'template/components/rating-comp.html' %}
+                <div class="rating-comp__separater"></div>
+                {% set ratingType = 'total' %}
+                {% set ratingNumber = 'true' %}
+                {% include 'template/components/rating-comp.html' %}
+            </div>
+        </div>
+    </div>
+    {% include 'template/components/rating-comp-popup.html' %}
+</article>
+<!--Rating End-->
