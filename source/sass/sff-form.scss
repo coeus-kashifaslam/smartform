@@ -1,4 +1,5 @@
 @import "../../bower_components/bootstrap/dist/sass/bootstrap";
+@import "../../bower_components/bootstrap-select/dist/sass/bootstrap-select";
 @import "../../bower_components/font-awesome/sass/font-awesome";
 
 @import "core/fonts";
@@ -12,6 +13,7 @@
 @import "core/breadcrumb";
 @import "core/footer";
 
+@import "partials/icons-dropdown";
 @import "partials/free-text";
 @import "partials/picture";
 @import "partials/pros-cons";

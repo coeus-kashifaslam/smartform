@@ -27,4 +27,11 @@ $(document).ready(function (){
         $this.closest(ratingList).find('> li').removeAttr('class');
         $this.addClass('rating-comp__selected');
     });
+
+
+
+    $('.bootstrap-select').selectpicker({
+        iconBase: 'ico',
+        tickIcon: 'ico-tick'
+    });
 });
