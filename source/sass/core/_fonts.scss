@@ -39,6 +39,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.ico-circle:before {
+  content: "\e903";
+}
+
+.ico-circle2:before {
+  content: "\e904";
+}
 .ico-exclamation:before {
   content: "\e900";
 }

@@ -10441,6 +10441,16 @@ button.close {
 }
 
 /* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-circle:before {
+    content: "\e903";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-circle2:before {
+    content: "\e904";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
 .ico-exclamation:before {
     content: "\e900";
 }
@@ -10473,6 +10483,861 @@ button.close {
 /* line 8, H:/Projects/smartform/build/css/sff-form.css */
 .row__pros-cons li:before {
     font-family: FontAwesome;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-circle1:before {
+    content: "\e903";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-circle2:before {
+    content: "\e904";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-exclamation:before {
+    content: "\e900";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-star:before {
+    content: "\e901";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-tick:before {
+    content: "\e902";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-flashed-face:before {
+    content: "\e905";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-flashed-face2:before {
+    content: "\e906";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-flashed-face3:before {
+    content: "\e907";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-flashed-face4:before {
+    content: "\e908";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-flashed-face-glasses:before {
+    content: "\e909";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-flashed-face-glasses2:before {
+    content: "\e90a";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-face-missing-moth:before {
+    content: "\e90b";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-face-missing-moth2:before {
+    content: "\e90c";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-neutral-face:before {
+    content: "\e90d";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-neutral-face2:before {
+    content: "\e90e";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-smiling-face:before {
+    content: "\e90f";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-smiling-face2:before {
+    content: "\e910";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-sad-face:before {
+    content: "\e911";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-sad-face2:before {
+    content: "\e912";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-face-open-mouth:before {
+    content: "\e913";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-face-open-mouth2:before {
+    content: "\e914";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-face-open-mouth3:before {
+    content: "\e915";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-face-open-mouth4:before {
+    content: "\e916";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-winking-face:before {
+    content: "\e917";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-winking-face2:before {
+    content: "\e918";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-laughing-face:before {
+    content: "\e919";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-laughing-face2:before {
+    content: "\e91a";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-laughing-face3:before {
+    content: "\e91b";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-laughing-face4:before {
+    content: "\e91c";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-smirking-face:before {
+    content: "\e91d";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-smirking-face2:before {
+    content: "\e91e";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-stubborn-face:before {
+    content: "\e91f";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-stubborn-face2:before {
+    content: "\e920";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-neutral-face3:before {
+    content: "\e921";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-neutral-face4:before {
+    content: "\e922";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-sad-face3:before {
+    content: "\e923";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-sad-face4:before {
+    content: "\e924";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-smiling-face3:before {
+    content: "\e925";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-smiling-face4:before {
+    content: "\e926";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-smiling-face-eyebrows:before {
+    content: "\e927";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-smiling-face-eyebrows2:before {
+    content: "\e928";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-grinning-face-eyebrows:before {
+    content: "\e929";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-grinning-face-eyebrows2:before {
+    content: "\e92a";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-sad-face-eyebrows:before {
+    content: "\e92b";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-sad-face-eyebrows2:before {
+    content: "\e92c";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-neutral-face-eyebrows:before {
+    content: "\e92d";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-neutral-face-eyebrows2:before {
+    content: "\e92e";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-angry-face:before {
+    content: "\e92f";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-angry-face2:before {
+    content: "\e930";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-worried-face:before {
+    content: "\e931";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-worried-face2:before {
+    content: "\e932";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-winking-face3:before {
+    content: "\e933";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-winking-face4:before {
+    content: "\e934";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-angry-face-eyebrows:before {
+    content: "\e935";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-angry-face-eyebrows2:before {
+    content: "\e936";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-grinning-face:before {
+    content: "\e937";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-grinning-face2:before {
+    content: "\e938";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-sad-face5:before {
+    content: "\e939";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-sad-face6:before {
+    content: "\e93a";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-grinning-face-eyebrows3:before {
+    content: "\e93b";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-grinning-face-eyebrows4:before {
+    content: "\e93c";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-fake-grinning-face-eyebrows:before {
+    content: "\e93d";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-fake-grinning-face-eyebrows2:before {
+    content: "\e93e";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-worried-face-eyebrows:before {
+    content: "\e93f";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-worried-face-eyebrows2:before {
+    content: "\e940";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-face-stuck-out-tongue:before {
+    content: "\e941";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-face-stuck-out-tongue2:before {
+    content: "\e942";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-face-stuck-out-tongue3:before {
+    content: "\e943";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-face-stuck-out-tongue4:before {
+    content: "\e944";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-kissing-face:before {
+    content: "\e945";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-kissing-face2:before {
+    content: "\e946";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-grinning-face-teeth:before {
+    content: "\e947";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-grinning-face-teeth2:before {
+    content: "\e948";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-angry-face-teeth:before {
+    content: "\e949";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-angry-face-teeth2:before {
+    content: "\e94a";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-worried-face-teeth:before {
+    content: "\e94b";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-worried-face-teeth2:before {
+    content: "\e94c";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-grinning-face-teeth3:before {
+    content: "\e94d";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-grinning-face-teeth4:before {
+    content: "\e94e";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-face-open-mouth-eyebrows:before {
+    content: "\e94f";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-face-open-mouth-eyebrows2:before {
+    content: "\e950";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-face-open-mouth-eyebrows3:before {
+    content: "\e951";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-face-open-mouth-eyebrows4:before {
+    content: "\e952";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-angry-face-open-mouth-eyebrows:before {
+    content: "\e953";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-angry-face-open-mouth-eyebrows2:before {
+    content: "\e954";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-unamused-face-tightly-closed-eyes:before {
+    content: "\e955";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-unamused-face-tightly-closed-eyes2:before {
+    content: "\e956";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-sad-face--tightly-closed-eyes:before {
+    content: "\e957";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-sad-face--tightly-closed-eyes2:before {
+    content: "\e958";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-kissing-face3:before {
+    content: "\e959";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-kissing-face4:before {
+    content: "\e95a";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-face-closed-meyes:before {
+    content: "\e95b";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-face-closed-meyes2:before {
+    content: "\e95c";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-amused-face:before {
+    content: "\e95d";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-amused-face2:before {
+    content: "\e95e";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-amused-face-closed-eyes:before {
+    content: "\e95f";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-amused-face-closed-eyes2:before {
+    content: "\e960";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-amused-face-closed-eyes3:before {
+    content: "\e961";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-amused-face-closed-eyes4:before {
+    content: "\e962";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-face-closed-eyes-open-mouth:before {
+    content: "\e963";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-face-closed-eyes-open-mouth2:before {
+    content: "\e964";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-face-closed-eyes-open-mouth3:before {
+    content: "\e965";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-face-closed-eyes-open-mouth4:before {
+    content: "\e966";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-face-closed-eyes-open-mouth5:before {
+    content: "\e967";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-face-closed-eyes-open-mouth6:before {
+    content: "\e968";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-laughing-face5:before {
+    content: "\e969";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-laughing-face6:before {
+    content: "\e96a";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-smiling-face5:before {
+    content: "\e96b";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-smiling-face6:before {
+    content: "\e96c";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-grinning-face3:before {
+    content: "\e96d";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-grinning-face4:before {
+    content: "\e96e";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-sad-face7:before {
+    content: "\e96f";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-sad-face8:before {
+    content: "\e970";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-sad-face9:before {
+    content: "\e971";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-sad-face10:before {
+    content: "\e972";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-sad-face-closed-eyes:before {
+    content: "\e973";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-sad-face-closed-eyes2:before {
+    content: "\e974";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-sad-face11:before {
+    content: "\e975";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-sad-face12:before {
+    content: "\e976";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-smiling-face7:before {
+    content: "\e977";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-smiling-face8:before {
+    content: "\e978";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-astonished-face:before {
+    content: "\e979";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-astonished-face2:before {
+    content: "\e97a";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-astonished-face3:before {
+    content: "\e97b";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-astonished-face4:before {
+    content: "\e97c";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-face-moustache:before {
+    content: "\e97d";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-face-moustache2:before {
+    content: "\e97e";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-face-moustache3:before {
+    content: "\e97f";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-face-moustache4:before {
+    content: "\e980";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-face-glasses:before {
+    content: "\e981";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-face-glasses2:before {
+    content: "\e982";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-face-sunglasses:before {
+    content: "\e983";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-face-sunglasses2:before {
+    content: "\e984";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-smirking-face-sunglasses:before {
+    content: "\e985";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-smirking-face-sunglasses2:before {
+    content: "\e986";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-happy:before {
+    content: "\e9df";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-happy2:before {
+    content: "\e9e0";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-smile:before {
+    content: "\e9e1";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-smile2:before {
+    content: "\e9e2";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-tongue:before {
+    content: "\e9e3";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-tongue2:before {
+    content: "\e9e4";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-sad:before {
+    content: "\e9e5";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-sad2:before {
+    content: "\e9e6";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-wink:before {
+    content: "\e9e7";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-wink2:before {
+    content: "\e9e8";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-grin:before {
+    content: "\e9e9";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-grin2:before {
+    content: "\e9ea";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-cool:before {
+    content: "\e9eb";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-cool2:before {
+    content: "\e9ec";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-angry:before {
+    content: "\e9ed";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-angry2:before {
+    content: "\e9ee";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-evil:before {
+    content: "\e9ef";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-evil2:before {
+    content: "\e9f0";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-shocked:before {
+    content: "\e9f1";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-shocked2:before {
+    content: "\e9f2";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-baffled:before {
+    content: "\e9f3";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-baffled2:before {
+    content: "\e9f4";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-confused:before {
+    content: "\e9f5";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-confused2:before {
+    content: "\e9f6";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-neutral:before {
+    content: "\e9f7";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-neutral2:before {
+    content: "\e9f8";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-hipster:before {
+    content: "\e9f9";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-hipster2:before {
+    content: "\e9fa";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-wondering:before {
+    content: "\e9fb";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-wondering2:before {
+    content: "\e9fc";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-sleepy:before {
+    content: "\e9fd";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-sleepy2:before {
+    content: "\e9fe";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-frustrated:before {
+    content: "\e9ff";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-frustrated2:before {
+    content: "\ea00";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-crying:before {
+    content: "\ea01";
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.ico-crying2:before {
+    content: "\ea02";
 }
 
 /* line 8, H:/Projects/smartform/build/css/sff-form.css */
