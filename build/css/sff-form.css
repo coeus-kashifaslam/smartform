@@ -10441,31 +10441,6 @@ button.close {
 }
 
 /* line 8, H:/Projects/smartform/build/css/sff-form.css */
-.ico-circle:before {
-    content: "\e903";
-}
-
-/* line 8, H:/Projects/smartform/build/css/sff-form.css */
-.ico-circle2:before {
-    content: "\e904";
-}
-
-/* line 8, H:/Projects/smartform/build/css/sff-form.css */
-.ico-exclamation:before {
-    content: "\e900";
-}
-
-/* line 8, H:/Projects/smartform/build/css/sff-form.css */
-.ico-star:before {
-    content: "\e901";
-}
-
-/* line 8, H:/Projects/smartform/build/css/sff-form.css */
-.ico-tick:before {
-    content: "\e902";
-}
-
-/* line 8, H:/Projects/smartform/build/css/sff-form.css */
 .page__footer__quick-links > li a, .power-by__info {
     font-family: Roboto,sans-serif;
 }
@@ -11505,12 +11480,12 @@ body {
 }
 
 /* line 8, H:/Projects/smartform/build/css/sff-form.css */
-.elem-type__checkbox, .elem-type__radio {
+.elem-type__checkbox {
     min-height: 33px;
 }
 
 /* line 8, H:/Projects/smartform/build/css/sff-form.css */
-.elem-type__checkbox .form-checkbox + label, .elem-type__checkbox .form-radio + label, .elem-type__radio .form-checkbox + label, .elem-type__radio .form-radio + label {
+.elem-type__checkbox .form-checkbox + label {
     font-weight: 400;
     margin: 0;
     display: block;
@@ -11560,6 +11535,32 @@ body {
 /* line 8, H:/Projects/smartform/build/css/sff-form.css */
 .elem-type__radio {
     position: relative;
+    min-height: 33px;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.elem-type__radio .form-radio + label {
+    font-weight: 400;
+    margin: 0;
+    display: block;
+    word-wrap: break-word;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.elem-type__radio .form-radio + label .ico, .elem-type__radio .form-radio + label .elem-type__radio__label {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.elem-type__radio .form-radio + label .ico {
+    font-size: 33px;
+    cursor: pointer;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.elem-type__radio .form-radio + label .elem-type__radio__label {
+    margin-left: 7px;
 }
 
 /* line 8, H:/Projects/smartform/build/css/sff-form.css */
@@ -11568,33 +11569,23 @@ body {
 }
 
 /* line 8, H:/Projects/smartform/build/css/sff-form.css */
-.form-radio + label span {
-    cursor: pointer;
+.form-radio + label .ico {
+    color: #dfdae0;
 }
 
 /* line 8, H:/Projects/smartform/build/css/sff-form.css */
-.form-radio + label span:before {
-    content: '';
-    position: absolute;
-    border-radius: 50%;
-    left: 0;
-    top: 0;
-    border: 1px solid #dfdae0;
-    width: 33px;
-    height: 33px;
-    background: none;
+.form-radio + label .ico:before {
+    content: "";
 }
 
 /* line 8, H:/Projects/smartform/build/css/sff-form.css */
-.form-radio:checked + label span:after {
-    content: '';
-    background: #2da137;
-    border-radius: 50%;
-    position: absolute;
-    width: 21px;
-    height: 21px;
-    left: 6px;
-    top: 6px;
+.form-radio:checked + label .ico {
+    color: #2da137;
+}
+
+/* line 8, H:/Projects/smartform/build/css/sff-form.css */
+.form-radio:checked + label .ico:before {
+    content: "";
 }
 
 /* line 8, H:/Projects/smartform/build/css/sff-form.css */

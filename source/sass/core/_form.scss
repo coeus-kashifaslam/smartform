@@ -80,11 +80,9 @@
 
 
 //checkbox
-.elem-type__checkbox,
-.elem-type__radio {
+.elem-type__checkbox {
   min-height: 33px;
-  .form-checkbox,
-  .form-radio {
+  .form-checkbox {
     + label {
       font-weight: normal;
       margin: 0;
@@ -137,41 +135,44 @@
 //radio
 .elem-type__radio {
   position: relative;
+  min-height: 33px;
+  .form-radio {
+    + label {
+      font-weight: normal;
+      margin: 0;
+      display: block;
+      word-wrap: break-word;
+      .ico,
+      .elem-type__radio__label {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .ico {
+        font-size: 33px;
+        cursor: pointer;
+      }
+      .elem-type__radio__label {
+        margin-left: 7px;
+      }
+    }
+  }
 }
 .form-radio {
   display: none;
   + label {
-    span {
-      cursor: pointer;
+    .ico {
+      color: $default-border-color;
       &:before {
-        content: '';
-        position: absolute;
-        border-radius: 50%;
-        left: 0;
-        top: 0;
-        //top: 50%;
-        //margin-top: -16px;
-        border: 1px solid $default-border-color;
-        width: 33px;
-        height: 33px;
-        background: none;
+        content: $circle-empty;
       }
     }
   }
   &:checked {
     + label {
-      span {
-        &:after {
-          content: '';
-          background: $default-theme;
-          border-radius: 50%;
-          position: absolute;
-          width: 21px;
-          height: 21px;
-          left: 6px;
-          top: 6px;
-          //top: 50%;
-          //margin-top: -10px;
+      .ico {
+        color: $default-theme;
+        &:before {
+          content: $circle-fill;
         }
       }
     }
