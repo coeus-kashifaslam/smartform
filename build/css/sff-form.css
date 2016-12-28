@@ -10951,12 +10951,12 @@ select.bs-select-hidden, select.selectpicker {
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
-.ico-circle-border:before {
+.ico-circle:before {
     content: "\e917";
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
-.ico-circle-border-selected:before {
+.ico-circle-selected:before {
     content: "\e918";
 }
 
@@ -12120,6 +12120,12 @@ body {
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
+.elem__table__row {
+    display: table-row;
+    width: 100%;
+}
+
+/* line 13, H:/Projects/smartform/build/css/sff-form.css */
 .elem__table__cell {
     display: table-cell;
 }
@@ -12991,6 +12997,86 @@ body {
     background: #2da137;
     color: #fff;
     font-weight: 700;
+}
+
+/* line 13, H:/Projects/smartform/build/css/sff-form.css */
+.elem__ranking-scale__layout-grid .ranking__container {
+    overflow: hidden;
+}
+
+/* line 13, H:/Projects/smartform/build/css/sff-form.css */
+.ranking__list__grid {
+    display: table-row;
+    width: 100%;
+}
+
+/* line 13, H:/Projects/smartform/build/css/sff-form.css */
+.ranking__list__grid .ranking__list__item {
+    text-align: center;
+    padding: 10px 5px;
+    vertical-align: middle;
+    border-bottom: 1px solid #dfdae0;
+}
+
+/* line 13, H:/Projects/smartform/build/css/sff-form.css */
+.ranking__list__grid .ranking__list__item input[type=radio], .ranking__list__grid .ranking__list__item .ranking__list__item__label {
+    display: none;
+    margin: 0;
+}
+
+/* line 13, H:/Projects/smartform/build/css/sff-form.css */
+.ranking__list__grid .ranking__list__item .ranking__list__item__icon {
+    font-size: 33px;
+    cursor: pointer;
+    color: #dfdae0;
+}
+
+/* line 13, H:/Projects/smartform/build/css/sff-form.css */
+.ranking__list__grid .ranking__list__item + .ranking__list__item {
+    width: 120px;
+}
+
+/* line 13, H:/Projects/smartform/build/css/sff-form.css */
+.ranking__list__grid .ranking__list__item__label-cell {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
+}
+
+/* line 13, H:/Projects/smartform/build/css/sff-form.css */
+.ranking__list__grid .ranking__list__item__label-cell .ranking__list__item__label-content {
+    margin-bottom: 0;
+}
+
+/* line 13, H:/Projects/smartform/build/css/sff-form.css */
+.ranking__list__grid.ranking__list__grid__tooltip-row .ranking__list__item__label {
+    display: block;
+}
+
+/* line 13, H:/Projects/smartform/build/css/sff-form.css */
+.ranking__list__grid.rating-comp__selection-type__continuous .ranking__list__item.rating-comp__hover .ranking__list__item__icon, .ranking__list__grid.rating-comp__selection-type__continuous .ranking__list__item.rating-comp__selected .ranking__list__item__icon {
+    color: #2da137;
+}
+
+/* line 13, H:/Projects/smartform/build/css/sff-form.css */
+.ranking__list__grid.rating-comp__selection-type__continuous .ranking__list__item.rating-comp__hover .ranking__list__item__label, .ranking__list__grid.rating-comp__selection-type__continuous .ranking__list__item.rating-comp__selected .ranking__list__item__label {
+    background: transparent;
+    color: inherit;
+    border: 0 none;
+    font-weight: 400;
+}
+
+/* line 13, H:/Projects/smartform/build/css/sff-form.css */
+.ranking__list__grid.rating-comp__selection-type__single .ranking__list__item.rating-comp__selected .ranking__list__item__icon {
+    color: #2da137;
+}
+
+/* line 13, H:/Projects/smartform/build/css/sff-form.css */
+.ranking__list__grid.rating-comp__selection-type__single .ranking__list__item.rating-comp__selected .ranking__list__item__label {
+    background: transparent;
+    color: inherit;
+    border: 0 none;
+    font-weight: 400;
 }
 
 @media print {
@@ -14522,6 +14608,60 @@ body {
         width: auto;
         padding-left: 3px;
         padding-right: 3px;
+    }
+    /* line 13, H:/Projects/smartform/build/css/sff-form.css */
+    .elem__ranking-scale__layout-grid {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    /* line 13, H:/Projects/smartform/build/css/sff-form.css */
+    .elem__ranking-scale__layout-grid .ranking__container {
+        overflow: visible;
+    }
+    /* line 13, H:/Projects/smartform/build/css/sff-form.css */
+    .elem__ranking-scale__layout-grid .form__elem__title, .elem__ranking-scale__layout-grid .form__elem__help-text, .elem__ranking-scale__layout-grid .ranking__list__grid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    /* line 13, H:/Projects/smartform/build/css/sff-form.css */
+    .ranking__list__grid {
+        display: block;
+        border-bottom: 1px solid #dfdae0;
+    }
+    /* line 13, H:/Projects/smartform/build/css/sff-form.css */
+    .ranking__list__grid .ranking__list__item {
+        text-align: left;
+        border-bottom: 0 none;
+    }
+    /* line 13, H:/Projects/smartform/build/css/sff-form.css */
+    .ranking__list__grid .ranking__list__item + .ranking__list__item {
+        padding-left: 0;
+        width: 48%;
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    /* line 13, H:/Projects/smartform/build/css/sff-form.css */
+    .ranking__list__grid .ranking__list__item .ranking__list__item__label {
+        margin-left: 5px;
+    }
+    /* line 13, H:/Projects/smartform/build/css/sff-form.css */
+    .ranking__list__grid .ranking__list__item .ranking__list__item__icon, .ranking__list__grid .ranking__list__item .ranking__list__item__label {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    /* line 13, H:/Projects/smartform/build/css/sff-form.css */
+    .ranking__list__grid .ranking__list__item__label-cell {
+        display: block;
+        width: 100%;
+    }
+    /* line 13, H:/Projects/smartform/build/css/sff-form.css */
+    .ranking__list__grid__tooltip-row {
+        display: none;
+    }
+    /* line 13, H:/Projects/smartform/build/css/sff-form.css */
+    .elem__ranking-scale__layout-grid .ranking__list__grid:last-child {
+        border-bottom: 0 none;
     }
 }
 
