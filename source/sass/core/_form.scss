@@ -70,6 +70,19 @@
 .form__elem__help-text {
   margin-bottom: 25px;
 }
+.form__elem__help-text__left,
+.form__elem__help-text__right {
+  width: 50%;
+  float: left;
+}
+.form__elem__help-text__left {
+  //float: left;
+  text-align: left;
+}
+.form__elem__help-text__right {
+  //float: right;
+  text-align: right;
+}
 .form__elem__error-text {
   font-size: 12px;
   font-weight: 700;
@@ -207,8 +220,16 @@
     box-shadow: none;
     text-shadow: none;
   }
-
 }
+
+.elem__table {
+  display: table;
+  width: 100%;
+}
+.elem__table__cell {
+  display: table-cell;
+}
+
 
 @media (max-width: 767px) {
   .sff-form__content-body {

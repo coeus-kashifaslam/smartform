@@ -1,0 +1,37 @@
+<!--Ranking Scale Default-->
+<article class="form__elem">
+    <div class="elem__rating elem__ranking-scale__layout-default">
+        <h3 class="form__elem__title">Ranking Scale Default</h3>
+        <div class="form__elem__body">
+            <div class="form__elem__help-text__multiple">
+                <p class="form__elem__help-text form__elem__help-text__left">Help Text Left</p>
+                <p class="form__elem__help-text form__elem__help-text__right">Help Text Right</p>
+                <div class="clearfix"></div>
+            </div>
+            <div class="ranking__container">
+                <ul class="ranking__list list-unstyled ranking__list__default elem__table rating-comp__icons-list rating-comp__selection-type__continuous">
+
+                    {% set rankingText = [
+                        {text: 0},
+                        {text: 1},
+                        {text: 2},
+                        {text: 3},
+                        {text: 4},
+                        {text: 5},
+                        {text: 6},
+                        {text: 7},
+                        {text: 8},
+                        {text: 9},
+                        {text: 10}
+                    ] %}
+                    {% for rankText in rankingText %}
+                    <li class="ranking__list__item elem__table__cell">
+                        <p class="ranking__list__item__label">{{rankText.text}}</p>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</article>
+<!--Ranking Scale Default-->
