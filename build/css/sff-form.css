@@ -12326,7 +12326,7 @@ body {
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
 .wizard__breadcrumb-list > li.active .bubble__number, .wizard__breadcrumb-list > li.completed .bubble__number {
-    border: 7px solid #0af;
+    border: 7px solid #2da137;
     border-radius: 50%;
     color: transparent;
     background: transparent;
@@ -12340,7 +12340,7 @@ body {
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
 .wizard__breadcrumb-list > li.completed .bubble__number {
-    background: #0af;
+    background: #2da137;
     width: 28px;
     height: 28px;
     border: 0 none !important;
@@ -12816,7 +12816,7 @@ body {
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
 .rating-comp__icon-single {
-    color: #bdbdbd;
+    color: #dfdae0;
     font-size: 37px;
     line-height: 1;
     cursor: pointer;
@@ -12824,7 +12824,7 @@ body {
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
 .rating-comp__selection-type__continuous .rating-comp__hover .rating-comp__icon-single, .rating-comp__selection-type__continuous .rating-comp__selected .rating-comp__icon-single {
-    color: #fee923;
+    color: #2da137;
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
@@ -12834,7 +12834,7 @@ body {
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
 .rating-comp__selection-type__single .rating-comp__selected .rating-comp__icon-single {
-    color: #fee923;
+    color: #2da137;
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
@@ -13000,6 +13000,23 @@ body {
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
+.elem__table {
+    display: table;
+    width: 100%;
+}
+
+/* line 13, H:/Projects/smartform/build/css/sff-form.css */
+.elem__table__row {
+    display: table-row;
+    width: 100%;
+}
+
+/* line 13, H:/Projects/smartform/build/css/sff-form.css */
+.elem__table__cell {
+    display: table-cell;
+}
+
+/* line 13, H:/Projects/smartform/build/css/sff-form.css */
 .elem__ranking-scale__layout-grid .ranking__container {
     overflow: hidden;
 }
@@ -13011,7 +13028,7 @@ body {
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
-.ranking__list__grid .ranking__list__item {
+.ranking__list__grid .ranking__list__item, .ranking__list__grid .ranking__list__item__label-cell {
     text-align: center;
     padding: 10px 5px;
     vertical-align: middle;
@@ -13019,21 +13036,35 @@ body {
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
-.ranking__list__grid .ranking__list__item input[type=radio], .ranking__list__grid .ranking__list__item .ranking__list__item__label {
+.ranking__list__grid .ranking__list__item input[type=radio], .ranking__list__grid .ranking__list__item__label-cell input[type=radio] {
     display: none;
     margin: 0;
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
-.ranking__list__grid .ranking__list__item .ranking__list__item__icon {
+.ranking__list__grid .ranking__list__item .ranking__list__item__icon, .ranking__list__grid .ranking__list__item__label-cell .ranking__list__item__icon {
     font-size: 33px;
     cursor: pointer;
     color: #dfdae0;
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
-.ranking__list__grid .ranking__list__item + .ranking__list__item {
+.ranking__list__grid .ranking__list__item + .ranking__list__item, .ranking__list__grid .ranking__list__item__label-cell + .ranking__list__item {
     width: 120px;
+}
+
+/* line 13, H:/Projects/smartform/build/css/sff-form.css */
+.ranking__list__grid .ranking__list__item .ranking__list__item__label {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -17px;
+    margin-top: -17px;
+    width: 34px;
+    height: 34px;
+    text-indent: -999px;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
@@ -13051,6 +13082,14 @@ body {
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
 .ranking__list__grid.ranking__list__grid__tooltip-row .ranking__list__item__label {
     display: block;
+    text-indent: initial;
+    width: auto;
+    height: auto;
+    margin: 0;
+    position: relative;
+    left: auto;
+    top: auto;
+    cursor: default;
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
@@ -14629,12 +14668,12 @@ body {
         border-bottom: 1px solid #dfdae0;
     }
     /* line 13, H:/Projects/smartform/build/css/sff-form.css */
-    .ranking__list__grid .ranking__list__item {
+    .ranking__list__grid .ranking__list__item, .ranking__list__grid .ranking__list__item__label-cell {
         text-align: left;
         border-bottom: 0 none;
     }
     /* line 13, H:/Projects/smartform/build/css/sff-form.css */
-    .ranking__list__grid .ranking__list__item + .ranking__list__item {
+    .ranking__list__grid .ranking__list__item + .ranking__list__item, .ranking__list__grid .ranking__list__item__label-cell + .ranking__list__item {
         padding-left: 0;
         width: 48%;
         display: inline-block;
@@ -14642,13 +14681,24 @@ body {
         overflow: hidden;
     }
     /* line 13, H:/Projects/smartform/build/css/sff-form.css */
-    .ranking__list__grid .ranking__list__item .ranking__list__item__label {
+    .ranking__list__grid .ranking__list__item .ranking__list__item__label, .ranking__list__grid .ranking__list__item__label-cell .ranking__list__item__label {
         margin-left: 5px;
     }
     /* line 13, H:/Projects/smartform/build/css/sff-form.css */
-    .ranking__list__grid .ranking__list__item .ranking__list__item__icon, .ranking__list__grid .ranking__list__item .ranking__list__item__label {
+    .ranking__list__grid .ranking__list__item .ranking__list__item__icon, .ranking__list__grid .ranking__list__item .ranking__list__item__label, .ranking__list__grid .ranking__list__item__label-cell .ranking__list__item__icon, .ranking__list__grid .ranking__list__item__label-cell .ranking__list__item__label {
         display: inline-block;
         vertical-align: middle;
+    }
+    /* line 13, H:/Projects/smartform/build/css/sff-form.css */
+    .ranking__list__grid .ranking__list__item .ranking__list__item__label {
+        display: inline-block;
+        text-indent: initial;
+        width: auto;
+        height: auto;
+        margin: 0;
+        position: relative;
+        left: auto;
+        top: auto;
     }
     /* line 13, H:/Projects/smartform/build/css/sff-form.css */
     .ranking__list__grid .ranking__list__item__label-cell {

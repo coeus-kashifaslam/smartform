@@ -1,8 +1,17 @@
 $row-border: $default-border-color;
 $circle-clr: $default-border-color;
 $circle-selected-clr: $default-theme;
-
-
+.elem__table {
+  display: table;
+  width: 100%;
+}
+.elem__table__row {
+  display: table-row;
+  width: 100%;
+}
+.elem__table__cell {
+  display: table-cell;
+}
 .elem__ranking-scale__layout-grid {
   .ranking__container {
     overflow: hidden;
@@ -11,13 +20,13 @@ $circle-selected-clr: $default-theme;
 .ranking__list__grid {
   display: table-row;
   width: 100%;
-  .ranking__list__item {
+  .ranking__list__item,
+  .ranking__list__item__label-cell {
     text-align: center;
     padding: 10px 5px;
     vertical-align: middle;
     border-bottom: 1px solid $row-border;
-    input[type='radio'],
-    .ranking__list__item__label {
+    input[type='radio'] {
       display: none;
       margin: 0;
     }
@@ -28,6 +37,20 @@ $circle-selected-clr: $default-theme;
     }
     + .ranking__list__item {
       width: 120px;
+    }
+  }
+  .ranking__list__item {
+    .ranking__list__item__label {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -17px;
+      margin-top: -17px;
+      width: 34px;
+      height: 34px;
+      text-indent: -999px;
+      overflow: hidden;
+      cursor: pointer;
     }
   }
   .ranking__list__item__label-cell {
@@ -41,6 +64,14 @@ $circle-selected-clr: $default-theme;
   &.ranking__list__grid__tooltip-row {
     .ranking__list__item__label {
       display: block;
+      text-indent: initial;
+      width: auto;
+      height: auto;
+      margin: 0;
+      position: relative;
+      left: auto;
+      top: auto;
+      cursor: default;
     }
   }
   &.rating-comp__selection-type__continuous {
@@ -75,7 +106,6 @@ $circle-selected-clr: $default-theme;
     }
   }
 }
-
 @media (max-width: 767px) {
   .elem__ranking-scale__layout-grid {
     margin-left: -15px;
@@ -89,12 +119,12 @@ $circle-selected-clr: $default-theme;
       padding-left: 15px;
       padding-right: 15px;
     }
-
   }
   .ranking__list__grid {
     display: block;
     border-bottom: 1px solid $row-border;
-    .ranking__list__item {
+    .ranking__list__item,
+    .ranking__list__item__label-cell {
       text-align: left;
       border-bottom: 0 none;
       + .ranking__list__item {
@@ -111,6 +141,18 @@ $circle-selected-clr: $default-theme;
       .ranking__list__item__label {
         display: inline-block;
         vertical-align: middle;
+      }
+    }
+    .ranking__list__item {
+      .ranking__list__item__label {
+        display: inline-block;
+        text-indent: initial;
+        width: auto;
+        height: auto;
+        margin: 0;
+        position: relative;
+        left: auto;
+        top: auto;
       }
     }
     .ranking__list__item__label-cell {

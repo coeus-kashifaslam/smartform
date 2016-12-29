@@ -29,7 +29,7 @@
                         {% else %}
                             <ul class="ranking__list list-unstyled ranking__list__grid elem__table__row rating-comp__icons-list rating-comp__selection-type__continuous">
                                 <li class="ranking__list__item elem__table__cell ranking__list__item__label-cell">
-                                    <label class="ranking__list__item__label-content">Lorem Ipsum</label>
+                                    <p class="ranking__list__item__label-content">Lorem Ipsum</p>
                                 </li>
                                 {% set rankingText = [
                                 {text: "Item 0 sdfasfafds asfd asf afsdasdf a"},
@@ -42,7 +42,7 @@
                                 <li class="ranking__list__item elem__table__cell">
                                     <input type="radio" name="some__name" value="some__value">
                                     <i class="ranking__list__item__icon ico ico-star"></i>
-                                    <p class="ranking__list__item__label">{{rankText.text}}</p>
+                                    <label class="ranking__list__item__label">{{rankText.text}}</label>
                                 </li>
                                 {% endfor %}
                             </ul>

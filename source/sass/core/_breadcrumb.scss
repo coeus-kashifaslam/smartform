@@ -153,7 +153,7 @@
         color: transparent;
       }
       .bubble__number {
-        border: 7px solid $breadcrumb-color;
+        border: 7px solid $default-theme;
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         border-radius: 50%;
@@ -171,7 +171,7 @@
     //Completed Step Styles
     &.completed {
       .bubble__number {
-        background: $breadcrumb-color;
+        background: $default-theme;
         width: 28px;
         height: 28px;
         border: 0 none !important;
