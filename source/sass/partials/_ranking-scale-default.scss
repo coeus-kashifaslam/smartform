@@ -16,6 +16,9 @@ $text-color: $default-theme;
       padding-top: 6px;
       display: inline-block;
       vertical-align: middle;
+      .icomoon-sudo {
+        display: none;
+      }
     }
   }
 }
@@ -29,6 +32,12 @@ $text-color: $default-theme;
   .rating-comp__selected {
     .ranking__list__item__label {
       @extend %rating-comp__selection-type__sudo;
+      .icomoon-sudo {
+        display: inline-block;
+      }
+      .icomoon-default {
+        display: none;
+      }
     }
   }
 }
@@ -37,6 +46,12 @@ $text-color: $default-theme;
   .rating-comp__hover {
     .ranking__list__item__label {
       @extend %rating-comp__selection-type__sudo;
+      .icomoon-sudo {
+        display: inline-block;
+      }
+      .icomoon-default {
+        display: none;
+      }
     }
   }
 }

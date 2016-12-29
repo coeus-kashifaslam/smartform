@@ -38,6 +38,10 @@ $circle-selected-clr: $default-theme;
     + .ranking__list__item {
       width: 120px;
     }
+    .icomoon-sudo {
+      display: none;
+    }
+
   }
   .ranking__list__item {
     .ranking__list__item__label {
@@ -87,6 +91,12 @@ $circle-selected-clr: $default-theme;
           border: 0 none;
           font-weight: normal;
         }
+        .icomoon-sudo {
+          display: inline-block;
+        }
+        .icomoon-default {
+          display: none;
+        }
       }
     }
   }
@@ -102,10 +112,17 @@ $circle-selected-clr: $default-theme;
           border: 0 none;
           font-weight: normal;
         }
+        .icomoon-sudo {
+          display: inline-block;
+        }
+        .icomoon-default {
+          display: none;
+        }
       }
     }
   }
 }
+
 @media (max-width: 767px) {
   .elem__ranking-scale__layout-grid {
     margin-left: -15px;

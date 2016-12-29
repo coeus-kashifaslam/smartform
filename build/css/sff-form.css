@@ -10881,12 +10881,12 @@ select.bs-select-hidden, select.selectpicker {
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
-.ico-eight:before {
+.ico-8:before {
     content: "\e908";
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
-.ico-eight-selected:before {
+.ico-8-selected:before {
     content: "\e909";
 }
 
@@ -10896,22 +10896,22 @@ select.bs-select-hidden, select.selectpicker {
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
-.ico-five:before {
+.ico-5:before {
     content: "\e90b";
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
-.ico-five-selected:before {
+.ico-5-selected:before {
     content: "\e90c";
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
-.ico-four:before {
+.ico-4:before {
     content: "\e90d";
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
-.ico-four-selected:before {
+.ico-4-selected:before {
     content: "\e90e";
 }
 
@@ -10946,22 +10946,22 @@ select.bs-select-hidden, select.selectpicker {
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
-.ico-nine:before {
+.ico-9:before {
     content: "\e915";
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
-.ico-nine-selected:before {
+.ico-9-selected:before {
     content: "\e916";
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
-.ico-one:before {
+.ico-1:before {
     content: "\e917";
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
-.ico-one-selected:before {
+.ico-1-selected:before {
     content: "\e918";
 }
 
@@ -10986,22 +10986,22 @@ select.bs-select-hidden, select.selectpicker {
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
-.ico-seven:before {
+.ico-7:before {
     content: "\e91d";
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
-.ico-seven-selected:before {
+.ico-7-selected:before {
     content: "\e91e";
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
-.ico-six:before {
+.ico-6:before {
     content: "\e91f";
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
-.ico-six-selected:before {
+.ico-6-selected:before {
     content: "\e920";
 }
 
@@ -11056,22 +11056,22 @@ select.bs-select-hidden, select.selectpicker {
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
-.ico-ten:before {
+.ico-10:before {
     content: "\e92b";
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
-.ico-ten-selected:before {
+.ico-10-selected:before {
     content: "\e92c";
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
-.ico-three:before {
+.ico-3:before {
     content: "\e92d";
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
-.ico-three-selected:before {
+.ico-3-selected:before {
     content: "\e92e";
 }
 
@@ -11101,22 +11101,22 @@ select.bs-select-hidden, select.selectpicker {
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
-.ico-two:before {
+.ico-2:before {
     content: "\e934";
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
-.ico-two-selected:before {
+.ico-2-selected:before {
     content: "\e935";
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
-.ico-zero:before {
+.ico-0:before {
     content: "\e936";
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
-.ico-zero-selected:before {
+.ico-0-selected:before {
     content: "\e937";
 }
 
@@ -12364,8 +12364,33 @@ body {
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
+.ranking__list__default .ranking__list__item .ranking__list__item__label .icomoon-sudo {
+    display: none;
+}
+
+/* line 13, H:/Projects/smartform/build/css/sff-form.css */
 .rating-comp__selection-type__single .rating-comp__selected .ranking__list__item__label, .rating-comp__selection-type__continuous .rating-comp__selected .ranking__list__item__label, .rating-comp__selection-type__continuous .rating-comp__hover .ranking__list__item__label {
     color: #2da137;
+}
+
+/* line 13, H:/Projects/smartform/build/css/sff-form.css */
+.rating-comp__selection-type__single .rating-comp__selected .ranking__list__item__label .icomoon-sudo {
+    display: inline-block;
+}
+
+/* line 13, H:/Projects/smartform/build/css/sff-form.css */
+.rating-comp__selection-type__single .rating-comp__selected .ranking__list__item__label .icomoon-default {
+    display: none;
+}
+
+/* line 13, H:/Projects/smartform/build/css/sff-form.css */
+.rating-comp__selection-type__continuous .rating-comp__selected .ranking__list__item__label .icomoon-sudo, .rating-comp__selection-type__continuous .rating-comp__hover .ranking__list__item__label .icomoon-sudo {
+    display: inline-block;
+}
+
+/* line 13, H:/Projects/smartform/build/css/sff-form.css */
+.rating-comp__selection-type__continuous .rating-comp__selected .ranking__list__item__label .icomoon-default, .rating-comp__selection-type__continuous .rating-comp__hover .ranking__list__item__label .icomoon-default {
+    display: none;
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
@@ -12423,6 +12448,11 @@ body {
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
+.ranking__list__grid .ranking__list__item .icomoon-sudo, .ranking__list__grid .ranking__list__item__label-cell .icomoon-sudo {
+    display: none;
+}
+
+/* line 13, H:/Projects/smartform/build/css/sff-form.css */
 .ranking__list__grid .ranking__list__item .ranking__list__item__label {
     position: absolute;
     left: 50%;
@@ -12475,6 +12505,16 @@ body {
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
+.ranking__list__grid.rating-comp__selection-type__continuous .ranking__list__item.rating-comp__hover .icomoon-sudo, .ranking__list__grid.rating-comp__selection-type__continuous .ranking__list__item.rating-comp__selected .icomoon-sudo {
+    display: inline-block;
+}
+
+/* line 13, H:/Projects/smartform/build/css/sff-form.css */
+.ranking__list__grid.rating-comp__selection-type__continuous .ranking__list__item.rating-comp__hover .icomoon-default, .ranking__list__grid.rating-comp__selection-type__continuous .ranking__list__item.rating-comp__selected .icomoon-default {
+    display: none;
+}
+
+/* line 13, H:/Projects/smartform/build/css/sff-form.css */
 .ranking__list__grid.rating-comp__selection-type__single .ranking__list__item.rating-comp__selected .ranking__list__item__icon {
     color: #2da137;
 }
@@ -12485,6 +12525,16 @@ body {
     color: inherit;
     border: 0 none;
     font-weight: 400;
+}
+
+/* line 13, H:/Projects/smartform/build/css/sff-form.css */
+.ranking__list__grid.rating-comp__selection-type__single .ranking__list__item.rating-comp__selected .icomoon-sudo {
+    display: inline-block;
+}
+
+/* line 13, H:/Projects/smartform/build/css/sff-form.css */
+.ranking__list__grid.rating-comp__selection-type__single .ranking__list__item.rating-comp__selected .icomoon-default {
+    display: none;
 }
 
 @media print {
