@@ -11145,6 +11145,11 @@ body {
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
+body {
+    overflow-x: hidden;
+}
+
+/* line 13, H:/Projects/smartform/build/css/sff-form.css */
 .sff-form__body {
     max-width: 960px;
     background: #fff;

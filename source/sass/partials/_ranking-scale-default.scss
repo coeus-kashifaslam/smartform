@@ -1,4 +1,6 @@
-$ranking-circle-color: #909090;
+$border-color: $default-border-color;
+$text-color: $default-theme;
+
 .ranking__list__default {
   .ranking__list__item {
     width: 10%;
@@ -8,7 +10,7 @@ $ranking-circle-color: #909090;
     .ranking__list__item__label {
       cursor: pointer;
       font-size: 33px;
-      color: $default-border-color;
+      color: $border-color;
       line-height: 1;
       text-align: center;
       padding-top: 6px;
@@ -20,7 +22,7 @@ $ranking-circle-color: #909090;
 
 
 %rating-comp__selection-type__sudo {
-  color: $default-theme;
+  color: $text-color;
 }
 
 .rating-comp__selection-type__single {
