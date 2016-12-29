@@ -1,570 +1,169 @@
-.ico-amused-face:before {
+.ico-circle:before {
   content: "\e900";
 }
-.ico-amused-face-closed-eyes:before {
+.ico-circle-selected:before {
   content: "\e901";
 }
-.ico-amused-face-closed-eyes2:before {
+.ico-comment:before {
   content: "\e902";
 }
-.ico-amused-face-closed-eyes2-selected:before {
+.ico-comments:before {
   content: "\e903";
 }
-.ico-amused-face-closed-eyes-selected:before {
+.ico-comment-selected:before {
   content: "\e904";
 }
-.ico-amused-face-selected:before {
+.ico-comments-selected:before {
   content: "\e905";
 }
-.ico-angry:before {
-  content: "\e906";
-}
-.ico-angry-face:before {
+.ico-down:before {
   content: "\e907";
 }
-.ico-angry-face-eyebrows:before {
+.ico-down-selected:before {
+  content: "\e906";
+}
+.ico-eight:before {
   content: "\e908";
 }
-.ico-angry-face-eyebrows-selected:before {
+.ico-eight-selected:before {
   content: "\e909";
 }
-.ico-angry-face-open-mouth-eyebrows:before {
+.ico-exclamation:before {
   content: "\e90a";
 }
-.ico-angry-face-open-mouth-eyebrows-selected:before {
+.ico-five:before {
   content: "\e90b";
 }
-.ico-angry-face-selected:before {
+.ico-five-selected:before {
   content: "\e90c";
 }
-.ico-angry-face-teeth:before {
+.ico-four:before {
   content: "\e90d";
 }
-.ico-angry-face-teeth-selected:before {
+.ico-four-selected:before {
   content: "\e90e";
 }
-.ico-angry-selected:before {
-  content: "\e90f";
-}
-.ico-astonished-face:before {
+.ico-happy:before {
   content: "\e910";
 }
-.ico-astonished-face2:before {
-  content: "\e911";
-}
-.ico-astonished-face2-selected:before {
-  content: "\e912";
-}
-.ico-astonished-face-selected:before {
-  content: "\e913";
-}
-.ico-baffled:before {
-  content: "\e914";
-}
-.ico-baffled-selected:before {
-  content: "\e915";
-}
-.ico-circle:before {
-  content: "\e917";
-}
-.ico-circle-selected:before {
-  content: "\e918";
-}
-.ico-comment:before {
-  content: "\e91a";
-}
-.ico-comments:before {
-  content: "\e91b";
-}
-.ico-comment-selected:before {
-  content: "\e91c";
-}
-.ico-comments-selected:before {
-  content: "\e91d";
-}
-.ico-confused:before {
-  content: "\e91e";
-}
-.ico-confused-selected:before {
-  content: "\e91f";
-}
-.ico-cool:before {
-  content: "\e920";
-}
-.ico-cool-selected:before {
-  content: "\e921";
-}
-.ico-crying:before {
-  content: "\e922";
-}
-.ico-crying-selected:before {
-  content: "\e923";
-}
-.ico-evil:before {
-  content: "\e924";
-}
-.ico-evil-selected:before {
-  content: "\e925";
-}
-.ico-exclamation:before {
-  content: "\e926";
-}
-.ico-face-closed-eyes-open-mouth:before {
-  content: "\e927";
-}
-.ico-face-closed-eyes-open-mouth2:before {
-  content: "\e928";
-}
-.ico-face-closed-eyes-open-mouth2-selected:before {
-  content: "\e929";
-}
-.ico-face-closed-eyes-open-mouth3:before {
-  content: "\e92a";
-}
-.ico-face-closed-eyes-open-mouth3-selected:before {
-  content: "\e92b";
-}
-.ico-face-closed-eyes-open-mouth-selected:before {
-  content: "\e92c";
-}
-.ico-face-closed-meyes:before {
-  content: "\e92d";
-}
-.ico-face-closed-meyes-selected:before {
-  content: "\e92e";
-}
-.ico-face-glasses:before {
-  content: "\e92f";
-}
-.ico-face-glasses-selected:before {
-  content: "\e930";
-}
-.ico-face-missing-moth:before {
-  content: "\e931";
-}
-.ico-face-missing-moth-selected:before {
-  content: "\e932";
-}
-.ico-face-moustache:before {
-  content: "\e933";
-}
-.ico-face-moustache2:before {
-  content: "\e934";
-}
-.ico-face-moustache2-selected:before {
-  content: "\e935";
-}
-.ico-face-moustache-selected:before {
-  content: "\e936";
-}
-.ico-face-open-mouth:before {
-  content: "\e937";
-}
-.ico-face-open-mouth2:before {
-  content: "\e938";
-}
-.ico-face-open-mouth2-selected:before {
-  content: "\e939";
-}
-.ico-face-open-mouth-eyebrows:before {
-  content: "\e93a";
-}
-.ico-face-open-mouth-eyebrows2:before {
-  content: "\e93b";
-}
-.ico-face-open-mouth-eyebrows2-selected:before {
-  content: "\e93c";
-}
-.ico-face-open-mouth-eyebrows-selected:before {
-  content: "\e93d";
-}
-.ico-face-open-mouth-selected:before {
-  content: "\e93e";
-}
-.ico-face-stuck-out-tongue:before {
-  content: "\e93f";
-}
-.ico-face-stuck-out-tongue2:before {
-  content: "\e940";
-}
-.ico-face-stuck-out-tongue2-selected:before {
-  content: "\e941";
-}
-.ico-face-stuck-out-tongue-selected:before {
-  content: "\e942";
-}
-.ico-face-sunglasses:before {
-  content: "\e943";
-}
-.ico-face-sunglasses-selected:before {
-  content: "\e944";
-}
-.ico-fake-grinning-face-eyebrows:before {
-  content: "\e945";
-}
-.ico-fake-grinning-face-eyebrows-selected:before {
-  content: "\e946";
-}
-.ico-flashed-face:before {
-  content: "\e947";
-}
-.ico-flashed-face2:before {
-  content: "\e948";
-}
-.ico-flashed-face2-selected:before {
-  content: "\e949";
-}
-.ico-flashed-face-glasses:before {
-  content: "\e94a";
-}
-.ico-flashed-face-glasses-selected:before {
-  content: "\e94b";
-}
-.ico-flashed-face-selected:before {
-  content: "\e94c";
-}
-.ico-frustrated:before {
-  content: "\e94d";
-}
-.ico-frustrated-selected:before {
-  content: "\e94e";
-}
-.ico-grin:before {
-  content: "\e94f";
-}
-.ico-grinning-face:before {
-  content: "\e950";
-}
-.ico-grinning-face2:before {
-  content: "\e951";
-}
-.ico-grinning-face2-selected:before {
-  content: "\e952";
-}
-.ico-grinning-face-eyebrows:before {
-  content: "\e953";
-}
-.ico-grinning-face-eyebrows2:before {
-  content: "\e954";
-}
-.ico-grinning-face-eyebrows2-selected:before {
-  content: "\e955";
-}
-.ico-grinning-face-eyebrows-selected:before {
-  content: "\e956";
-}
-.ico-grinning-face-selected:before {
-  content: "\e957";
-}
-.ico-grinning-face-teeth:before {
-  content: "\e958";
-}
-.ico-grinning-face-teeth2:before {
-  content: "\e959";
-}
-.ico-grinning-face-teeth2-selected:before {
-  content: "\e95a";
-}
-.ico-grinning-face-teeth-selected:before {
-  content: "\e95b";
-}
-.ico-grin-selected:before {
-  content: "\e95c";
-}
-.ico-happy:before {
-  content: "\e95d";
-}
 .ico-happy-selected:before {
-  content: "\e95e";
+  content: "\e90f";
 }
 .ico-heart:before {
-  content: "\e95f";
+  content: "\e911";
 }
 .ico-heart-selected:before {
-  content: "\e960";
-}
-.ico-hipster:before {
-  content: "\e961";
-}
-.ico-hipster-selected:before {
-  content: "\e962";
-}
-.ico-kissing-face:before {
-  content: "\e963";
-}
-.ico-kissing-face2:before {
-  content: "\e964";
-}
-.ico-kissing-face2-selected:before {
-  content: "\e965";
-}
-.ico-kissing-face-selected:before {
-  content: "\e966";
-}
-.ico-laughing-face:before {
-  content: "\e967";
-}
-.ico-laughing-face2:before {
-  content: "\e968";
-}
-.ico-laughing-face2-selected:before {
-  content: "\e969";
-}
-.ico-laughing-face3:before {
-  content: "\e96a";
-}
-.ico-laughing-face3-selected:before {
-  content: "\e96b";
-}
-.ico-laughing-face-selected:before {
-  content: "\e96c";
+  content: "\e912";
 }
 .ico-mail-envelope-closed:before {
-  content: "\e96d";
+  content: "\e913";
 }
 .ico-mail-envelope-closed-selected:before {
-  content: "\e96e";
+  content: "\e914";
 }
-.ico-neutral:before {
-  content: "\e96f";
+.ico-nine:before {
+  content: "\e915";
 }
-.ico-neutral-face:before {
-  content: "\e970";
+.ico-nine-selected:before {
+  content: "\e916";
 }
-.ico-neutral-face2:before {
-  content: "\e971";
+.ico-one:before {
+  content: "\e917";
 }
-.ico-neutral-face2-selected:before {
-  content: "\e972";
-}
-.ico-neutral-face-eyebrows:before {
-  content: "\e973";
-}
-.ico-neutral-face-eyebrows-selected:before {
-  content: "\e974";
-}
-.ico-neutral-face-selected:before {
-  content: "\e975";
-}
-.ico-neutral-selected:before {
-  content: "\e976";
+.ico-one-selected:before {
+  content: "\e918";
 }
 .ico-sad:before {
-  content: "\e977";
-}
-.ico-sad-face:before {
-  content: "\e978";
-}
-.ico-sad-face2:before {
-  content: "\e979";
-}
-.ico-sad-face2-selected:before {
-  content: "\e97a";
-}
-.ico-sad-face3:before {
-  content: "\e97b";
-}
-.ico-sad-face3-selected:before {
-  content: "\e97c";
-}
-.ico-sad-face4:before {
-  content: "\e97d";
-}
-.ico-sad-face4-selected:before {
-  content: "\e97e";
-}
-.ico-sad-face5:before {
-  content: "\e97f";
-}
-.ico-sad-face5-selected:before {
-  content: "\e980";
-}
-.ico-sad-face6:before {
-  content: "\e981";
-}
-.ico-sad-face6-selected:before {
-  content: "\e982";
-}
-.ico-sad-face-closed-eyes:before {
-  content: "\e983";
-}
-.ico-sad-face-closed-eyes-selected:before {
-  content: "\e984";
-}
-.ico-sad-face-eyebrows:before {
-  content: "\e985";
-}
-.ico-sad-face-eyebrows-selected:before {
-  content: "\e986";
-}
-.ico-sad-face-selected:before {
-  content: "\e987";
-}
-.ico-sad-face--tightly-closed-eyes:before {
-  content: "\e988";
-}
-.ico-sad-face--tightly-closed-eyes-selected:before {
-  content: "\e989";
+  content: "\e91a";
 }
 .ico-sad-selected:before {
-  content: "\e98a";
+  content: "\e919";
 }
-.ico-shocked:before {
-  content: "\e98b";
+.ico-serious:before {
+  content: "\e91c";
 }
-.ico-shocked-selected:before {
-  content: "\e98c";
+.ico-serious-selected:before {
+  content: "\e91b";
 }
-.ico-sleepy:before {
-  content: "\e98d";
+.ico-seven:before {
+  content: "\e91d";
 }
-.ico-sleepy-selected:before {
-  content: "\e98e";
+.ico-seven-selected:before {
+  content: "\e91e";
+}
+.ico-six:before {
+  content: "\e91f";
+}
+.ico-six-selected:before {
+  content: "\e920";
 }
 .ico-smile:before {
-  content: "\e98f";
+  content: "\e922";
 }
 .ico-smile-selected:before {
-  content: "\e990";
-}
-.ico-smiling-face:before {
-  content: "\e991";
-}
-.ico-smiling-face2:before {
-  content: "\e992";
-}
-.ico-smiling-face2-selected:before {
-  content: "\e993";
-}
-.ico-smiling-face3:before {
-  content: "\e994";
-}
-.ico-smiling-face3-selected:before {
-  content: "\e995";
-}
-.ico-smiling-face4:before {
-  content: "\e996";
-}
-.ico-smiling-face4-selected:before {
-  content: "\e997";
-}
-.ico-smiling-face-eyebrows:before {
-  content: "\e998";
-}
-.ico-smiling-face-eyebrows-selected:before {
-  content: "\e999";
-}
-.ico-smiling-face-selected:before {
-  content: "\e99a";
-}
-.ico-smirking-face:before {
-  content: "\e99b";
-}
-.ico-smirking-face-selected:before {
-  content: "\e99c";
-}
-.ico-smirking-face-sunglasses:before {
-  content: "\e99d";
-}
-.ico-smirking-face-sunglasses-selected:before {
-  content: "\e99e";
+  content: "\e921";
 }
 .ico-square:before {
-  content: "\e99f";
+  content: "\e923";
 }
 .ico-square-selected:before {
-  content: "\e9a0";
+  content: "\e924";
 }
 .ico-star:before {
-  content: "\e9a1";
+  content: "\e925";
 }
 .ico-starburst:before {
-  content: "\e9a2";
+  content: "\e926";
 }
 .ico-starburst-selected:before {
-  content: "\e9a3";
+  content: "\e927";
 }
 .ico-star-selected:before {
-  content: "\e9a4";
-}
-.ico-stubborn-face:before {
-  content: "\e9a5";
-}
-.ico-stubborn-face-selected:before {
-  content: "\e9a6";
+  content: "\e928";
 }
 .ico-target:before {
-  content: "\e9a7";
+  content: "\e929";
 }
 .ico-target-selected:before {
-  content: "\e9a8";
+  content: "\e92a";
+}
+.ico-ten:before {
+  content: "\e92b";
+}
+.ico-ten-selected:before {
+  content: "\e92c";
+}
+.ico-three:before {
+  content: "\e92d";
+}
+.ico-three-selected:before {
+  content: "\e92e";
 }
 .ico-thumbs-down:before {
-  content: "\e9a9";
+  content: "\e92f";
 }
 .ico-thumbs-down-selected:before {
-  content: "\e9aa";
+  content: "\e930";
 }
 .ico-thumbs-up:before {
-  content: "\e9ab";
+  content: "\e931";
 }
 .ico-thumbs-up-selected:before {
-  content: "\e9ac";
+  content: "\e932";
 }
 .ico-tick:before {
-  content: "\e9ad";
+  content: "\e933";
 }
-.ico-tongue:before {
-  content: "\e9ae";
+.ico-two:before {
+  content: "\e934";
 }
-.ico-tongue-selected:before {
-  content: "\e9af";
+.ico-two-selected:before {
+  content: "\e935";
 }
-.ico-unamused-face-tightly-closed-eyes:before {
-  content: "\e9b0";
+.ico-zero:before {
+  content: "\e936";
 }
-.ico-unamused-face-tightly-closed-eyes-selected:before {
-  content: "\e9b1";
+.ico-zero-selected:before {
+  content: "\e937";
 }
-.ico-wink:before {
-  content: "\e9b2";
-}
-.ico-winking-face:before {
-  content: "\e9b3";
-}
-.ico-winking-face2:before {
-  content: "\e9b4";
-}
-.ico-winking-face2-selected:before {
-  content: "\e9b5";
-}
-.ico-winking-face-selected:before {
-  content: "\e9b6";
-}
-.ico-wink-selected:before {
-  content: "\e9b7";
-}
-.ico-wondering:before {
-  content: "\e9b8";
-}
-.ico-wondering-selected:before {
-  content: "\e9b9";
-}
-.ico-worried-face:before {
-  content: "\e9ba";
-}
-.ico-worried-face-eyebrows:before {
-  content: "\e9bb";
-}
-.ico-worried-face-eyebrows-selected:before {
-  content: "\e9bc";
-}
-.ico-worried-face-selected:before {
-  content: "\e9bd";
-}
-.ico-worried-face-teeth:before {
-  content: "\e9be";
-}
-.ico-worried-face-teeth-selected:before {
-  content: "\e9bf";
-}
+
