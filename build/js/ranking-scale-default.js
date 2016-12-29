@@ -3,7 +3,6 @@ $(document).ready(function (){
     var ratingContinuous = $('.rating-comp__selection-type__continuous > li label');
     var ratingsingle = $('.rating-comp__selection-type__single > li label');
     var ratingListItem = $('.rating-comp__icons-list > li label');
-
     $(ratingListItem).hover(
         function() {
             var $this = $(this);
@@ -28,15 +27,13 @@ $(document).ready(function (){
         $this.closest(ratingList).find('> li').removeClass('rating-comp__hover rating-comp__hover__current rating-comp__selected');
         $this.parent().addClass('rating-comp__selected');
     });
-
-    $(document).on('click','.rating-comp__selection-type__continuous.rating-comp__selection-type__total > li', function () {
+    $(document).on('click','.rating-comp__selection-type__continuous.rating-comp__selection-type__total > li label', function () {
         var $this = $(this);
         $this.closest(ratingList).find('> li').removeClass('rating-comp__hover rating-comp__hover__current rating-comp__selected');
         $this.parent().addClass('rating-comp__selected');
         $this.parent().prevAll().addClass('rating-comp__selected');
     });
-
-    $(document).on('click', '.rating-comp__selection-type__single.rating-comp__selection-type__total > li' ,function () {
+    $(document).on('click', '.rating-comp__selection-type__single.rating-comp__selection-type__total > li label' ,function () {
         var $this = $(this);
         $this.closest(ratingList).find('> li').removeClass('rating-comp__hover rating-comp__hover__current rating-comp__selected');
         $this.parent().addClass('rating-comp__selected');
