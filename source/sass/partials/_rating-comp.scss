@@ -60,12 +60,21 @@
   font-size: 37px;
   line-height: 1;
   cursor: pointer;
+  .icomoon-sudo {
+    display: none;
+  }
 }
 .rating-comp__selection-type__continuous {
   .rating-comp__hover,
   .rating-comp__selected {
     .rating-comp__icon-single {
       color: $default-theme;
+      .icomoon-sudo {
+        display: inline-block;
+      }
+      .icomoon-default {
+        display: none;
+      }
     }
   }
 }
@@ -76,9 +85,33 @@
   .rating-comp__selected {
     .rating-comp__icon-single {
       color: $default-theme;
+      .icomoon-sudo {
+        display: inline-block;
+      }
+      .icomoon-default {
+        display: none;
+      }
     }
   }
 }
+.rating-comp__selection-type__total {
+  &,
+  &.rating-comp__selection-type__single,
+  &.rating-comp__selection-type__continuous {
+    .rating-comp__selected {
+      .rating-comp__icon-single {
+        color : #fee923;
+        .icomoon-sudo {
+          display: inline-block;
+        }
+        .icomoon-default {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
 
 //Tooltip Styling
 .rating-comp__tooltip {
@@ -90,11 +123,11 @@
 }
 .rating-comp__tooltip-content {
   @extend %default-font-bold;
-  font-size: $default-font-size - 2px;
+  font-size: 14px !important;
   white-space: nowrap;
   padding: 3px 15px 7px 15px;
   margin: 0;
-  line-height: 1.4;
+  line-height: 1;
   background: $tooltip-bg;
   border: 1px solid $default-border-color;
   position: relative;

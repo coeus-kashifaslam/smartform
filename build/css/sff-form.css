@@ -12158,8 +12158,23 @@ body {
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
+.rating-comp__icon-single .icomoon-sudo {
+    display: none;
+}
+
+/* line 13, H:/Projects/smartform/build/css/sff-form.css */
 .rating-comp__selection-type__continuous .rating-comp__hover .rating-comp__icon-single, .rating-comp__selection-type__continuous .rating-comp__selected .rating-comp__icon-single {
     color: #2da137;
+}
+
+/* line 13, H:/Projects/smartform/build/css/sff-form.css */
+.rating-comp__selection-type__continuous .rating-comp__hover .rating-comp__icon-single .icomoon-sudo, .rating-comp__selection-type__continuous .rating-comp__selected .rating-comp__icon-single .icomoon-sudo {
+    display: inline-block;
+}
+
+/* line 13, H:/Projects/smartform/build/css/sff-form.css */
+.rating-comp__selection-type__continuous .rating-comp__hover .rating-comp__icon-single .icomoon-default, .rating-comp__selection-type__continuous .rating-comp__selected .rating-comp__icon-single .icomoon-default {
+    display: none;
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
@@ -12173,6 +12188,31 @@ body {
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
+.rating-comp__selection-type__single .rating-comp__selected .rating-comp__icon-single .icomoon-sudo {
+    display: inline-block;
+}
+
+/* line 13, H:/Projects/smartform/build/css/sff-form.css */
+.rating-comp__selection-type__single .rating-comp__selected .rating-comp__icon-single .icomoon-default {
+    display: none;
+}
+
+/* line 13, H:/Projects/smartform/build/css/sff-form.css */
+.rating-comp__selection-type__total .rating-comp__selected .rating-comp__icon-single, .rating-comp__selection-type__total.rating-comp__selection-type__single .rating-comp__selected .rating-comp__icon-single, .rating-comp__selection-type__total.rating-comp__selection-type__continuous .rating-comp__selected .rating-comp__icon-single {
+    color: #fee923;
+}
+
+/* line 13, H:/Projects/smartform/build/css/sff-form.css */
+.rating-comp__selection-type__total .rating-comp__selected .rating-comp__icon-single .icomoon-sudo, .rating-comp__selection-type__total.rating-comp__selection-type__single .rating-comp__selected .rating-comp__icon-single .icomoon-sudo, .rating-comp__selection-type__total.rating-comp__selection-type__continuous .rating-comp__selected .rating-comp__icon-single .icomoon-sudo {
+    display: inline-block;
+}
+
+/* line 13, H:/Projects/smartform/build/css/sff-form.css */
+.rating-comp__selection-type__total .rating-comp__selected .rating-comp__icon-single .icomoon-default, .rating-comp__selection-type__total.rating-comp__selection-type__single .rating-comp__selected .rating-comp__icon-single .icomoon-default, .rating-comp__selection-type__total.rating-comp__selection-type__continuous .rating-comp__selected .rating-comp__icon-single .icomoon-default {
+    display: none;
+}
+
+/* line 13, H:/Projects/smartform/build/css/sff-form.css */
 .rating-comp__tooltip {
     display: none;
     position: absolute;
@@ -12183,11 +12223,11 @@ body {
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
 .rating-comp__tooltip-content {
-    font-size: 14px;
+    font-size: 14px !important;
     white-space: nowrap;
     padding: 3px 15px 7px;
     margin: 0;
-    line-height: 1.4;
+    line-height: 1;
     background: #ebebeb;
     border: 1px solid #dfdae0;
     position: relative;
