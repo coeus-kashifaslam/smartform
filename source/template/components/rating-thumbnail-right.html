@@ -1,0 +1,31 @@
+<!--Rating Start-->
+<div class="form__elem__rating-thumbnail-right">
+    <article class="form__elem">
+        <div class="elem__rating elem__rating-thumbnail-right__header">
+            <h3 class="form__elem__title">Rating</h3>
+            <p class="form__elem__help-text">Help Text goes here</p>
+        </div>
+    </article>
+    <!--<article class="form__elem rating-left__thumbnail-right">-->
+    <article class="form__elem elem__rating-thumbnail-right__body">
+        <div class="row">
+            <div class="col-sm-6 col-sm-push-6 rating__thumbnail__col">
+                <div class="rating__thumbnail__col__content">
+                    <div class="rating__thumbnail__container">
+                        <img src="images/product.jpg" alt="Product Thumbnail" class="product-thumbnail"></div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-sm-pull-6 rating__icons__col">
+                <div class="rating__icons__col__content">
+                    {% set ratingType = 'total' %}
+                    {% set ratingNumber = 'true' %}
+                    {% set ratingComp = 'ranking' %}
+                    {% include 'template/components/rating-comp.html' %}
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </article>
+</div>
+
+<!--Rating End-->
