@@ -6,9 +6,13 @@
             <p class="form__elem__help-text">Help Text goes here</p>
             <div class="rating__container">
                 <div class="row">
-                    <div class="col-sm-4 elem__rating__thumbnail-container"></div>
+                    <div class="col-sm-4 elem__rating__thumbnail-container">
+                        <div class="elem__rating__left-thumbnail__container">
+                            <img src="images/product.jpg" alt="Left aligned thumbnail in rating" class="elem__rating__left-thumbnail">
+                        </div>
+                    </div>
                     <div class="col-sm-8 elem__rating__icons-container">
-                        {% set ratingNumber = 'true' %}
+                        {% set ratingNumber = 'false' %}
                         {% set ratingComp = 'thumbnailLeft' %}
                         {% include 'template/components/rating-comp.html' %}
                         {% include 'template/components/rating-comp.html' %}
@@ -19,11 +23,17 @@
                     </div>
                     <div class="clearfix"></div>
                 </div>
-
                 <div class="rating-comp__separater"></div>
-                {% set ratingType = 'total' %}
-                {% set ratingNumber = 'true' %}
-                {% include 'template/components/rating-comp.html' %}
+                <div class="row">
+                    <div class="col-sm-4 elem__rating__thumbnail-container empty"></div>
+                    <div class="col-sm-8 elem__rating__icons-container">
+                        {% set ratingType = 'total' %}
+                        {% set ratingNumber = 'true' %}
+                        {% set ratingComp = 'thumbnailLeft' %}
+                        {% include 'template/components/rating-comp.html' %}
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
             </div>
         </div>
     </div>

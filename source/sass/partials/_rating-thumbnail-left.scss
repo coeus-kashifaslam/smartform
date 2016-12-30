@@ -1,0 +1,31 @@
+$thumbail-dimension: 150px;
+.elem__rating__left-thumbnail__container {
+  width: $thumbail-dimension;
+  height: $thumbail-dimension;
+  border: 2px solid $default-border-color;
+  overflow: hidden;
+  text-align: center;
+  padding: 5px;
+  .elem__rating__left-thumbnail {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.elem__rating-thumbnail-left {
+  .rating-comp__separater {
+    height: 2px;
+  }
+}
+
+
+@media (min-width: 767px) and (max-width: 991px) {
+  .elem__rating-thumbnail-left {
+    .rating-comp__col-icons {
+      padding-left: 0;
+    }
+  }
+
+}

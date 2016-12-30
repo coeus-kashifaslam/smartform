@@ -12609,6 +12609,31 @@ body {
     font-size: 35px;
 }
 
+/* line 13, H:/Projects/smartform/build/css/sff-form.css */
+.elem__rating__left-thumbnail__container {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #dfdae0;
+    overflow: hidden;
+    text-align: center;
+    padding: 5px;
+}
+
+/* line 13, H:/Projects/smartform/build/css/sff-form.css */
+.elem__rating__left-thumbnail__container .elem__rating__left-thumbnail {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/* line 13, H:/Projects/smartform/build/css/sff-form.css */
+.elem__rating-thumbnail-left .rating-comp__separater {
+    height: 2px;
+}
+
 @media print {
     /* line 13, H:/Projects/smartform/build/css/sff-form.css */
     *, *:before, *:after {
@@ -14388,5 +14413,12 @@ body {
     /* line 13, H:/Projects/smartform/build/css/sff-form.css */
     .sff-form__content-wrap {
         padding: 0 15px;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+    /* line 13, H:/Projects/smartform/build/css/sff-form.css */
+    .elem__rating-thumbnail-left .rating-comp__col-icons {
+        padding-left: 0;
     }
 }
