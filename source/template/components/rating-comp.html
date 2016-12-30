@@ -5,6 +5,8 @@
 
         {% if ratingComp == 'ranking' %}
         <div class="col-sm-4 rating-comp__col-label">
+        {% elseif ratingComp == 'thumbnailLeft' %}
+        <div class="col-sm-5 rating-comp__col-label">
         {% else %}
         <div class="col-sm-7 rating-comp__col-label">
         {% endif %}
@@ -26,6 +28,8 @@
 
         {% if ratingComp == 'ranking' %}
         <div class="col-sm-8 rating-comp__col-icons">
+        {% elseif ratingComp == 'thumbnailLeft' %}
+        <div class="col-sm-7 rating-comp__col-icons">
         {% else %}
         <div class="col-sm-5 rating-comp__col-icons">
         {% endif %}
