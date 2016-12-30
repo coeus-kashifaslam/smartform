@@ -11246,6 +11246,11 @@ body {
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
+.form-fieldset > .form__elem:last-child {
+    margin-bottom: 0;
+}
+
+/* line 13, H:/Projects/smartform/build/css/sff-form.css */
 .sff-form__content-body {
     border: 1px solid #dfdae0;
     padding: 30px 15px;
@@ -12470,6 +12475,7 @@ body {
     text-indent: -999px;
     overflow: hidden;
     cursor: pointer;
+    font-weight: 400;
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
@@ -12482,6 +12488,7 @@ body {
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
 .ranking__list__grid .ranking__list__item__label-cell .ranking__list__item__label-content {
     margin-bottom: 0;
+    font-weight: 700;
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
@@ -12544,7 +12551,7 @@ body {
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
-.form__elem__rating-thumbnail-right .elem__header .form__elem__help-text {
+.form__elem__rating-thumbnail-right .elem__rating-thumbnail-right__header .form__elem__help-text {
     margin-bottom: 0;
 }
 
@@ -14175,14 +14182,13 @@ body {
     }
     /* line 13, H:/Projects/smartform/build/css/sff-form.css */
     .ranking__list__grid .ranking__list__item .ranking__list__item__label {
-        display: inline-block;
         text-indent: initial;
+        position: absolute;
+        left: 0;
+        top: 58%;
         width: auto;
-        height: auto;
-        margin: 0;
-        position: relative;
-        left: auto;
-        top: auto;
+        min-height: 33px;
+        padding-left: 35px;
     }
     /* line 13, H:/Projects/smartform/build/css/sff-form.css */
     .ranking__list__grid .ranking__list__item__label-cell {
@@ -14336,6 +14342,10 @@ body {
     /* line 13, H:/Projects/smartform/build/css/sff-form.css */
     .hidden-sm {
         display: none !important;
+    }
+    /* line 13, H:/Projects/smartform/build/css/sff-form.css */
+    .elem__rating__full-width .rating-comp__col-icons {
+        padding-left: 0;
     }
 }
 

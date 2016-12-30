@@ -57,6 +57,7 @@ $circle-selected-clr: $default-theme;
       text-indent: -999px;
       overflow: hidden;
       cursor: pointer;
+      font-weight: 400;
     }
   }
   .ranking__list__item__label-cell {
@@ -65,6 +66,7 @@ $circle-selected-clr: $default-theme;
     text-align: left;
     .ranking__list__item__label-content {
       margin-bottom: 0;
+      font-weight: bold;
     }
   }
   &.ranking__list__grid__tooltip-row {
@@ -163,14 +165,22 @@ $circle-selected-clr: $default-theme;
     }
     .ranking__list__item {
       .ranking__list__item__label {
-        display: inline-block;
+        //display: inline-block;
+        //text-indent: initial;
+        //width: auto;
+        //height: auto;
+        //margin: 0;
+        //position: relative;
+        //left: auto;
+        //top: auto;
         text-indent: initial;
+        position: absolute;
+        left: 0;
+        top: 58%;
         width: auto;
-        height: auto;
-        margin: 0;
-        position: relative;
-        left: auto;
-        top: auto;
+        //transform: translateY(-48%);
+        min-height: 33px;
+        padding-left: 35px;
       }
     }
     .ranking__list__item__label-cell {

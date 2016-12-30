@@ -47,6 +47,13 @@
     }
   }
 }
+.form-fieldset {
+  > .form__elem {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
 .sff-form__content-body {
   border: 1px solid $default-border-color;
   padding: 30px 15px;
