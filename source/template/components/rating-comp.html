@@ -12,13 +12,12 @@
         {% endif %}
 
             {% if ratingType == 'total' %}
-
-                {% if ratingComp == 'ranking' %}
+            {% if ratingComp == 'ranking' %}
             <p class="rating-comp__label rating-comp__label__bold">Total: <span class="rating-comp__value-count__calculated">4</span>/<span
                 class="rating-comp__value-count__total">5</span>
-                {% else %}
+            {% else %}
             <p class="rating-comp__label rating-comp__label__bold">Total:</p>
-                {% endif %}
+            {% endif %}
 
             {% else %}
             <p class="rating-comp__label">Rating Quesion Label</p>
@@ -91,72 +90,6 @@
                             <p class="rating-comp__tooltip-content">lorem Ipsum</p>
                         </div>
                     </li>
-
-                    <!--Showing more than 5 elements only in case of ranking scale-->
-                    {% if ratingComp == 'ranking' %}
-                    <!--<li>-->
-                        <!--<input type="radio" name="rating-radio" value="radio1">-->
-                        <!--<label class="rating-comp__icon-single">-->
-                            <!--<i class="icomoon-default ico ico-star"></i>-->
-                            <!--<i class="icomoon-sudo ico ico-star-selected"></i>-->
-                        <!--</label>-->
-                        <!--<div class="rating-comp__tooltip">-->
-                            <!--<p class="rating-comp__tooltip-content">lorem Ipsum</p>-->
-                        <!--</div>-->
-                    <!--</li>-->
-                    <!--<li>-->
-                        <!--<input type="radio" name="rating-radio" value="radio2">-->
-                        <!--<label class="rating-comp__icon-single">-->
-                            <!--<i class="icomoon-default ico ico-star"></i>-->
-                            <!--<i class="icomoon-sudo ico ico-star-selected"></i>-->
-                        <!--</label>-->
-                        <!--<div class="rating-comp__tooltip">-->
-                            <!--<p class="rating-comp__tooltip-content">lorem Ipsum</p>-->
-                        <!--</div>-->
-                    <!--</li>-->
-                    <!--<li>-->
-                        <!--<input type="radio" name="rating-radio" value="radio3">-->
-                        <!--<label class="rating-comp__icon-single">-->
-                            <!--<i class="icomoon-default ico ico-star"></i>-->
-                            <!--<i class="icomoon-sudo ico ico-star-selected"></i>-->
-                        <!--</label>-->
-                        <!--<div class="rating-comp__tooltip">-->
-                            <!--<p class="rating-comp__tooltip-content">lorem Ipsum</p>-->
-                        <!--</div>-->
-                    <!--</li>-->
-                    <!--<li>-->
-                        <!--<input type="radio" name="rating-radio" value="radio4">-->
-                        <!--<label class="rating-comp__icon-single">-->
-                            <!--<i class="icomoon-default ico ico-star"></i>-->
-                            <!--<i class="icomoon-sudo ico ico-star-selected"></i>-->
-                        <!--</label>-->
-                        <!--<div class="rating-comp__tooltip">-->
-                            <!--<p class="rating-comp__tooltip-content">lorem Ipsum</p>-->
-                        <!--</div>-->
-                    <!--</li>-->
-                    <!--<li>-->
-                        <!--<input type="radio" name="rating-radio" value="radio5">-->
-                        <!--<label class="rating-comp__icon-single">-->
-                            <!--<i class="icomoon-default ico ico-star"></i>-->
-                            <!--<i class="icomoon-sudo ico ico-star-selected"></i>-->
-                        <!--</label>-->
-                        <!--<div class="rating-comp__tooltip">-->
-                            <!--<p class="rating-comp__tooltip-content">lorem Ipsum</p>-->
-                        <!--</div>-->
-                    <!--</li>-->
-                    <!--<li>-->
-                        <!--<input type="radio" name="rating-radio" value="radio5">-->
-                        <!--<label class="rating-comp__icon-single">-->
-                            <!--<i class="icomoon-default ico ico-star"></i>-->
-                            <!--<i class="icomoon-sudo ico ico-star-selected"></i>-->
-                        <!--</label>-->
-                        <!--<div class="rating-comp__tooltip">-->
-                            <!--<p class="rating-comp__tooltip-content">lorem Ipsum</p>-->
-                        <!--</div>-->
-                    <!--</li>-->
-                    {% else %} {% endif %}
-                    <!--Showing more than 5 elements only in case of ranking scale-->
-
                 </ul>
                 {% if ratingComp == 'ranking' %}
                 {% else %}

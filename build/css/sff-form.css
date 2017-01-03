@@ -10802,6 +10802,21 @@ select.bs-select-hidden, select.selectpicker {
 }
 
 @font-face {
+    font-family: Helvetica;
+    src: url(../fonts/font-families/helvetica/Helvetica.eot?#iefix) format("embedded-opentype"), url(../fonts/font-families/helvetica/Helvetica.woff) format("woff"), url(../fonts/font-families/helvetica/Helvetica.ttf) format("truetype"), url(../fonts/font-families/helvetica/Helvetica.svg#Helvetica) format("svg");
+}
+
+@font-face {
+    font-family: Helvetica-Light;
+    src: url(../fonts/font-families/helvetica/Helvetica-Light.eot?#iefix) format("embedded-opentype"), url(../fonts/font-families/helvetica/Helvetica-Light.woff) format("woff"), url(../fonts/font-families/helvetica/Helvetica-Light.ttf) format("truetype"), url(../fonts/font-families/helvetica/Helvetica-Light.svg#Helvetica-Light) format("svg");
+}
+
+@font-face {
+    font-family: Helvetica-Bold;
+    src: url(../fonts/font-families/helvetica/Helvetica-Bold.eot?#iefix) format("embedded-opentype"), url(../fonts/font-families/helvetica/Helvetica-Bold.woff) format("woff"), url(../fonts/font-families/helvetica/Helvetica-Bold.ttf) format("truetype"), url(../fonts/font-families/helvetica/Helvetica-Bold.svg#Helvetica-Bold) format("svg");
+}
+
+@font-face {
     font-family: icomoon;
     src: url(../fonts/icomoon.eot?kj3mbw);
     src: url(../fonts/icomoon.eot?kj3mbw#iefix) format("embedded-opentype"), url(../fonts/icomoon.ttf?kj3mbw) format("truetype"), url(../fonts/icomoon.woff?kj3mbw) format("woff"), url(../fonts/icomoon.svg?kj3mbw#icomoon) format("svg");
@@ -10822,17 +10837,20 @@ select.bs-select-hidden, select.selectpicker {
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
 body, .form__elem__title {
-    font-family: Roboto,sans-serif;
+    font-family: Helvetica,sans-serif;
+    font-weight: 400;
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
 .form__elem input[type=text], .form__elem input[type=password], .form__elem input[type=email], .form__elem textarea, .caption-form__form-group__label, .caption-form__caption-bottom {
-    font-family: Roboto-Light,sans-serif;
+    font-family: Helvetica-Light,sans-serif;
+    font-weight: 400;
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
 .form__legend, .sff-form__submit, .rating-comp__value-count, .rating-comp__tooltip-content {
-    font-family: Roboto-Bold,sans-serif;
+    font-family: Helvetica-Bold,sans-serif;
+    font-weight: 400;
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
@@ -11128,6 +11146,11 @@ body {
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
+label {
+    font-weight: 400;
+}
+
+/* line 13, H:/Projects/smartform/build/css/sff-form.css */
 .form__legend {
     color: #424242;
     font-size: 24px;
@@ -11312,7 +11335,6 @@ body {
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
 .elem-type__checkbox .form-checkbox + label {
-    font-weight: 400;
     margin: 0;
     display: block;
     padding-left: 45px;
@@ -11366,7 +11388,6 @@ body {
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
 .elem-type__radio .form-radio + label {
-    font-weight: 400;
     margin: 0;
     display: block;
     word-wrap: break-word;
@@ -11387,6 +11408,7 @@ body {
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
 .elem-type__radio .form-radio + label .elem-type__radio__label {
     margin-left: 7px;
+    cursor: pointer;
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
@@ -11553,7 +11575,7 @@ body {
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
 .wizard__breadcrumb-list > li .bubble__number {
     line-height: 2.5;
-    font-family: Roboto,sans-serif;
+    font-family: Helvetica,sans-serif;
     font-size: 16px;
     color: #888;
 }
@@ -11580,7 +11602,7 @@ body {
     text-overflow: ellipsis;
     position: absolute;
     right: 0;
-    font-family: Roboto,sans-serif;
+    font-family: Helvetica,sans-serif;
     font-size: 16px;
     color: #888;
 }
@@ -12470,7 +12492,6 @@ body {
     text-indent: -999px;
     overflow: hidden;
     cursor: pointer;
-    font-weight: 400;
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
@@ -12509,7 +12530,6 @@ body {
     background: transparent;
     color: inherit;
     border: 0 none;
-    font-weight: 400;
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
@@ -12532,7 +12552,6 @@ body {
     background: transparent;
     color: inherit;
     border: 0 none;
-    font-weight: 400;
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
@@ -14268,6 +14287,7 @@ body {
     .elem__rating-thumbnail-left .elem__rating__thumbnail-container {
         text-align: center;
         padding: 30px 15px;
+        margin-bottom: 15px;
         border-top: 1px solid #dfdae0;
         border-bottom: 1px solid #dfdae0;
     }

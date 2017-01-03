@@ -47,6 +47,7 @@ $rating-label-color: #424242;
     .elem__rating__thumbnail-container {
       text-align: center;
       padding: 30px 15px;
+      margin-bottom: 15px;
       border-top: 1px solid $default-border-color;
       border-bottom: 1px solid $default-border-color;
       &.empty {

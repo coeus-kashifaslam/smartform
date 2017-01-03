@@ -4,7 +4,9 @@ body {
   color: $default-text-color;
   background: $default-body-bg;
 }
-
+label {
+  font-weight: normal;
+}
 .form__legend {
   @extend %default-font-bold;
   color: $default-header-color;

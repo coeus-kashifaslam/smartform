@@ -57,7 +57,6 @@ $circle-selected-clr: $default-theme;
       text-indent: -999px;
       overflow: hidden;
       cursor: pointer;
-      font-weight: 400;
     }
   }
   .ranking__list__item__label-cell {
@@ -66,7 +65,7 @@ $circle-selected-clr: $default-theme;
     text-align: left;
     .ranking__list__item__label-content {
       margin-bottom: 0;
-      font-weight: bold;
+      font-weight: 700;
     }
   }
   &.ranking__list__grid__tooltip-row {
@@ -93,7 +92,6 @@ $circle-selected-clr: $default-theme;
           background: transparent;
           color: inherit;
           border: 0 none;
-          font-weight: normal;
         }
         .icomoon-sudo {
           display: inline-block;
@@ -114,7 +112,6 @@ $circle-selected-clr: $default-theme;
           background: transparent;
           color: inherit;
           border: 0 none;
-          font-weight: normal;
         }
         .icomoon-sudo {
           display: inline-block;

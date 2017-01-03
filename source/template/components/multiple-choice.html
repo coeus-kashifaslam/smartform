@@ -6,30 +6,17 @@
             <p class="form__elem__help-text">Help Text goes here</p>
 
             <div class="row form__elem__options-row">
+                {% set checkboxes = [0,1,2]%}
+                {% for checkbox in checkboxes %}
                 <div class="col-sm-4">
                     <div class="elem-type__checkbox">
-                        <input type="checkbox" class="form-checkbox" name="multiple-choic" id="checkbox1">
-                        <label for="checkbox1">
+                        <input type="checkbox" class="form-checkbox" name="multiple-choic" id="checkbox{{checkbox}}">
+                        <label for="checkbox{{checkbox}}">
                             <span>Checkbox 1</span>
                         </label>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="elem-type__checkbox">
-                        <input type="checkbox" class="form-checkbox" name="multiple-choic" id="checkbox2">
-                        <label for="checkbox2">
-                            <span>Checkbox 2</span>
-                        </label>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="elem-type__checkbox">
-                        <input type="checkbox" class="form-checkbox" name="multiple-choic" id="checkbox3">
-                        <label for="checkbox3">
-                            <span>Checkbox3sadasdfafasdasdasfasfasfasfasfasfasfasfasfasfasf </span>
-                        </label>
-                    </div>
-                </div>
+                {% endfor %}
                 <div class="clearfix"></div>
             </div>
 

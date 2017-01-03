@@ -21,12 +21,15 @@
 
 %default-font {
   font-family: $font-regular;
+  font-weight: normal;
 }
 %default-font-light {
   font-family: $font-light;
+  font-weight: normal;
 }
 %default-font-bold {
   font-family: $font-bold;
+  font-weight: normal;
 }
 %default-fontawesome {
   font-family: "FontAwesome";
