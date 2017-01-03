@@ -10817,6 +10817,69 @@ select.bs-select-hidden, select.selectpicker {
 }
 
 @font-face {
+    font-family: JosefinSlab;
+    src: url(../fonts/font-families/josefinslab/JosefinSlab.eot?#iefix) format("embedded-opentype"), url(../fonts/font-families/josefinslab/JosefinSlab.woff) format("woff"), url(../fonts/font-families/josefinslab/JosefinSlab.ttf) format("truetype"), url(../fonts/font-families/josefinslab/JosefinSlab.svg#JosefinSlab) format("svg");
+}
+
+@font-face {
+    font-family: JosefinSlab-Light;
+    src: url(../fonts/font-families/josefinslab/JosefinSlab-Light.eot?#iefix) format("embedded-opentype"), url(../fonts/font-families/josefinslab/JosefinSlab-Light.woff) format("woff"), url(../fonts/font-families/josefinslab/JosefinSlab-Light.ttf) format("truetype"), url(../fonts/font-families/josefinslab/JosefinSlab-Light.svg#JosefinSlab-Light) format("svg");
+}
+
+@font-face {
+    font-family: JosefinSlab-Bold;
+    src: url(../fonts/font-families/josefinslab/JosefinSlab-Bold.eot?#iefix) format("embedded-opentype"), url(../fonts/font-families/josefinslab/JosefinSlab-Bold.woff) format("woff"), url(../fonts/font-families/josefinslab/JosefinSlab-Bold.ttf) format("truetype"), url(../fonts/font-families/josefinslab/JosefinSlab-Bold.svg#JosefinSlab-Bold) format("svg");
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url(../fonts/font-families/ubuntu/Ubuntu.eot?#iefix) format("embedded-opentype"), url(../fonts/font-families/ubuntu/Ubuntu.woff) format("woff"), url(../fonts/font-families/ubuntu/Ubuntu.ttf) format("truetype"), url(../fonts/font-families/ubuntu/Ubuntu.svg#Ubuntu) format("svg");
+}
+
+@font-face {
+    font-family: Ubuntu-Light;
+    src: url(../fonts/font-families/ubuntu/Ubuntu-Light.eot?#iefix) format("embedded-opentype"), url(../fonts/font-families/ubuntu/Ubuntu-Light.woff) format("woff"), url(../fonts/font-families/ubuntu/Ubuntu-Light.ttf) format("truetype"), url(../fonts/font-families/ubuntu/Ubuntu-Light.svg#Ubuntu-Light) format("svg");
+}
+
+@font-face {
+    font-family: Ubuntu-Bold;
+    src: url(../fonts/font-families/ubuntu/Ubuntu-Bold.eot?#iefix) format("embedded-opentype"), url(../fonts/font-families/ubuntu/Ubuntu-Bold.woff) format("woff"), url(../fonts/font-families/ubuntu/Ubuntu-Bold.ttf) format("truetype"), url(../fonts/font-families/ubuntu/Ubuntu-Bold.svg#Ubuntu-Bold) format("svg");
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(../fonts/font-families/opensans/OpenSans.eot?#iefix) format("embedded-opentype"), url(../fonts/font-families/opensans/OpenSans.woff) format("woff"), url(../fonts/font-families/opensans/OpenSans.ttf) format("truetype"), url(../fonts/font-families/opensans/OpenSans.svg#OpenSans) format("svg");
+}
+
+@font-face {
+    font-family: OpenSans-Light;
+    src: url(../fonts/font-families/opensans/OpenSans-Light.eot?#iefix) format("embedded-opentype"), url(../fonts/font-families/opensans/OpenSans-Light.woff) format("woff"), url(../fonts/font-families/opensans/OpenSans-Light.ttf) format("truetype"), url(../fonts/font-families/opensans/OpenSans-Light.svg#OpenSans-Light) format("svg");
+}
+
+@font-face {
+    font-family: OpenSans-Bold;
+    src: url(../fonts/font-families/opensans/OpenSans-Bold.eot?#iefix) format("embedded-opentype"), url(../fonts/font-families/opensans/OpenSans-Bold.woff) format("woff"), url(../fonts/font-families/opensans/OpenSans-Bold.ttf) format("truetype"), url(../fonts/font-families/opensans/OpenSans-Bold.svg#OpenSans-Bold) format("svg");
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(../fonts/font-families/lato/lato-regular.eot);
+    src: url(../fonts/font-families/lato/lato-regular.eot?#iefix) format("embedded-opentype"), url(../fonts/font-families/lato/lato-regular.woff2) format("woff2"), url(../fonts/font-families/lato/lato-regular.woff) format("woff"), url(../fonts/font-families/lato/lato-regular.ttf) format("truetype"), url(../fonts/font-families/lato/lato-regular.svg#latoregular) format("svg");
+}
+
+@font-face {
+    font-family: Lato-Light;
+    src: url(../fonts/font-families/lato/lato-light.eot);
+    src: url(../fonts/font-families/lato/lato-light.eot?#iefix) format("embedded-opentype"), url(../fonts/font-families/lato/lato-light.woff2) format("woff2"), url(../fonts/font-families/lato/lato-light.woff) format("woff"), url(../fonts/font-families/lato/lato-light.ttf) format("truetype"), url(../fonts/font-families/lato/lato-light.svg#latolight) format("svg");
+}
+
+@font-face {
+    font-family: Lato-Bold;
+    src: url(../fonts/font-families/lato/lato-bold.eot);
+    src: url(../fonts/font-families/lato/lato-bold.eot?#iefix) format("embedded-opentype"), url(../fonts/font-families/lato/lato-bold.woff2) format("woff2"), url(../fonts/font-families/lato/lato-bold.woff) format("woff"), url(../fonts/font-families/lato/lato-bold.ttf) format("truetype"), url(../fonts/font-families/lato/lato-bold.svg#latobold) format("svg");
+}
+
+@font-face {
     font-family: icomoon;
     src: url(../fonts/icomoon.eot?kj3mbw);
     src: url(../fonts/icomoon.eot?kj3mbw#iefix) format("embedded-opentype"), url(../fonts/icomoon.ttf?kj3mbw) format("truetype"), url(../fonts/icomoon.woff?kj3mbw) format("woff"), url(../fonts/icomoon.svg?kj3mbw#icomoon) format("svg");
@@ -10837,20 +10900,20 @@ select.bs-select-hidden, select.selectpicker {
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
 body, .form__elem__title {
-    font-family: Helvetica,sans-serif;
+    font-family: Lato;
     font-weight: 400;
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
 .form__elem input[type=text], .form__elem input[type=password], .form__elem input[type=email], .form__elem textarea, .caption-form__form-group__label, .caption-form__caption-bottom {
-    font-family: Helvetica-Light,sans-serif;
-    font-weight: 400;
+    font-family: Lato-Light;
+    font-weight: 100;
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
-.form__legend, .sff-form__submit, .rating-comp__value-count, .rating-comp__tooltip-content {
-    font-family: Helvetica-Bold,sans-serif;
-    font-weight: 400;
+.form__legend, .form__elem__error-text, .sff-form__submit, .rating-comp__value-count, .rating-comp__tooltip-content {
+    font-family: Lato-Bold;
+    font-weight: 700;
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
@@ -11322,7 +11385,6 @@ body {
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
 .form__elem__error-text {
     font-size: 12px;
-    font-weight: 700;
     color: red;
     margin-top: 12px;
     margin-bottom: 0;
@@ -11575,7 +11637,7 @@ body {
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
 .wizard__breadcrumb-list > li .bubble__number {
     line-height: 2.5;
-    font-family: Helvetica,sans-serif;
+    font-family: Lato;
     font-size: 16px;
     color: #888;
 }
@@ -11602,7 +11664,7 @@ body {
     text-overflow: ellipsis;
     position: absolute;
     right: 0;
-    font-family: Helvetica,sans-serif;
+    font-family: Lato;
     font-size: 16px;
     color: #888;
 }
@@ -12646,12 +12708,6 @@ body {
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
 .elem__rating-thumbnail-left .rating__container .row:last-child .rating-comp__row {
     margin-bottom: 15px;
-}
-
-/* line 13, H:/Projects/smartform/build/css/sff-form.css */
-.elem__rating-thumbnail-left .rating-comp__label {
-    font-weight: 700;
-    color: #424242;
 }
 
 @media print {

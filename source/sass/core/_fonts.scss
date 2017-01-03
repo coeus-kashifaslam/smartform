@@ -21,15 +21,15 @@
 
 %default-font {
   font-family: $font-regular;
-  font-weight: normal;
+  font-weight: 400;
 }
 %default-font-light {
   font-family: $font-light;
-  font-weight: normal;
+  font-weight: 100;
 }
 %default-font-bold {
   font-family: $font-bold;
-  font-weight: normal;
+  font-weight: 700;
 }
 %default-fontawesome {
   font-family: "FontAwesome";

@@ -6,9 +6,16 @@ $circle-empty: "\e900";
 $circle-fill: "\e901";
 
 
-$font-regular: 'Helvetica', sans-serif;
-$font-light: 'Helvetica-Light', sans-serif;
-$font-bold: 'Helvetica-Bold', sans-serif;
+$ff-roboto: 'Roboto','Roboto-Light','Roboto-Bold';
+$ff-helvetica: 'Helvetica','Helvetica-Light','Helvetica-Bold';
+$ff-josefinslab: 'JosefinSlab','JosefinSlab-Light','JosefinSlab-Bold';
+$ff-lato: 'Lato','Lato-Light','Lato-Bold';
+$ff-ubuntu: 'Ubuntu','Ubuntu-Light','Ubuntu-Bold';
+$ff-opensans: 'OpenSans','OpenSans-Light','OpenSans-Bold';
+
+$font-regular: nth($ff-lato, 1);
+$font-light: nth($ff-lato, 2);
+$font-bold: nth($ff-lato, 3);
 $font-fontawesome: 'FontAwesome';
 
 
