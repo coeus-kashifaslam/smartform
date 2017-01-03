@@ -12115,13 +12115,13 @@ body {
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
 .rating-comp__icons-list li {
-    padding: 0;
+    padding: 0 1px;
     position: relative;
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
 .rating-comp__label {
-    padding-top: 10px;
+    padding-top: 3px;
     margin: 0;
     white-space: nowrap;
     display: block;
@@ -12161,7 +12161,7 @@ body {
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
 .rating-comp__icon-single {
     color: #dfdae0;
-    font-size: 37px;
+    font-size: 33px;
     line-height: 1;
     cursor: pointer;
 }
@@ -12605,11 +12605,6 @@ body {
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
-.elem__rating-thumbnail-right__body .rating-comp__icon-single {
-    font-size: 35px;
-}
-
-/* line 13, H:/Projects/smartform/build/css/sff-form.css */
 .elem__rating__left-thumbnail__container {
     width: 150px;
     height: 150px;
@@ -12632,6 +12627,17 @@ body {
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
 .elem__rating-thumbnail-left .rating-comp__separater {
     height: 2px;
+}
+
+/* line 13, H:/Projects/smartform/build/css/sff-form.css */
+.elem__rating-thumbnail-left .rating__container .row:last-child .rating-comp__row {
+    margin-bottom: 15px;
+}
+
+/* line 13, H:/Projects/smartform/build/css/sff-form.css */
+.elem__rating-thumbnail-left .rating-comp__label {
+    font-weight: 700;
+    color: #424242;
 }
 
 @media print {
@@ -14229,6 +14235,10 @@ body {
         border-bottom: 0 none;
     }
     /* line 13, H:/Projects/smartform/build/css/sff-form.css */
+    .form__elem__rating-thumbnail-right .form__elem:first-child {
+        border-top: 0 none;
+    }
+    /* line 13, H:/Projects/smartform/build/css/sff-form.css */
     .elem__rating-thumbnail-right__body {
         padding-top: 0;
         padding-bottom: 0;
@@ -14258,6 +14268,22 @@ body {
     /* line 13, H:/Projects/smartform/build/css/sff-form.css */
     .elem__rating-thumbnail-right__body .rating__icons__col__content {
         border-bottom: 0 none;
+    }
+    /* line 13, H:/Projects/smartform/build/css/sff-form.css */
+    .elem__rating-thumbnail-left .elem__rating__thumbnail-container {
+        text-align: center;
+        padding: 30px 15px;
+        border-top: 1px solid #dfdae0;
+        border-bottom: 1px solid #dfdae0;
+    }
+    /* line 13, H:/Projects/smartform/build/css/sff-form.css */
+    .elem__rating-thumbnail-left .elem__rating__thumbnail-container.empty {
+        border: 0 none;
+        padding: 0;
+    }
+    /* line 13, H:/Projects/smartform/build/css/sff-form.css */
+    .elem__rating__left-thumbnail__container {
+        margin: 0 auto;
     }
 }
 

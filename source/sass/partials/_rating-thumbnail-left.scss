@@ -1,4 +1,5 @@
 $thumbail-dimension: 150px;
+$rating-label-color: #424242;
 .elem__rating__left-thumbnail__container {
   width: $thumbail-dimension;
   height: $thumbail-dimension;
@@ -18,6 +19,19 @@ $thumbail-dimension: 150px;
   .rating-comp__separater {
     height: 2px;
   }
+  .rating__container {
+    .row{
+      &:last-child {
+        .rating-comp__row {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+  .rating-comp__label {
+    font-weight: 700;
+    color: $rating-label-color;
+  }
 }
 
 
@@ -27,5 +41,21 @@ $thumbail-dimension: 150px;
       padding-left: 0;
     }
   }
-
+}
+@media (max-width: 767px) {
+  .elem__rating-thumbnail-left {
+    .elem__rating__thumbnail-container {
+      text-align: center;
+      padding: 30px 15px;
+      border-top: 1px solid $default-border-color;
+      border-bottom: 1px solid $default-border-color;
+      &.empty {
+        border: 0 none;
+        padding: 0;
+      }
+    }
+  }
+  .elem__rating__left-thumbnail__container {
+    margin: 0 auto;
+  }
 }

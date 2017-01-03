@@ -31,7 +31,7 @@ $circle-selected-clr: $default-theme;
       margin: 0;
     }
     .ranking__list__item__icon {
-      font-size: 33px;
+      font-size: $default-icon-font-size;
       cursor: pointer;
       color: $circle-clr;
       display: inline-block;

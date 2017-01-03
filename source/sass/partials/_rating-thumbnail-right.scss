@@ -41,12 +41,15 @@
       }
     }
   }
-  .rating-comp__icon-single {
-    font-size: 35px;
-  }
 }
-
 @media (max-width: 767px) {
+  .form__elem__rating-thumbnail-right {
+    .form__elem {
+      &:first-child {
+        border-top: 0 none;
+      }
+    }
+  }
   .elem__rating-thumbnail-right__body {
     padding-top: 0;
     padding-bottom: 0;
