@@ -2,9 +2,11 @@
 @import "../../bower_components/bootstrap-select/dist/sass/bootstrap-select";
 @import "../../bower_components/font-awesome/sass/font-awesome";
 
+@import "font-families/roboto";
+
+@import "core/vars";
 @import "core/fonts";
 @import "core/icomoon-icons";
-@import "core/vars";
 @import "core/typo";
 @import "core/base";
 @import "core/form";

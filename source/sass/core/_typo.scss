@@ -1,20 +1,19 @@
 body {
-  font-family: $font-regular;
+  @extend %default-font;
   font-size: $default-font-size;
   color: $default-text-color;
   background: $default-body-bg;
 }
 
 .form__legend {
+  @extend %default-font-bold;
   color: $default-header-color;
   font-size: $default-header-size;
-  font-family: $default-header-font-family;
-  font-weight: $default-header-font-weight;
 }
 
 .form__elem__title {
+  @extend %default-font;
   color: $default-subHeader-color;
   font-size: $default-subHeader-size;
-  font-family: $default-subHeader-font-family;
   font-weight: $default-subHeader-font-weight;
 }

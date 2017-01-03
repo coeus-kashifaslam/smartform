@@ -10788,17 +10788,17 @@ select.bs-select-hidden, select.selectpicker {
 
 @font-face {
     font-family: Roboto;
-    src: url(../fonts/Roboto-Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/Roboto-Regular.woff) format("woff"), url(../fonts/Roboto-Regular.ttf) format("truetype"), url(../fonts/Roboto-Regular.svg#Roboto-Regular) format("svg");
+    src: url(../fonts/font-families/roboto/Roboto-Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/font-families/roboto/Roboto-Regular.woff) format("woff"), url(../fonts/font-families/roboto/Roboto-Regular.ttf) format("truetype"), url(../fonts/font-families/roboto/Roboto-Regular.svg#Roboto-Regular) format("svg");
 }
 
 @font-face {
-    font-family: RobotoLight;
-    src: url(../fonts/Roboto-Light.eot?#iefix) format("embedded-opentype"), url(../fonts/Roboto-Light.woff) format("woff"), url(../fonts/Roboto-Light.ttf) format("truetype"), url(../fonts/Roboto-Light.svg#Roboto-Light) format("svg");
+    font-family: Roboto-Light;
+    src: url(../fonts/font-families/roboto/Roboto-Light.eot?#iefix) format("embedded-opentype"), url(../fonts/font-families/roboto/Roboto-Light.woff) format("woff"), url(../fonts/font-families/roboto/Roboto-Light.ttf) format("truetype"), url(../fonts/font-families/roboto/Roboto-Light.svg#Roboto-Light) format("svg");
 }
 
 @font-face {
-    font-family: RobotoBold;
-    src: url(../fonts/Roboto-Bold.eot?#iefix) format("embedded-opentype"), url(../fonts/Roboto-Bold.woff) format("woff"), url(../fonts/Roboto-Bold.ttf) format("truetype"), url(../fonts/Roboto-Bold.svg#Roboto-Bold) format("svg");
+    font-family: Roboto-Bold;
+    src: url(../fonts/font-families/roboto/Roboto-Bold.eot?#iefix) format("embedded-opentype"), url(../fonts/font-families/roboto/Roboto-Bold.woff) format("woff"), url(../fonts/font-families/roboto/Roboto-Bold.ttf) format("truetype"), url(../fonts/font-families/roboto/Roboto-Bold.svg#Roboto-Bold) format("svg");
 }
 
 @font-face {
@@ -10821,18 +10821,18 @@ select.bs-select-hidden, select.selectpicker {
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
-.page__footer__quick-links > li a, .power-by__info {
+body, .form__elem__title {
     font-family: Roboto,sans-serif;
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
-.caption-form__form-group__label, .caption-form__caption-bottom {
-    font-family: RobotoLight,sans-serif;
+.form__elem input[type=text], .form__elem input[type=password], .form__elem input[type=email], .form__elem textarea, .caption-form__form-group__label, .caption-form__caption-bottom {
+    font-family: Roboto-Light,sans-serif;
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
-.sff-form__submit, .rating-comp__value-count, .rating-comp__tooltip-content {
-    font-family: RobotoBold,sans-serif;
+.form__legend, .sff-form__submit, .rating-comp__value-count, .rating-comp__tooltip-content {
+    font-family: Roboto-Bold,sans-serif;
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
@@ -11122,7 +11122,6 @@ select.bs-select-hidden, select.selectpicker {
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
 body {
-    font-family: Roboto,sans-serif;
     font-size: 16px;
     color: #707070;
     background: #efefef;
@@ -11132,15 +11131,12 @@ body {
 .form__legend {
     color: #424242;
     font-size: 24px;
-    font-family: RobotoBold,sans-serif;
-    font-weight: 700;
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
 .form__elem__title {
     color: #4c4c4c;
     font-size: 20px;
-    font-family: Roboto,sans-serif;
     font-weight: 700;
 }
 
@@ -11192,35 +11188,34 @@ body {
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
 .form__elem input[type=text], .form__elem input[type=password], .form__elem input[type=email], .form__elem textarea {
-    font-family: RobotoLight,sans-serif;
     font-size: 16px;
     color: #888;
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
 .form__elem input[type=text]::-webkit-input-placeholder, .form__elem input[type=password]::-webkit-input-placeholder, .form__elem input[type=email]::-webkit-input-placeholder, .form__elem textarea::-webkit-input-placeholder {
-    font-family: RobotoLight,sans-serif;
+    font-family: inherit;
     font-size: 16px;
     color: #888;
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
 .form__elem input[type=text]:-moz-placeholder, .form__elem input[type=password]:-moz-placeholder, .form__elem input[type=email]:-moz-placeholder, .form__elem textarea:-moz-placeholder {
-    font-family: RobotoLight,sans-serif;
+    font-family: inherit;
     font-size: 16px;
     color: #888;
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
 .form__elem input[type=text]::-moz-placeholder, .form__elem input[type=password]::-moz-placeholder, .form__elem input[type=email]::-moz-placeholder, .form__elem textarea::-moz-placeholder {
-    font-family: RobotoLight,sans-serif;
+    font-family: inherit;
     font-size: 16px;
     color: #888;
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
 .form__elem input[type=text]:-ms-input-placeholder, .form__elem input[type=password]:-ms-input-placeholder, .form__elem input[type=email]:-ms-input-placeholder, .form__elem textarea:-ms-input-placeholder {
-    font-family: RobotoLight,sans-serif;
+    font-family: inherit;
     font-size: 16px;
     color: #888;
 }

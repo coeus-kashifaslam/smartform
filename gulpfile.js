@@ -112,7 +112,7 @@
 	},
 
 	fonts = {
-		in: source + 'fonts/*',
+		in: source + 'fonts/**/*',
 		out: destination + 'fonts/' 
 	},	
 

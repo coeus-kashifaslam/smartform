@@ -32,11 +32,11 @@
   input[type='password'],
   input[type='email'],
   textarea {
-    font-family: $font-light;
+    @extend %default-font-light;
     font-size: $default-font-size;
     color: $default-input-font-color;
     @include placeholder {
-      font-family: $font-light;
+      font-family: inherit;
       font-size: $default-font-size;
       color: $default-input-font-color;
     }
