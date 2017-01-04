@@ -1,0 +1,69 @@
+$border-color: $default-border-color;
+$text-color: $default-theme;
+
+.ranking__list__default {
+  .ranking__list__item {
+    width: 10%;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    .ranking__list__item__label {
+      cursor: pointer;
+      font-size: 33px;
+      color: $border-color;
+      line-height: 1;
+      text-align: center;
+      padding-top: 6px;
+      display: inline-block;
+      vertical-align: middle;
+      .icomoon-sudo {
+        display: none;
+      }
+    }
+  }
+}
+
+
+%rating-comp__selection-type__sudo {
+  color: $text-color;
+}
+
+.rating-comp__selection-type__single {
+  .rating-comp__selected {
+    .ranking__list__item__label {
+      @extend %rating-comp__selection-type__sudo;
+      .icomoon-sudo {
+        display: inline-block;
+      }
+      .icomoon-default {
+        display: none;
+      }
+    }
+  }
+}
+.rating-comp__selection-type__continuous {
+  .rating-comp__selected,
+  .rating-comp__hover {
+    .ranking__list__item__label {
+      @extend %rating-comp__selection-type__sudo;
+      .icomoon-sudo {
+        display: inline-block;
+      }
+      .icomoon-default {
+        display: none;
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .ranking__list__default {
+    display: block;
+    text-align: center;
+    .ranking__list__item {
+      display: inline-block;
+      width: auto;
+      padding-left: 3px;
+      padding-right: 3px;
+    }
+  }
+}

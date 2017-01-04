@@ -1,0 +1,17 @@
+.form-short-text {
+  height: 35px;
+  border: 0 none;
+  padding: 0;
+}
+.form__elem {
+  .form-short-text {
+    @extend .form-short-text;
+  }
+}
+
+@media (max-width: 767px) {
+  .form-short-text {
+    border: 1px solid $default-border-color;
+    padding: 7px 15px;
+  }
+}

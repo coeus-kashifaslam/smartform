@@ -1,0 +1,14 @@
+.comp__banner {
+  background: transparent;
+  padding: 0;
+  margin-bottom: 20px;
+  &.bg-fill {
+    background: $default-theme;
+    padding: 15px 0;
+  }
+}
+.form__logo {
+  img {
+    max-height: 100px;
+  }
+}

@@ -114,7 +114,12 @@
 	fonts = {
 		in: source + 'fonts/**/*',
 		out: destination + 'fonts/' 
-	},	
+	},
+
+	stylesource = {
+		in: source + 'sass/**/*',
+		out: destination + 'sass/'
+	},
 
 	watch = {
 		html: [source + '*.html', source + 'template/**/*.html'],
@@ -212,6 +217,16 @@ gulp.task('fonts', function(){
 	.pipe(gulp.dest(fonts.out));
 });
 
+/*
+ * Task to copy Fonts in build folders
+ * ...
+ */
+gulp.task('sassCopy', function(){
+	return gulp
+		.src(stylesource.in)
+		.pipe(gulp.dest(stylesource.out));
+});
+
 
 /*
  * Task to copy Fonts in build folders
@@ -236,9 +251,9 @@ gulp.task('scripts', function(){
  * Watching All of the written tasks
  * ...
  */
-gulp.task('default', ['html', 'browsersync', 'sass', 'fonts', 'images', 'scripts'] , function() {
+gulp.task('default', ['html', 'browsersync', 'sass', 'fonts', 'images', 'scripts', 'sassCopy'] , function() {
 	gulp.watch(watch.html, ['html', browsersync.reload]);
-	gulp.watch(watch.sass,['sass']);
+	gulp.watch(watch.sass,['sass', 'sassCopy']);
 	gulp.watch(watch.fonts, ['fonts']);
 	gulp.watch(watch.images, ['images']);
 	gulp.watch(watch.scripts, ['scripts', browsersync.reload]);

@@ -1,0 +1,198 @@
+$row-border: $default-border-color;
+$circle-clr: $default-border-color;
+$circle-selected-clr: $default-theme;
+.elem__table {
+  display: table;
+  width: 100%;
+}
+.elem__table__row {
+  display: table-row;
+  width: 100%;
+}
+.elem__table__cell {
+  display: table-cell;
+}
+.elem__ranking-scale__layout-grid {
+  .ranking__container {
+    overflow: hidden;
+  }
+}
+.ranking__list__grid {
+  display: table-row;
+  width: 100%;
+  .ranking__list__item,
+  .ranking__list__item__label-cell {
+    text-align: center;
+    padding: 10px 5px;
+    vertical-align: middle;
+    border-bottom: 1px solid $row-border;
+    input[type='radio'] {
+      display: none;
+      margin: 0;
+    }
+    .ranking__list__item__icon {
+      font-size: $default-icon-font-size;
+      cursor: pointer;
+      color: $circle-clr;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    + .ranking__list__item {
+      width: 120px;
+    }
+    .icomoon-sudo {
+      display: none;
+    }
+
+  }
+  .ranking__list__item {
+    .ranking__list__item__label {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -17px;
+      margin-top: -17px;
+      width: 34px;
+      height: 34px;
+      text-indent: -999px;
+      overflow: hidden;
+      cursor: pointer;
+    }
+  }
+  .ranking__list__item__label-cell {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
+    .ranking__list__item__label-content {
+      margin-bottom: 0;
+      font-weight: 700;
+    }
+  }
+  &.ranking__list__grid__tooltip-row {
+    .ranking__list__item__label {
+      display: block;
+      text-indent: initial;
+      width: auto;
+      height: auto;
+      margin: 0;
+      position: relative;
+      left: auto;
+      top: auto;
+      cursor: default;
+    }
+  }
+  &.rating-comp__selection-type__continuous {
+    .ranking__list__item {
+      &.rating-comp__hover,
+      &.rating-comp__selected {
+        .ranking__list__item__icon {
+          color: $circle-selected-clr;
+        }
+        .ranking__list__item__label {
+          background: transparent;
+          color: inherit;
+          border: 0 none;
+        }
+        .icomoon-sudo {
+          display: inline-block;
+        }
+        .icomoon-default {
+          display: none;
+        }
+      }
+    }
+  }
+  &.rating-comp__selection-type__single {
+    .ranking__list__item {
+      &.rating-comp__selected {
+        .ranking__list__item__icon {
+          color: $circle-selected-clr;
+        }
+        .ranking__list__item__label {
+          background: transparent;
+          color: inherit;
+          border: 0 none;
+        }
+        .icomoon-sudo {
+          display: inline-block;
+        }
+        .icomoon-default {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .elem__ranking-scale__layout-grid {
+    margin-left: -15px;
+    margin-right: -15px;
+    .ranking__container {
+      overflow: visible;
+    }
+    .form__elem__title,
+    .form__elem__help-text,
+    .ranking__list__grid {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  .ranking__list__grid {
+    display: block;
+    border-bottom: 1px solid $row-border;
+    .ranking__list__item,
+    .ranking__list__item__label-cell {
+      text-align: left;
+      border-bottom: 0 none;
+      + .ranking__list__item {
+        padding-left: 0;
+        width: 48%;
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+      .ranking__list__item__label {
+        margin-left: 5px;
+      }
+      .ranking__list__item__label {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+    .ranking__list__item {
+      .ranking__list__item__label {
+        //display: inline-block;
+        //text-indent: initial;
+        //width: auto;
+        //height: auto;
+        //margin: 0;
+        //position: relative;
+        //left: auto;
+        //top: auto;
+        text-indent: initial;
+        position: absolute;
+        left: 0;
+        top: 58%;
+        width: auto;
+        //transform: translateY(-48%);
+        min-height: 33px;
+        padding-left: 35px;
+      }
+    }
+    .ranking__list__item__label-cell {
+      display: block;
+      width: 100%;
+    }
+  }
+  .ranking__list__grid__tooltip-row {
+    display: none;
+  }
+  .elem__ranking-scale__layout-grid {
+    .ranking__list__grid {
+      &:last-child {
+        border-bottom: 0 none;
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+//Icons
+$icon-exclamation: "\e90a";
+$icon-star: "\e925";
+$icon-tick: "\e933";
+$circle-empty: "\e900";
+$circle-fill: "\e901";
+
+
+$ff-roboto: 'Roboto','Roboto-Light','Roboto-Bold';
+$ff-helvetica: 'Helvetica','Helvetica-Light','Helvetica-Bold';
+$ff-josefinslab: 'JosefinSlab','JosefinSlab-Light','JosefinSlab-Bold';
+$ff-lato: 'Lato','Lato-Light','Lato-Bold';
+$ff-ubuntu: 'Ubuntu','Ubuntu-Light','Ubuntu-Bold';
+$ff-opensans: 'OpenSans','OpenSans-Light','OpenSans-Bold';
+
+$font-regular: nth($ff-lato, 1);
+$font-light: nth($ff-lato, 2);
+$font-bold: nth($ff-lato, 3);
+$font-fontawesome: 'FontAwesome';
+
+
+//Defaults
+$white: #fff;
+$black: #000;
+$default-body-bg: #efefef;
+$default-theme: #2DA137;
+$default-border-color: #dfdae0;
+$default-font-size: 16px;
+$default-text-color: #707070;
+$default-component-margin: 32px;
+$default-input-font-color: #888;
+$default-footer-bg: #fafafa;
+$default-footer-link: #2DA137;
+$default-icon-font-size: 33px;
+
+//Header Title
+$default-header-color: #424242;
+$default-header-size: 24px;
+$default-header-font-family: $font-bold;
+$default-header-font-weight: 700;
+
+
+//Subheader
+$default-subHeader-color: #4c4c4c;
+$default-subHeader-size: 20px;
+$default-subHeader-font-family: $font-regular;
+$default-subHeader-font-weight: 700;
+
+
+//Form Control
+$default-formControl-font-family: $font-light;
+$default-formControl-font-wight: 400;
+
+
+
+//Star
+$default-rating-color: #bdbdbd;
+$sudo-rating-color: #fee923;
+
+
+//Pros and Cons Icons
+$default-pros-icon: "\f055";
+$default-pros-icon-clr: #1cac00;
+$default-cons-icon: "\f056";
+$default-cons-icon-clr: #bc1818;
+
+//Breadcrumb
+$breadcrumb-fill: #fafafa;
+$breadcrumb-border: #ccc;
+$breadcrumb-after-border: #ccc #fff;
+$breadcrumb-color: #00aaff;
+$breadcrumb-check-color: $white;
+$breadcrumb-font: $font-regular;
+$breadcrumb-font-size: 16px;
+$breadcrumb-normal-text: #888888;
+$breadcrumb-active-text: #000099;
+
+
+
+//Tooltip
+$tooltip-bg: #ebebeb;
+$tooltip-arrow-outer: #dedede;
+$tooltip-arrow-inner: #ebebeb;
