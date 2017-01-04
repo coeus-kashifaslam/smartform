@@ -44,8 +44,8 @@
  	sassOptions = {
  		errToLogConsole: true,
  		precision: 4,
- 		outputStyle: 'expanded',
- 		sourceComments: true,
+ 		outputStyle: 'compressed',
+ 		sourceComments: false,
  		indentWidth: 4
  	},
 
@@ -72,6 +72,7 @@
 		css: 'build/css',
 		sass: 'source/sass',
 		image: 'source/images'
+		// sourcemap: true
 	},
 
 
