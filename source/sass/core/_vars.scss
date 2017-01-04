@@ -13,9 +13,9 @@ $ff-lato: 'Lato','Lato-Light','Lato-Bold';
 $ff-ubuntu: 'Ubuntu','Ubuntu-Light','Ubuntu-Bold';
 $ff-opensans: 'OpenSans','OpenSans-Light','OpenSans-Bold';
 
-$font-regular: nth($ff-opensans, 1);
-$font-light: nth($ff-opensans, 2);
-$font-bold: nth($ff-opensans, 3);
+$font-regular: nth($ff-josefinslab, 1);
+$font-light: nth($ff-josefinslab, 2);
+$font-bold: nth($ff-josefinslab, 3);
 $font-fontawesome: 'FontAwesome';
 
 
@@ -56,19 +56,6 @@ $default-formControl-font-wight: 400;
 //Star
 $default-rating-color: #bdbdbd;
 $sudo-rating-color: #fee923;
-
-
-//Breadcrumb
-$breadcrumb-fill: #fafafa;
-$breadcrumb-border: #ccc;
-$breadcrumb-after-border: #ccc #fff;
-$breadcrumb-color: #00aaff;
-$breadcrumb-check-color: $white;
-$breadcrumb-font: $font-regular;
-$breadcrumb-font-size: 16px;
-$breadcrumb-normal-text: #888888;
-$breadcrumb-active-text: #000099;
-
 
 
 //Tooltip

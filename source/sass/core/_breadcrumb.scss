@@ -1,13 +1,13 @@
-$insource-breadcrumb-fill: $breadcrumb-fill;
-$insource-breadcrumb-font-size: $breadcrumb-font-size;
-$insource-breadcrumb-border: $default-border-color;
-$insource-breadcrumb-normal-text: $breadcrumb-normal-text;
-$insource-breadcrumb-check-color: $breadcrumb-check-color;
-$insource-breadcrumb-normal-text: $breadcrumb-normal-text;
-$insource-breadcrumb-after-border: $breadcrumb-after-border;
-$insource-breadcrumb-active-text: $breadcrumb-active-text;
-$insource-default-theme: $default-theme;
-$insource-breadcrumb-color: $breadcrumb-color;
+$breadcrumb-fill: #fafafa;
+$breadcrumb-border: #ccc;
+$breadcrumb-after-border: #ccc #fff;
+$breadcrumb-color: #00aaff;
+$breadcrumb-check-color: $white;
+$breadcrumb-font: $font-regular;
+$breadcrumb-font-size: 16px;
+$breadcrumb-normal-text: #888888;
+$breadcrumb-active-text: #000099;
+
 .wizard__breadcrumb-list * {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
@@ -17,8 +17,8 @@ $insource-breadcrumb-color: $breadcrumb-color;
 .wizardSliderBox {
   height: auto;
   padding: 15px 15px 35px 15px;
-  background-color: $insource-breadcrumb-fill;
-  border: 1px solid $insource-breadcrumb-border;
+  background-color: $breadcrumb-fill;
+  border: 1px solid $breadcrumb-border;
   margin: 0 auto;
   overflow: hidden;
   @media (max-width: 767px) {
@@ -46,7 +46,7 @@ $insource-breadcrumb-color: $breadcrumb-color;
       height: 40px;
       width: 40px;
       text-align: center;
-      border: 1px solid $insource-breadcrumb-border;
+      border: 1px solid $breadcrumb-border;
       background: white;
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
@@ -57,12 +57,12 @@ $insource-breadcrumb-color: $breadcrumb-color;
     .bubble__number {
       @extend %default-font;
       line-height: 2.5;
-      font-size: $insource-breadcrumb-font-size;
-      color: $insource-breadcrumb-normal-text;
+      font-size: $breadcrumb-font-size;
+      color: $breadcrumb-normal-text;
       .fa {
         display: none;
         font-size: 18px;
-        color: $insource-breadcrumb-check-color;
+        color: $breadcrumb-check-color;
         position: absolute;
         left: 50%;
         top: 50%;
@@ -83,8 +83,8 @@ $insource-breadcrumb-color: $breadcrumb-color;
       text-overflow: ellipsis;
       position: absolute;
       right: 0;
-      font-size: $insource-breadcrumb-font-size;
-      color: $insource-breadcrumb-normal-text;
+      font-size: $breadcrumb-font-size;
+      color: $breadcrumb-normal-text;
     }
 
     //Outer Borders or lines
@@ -94,7 +94,7 @@ $insource-breadcrumb-color: $breadcrumb-color;
       position: absolute;
       height: 14px;
       top: 13px;
-      border-color: $insource-breadcrumb-after-border;
+      border-color: $breadcrumb-after-border;
       border-style: solid;
       border-width: 1px;
       z-index: 2;
@@ -154,7 +154,7 @@ $insource-breadcrumb-color: $breadcrumb-color;
     &.active {
       .step__title {
         font-weight: 700;
-        color: $insource-breadcrumb-active-text;
+        color: $breadcrumb-active-text;
       }
     }
     &.active,
@@ -163,7 +163,7 @@ $insource-breadcrumb-color: $breadcrumb-color;
         color: transparent;
       }
       .bubble__number {
-        border: 7px solid $insource-default-theme;
+        border: 7px solid $default-theme;
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         border-radius: 50%;
@@ -181,7 +181,7 @@ $insource-breadcrumb-color: $breadcrumb-color;
     //Completed Step Styles
     &.completed {
       .bubble__number {
-        background: $insource-default-theme;
+        background: $default-theme;
         width: 28px;
         height: 28px;
         border: 0 none !important;
@@ -190,7 +190,7 @@ $insource-breadcrumb-color: $breadcrumb-color;
         }
       }
       &:before {
-        background: $insource-breadcrumb-color;
+        background: $breadcrumb-color;
       }
     }
   }

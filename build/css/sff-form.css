@@ -10900,19 +10900,19 @@ select.bs-select-hidden, select.selectpicker {
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
 body, .form__elem__title, .wizard__breadcrumb-list > li .bubble__number, .wizard__breadcrumb-list > li .step__title {
-    font-family: OpenSans;
+    font-family: JosefinSlab;
     font-weight: 400;
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
 .form__elem input[type=text], .form__elem input[type=password], .form__elem input[type=email], .form__elem textarea, .caption-form__form-group__label, .caption-form__caption-bottom {
-    font-family: OpenSans-Light;
+    font-family: JosefinSlab-Light;
     font-weight: 100;
 }
 
 /* line 13, H:/Projects/smartform/build/css/sff-form.css */
 .form__legend, .form__elem__error-text, .sff-form__submit, .rating-comp__value-count, .rating-comp__tooltip-content {
-    font-family: OpenSans-Bold;
+    font-family: JosefinSlab-Bold;
     font-weight: 700;
 }
 
@@ -11598,7 +11598,7 @@ body {
     height: auto;
     padding: 15px 15px 35px;
     background-color: #fafafa;
-    border: 1px solid #dfdae0;
+    border: 1px solid #ccc;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -11628,7 +11628,7 @@ body {
     height: 40px;
     width: 40px;
     text-align: center;
-    border: 1px solid #dfdae0;
+    border: 1px solid #ccc;
     background: white;
     border-radius: 50%;
     display: inline-block;
