@@ -1,6 +1,7 @@
-$row-border: $default-border-color;
-$circle-clr: $default-border-color;
-$circle-selected-clr: $default-theme;
+$gird-layout-row-border: $default-border-color;
+$grid-layout-icon-clr: $default-border-color;
+$grid-layout-icon-selected-clr: $default-theme;
+
 .elem__table {
   display: table;
   width: 100%;
@@ -25,7 +26,7 @@ $circle-selected-clr: $default-theme;
     text-align: center;
     padding: 10px 5px;
     vertical-align: middle;
-    border-bottom: 1px solid $row-border;
+    border-bottom: 1px solid $gird-layout-row-border;
     input[type='radio'] {
       display: none;
       margin: 0;
@@ -33,7 +34,7 @@ $circle-selected-clr: $default-theme;
     .ranking__list__item__icon {
       font-size: $default-icon-font-size;
       cursor: pointer;
-      color: $circle-clr;
+      color: $grid-layout-icon-clr;
       display: inline-block;
       vertical-align: middle;
     }
@@ -86,7 +87,7 @@ $circle-selected-clr: $default-theme;
       &.rating-comp__hover,
       &.rating-comp__selected {
         .ranking__list__item__icon {
-          color: $circle-selected-clr;
+          color: $grid-layout-icon-selected-clr;
         }
         .ranking__list__item__label {
           background: transparent;
@@ -106,7 +107,7 @@ $circle-selected-clr: $default-theme;
     .ranking__list__item {
       &.rating-comp__selected {
         .ranking__list__item__icon {
-          color: $circle-selected-clr;
+          color: $grid-layout-icon-selected-clr;
         }
         .ranking__list__item__label {
           background: transparent;
@@ -140,7 +141,7 @@ $circle-selected-clr: $default-theme;
   }
   .ranking__list__grid {
     display: block;
-    border-bottom: 1px solid $row-border;
+    border-bottom: 1px solid $gird-layout-row-border;
     .ranking__list__item,
     .ranking__list__item__label-cell {
       text-align: left;

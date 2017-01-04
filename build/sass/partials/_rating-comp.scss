@@ -104,7 +104,7 @@
   &.rating-comp__selection-type__continuous {
     .rating-comp__selected {
       .rating-comp__icon-single {
-        color : #fee923;
+        color : $sudo-rating-color;
         .icomoon-sudo {
           display: inline-block;
         }

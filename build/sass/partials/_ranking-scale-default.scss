@@ -1,5 +1,5 @@
-$border-color: $default-border-color;
-$text-color: $default-theme;
+$icon-color: $default-border-color;
+$icon-sudo-color: $default-theme;
 
 .ranking__list__default {
   .ranking__list__item {
@@ -10,7 +10,7 @@ $text-color: $default-theme;
     .ranking__list__item__label {
       cursor: pointer;
       font-size: 33px;
-      color: $border-color;
+      color: $icon-color;
       line-height: 1;
       text-align: center;
       padding-top: 6px;
@@ -25,7 +25,7 @@ $text-color: $default-theme;
 
 
 %rating-comp__selection-type__sudo {
-  color: $text-color;
+  color: $icon-sudo-color;
 }
 
 .rating-comp__selection-type__single {

@@ -13,9 +13,9 @@ $ff-lato: 'Lato','Lato-Light','Lato-Bold';
 $ff-ubuntu: 'Ubuntu','Ubuntu-Light','Ubuntu-Bold';
 $ff-opensans: 'OpenSans','OpenSans-Light','OpenSans-Bold';
 
-$font-regular: nth($ff-lato, 1);
-$font-light: nth($ff-lato, 2);
-$font-bold: nth($ff-lato, 3);
+$font-regular: nth($ff-opensans, 1);
+$font-light: nth($ff-opensans, 2);
+$font-bold: nth($ff-opensans, 3);
 $font-fontawesome: 'FontAwesome';
 
 
@@ -57,12 +57,6 @@ $default-formControl-font-wight: 400;
 $default-rating-color: #bdbdbd;
 $sudo-rating-color: #fee923;
 
-
-//Pros and Cons Icons
-$default-pros-icon: "\f055";
-$default-pros-icon-clr: #1cac00;
-$default-cons-icon: "\f056";
-$default-cons-icon-clr: #bc1818;
 
 //Breadcrumb
 $breadcrumb-fill: #fafafa;
