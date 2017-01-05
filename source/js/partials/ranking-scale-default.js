@@ -2,7 +2,7 @@ $(document).ready(function (){
     var ratingList = $('.rating-comp__icons-list');
     var ratingContinuous = $('.rating-comp__selection-type__continuous > li label');
     var ratingsingle = $('.rating-comp__selection-type__single > li label');
-    var ratingListItem = $('.rating-comp__icons-list > li label');
+    var ratingListItem = $('.no-touch .rating-comp__icons-list > li label');
     $(ratingListItem).hover(
         function() {
             var $this = $(this);
