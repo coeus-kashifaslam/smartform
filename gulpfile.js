@@ -9,6 +9,7 @@
 	var gulp = require('gulp'),
 	del = require('del'),
 	browsersync = require('browser-sync'),
+	ngrok = require('ngrok'),
 
 	imagemin = require('gulp-imagemin'),
 	newer = require('gulp-newer'),
@@ -41,6 +42,7 @@
  * Options List
  * ...
  */
+
  	sassOptions = {
  		errToLogConsole: true,
  		precision: 4,
@@ -60,13 +62,13 @@
  	},
 
  	browsersyncOptions = {
- 		server: {
- 			baseDir: destination,
- 			index: 'index.html'
- 		},
- 		open: true,
- 		notify: true
- 	},
+		server: {
+			baseDir: destination,
+			index: 'index.html'
+		},
+		open: true,
+		notify: true
+	},
 
  	compassOptions	= {
 		css: 'build/css',
