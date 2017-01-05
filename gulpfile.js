@@ -9,7 +9,6 @@
 	var gulp = require('gulp'),
 	del = require('del'),
 	browsersync = require('browser-sync'),
-	ngrok = require('ngrok'),
 
 	imagemin = require('gulp-imagemin'),
 	newer = require('gulp-newer'),

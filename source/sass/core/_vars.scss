@@ -13,9 +13,9 @@ $ff-lato: 'Lato','Lato-Light','Lato-Bold';
 $ff-ubuntu: 'Ubuntu','Ubuntu-Light','Ubuntu-Bold';
 $ff-opensans: 'OpenSans','OpenSans-Light','OpenSans-Bold';
 
-$font-regular: nth($ff-josefinslab, 1);
-$font-light: nth($ff-josefinslab, 2);
-$font-bold: nth($ff-josefinslab, 3);
+$font-regular: nth($ff-lato, 1);
+$font-light: nth($ff-lato, 2);
+$font-bold: nth($ff-lato, 3);
 $font-fontawesome: 'FontAwesome';
 
 
