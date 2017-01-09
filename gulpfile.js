@@ -25,9 +25,6 @@
 	stripdebug = require('gulp-strip-debug'),
 	uglify = require('gulp-uglify'),
 
-	//size = require('gulp-size'),
-	//order = require('gulp-deporder'),
-	//htmlclean = require('gulp-htmlclean'),
 
 /*
  * Soruce and Destination Folders
@@ -73,7 +70,6 @@
 		css: 'build/css',
 		sass: 'source/sass',
 		image: 'source/images'
-		// sourcemap: true
 	},
 
 

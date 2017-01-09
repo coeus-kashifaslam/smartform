@@ -6,6 +6,9 @@ $grid-layout-icon-selected-clr: $default-theme;
   display: table;
   width: 100%;
 }
+.ranking__container__grid {
+  table-layout: fixed;
+}
 .elem__table__row {
   display: table-row;
   width: 100%;
@@ -26,6 +29,7 @@ $grid-layout-icon-selected-clr: $default-theme;
     text-align: center;
     padding: 10px 5px;
     vertical-align: middle;
+    width: auto;
     border-bottom: 1px solid $gird-layout-row-border;
     input[type='radio'] {
       display: none;
@@ -38,8 +42,12 @@ $grid-layout-icon-selected-clr: $default-theme;
       display: inline-block;
       vertical-align: middle;
     }
-    + .ranking__list__item {
-      width: 120px;
+    //+ .ranking__list__item {
+    //  width: 120px;
+    //}
+    &:first-child {
+      min-width: unset;
+      width: 250px;
     }
     .icomoon-sudo {
       display: none;
@@ -66,13 +74,13 @@ $grid-layout-icon-selected-clr: $default-theme;
     text-align: left;
     .ranking__list__item__label-content {
       margin-bottom: 0;
-      font-weight: 700;
+      //font-weight: 700;
     }
   }
   &.ranking__list__grid__tooltip-row {
     .ranking__list__item__label {
       display: block;
-      text-indent: initial;
+      text-indent: 0;
       width: auto;
       height: auto;
       margin: 0;
