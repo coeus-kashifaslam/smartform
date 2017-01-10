@@ -7,49 +7,245 @@
             <div class="ranking__container">
                 <div class="ranking__container__grid elem__table">
 
-                    {% set tableRows = [1,2,3,4,5] %}
-                    {% for tableRow in tableRows %}
-                        {% if tableRow == 1 %}
-                            <ul class="ranking__list list-unstyled ranking__list__grid elem__table__row ranking__list__grid__tooltip-row">
-                                {% set rankingText = [
-                                {text: ""},
-                                {text: "Tooltip 1"},
-                                {text: "Tooltip 2"},
-                                {text: "Tooltip 3"},
-                                {text: "Tooltip 4"},
-                                {text: "Tooltip 5"}
-                                ] %}
-                                {% for rankText in rankingText %}
-                                <li class="ranking__list__item elem__table__cell">
-                                    <input type="radio" name="some__name" value="some__value">
-                                    <p class="ranking__list__item__label">{{rankText.text}}</p>
-                                </li>
-                                {% endfor %}
-                            </ul>
-                        {% else %}
-                            <ul class="ranking__list list-unstyled ranking__list__grid elem__table__row rating-comp__icons-list rating-comp__selection-type__single">
-                                <li class="ranking__list__item elem__table__cell ranking__list__item__label-cell">
-                                    <p class="ranking__list__item__label-content">Lorem Ipsum</p>
-                                </li>
-                                {% set rankingText = [
-                                {text: "Item 0 sdfasfafds asfd asf afsdasdf a"},
-                                {text: "Item 1"},
-                                {text: "Item 2"},
-                                {text: "Item 3"},
-                                {text: "Item 4"}
-                                ] %}
-                                {% for rankText in rankingText %}
-                                <li class="ranking__list__item elem__table__cell">
-                                    <input type="radio" name="some__name" value="some__value">
-                                    <i class="ranking__list__item__icon icomoon-default ico ico-serious"></i>
-                                    <i class="ranking__list__item__icon icomoon-sudo ico ico-serious-selected"></i>
-                                    <!--<label class="ranking__list__item__label">{{rankText.text}}</label>-->
-                                    <label class="ranking__list__item__label">{{rankText.text}}</label>
-                                </li>
-                                {% endfor %}
-                            </ul>
-                        {% endif %}
-                    {% endfor %}
+
+
+
+                    <ul class="ranking__list list-unstyled ranking__list__grid elem__table__row ranking__list__grid__tooltip-row">
+
+
+                        <li class="ranking__list__item elem__table__cell">
+                            <input type="radio" name="some__name" value="some__value">
+                            <p class="ranking__list__item__label"></p>
+                        </li>
+
+                        <li class="ranking__list__item elem__table__cell">
+                            <input type="radio" name="some__name" value="some__value">
+                            <p class="ranking__list__item__label">Tooltip 1</p>
+                        </li>
+
+                        <li class="ranking__list__item elem__table__cell">
+                            <input type="radio" name="some__name" value="some__value">
+                            <p class="ranking__list__item__label">Tooltip 2</p>
+                        </li>
+
+                        <li class="ranking__list__item elem__table__cell">
+                            <input type="radio" name="some__name" value="some__value">
+                            <p class="ranking__list__item__label">Tooltip 3</p>
+                        </li>
+
+                        <li class="ranking__list__item elem__table__cell">
+                            <input type="radio" name="some__name" value="some__value">
+                            <p class="ranking__list__item__label">Tooltip 4</p>
+                        </li>
+
+                        <li class="ranking__list__item elem__table__cell">
+                            <input type="radio" name="some__name" value="some__value">
+                            <p class="ranking__list__item__label">Tooltip 5</p>
+                        </li>
+
+                    </ul>
+
+
+
+                    <ul class="ranking__list list-unstyled ranking__list__grid elem__table__row rating-comp__icons-list rating-comp__selection-type__single">
+                        <li class="ranking__list__item elem__table__cell ranking__list__item__label-cell">
+                            <p class="ranking__list__item__label-content">Lorem Ipsum</p>
+                        </li>
+
+
+                        <li class="ranking__list__item elem__table__cell">
+                            <input type="radio" name="some__name" value="some__value">
+                            <i class="ranking__list__item__icon icomoon-default ico ico-serious"></i>
+                            <i class="ranking__list__item__icon icomoon-sudo ico ico-serious-selected"></i>
+                            <!--<label class="ranking__list__item__label">Item 0 sdfasfafds asfd asf afsdasdf a</label>-->
+                            <label class="ranking__list__item__label">Item 0 sdfasfafds asfd asf afsdasdf a</label>
+                        </li>
+
+                        <li class="ranking__list__item elem__table__cell">
+                            <input type="radio" name="some__name" value="some__value">
+                            <i class="ranking__list__item__icon icomoon-default ico ico-serious"></i>
+                            <i class="ranking__list__item__icon icomoon-sudo ico ico-serious-selected"></i>
+                            <!--<label class="ranking__list__item__label">Item 1</label>-->
+                            <label class="ranking__list__item__label">Item 1</label>
+                        </li>
+
+                        <li class="ranking__list__item elem__table__cell">
+                            <input type="radio" name="some__name" value="some__value">
+                            <i class="ranking__list__item__icon icomoon-default ico ico-serious"></i>
+                            <i class="ranking__list__item__icon icomoon-sudo ico ico-serious-selected"></i>
+                            <!--<label class="ranking__list__item__label">Item 2</label>-->
+                            <label class="ranking__list__item__label">Item 2</label>
+                        </li>
+
+                        <li class="ranking__list__item elem__table__cell">
+                            <input type="radio" name="some__name" value="some__value">
+                            <i class="ranking__list__item__icon icomoon-default ico ico-serious"></i>
+                            <i class="ranking__list__item__icon icomoon-sudo ico ico-serious-selected"></i>
+                            <!--<label class="ranking__list__item__label">Item 3</label>-->
+                            <label class="ranking__list__item__label">Item 3</label>
+                        </li>
+
+                        <li class="ranking__list__item elem__table__cell">
+                            <input type="radio" name="some__name" value="some__value">
+                            <i class="ranking__list__item__icon icomoon-default ico ico-serious"></i>
+                            <i class="ranking__list__item__icon icomoon-sudo ico ico-serious-selected"></i>
+                            <!--<label class="ranking__list__item__label">Item 4</label>-->
+                            <label class="ranking__list__item__label">Item 4</label>
+                        </li>
+
+                    </ul>
+
+
+
+                    <ul class="ranking__list list-unstyled ranking__list__grid elem__table__row rating-comp__icons-list rating-comp__selection-type__single">
+                        <li class="ranking__list__item elem__table__cell ranking__list__item__label-cell">
+                            <p class="ranking__list__item__label-content">Lorem Ipsum</p>
+                        </li>
+
+
+                        <li class="ranking__list__item elem__table__cell">
+                            <input type="radio" name="some__name" value="some__value">
+                            <i class="ranking__list__item__icon icomoon-default ico ico-serious"></i>
+                            <i class="ranking__list__item__icon icomoon-sudo ico ico-serious-selected"></i>
+                            <!--<label class="ranking__list__item__label">Item 0 sdfasfafds asfd asf afsdasdf a</label>-->
+                            <label class="ranking__list__item__label">Item 0 sdfasfafds asfd asf afsdasdf a</label>
+                        </li>
+
+                        <li class="ranking__list__item elem__table__cell">
+                            <input type="radio" name="some__name" value="some__value">
+                            <i class="ranking__list__item__icon icomoon-default ico ico-serious"></i>
+                            <i class="ranking__list__item__icon icomoon-sudo ico ico-serious-selected"></i>
+                            <!--<label class="ranking__list__item__label">Item 1</label>-->
+                            <label class="ranking__list__item__label">Item 1</label>
+                        </li>
+
+                        <li class="ranking__list__item elem__table__cell">
+                            <input type="radio" name="some__name" value="some__value">
+                            <i class="ranking__list__item__icon icomoon-default ico ico-serious"></i>
+                            <i class="ranking__list__item__icon icomoon-sudo ico ico-serious-selected"></i>
+                            <!--<label class="ranking__list__item__label">Item 2</label>-->
+                            <label class="ranking__list__item__label">Item 2</label>
+                        </li>
+
+                        <li class="ranking__list__item elem__table__cell">
+                            <input type="radio" name="some__name" value="some__value">
+                            <i class="ranking__list__item__icon icomoon-default ico ico-serious"></i>
+                            <i class="ranking__list__item__icon icomoon-sudo ico ico-serious-selected"></i>
+                            <!--<label class="ranking__list__item__label">Item 3</label>-->
+                            <label class="ranking__list__item__label">Item 3</label>
+                        </li>
+
+                        <li class="ranking__list__item elem__table__cell">
+                            <input type="radio" name="some__name" value="some__value">
+                            <i class="ranking__list__item__icon icomoon-default ico ico-serious"></i>
+                            <i class="ranking__list__item__icon icomoon-sudo ico ico-serious-selected"></i>
+                            <!--<label class="ranking__list__item__label">Item 4</label>-->
+                            <label class="ranking__list__item__label">Item 4</label>
+                        </li>
+
+                    </ul>
+
+
+
+                    <ul class="ranking__list list-unstyled ranking__list__grid elem__table__row rating-comp__icons-list rating-comp__selection-type__single">
+                        <li class="ranking__list__item elem__table__cell ranking__list__item__label-cell">
+                            <p class="ranking__list__item__label-content">Lorem Ipsum</p>
+                        </li>
+
+
+                        <li class="ranking__list__item elem__table__cell">
+                            <input type="radio" name="some__name" value="some__value">
+                            <i class="ranking__list__item__icon icomoon-default ico ico-serious"></i>
+                            <i class="ranking__list__item__icon icomoon-sudo ico ico-serious-selected"></i>
+                            <!--<label class="ranking__list__item__label">Item 0 sdfasfafds asfd asf afsdasdf a</label>-->
+                            <label class="ranking__list__item__label">Item 0 sdfasfafds asfd asf afsdasdf a</label>
+                        </li>
+
+                        <li class="ranking__list__item elem__table__cell">
+                            <input type="radio" name="some__name" value="some__value">
+                            <i class="ranking__list__item__icon icomoon-default ico ico-serious"></i>
+                            <i class="ranking__list__item__icon icomoon-sudo ico ico-serious-selected"></i>
+                            <!--<label class="ranking__list__item__label">Item 1</label>-->
+                            <label class="ranking__list__item__label">Item 1</label>
+                        </li>
+
+                        <li class="ranking__list__item elem__table__cell">
+                            <input type="radio" name="some__name" value="some__value">
+                            <i class="ranking__list__item__icon icomoon-default ico ico-serious"></i>
+                            <i class="ranking__list__item__icon icomoon-sudo ico ico-serious-selected"></i>
+                            <!--<label class="ranking__list__item__label">Item 2</label>-->
+                            <label class="ranking__list__item__label">Item 2</label>
+                        </li>
+
+                        <li class="ranking__list__item elem__table__cell">
+                            <input type="radio" name="some__name" value="some__value">
+                            <i class="ranking__list__item__icon icomoon-default ico ico-serious"></i>
+                            <i class="ranking__list__item__icon icomoon-sudo ico ico-serious-selected"></i>
+                            <!--<label class="ranking__list__item__label">Item 3</label>-->
+                            <label class="ranking__list__item__label">Item 3</label>
+                        </li>
+
+                        <li class="ranking__list__item elem__table__cell">
+                            <input type="radio" name="some__name" value="some__value">
+                            <i class="ranking__list__item__icon icomoon-default ico ico-serious"></i>
+                            <i class="ranking__list__item__icon icomoon-sudo ico ico-serious-selected"></i>
+                            <!--<label class="ranking__list__item__label">Item 4</label>-->
+                            <label class="ranking__list__item__label">Item 4</label>
+                        </li>
+
+                    </ul>
+
+
+
+                    <ul class="ranking__list list-unstyled ranking__list__grid elem__table__row rating-comp__icons-list rating-comp__selection-type__single">
+                        <li class="ranking__list__item elem__table__cell ranking__list__item__label-cell">
+                            <p class="ranking__list__item__label-content">Lorem Ipsum</p>
+                        </li>
+
+
+                        <li class="ranking__list__item elem__table__cell">
+                            <input type="radio" name="some__name" value="some__value">
+                            <i class="ranking__list__item__icon icomoon-default ico ico-serious"></i>
+                            <i class="ranking__list__item__icon icomoon-sudo ico ico-serious-selected"></i>
+                            <!--<label class="ranking__list__item__label">Item 0 sdfasfafds asfd asf afsdasdf a</label>-->
+                            <label class="ranking__list__item__label">Item 0 sdfasfafds asfd asf afsdasdf a</label>
+                        </li>
+
+                        <li class="ranking__list__item elem__table__cell">
+                            <input type="radio" name="some__name" value="some__value">
+                            <i class="ranking__list__item__icon icomoon-default ico ico-serious"></i>
+                            <i class="ranking__list__item__icon icomoon-sudo ico ico-serious-selected"></i>
+                            <!--<label class="ranking__list__item__label">Item 1</label>-->
+                            <label class="ranking__list__item__label">Item 1</label>
+                        </li>
+
+                        <li class="ranking__list__item elem__table__cell">
+                            <input type="radio" name="some__name" value="some__value">
+                            <i class="ranking__list__item__icon icomoon-default ico ico-serious"></i>
+                            <i class="ranking__list__item__icon icomoon-sudo ico ico-serious-selected"></i>
+                            <!--<label class="ranking__list__item__label">Item 2</label>-->
+                            <label class="ranking__list__item__label">Item 2</label>
+                        </li>
+
+                        <li class="ranking__list__item elem__table__cell">
+                            <input type="radio" name="some__name" value="some__value">
+                            <i class="ranking__list__item__icon icomoon-default ico ico-serious"></i>
+                            <i class="ranking__list__item__icon icomoon-sudo ico ico-serious-selected"></i>
+                            <!--<label class="ranking__list__item__label">Item 3</label>-->
+                            <label class="ranking__list__item__label">Item 3</label>
+                        </li>
+
+                        <li class="ranking__list__item elem__table__cell">
+                            <input type="radio" name="some__name" value="some__value">
+                            <i class="ranking__list__item__icon icomoon-default ico ico-serious"></i>
+                            <i class="ranking__list__item__icon icomoon-sudo ico ico-serious-selected"></i>
+                            <!--<label class="ranking__list__item__label">Item 4</label>-->
+                            <label class="ranking__list__item__label">Item 4</label>
+                        </li>
+
+                    </ul>
+
+
                 </div>
             </div>
         </div>
