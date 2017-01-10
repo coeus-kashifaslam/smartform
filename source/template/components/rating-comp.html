@@ -5,32 +5,37 @@
 
         {% if ratingComp == 'ranking' %}
         <div class="col-sm-4 rating-comp__col-label">
+            {% if ratingType == 'total' %}
+                <p class="rating-comp__label rating-comp__label__bold">Total: <span class="rating-comp__value-count__calculated">4</span>/<span class="rating-comp__value-count__total">5</span>
+            {% else %}
+                <p class="rating-comp__label">Rating Quesion Label</p>
+            {% endif %}
+
         {% elseif ratingComp == 'thumbnailLeft' %}
         <div class="col-sm-5 rating-comp__col-label">
+            {% if ratingType == 'total' %}
+                <p class="rating-comp__label rating-comp__label__bold">Total:
+            {% else %}
+                <p class="rating-comp__label">Rating Quesion Label</p>
+            {% endif %}
+
         {% else %}
         <div class="col-sm-7 rating-comp__col-label">
-        {% endif %}
-
             {% if ratingType == 'total' %}
-            {% if ratingComp == 'ranking' %}
-            <p class="rating-comp__label rating-comp__label__bold">Total: <span class="rating-comp__value-count__calculated">4</span>/<span
-                class="rating-comp__value-count__total">5</span>
+                <p class="rating-comp__label rating-comp__label__bold">Total:
             {% else %}
-            <p class="rating-comp__label rating-comp__label__bold">Total:</p>
+                <p class="rating-comp__label">Rating Quesion Label</p>
             {% endif %}
-
-            {% else %}
-            <p class="rating-comp__label">Rating Quesion Label</p>
-            {% endif %}
+        {% endif %}
 
         </div>
 
         {% if ratingComp == 'ranking' %}
-        <div class="col-sm-8 rating-comp__col-icons">
+            <div class="col-sm-8 rating-comp__col-icons">
         {% elseif ratingComp == 'thumbnailLeft' %}
-        <div class="col-sm-7 rating-comp__col-icons">
+            <div class="col-sm-7 rating-comp__col-icons">
         {% else %}
-        <div class="col-sm-5 rating-comp__col-icons">
+            <div class="col-sm-5 rating-comp__col-icons">
         {% endif %}
 
             <div class="rating-comp__col-icons__open">
@@ -39,10 +44,11 @@
                 <ul class="list-inline rating-comp__icons-list rating-comp__selection-type__continuous">
                     <!--to show large stars on mobile add this class in above ul tag (rating-comp__icons-count__large)-->
                     <!--to show large stars on mobile add this class in above ul tag (rating-comp__icons-count__small)-->
-
+                    {% set ratingItems = [0,1,2,3,4]%}
+                    {% for ratingItem in ratingItems %}
                     <li>
-                        <input type="radio" name="rating-radio" value="radio1">
-                        <label class="rating-comp__icon-single">
+                        <input type="radio" name="rating-radio" value="radio{{ratingItem}}" id="radio{{ratingItem}}">
+                        <label class="rating-comp__icon-single" for="radio{{ratingItem}}">
                             <i class="icomoon-default ico ico-star"></i>
                             <i class="icomoon-sudo ico ico-star-selected"></i>
                         </label>
@@ -50,56 +56,18 @@
                             <p class="rating-comp__tooltip-content">lorem Ipsum</p>
                         </div>
                     </li>
-                    <li>
-                        <input type="radio" name="rating-radio" value="radio2">
-                        <label class="rating-comp__icon-single">
-                            <i class="icomoon-default ico ico-star"></i>
-                            <i class="icomoon-sudo ico ico-star-selected"></i>
-                        </label>
-                        <div class="rating-comp__tooltip">
-                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
-                        </div>
-                    </li>
-                    <li>
-                        <input type="radio" name="rating-radio" value="radio3">
-                        <label class="rating-comp__icon-single">
-                            <i class="icomoon-default ico ico-star"></i>
-                            <i class="icomoon-sudo ico ico-star-selected"></i>
-                        </label>
-                        <div class="rating-comp__tooltip">
-                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
-                        </div>
-                    </li>
-                    <li>
-                        <input type="radio" name="rating-radio" value="radio4">
-                        <label class="rating-comp__icon-single">
-                            <i class="icomoon-default ico ico-star"></i>
-                            <i class="icomoon-sudo ico ico-star-selected"></i>
-                        </label>
-                        <div class="rating-comp__tooltip">
-                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
-                        </div>
-                    </li>
-                    <li>
-                        <input type="radio" name="rating-radio" value="radio5">
-                        <label class="rating-comp__icon-single">
-                            <i class="icomoon-default ico ico-star"></i>
-                            <i class="icomoon-sudo ico ico-star-selected"></i>
-                        </label>
-                        <div class="rating-comp__tooltip">
-                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
-                        </div>
-                    </li>
+                    {% endfor %}
                 </ul>
+
                 {% if ratingComp == 'ranking' %}
+                    <!--It will be empty in this case-->
                 {% else %}
                     {% if ratingNumber == 'false' %}
-                    <p class="rating-comp__value-count"></p>
+                        <p class="rating-comp__value-count"></p>
                     {% else %}
-                    <p class="rating-comp__value-count">
-                        <span class="rating-comp__value-count__calculated">4</span>/<span
-                            class="rating-comp__value-count__total">5</span>
-                    </p>
+                        <p class="rating-comp__value-count">
+                            <span class="rating-comp__value-count__calculated">4</span>/<span class="rating-comp__value-count__total">5</span>
+                        </p>
                     {% endif %}
                 {% endif %}
                 <div class="clearfix"></div>

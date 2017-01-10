@@ -1,0 +1,31 @@
+<!--Multiple Choice Start-->
+<article class="form__elem">
+    <div class="elem__multiple-choice">
+        <h3 class="form__elem__title">Multiple Choice</h3>
+        <div class="form__elem__body">
+            <p class="form__elem__help-text">Help Text goes here</p>
+            <div class="form__elem__option-rows">
+                {% set checkboxRows = [0,1]%}
+                {% for checkboxRow in checkboxRows %}
+                <div class="row form__elem__options-row">
+                    {% set checkboxElements = [0,1]%}
+                    {% for checkboxElement in checkboxElements %}
+                    <div class="col-sm-6">
+                        <div class="elem-type__checkbox">
+                            <input type="checkbox" class="form-checkbox" name="multiple-choic"
+                                   id="checkboxRow{{checkboxRow}}-checkbox{{checkboxElement}}">
+                            <label for="checkboxRow{{checkboxRow}}-checkbox{{checkboxElement}}">
+                                <span>Checkbox 1</span>
+                            </label>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    <div class="clearfix"></div>
+                </div>
+                {% endfor %}
+            </div>
+            <p class="form__elem__error-text">This is error Message</p>
+        </div>
+    </div>
+</article>
+<!--Multiple Choice End-->
