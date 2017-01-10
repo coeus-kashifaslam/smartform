@@ -66,6 +66,7 @@ $grid-layout-icon-selected-clr: $default-theme;
       text-indent: -999px;
       overflow: hidden;
       cursor: pointer;
+      font-size: $default-font-size;
     }
   }
   .ranking__list__item__label-cell {
@@ -88,6 +89,7 @@ $grid-layout-icon-selected-clr: $default-theme;
       left: auto;
       top: auto;
       cursor: default;
+      font-size: $default-font-size;
     }
   }
   &.rating-comp__selection-type__continuous {
