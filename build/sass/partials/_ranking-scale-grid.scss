@@ -174,22 +174,18 @@ $grid-layout-icon-selected-clr: $default-theme;
     }
     .ranking__list__item {
       .ranking__list__item__label {
-        //display: inline-block;
-        //text-indent: initial;
-        //width: auto;
-        //height: auto;
-        //margin: 0;
-        //position: relative;
-        //left: auto;
-        //top: auto;
         text-indent: initial;
         position: absolute;
         left: 0;
         top: 58%;
         width: auto;
-        //transform: translateY(-48%);
-        min-height: 33px;
+        min-height: 40px;
         padding-left: 35px;
+        margin-bottom: 0;
+        .ico {
+          vertical-align: top;
+          line-height: 1;
+        }
       }
     }
     .ranking__list__item__label-cell {

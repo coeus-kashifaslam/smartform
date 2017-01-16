@@ -11,7 +11,27 @@
             <div class="ranking__container">
                 <ul class="ranking__list list-unstyled ranking__list__default elem__table rating-comp__icons-list rating-comp__selection-type__continuous">
 
-                    {% set numbers = [0,1,2,3,4,5,6,7,8,9,10]%}
+
+                    <li class="ranking__list__item elem__table__cell">
+                        <label class="ranking__list__item__label">
+                            <i class="ico ico-1 icomoon-default"></i>
+                            <i class="ico ico-1-selected icomoon-sudo"></i>
+                        </label>
+                        <div class="ranking__list__item__tooltip">
+                            <div class="ranking__list__item__tooltip-body">
+                                <ul class="list-inline">
+                                    <li>Some text goes here</li>
+                                    <li><i class="ico ico-star tooltip__ico-selected"></i></li>
+                                    <li><i class="ico ico-star"></i></li>
+                                    <li><i class="ico ico-star"></i></li>
+                                    <li><i class="ico ico-star"></i></li>
+                                    <li><i class="ico ico-star"></i></li>
+                                    <li><span class="count__current">4</span><span class="count__total">/5</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    {% set numbers = [0,1,2,3,4,5,6,7,8,9]%}
                     {% for number in numbers %}
                     <li class="ranking__list__item elem__table__cell">
                         <label class="ranking__list__item__label">
