@@ -37,7 +37,9 @@
     min-height: 210px;
     > .row {
       &:last-child {
-        margin-bottom: 0;
+        &, .rating-comp__row {
+          margin-bottom: 0;
+        }
       }
     }
   }
