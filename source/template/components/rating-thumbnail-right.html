@@ -17,6 +17,12 @@
             </div>
             <div class="col-sm-6 col-sm-pull-6 rating__icons__col">
                 <div class="rating__icons__col__content">
+                    {% set ratingNumber = 'false' %}
+                    {% set ratingComp = 'ranking' %}
+                    {% include 'template/components/rating-comp.html' %}
+                    {% include 'template/components/rating-comp.html' %}
+                    {% include 'template/components/rating-comp.html' %}
+                    <div class="rating-comp__separater"></div>
                     {% set ratingType = 'total' %}
                     {% set ratingNumber = 'true' %}
                     {% set ratingComp = 'ranking' %}
