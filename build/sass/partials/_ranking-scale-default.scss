@@ -139,13 +139,16 @@ $tooltip-icon-sudo-color: $sudo-rating-color;
 }
 @media (max-width: 767px) {
   .ranking__list__default {
-    display: block;
-    text-align: center;
+    //display: block;
+    //text-align: center;
     .ranking__list__item {
-      display: inline-block;
-      width: auto;
-      padding-left: 3px;
-      padding-right: 3px;
+      //display: inline-block;
+      //width: auto;
+      //padding-left: 3px;
+      //padding-right: 3px;
+      .ranking__list__item__label {
+        font-size: 25px;
+      }
     }
   }
 }
