@@ -1,5 +1,6 @@
 $icon-color: $default-border-color;
 $icon-sudo-color: $default-theme;
+$tooltip-icon-sudo-color: $sudo-rating-color;
 
 .ranking__list__default {
   .ranking__list__item {
@@ -16,13 +17,9 @@ $icon-sudo-color: $default-theme;
       padding-top: 6px;
       display: inline-block;
       vertical-align: middle;
+      position: relative;
       .icomoon-sudo {
         display: none;
-      }
-      &:hover {
-        + .ranking__list__item__tooltip {
-          display: block;
-        }
       }
     }
   }
@@ -61,22 +58,39 @@ $icon-sudo-color: $default-theme;
   }
 }
 
+
+.ranking__list__default {
+  .ranking__list__item {
+    .ranking__list__item__label {
+      &:hover {
+        .ranking__list__item__tooltip {
+          display: block;
+        }
+      }
+    }
+  }
+}
 .ranking__list__item__tooltip {
   display: none;
   position: absolute;
-  bottom: -55px;
+  bottom: -35px;
   left: 50%;
+  white-space: nowrap;
   transform: translateX(-50%);
-  width: 150px;
+  font-size: $default-font-size - 2;
+  z-index: 1;
 }
 .ranking__list__item__tooltip-body {
   position: relative;
-  &:before,
-  &:after{
+  background: $icon-sudo-color;
+  color: $white;
+  padding: 3px 6px 5px 10px;
+  border-radius: 2px;
+  &:before {
     content: '';
     display: block;
     position: absolute;
-    top: -13px;
+    top: -8px;
     width: 0;
     height: 0;
     border-style: solid;
@@ -84,18 +98,39 @@ $icon-sudo-color: $default-theme;
   &:before {
     left: 50%;
     margin-left: -7px;
-    border-color: transparent transparent orange transparent;
-    border-width: 0 6px 13px 6px;
+    border-color: transparent transparent $icon-sudo-color transparent;
+    border-width: 0 6px 8px;
   }
-  &:after {
-    left: 50%;
-    margin-left: -6px;
-    border-color: transparent transparent green transparent;
-    border-width: 0 5px 12px 5px;
+  li {
+    margin-left: 0;
+    padding: 0;
+  }
+  .ico{
+    &.tooltip__ico-selected {
+      color: $tooltip-icon-sudo-color;
+    }
   }
 }
 
-
+.ranking__message {
+  margin-top: 15px;
+  .ico {
+    color: $default-rating-color;
+    &.ranking__message__selected {
+      color: $sudo-rating-color;
+    }
+  }
+  p {
+    margin-bottom: 0;
+  }
+  span {
+    vertical-align: middle;
+    margin-left: -3px;
+  }
+  @media (max-width: 767px) {
+    font-size: 12px;
+  }
+}
 @media (max-width: 767px) {
   .ranking__list__default {
     display: block;
