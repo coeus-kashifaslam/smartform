@@ -73,7 +73,7 @@ $tooltip-icon-sudo-color: $sudo-rating-color;
 .ranking__list__item__tooltip {
   display: none;
   position: absolute;
-  bottom: -35px;
+  top: -30px;
   left: 50%;
   white-space: nowrap;
   transform: translateX(-50%);
@@ -90,7 +90,7 @@ $tooltip-icon-sudo-color: $sudo-rating-color;
     content: '';
     display: block;
     position: absolute;
-    top: -8px;
+    bottom: -8px;
     width: 0;
     height: 0;
     border-style: solid;
@@ -98,8 +98,8 @@ $tooltip-icon-sudo-color: $sudo-rating-color;
   &:before {
     left: 50%;
     margin-left: -7px;
-    border-color: transparent transparent $default-theme transparent;
-    border-width: 0 6px 8px;
+    border-color: $default-theme transparent transparent transparent;
+    border-width: 8px 6px 0;
   }
   li {
     margin-left: 0;
