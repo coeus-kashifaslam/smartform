@@ -16,9 +16,6 @@ $rating-label-color: #424242;
   }
 }
 .elem__rating-thumbnail-left {
-  .rating-comp__separater {
-    height: 2px;
-  }
   .rating__container {
     .row{
       &:last-child {
@@ -28,9 +25,14 @@ $rating-label-color: #424242;
       }
     }
   }
-  .rating-comp__label {
-    //font-weight: 700;
-    //color: $rating-label-color;
+  .rating-comp__separater {
+    height: 2px;
+    + .row{
+      .rating-comp__row {
+        margin-bottom: 0 !important;
+      }
+    }
+
   }
 }
 

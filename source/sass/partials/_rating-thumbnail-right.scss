@@ -36,7 +36,7 @@
     padding: 20px 15px;
     min-height: 210px;
     > .row {
-      &:last-child {
+      &:last-of-type {
         &, .rating-comp__row {
           margin-bottom: 0;
         }

@@ -6,6 +6,19 @@
   border: 1px solid $default-theme;
   border-top: 0 none !important;
   position: relative;
+  .caption-form__error-text {
+    padding-left: 10px;
+    @media (max-width: 767px) {
+      padding-left: 0;
+    }
+  }
+  .row {
+    + .row {
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
 }
 .caption-form__icon {
   color: $default-theme;
