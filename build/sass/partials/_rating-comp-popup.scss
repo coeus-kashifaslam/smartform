@@ -76,3 +76,20 @@
   @extend %default-font-light;
   font-size: $default-font-size - 2;
 }
+
+$error-icon-color: #0077bb;
+.caption-form__error-icon {
+  text-align: center;
+  .error-page__icon {
+    font-size: 450px;
+    color: $error-icon-color;
+    @media (max-width: 767px) {
+      font-size: 250px;
+    }
+  }
+}
+.rating-comp__caption-form__error-page {
+  .caption-form__caption-top {
+    padding-left: 15px;
+  }
+}
