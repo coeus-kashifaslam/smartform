@@ -1,0 +1,18 @@
+.thank-you__content {
+  border: 1px solid $default-border-color;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.elem__thank-you {
+  margin-bottom: 30px;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 767px) {
+  .thank-you__content {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+}
