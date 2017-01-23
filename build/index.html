@@ -21,8 +21,8 @@
 <div class="comp__languages">
     <div class="sff-form__content-wrap">
         <ul class="list-inline languages__list">
-            <li><a href="#"><img src="images/flags/32x32/de.png" alt="Language Flag" class="language__flag"></a></li>
-            <li><a href="#"><img src="images/flags/32x32/gb.png" alt="Language Flag" class="language__flag"></a></li>
+            <li><a href="#"><img data-src="images/flags/32x32/de.png" alt="Loading..." class="b-lazy language__flag"></a></li>
+            <li><a href="#"><img data-src="images/flags/32x32/gb.png" alt="Loading..." class="b-lazy language__flag"></a></li>
         </ul>
     </div>
 </div>
@@ -35,7 +35,7 @@
 
     <div class="sff-form__content-wrap">
         <div class="form__logo">
-            <img src="images/default-logo.jpg" alt="Default Logo Not Available">
+            <img class="b-lazy" data-src="images/default-logo.jpg" alt="Loading...">
         </div>
     </div>
 </div>
@@ -451,7 +451,8 @@
             <div class="col-sm-6 col-sm-push-6 rating__thumbnail__col">
                 <div class="rating__thumbnail__col__content">
                     <div class="rating__thumbnail__container">
-                        <img src="images/product.jpg" alt="Product Thumbnail" class="product-thumbnail"></div>
+                        <img class="b-lazy product-thumbnail" data-src="images/product.jpg" alt="Loading...">
+                    </div>
                 </div>
             </div>
             <div class="col-sm-6 col-sm-pull-6 rating__icons__col">
@@ -862,7 +863,7 @@
                 <div class="row">
                     <div class="col-sm-4 elem__rating__thumbnail-container">
                         <div class="elem__rating__left-thumbnail__container">
-                            <img src="images/product.jpg" alt="Left aligned thumbnail in rating" class="elem__rating__left-thumbnail">
+                            <img class="b-lazy elem__rating__left-thumbnail" data-src="images/product.jpg" alt="Loading..." />
                         </div>
                     </div>
                     <div class="col-sm-8 elem__rating__icons-container">
@@ -2821,7 +2822,7 @@
                 <div class="col-sm-3">
                     <p class="power-by__info">
                         <span>powered by</span>
-                        <span class="power-by__logo"><img src="images/powered-by.png" alt="Logo not Available"></span>
+                        <span class="power-by__logo"><img class="b-lazy" data-src="images/powered-by.png" alt="Loading..."></span>
                     </p>
                 </div>
                 <div class="clearfix"></div>
@@ -2833,6 +2834,7 @@
     
 </div>
 
+<script type="text/javascript" src="js/libs/blazy.js"></script>
 <script type="text/javascript" src="js/libs/jquery.js"></script>
 <script type="text/javascript" src="js/libs/modernizr.js"></script>
 <script type="text/javascript" src="js/libs/bootstrap.js"></script>

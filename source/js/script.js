@@ -4,3 +4,8 @@ $(document).ready(function (){
         tickIcon: 'ico-tick'
     });
 });
+
+;(function() {
+    // Initialize
+    var bLazy = new Blazy();
+})();
