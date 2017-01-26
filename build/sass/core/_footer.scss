@@ -35,10 +35,27 @@
   font-size: 12px;
   color: $black;
   .power-by__logo {
-      margin-left: 10px;
+    margin-left: 10px;
+    img {
+      max-width: 80px;
+    }
   }
 }
-
+.page__footer__active {
+  .sff-form__content-wrap {
+    background: $default-theme;
+  }
+  .power-by__info {
+    color: $white;
+  }
+  .page__footer__quick-links {
+    > li {
+      a, &:after {
+        color: $white;
+      }
+    }
+  }
+}
 @media (max-width: 767px) {
   .page__footer__quick-links {
     text-align: center;

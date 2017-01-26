@@ -18,8 +18,10 @@
 
     {% block content %}{% endblock %}
 
-    {% include 'template/includes/footer-custom.html' %}
-    {# {% include 'template/includes/footer.html' %} #}
+    {# {% include 'template/includes/footer-custom.html' %} #}
+
+    {% set footerBg = 'active'%}
+    {% include 'template/includes/footer.html' %}
 </div>
 
 {% include 'template/includes/javascripts.html' %}

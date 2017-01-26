@@ -19,12 +19,15 @@ $font-bold: nth($ff-lato, 3);
 $font-fontawesome: 'FontAwesome';
 
 
+
+$ekomi-green: #2DA137;
+$kpn-blue: #0077bb;
+$axs-blue: #3054AE;
 //Defaults
 $white: #fff;
 $black: #000;
 $default-body-bg: #efefef;
-//$default-theme: #2DA137;
-$default-theme: #0077bb;
+$default-theme: $axs-blue;
 $default-border-color: #dfdae0;
 $default-font-size: 16px;
 $default-text-color: #707070;
