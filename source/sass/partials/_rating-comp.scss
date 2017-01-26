@@ -24,8 +24,12 @@
     display: none;
   }
   li {
-    padding: 0 1px;
+    padding: 0 2px;
     position: relative;
+  }
+  #text {
+    display: none;
+    width: 0;
   }
 }
 .rating-comp__label {
