@@ -12,10 +12,11 @@ $ff-josefinslab: 'JosefinSlab','JosefinSlab-Light','JosefinSlab-Bold';
 $ff-lato: 'Lato','Lato-Light','Lato-Bold';
 $ff-ubuntu: 'Ubuntu','Ubuntu-Light','Ubuntu-Bold';
 $ff-opensans: 'OpenSans','OpenSans-Light','OpenSans-Bold';
+$ff-sourcesans: 'SourceSansPro','SourceSansPro-Light','SourceSansPro-Bold';
 
-$font-regular: nth($ff-lato, 1);
-$font-light: nth($ff-lato, 2);
-$font-bold: nth($ff-lato, 3);
+$font-regular: nth($ff-sourcesans, 1);
+$font-light: nth($ff-sourcesans, 2);
+$font-bold: nth($ff-sourcesans, 3);
 $font-fontawesome: 'FontAwesome';
 
 
