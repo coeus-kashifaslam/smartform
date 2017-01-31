@@ -1,13 +1,24 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?ohkir6');
+  src:  url('../fonts/icomoon.eot?ohkir6#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?ohkir6') format('truetype'),
+    url('../fonts/icomoon.woff?ohkir6') format('woff'),
+    url('../fonts/icomoon.svg?ohkir6#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .ico-angry:before {
   content: "\e900";
 }
 .ico-angry-selected:before {
   content: "\e901";
 }
-.ico-baffle:before {
+.ico-baffled:before {
   content: "\e902";
 }
-.ico-baffle-selected:before {
+.ico-baffled-selected:before {
   content: "\e903";
 }
 .ico-circle:before {
@@ -19,175 +30,199 @@
 .ico-comment:before {
   content: "\e906";
 }
-.ico-comment-selected:before {
+.ico-comments:before {
   content: "\e907";
 }
-.ico-confused:before {
+.ico-comment-selected:before {
   content: "\e908";
 }
-.ico-confused-selected:before {
+.ico-comments-selected:before {
   content: "\e909";
 }
-.ico-crying:before {
+.ico-confused:before {
   content: "\e90a";
 }
-.ico-crying-selected:before {
+.ico-confused-selected:before {
   content: "\e90b";
 }
-.ico-down:before {
+.ico-crying:before {
   content: "\e90c";
 }
-.ico-down-selected:before {
+.ico-crying-selected:before {
   content: "\e90d";
 }
-.ico-8:before {
+.ico-down:before {
   content: "\e90e";
 }
-.ico-8-selected:before {
+.ico-down-selected:before {
   content: "\e90f";
 }
-.ico-exclamation:before {
+.ico-eight:before {
   content: "\e910";
 }
-.ico-5:before {
+.ico-eight-selected:before {
   content: "\e911";
 }
-.ico-5-selected:before {
+.ico-envelop:before {
   content: "\e912";
 }
-.ico-4:before {
+.ico-envelop-selected:before {
   content: "\e913";
 }
-.ico-4-selected:before {
+.ico-exclamation:before {
   content: "\e914";
 }
-.ico-frustrated:before {
+.ico-five:before {
   content: "\e915";
 }
-.ico-frustrated-selected:before {
+.ico-five-selected:before {
   content: "\e916";
 }
-.ico-grin:before {
+.ico-four:before {
   content: "\e917";
 }
-.ico-grin-selected:before {
+.ico-four-selected:before {
   content: "\e918";
 }
-.ico-happy:before {
+.ico-frustrated:before {
   content: "\e919";
 }
-.ico-happy-selected:before {
+.ico-frustrated-selected:before {
   content: "\e91a";
 }
-.ico-heart:before {
+.ico-grin:before {
   content: "\e91b";
 }
-.ico-heart-selected:before {
+.ico-grin-selected:before {
   content: "\e91c";
 }
-.ico-9:before {
+.ico-happy:before {
   content: "\e91d";
 }
-.ico-9-selected:before {
+.ico-happy-selected:before {
   content: "\e91e";
 }
-.ico-1:before {
+.ico-heart:before {
   content: "\e91f";
 }
-.ico-1-selected:before {
+.ico-heart-selected:before {
   content: "\e920";
 }
-.ico-question-circle:before {
+.ico-nine:before {
   content: "\e921";
 }
-.ico-question:before {
+.ico-nine-selected:before {
   content: "\e922";
 }
-.ico-question-selected:before {
+.ico-one:before {
   content: "\e923";
 }
-.ico-question-circle-selected:before {
+.ico-one-selected:before {
   content: "\e924";
 }
-.ico-sad:before {
+.ico-question:before {
   content: "\e925";
 }
-.ico-sad-selected:before {
+.ico-question-circle-o:before {
   content: "\e926";
 }
-.ico-serious:before {
+.ico-question-circle-o-selected:before {
   content: "\e927";
 }
-.ico-serious-selected:before {
+.ico-question-selected:before {
   content: "\e928";
 }
-.ico-7:before {
+.ico-sad:before {
   content: "\e929";
 }
-.ico-7-selected:before {
+.ico-sad-selected:before {
   content: "\e92a";
 }
-.ico-6:before {
+.ico-serious:before {
   content: "\e92b";
 }
-.ico-6-selected:before {
+.ico-serious-selected:before {
   content: "\e92c";
 }
-.ico-smile:before {
+.ico-seven:before {
   content: "\e92d";
 }
-.ico-smile-selected:before {
+.ico-seven-selected:before {
   content: "\e92e";
 }
-.ico-square:before {
+.ico-six:before {
   content: "\e92f";
 }
-.ico-square-selected:before {
+.ico-six-selected:before {
   content: "\e930";
 }
-.ico-star:before {
+.ico-smile:before {
   content: "\e931";
 }
-.ico-star-selected:before {
+.ico-smile-selected:before {
   content: "\e932";
 }
-.ico-10:before {
+.ico-square:before {
   content: "\e933";
 }
-.ico-10-selected:before {
+.ico-square-selected:before {
   content: "\e934";
 }
-.ico-3:before {
+.ico-star:before {
   content: "\e935";
 }
-.ico-3-selected:before {
+.ico-starburst:before {
   content: "\e936";
 }
-.ico-thumb-down:before {
+.ico-starburst-selected:before {
   content: "\e937";
 }
-.ico-thumb-down-selected:before {
+.ico-star-selected:before {
   content: "\e938";
 }
-.ico-thumb-up:before {
+.ico-target:before {
   content: "\e939";
 }
-.ico-thumb-up-selected:before {
+.ico-target-selected:before {
   content: "\e93a";
 }
-.ico-tick:before {
+.ico-ten:before {
   content: "\e93b";
 }
-.ico-2:before {
+.ico-ten-selected:before {
   content: "\e93c";
 }
-.ico-2-selected:before {
+.ico-three:before {
   content: "\e93d";
 }
-.ico-0:before {
+.ico-three-selected:before {
   content: "\e93e";
 }
-.ico-0-selected:before {
+.ico-thumb-down:before {
   content: "\e93f";
+}
+.ico-thumb-down-selected:before {
+  content: "\e940";
+}
+.ico-thumb-up:before {
+  content: "\e941";
+}
+.ico-thumb-up-selected:before {
+  content: "\e942";
+}
+.ico-tick:before {
+  content: "\e943";
+}
+.ico-two:before {
+  content: "\e944";
+}
+.ico-two-selected:before {
+  content: "\e945";
+}
+.ico-zero:before {
+  content: "\e946";
+}
+.ico-zero-selected:before {
+  content: "\e947";
 }
 
