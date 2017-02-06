@@ -19,6 +19,14 @@
                 <p class="rating-comp__label">Rating Quesion Label</p>
             {% endif %}
 
+        {% elseif ratingComp == 'thumbnailRight' %}
+        <div class="col-sm-6 rating-comp__col-label">
+            {% if ratingType == 'total' %}
+            <p class="rating-comp__label rating-comp__label__bold">Total:
+                {% else %}
+            <p class="rating-comp__label">Rating Quesion Label</p>
+            {% endif %}
+
         {% else %}
         <div class="col-sm-7 rating-comp__col-label">
             {% if ratingType == 'total' %}
@@ -34,6 +42,8 @@
             <div class="col-sm-8 rating-comp__col-icons">
         {% elseif ratingComp == 'thumbnailLeft' %}
             <div class="col-sm-7 rating-comp__col-icons">
+        {% elseif ratingComp == 'thumbnailRight' %}
+            <div class="col-sm-6 rating-comp__col-icons">
         {% else %}
             <div class="col-sm-5 rating-comp__col-icons">
         {% endif %}
@@ -58,6 +68,8 @@
                 </ul>
 
                 {% if ratingComp == 'ranking' %}
+                    <!--It will be empty in this case-->
+                {% elseif ratingComp == 'thumbnailRight' %}
                     <!--It will be empty in this case-->
                 {% else %}
                     {% if ratingNumber == 'false' %}

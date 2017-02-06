@@ -151,12 +151,12 @@
     border-style: solid;
   }
   &:before {
-    top: 8px;
+    top: 6px;
     border-color: transparent $tooltip-arrow-outer transparent transparent;
     border-width: 6px 13px 6px 0;
   }
   &:after {
-    top: 9px;
+    top: 7px;
     border-color: transparent $tooltip-arrow-inner transparent transparent;
     border-width: 5px 12px 5px 0;
   }
