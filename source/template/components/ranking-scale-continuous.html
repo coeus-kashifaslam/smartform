@@ -1,4 +1,5 @@
 <!--Ranking Scale as Rating Start-->
+{% set comptype = 'rs-rating'%}
 <article class="form__elem">
     <div class="elem__rating elem__ranking-scale__layout-continuous">
         <h3 class="form__elem__title">Ranking Scale as Rating</h3>
@@ -6,10 +7,13 @@
             <p class="form__elem__help-text">Help Text goes here</p>
             <div class="rating__container rating__continuous__container">
                 {% set ratingComp = 'ranking' %}
+                {% set comprow = 'row1'%}
                 {% include 'template/components/rating-comp.html' %}
+                {% set comprow = 'row2'%}
                 {% include 'template/components/rating-comp.html' %}
                 <div class="rating-comp__separater"></div>
                 {% set ratingType = 'total' %}
+                {% set comprow = 'row3'%}
                 {% include 'template/components/rating-comp.html' %}
             </div>
             <p class="form__elem__error-text">This is error Message</p>

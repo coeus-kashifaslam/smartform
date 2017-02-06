@@ -1,4 +1,5 @@
 <!--Rating Start-->
+{% set comptype = 'tr-rating'%}
 <div class="form__elem__rating-thumbnail-right">
     <article class="form__elem">
         <div class="elem__rating elem__rating-thumbnail-right__header">
@@ -6,34 +7,38 @@
             <p class="form__elem__help-text">Help Text goes here</p>
         </div>
     </article>
-    <!--<article class="form__elem rating-left__thumbnail-right">-->
-    <article class="form__elem elem__rating-thumbnail-right__body">
+
+    <div class="form__elem elem__rating-thumbnail-right__body">
         <div class="row">
-            <div class="col-sm-6 col-sm-push-6 rating__thumbnail__col">
+            <div class="col-sm-5 col-sm-push-7 rating__thumbnail__col">
                 <div class="rating__thumbnail__col__content">
                     <div class="rating__thumbnail__container">
                         <img class="b-lazy product-thumbnail" data-src="images/product.jpg" src=images/loader.gif alt="...">
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-sm-pull-6 rating__icons__col">
+            <div class="col-sm-7 col-sm-pull-5 rating__icons__col">
                 <div class="rating__icons__col__content">
                     {% set ratingNumber = 'false' %}
                     {% set ratingComp = 'ranking' %}
+                    {% set comprow = 'row1'%}
                     {% include 'template/components/rating-comp.html' %}
+                    {% set comprow = 'row2'%}
                     {% include 'template/components/rating-comp.html' %}
+                    {% set comprow = 'row3'%}
                     {% include 'template/components/rating-comp.html' %}
                     <div class="rating-comp__separater"></div>
                     {% set ratingType = 'total' %}
                     {% set ratingNumber = 'true' %}
                     {% set ratingComp = 'ranking' %}
+                    {% set comprow = 'row4'%}
                     {% include 'template/components/rating-comp.html' %}
                     <p class="form__elem__error-text">This is error Message</p>
                 </div>
             </div>
             <div class="clearfix"></div>
         </div>
-    </article>
+    </div>
 </div>
 
 <!--Rating End-->

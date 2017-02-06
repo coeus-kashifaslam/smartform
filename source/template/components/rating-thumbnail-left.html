@@ -1,4 +1,5 @@
 <!--Rating Start-->
+{% set comptype = 'tl-rating'%}
 <article class="form__elem">
     <div class="elem__rating elem__rating-thumbnail-left">
         <h3 class="form__elem__title">Rating</h3>
@@ -14,11 +15,17 @@
                     <div class="col-sm-8 elem__rating__icons-container">
                         {% set ratingNumber = 'false' %}
                         {% set ratingComp = 'thumbnailLeft' %}
+                        {% set comprow = 'row1'%}
                         {% include 'template/components/rating-comp.html' %}
+                        {% set comprow = 'row2'%}
                         {% include 'template/components/rating-comp.html' %}
+                        {% set comprow = 'row3'%}
                         {% include 'template/components/rating-comp.html' %}
+                        {% set comprow = 'row4'%}
                         {% include 'template/components/rating-comp.html' %}
+                        {% set comprow = 'row5'%}
                         {% include 'template/components/rating-comp.html' %}
+                        {% set comprow = 'row6'%}
                         {% include 'template/components/rating-comp.html' %}
                     </div>
                     <div class="clearfix"></div>
@@ -30,6 +37,7 @@
                         {% set ratingType = 'total' %}
                         {% set ratingNumber = 'true' %}
                         {% set ratingComp = 'thumbnailLeft' %}
+                        {% set comprow = 'row7'%}
                         {% include 'template/components/rating-comp.html' %}
                     </div>
                     <div class="clearfix"></div>

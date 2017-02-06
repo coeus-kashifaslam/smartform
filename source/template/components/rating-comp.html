@@ -46,8 +46,8 @@
                     <!--to show large stars on mobile add this class in above ul tag (rating-comp__icons-count__small)-->
                     {% set ratingItems = [0,1,2,3,4]%}
                     {% for ratingItem in ratingItems %}<li>
-                        <input type="radio" name="rating-radio" value="radio{{ratingItem}}" id="radio{{ratingItem}}">
-                        <label class="rating-comp__icon-single" for="radio{{ratingItem}}">
+                        <input type="radio" name="rating-radio" value="radio{{ratingItem}}" id="{{comptype}}-{{comprow}}-radio{{ratingItem}}">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="{{comptype}}-{{comprow}}-radio{{ratingItem}}">
                             <i class="icomoon-default ico ico-star"></i>
                             <i class="icomoon-sudo ico ico-star-selected"></i>
                         </label>
