@@ -30,6 +30,15 @@
   }
   input[type='text'],
   input[type='password'],
+  input[type='email'] {
+    height: 45px;
+  }
+  textarea {
+    height: 120px;
+    padding: 15px;
+  }
+  input[type='text'],
+  input[type='password'],
   input[type='email'],
   textarea {
     @extend %default-font-light;
