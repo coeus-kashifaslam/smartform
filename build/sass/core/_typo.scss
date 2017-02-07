@@ -14,8 +14,8 @@ label {
 }
 
 .form__elem__title {
-  @extend %default-font;
+  @extend %default-font-bold;
   color: $default-subHeader-color;
   font-size: $default-subHeader-size;
-  font-weight: $default-subHeader-font-weight;
+  //font-weight: $default-subHeader-font-weight;
 }

@@ -14,10 +14,11 @@ $ff-ubuntu: 'Ubuntu','Ubuntu-Light','Ubuntu-Bold';
 $ff-opensans: 'OpenSans','OpenSans-Light','OpenSans-Bold';
 $ff-sourcesans: 'SourceSansPro','SourceSansPro-Light','SourceSansPro-Bold';
 $ff-notosansjapanese: 'NotoSansJapanese','NotoSansJapanese-Light','NotoSansJapanese-Bold';
+$ff-arial: 'Arial','Arial-Light','Arial-Bold';
 
-$font-regular: nth($ff-notosansjapanese, 1);
-$font-light: nth($ff-notosansjapanese, 2);
-$font-bold: nth($ff-notosansjapanese, 3);
+$font-regular: nth($ff-roboto, 1);
+$font-light: nth($ff-roboto, 2);
+$font-bold: nth($ff-roboto, 3);
 $font-fontawesome: 'FontAwesome';
 
 

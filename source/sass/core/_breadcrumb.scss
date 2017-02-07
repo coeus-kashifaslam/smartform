@@ -153,7 +153,8 @@ $breadcrumb-active-text: #000099;
     //Active Step Styles
     &.active {
       .step__title {
-        font-weight: 700;
+        //font-weight: 700;
+        @extend %default-font-bold;
         color: $breadcrumb-active-text;
       }
     }

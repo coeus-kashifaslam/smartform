@@ -40,9 +40,10 @@
   overflow: hidden;
   text-overflow: ellipsis;
   &.rating-comp__label__bold {
+    @extend %default-font-bold;
     font-size: $default-font-size + 2;
     color: $default-header-color;
-    font-weight: 700;
+    //font-weight: 700;
   }
 }
 .rating-comp__value-count {
