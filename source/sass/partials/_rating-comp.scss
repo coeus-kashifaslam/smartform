@@ -126,8 +126,16 @@
 .rating-comp__tooltip {
   display: none;
   position: absolute;
-  top: -15px;
-  left: 100%;
+  //top: -15px;
+  //left: 100%;
+  //z-index: 3;
+
+  //for top
+  top: -40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);  /* Chrome, Opera 15+, Safari 3.1+ */
+  -ms-transform: translateX(-50%);  /* IE 9 */
+  transform: translateX(-50%);  /* Firefox 16+, IE 10+, Opera */
   z-index: 3;
 }
 .rating-comp__tooltip-content {
@@ -146,20 +154,37 @@
     content: '';
     display: block;
     position: absolute;
-    right: 100%;
+    //right: 100%;
     width: 0;
     height: 0;
     border-style: solid;
   }
+  //&:before {
+  //  top: 6px;
+  //  border-color: transparent $tooltip-arrow-outer transparent transparent;
+  //  border-width: 6px 13px 6px 0;
+  //}
+  //&:after {
+  //  top: 7px;
+  //  border-color: transparent $tooltip-arrow-inner transparent transparent;
+  //  border-width: 5px 12px 5px 0;
+  //}
+  //For tooltip on top
   &:before {
-    top: 6px;
     border-color: transparent $tooltip-arrow-outer transparent transparent;
-    border-width: 6px 13px 6px 0;
+    border-width: 6px 10px 6px 0;
   }
   &:after {
-    top: 7px;
     border-color: transparent $tooltip-arrow-inner transparent transparent;
-    border-width: 5px 12px 5px 0;
+    border-width: 5px 8px 5px 0;
+  }
+  &:before,
+  &:after {
+    top: 100%;
+    left: 50%;
+    -webkit-transform: rotate(30deg) translateX(-75%);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(30deg) translateX(-75%);  /* IE 9 */
+    transform: rotate(30deg) translateX(-75%);  /* Firefox 16+, IE 10+, Opera */
   }
 }
 .rating-comp__hover__current {
