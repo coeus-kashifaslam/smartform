@@ -1631,7 +1631,7 @@ blockquote footer, blockquote small, blockquote .small {
 }
 
 blockquote footer:before, blockquote small:before, blockquote .small:before {
-    content: "\2014 \00A0";
+    content: '\2014 \00A0';
 }
 
 .blockquote-reverse, blockquote.pull-right {
@@ -1643,11 +1643,11 @@ blockquote footer:before, blockquote small:before, blockquote .small:before {
 }
 
 .blockquote-reverse footer:before, blockquote.pull-right footer:before, .blockquote-reverse small:before, blockquote.pull-right small:before, .blockquote-reverse .small:before, blockquote.pull-right .small:before {
-    content: "";
+    content: '';
 }
 
 .blockquote-reverse footer:after, blockquote.pull-right footer:after, .blockquote-reverse small:after, blockquote.pull-right small:after, .blockquote-reverse .small:after, blockquote.pull-right .small:after {
-    content: "\00A0 \2014";
+    content: '\00A0 \2014';
 }
 
 address {
@@ -5520,11 +5520,11 @@ button.close {
 }
 
 .carousel-control .icon-prev:before {
-    content: "\2039";
+    content: '\2039';
 }
 
 .carousel-control .icon-next:before {
-    content: "\203a";
+    content: '\203a';
 }
 
 .carousel-indicators {
@@ -5896,7 +5896,7 @@ select.bs-select-hidden, select.selectpicker {
 }
 
 .bootstrap-select.show-menu-arrow .dropdown-toggle:before {
-    content: "";
+    content: '';
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
     border-bottom: 7px solid rgba(204, 204, 204, 0.2);
@@ -5907,7 +5907,7 @@ select.bs-select-hidden, select.selectpicker {
 }
 
 .bootstrap-select.show-menu-arrow .dropdown-toggle:after {
-    content: "";
+    content: '';
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
     border-bottom: 6px solid white;
@@ -9612,7 +9612,7 @@ html, body {
 
 .wizardSliderBox {
     height: auto;
-    padding: 15px 15px 35px;
+    padding: 15px 15px 45px;
     background-color: #fafafa;
     border: 1px solid #ccc;
     margin: 0 auto;
@@ -9678,7 +9678,7 @@ html, body {
 }
 
 .wizard__breadcrumb-list > li:after {
-    content: "";
+    content: '';
     background: white;
     position: absolute;
     height: 14px;
@@ -9690,7 +9690,7 @@ html, body {
 }
 
 .wizard__breadcrumb-list > li:before {
-    content: "";
+    content: '';
     position: absolute;
     height: 6px;
     top: 17px;
@@ -9977,13 +9977,13 @@ html, body {
 }
 
 .page__footer__quick-links > li:after {
-    content: "|";
+    content: '|';
     padding: 0 5px;
     color: #2da137;
 }
 
 .page__footer__quick-links > li:last-child:after {
-    content: "";
+    content: '';
     padding: 0;
 }
 
@@ -10083,7 +10083,7 @@ html, body {
 }
 
 .custom-footer__section__defautl-quick-links .page__footer__quick-links > li:first-child:after {
-    content: "";
+    content: '';
 }
 
 .custom-footer__section__defautl-quick-links .page__footer__quick-links > li:after {
@@ -10236,7 +10236,7 @@ html, body {
 }
 
 .form-checkbox + label span:before {
-    content: "";
+    content: '';
     position: absolute;
     border-radius: 0;
     left: 0;
@@ -10414,7 +10414,7 @@ html, body {
 }
 
 .rating-comp__tooltip-content:before, .rating-comp__tooltip-content:after {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     right: 100%;
@@ -10489,7 +10489,7 @@ html, body {
 
 .caption-form__legend:before {
     position: absolute;
-    content: "";
+    content: '';
     left: 0;
     right: 0;
     top: 50%;
@@ -10529,9 +10529,12 @@ html, body {
     padding-left: 15px;
 }
 
+.ranking__list__default {
+    table-layout: fixed;
+}
+
 .ranking__list__default .ranking__list__item {
-    width: 10%;
-    text-align: left;
+    text-align: center;
     padding: 0;
     margin: 0;
 }
@@ -10597,7 +10600,7 @@ html, body {
 }
 
 .ranking__list__item__tooltip-body:before {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     bottom: -8px;
@@ -10624,6 +10627,7 @@ html, body {
 
 .ranking__message {
     margin-top: 15px;
+    text-align: center;
 }
 
 .ranking__message .ico.ranking__message__selected {
@@ -10677,7 +10681,7 @@ html, body {
     text-align: center;
     padding: 10px 5px;
     vertical-align: middle;
-    width: auto;
+    width: 50px;
     border-bottom: 1px solid #dfdae0;
 }
 
@@ -10696,7 +10700,7 @@ html, body {
 
 .ranking__list__grid .ranking__list__item:first-child, .ranking__list__grid .ranking__list__item__label-cell:first-child {
     min-width: unset;
-    width: 250px;
+    width: auto;
 }
 
 .ranking__list__grid .ranking__list__item .icomoon-sudo, .ranking__list__grid .ranking__list__item__label-cell .icomoon-sudo {

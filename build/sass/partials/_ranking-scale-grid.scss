@@ -29,7 +29,7 @@ $grid-layout-icon-selected-clr: $default-theme;
     text-align: center;
     padding: 10px 5px;
     vertical-align: middle;
-    width: auto;
+    width: 50px;
     border-bottom: 1px solid $gird-layout-row-border;
     input[type='radio'] {
       display: none;
@@ -47,7 +47,7 @@ $grid-layout-icon-selected-clr: $default-theme;
     //}
     &:first-child {
       min-width: unset;
-      width: 250px;
+      width: auto;
     }
     .icomoon-sudo {
       display: none;

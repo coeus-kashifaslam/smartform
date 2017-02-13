@@ -161,9 +161,8 @@ gulp.task('html', function(){
 	return gulp
 	.src(html.in)
 	.pipe(njk.compile())
-	.pipe(gulp.dest(html.out));
+	.pipe(gulp.dest(html.out))
 });
-
 
 /*
  * Task to Merge and Compile Sass files

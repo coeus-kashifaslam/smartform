@@ -3,9 +3,9 @@ $icon-sudo-color: $default-theme;
 $tooltip-icon-sudo-color: $sudo-rating-color;
 
 .ranking__list__default {
+  table-layout: fixed;
   .ranking__list__item {
-    width: 10%;
-    text-align: left;
+    text-align: center;
     padding: 0;
     margin: 0;
     .ranking__list__item__label {
@@ -114,6 +114,7 @@ $tooltip-icon-sudo-color: $sudo-rating-color;
 
 .ranking__message {
   margin-top: 15px;
+  text-align: center;
   .ico {
     &.ranking__message__selected {
       color: $sudo-rating-color;
