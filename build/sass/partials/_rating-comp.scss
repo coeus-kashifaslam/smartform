@@ -126,9 +126,10 @@
 .rating-comp__tooltip {
   display: none;
   position: absolute;
+  z-index: 3;
+
   //top: -15px;
   //left: 100%;
-  //z-index: 3;
 
   //for top
   top: -40px;
@@ -136,7 +137,6 @@
   -webkit-transform: translateX(-50%);  /* Chrome, Opera 15+, Safari 3.1+ */
   -ms-transform: translateX(-50%);  /* IE 9 */
   transform: translateX(-50%);  /* Firefox 16+, IE 10+, Opera */
-  z-index: 3;
 }
 .rating-comp__tooltip-content {
   @extend %default-font-bold;
@@ -146,10 +146,8 @@
   margin: 0;
   line-height: 1;
   background: $tooltip-bg;
-  border: 1px solid $default-border-color;
   position: relative;
   z-index: 3;
-  &:before,
   &:after{
     content: '';
     display: block;
@@ -159,26 +157,12 @@
     height: 0;
     border-style: solid;
   }
-  //&:before {
-  //  top: 6px;
-  //  border-color: transparent $tooltip-arrow-outer transparent transparent;
-  //  border-width: 6px 13px 6px 0;
-  //}
-  //&:after {
-  //  top: 7px;
-  //  border-color: transparent $tooltip-arrow-inner transparent transparent;
-  //  border-width: 5px 12px 5px 0;
-  //}
-  //For tooltip on top
-  &:before {
-    border-color: transparent $tooltip-arrow-outer transparent transparent;
-    border-width: 6px 10px 6px 0;
-  }
   &:after {
     border-color: transparent $tooltip-arrow-inner transparent transparent;
-    border-width: 5px 8px 5px 0;
+    border-width: 5px 10px 5px 0;
   }
-  &:before,
+
+  //For tooltip on top
   &:after {
     top: 100%;
     left: 50%;
@@ -192,11 +176,6 @@
       display: block;
     }
 }
-//@media (min-width: 768px) and (max-width: 991px) {
-//  .rating-comp__icon-single {
-//    font-size: 35px;
-//  }
-//}
 @media (max-width: 767px) {
   .rating-comp__icons-count__large {
     .rating-comp__icon-single {
