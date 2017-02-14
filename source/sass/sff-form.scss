@@ -37,13 +37,13 @@
 @import "partials/dropdown";
 @import "partials/long-text";
 @import "partials/short-text";
-@import "partials/rating-comp";
-@import "partials/rating-comp-popup";
-@import "partials/rating-full-width";
-@import "partials/ranking-scale-default";
-@import "partials/ranking-scale-continuous";
-@import "partials/ranking-scale-grid";
-@import "partials/rating-thumbnail-right";
-@import "partials/rating-thumbnail-left";
+@import "partials/popup";
+@import "ranking-rating-old/rating-comp";
+@import "ranking-rating-old/rating-full-width";
+@import "ranking-rating-old/ranking-scale-default";
+@import "ranking-rating-old/ranking-scale-continuous";
+@import "ranking-rating-old/ranking-scale-grid";
+@import "ranking-rating-old/rating-thumbnail-right";
+@import "ranking-rating-old/rating-thumbnail-left";
 @import "partials/thank-you";
 
