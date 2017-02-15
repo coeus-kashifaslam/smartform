@@ -15,7 +15,7 @@
 }
 .feedback__default__container {
   border: 1px solid $default-border-color;
-  margin-bottom: 10px;
+  margin-bottom: 22px;
   padding: 10px 0;
   @media (max-width: 767px) {
     padding: 0;
@@ -223,5 +223,39 @@
       border-color: transparent transparent transparent $default-border-color;
       border-width: 8px 0 8px 8px;
     }
+  }
+}
+
+
+
+.elem__feedback-default__thumbnail-true {
+  .form__elem__title {
+    text-align: center;
+    @media (max-width: 767px) {
+      text-align: left;
+    }
+  }
+}
+.elem__feedback-default__thumbnail-container {
+  width: 155px;
+  height: 155px;
+  margin: 22px auto 33px auto;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid $default-border-color;
+
+  .elem__feedback-default__thumbnail {
+    max-width: 100%;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50.5%,-50%);
+  }
+
+  @media (max-width: 767px) {
+    width: 290px;
+    height: 290px;
   }
 }
