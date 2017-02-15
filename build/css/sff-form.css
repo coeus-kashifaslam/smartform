@@ -10366,6 +10366,8 @@ html, body {
 .elem__feedback-default .form__elem__help-text {
     margin-bottom: 5px;
     margin-top: 10px;
+    word-break: break-all;
+    word-wrap: break-word;
 }
 
 .feedback__default__container {
@@ -11809,6 +11811,12 @@ html, body {
     .elem__feedback-default .form__elem__help-text {
         margin-bottom: 15px;
         margin-top: 0;
+    }
+    .elem__feedback-default .form__elem__help-text.form__elem__help-text__left {
+        padding-right: 5px;
+    }
+    .elem__feedback-default .form__elem__help-text.form__elem__help-text__right {
+        padding-left: 5px;
     }
     .feedback__default__container {
         padding: 0;
