@@ -172,7 +172,7 @@ gulp.task('sass', function(){
 	return gulp.src(styles.in)
 	.pipe (compass(compassOptions))
 	.pipe(pleeease(pleeeaseOptions))
-	.pipe(csscomb())
+	// .pipe(csscomb())
 	.pipe(sass(sassOptions))
 	.pipe(gulp.dest(styles.out))
 	.pipe(browsersync.reload({stream: true}));

@@ -7,12 +7,9 @@
                     <h1 class="form__legend">Form Name Goes Here</h1>
                 </div>
                 <div class="form-fieldset">
-                    {% include 'template/ranking-rating-old/rating-full-width.html' %}
-                    {% include 'template/ranking-rating-old/rating-thumbnail-right.html' %}
-                    {% include 'template/ranking-rating-old/rating-thumbnail-left.html' %}
-                    {% include 'template/ranking-rating-old/ranking-scale-default.html' %}
-                    {% include 'template/ranking-rating-old/ranking-scale-continuous.html' %}
-                    {% include 'template/ranking-rating-old/ranking-scale-grid.html' %}
+
+                    {% include 'template/components/feedback-default-no-thumbnail.html' %}
+
                     {% include 'template/components/short-text.html' %}
                     {% set singleCol = 'true' %}
                     {% include 'template/components/long-text.html' %}
@@ -31,8 +28,16 @@
                     {% set excludeBorder= 'true' %}
                     {% include 'template/components/free-text.html' %}
 
-                    {% include 'template/components/feedback-popup.html' %}
-                    {% include 'template/components/maintenance-popup.html' %}
+
+                    {#
+                        Old Rating and ranking Designs
+                        {% include 'template/ranking-rating-old/rating-full-width.html' %}
+                        {% include 'template/ranking-rating-old/rating-thumbnail-right.html' %}
+                        {% include 'template/ranking-rating-old/rating-thumbnail-left.html' %}
+                        {% include 'template/ranking-rating-old/ranking-scale-default.html' %}
+                        {% include 'template/ranking-rating-old/ranking-scale-continuous.html' %}
+                        {% include 'template/ranking-rating-old/ranking-scale-grid.html' %}
+                    #}
                 </div>
             </form>
         </div>
