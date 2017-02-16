@@ -1,4 +1,4 @@
-<!--Feedback Default-->
+<!--Feedback Continuous-->
 <article class="form__elem">
     <div class="elem__feedback-default elem__feedback-default__thumbnail-true">
         <h3 class="form__elem__title">Feedback Default with Thumbnail</h3>
@@ -20,27 +20,27 @@
                     {% set numbers = [0,1,2,3,4,5,6,7,8,9,10]%}
                     {% for number in numbers %}
 
-                        {% if number == 0 or number == 1%}
-                        {% set oneStar = 'tooltip__ico-selected' %}
-                        {% set countStar = 1 %}
+                    {% if number == 0 or number == 1%}
+                    {% set oneStar = 'tooltip__ico-selected' %}
+                    {% set countStar = 1 %}
 
-                        {% elseif number == 2 or number == 3 or number == 4 %}
-                        {% set twoStar = oneStar %}
-                        {% set countStar = 2 %}
+                    {% elseif number == 2 or number == 3 or number == 4 %}
+                    {% set twoStar = oneStar %}
+                    {% set countStar = 2 %}
 
-                        {% elseif number == 5 or number == 6 %}
-                        {% set threeStar = oneStar %}
-                        {% set countStar = 3 %}
+                    {% elseif number == 5 or number == 6 %}
+                    {% set threeStar = oneStar %}
+                    {% set countStar = 3 %}
 
-                        {% elseif number == 7 or number == 8 %}
-                        {% set fourStar = oneStar %}
-                        {% set countStar = 4 %}
+                    {% elseif number == 7 or number == 8 %}
+                    {% set fourStar = oneStar %}
+                    {% set countStar = 4 %}
 
-                        {% elseif number == 9 or number == 10 %}
-                        {% set fiveStar = oneStar %}
-                        {% set countStar = 5 %}
+                    {% elseif number == 9 or number == 10 %}
+                    {% set fiveStar = oneStar %}
+                    {% set countStar = 5 %}
 
-                        {% endif %}
+                    {% endif %}
 
                     <div class="feedback__emo-list__item feedback__default-emo-list__item">
                         <div class="feedback__item-label-container">
@@ -84,4 +84,4 @@
         </div>
     </div>
 </article>
-<!--Feedback Default-->
+<!--Feedback Continuous-->

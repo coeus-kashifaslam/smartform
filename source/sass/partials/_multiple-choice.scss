@@ -34,8 +34,8 @@
         left: 0;
         top: 0;
         border: 1px solid $default-border-color;
-        width: 33px;
-        height: 33px;
+        width: $default-icon-font-size;
+        height: $default-icon-font-size;
         background: none;
       }
     }
@@ -47,7 +47,7 @@
           @extend %iconfont-icomoon;
           color: $default-theme;
           content: $icon-tick;
-          font-size: 22px;
+          font-size: 18px;
           position: absolute;
           left: 5px;
           top: 5px;

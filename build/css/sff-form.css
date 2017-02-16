@@ -10176,7 +10176,7 @@ html, body {
     word-wrap: break-word;
     padding-left: 45px;
     padding-top: 0;
-    min-height: 33px;
+    min-height: 28px;
 }
 
 .elem-type__radio .form-radio + label .elem-type__radio__label {
@@ -10196,7 +10196,7 @@ html, body {
     top: 0;
     color: #dfdae0;
     content: "";
-    font-size: 33px;
+    font-size: 28px;
 }
 
 .form-radio:checked + label:before {
@@ -10226,7 +10226,7 @@ html, body {
     padding-left: 45px;
     padding-top: 0;
     word-wrap: break-word;
-    min-height: 33px;
+    min-height: 28px;
 }
 
 .form-checkbox + label span {
@@ -10242,15 +10242,15 @@ html, body {
     left: 0;
     top: 0;
     border: 1px solid #dfdae0;
-    width: 33px;
-    height: 33px;
+    width: 28px;
+    height: 28px;
     background: none;
 }
 
 .form-checkbox:checked + label span:after {
     color: #3054ae;
     content: "";
-    font-size: 22px;
+    font-size: 18px;
     position: absolute;
     left: 5px;
     top: 5px;
@@ -10373,7 +10373,7 @@ html, body {
 .feedback__default__container {
     border: 1px solid #dfdae0;
     margin-bottom: 22px;
-    padding: 10px 0;
+    padding: 8px 0;
 }
 
 .feedback__default__emo-list {
@@ -10393,7 +10393,7 @@ html, body {
 }
 
 .feedback__default__emo-list .feedback__item-label .ico {
-    font-size: 33px;
+    font-size: 28px;
 }
 
 .feedback__default__emo-list .feedback__item-label .icomoon-default {
