@@ -10580,7 +10580,7 @@ html, body {
     text-align: center;
 }
 
-.elem__feedback-default__thumbnail-container {
+.elem__feedback__thumbnail-container {
     width: 155px;
     height: 155px;
     margin: 22px auto 33px;
@@ -10590,14 +10590,40 @@ html, body {
     border: 1px solid #dfdae0;
 }
 
-.elem__feedback-default__thumbnail-container .elem__feedback-default__thumbnail {
+.elem__feedback__thumbnail-container .elem__feedback__thumbnail {
     max-width: 100%;
     border-radius: 5px;
     position: absolute;
     left: 50%;
     top: 50%;
-    -webkit-transform: translate(-50.5%, -50%);
-    transform: translate(-50.5%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.elem__feedback__header {
+    position: relative;
+    margin-bottom: 35px;
+    min-height: 165px;
+}
+
+.elem__feedback__header__thumbnail-left .elem_feedback__header-content {
+    padding-left: 165px;
+}
+
+.elem__feedback__header__thumbnail-left .elem_feedback__header-thumbnail {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.elem__feedback__header__thumbnail-right .elem_feedback__header-content {
+    padding-right: 165px;
+}
+
+.elem__feedback__header__thumbnail-right .elem_feedback__header-thumbnail {
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .feedback__continuous__container {
@@ -11187,6 +11213,10 @@ html, body {
     }
     .feedback__default-emo-list__item-hover-current .feedback__item-tooltip-container {
         display: block;
+    }
+    .elem__feedback__header .elem__feedback__thumbnail-container {
+        margin-top: 0;
+        margin-bottom: 0;
     }
     .feedback__continuous__shapes-list__item-hover-current .feedback__item-tooltip-container {
         display: block;
@@ -11923,9 +11953,19 @@ html, body {
     .elem__feedback-default__thumbnail-true .form__elem__title {
         text-align: left;
     }
-    .elem__feedback-default__thumbnail-container {
+    .elem__feedback__thumbnail-container {
         width: 290px;
         height: 290px;
+    }
+    .elem__feedback__header__thumbnail-left .elem_feedback__header-content, .elem__feedback__header__thumbnail-right .elem_feedback__header-content {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .elem__feedback__header__thumbnail-left .elem_feedback__header-thumbnail, .elem__feedback__header__thumbnail-right .elem_feedback__header-thumbnail {
+        position: relative;
+        right: auto;
+        left: auto;
+        top: auto;
     }
     .feedback__continuous__shapes-list__item .feedback__item-label .ico {
         font-size: 24px;
@@ -11965,6 +12005,9 @@ html, body {
         overflow: hidden;
         padding-left: 1px;
         padding-right: 1px;
+    }
+    .feedback__continuous__shapes-list__item .feedback__item-label {
+        padding-top: 2px;
     }
     .thank-you__content {
         padding: 15px;

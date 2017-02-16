@@ -1,12 +1,26 @@
 <!--Feedback Continuous-->
 <article class="form__elem">
-    <div class="elem__feedback-continuous">
-        <h3 class="form__elem__title">Feedback Continuous</h3>
 
+    {% if feedbackThumbnail == 'left' %}
+    <div class="elem__feedback-continuous elem__feedback-continuous__thumbnail-left">
+        <div class="elem__feedback__header elem__feedback__header__thumbnail-left">
+    {% else %}
+    <div class="elem__feedback-continuous elem__feedback-continuous__thumbnail-right">
+        <div class="elem__feedback__header elem__feedback__header__thumbnail-right">
+    {% endif %}
+
+            <div class="elem_feedback__header-content">
+                <h3 class="form__elem__title">Feedback Continuous</h3>
+                <p class="form__elem__help-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has root piece of classical Latin literature from 45 BC, making it over 2000 years</p>
+            </div>
+            <div class="elem_feedback__header-thumbnail">
+                <div class="elem__feedback__thumbnail-container">
+                    <img src=images/loader.gif data-src="images/feedback-thumbnail.png" alt="..." class="b-lazy elem__feedback__thumbnail">
+                </div>
+            </div>
+        </div>
 
         <div class="form__elem__body">
-
-            <p class="form__elem__help-text">Help Text goes here</p>
 
             <div class="feedback__container feedback__continuous__container">
                 <div class="feedback__emo-list feedback__continuous__emo-list feedback__continuous__selection-continuous hide__radio">
@@ -55,11 +69,19 @@
                                     {% endif %}
 
                                 <div class="feedback__continuous__shapes-list__item">
+                                    {% if feedbackThumbnail == 'left' %}
+                                    <input type="radio" name="feedbackContinuous" id="feedbackContinuousLeft{{rownumber.count}}{{number}}">
+                                    <label for="feedbackContinuousLeft{{rownumber.count}}{{number}}" class="feedback__item-label">
+                                        <i class="ico ico-happy icomoon-default"></i>
+                                        <i class="ico ico-happy-selected icomoon-sudo"></i>
+                                    </label>
+                                    {% else %}
                                     <input type="radio" name="feedbackContinuous" id="feedbackContinuous{{rownumber.count}}{{number}}">
                                     <label for="feedbackContinuous{{rownumber.count}}{{number}}" class="feedback__item-label">
                                         <i class="ico ico-happy icomoon-default"></i>
                                         <i class="ico ico-happy-selected icomoon-sudo"></i>
                                     </label>
+                                    {% endif %}
                                     <div class="feedback__item-tooltip-container feedback__continuous__shapes-list__item-tooltip-container top">
                                         <div class="feedback__item__tooltip-body">
                                             <ul class="list-inline">
