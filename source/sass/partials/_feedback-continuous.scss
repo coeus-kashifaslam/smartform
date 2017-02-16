@@ -70,7 +70,29 @@
   }
 }
 
+.feedback__continuous__selection-continuous {
+  .feedback__continuous__shapes-list__item-hover,
+  .feedback__continuous__shapes-list__item-selected {
+    .icomoon-default {
+      display: none;
+    }
+    .icomoon-sudo {
+      display: inline-block;
+    }
+  }
+}
 
+.feedback__continuous__selection-single {
+  .feedback__continuous__shapes-list__item-current,
+  .feedback__continuous__shapes-list__item-selected-current {
+    .icomoon-default {
+      display: none;
+    }
+    .icomoon-sudo {
+      display: inline-block;
+    }
+  }
+}
 
 @media (max-width: 767px) {
   .feedback__continuous__container {

@@ -10680,6 +10680,22 @@ html, body {
     color: #ffbe00;
 }
 
+.feedback__continuous__selection-continuous .feedback__continuous__shapes-list__item-hover .icomoon-default, .feedback__continuous__selection-continuous .feedback__continuous__shapes-list__item-selected .icomoon-default {
+    display: none;
+}
+
+.feedback__continuous__selection-continuous .feedback__continuous__shapes-list__item-hover .icomoon-sudo, .feedback__continuous__selection-continuous .feedback__continuous__shapes-list__item-selected .icomoon-sudo {
+    display: inline-block;
+}
+
+.feedback__continuous__selection-single .feedback__continuous__shapes-list__item-current .icomoon-default, .feedback__continuous__selection-single .feedback__continuous__shapes-list__item-selected-current .icomoon-default {
+    display: none;
+}
+
+.feedback__continuous__selection-single .feedback__continuous__shapes-list__item-current .icomoon-sudo, .feedback__continuous__selection-single .feedback__continuous__shapes-list__item-selected-current .icomoon-sudo {
+    display: inline-block;
+}
+
 .thank-you__content {
     border: 1px solid #dfdae0;
     padding: 30px;
