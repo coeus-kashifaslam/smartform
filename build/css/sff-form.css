@@ -11897,7 +11897,7 @@ html, body {
         border: 0 none;
     }
     .feedback__default__emo-list .feedback__item-label .ico {
-        font-size: 20px;
+        font-size: 24px;
     }
     .feedback__count__message {
         font-size: 12px;
@@ -11910,7 +11910,43 @@ html, body {
         height: 290px;
     }
     .feedback__continuous__shapes-list__item .feedback__item-label .ico {
-        font-size: 20px;
+        font-size: 24px;
+    }
+    .feedback__continuous__container {
+        border: 0 none;
+    }
+    .feedback__continuous__emo-list {
+        display: block;
+    }
+    .feedback__continuous__emo-list .feedback__continuous__emo-list__table-row, .feedback__continuous__emo-list .feedback__continuous__emo-list__item {
+        display: block;
+    }
+    .feedback__continuous__emo-list .feedback__continuous__emo-list__table-row {
+        border: 1px solid #dfdae0;
+        margin-bottom: 15px;
+    }
+    .feedback__continuous__emo-list .feedback__continuous__emo-list__item {
+        border: 0 none;
+    }
+    .feedback__continuous__emo-list .feedback__continuous__emo-list__description {
+        padding: 7px 5px;
+        background: #f3f3f3;
+    }
+    .feedback__continuous__emo-list .feedback__continuous__emo-list__description .feedback__continuous__emo-list__description-count {
+        text-align: left;
+    }
+    .feedback__continuous__shapes-list__items-container {
+        float: none;
+        display: block;
+        overflow: hidden;
+    }
+    .feedback__continuous__shapes-list__item {
+        max-width: none;
+        min-width: unset;
+        width: 1%;
+        overflow: hidden;
+        padding-left: 1px;
+        padding-right: 1px;
     }
     .thank-you__content {
         padding: 15px;
