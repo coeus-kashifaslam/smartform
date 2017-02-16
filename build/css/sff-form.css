@@ -10396,18 +10396,17 @@ html, body {
 }
 
 .feedback__default__emo-list .feedback__item-label .icomoon-default {
-    color: #dfdae0;
+    color: #bdbdbd;
 }
 
 .feedback__default__emo-list .feedback__item-label .icomoon-sudo {
-    color: #ffbe00;
+    color: #3054ae;
 }
 
 .feedback__default-emo-list__item {
     display: table-cell;
     text-align: center;
     position: relative;
-    overflow: visible;
 }
 
 .feedback__default__selection-continuous .feedback__default-emo-list__item-hover .icomoon-default, .feedback__default__selection-continuous .feedback__default-emo-list__item-selected .icomoon-default {
@@ -10431,14 +10430,10 @@ html, body {
 }
 
 .feedback__count__message .feedback__count__message__icon-selected {
-    color: #ffbe00;
+    color: #3054ae;
 }
 
-.feedback__default-emo-list__item-hover-current .feedback__default-emo__item-tooltip-container {
-    display: block;
-}
-
-.feedback__default-emo__item-tooltip-container {
+.feedback__item-tooltip-container {
     position: absolute;
     background: #ebebeb;
     border: 1px solid #dfdae0;
@@ -10450,24 +10445,24 @@ html, body {
     display: none;
 }
 
-.feedback__default-emo__item-tooltip-container ul {
+.feedback__item-tooltip-container ul {
     margin: 0;
 }
 
-.feedback__default-emo__item-tooltip-container li {
+.feedback__item-tooltip-container li {
     padding: 0;
 }
 
-.feedback__default-emo__item-tooltip-container .tooltip__ico-selected {
-    color: #ffbe00;
+.feedback__item-tooltip-container .tooltip__ico-selected {
+    color: #3054ae;
 }
 
-.feedback__default-emo__item-tooltip-container .feedback__selected {
+.feedback__item-tooltip-container .feedback__selected {
     color: #4c4c4c;
     font-weight: 700;
 }
 
-.feedback__default-emo__item-tooltip-container:before, .feedback__default-emo__item-tooltip-container:after {
+.feedback__item-tooltip-container:before, .feedback__item-tooltip-container:after {
     content: '';
     display: block;
     position: absolute;
@@ -10477,18 +10472,18 @@ html, body {
     z-index: 3;
 }
 
-.feedback__default-emo__item-tooltip-container:after {
+.feedback__item-tooltip-container:after {
     z-index: 2;
 }
 
-.feedback__default-emo__item-tooltip-container.top {
+.feedback__item-tooltip-container.top {
     left: 50%;
     top: -40px;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
 }
 
-.feedback__default-emo__item-tooltip-container.top:before {
+.feedback__item-tooltip-container.top:before {
     bottom: -8px;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -10497,7 +10492,7 @@ html, body {
     border-width: 8px 6px 0;
 }
 
-.feedback__default-emo__item-tooltip-container.top:after {
+.feedback__item-tooltip-container.top:after {
     bottom: -8px;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -10506,14 +10501,14 @@ html, body {
     border-width: 8px 8px 0;
 }
 
-.feedback__default-emo__item-tooltip-container.bottom {
+.feedback__item-tooltip-container.bottom {
     left: 50%;
     bottom: -35px;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
 }
 
-.feedback__default-emo__item-tooltip-container.bottom:before {
+.feedback__item-tooltip-container.bottom:before {
     top: -8px;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -10522,7 +10517,7 @@ html, body {
     border-width: 0 6px 8px;
 }
 
-.feedback__default-emo__item-tooltip-container.bottom:after {
+.feedback__item-tooltip-container.bottom:after {
     top: -8px;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -10531,14 +10526,14 @@ html, body {
     border-width: 0 8px 8px;
 }
 
-.feedback__default-emo__item-tooltip-container.right {
+.feedback__item-tooltip-container.right {
     left: 90%;
     top: 50%;
     -webkit-transform: translateY(-65%);
     transform: translateY(-65%);
 }
 
-.feedback__default-emo__item-tooltip-container.right:before {
+.feedback__item-tooltip-container.right:before {
     top: 50%;
     right: 100%;
     -webkit-transform: translateY(-50%);
@@ -10547,7 +10542,7 @@ html, body {
     border-width: 6px 8px 6px 0;
 }
 
-.feedback__default-emo__item-tooltip-container.right:after {
+.feedback__item-tooltip-container.right:after {
     top: 50%;
     right: 100%;
     -webkit-transform: translateY(-50%);
@@ -10556,14 +10551,14 @@ html, body {
     border-width: 8px 8px 8px 0;
 }
 
-.feedback__default-emo__item-tooltip-container.left {
+.feedback__item-tooltip-container.left {
     right: 90%;
     top: 50%;
     -webkit-transform: translateY(-65%);
     transform: translateY(-65%);
 }
 
-.feedback__default-emo__item-tooltip-container.left:before {
+.feedback__item-tooltip-container.left:before {
     top: 50%;
     left: 100%;
     -webkit-transform: translateY(-50%);
@@ -10572,7 +10567,7 @@ html, body {
     border-width: 6px 0 6px 8px;
 }
 
-.feedback__default-emo__item-tooltip-container.left:after {
+.feedback__item-tooltip-container.left:after {
     top: 50%;
     left: 100%;
     -webkit-transform: translateY(-50%);
@@ -10657,6 +10652,7 @@ html, body {
     min-width: 40px;
     vertical-align: middle;
     text-align: center;
+    position: relative;
 }
 
 .feedback__continuous__shapes-list__item .icomoon-sudo {
@@ -10673,11 +10669,11 @@ html, body {
 }
 
 .feedback__continuous__shapes-list__item .feedback__item-label .icomoon-default {
-    color: #dfdae0;
+    color: #bdbdbd;
 }
 
 .feedback__continuous__shapes-list__item .feedback__item-label .icomoon-sudo {
-    color: #ffbe00;
+    color: #3054ae;
 }
 
 .feedback__continuous__selection-continuous .feedback__continuous__shapes-list__item-hover .icomoon-default, .feedback__continuous__selection-continuous .feedback__continuous__shapes-list__item-selected .icomoon-default {
@@ -11188,6 +11184,12 @@ html, body {
     }
     .modal-sm {
         width: 300px;
+    }
+    .feedback__default-emo-list__item-hover-current .feedback__item-tooltip-container {
+        display: block;
+    }
+    .feedback__continuous__shapes-list__item-hover-current .feedback__item-tooltip-container {
+        display: block;
     }
 }
 

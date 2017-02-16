@@ -51,7 +51,7 @@
     }
 
     .icomoon-default {
-      color: $default-border-color;
+      color: $default-rating-color;
     }
 
     .icomoon-sudo {
@@ -65,7 +65,6 @@
   display: table-cell;
   text-align: center;
   position: relative;
-  overflow: visible;
 }
 
 .feedback__default__selection-continuous {
@@ -104,15 +103,17 @@
   }
 }
 
-.feedback__default-emo-list__item-hover-current {
-  .feedback__default-emo__item-tooltip-container {
-    display: block;
+@media (min-width: 768px) {
+  .feedback__default-emo-list__item-hover-current {
+    .feedback__item-tooltip-container {
+      display: block;
+    }
   }
 }
 
 
 
-.feedback__default-emo__item-tooltip-container {
+.feedback__item-tooltip-container {
   position: absolute;
   background: $tooltip-bg;
   border: 1px solid $default-border-color;

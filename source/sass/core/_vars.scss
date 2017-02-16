@@ -64,7 +64,8 @@ $default-formControl-font-wight: 400;
 
 //Star
 $default-rating-color: #bdbdbd;
-$sudo-rating-color: #ffbe00;
+//$sudo-rating-color: #ffbe00;
+$sudo-rating-color: $default-theme;
 
 
 //Tooltip

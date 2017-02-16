@@ -45,6 +45,7 @@
   min-width: 40px;
   vertical-align: middle;
   text-align: center;
+  position: relative;
   .icomoon-sudo {
     display: none;
   }
@@ -60,7 +61,7 @@
     }
 
     .icomoon-default {
-      color: $default-border-color;
+      color: $default-rating-color;
     }
 
     .icomoon-sudo {
@@ -93,6 +94,16 @@
     }
   }
 }
+
+@media (min-width: 768px) {
+  .feedback__continuous__shapes-list__item-hover-current {
+    .feedback__item-tooltip-container {
+      display: block;
+    }
+  }
+}
+
+
 
 @media (max-width: 767px) {
   .feedback__continuous__container {
