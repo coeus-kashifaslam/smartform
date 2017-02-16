@@ -9061,9 +9061,8 @@ body, .wizard__breadcrumb-list > li .bubble__number, .wizard__breadcrumb-list > 
     font-weight: 100;
 }
 
-.form__legend, .form__elem__title, .form__elem__error-text, .sff-form__submit, .wizard__breadcrumb-list > li.active .step__title, .custom-footer__col-title, .custom-footer__info-section__label {
+.form__legend, .form__elem__title, .form__elem__error-text, .sff-form__submit, .wizard__breadcrumb-list > li.active .step__title, .custom-footer__col-title, .custom-footer__info-section__label, .feedback__continuous__emo-list .feedback__continuous__emo-list__description .feedback__continuous__emo-list__description-count {
     font-family: Roboto-Bold;
-    font-weight: 700;
 }
 
 .row__pros-cons li:before {
@@ -10606,6 +10605,81 @@ html, body {
     transform: translate(-50.5%, -50%);
 }
 
+.feedback__continuous__container {
+    border: 1px solid #dfdae0;
+    margin-bottom: 22px;
+}
+
+.feedback__continuous__emo-list {
+    display: table;
+    width: 100%;
+}
+
+.feedback__continuous__emo-list .feedback__continuous__emo-list__table-row {
+    display: table-row;
+}
+
+.feedback__continuous__emo-list .feedback__continuous__emo-list__table-row:last-of-type .feedback__continuous__emo-list__item {
+    border-bottom: 0 none;
+}
+
+.feedback__continuous__emo-list .feedback__continuous__emo-list__item {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 15px 0;
+    border-bottom: 1px solid #dfdae0;
+}
+
+.feedback__continuous__emo-list .feedback__continuous__emo-list__description {
+    padding-right: 20px;
+    padding-left: 10px;
+}
+
+.feedback__continuous__emo-list .feedback__continuous__emo-list__description p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.feedback__continuous__emo-list .feedback__continuous__emo-list__description .feedback__continuous__emo-list__description-count {
+    text-align: right;
+    font-size: 16px;
+}
+
+.feedback__continuous__shapes-list__items-container {
+    display: table;
+    table-layout: fixed;
+    float: right;
+}
+
+.feedback__continuous__shapes-list__item {
+    display: table-cell;
+    max-width: 50px;
+    min-width: 40px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.feedback__continuous__shapes-list__item .icomoon-sudo {
+    display: none;
+}
+
+.feedback__continuous__shapes-list__item .feedback__item-label {
+    cursor: pointer;
+    margin: 0;
+}
+
+.feedback__continuous__shapes-list__item .feedback__item-label .ico {
+    font-size: 28px;
+}
+
+.feedback__continuous__shapes-list__item .feedback__item-label .icomoon-default {
+    color: #dfdae0;
+}
+
+.feedback__continuous__shapes-list__item .feedback__item-label .icomoon-sudo {
+    color: #ffbe00;
+}
+
 .thank-you__content {
     border: 1px solid #dfdae0;
     padding: 30px;
@@ -11823,7 +11897,7 @@ html, body {
         border: 0 none;
     }
     .feedback__default__emo-list .feedback__item-label .ico {
-        font-size: 24px;
+        font-size: 20px;
     }
     .feedback__count__message {
         font-size: 12px;
@@ -11834,6 +11908,9 @@ html, body {
     .elem__feedback-default__thumbnail-container {
         width: 290px;
         height: 290px;
+    }
+    .feedback__continuous__shapes-list__item .feedback__item-label .ico {
+        font-size: 20px;
     }
     .thank-you__content {
         padding: 15px;

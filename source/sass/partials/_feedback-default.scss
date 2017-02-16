@@ -31,7 +31,7 @@
   }
 }
 .feedback__default__emo-list {
-   display: table;
+  display: table;
   table-layout: fixed;
   width: 100%;
   margin-bottom: 0;
@@ -46,7 +46,7 @@
     .ico {
       font-size: $default-icon-font-size;
       @media (max-width: 767px) {
-        font-size: 24px;
+        font-size: $default-icon-small-font-size;
       }
     }
 

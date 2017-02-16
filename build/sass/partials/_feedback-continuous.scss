@@ -1,0 +1,71 @@
+.feedback__continuous__container {
+  border: 1px solid $default-border-color;
+  margin-bottom: 22px;
+}
+.feedback__continuous__emo-list {
+  display: table;
+  width: 100%;
+  .feedback__continuous__emo-list__table-row {
+    display: table-row;
+    &:last-of-type {
+      .feedback__continuous__emo-list__item {
+        border-bottom: 0 none;
+      }
+    }
+  }
+  .feedback__continuous__emo-list__item {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 15px 0;
+    border-bottom: 1px solid $default-border-color;
+  }
+  .feedback__continuous__emo-list__description {
+    padding-right: 20px;
+    padding-left: 10px;
+    p {
+      margin: 0;
+      font-size: $default-font-size - 2;
+    }
+    .feedback__continuous__emo-list__description-count {
+      text-align: right;
+      @extend %default-font-bold;
+      font-size: $default-font-size;
+    }
+  }
+}
+
+.feedback__continuous__shapes-list__items-container {
+  display: table;
+  table-layout: fixed;
+  float: right;
+}
+.feedback__continuous__shapes-list__item {
+  display: table-cell;
+  max-width: 50px;
+  min-width: 40px;
+  vertical-align: middle;
+  text-align: center;
+  .icomoon-sudo {
+    display: none;
+  }
+
+  .feedback__item-label {
+    cursor: pointer;
+    margin: 0;
+    .ico {
+      font-size: $default-icon-font-size;
+      @media (max-width: 767px) {
+        font-size: $default-icon-small-font-size;
+      }
+    }
+
+    .icomoon-default {
+      color: $default-border-color;
+    }
+
+    .icomoon-sudo {
+      color: $sudo-rating-color;
+    }
+
+  }
+}
