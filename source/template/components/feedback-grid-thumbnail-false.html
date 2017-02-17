@@ -4,7 +4,7 @@
     <div class="elem__feedback-grid elem__feedback-grid__thumbnail-false">
         <div class="elem__feedback__header elem__feedback__header__thumbnail-false">
             <div class="elem_feedback__header-content">
-                <h3 class="form__elem__title">Feedback Continuous</h3>
+                <h3 class="form__elem__title">Feedback Grid</h3>
                 <p class="form__elem__help-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has root piece of classical Latin literature from 45 BC, making it over 2000 years</p>
             </div>
         </div>
@@ -13,7 +13,7 @@
 
             <div class="feedback__container feedback__grid__container">
                 <div class="feedback__emo-list feedback__grid__emo-list hide__radio">
-                    <div class="feedback__grid__emo-list__table">
+                    <div class="feedback__grid__emo-list__table ">
 
                         <div class="feedback__grid__emo-list__table-row feedback__grid__emo-list__table-header-row">
                             <div class="feedback__emo-list__item feedback__grid__emo-list__item feedback__grid__emo-list__description">
@@ -38,7 +38,7 @@
                         {count: 3, string: '', type: 'total'}
                     ]%}
                     {% for rownumber in rownumbers %}
-                        <div class="feedback__grid__emo-list__table-row feedback__grid__emo-list__table-content-row">
+                        <div class="feedback__grid__emo-list__table-row feedback__grid__emo-list__table-content-row feedback__grid__selection-continuous">
                             <div class="feedback__emo-list__item feedback__emo-list__description feedback__grid__emo-list__item feedback__grid__emo-list__description">
                                 {% if rownumber.type == 'total'%}
                                 <p class="feedback__grid__emo-list__description-count feedback__emo-list__description-count">
@@ -67,8 +67,8 @@
 
                                 </div>
 
-                                <input type="radio" name="feedbackContinuous" id="feedbackGridLeft{{rownumber.count}}{{number}}">
-                                <label for="feedbackGridLeft{{rownumber.count}}{{number}}" class="feedback__item-label">
+                                <input type="radio" name="feedbackContinuous" id="feedbackGrid{{rownumber.count}}{{number}}">
+                                <label for="feedbackGrid{{rownumber.count}}{{number}}" class="feedback__item-label">
                                     <i class="ico ico-happy icomoon-default"></i>
                                     <i class="ico ico-happy-selected icomoon-sudo"></i>
                                 </label>

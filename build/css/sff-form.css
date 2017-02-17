@@ -10385,12 +10385,9 @@ html, body {
 .feedback__container .feedback__emo-list .feedback__emo-list__description {
     padding-left: 10px;
     padding-right: 20px;
-    word-wrap: break-word;
-    word-break: break-all;
 }
 
 .feedback__emo-list__description-count {
-    text-align: right;
     margin-bottom: 0;
     font-size: 16px;
 }
@@ -10786,6 +10783,22 @@ html, body {
     word-break: break-all;
     word-wrap: break-word;
     color: #4c4c4c;
+}
+
+.feedback__grid__selection-continuous .feedback__grid__emo-list__item-hover .icomoon-default, .feedback__grid__selection-continuous .feedback__grid__emo-list__item-selected .icomoon-default {
+    display: none;
+}
+
+.feedback__grid__selection-continuous .feedback__grid__emo-list__item-hover .icomoon-sudo, .feedback__grid__selection-continuous .feedback__grid__emo-list__item-selected .icomoon-sudo {
+    display: inline-block;
+}
+
+.feedback__grid__selection-single .feedback__grid__emo-list__item-hover-current .icomoon-default, .feedback__grid__selection-single .feedback__grid__emo-list__item-selected-current .icomoon-default {
+    display: none;
+}
+
+.feedback__grid__selection-single .feedback__grid__emo-list__item-hover-current .icomoon-sudo, .feedback__grid__selection-single .feedback__grid__emo-list__item-selected-current .icomoon-sudo {
+    display: inline-block;
 }
 
 .thank-you__content {
@@ -11280,6 +11293,9 @@ html, body {
     }
     .modal-sm {
         width: 300px;
+    }
+    .feedback__emo-list__description-count {
+        text-align: right;
     }
     .elem__feedback__header .elem__feedback__thumbnail-container {
         margin-top: 0;

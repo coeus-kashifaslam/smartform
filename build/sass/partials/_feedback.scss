@@ -24,8 +24,8 @@
     .feedback__emo-list__description {
       padding-left: 10px;
       padding-right: 20px;
-      word-wrap: break-word;
-      word-break: break-all;
+      //word-wrap: break-word;
+      //word-break: break-all;
       @media (max-width: 767px) {
         padding-right: 10px;
       }
@@ -33,11 +33,14 @@
   }
 }
 
+/********************** Feedback Footer Description ********************/
 .feedback__emo-list__description-count {
-  text-align: right;
   margin-bottom: 0;
   @extend %default-font-bold;
   font-size: $default-font-size;
+  @media (min-width: 768px) {
+    text-align: right;
+  }
 }
 /********************** Icons font size ********************/
 .feedback__item-label {

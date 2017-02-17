@@ -70,6 +70,32 @@
 
 
 
+
+.feedback__grid__selection-continuous {
+  .feedback__grid__emo-list__item-hover,
+  .feedback__grid__emo-list__item-selected {
+    .icomoon-default {
+      display: none;
+    }
+    .icomoon-sudo {
+      display: inline-block;
+    }
+  }
+}
+
+.feedback__grid__selection-single {
+  .feedback__grid__emo-list__item-hover-current,
+  .feedback__grid__emo-list__item-selected-current {
+    .icomoon-default {
+      display: none;
+    }
+    .icomoon-sudo {
+      display: inline-block;
+    }
+  }
+}
+
+
 @media (max-width: 767px) {
   .feedback__grid__emo-list__table-header-row {
     &.feedback__grid__emo-list__table-row {
