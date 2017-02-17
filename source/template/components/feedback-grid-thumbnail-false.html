@@ -38,7 +38,7 @@
                         {count: 3, string: '', type: 'total'}
                     ]%}
                     {% for rownumber in rownumbers %}
-                        <div class="feedback__grid__emo-list__table-row feedback__grid__emo-list__table-content-row feedback__grid__selection-continuous">
+                        <div class="feedback__grid__emo-list__table-row feedback__grid__emo-list__table-content-row feedback__grid__selection-single">
                             <div class="feedback__emo-list__item feedback__emo-list__description feedback__grid__emo-list__item feedback__grid__emo-list__description">
                                 {% if rownumber.type == 'total'%}
                                 <p class="feedback__grid__emo-list__description-count feedback__emo-list__description-count">
@@ -49,11 +49,9 @@
                                 {% endif %}
                             </div>
 
-                            {% set numbers = [0,1,2,3,4,5,6,7,8,9,10]%}
-                            {% for number in numbers %}
-
-                            <div class="feedback__emo-list__item feedback__grid__emo-list__item feedback__grid__emo-list__shape">
-
+                            <div class="feedback__grid__emo-list-mobil-tooltip-row">
+                            {% set ttnumbers = [0,1,2,3,4,5,6,7,8,9,10]%}
+                            {% for ttnumber in ttnumbers %}
                                 <div class="feedback__grid__col-tooltip">
                                     {% if rownumber.count == 0 %}
                                     <p>Tool</p>
@@ -62,10 +60,16 @@
                                     {% elseif rownumber.count == 2 %}
                                     <p>Tool one 1</p>
                                     {% else %}
-                                    <p>long tooltip goes here</p>
+                                    <p>long tool tip</p>
                                     {% endif %}
-
                                 </div>
+                            {% endfor %}
+                            </div>
+
+                            {% set numbers = [0,1,2,3,4,5,6,7,8,9,10]%}
+                            {% for number in numbers %}
+
+                            <div class="feedback__emo-list__item feedback__grid__emo-list__item feedback__grid__emo-list__shape">
 
                                 <input type="radio" name="feedbackContinuous" id="feedbackGrid{{rownumber.count}}{{number}}">
                                 <label for="feedbackGrid{{rownumber.count}}{{number}}" class="feedback__item-label">

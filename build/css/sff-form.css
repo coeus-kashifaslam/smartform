@@ -10387,6 +10387,10 @@ html, body {
     padding-right: 20px;
 }
 
+.feedback__container .feedback__emo-list .feedback__emo-list__description p {
+    margin-bottom: 4px;
+}
+
 .feedback__emo-list__description-count {
     margin-bottom: 0;
     font-size: 16px;
@@ -10651,11 +10655,11 @@ html, body {
     display: inline-block;
 }
 
-.feedback__default__selection-single .feedback__default-emo-list__item-current .icomoon-default, .feedback__default__selection-single .feedback__default-emo-list__item-selected-current .icomoon-default {
+.feedback__default__selection-single .feedback__default-emo-list__item-hover-current .icomoon-default, .feedback__default__selection-single .feedback__default-emo-list__item-selected-current .icomoon-default {
     display: none;
 }
 
-.feedback__default__selection-single .feedback__default-emo-list__item-current .icomoon-sudo, .feedback__default__selection-single .feedback__default-emo-list__item-selected-current .icomoon-sudo {
+.feedback__default__selection-single .feedback__default-emo-list__item-hover-current .icomoon-sudo, .feedback__default__selection-single .feedback__default-emo-list__item-selected-current .icomoon-sudo {
     display: inline-block;
 }
 
@@ -10783,6 +10787,15 @@ html, body {
     word-break: break-all;
     word-wrap: break-word;
     color: #4c4c4c;
+    display: table-cell;
+    width: 1%;
+    text-align: center;
+    padding-top: 15px;
+    vertical-align: top;
+}
+
+.feedback__grid__col-tooltip p {
+    margin-bottom: 0;
 }
 
 .feedback__grid__selection-continuous .feedback__grid__emo-list__item-hover .icomoon-default, .feedback__grid__selection-continuous .feedback__grid__emo-list__item-selected .icomoon-default {
@@ -11307,7 +11320,7 @@ html, body {
     .feedback__continuous__shapes-list__item-hover-current .feedback__item-tooltip-container {
         display: block;
     }
-    .feedback__grid__col-tooltip {
+    .feedback__grid__emo-list-mobil-tooltip-row {
         display: none;
     }
 }
@@ -12133,6 +12146,7 @@ html, body {
         max-width: none;
         text-align: center;
         width: 1%;
+        padding-top: 5px;
     }
     .thank-you__content {
         padding: 15px;

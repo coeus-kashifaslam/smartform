@@ -1,12 +1,7 @@
 <!--Feedback Default-->
 <article class="form__elem">
-    <div class="elem__feedback-default elem__feedback-default__thumbnail-true">
-        <h3 class="form__elem__title">Feedback Default with Thumbnail</h3>
-
-        <div class="elem__feedback__thumbnail-container">
-            <img src=images/loader.gif data-src="images/feedback-thumbnail.png" alt="..." class="b-lazy elem__feedback__thumbnail">
-        </div>
-
+    <div class="elem__feedback-default elem__feedback-default__thumbnail-false">
+        <h3 class="form__elem__title">Feedback Default without Thumbnail</h3>
         <div class="form__elem__body">
             <div class="form__elem__help-text__multiple">
                 <p class="form__elem__help-text form__elem__help-text__left">Help Text Left</p>
@@ -17,26 +12,26 @@
                 <div class="feedback__emo-list feedback__default__emo-list feedback__default__selection-single hide__radio">
 
 
-                    {% set numbers = [0,1,2,3,4,5,6,7,8,9,10]%}
+                    {% set numbers = [0,1,2,3,4]%}
                     {% for number in numbers %}
 
-                        {% if number == 0 or number == 1%}
+                        {% if number == 0 %}
                         {% set oneStar = 'tooltip__ico-selected' %}
                         {% set countStar = 1 %}
 
-                        {% elseif number == 2 or number == 3 or number == 4 %}
+                        {% elseif number == 1 %}
                         {% set twoStar = oneStar %}
                         {% set countStar = 2 %}
 
-                        {% elseif number == 5 or number == 6 %}
+                        {% elseif number == 2 %}
                         {% set threeStar = oneStar %}
                         {% set countStar = 3 %}
 
-                        {% elseif number == 7 or number == 8 %}
+                        {% elseif number == 3 %}
                         {% set fourStar = oneStar %}
                         {% set countStar = 4 %}
 
-                        {% elseif number == 9 or number == 10 %}
+                        {% elseif number == 4 %}
                         {% set fiveStar = oneStar %}
                         {% set countStar = 5 %}
 
@@ -44,8 +39,8 @@
 
                     <div class="feedback__emo-list__item feedback__default-emo-list__item">
                         <div class="feedback__item-label-container">
-                            <label for="feedbackDefault-item{{number}}" class="feedback__item-label">
-                                <input type="radio" id="feedbackDefault-item{{number}}" name="feedbackDefault">
+                            <label for="feedbackDefault-item-{{number}}" class="feedback__item-label">
+                                <input type="radio" id="feedbackDefault-item-{{number}}" name="feedbackDefault">
                                 <i class="ico ico-{{number}} icomoon-default"></i>
                                 <i class="ico ico-{{number}}-selected icomoon-sudo"></i>
                             </label>

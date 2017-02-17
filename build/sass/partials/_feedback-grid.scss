@@ -63,11 +63,20 @@
   word-break: break-all;
   word-wrap: break-word;
   color: $default-subHeader-color;
+  display: table-cell;
+  width: 1%;
+  text-align: center;
+  padding-top: 15px;
+  vertical-align: top;
+  p {
+    margin-bottom: 0;
+  }
+}
+.feedback__grid__emo-list-mobil-tooltip-row {
   @media (min-width: 768px) {
     display: none;
   }
 }
-
 
 
 
@@ -138,6 +147,7 @@
       max-width: none;
       text-align: center;
       width: 1%;
+      padding-top: 5px;
     }
   }
 }

@@ -1,25 +1,12 @@
 <!--Feedback Continuous-->
 <article class="form__elem">
 
-    {% if feedbackThumbnail == 'left' %}
-    <div class="elem__feedback-grid elem__feedback-grid__thumbnail-left">
-        <div class="elem__feedback__header elem__feedback__header__thumbnail-left">
+    <div class="elem__feedback-grid elem__feedback-grid__thumbnail-false">
+        <div class="elem__feedback__header elem__feedback__header__thumbnail-false">
             <div class="elem_feedback__header-content">
-                <h3 class="form__elem__title">Feedback Grid Thumbnail Left</h3>
-    {% else %}
-        <div class="elem__feedback-grid elem__feedback-grid__thumbnail-right">
-            <div class="elem__feedback__header elem__feedback__header__thumbnail-right">
-                <div class="elem_feedback__header-content">
-                    <h3 class="form__elem__title">Feedback Grid Thumbnail Right</h3>
-    {% endif %}
-
+                <h3 class="form__elem__title">Feedback Grid No Thumbnail</h3>
                 <p class="form__elem__help-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has root piece of classical Latin literature from 45 BC, making it over 2000 years</p>
-           </div>
-            <div class="elem_feedback__header-thumbnail">
-                <div class="elem__feedback__thumbnail-container">
-                    <img src=images/loader.gif data-src="images/feedback-thumbnail.png" alt="..." class="b-lazy elem__feedback__thumbnail">
-                </div>
-           </div>
+            </div>
         </div>
 
         <div class="form__elem__body">
@@ -32,7 +19,7 @@
                             <div class="feedback__emo-list__item feedback__grid__emo-list__item feedback__grid__emo-list__description">
                             </div>
 
-                            {% set headerNumbers = [0,1,2,3,4,5,6,7,8,9,10]%}
+                            {% set headerNumbers = [0,1,2,3,4]%}
                             {% for headerNumber in headerNumbers %}
                             <div class="feedback__emo-list__item feedback__grid__emo-list__item feedback__grid__emo-list__tooltip">
                                 <div class="feedback__grid__section-tooltip">
@@ -62,10 +49,9 @@
                                 {% endif %}
                             </div>
 
-
                             <div class="feedback__grid__emo-list-mobil-tooltip-row">
-                                {% set ttnumbers = [0,1,2,3,4,5,6,7,8,9,10]%}
-                                {% for ttnumber in ttnumbers %}
+                            {% set ttnumbers = [0,1,2,3,4]%}
+                            {% for ttnumber in ttnumbers %}
                                 <div class="feedback__grid__col-tooltip">
                                     {% if rownumber.count == 0 %}
                                     <p>Tool</p>
@@ -77,28 +63,19 @@
                                     <p>long tool tip</p>
                                     {% endif %}
                                 </div>
-                                {% endfor %}
+                            {% endfor %}
                             </div>
 
-
-                            {% set numbers = [0,1,2,3,4,5,6,7,8,9,10]%}
+                            {% set numbers = [0,1,2,3,4]%}
                             {% for number in numbers %}
 
                             <div class="feedback__emo-list__item feedback__grid__emo-list__item feedback__grid__emo-list__shape">
 
-                                {% if feedbackThumbnail == 'left' %}
-                                <input type="radio" name="feedbackContinuous" id="feedbackGridLeft{{rownumber.count}}{{number}}">
-                                <label for="feedbackGridLeft{{rownumber.count}}{{number}}" class="feedback__item-label">
+                                <input type="radio" name="feedbackContinuous" id="feedbackGrid{{rownumber.count}}{{number}}">
+                                <label for="feedbackGrid{{rownumber.count}}{{number}}" class="feedback__item-label">
                                     <i class="ico ico-happy icomoon-default"></i>
                                     <i class="ico ico-happy-selected icomoon-sudo"></i>
                                 </label>
-                                {% else %}
-                                <input type="radio" name="feedbackContinuous" id="feedbackGridRight{{rownumber.count}}{{number}}">
-                                <label for="feedbackGridRight{{rownumber.count}}{{number}}" class="feedback__item-label">
-                                    <i class="ico ico-happy icomoon-default"></i>
-                                    <i class="ico ico-happy-selected icomoon-sudo"></i>
-                                </label>
-                                {% endif %}
 
                             </div>
                             {% endfor %}
