@@ -8,9 +8,10 @@
                 </div>
                 <div class="form-fieldset">
 
-                    {% include 'template/components/feedback-continuous.html' %}
+                    {% include 'template/components/feedback-continuous-thumbnail-false.html' %}
+                    {% include 'template/components/feedback-continuous-thumbnail-true.html' %}
                     {% set feedbackThumbnail= 'left' %}
-                    {% include 'template/components/feedback-continuous.html' %}
+                    {% include 'template/components/feedback-continuous-thumbnail-true.html' %}
 
                     {% include 'template/components/feedback-default-thumbnail-true.html' %}
                     {% include 'template/components/feedback-default-thumbnail-false.html' %}
