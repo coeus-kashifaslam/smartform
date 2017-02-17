@@ -9,8 +9,13 @@
                 <div class="form-fieldset">
 
                     {% include 'template/components/feedback-grid-thumbnail-false.html' %}
+                    {% set feedbackThumbnail= 'right' %}
+                    {% include 'template/components/feedback-grid-thumbnail-true.html' %}
+                    {% set feedbackThumbnail= 'left' %}
+                    {% include 'template/components/feedback-grid-thumbnail-true.html' %}
 
                     {% include 'template/components/feedback-continuous-thumbnail-false.html' %}
+                    {% set feedbackThumbnail= 'right' %}
                     {% include 'template/components/feedback-continuous-thumbnail-true.html' %}
                     {% set feedbackThumbnail= 'left' %}
                     {% include 'template/components/feedback-continuous-thumbnail-true.html' %}
