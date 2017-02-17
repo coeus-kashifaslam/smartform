@@ -9061,7 +9061,7 @@ body, .wizard__breadcrumb-list > li .bubble__number, .wizard__breadcrumb-list > 
     font-weight: 100;
 }
 
-.form__legend, .form__elem__title, .form__elem__error-text, .sff-form__submit, .wizard__breadcrumb-list > li.active .step__title, .custom-footer__col-title, .custom-footer__info-section__label, .feedback__continuous__emo-list .feedback__continuous__emo-list__description .feedback__continuous__emo-list__description-count {
+.form__legend, .form__elem__title, .form__elem__error-text, .sff-form__submit, .wizard__breadcrumb-list > li.active .step__title, .custom-footer__col-title, .custom-footer__info-section__label, .feedback__emo-list__description-count {
     font-family: Roboto-Bold;
 }
 
@@ -10358,71 +10358,58 @@ html, body {
     color: #07b;
 }
 
-.hide__radio input[type=radio] {
-    display: none;
+.feedback__continuous__shapes-list__item, .feedback__grid__emo-list__item.feedback__grid__emo-list__shape {
+    min-width: 42px;
 }
 
-.elem__feedback-default .form__elem__help-text {
-    margin-bottom: 5px;
-    margin-top: 10px;
-    word-break: break-all;
+.feedback__continuous__shapes-list__item, .feedback__grid__emo-list__item.feedback__grid__emo-list__shape {
+    max-width: 50px;
+}
+
+.feedback__continuous__emo-list .feedback__continuous__emo-list__description p, .feedback__grid__emo-list__item.feedback__grid__emo-list__description {
+    font-size: 14px;
+}
+
+.feedback__grid__emo-list__item.feedback__grid__emo-list__tooltip .feedback__grid__section-tooltip {
+    font-size: 14px;
+}
+
+.feedback__grid__col-tooltip {
+    font-size: 10px;
+}
+
+.feedback__default__container, .feedback__continuous__container, .feedback__grid__container {
+    margin-bottom: 20px;
+}
+
+.feedback__container .feedback__emo-list .feedback__emo-list__description {
+    padding-left: 10px;
+    padding-right: 20px;
     word-wrap: break-word;
+    word-break: break-all;
 }
 
-.feedback__default__container {
-    border: 1px solid #dfdae0;
-    margin-bottom: 22px;
-    padding: 8px 0;
-}
-
-.feedback__default__emo-list {
-    display: table;
-    table-layout: fixed;
-    width: 100%;
+.feedback__emo-list__description-count {
+    text-align: right;
     margin-bottom: 0;
+    font-size: 16px;
 }
 
-.feedback__default__emo-list .icomoon-sudo {
-    display: none;
-}
-
-.feedback__default__emo-list .feedback__item-label {
+.feedback__item-label {
     cursor: pointer;
     margin: 0;
 }
 
-.feedback__default__emo-list .feedback__item-label .ico {
+.feedback__item-label .ico {
     font-size: 28px;
 }
 
-.feedback__default__emo-list .feedback__item-label .icomoon-default {
+.feedback__item-label .icomoon-default {
     color: #bdbdbd;
 }
 
-.feedback__default__emo-list .feedback__item-label .icomoon-sudo {
+.feedback__item-label .icomoon-sudo {
     color: #3054ae;
-}
-
-.feedback__default-emo-list__item {
-    display: table-cell;
-    text-align: center;
-    position: relative;
-}
-
-.feedback__default__selection-continuous .feedback__default-emo-list__item-hover .icomoon-default, .feedback__default__selection-continuous .feedback__default-emo-list__item-selected .icomoon-default {
-    display: none;
-}
-
-.feedback__default__selection-continuous .feedback__default-emo-list__item-hover .icomoon-sudo, .feedback__default__selection-continuous .feedback__default-emo-list__item-selected .icomoon-sudo {
-    display: inline-block;
-}
-
-.feedback__default__selection-single .feedback__default-emo-list__item-current .icomoon-default, .feedback__default__selection-single .feedback__default-emo-list__item-selected-current .icomoon-default {
-    display: none;
-}
-
-.feedback__default__selection-single .feedback__default-emo-list__item-current .icomoon-sudo, .feedback__default__selection-single .feedback__default-emo-list__item-selected-current .icomoon-sudo {
-    display: inline-block;
 }
 
 .feedback__count__message {
@@ -10431,6 +10418,56 @@ html, body {
 
 .feedback__count__message .feedback__count__message__icon-selected {
     color: #3054ae;
+}
+
+.elem__feedback__thumbnail-container {
+    width: 155px;
+    height: 155px;
+    margin: 22px auto 33px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #dfdae0;
+}
+
+.elem__feedback__thumbnail-container .elem__feedback__thumbnail {
+    max-width: 100%;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.elem__feedback__header {
+    position: relative;
+    margin-bottom: 35px;
+    min-height: 165px;
+}
+
+.elem__feedback__header__thumbnail-left .elem_feedback__header-content {
+    padding-left: 165px;
+}
+
+.elem__feedback__header__thumbnail-left .elem_feedback__header-thumbnail {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.elem__feedback__header__thumbnail-right .elem_feedback__header-content {
+    padding-right: 165px;
+}
+
+.elem__feedback__header__thumbnail-right .elem_feedback__header-thumbnail {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.elem__feedback__header__thumbnail-false {
+    min-height: unset;
 }
 
 .feedback__item-tooltip-container {
@@ -10576,63 +10613,61 @@ html, body {
     border-width: 8px 0 8px 8px;
 }
 
+.hide__radio input[type=radio] {
+    display: none;
+}
+
+.elem__feedback-default .form__elem__help-text {
+    margin-bottom: 5px;
+    margin-top: 10px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.feedback__default__container {
+    border: 1px solid #dfdae0;
+    padding: 8px 0;
+}
+
+.feedback__default__emo-list {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.feedback__default__emo-list .icomoon-sudo {
+    display: none;
+}
+
+.feedback__default-emo-list__item {
+    display: table-cell;
+    text-align: center;
+    position: relative;
+}
+
+.feedback__default__selection-continuous .feedback__default-emo-list__item-hover .icomoon-default, .feedback__default__selection-continuous .feedback__default-emo-list__item-selected .icomoon-default {
+    display: none;
+}
+
+.feedback__default__selection-continuous .feedback__default-emo-list__item-hover .icomoon-sudo, .feedback__default__selection-continuous .feedback__default-emo-list__item-selected .icomoon-sudo {
+    display: inline-block;
+}
+
+.feedback__default__selection-single .feedback__default-emo-list__item-current .icomoon-default, .feedback__default__selection-single .feedback__default-emo-list__item-selected-current .icomoon-default {
+    display: none;
+}
+
+.feedback__default__selection-single .feedback__default-emo-list__item-current .icomoon-sudo, .feedback__default__selection-single .feedback__default-emo-list__item-selected-current .icomoon-sudo {
+    display: inline-block;
+}
+
 .elem__feedback-default__thumbnail-true .form__elem__title {
     text-align: center;
 }
 
-.elem__feedback__thumbnail-container {
-    width: 155px;
-    height: 155px;
-    margin: 22px auto 33px;
-    border-radius: 5px;
-    position: relative;
-    overflow: hidden;
-    border: 1px solid #dfdae0;
-}
-
-.elem__feedback__thumbnail-container .elem__feedback__thumbnail {
-    max-width: 100%;
-    border-radius: 5px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-.elem__feedback__header {
-    position: relative;
-    margin-bottom: 35px;
-    min-height: 165px;
-}
-
-.elem__feedback__header__thumbnail-left .elem_feedback__header-content {
-    padding-left: 165px;
-}
-
-.elem__feedback__header__thumbnail-left .elem_feedback__header-thumbnail {
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-.elem__feedback__header__thumbnail-right .elem_feedback__header-content {
-    padding-right: 165px;
-}
-
-.elem__feedback__header__thumbnail-right .elem_feedback__header-thumbnail {
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-.elem__feedback__header__thumbnail-false {
-    min-height: unset;
-}
-
 .feedback__continuous__container {
     border: 1px solid #dfdae0;
-    margin-bottom: 22px;
 }
 
 .feedback__continuous__emo-list {
@@ -10655,19 +10690,8 @@ html, body {
     border-bottom: 1px solid #dfdae0;
 }
 
-.feedback__continuous__emo-list .feedback__continuous__emo-list__description {
-    padding-right: 20px;
-    padding-left: 10px;
-}
-
 .feedback__continuous__emo-list .feedback__continuous__emo-list__description p {
     margin: 0;
-    font-size: 14px;
-}
-
-.feedback__continuous__emo-list .feedback__continuous__emo-list__description .feedback__continuous__emo-list__description-count {
-    text-align: right;
-    font-size: 16px;
 }
 
 .feedback__continuous__shapes-list__items-container {
@@ -10678,8 +10702,6 @@ html, body {
 
 .feedback__continuous__shapes-list__item {
     display: table-cell;
-    max-width: 50px;
-    min-width: 40px;
     vertical-align: middle;
     text-align: center;
     position: relative;
@@ -10687,23 +10709,6 @@ html, body {
 
 .feedback__continuous__shapes-list__item .icomoon-sudo {
     display: none;
-}
-
-.feedback__continuous__shapes-list__item .feedback__item-label {
-    cursor: pointer;
-    margin: 0;
-}
-
-.feedback__continuous__shapes-list__item .feedback__item-label .ico {
-    font-size: 28px;
-}
-
-.feedback__continuous__shapes-list__item .feedback__item-label .icomoon-default {
-    color: #bdbdbd;
-}
-
-.feedback__continuous__shapes-list__item .feedback__item-label .icomoon-sudo {
-    color: #3054ae;
 }
 
 .feedback__continuous__selection-continuous .feedback__continuous__shapes-list__item-hover .icomoon-default, .feedback__continuous__selection-continuous .feedback__continuous__shapes-list__item-selected .icomoon-default {
@@ -10714,12 +10719,73 @@ html, body {
     display: inline-block;
 }
 
-.feedback__continuous__selection-single .feedback__continuous__shapes-list__item-current .icomoon-default, .feedback__continuous__selection-single .feedback__continuous__shapes-list__item-selected-current .icomoon-default {
+.feedback__continuous__selection-single .feedback__continuous__shapes-list__item-hover-current .icomoon-default, .feedback__continuous__selection-single .feedback__continuous__shapes-list__item-selected-current .icomoon-default {
     display: none;
 }
 
-.feedback__continuous__selection-single .feedback__continuous__shapes-list__item-current .icomoon-sudo, .feedback__continuous__selection-single .feedback__continuous__shapes-list__item-selected-current .icomoon-sudo {
+.feedback__continuous__selection-single .feedback__continuous__shapes-list__item-hover-current .icomoon-sudo, .feedback__continuous__selection-single .feedback__continuous__shapes-list__item-selected-current .icomoon-sudo {
     display: inline-block;
+}
+
+.feedback__grid__emo-list__table {
+    display: table;
+    width: 100%;
+}
+
+.feedback__grid__emo-list__table-row {
+    display: table-row;
+}
+
+.feedback__grid__emo-list__item {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+}
+
+.feedback__grid__emo-list__item.feedback__grid__emo-list__description {
+    text-align: left;
+}
+
+.feedback__grid__emo-list__item.feedback__grid__emo-list__tooltip .feedback__grid__section-tooltip {
+    max-width: none;
+    min-width: unset;
+    width: 42px;
+    margin: 0 auto;
+    word-break: break-all;
+    word-wrap: break-word;
+    text-align: center;
+    padding: 0 3px;
+    color: #4c4c4c;
+}
+
+.feedback__grid__emo-list__item .icomoon-sudo {
+    display: none;
+}
+
+.feedback__grid__emo-list__table-row .feedback__emo-list__item {
+    border-bottom: 1px solid #dfdae0;
+}
+
+.feedback__grid__emo-list__table-content-row .feedback__emo-list__item {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.feedback__grid__emo-list__table-content-row .feedback__emo-list__item:first-child {
+    border-left: 1px solid #dfdae0;
+}
+
+.feedback__grid__emo-list__table-content-row .feedback__emo-list__item:last-child {
+    border-right: 1px solid #dfdae0;
+}
+
+.feedback__grid__col-tooltip {
+    padding-left: 2px;
+    padding-right: 2px;
+    word-break: break-all;
+    word-wrap: break-word;
+    color: #4c4c4c;
 }
 
 .thank-you__content {
@@ -11215,15 +11281,18 @@ html, body {
     .modal-sm {
         width: 300px;
     }
-    .feedback__default-emo-list__item-hover-current .feedback__item-tooltip-container {
-        display: block;
-    }
     .elem__feedback__header .elem__feedback__thumbnail-container {
         margin-top: 0;
         margin-bottom: 0;
     }
+    .feedback__default-emo-list__item-hover-current .feedback__item-tooltip-container {
+        display: block;
+    }
     .feedback__continuous__shapes-list__item-hover-current .feedback__item-tooltip-container {
         display: block;
+    }
+    .feedback__grid__col-tooltip {
+        display: none;
     }
 }
 
@@ -11934,28 +12003,14 @@ html, body {
     .caption-form__error-icon .error-page__icon {
         font-size: 250px;
     }
-    .elem__feedback-default .form__elem__help-text {
-        margin-bottom: 15px;
-        margin-top: 0;
+    .feedback__container .feedback__emo-list .feedback__emo-list__description {
+        padding-right: 10px;
     }
-    .elem__feedback-default .form__elem__help-text.form__elem__help-text__left {
-        padding-right: 5px;
-    }
-    .elem__feedback-default .form__elem__help-text.form__elem__help-text__right {
-        padding-left: 5px;
-    }
-    .feedback__default__container {
-        padding: 0;
-        border: 0 none;
-    }
-    .feedback__default__emo-list .feedback__item-label .ico {
+    .feedback__item-label .ico {
         font-size: 24px;
     }
     .feedback__count__message {
         font-size: 12px;
-    }
-    .elem__feedback-default__thumbnail-true .form__elem__title {
-        text-align: left;
     }
     .elem__feedback__thumbnail-container {
         width: 290px;
@@ -11971,8 +12026,22 @@ html, body {
         left: auto;
         top: auto;
     }
-    .feedback__continuous__shapes-list__item .feedback__item-label .ico {
-        font-size: 24px;
+    .elem__feedback-default .form__elem__help-text {
+        margin-bottom: 15px;
+        margin-top: 0;
+    }
+    .elem__feedback-default .form__elem__help-text.form__elem__help-text__left {
+        padding-right: 5px;
+    }
+    .elem__feedback-default .form__elem__help-text.form__elem__help-text__right {
+        padding-left: 5px;
+    }
+    .feedback__default__container {
+        padding: 0;
+        border: 0 none;
+    }
+    .elem__feedback-default__thumbnail-true .form__elem__title {
+        text-align: left;
     }
     .feedback__continuous__container {
         border: 0 none;
@@ -12012,6 +12081,42 @@ html, body {
     }
     .feedback__continuous__shapes-list__item .feedback__item-label {
         padding-top: 2px;
+    }
+    .feedback__grid__emo-list__table-header-row.feedback__grid__emo-list__table-row {
+        display: none;
+    }
+    .feedback__grid__emo-list__table-content-row .feedback__emo-list__item {
+        border-bottom: 0 none;
+    }
+    .feedback__grid__emo-list__table-content-row .feedback__emo-list__item:first-child {
+        border-left: 0 none;
+    }
+    .feedback__grid__emo-list__table-content-row .feedback__emo-list__item:last-child {
+        border-right: 0 none;
+    }
+    .feedback__grid__emo-list__table-content-row .feedback__grid__emo-list__description {
+        padding: 7px 10px;
+    }
+    .feedback__grid__emo-list__table {
+        display: block;
+    }
+    .feedback__grid__emo-list__table-row {
+        display: block;
+        margin-bottom: 15px;
+        border: 1px solid #dfdae0;
+    }
+    .feedback__grid__emo-list__description {
+        display: block;
+        background: #f3f3f3;
+    }
+    .feedback__grid__emo-list__description p {
+        margin-bottom: 0;
+    }
+    .feedback__grid__emo-list__item.feedback__grid__emo-list__shape {
+        min-width: unset;
+        max-width: none;
+        text-align: center;
+        width: 1%;
     }
     .thank-you__content {
         padding: 15px;

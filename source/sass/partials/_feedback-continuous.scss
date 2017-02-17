@@ -1,6 +1,6 @@
 .feedback__continuous__container {
   border: 1px solid $default-border-color;
-  margin-bottom: 22px;
+  @extend %feedback-container-margin-bottom;
 }
 .feedback__continuous__emo-list {
   display: table;
@@ -20,16 +20,9 @@
     border-bottom: 1px solid $default-border-color;
   }
   .feedback__continuous__emo-list__description {
-    padding-right: 20px;
-    padding-left: 10px;
     p {
       margin: 0;
-      font-size: $default-font-size - 2;
-    }
-    .feedback__continuous__emo-list__description-count {
-      text-align: right;
-      @extend %default-font-bold;
-      font-size: $default-font-size;
+      @extend %feedback-label-fontsize;
     }
   }
 }
@@ -41,33 +34,13 @@
 }
 .feedback__continuous__shapes-list__item {
   display: table-cell;
-  max-width: 50px;
-  min-width: 40px;
+  @extend %shape-col-minwidth;
+  @extend %shape-col-maxwidth;
   vertical-align: middle;
   text-align: center;
   position: relative;
   .icomoon-sudo {
     display: none;
-  }
-
-  .feedback__item-label {
-    cursor: pointer;
-    margin: 0;
-    .ico {
-      font-size: $default-icon-font-size;
-      @media (max-width: 767px) {
-        font-size: $default-icon-small-font-size;
-      }
-    }
-
-    .icomoon-default {
-      color: $default-rating-color;
-    }
-
-    .icomoon-sudo {
-      color: $sudo-rating-color;
-    }
-
   }
 }
 
@@ -84,7 +57,7 @@
 }
 
 .feedback__continuous__selection-single {
-  .feedback__continuous__shapes-list__item-current,
+  .feedback__continuous__shapes-list__item-hover-current,
   .feedback__continuous__shapes-list__item-selected-current {
     .icomoon-default {
       display: none;

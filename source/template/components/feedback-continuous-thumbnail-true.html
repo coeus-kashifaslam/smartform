@@ -23,7 +23,7 @@
         <div class="form__elem__body">
 
             <div class="feedback__container feedback__continuous__container">
-                <div class="feedback__emo-list feedback__continuous__emo-list feedback__continuous__selection-continuous hide__radio">
+                <div class="feedback__emo-list feedback__continuous__emo-list hide__radio">
                     {% set rownumbers = [
                         {count: 0, string: 'There are many variations of passages', type: ''},
                         {count: 1, string: 'There are many variations of passages desp Excepteur sint occaecat cupidatat non prois dent, sunt in culpa qui officia deserunt mol.', type: ''},
@@ -32,9 +32,9 @@
                     ]%}
                     {% for rownumber in rownumbers %}
                     <div class="feedback__continuous__emo-list__table-row">
-                        <div class="feedback__emo-list__item feedback__continuous__emo-list__item feedback__continuous__emo-list__description">
+                        <div class="feedback__emo-list__item feedback__emo-list__description feedback__continuous__emo-list__item feedback__continuous__emo-list__description">
                             {% if rownumber.type == 'total'%}
-                            <p class="feedback__continuous__emo-list__description-count">
+                            <p class="feedback__continuous__emo-list__description-count feedback__emo-list__description-count">
                                 <span class="count__string">Total: </span><span class="count__submit">4</span>/<span class="count__total">5</span>
                             </p>
                             {% else %}
