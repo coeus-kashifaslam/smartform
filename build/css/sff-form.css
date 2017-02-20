@@ -10358,6 +10358,312 @@ html, body {
     color: #07b;
 }
 
+.elem__table {
+    display: table;
+    width: 100%;
+}
+
+.ranking__container__grid {
+    table-layout: fixed;
+}
+
+.elem__table__row {
+    display: table-row;
+    width: 100%;
+}
+
+.elem__table__cell {
+    display: table-cell;
+}
+
+.elem__ranking-scale__layout-grid .ranking__container {
+    overflow: hidden;
+}
+
+.ranking__list__grid {
+    display: table-row;
+    width: 100%;
+}
+
+.ranking__list__grid .ranking__list__item, .ranking__list__grid .ranking__list__item__label-cell {
+    text-align: center;
+    padding: 10px 5px;
+    vertical-align: middle;
+    width: 50px;
+    border-bottom: 1px solid #dfdae0;
+    position: relative;
+}
+
+.ranking__list__grid .ranking__list__item input[type=radio], .ranking__list__grid .ranking__list__item__label-cell input[type=radio] {
+    display: none;
+    margin: 0;
+}
+
+.ranking__list__grid .ranking__list__item .ranking__list__item__icon, .ranking__list__grid .ranking__list__item__label-cell .ranking__list__item__icon {
+    font-size: 28px;
+    cursor: pointer;
+    color: #dfdae0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.ranking__list__grid .ranking__list__item:first-child, .ranking__list__grid .ranking__list__item__label-cell:first-child {
+    min-width: unset;
+    width: auto;
+}
+
+.ranking__list__grid .ranking__list__item .icomoon-sudo, .ranking__list__grid .ranking__list__item__label-cell .icomoon-sudo {
+    display: none;
+}
+
+.ranking__list__grid .ranking__list__item .ranking__list__item__label {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -17px;
+    margin-top: -17px;
+    width: 34px;
+    height: 34px;
+    text-indent: -999px;
+    overflow: hidden;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.ranking__list__grid .ranking__list__item__label-cell {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
+}
+
+.ranking__list__grid .ranking__list__item__label-cell .ranking__list__item__label-content {
+    margin-bottom: 0;
+    word-break: break-all;
+}
+
+.ranking__list__grid.ranking__list__grid__tooltip-row .ranking__list__item__label {
+    display: block;
+    text-indent: 0;
+    width: auto;
+    height: auto;
+    margin: 0;
+    position: relative;
+    left: auto;
+    top: auto;
+    cursor: default;
+    font-size: 16px;
+}
+
+.ranking__list__grid.rating-comp__selection-type__continuous .ranking__list__item.rating-comp__hover .ranking__list__item__icon, .ranking__list__grid.rating-comp__selection-type__continuous .ranking__list__item.rating-comp__selected .ranking__list__item__icon {
+    color: #3054ae;
+}
+
+.ranking__list__grid.rating-comp__selection-type__continuous .ranking__list__item.rating-comp__hover .ranking__list__item__label, .ranking__list__grid.rating-comp__selection-type__continuous .ranking__list__item.rating-comp__selected .ranking__list__item__label {
+    background: transparent;
+    color: inherit;
+    border: 0 none;
+}
+
+.ranking__list__grid.rating-comp__selection-type__continuous .ranking__list__item.rating-comp__hover .icomoon-sudo, .ranking__list__grid.rating-comp__selection-type__continuous .ranking__list__item.rating-comp__selected .icomoon-sudo {
+    display: inline-block;
+}
+
+.ranking__list__grid.rating-comp__selection-type__continuous .ranking__list__item.rating-comp__hover .icomoon-default, .ranking__list__grid.rating-comp__selection-type__continuous .ranking__list__item.rating-comp__selected .icomoon-default {
+    display: none;
+}
+
+.ranking__list__grid.rating-comp__selection-type__single .ranking__list__item.rating-comp__selected .ranking__list__item__icon {
+    color: #3054ae;
+}
+
+.ranking__list__grid.rating-comp__selection-type__single .ranking__list__item.rating-comp__selected .ranking__list__item__label {
+    background: transparent;
+    color: inherit;
+    border: 0 none;
+}
+
+.ranking__list__grid.rating-comp__selection-type__single .ranking__list__item.rating-comp__selected .icomoon-sudo {
+    display: inline-block;
+}
+
+.ranking__list__grid.rating-comp__selection-type__single .ranking__list__item.rating-comp__selected .icomoon-default {
+    display: none;
+}
+
+.ranking__list__default {
+    table-layout: fixed;
+}
+
+.ranking__list__default .ranking__list__item {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.ranking__list__default .ranking__list__item .ranking__list__item__label {
+    cursor: pointer;
+    font-size: 33px;
+    color: #dfdae0;
+    line-height: 1;
+    text-align: center;
+    padding-top: 6px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+.ranking__list__default .ranking__list__item .ranking__list__item__label .icomoon-sudo {
+    display: none;
+}
+
+.rating-comp__selection-type__single .rating-comp__selected .ranking__list__item__label, .rating-comp__selection-type__continuous .rating-comp__selected .ranking__list__item__label, .rating-comp__selection-type__continuous .rating-comp__hover .ranking__list__item__label {
+    color: #3054ae;
+}
+
+.rating-comp__selection-type__single .rating-comp__selected .ranking__list__item__label .icomoon-sudo {
+    display: inline-block;
+}
+
+.rating-comp__selection-type__single .rating-comp__selected .ranking__list__item__label .icomoon-default {
+    display: none;
+}
+
+.rating-comp__selection-type__continuous .rating-comp__selected .ranking__list__item__label .icomoon-sudo, .rating-comp__selection-type__continuous .rating-comp__hover .ranking__list__item__label .icomoon-sudo {
+    display: inline-block;
+}
+
+.rating-comp__selection-type__continuous .rating-comp__selected .ranking__list__item__label .icomoon-default, .rating-comp__selection-type__continuous .rating-comp__hover .ranking__list__item__label .icomoon-default {
+    display: none;
+}
+
+.ranking__list__default .ranking__list__item .ranking__list__item__label:hover .ranking__list__item__tooltip {
+    display: block;
+}
+
+.ranking__list__item__tooltip {
+    display: none;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    white-space: nowrap;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    font-size: 14px;
+    z-index: 1;
+}
+
+.ranking__list__item__tooltip-body {
+    position: relative;
+    background: #3054ae;
+    color: #fff;
+    padding: 3px 6px 5px 10px;
+    border-radius: 2px;
+}
+
+.ranking__list__item__tooltip-body:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -8px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.ranking__list__item__tooltip-body:before {
+    left: 50%;
+    margin-left: -7px;
+    border-color: #3054ae transparent transparent;
+    border-width: 8px 6px 0;
+}
+
+.ranking__list__item__tooltip-body li {
+    margin-left: 0;
+    padding: 0;
+}
+
+.ranking__list__item__tooltip-body .ico.tooltip__ico-selected {
+    color: #ffbe00;
+}
+
+.ranking__message {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.ranking__message .ico.ranking__message__selected {
+    color: #ffbe00;
+}
+
+.ranking__message p {
+    margin-bottom: 0;
+}
+
+.ranking__message span {
+    vertical-align: middle;
+    margin-left: -3px;
+    line-height: 1.4;
+}
+
+.ranking__message .count__current, .ranking__message .count__total {
+    margin-left: 0;
+    display: inline-block;
+    margin-top: -2px;
+}
+
+.fixed__grid-table {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.fixed__grid-table__row {
+    display: table-row;
+}
+
+.fixed__grid-table__cell {
+    display: table-cell;
+    border-bottom: 1px solid #dfdae0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    vertical-align: middle;
+}
+
+.fixed__grid-table__cell p {
+    margin-bottom: 0;
+}
+
+.fixed__grid-shape__col {
+    width: 50px;
+    text-align: center;
+    padding-left: 2px;
+    padding-right: 2px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.fixed__grid-shape__col .icomoon-default {
+    color: #bdbdbd;
+}
+
+.fixed__grid-shape__col .icomoon-sudo {
+    display: none;
+    color: #ffbe00;
+}
+
+.fixed__grid-shape__col .fixed__grid-shape {
+    font-size: 28px;
+}
+
+.fixed__grid-shape__col .grid-shape-label {
+    cursor: pointer;
+    margin: 0;
+}
+
+.hide-radio input[type=radio] {
+    display: none;
+}
+
 .feedback__continuous__shapes-list__item, .feedback__grid__emo-list__item.feedback__grid__emo-list__shape {
     min-width: 42px;
 }
@@ -11307,6 +11613,9 @@ html, body {
     .modal-sm {
         width: 300px;
     }
+    .fixed__grid-shape__col .grid-text-span {
+        display: none;
+    }
     .feedback__emo-list__description-count {
         text-align: right;
     }
@@ -12031,6 +12340,109 @@ html, body {
     }
     .caption-form__error-icon .error-page__icon {
         font-size: 250px;
+    }
+    .elem__ranking-scale__layout-grid {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .elem__ranking-scale__layout-grid .ranking__container {
+        overflow: visible;
+    }
+    .elem__ranking-scale__layout-grid .form__elem__title, .elem__ranking-scale__layout-grid .form__elem__help-text, .elem__ranking-scale__layout-grid .ranking__list__grid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .ranking__list__grid {
+        display: block;
+        border-bottom: 1px solid #dfdae0;
+    }
+    .ranking__list__grid .ranking__list__item, .ranking__list__grid .ranking__list__item__label-cell {
+        text-align: left;
+        border-bottom: 0 none;
+    }
+    .ranking__list__grid .ranking__list__item + .ranking__list__item, .ranking__list__grid .ranking__list__item__label-cell + .ranking__list__item {
+        padding-left: 0;
+        width: 48%;
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .ranking__list__grid .ranking__list__item .ranking__list__item__label, .ranking__list__grid .ranking__list__item__label-cell .ranking__list__item__label {
+        margin-left: 5px;
+    }
+    .ranking__list__grid .ranking__list__item .ranking__list__item__label, .ranking__list__grid .ranking__list__item__label-cell .ranking__list__item__label {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .ranking__list__grid .ranking__list__item .ranking__list__item__label {
+        text-indent: initial;
+        position: absolute;
+        left: 0;
+        top: 58%;
+        width: auto;
+        min-height: 40px;
+        padding-left: 35px;
+        margin-bottom: 0;
+    }
+    .ranking__list__grid .ranking__list__item .ranking__list__item__label .ico {
+        vertical-align: top;
+        line-height: 1;
+    }
+    .ranking__list__grid .ranking__list__item__label-cell {
+        display: block;
+        width: 100%;
+    }
+    .ranking__list__grid__tooltip-row {
+        display: none;
+    }
+    .elem__ranking-scale__layout-grid .ranking__list__grid:last-child {
+        border-bottom: 0 none;
+    }
+    .ranking__message {
+        font-size: 12px;
+    }
+    .ranking__list__default .ranking__list__item .ranking__list__item__label {
+        font-size: 25px;
+    }
+    .fixed__rating__grid {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .fixed__rating__grid .form__elem__title, .fixed__rating__grid .form__elem__help-text, .fixed__rating__grid .fixed__grid-table__row, .fixed__rating__grid .form__elem__error-text, .fixed__rating__grid .ranking__message {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .fixed__grid-table, .fixed__grid-table__row {
+        display: block;
+    }
+    .fixed__grid-table__row {
+        border-bottom: 1px solid #dfdae0;
+    }
+    .fixed__grid-table__cell {
+        display: inline-block;
+        border: 0 none;
+    }
+    .fixed__grid-label-col {
+        width: 100%;
+    }
+    .fixed__grid-shape__col {
+        width: 49%;
+        display: inline-block;
+        text-align: left;
+        overflow: hidden;
+    }
+    .fixed__grid-shape__col .grid-shape-label {
+        white-space: nowrap;
+    }
+    .fixed__grid-shape__col .grid-shape-span, .fixed__grid-shape__col .grid-text-span {
+        vertical-align: middle;
+        display: inline-block;
+    }
+    .fixed__grid-tooltip__row {
+        display: none;
+    }
+    .elem_fixed__grid__container .fixed__grid-table__row:last-of-type {
+        border-bottom: 0 none;
     }
     .feedback__container .feedback__emo-list .feedback__emo-list__description {
         padding-right: 10px;

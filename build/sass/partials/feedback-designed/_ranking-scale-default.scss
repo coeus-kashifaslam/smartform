@@ -107,7 +107,7 @@ $tooltip-icon-sudo-color: $sudo-rating-color;
   }
   .ico{
     &.tooltip__ico-selected {
-      color: $sudo-rating-color;
+      color: $sudo-rating-color-old;
     }
   }
 }
@@ -117,7 +117,7 @@ $tooltip-icon-sudo-color: $sudo-rating-color;
   text-align: center;
   .ico {
     &.ranking__message__selected {
-      color: $sudo-rating-color;
+      color: $sudo-rating-color-old;
     }
   }
   p {

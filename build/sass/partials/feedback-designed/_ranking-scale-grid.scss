@@ -31,6 +31,7 @@ $grid-layout-icon-selected-clr: $default-theme;
     vertical-align: middle;
     width: 50px;
     border-bottom: 1px solid $gird-layout-row-border;
+    position: relative;
     input[type='radio'] {
       display: none;
       margin: 0;
