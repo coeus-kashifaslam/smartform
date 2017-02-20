@@ -9061,7 +9061,7 @@ body, .wizard__breadcrumb-list > li .bubble__number, .wizard__breadcrumb-list > 
     font-weight: 100;
 }
 
-.form__legend, .form__elem__title, .form__elem__error-text, .sff-form__submit, .wizard__breadcrumb-list > li.active .step__title, .custom-footer__col-title, .custom-footer__info-section__label, .feedback__emo-list__description-count {
+.form__legend, .form__elem__title, .form__elem__error-text, .sff-form__submit, .wizard__breadcrumb-list > li.active .step__title, .custom-footer__col-title, .custom-footer__info-section__label, .rating-comp__label.rating-comp__label__bold, .rating-comp__value-count, .rating-comp__tooltip-content {
     font-family: Roboto-Bold;
 }
 
@@ -10358,460 +10358,498 @@ html, body {
     color: #07b;
 }
 
-.feedback__continuous__shapes-list__item, .feedback__grid__emo-list__item.feedback__grid__emo-list__shape {
-    min-width: 42px;
+.rating-comp__row {
+    margin-bottom: 15px;
 }
 
-.feedback__continuous__shapes-list__item, .feedback__grid__emo-list__item.feedback__grid__emo-list__shape {
-    max-width: 50px;
-}
-
-.feedback__continuous__emo-list .feedback__continuous__emo-list__description p, .feedback__grid__emo-list__item.feedback__grid__emo-list__description {
-    font-size: 14px;
-}
-
-.feedback__grid__emo-list__item.feedback__grid__emo-list__tooltip .feedback__grid__section-tooltip {
-    font-size: 14px;
-}
-
-.feedback__grid__col-tooltip {
-    font-size: 10px;
-}
-
-.feedback__default__container, .feedback__continuous__container, .feedback__grid__container {
-    margin-bottom: 20px;
-}
-
-.feedback__container .feedback__emo-list .feedback__emo-list__description {
-    padding-left: 10px;
-    padding-right: 20px;
-}
-
-.feedback__container .feedback__emo-list .feedback__emo-list__description p {
-    margin-bottom: 4px;
-}
-
-.feedback__emo-list__description-count {
+.rating__container .row:last-child .rating-comp__row {
     margin-bottom: 0;
-    font-size: 16px;
 }
 
-.feedback__item-label {
-    cursor: pointer;
+.rating-comp__col-icons {
+    text-align: right;
+}
+
+.rating-comp__col-icons__bordered {
+    display: inline-block;
+    border: 1px solid #dfdae0;
+    padding: 0 10px;
+}
+
+.rating-comp__icons-list {
     margin: 0;
 }
 
-.feedback__item-label .ico {
-    font-size: 28px;
-}
-
-.feedback__item-label .icomoon-default {
-    color: #bdbdbd;
-}
-
-.feedback__item-label .icomoon-sudo {
-    color: #3054ae;
-}
-
-.feedback__count__message {
-    text-align: center;
-}
-
-.feedback__count__message .feedback__count__message__icon-selected {
-    color: #3054ae;
-}
-
-.elem__feedback__thumbnail-container {
-    width: 155px;
-    height: 155px;
-    margin: 22px auto 33px;
-    border-radius: 5px;
-    position: relative;
-    overflow: hidden;
-    border: 1px solid #dfdae0;
-}
-
-.elem__feedback__thumbnail-container .elem__feedback__thumbnail {
-    max-width: 100%;
-    border-radius: 5px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-.elem__feedback__header {
-    position: relative;
-    margin-bottom: 35px;
-    min-height: 165px;
-}
-
-.elem__feedback__header__thumbnail-left .elem_feedback__header-content {
-    padding-left: 165px;
-}
-
-.elem__feedback__header__thumbnail-left .elem_feedback__header-thumbnail {
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-.elem__feedback__header__thumbnail-right .elem_feedback__header-content {
-    padding-right: 165px;
-}
-
-.elem__feedback__header__thumbnail-right .elem_feedback__header-thumbnail {
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-.elem__feedback__header__thumbnail-false {
-    min-height: unset;
-}
-
-.feedback__item-tooltip-container {
-    position: absolute;
-    background: #ebebeb;
-    border: 1px solid #dfdae0;
-    white-space: nowrap;
-    padding: 3px 7px;
-    line-height: 1.4;
-    border-radius: 2px;
-    z-index: 2;
+.rating-comp__icons-list input[type=radio] {
     display: none;
 }
 
-.feedback__item-tooltip-container ul {
+.rating-comp__icons-list li {
+    padding: 0 2px;
+    position: relative;
+}
+
+.rating-comp__icons-list #text {
+    display: none;
+    width: 0;
+}
+
+.rating-comp__label {
+    padding-top: 3px;
     margin: 0;
+    white-space: nowrap;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.feedback__item-tooltip-container li {
-    padding: 0;
+.rating-comp__label.rating-comp__label__bold {
+    font-size: 18px;
+    color: #424242;
 }
 
-.feedback__item-tooltip-container .tooltip__ico-selected {
+.rating-comp__value-count {
+    font-size: 32px;
+    color: #4c4c4c;
+    margin: 0;
+    width: 50px;
+}
+
+.rating-comp__value-count, .rating-comp__icons-list {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.rating-comp__separater {
+    width: 100%;
+    height: 1px;
+    background: #dfdae0;
+    margin-bottom: 15px;
+}
+
+.rating-comp__icon-single {
+    color: #dfdae0;
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.rating-comp__icon-single .icomoon-sudo {
+    display: none;
+}
+
+.rating-comp__selection-type__continuous .rating-comp__hover .rating-comp__icon-single, .rating-comp__selection-type__continuous .rating-comp__selected .rating-comp__icon-single {
     color: #3054ae;
 }
 
-.feedback__item-tooltip-container .feedback__selected {
-    color: #4c4c4c;
-    font-weight: 700;
+.rating-comp__selection-type__continuous .rating-comp__hover .rating-comp__icon-single .icomoon-sudo, .rating-comp__selection-type__continuous .rating-comp__selected .rating-comp__icon-single .icomoon-sudo {
+    display: inline-block;
 }
 
-.feedback__item-tooltip-container:before, .feedback__item-tooltip-container:after {
+.rating-comp__selection-type__continuous .rating-comp__hover .rating-comp__icon-single .icomoon-default, .rating-comp__selection-type__continuous .rating-comp__selected .rating-comp__icon-single .icomoon-default {
+    display: none;
+}
+
+.rating-comp__selection-type__single .rating-comp__hover {
+    color: inherit;
+}
+
+.rating-comp__selection-type__single .rating-comp__selected .rating-comp__icon-single {
+    color: #3054ae;
+}
+
+.rating-comp__selection-type__single .rating-comp__selected .rating-comp__icon-single .icomoon-sudo {
+    display: inline-block;
+}
+
+.rating-comp__selection-type__single .rating-comp__selected .rating-comp__icon-single .icomoon-default {
+    display: none;
+}
+
+.rating-comp__selection-type__total .rating-comp__selected .rating-comp__icon-single, .rating-comp__selection-type__total.rating-comp__selection-type__single .rating-comp__selected .rating-comp__icon-single, .rating-comp__selection-type__total.rating-comp__selection-type__continuous .rating-comp__selected .rating-comp__icon-single {
+    color: #3054ae;
+}
+
+.rating-comp__selection-type__total .rating-comp__selected .rating-comp__icon-single .icomoon-sudo, .rating-comp__selection-type__total.rating-comp__selection-type__single .rating-comp__selected .rating-comp__icon-single .icomoon-sudo, .rating-comp__selection-type__total.rating-comp__selection-type__continuous .rating-comp__selected .rating-comp__icon-single .icomoon-sudo {
+    display: inline-block;
+}
+
+.rating-comp__selection-type__total .rating-comp__selected .rating-comp__icon-single .icomoon-default, .rating-comp__selection-type__total.rating-comp__selection-type__single .rating-comp__selected .rating-comp__icon-single .icomoon-default, .rating-comp__selection-type__total.rating-comp__selection-type__continuous .rating-comp__selected .rating-comp__icon-single .icomoon-default {
+    display: none;
+}
+
+.rating-comp__tooltip {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    top: -40px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.rating-comp__tooltip-content {
+    font-size: 14px !important;
+    white-space: nowrap;
+    padding: 3px 15px 7px;
+    margin: 0;
+    line-height: 1;
+    background: #ebebeb;
+    position: relative;
+    z-index: 3;
+}
+
+.rating-comp__tooltip-content:after {
     content: '';
     display: block;
     position: absolute;
     width: 0;
     height: 0;
     border-style: solid;
-    z-index: 3;
 }
 
-.feedback__item-tooltip-container:after {
-    z-index: 2;
-}
-
-.feedback__item-tooltip-container.top {
-    left: 50%;
-    top: -40px;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-}
-
-.feedback__item-tooltip-container.top:before {
-    bottom: -8px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    border-color: #ebebeb transparent transparent;
-    border-width: 8px 6px 0;
-}
-
-.feedback__item-tooltip-container.top:after {
-    bottom: -8px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    border-color: #dfdae0 transparent transparent;
-    border-width: 8px 8px 0;
-}
-
-.feedback__item-tooltip-container.bottom {
-    left: 50%;
-    bottom: -35px;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-}
-
-.feedback__item-tooltip-container.bottom:before {
-    top: -8px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    border-color: transparent transparent #ebebeb;
-    border-width: 0 6px 8px;
-}
-
-.feedback__item-tooltip-container.bottom:after {
-    top: -8px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    border-color: transparent transparent #dfdae0;
-    border-width: 0 8px 8px;
-}
-
-.feedback__item-tooltip-container.right {
-    left: 90%;
-    top: 50%;
-    -webkit-transform: translateY(-65%);
-    transform: translateY(-65%);
-}
-
-.feedback__item-tooltip-container.right:before {
-    top: 50%;
-    right: 100%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+.rating-comp__tooltip-content:after {
     border-color: transparent #ebebeb transparent transparent;
-    border-width: 6px 8px 6px 0;
+    border-width: 5px 10px 5px 0;
 }
 
-.feedback__item-tooltip-container.right:after {
-    top: 50%;
-    right: 100%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    border-color: transparent #dfdae0 transparent transparent;
-    border-width: 8px 8px 8px 0;
+.rating-comp__tooltip-content:after {
+    top: 100%;
+    left: 50%;
+    -webkit-transform: rotate(30deg) translateX(-75%);
+    transform: rotate(30deg) translateX(-75%);
 }
 
-.feedback__item-tooltip-container.left {
-    right: 90%;
-    top: 50%;
-    -webkit-transform: translateY(-65%);
-    transform: translateY(-65%);
+.rating-comp__hover__current .rating-comp__tooltip {
+    display: block;
 }
 
-.feedback__item-tooltip-container.left:before {
-    top: 50%;
-    left: 100%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    border-color: transparent transparent transparent #ebebeb;
-    border-width: 6px 0 6px 8px;
-}
-
-.feedback__item-tooltip-container.left:after {
-    top: 50%;
-    left: 100%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    border-color: transparent transparent transparent #dfdae0;
-    border-width: 8px 0 8px 8px;
-}
-
-.hide__radio input[type=radio] {
-    display: none;
-}
-
-.elem__feedback-default .form__elem__help-text {
-    margin-bottom: 5px;
-    margin-top: 10px;
-    word-break: break-all;
-    word-wrap: break-word;
-}
-
-.feedback__default__container {
-    border: 1px solid #dfdae0;
-    padding: 8px 0;
-}
-
-.feedback__default__emo-list {
-    display: table;
+.ranking__list__default {
     table-layout: fixed;
-    width: 100%;
-    margin-bottom: 0;
 }
 
-.feedback__default__emo-list .icomoon-sudo {
-    display: none;
-}
-
-.feedback__default-emo-list__item {
-    display: table-cell;
+.ranking__list__default .ranking__list__item {
     text-align: center;
-    position: relative;
-}
-
-.feedback__default__selection-continuous .feedback__default-emo-list__item-hover .icomoon-default, .feedback__default__selection-continuous .feedback__default-emo-list__item-selected .icomoon-default {
-    display: none;
-}
-
-.feedback__default__selection-continuous .feedback__default-emo-list__item-hover .icomoon-sudo, .feedback__default__selection-continuous .feedback__default-emo-list__item-selected .icomoon-sudo {
-    display: inline-block;
-}
-
-.feedback__default__selection-single .feedback__default-emo-list__item-hover-current .icomoon-default, .feedback__default__selection-single .feedback__default-emo-list__item-selected-current .icomoon-default {
-    display: none;
-}
-
-.feedback__default__selection-single .feedback__default-emo-list__item-hover-current .icomoon-sudo, .feedback__default__selection-single .feedback__default-emo-list__item-selected-current .icomoon-sudo {
-    display: inline-block;
-}
-
-.elem__feedback-default__thumbnail-true .form__elem__title {
-    text-align: center;
-}
-
-.feedback__continuous__container {
-    border: 1px solid #dfdae0;
-}
-
-.feedback__continuous__emo-list {
-    display: table;
-    width: 100%;
-}
-
-.feedback__continuous__emo-list .feedback__continuous__emo-list__table-row {
-    display: table-row;
-}
-
-.feedback__continuous__emo-list .feedback__continuous__emo-list__table-row:last-of-type .feedback__continuous__emo-list__item {
-    border-bottom: 0 none;
-}
-
-.feedback__continuous__emo-list .feedback__continuous__emo-list__item {
-    display: table-cell;
-    vertical-align: middle;
-    padding: 15px 0;
-    border-bottom: 1px solid #dfdae0;
-}
-
-.feedback__continuous__emo-list .feedback__continuous__emo-list__description p {
+    padding: 0;
     margin: 0;
 }
 
-.feedback__continuous__shapes-list__items-container {
-    display: table;
-    table-layout: fixed;
-    float: right;
-}
-
-.feedback__continuous__shapes-list__item {
-    display: table-cell;
-    vertical-align: middle;
+.ranking__list__default .ranking__list__item .ranking__list__item__label {
+    cursor: pointer;
+    font-size: 33px;
+    color: #dfdae0;
+    line-height: 1;
     text-align: center;
+    padding-top: 6px;
+    display: inline-block;
+    vertical-align: middle;
     position: relative;
 }
 
-.feedback__continuous__shapes-list__item .icomoon-sudo {
+.ranking__list__default .ranking__list__item .ranking__list__item__label .icomoon-sudo {
     display: none;
 }
 
-.feedback__continuous__selection-continuous .feedback__continuous__shapes-list__item-hover .icomoon-default, .feedback__continuous__selection-continuous .feedback__continuous__shapes-list__item-selected .icomoon-default {
-    display: none;
+.rating-comp__selection-type__single .rating-comp__selected .ranking__list__item__label, .rating-comp__selection-type__continuous .rating-comp__selected .ranking__list__item__label, .rating-comp__selection-type__continuous .rating-comp__hover .ranking__list__item__label {
+    color: #3054ae;
 }
 
-.feedback__continuous__selection-continuous .feedback__continuous__shapes-list__item-hover .icomoon-sudo, .feedback__continuous__selection-continuous .feedback__continuous__shapes-list__item-selected .icomoon-sudo {
+.rating-comp__selection-type__single .rating-comp__selected .ranking__list__item__label .icomoon-sudo {
     display: inline-block;
 }
 
-.feedback__continuous__selection-single .feedback__continuous__shapes-list__item-hover-current .icomoon-default, .feedback__continuous__selection-single .feedback__continuous__shapes-list__item-selected-current .icomoon-default {
+.rating-comp__selection-type__single .rating-comp__selected .ranking__list__item__label .icomoon-default {
     display: none;
 }
 
-.feedback__continuous__selection-single .feedback__continuous__shapes-list__item-hover-current .icomoon-sudo, .feedback__continuous__selection-single .feedback__continuous__shapes-list__item-selected-current .icomoon-sudo {
+.rating-comp__selection-type__continuous .rating-comp__selected .ranking__list__item__label .icomoon-sudo, .rating-comp__selection-type__continuous .rating-comp__hover .ranking__list__item__label .icomoon-sudo {
     display: inline-block;
 }
 
-.feedback__grid__emo-list__table {
+.rating-comp__selection-type__continuous .rating-comp__selected .ranking__list__item__label .icomoon-default, .rating-comp__selection-type__continuous .rating-comp__hover .ranking__list__item__label .icomoon-default {
+    display: none;
+}
+
+.ranking__list__default .ranking__list__item .ranking__list__item__label:hover .ranking__list__item__tooltip {
+    display: block;
+}
+
+.ranking__list__item__tooltip {
+    display: none;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    white-space: nowrap;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    font-size: 14px;
+    z-index: 1;
+}
+
+.ranking__list__item__tooltip-body {
+    position: relative;
+    background: #3054ae;
+    color: #fff;
+    padding: 3px 6px 5px 10px;
+    border-radius: 2px;
+}
+
+.ranking__list__item__tooltip-body:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -8px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.ranking__list__item__tooltip-body:before {
+    left: 50%;
+    margin-left: -7px;
+    border-color: #3054ae transparent transparent;
+    border-width: 8px 6px 0;
+}
+
+.ranking__list__item__tooltip-body li {
+    margin-left: 0;
+    padding: 0;
+}
+
+.ranking__list__item__tooltip-body .ico.tooltip__ico-selected {
+    color: #ffbe00;
+}
+
+.ranking__message {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.ranking__message .ico.ranking__message__selected {
+    color: #ffbe00;
+}
+
+.ranking__message p {
+    margin-bottom: 0;
+}
+
+.ranking__message span {
+    vertical-align: middle;
+    margin-left: -3px;
+    line-height: 1.4;
+}
+
+.ranking__message .count__current, .ranking__message .count__total {
+    margin-left: 0;
+    display: inline-block;
+    margin-top: -2px;
+}
+
+.elem__table {
     display: table;
     width: 100%;
 }
 
-.feedback__grid__emo-list__table-row {
+.ranking__container__grid {
+    table-layout: fixed;
+}
+
+.elem__table__row {
     display: table-row;
+    width: 100%;
 }
 
-.feedback__grid__emo-list__item {
+.elem__table__cell {
     display: table-cell;
+}
+
+.elem__ranking-scale__layout-grid .ranking__container {
+    overflow: hidden;
+}
+
+.ranking__list__grid {
+    display: table-row;
+    width: 100%;
+}
+
+.ranking__list__grid .ranking__list__item, .ranking__list__grid .ranking__list__item__label-cell {
+    text-align: center;
+    padding: 10px 5px;
     vertical-align: middle;
-    text-align: center;
-    position: relative;
-}
-
-.feedback__grid__emo-list__item.feedback__grid__emo-list__description {
-    text-align: left;
-}
-
-.feedback__grid__emo-list__item.feedback__grid__emo-list__tooltip .feedback__grid__section-tooltip {
-    max-width: none;
-    min-width: unset;
-    width: 42px;
-    margin: 0 auto;
-    word-break: break-all;
-    word-wrap: break-word;
-    text-align: center;
-    padding: 0 3px;
-    color: #4c4c4c;
-}
-
-.feedback__grid__emo-list__item .icomoon-sudo {
-    display: none;
-}
-
-.feedback__grid__emo-list__table-row .feedback__emo-list__item {
+    width: 50px;
     border-bottom: 1px solid #dfdae0;
 }
 
-.feedback__grid__emo-list__table-content-row .feedback__emo-list__item {
-    padding-top: 15px;
-    padding-bottom: 15px;
+.ranking__list__grid .ranking__list__item input[type=radio], .ranking__list__grid .ranking__list__item__label-cell input[type=radio] {
+    display: none;
+    margin: 0;
 }
 
-.feedback__grid__emo-list__table-content-row .feedback__emo-list__item:first-child {
-    border-left: 1px solid #dfdae0;
+.ranking__list__grid .ranking__list__item .ranking__list__item__icon, .ranking__list__grid .ranking__list__item__label-cell .ranking__list__item__icon {
+    font-size: 28px;
+    cursor: pointer;
+    color: #dfdae0;
+    display: inline-block;
+    vertical-align: middle;
 }
 
-.feedback__grid__emo-list__table-content-row .feedback__emo-list__item:last-child {
-    border-right: 1px solid #dfdae0;
+.ranking__list__grid .ranking__list__item:first-child, .ranking__list__grid .ranking__list__item__label-cell:first-child {
+    min-width: unset;
+    width: auto;
 }
 
-.feedback__grid__col-tooltip {
-    padding-left: 2px;
-    padding-right: 2px;
+.ranking__list__grid .ranking__list__item .icomoon-sudo, .ranking__list__grid .ranking__list__item__label-cell .icomoon-sudo {
+    display: none;
+}
+
+.ranking__list__grid .ranking__list__item .ranking__list__item__label {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -17px;
+    margin-top: -17px;
+    width: 34px;
+    height: 34px;
+    text-indent: -999px;
+    overflow: hidden;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.ranking__list__grid .ranking__list__item__label-cell {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
+}
+
+.ranking__list__grid .ranking__list__item__label-cell .ranking__list__item__label-content {
+    margin-bottom: 0;
     word-break: break-all;
-    word-wrap: break-word;
-    color: #4c4c4c;
-    display: table-cell;
-    width: 1%;
-    text-align: center;
-    padding-top: 15px;
-    vertical-align: top;
 }
 
-.feedback__grid__col-tooltip p {
+.ranking__list__grid.ranking__list__grid__tooltip-row .ranking__list__item__label {
+    display: block;
+    text-indent: 0;
+    width: auto;
+    height: auto;
+    margin: 0;
+    position: relative;
+    left: auto;
+    top: auto;
+    cursor: default;
+    font-size: 16px;
+}
+
+.ranking__list__grid.rating-comp__selection-type__continuous .ranking__list__item.rating-comp__hover .ranking__list__item__icon, .ranking__list__grid.rating-comp__selection-type__continuous .ranking__list__item.rating-comp__selected .ranking__list__item__icon {
+    color: #3054ae;
+}
+
+.ranking__list__grid.rating-comp__selection-type__continuous .ranking__list__item.rating-comp__hover .ranking__list__item__label, .ranking__list__grid.rating-comp__selection-type__continuous .ranking__list__item.rating-comp__selected .ranking__list__item__label {
+    background: transparent;
+    color: inherit;
+    border: 0 none;
+}
+
+.ranking__list__grid.rating-comp__selection-type__continuous .ranking__list__item.rating-comp__hover .icomoon-sudo, .ranking__list__grid.rating-comp__selection-type__continuous .ranking__list__item.rating-comp__selected .icomoon-sudo {
+    display: inline-block;
+}
+
+.ranking__list__grid.rating-comp__selection-type__continuous .ranking__list__item.rating-comp__hover .icomoon-default, .ranking__list__grid.rating-comp__selection-type__continuous .ranking__list__item.rating-comp__selected .icomoon-default {
+    display: none;
+}
+
+.ranking__list__grid.rating-comp__selection-type__single .ranking__list__item.rating-comp__selected .ranking__list__item__icon {
+    color: #3054ae;
+}
+
+.ranking__list__grid.rating-comp__selection-type__single .ranking__list__item.rating-comp__selected .ranking__list__item__label {
+    background: transparent;
+    color: inherit;
+    border: 0 none;
+}
+
+.ranking__list__grid.rating-comp__selection-type__single .ranking__list__item.rating-comp__selected .icomoon-sudo {
+    display: inline-block;
+}
+
+.ranking__list__grid.rating-comp__selection-type__single .ranking__list__item.rating-comp__selected .icomoon-default {
+    display: none;
+}
+
+.form__elem__rating-thumbnail-right .elem__rating-thumbnail-right__header .form__elem__help-text {
     margin-bottom: 0;
 }
 
-.feedback__grid__selection-continuous .feedback__grid__emo-list__item-hover .icomoon-default, .feedback__grid__selection-continuous .feedback__grid__emo-list__item-selected .icomoon-default {
-    display: none;
+.elem__rating-thumbnail-right__body {
+    padding: 0;
+    border: 0 none;
 }
 
-.feedback__grid__selection-continuous .feedback__grid__emo-list__item-hover .icomoon-sudo, .feedback__grid__selection-continuous .feedback__grid__emo-list__item-selected .icomoon-sudo {
+.elem__rating-thumbnail-right__body .rating__thumbnail__col__content, .elem__rating-thumbnail-right__body .rating__icons__col__content {
+    border: 1px solid #dfdae0;
+}
+
+.elem__rating-thumbnail-right__body .rating__thumbnail__col__content {
+    width: 100%;
+    overflow: hidden;
+}
+
+.elem__rating-thumbnail-right__body .rating__thumbnail__col__content .rating__thumbnail__container {
+    vertical-align: middle;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.elem__rating-thumbnail-right__body .rating__thumbnail__col__content .product-thumbnail {
+    position: relative;
+    margin: 0 auto;
+    height: auto;
+    width: auto;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    max-height: 85%;
+    max-width: 100%;
+}
+
+.elem__rating-thumbnail-right__body .rating__icons__col__content {
+    padding: 20px 15px;
+    min-height: 210px;
+}
+
+.elem__rating-thumbnail-right__body .rating__icons__col__content > .row:last-of-type, .elem__rating-thumbnail-right__body .rating__icons__col__content > .row:last-of-type .rating-comp__row {
+    margin-bottom: 0;
+}
+
+.elem__rating__left-thumbnail__container {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #dfdae0;
+    overflow: hidden;
+    text-align: center;
+    padding: 5px;
+}
+
+.elem__rating__left-thumbnail__container .elem__rating__left-thumbnail {
+    position: relative;
     display: inline-block;
+    width: 100%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
-.feedback__grid__selection-single .feedback__grid__emo-list__item-hover-current .icomoon-default, .feedback__grid__selection-single .feedback__grid__emo-list__item-selected-current .icomoon-default {
-    display: none;
+.elem__rating-thumbnail-left .rating__container .row:last-child .rating-comp__row {
+    margin-bottom: 15px;
 }
 
-.feedback__grid__selection-single .feedback__grid__emo-list__item-hover-current .icomoon-sudo, .feedback__grid__selection-single .feedback__grid__emo-list__item-selected-current .icomoon-sudo {
-    display: inline-block;
+.elem__rating-thumbnail-left .rating-comp__separater {
+    height: 2px;
+}
+
+.elem__rating-thumbnail-left .rating-comp__separater + .row .rating-comp__row {
+    margin-bottom: 0 !important;
 }
 
 .thank-you__content {
@@ -11306,22 +11344,6 @@ html, body {
     }
     .modal-sm {
         width: 300px;
-    }
-    .feedback__emo-list__description-count {
-        text-align: right;
-    }
-    .elem__feedback__header .elem__feedback__thumbnail-container {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-    .feedback__default-emo-list__item-hover-current .feedback__item-tooltip-container {
-        display: block;
-    }
-    .feedback__continuous__shapes-list__item-hover-current .feedback__item-tooltip-container {
-        display: block;
-    }
-    .feedback__grid__emo-list-mobil-tooltip-row {
-        display: none;
     }
 }
 
@@ -12032,121 +12054,132 @@ html, body {
     .caption-form__error-icon .error-page__icon {
         font-size: 250px;
     }
-    .feedback__container .feedback__emo-list .feedback__emo-list__description {
-        padding-right: 10px;
+    .rating-comp__icons-count__large .rating-comp__icon-single {
+        font-size: 54px;
     }
-    .feedback__item-label .ico {
-        font-size: 24px;
+    .rating-comp__icons-count__small .rating-comp__icon-single {
+        font-size: 22px;
     }
-    .feedback__count__message {
+    .rating-comp__col-icons {
+        text-align: left;
+    }
+    .rating-comp__value-count {
+        display: none;
+    }
+    .rating-comp__separater {
+        display: none;
+    }
+    .rating-comp__separater + .row {
+        border-top: 1px solid #dfdae0;
+        padding-top: 15px;
+    }
+    .rating-comp__hover__current .rating-comp__tooltip {
+        display: none;
+    }
+    .ranking__message {
         font-size: 12px;
     }
-    .elem__feedback__thumbnail-container {
-        width: 290px;
-        height: 290px;
+    .ranking__list__default .ranking__list__item .ranking__list__item__label {
+        font-size: 25px;
     }
-    .elem__feedback__header__thumbnail-left .elem_feedback__header-content, .elem__feedback__header__thumbnail-right .elem_feedback__header-content {
+    .elem__ranking-scale__layout-grid {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .elem__ranking-scale__layout-grid .ranking__container {
+        overflow: visible;
+    }
+    .elem__ranking-scale__layout-grid .form__elem__title, .elem__ranking-scale__layout-grid .form__elem__help-text, .elem__ranking-scale__layout-grid .ranking__list__grid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .ranking__list__grid {
+        display: block;
+        border-bottom: 1px solid #dfdae0;
+    }
+    .ranking__list__grid .ranking__list__item, .ranking__list__grid .ranking__list__item__label-cell {
+        text-align: left;
+        border-bottom: 0 none;
+    }
+    .ranking__list__grid .ranking__list__item + .ranking__list__item, .ranking__list__grid .ranking__list__item__label-cell + .ranking__list__item {
+        padding-left: 0;
+        width: 48%;
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .ranking__list__grid .ranking__list__item .ranking__list__item__label, .ranking__list__grid .ranking__list__item__label-cell .ranking__list__item__label {
+        margin-left: 5px;
+    }
+    .ranking__list__grid .ranking__list__item .ranking__list__item__label, .ranking__list__grid .ranking__list__item__label-cell .ranking__list__item__label {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .ranking__list__grid .ranking__list__item .ranking__list__item__label {
+        text-indent: initial;
+        position: absolute;
+        left: 0;
+        top: 58%;
+        width: auto;
+        min-height: 40px;
+        padding-left: 35px;
+        margin-bottom: 0;
+    }
+    .ranking__list__grid .ranking__list__item .ranking__list__item__label .ico {
+        vertical-align: top;
+        line-height: 1;
+    }
+    .ranking__list__grid .ranking__list__item__label-cell {
+        display: block;
+        width: 100%;
+    }
+    .ranking__list__grid__tooltip-row {
+        display: none;
+    }
+    .elem__ranking-scale__layout-grid .ranking__list__grid:last-child {
+        border-bottom: 0 none;
+    }
+    .form__elem__rating-thumbnail-right .form__elem:first-child {
+        border-top: 0 none;
+    }
+    .elem__rating-thumbnail-right__body {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .elem__rating-thumbnail-right__body .rating__thumbnail__col, .elem__rating-thumbnail-right__body .rating__icons__col {
         padding-left: 0;
         padding-right: 0;
     }
-    .elem__feedback__header__thumbnail-left .elem_feedback__header-thumbnail, .elem__feedback__header__thumbnail-right .elem_feedback__header-thumbnail {
-        position: relative;
-        right: auto;
-        left: auto;
-        top: auto;
+    .elem__rating-thumbnail-right__body .rating__thumbnail__col__content, .elem__rating-thumbnail-right__body .rating__icons__col__content {
+        border-top: 0 none;
+        padding-top: 0;
     }
-    .elem__feedback-default .form__elem__help-text {
-        margin-bottom: 15px;
-        margin-top: 0;
+    .elem__rating-thumbnail-right__body .rating__thumbnail__col__content .product-thumbnail {
+        -webkit-transform: none;
+        transform: none;
+        max-height: none;
+        max-width: 100%;
     }
-    .elem__feedback-default .form__elem__help-text.form__elem__help-text__left {
-        padding-right: 5px;
+    .elem__rating-thumbnail-right__body .rating__thumbnail__container {
+        height: auto !important;
+        padding: 20px 0;
     }
-    .elem__feedback-default .form__elem__help-text.form__elem__help-text__right {
-        padding-left: 5px;
-    }
-    .feedback__default__container {
-        padding: 0;
-        border: 0 none;
-    }
-    .elem__feedback-default__thumbnail-true .form__elem__title {
-        text-align: left;
-    }
-    .feedback__continuous__container {
-        border: 0 none;
-    }
-    .feedback__continuous__emo-list {
-        display: block;
-    }
-    .feedback__continuous__emo-list .feedback__continuous__emo-list__table-row, .feedback__continuous__emo-list .feedback__continuous__emo-list__item {
-        display: block;
-    }
-    .feedback__continuous__emo-list .feedback__continuous__emo-list__table-row {
-        border: 1px solid #dfdae0;
-        margin-bottom: 15px;
-    }
-    .feedback__continuous__emo-list .feedback__continuous__emo-list__item {
-        border: 0 none;
-    }
-    .feedback__continuous__emo-list .feedback__continuous__emo-list__description {
-        padding: 7px 5px;
-        background: #f3f3f3;
-    }
-    .feedback__continuous__emo-list .feedback__continuous__emo-list__description .feedback__continuous__emo-list__description-count {
-        text-align: left;
-    }
-    .feedback__continuous__shapes-list__items-container {
-        float: none;
-        display: block;
-        overflow: hidden;
-    }
-    .feedback__continuous__shapes-list__item {
-        max-width: none;
-        min-width: unset;
-        width: 1%;
-        overflow: hidden;
-        padding-left: 1px;
-        padding-right: 1px;
-    }
-    .feedback__continuous__shapes-list__item .feedback__item-label {
-        padding-top: 2px;
-    }
-    .feedback__grid__emo-list__table-header-row.feedback__grid__emo-list__table-row {
-        display: none;
-    }
-    .feedback__grid__emo-list__table-content-row .feedback__emo-list__item {
+    .elem__rating-thumbnail-right__body .rating__icons__col__content {
         border-bottom: 0 none;
     }
-    .feedback__grid__emo-list__table-content-row .feedback__emo-list__item:first-child {
-        border-left: 0 none;
-    }
-    .feedback__grid__emo-list__table-content-row .feedback__emo-list__item:last-child {
-        border-right: 0 none;
-    }
-    .feedback__grid__emo-list__table-content-row .feedback__grid__emo-list__description {
-        padding: 7px 10px;
-    }
-    .feedback__grid__emo-list__table {
-        display: block;
-    }
-    .feedback__grid__emo-list__table-row {
-        display: block;
-        margin-bottom: 15px;
-        border: 1px solid #dfdae0;
-    }
-    .feedback__grid__emo-list__description {
-        display: block;
-        background: #f3f3f3;
-    }
-    .feedback__grid__emo-list__description p {
-        margin-bottom: 0;
-    }
-    .feedback__grid__emo-list__item.feedback__grid__emo-list__shape {
-        min-width: unset;
-        max-width: none;
+    .elem__rating-thumbnail-left .elem__rating__thumbnail-container {
         text-align: center;
-        width: 1%;
-        padding-top: 5px;
+        padding: 30px 15px;
+        margin-bottom: 15px;
+        border-top: 1px solid #dfdae0;
+        border-bottom: 1px solid #dfdae0;
+    }
+    .elem__rating-thumbnail-left .elem__rating__thumbnail-container.empty {
+        border: 0 none;
+        padding: 0;
+    }
+    .elem__rating__left-thumbnail__container {
+        margin: 0 auto;
     }
     .thank-you__content {
         padding: 15px;
@@ -12244,6 +12277,9 @@ html, body {
     .hidden-sm {
         display: none !important;
     }
+    .elem__rating__full-width .rating-comp__col-icons {
+        padding-left: 0;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -12276,5 +12312,11 @@ html, body {
 @media (max-width: 991px) {
     .sff-form__content-wrap {
         padding: 0 15px;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+    .elem__rating-thumbnail-left .rating-comp__col-icons {
+        padding-left: 0;
     }
 }
