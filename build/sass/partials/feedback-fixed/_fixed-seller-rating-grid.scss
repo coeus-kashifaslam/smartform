@@ -135,5 +135,12 @@
         border-bottom: 0 none;
       }
     }
+    .fixed__grid-content__row {
+      &:nth-child(2) {
+        .fixed__grid-label-col {
+          padding-top: 0;
+        }
+      }
+    }
   }
 }

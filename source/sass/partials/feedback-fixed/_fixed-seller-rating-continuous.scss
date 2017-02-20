@@ -1,0 +1,188 @@
+.feedback__continuous__container {
+  border: 1px solid $default-border-color;
+  @extend %feedback-container-margin-bottom;
+}
+.feedback__continuous__emo-list {
+  display: table;
+  width: 100%;
+  .feedback__continuous__emo-list__table-row {
+    display: table-row;
+    &:last-of-type {
+      .feedback__continuous__emo-list__item {
+        border-bottom: 0 none;
+      }
+    }
+  }
+  .feedback__continuous__emo-list__item {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 15px 0;
+    border-bottom: 1px solid $default-border-color;
+  }
+  .feedback__continuous__emo-list__description {
+    p {
+      margin: 0;
+      @extend %feedback-label-fontsize;
+    }
+  }
+}
+
+.feedback__continuous__shapes-list__items-container {
+  display: table;
+  table-layout: fixed;
+  float: right;
+}
+.feedback__continuous__shapes-list__item {
+  display: table-cell;
+  @extend %shape-col-minwidth;
+  @extend %shape-col-maxwidth;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+  .icomoon-sudo {
+    display: none;
+  }
+}
+
+.feedback__continuous__selection-continuous {
+  .feedback__continuous__shapes-list__item-hover,
+  .feedback__continuous__shapes-list__item-selected {
+    .icomoon-default {
+      display: none;
+    }
+    .icomoon-sudo {
+      display: inline-block;
+    }
+  }
+}
+
+.feedback__continuous__selection-single {
+  .feedback__continuous__shapes-list__item-hover-current,
+  .feedback__continuous__shapes-list__item-selected-current {
+    .icomoon-default {
+      display: none;
+    }
+    .icomoon-sudo {
+      display: inline-block;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .feedback__continuous__shapes-list__item-hover-current {
+    .feedback__item-tooltip-container {
+      display: block;
+    }
+  }
+}
+
+
+
+@media (max-width: 767px) {
+  .feedback__continuous__container {
+    border: 0 none;
+  }
+  .feedback__continuous__emo-list {
+    display: block;
+    .feedback__continuous__emo-list__table-row,
+    .feedback__continuous__emo-list__item {
+      display: block;
+    }
+    .feedback__continuous__emo-list__table-row {
+      border: 1px solid $default-border-color;
+      margin-bottom: 15px;
+    }
+    .feedback__continuous__emo-list__item {
+      border: 0 none;
+    }
+    .feedback__continuous__emo-list__description {
+      padding: 7px 5px;
+      background: $default-background-light;
+      .feedback__continuous__emo-list__description-count {
+        text-align: left;
+      }
+    }
+  }
+  .feedback__continuous__shapes-list__items-container {
+    float: none;
+    display: block;
+    overflow: hidden;
+  }
+  .feedback__continuous__shapes-list__item {
+    max-width: none;
+    min-width: unset;
+    width: 1%;
+    overflow: hidden;
+    padding-left: 1px;
+    padding-right: 1px;
+    .feedback__item-label {
+      padding-top: 2px;
+    }
+  }
+}
+
+
+
+
+//Fixes
+.fixed__seller-rating__continuous {
+  .feedback__continuous__container {
+    border: 0 none;
+  }
+  .feedback__continuous__emo-list {
+    .feedback__continuous__emo-list__item {
+      border: 0 none;
+      padding: 3px 0;
+    }
+  }
+  .feedback__container {
+    .feedback__emo-list {
+      .feedback__emo-list__description {
+        padding: 5px 20px 5px 0;
+        p {
+          margin-bottom: 0;
+          font-size: $default-font-size;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+
+    margin-left: -15px;
+    margin-right: -15px;
+
+    .form__elem__title,
+    .form__elem__help-text,
+    .feedback__continuous__emo-list__table-row,
+    .form__elem__error-text,
+    .ranking__message {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .feedback__continuous__emo-list {
+      .feedback__continuous__emo-list__table-row {
+        border: 0 none;
+        margin-bottom: 5px;
+        &:last-of-type {
+          border-top: 1px solid $default-border-color;
+          padding-top: 15px;
+        }
+      }
+      .feedback__continuous__emo-list__item {
+        padding-top: 0;
+      }
+    }
+
+    .feedback__container {
+      .feedback__emo-list {
+        .feedback__emo-list__description {
+          padding: 0;
+          background: transparent;
+        }
+      }
+    }
+  }
+  //upper bracket is to End mobile media
+}
