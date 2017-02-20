@@ -10648,7 +10648,7 @@ html, body {
 
 .fixed__grid-shape__col .icomoon-sudo {
     display: none;
-    color: #ffbe00;
+    color: #3054ae;
 }
 
 .fixed__grid-shape__col .fixed__grid-shape {
@@ -10662,6 +10662,22 @@ html, body {
 
 .hide-radio input[type=radio] {
     display: none;
+}
+
+.fixed__grid__selection-continuous .fixed__grid-shape__hover .fixed__grid-shape.icomoon-default, .fixed__grid__selection-continuous .fixed__grid-shape__selected .fixed__grid-shape.icomoon-default {
+    display: none;
+}
+
+.fixed__grid__selection-continuous .fixed__grid-shape__hover .fixed__grid-shape.icomoon-sudo, .fixed__grid__selection-continuous .fixed__grid-shape__selected .fixed__grid-shape.icomoon-sudo {
+    display: inline-block;
+}
+
+.fixed__grid__selection-single .fixed__grid-shape__selected-current .fixed__grid-shape.icomoon-default {
+    display: none;
+}
+
+.fixed__grid__selection-single .fixed__grid-shape__selected-current .fixed__grid-shape.icomoon-sudo {
+    display: inline-block;
 }
 
 .feedback__continuous__shapes-list__item, .feedback__grid__emo-list__item.feedback__grid__emo-list__shape {

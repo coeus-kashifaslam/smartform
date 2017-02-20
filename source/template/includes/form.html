@@ -8,14 +8,13 @@
                 </div>
                 <div class="form-fieldset">
 
-
+                    {# Fixed Feedback Elements #}
                     {% include 'template/components/feedback-fixed/fixed-seller-rating-grid.html' %}
-                    {% include 'template/components/feedback-designed/ranking-scale-grid.html' %}
-
                     {% include 'template/components/feedback-fixed/fixed-seller-rating-default.html' %}
 
 
                     {#
+                        Designed Feedback
                         {% include 'template/components/feedback-designed/rating-full-width.html' %}
                         {% include 'template/components/feedback-designed/rating-thumbnail-right.html' %}
                         {% include 'template/components/feedback-designed/rating-thumbnail-left.html' %}
@@ -28,14 +27,14 @@
 
 
                     {#
-                        Revised feedback with 5 options
+                        Proposed feedback with 5 options
                         {% include 'template/components/feedback-grid-thumbnail-false-5.html' %}
                         {% include 'template/components/feedback-continuous-thumbnail-false-5.html' %}
                         {% include 'template/components/feedback-default-thumbnail-false-5.html' %}
                     #}
 
                     {#
-                        Revised feedback with 11 options
+                        Proposed feedback with 11 options
                         {% include 'template/components/feedback-grid-thumbnail-false.html' %}
                         {% set feedbackThumbnail= 'right' %}
                         {% include 'template/components/feedback-grid-thumbnail-true.html' %}
