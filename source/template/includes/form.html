@@ -11,6 +11,9 @@
                     {% include 'template/components/feedback-grid-thumbnail-false-5.html' %}
                     {% include 'template/components/feedback-continuous-thumbnail-false-5.html' %}
                     {% include 'template/components/feedback-default-thumbnail-false-5.html' %}
+
+
+                    {% include 'template/components/feedback-grid-thumbnail-false.html' %}
                     {% set feedbackThumbnail= 'right' %}
                     {% include 'template/components/feedback-grid-thumbnail-true.html' %}
                     {% set feedbackThumbnail= 'left' %}
@@ -24,6 +27,7 @@
 
                     {% include 'template/components/feedback-default-thumbnail-true.html' %}
                     {% include 'template/components/feedback-default-thumbnail-false.html' %}
+
 
                     {% include 'template/components/short-text.html' %}
                     {% set singleCol = 'true' %}
@@ -43,16 +47,6 @@
                     {% set excludeBorder= 'true' %}
                     {% include 'template/components/free-text.html' %}
 
-
-                    {#
-                        Old Rating and ranking Designs
-                        {% include 'template/ranking-rating-old/rating-full-width.html' %}
-                        {% include 'template/ranking-rating-old/rating-thumbnail-right.html' %}
-                        {% include 'template/ranking-rating-old/rating-thumbnail-left.html' %}
-                        {% include 'template/ranking-rating-old/ranking-scale-default.html' %}
-                        {% include 'template/ranking-rating-old/ranking-scale-continuous.html' %}
-                        {% include 'template/ranking-rating-old/ranking-scale-grid.html' %}
-                    #}
                 </div>
             </form>
         </div>
