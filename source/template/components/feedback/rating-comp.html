@@ -1,0 +1,89 @@
+<!--Rating Comp Start-->
+<div class="row">
+
+    <div class="rating-comp__row">
+
+        {% if ratingComp == 'ranking' %}
+        <div class="col-sm-4 rating-comp__col-label">
+            {% if ratingType == 'total' %}
+                <p class="rating-comp__label rating-comp__label__bold">Total: <span class="rating-comp__value-count__calculated">4</span>/<span class="rating-comp__value-count__total">5</span>
+            {% else %}
+                <p class="rating-comp__label">Rating Quesion Label</p>
+            {% endif %}
+
+        {% elseif ratingComp == 'thumbnailLeft' %}
+        <div class="col-sm-5 rating-comp__col-label">
+            {% if ratingType == 'total' %}
+                <p class="rating-comp__label rating-comp__label__bold">Total:
+            {% else %}
+                <p class="rating-comp__label">Rating Quesion Label</p>
+            {% endif %}
+
+        {% elseif ratingComp == 'thumbnailRight' %}
+        <div class="col-sm-6 rating-comp__col-label">
+            {% if ratingType == 'total' %}
+            <p class="rating-comp__label rating-comp__label__bold">Total:
+                {% else %}
+            <p class="rating-comp__label">Rating Quesion Label</p>
+            {% endif %}
+
+        {% else %}
+        <div class="col-sm-7 rating-comp__col-label">
+            {% if ratingType == 'total' %}
+                <p class="rating-comp__label rating-comp__label__bold">Total:
+            {% else %}
+                <p class="rating-comp__label">Rating Quesion Label</p>
+            {% endif %}
+        {% endif %}
+
+        </div>
+
+        {% if ratingComp == 'ranking' %}
+            <div class="col-sm-8 rating-comp__col-icons">
+        {% elseif ratingComp == 'thumbnailLeft' %}
+            <div class="col-sm-7 rating-comp__col-icons">
+        {% elseif ratingComp == 'thumbnailRight' %}
+            <div class="col-sm-6 rating-comp__col-icons">
+        {% else %}
+            <div class="col-sm-5 rating-comp__col-icons">
+        {% endif %}
+
+            <div class="rating-comp__col-icons__open">
+                <!--To add border around ratig element add this class in above div tag (rating-comp__col-icons__bordered)-->
+
+                <ul class="list-inline rating-comp__icons-list rating-comp__selection-type__continuous">
+                    <!--to show large stars on mobile add this class in above ul tag (rating-comp__icons-count__large)-->
+                    <!--to show large stars on mobile add this class in above ul tag (rating-comp__icons-count__small)-->
+                    {% set ratingItems = [0,1,2,3,4]%}
+                    {% for ratingItem in ratingItems %}<li>
+                        <input type="radio" name="rating-radio" value="radio{{ratingItem}}" id="{{comptype}}-{{comprow}}-radio{{ratingItem}}">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="{{comptype}}-{{comprow}}-radio{{ratingItem}}">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li>{% endfor %}
+                </ul>
+
+                {% if ratingComp == 'ranking' %}
+                    <!--It will be empty in this case-->
+                {% elseif ratingComp == 'thumbnailRight' %}
+                    <!--It will be empty in this case-->
+                {% else %}
+                    {% if ratingNumber == 'false' %}
+                        <p class="rating-comp__value-count"></p>
+                    {% else %}
+                        <p class="rating-comp__value-count">
+                            <span class="rating-comp__value-count__calculated">4</span>/<span class="rating-comp__value-count__total">5</span>
+                        </p>
+                    {% endif %}
+                {% endif %}
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!--Rating Comp End-->

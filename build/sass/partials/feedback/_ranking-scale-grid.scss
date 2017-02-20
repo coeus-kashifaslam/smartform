@@ -1,0 +1,206 @@
+$gird-layout-row-border: $default-border-color;
+$grid-layout-icon-clr: $default-border-color;
+$grid-layout-icon-selected-clr: $default-theme;
+
+.elem__table {
+  display: table;
+  width: 100%;
+}
+.ranking__container__grid {
+  table-layout: fixed;
+}
+.elem__table__row {
+  display: table-row;
+  width: 100%;
+}
+.elem__table__cell {
+  display: table-cell;
+}
+.elem__ranking-scale__layout-grid {
+  .ranking__container {
+    overflow: hidden;
+  }
+}
+.ranking__list__grid {
+  display: table-row;
+  width: 100%;
+  .ranking__list__item,
+  .ranking__list__item__label-cell {
+    text-align: center;
+    padding: 10px 5px;
+    vertical-align: middle;
+    width: 50px;
+    border-bottom: 1px solid $gird-layout-row-border;
+    input[type='radio'] {
+      display: none;
+      margin: 0;
+    }
+    .ranking__list__item__icon {
+      font-size: $default-icon-font-size;
+      cursor: pointer;
+      color: $grid-layout-icon-clr;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    //+ .ranking__list__item {
+    //  width: 120px;
+    //}
+    &:first-child {
+      min-width: unset;
+      width: auto;
+    }
+    .icomoon-sudo {
+      display: none;
+    }
+
+  }
+  .ranking__list__item {
+    .ranking__list__item__label {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -17px;
+      margin-top: -17px;
+      width: 34px;
+      height: 34px;
+      text-indent: -999px;
+      overflow: hidden;
+      cursor: pointer;
+      font-size: $default-font-size;
+    }
+  }
+  .ranking__list__item__label-cell {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
+    .ranking__list__item__label-content {
+      margin-bottom: 0;
+      word-break: break-all;
+      //font-weight: 700;
+    }
+  }
+  &.ranking__list__grid__tooltip-row {
+    .ranking__list__item__label {
+      display: block;
+      text-indent: 0;
+      width: auto;
+      height: auto;
+      margin: 0;
+      position: relative;
+      left: auto;
+      top: auto;
+      cursor: default;
+      font-size: $default-font-size;
+    }
+  }
+  &.rating-comp__selection-type__continuous {
+    .ranking__list__item {
+      &.rating-comp__hover,
+      &.rating-comp__selected {
+        .ranking__list__item__icon {
+          color: $grid-layout-icon-selected-clr;
+        }
+        .ranking__list__item__label {
+          background: transparent;
+          color: inherit;
+          border: 0 none;
+        }
+        .icomoon-sudo {
+          display: inline-block;
+        }
+        .icomoon-default {
+          display: none;
+        }
+      }
+    }
+  }
+  &.rating-comp__selection-type__single {
+    .ranking__list__item {
+      &.rating-comp__selected {
+        .ranking__list__item__icon {
+          color: $grid-layout-icon-selected-clr;
+        }
+        .ranking__list__item__label {
+          background: transparent;
+          color: inherit;
+          border: 0 none;
+        }
+        .icomoon-sudo {
+          display: inline-block;
+        }
+        .icomoon-default {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .elem__ranking-scale__layout-grid {
+    margin-left: -15px;
+    margin-right: -15px;
+    .ranking__container {
+      overflow: visible;
+    }
+    .form__elem__title,
+    .form__elem__help-text,
+    .ranking__list__grid {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  .ranking__list__grid {
+    display: block;
+    border-bottom: 1px solid $gird-layout-row-border;
+    .ranking__list__item,
+    .ranking__list__item__label-cell {
+      text-align: left;
+      border-bottom: 0 none;
+      + .ranking__list__item {
+        padding-left: 0;
+        width: 48%;
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+      .ranking__list__item__label {
+        margin-left: 5px;
+      }
+      .ranking__list__item__label {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+    .ranking__list__item {
+      .ranking__list__item__label {
+        text-indent: initial;
+        position: absolute;
+        left: 0;
+        top: 58%;
+        width: auto;
+        min-height: 40px;
+        padding-left: 35px;
+        margin-bottom: 0;
+        .ico {
+          vertical-align: top;
+          line-height: 1;
+        }
+      }
+    }
+    .ranking__list__item__label-cell {
+      display: block;
+      width: 100%;
+    }
+  }
+  .ranking__list__grid__tooltip-row {
+    display: none;
+  }
+  .elem__ranking-scale__layout-grid {
+    .ranking__list__grid {
+      &:last-child {
+        border-bottom: 0 none;
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+<!--Rating Start-->
+{% set comptype = 'fw-rating'%}
+<article class="form__elem">
+    <div class="elem__rating elem__rating__full-width elem__rating-seller">
+        <h3 class="form__elem__title">Rating</h3>
+        <div class="form__elem__body">
+            <p class="form__elem__help-text">Help Text goes here</p>
+            <div class="rating__container">
+                {% set ratingNumber = 'true' %}
+                {% set comprow = 'row1'%}
+                {% include 'template/components/feedback/rating-comp.html' %}
+                {% set comprow = 'row2'%}
+                {% include 'template/components/feedback/rating-comp.html' %}
+                <div class="rating-comp__separater"></div>
+                {% set ratingType = 'total' %}
+                {% set ratingNumber = 'true' %}
+                {% set comprow = 'row3'%}
+                {% include 'template/components/feedback/rating-comp.html' %}
+            </div>
+        </div>
+    </div>
+    {% include 'template/components/feedback-popup.html' %}
+</article>
+<!--Rating End-->
