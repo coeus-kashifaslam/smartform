@@ -10410,7 +10410,7 @@ html, body {
 }
 
 .feedback__count__message .feedback__count__message__icon-selected {
-    color: #3054ae;
+    color: #ffbe00;
 }
 
 .elem__feedback__thumbnail-container {
@@ -10484,7 +10484,7 @@ html, body {
 }
 
 .feedback__item-tooltip-container .tooltip__ico-selected {
-    color: #3054ae;
+    color: #ffbe00;
 }
 
 .feedback__item-tooltip-container .feedback__selected {
@@ -10654,10 +10654,6 @@ html, body {
 
 .rating-comp__selection-type__continuous .rating-comp__selected .ranking__list__item__label .icomoon-default, .rating-comp__selection-type__continuous .rating-comp__hover .ranking__list__item__label .icomoon-default {
     display: none;
-}
-
-.ranking__list__default .ranking__list__item .ranking__list__item__label:hover .ranking__list__item__tooltip {
-    display: block;
 }
 
 .ranking__list__item__tooltip {
@@ -10877,6 +10873,10 @@ html, body {
 .fixed__seller-rating__continuous .feedback__container .feedback__emo-list .feedback__emo-list__description p {
     margin-bottom: 0;
     font-size: 16px;
+}
+
+.fixed__seller-rating__continuous .feedback__continuous__shapes-list__item {
+    min-width: 33px;
 }
 
 .thank-you__content {
@@ -11378,6 +11378,9 @@ html, body {
     .elem__feedback__header .elem__feedback__thumbnail-container {
         margin-top: 0;
         margin-bottom: 0;
+    }
+    .ranking__list__default .ranking__list__item .ranking__list__item__label:hover .ranking__list__item__tooltip {
+        display: block;
     }
     .fixed__grid-shape__col .grid-text-span {
         display: none;

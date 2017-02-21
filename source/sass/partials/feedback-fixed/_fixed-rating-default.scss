@@ -64,7 +64,9 @@ $tooltip-icon-sudo-color: $sudo-rating-color;
     .ranking__list__item__label {
       &:hover {
         .ranking__list__item__tooltip {
-          display: block;
+          @media (min-width: 768px) {
+            display: block;
+          }
         }
       }
     }
