@@ -1,7 +1,7 @@
 <!--Feedback Continuous-->
 <article class="form__elem">
 
-    <div class="elem__feedback-continuous elem__feedback-continuous__thumbnail-false fixed__rating__continuous__two-col">
+    <div class="elem__feedback-continuous elem__feedback-continuous__thumbnail-false fixed__rating__continuous">
         <div class="elem__feedback__header elem__feedback__header__thumbnail-false">
             <div class="elem_feedback__header-content">
                 <h3 class="form__elem__title">Feedback Continuous No Thumbnail</h3>
@@ -16,11 +16,16 @@
                     {% set rownumbers = [
                         {count: 0, string: 'There are many variations of passages', type: ''},
                         {count: 1, string: 'There are many variations of passages desp Excepteur sint occaecat cupidatat non prois dent, sunt in culpa qui officia deserunt mol.', type: ''},
-                        {count: 2, string: 'Sed ut perspiciatis unde omnis iste natus er ror sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore ', type: ''},
+                        {count: 2, string: 'Sed ut perspiciatis unde omnis iste natus er ror sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. ', type: ''},
                         {count: 3, string: '', type: 'total'}
                     ]%}
                     {% for rownumber in rownumbers %}
+                    {% if rownumber.type == 'total'%}
+                    <div class="feedback__continuous__emo-list__table-row total-row">
+                    {% else %}
                     <div class="feedback__continuous__emo-list__table-row">
+                    {% endif %}
+
                         <div class="feedback__emo-list__item feedback__emo-list__description feedback__continuous__emo-list__item feedback__continuous__emo-list__description">
                             {% if rownumber.type == 'total'%}
                             <p class="feedback__continuous__emo-list__description-count feedback__emo-list__description-count">
