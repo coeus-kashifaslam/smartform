@@ -139,6 +139,8 @@
     .feedback__emo-list {
       .feedback__emo-list__description {
         padding: 5px 20px 5px 0;
+        word-break: break-all;
+        word-wrap: break-word;
         p {
           margin-bottom: 0;
           font-size: $default-font-size;

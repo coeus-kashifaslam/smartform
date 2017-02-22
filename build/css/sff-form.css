@@ -10868,6 +10868,8 @@ html, body {
 
 .fixed__seller-rating__continuous .feedback__container .feedback__emo-list .feedback__emo-list__description {
     padding: 5px 20px 5px 0;
+    word-break: break-all;
+    word-wrap: break-word;
 }
 
 .fixed__seller-rating__continuous .feedback__container .feedback__emo-list .feedback__emo-list__description p {
