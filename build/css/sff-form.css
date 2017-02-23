@@ -10621,7 +10621,6 @@ html, body {
 }
 
 .ranking__list__default .ranking__list__item .ranking__list__item__label {
-    cursor: pointer;
     font-size: 33px;
     color: #dfdae0;
     line-height: 1;
@@ -10630,6 +10629,10 @@ html, body {
     display: inline-block;
     vertical-align: middle;
     position: relative;
+}
+
+.ranking__list__default .ranking__list__item .ranking__list__item__label label {
+    cursor: pointer;
 }
 
 .ranking__list__default .ranking__list__item .ranking__list__item__label .icomoon-sudo {
@@ -10750,7 +10753,7 @@ html, body {
 }
 
 .fixed__grid-shape__col {
-    width: 50px;
+    width: 40px;
     text-align: center;
     padding-left: 2px;
     padding-right: 2px;
@@ -10910,12 +10913,20 @@ html, body {
     margin-bottom: 0 !important;
 }
 
-.fixed__feedback__thumbnail-left .rating__container {
+.fixed__feedback__thumbnail-left .rating__container, .fixed__feedback__grid__thumbnail-left .rating__container {
     margin-top: 30px;
 }
 
-.fixed__feedback__thumbnail-left .elem__rating__left-thumbnail__container {
+.fixed__feedback__thumbnail-left .elem__rating__left-thumbnail__container, .fixed__feedback__grid__thumbnail-left .elem__rating__left-thumbnail__container {
     border: 0 none;
+}
+
+.fixed__feedback__thumbnail-left .form__elem__help-text {
+    margin-bottom: 10px;
+}
+
+.fixed__feedback__grid__thumbnail-left .grid__header .fixed__grid-table__cell p {
+    font-size: 12px;
 }
 
 .thank-you__content {
@@ -11430,8 +11441,8 @@ html, body {
     .feedback__continuous__shapes-list__item-hover-current .feedback__item-tooltip-container {
         display: block;
     }
-    .fixed__feedback__thumbnail-left .ranking__message {
-        margin-top: 80px;
+    .fixed__feedback__thumbnail-left .ranking__message, .fixed__feedback__grid__thumbnail-left .ranking__message {
+        margin-top: 50px;
     }
 }
 

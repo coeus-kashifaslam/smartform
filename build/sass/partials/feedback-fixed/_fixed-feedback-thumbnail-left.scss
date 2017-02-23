@@ -62,19 +62,3 @@ $rating-label-color: #424242;
     margin: 0 auto;
   }
 }
-
-
-//Fixes
-.fixed__feedback__thumbnail-left {
-  .ranking__message {
-    @media (min-width: 768px) {
-      margin-top: 80px;
-    }
-  }
-  .rating__container {
-    margin-top: 30px;
-  }
-  .elem__rating__left-thumbnail__container {
-    border: 0 none;
-  }
-}

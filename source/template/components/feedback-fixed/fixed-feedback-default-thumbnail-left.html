@@ -1,31 +1,34 @@
 <!--Rating Start-->
 <article class="form__elem">
     <div class="elem__rating elem__rating-thumbnail-left fixed__feedback__thumbnail-left">
-        <h3 class="form__elem__title">Rating</h3>
+        <h3 class="form__elem__title">Feedback Default Thumbnail Left</h3>
         <div class="form__elem__body">
             <div class="rating__container">
                 <div class="row">
-                    <div class="col-sm-4 col-md-3 elem__rating__thumbnail-container">
+                    <div class="col-sm-3 elem__rating__thumbnail-container">
                         <div class="elem__rating__left-thumbnail__container">
                             <img class="b-lazy elem__rating__left-thumbnail" src=images/loader.gif data-src="images/product.jpg" alt="..." />
                         </div>
                     </div>
-                    <div class="col-sm-8 col-md-9 elem__rating__icons-container">
+                    <div class="col-sm-9 elem__rating__icons-container">
                         <div class="form__elem__help-text__multiple">
                             <p class="form__elem__help-text form__elem__help-text__left">Help Text Left</p>
                             <p class="form__elem__help-text form__elem__help-text__right">Help Text Right</p>
                             <div class="clearfix"></div>
                         </div>
-                        <div class="ranking__container">
+                        <div class="ranking__container hide-radio">
                             <ul class="ranking__list list-unstyled ranking__list__default elem__table rating-comp__icons-list rating-comp__selection-type__single">
 
 
-                                {% set numbers = [0,1,2,3,4,5,6,7,8,9,10]%}
+                                {% set numbers = [0,1,2,3,4]%}
                                 {% for number in numbers %}
                                 <li class="ranking__list__item elem__table__cell">
                                     <div class="ranking__list__item__label">
-                                        <i class="ico ico-{{number}} icomoon-default"></i>
-                                        <i class="ico ico-{{number}}-selected icomoon-sudo"></i>
+                                        <input type="radio" name="feedbackDefault">
+                                        <label>
+                                            <i class="ico ico-{{number}} icomoon-default"></i>
+                                            <i class="ico ico-{{number}}-selected icomoon-sudo"></i>
+                                        </label>
 
                                         <div class="ranking__list__item__tooltip">
                                             <div class="ranking__list__item__tooltip-body">

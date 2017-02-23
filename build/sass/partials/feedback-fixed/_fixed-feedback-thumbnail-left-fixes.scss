@@ -1,0 +1,36 @@
+
+//Default Layout Fixes
+.fixed__feedback__thumbnail-left,
+.fixed__feedback__grid__thumbnail-left {
+  .ranking__message {
+    @media (min-width: 768px) {
+      margin-top: 50px;
+    }
+  }
+  .rating__container {
+    margin-top: 30px;
+  }
+  .elem__rating__left-thumbnail__container {
+    border: 0 none;
+  }
+}
+
+//Default Layout Fixes
+.fixed__feedback__thumbnail-left {
+  .form__elem__help-text {
+    margin-bottom: 10px;
+  }
+}
+
+
+
+//Grid Layout Fixes
+.fixed__feedback__grid__thumbnail-left {
+  .grid__header {
+    .fixed__grid-table__cell {
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+}
