@@ -10,7 +10,6 @@
         </div>
 
         <div class="form__elem__body">
-
             <div class="feedback__container feedback__continuous__container">
                 <div class="feedback__emo-list feedback__continuous__emo-list hide__radio">
                     {% set rownumbers = [
@@ -63,8 +62,8 @@
                                     {% endif %}
 
                                 <div class="feedback__continuous__shapes-list__item">
-                                    <input type="radio" name="feedbackContinuous" id="feedbackContinuousNoThumbnail{{rownumber.count}}{{number}}">
-                                    <label for="feedbackContinuousNoThumbnail{{rownumber.count}}{{number}}" class="feedback__item-label">
+                                    <input type="radio" name="feedbackContinuous">
+                                    <label class="feedback__item-label">
                                         <i class="ico ico-star icomoon-default"></i>
                                         <i class="ico ico-star-selected icomoon-sudo"></i>
                                     </label>
@@ -89,19 +88,20 @@
                     {% endfor %}
                 </div>
             </div>
-            <div class="feedback__count__message">
-                <p>
-                    You will find this review online as a
-                    <span><i class="ico ico-star feedback__count__message__icon-selected"></i></span>
-                    <span><i class="ico ico-star feedback__count__message__icon-selected"></i></span>
-                    <span><i class="ico ico-star feedback__count__message__icon-selected"></i></span>
-                    <span><i class="ico ico-star"></i></span>
-                    <span><i class="ico ico-star"></i></span>
-                    <span class="count__current">3</span><span class="count__total">/5</span>
-                    rating.
-                </p>
+                <div class="feedback__count__message">
+                    <p>
+                        You will find this review online as a
+                        <span><i class="ico ico-star feedback__count__message__icon-selected"></i></span>
+                        <span><i class="ico ico-star feedback__count__message__icon-selected"></i></span>
+                        <span><i class="ico ico-star feedback__count__message__icon-selected"></i></span>
+                        <span><i class="ico ico-star"></i></span>
+                        <span><i class="ico ico-star"></i></span>
+                        <span class="count__current">3</span><span class="count__total">/5</span>
+                        rating.
+                    </p>
+                </div>
+                <p class="form__elem__error-text">This is error Message</p>
             </div>
-            <p class="form__elem__error-text">This is error Message</p>
         </div>
     </div>
 </article>

@@ -10752,6 +10752,10 @@ html, body {
     margin-bottom: 0;
 }
 
+.grid__header .fixed__grid-table__cell p {
+    font-size: 12px;
+}
+
 .fixed__grid-shape__col {
     width: 40px;
     text-align: center;
