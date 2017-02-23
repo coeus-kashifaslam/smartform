@@ -33,35 +33,40 @@
                                         <div class="ranking__list__item__tooltip">
                                             <div class="ranking__list__item__tooltip-body">
                                                 <ul class="list-inline">
-                                                    {% if number == 0 or number == 1%}
+                                                    {# {% if number == 0 or number == 1%} #}
+                                                    {% if number == 0 %}
                                                     <li><i class="ico ico-star {{'tooltip__ico-selected'}}"></i></li>
                                                     <li><i class="ico ico-star"></i></li>
                                                     <li><i class="ico ico-star"></i></li>
                                                     <li><i class="ico ico-star"></i></li>
                                                     <li><i class="ico ico-star"></i></li>
                                                     <li class="count__numeric"><span class="count__current">1</span><span class="count__total">/5</span></li>
-                                                    {% elseif number == 2 or number == 3 or number == 4 %}
+                                                    {# {% elseif number == 2 or number == 3 or number == 4 %} #}
+                                                    {% elseif number == 1 %}
                                                     <li><i class="ico ico-star {{'tooltip__ico-selected'}}"></i></li>
                                                     <li><i class="ico ico-star {{'tooltip__ico-selected'}}"></i></li>
                                                     <li><i class="ico ico-star"></i></li>
                                                     <li><i class="ico ico-star"></i></li>
                                                     <li><i class="ico ico-star"></i></li>
                                                     <li class="count__numeric"><span class="count__current">2</span><span class="count__total">/5</span></li>
-                                                    {% elseif number == 5 or number == 6 %}
+                                                    {# {% elseif number == 5 or number == 6 %} #}
+                                                    {% elseif number == 2 %}
                                                     <li><i class="ico ico-star {{'tooltip__ico-selected'}}"></i></li>
                                                     <li><i class="ico ico-star {{'tooltip__ico-selected'}}"></i></li>
                                                     <li><i class="ico ico-star {{'tooltip__ico-selected'}}"></i></li>
                                                     <li><i class="ico ico-star"></i></li>
                                                     <li><i class="ico ico-star"></i></li>
                                                     <li class="count__numeric"><span class="count__current">3</span><span class="count__total">/5</span></li>
-                                                    {% elseif number == 7 or number == 8 %}
+                                                    {# {% elseif number == 7 or number == 8 %} #}
+                                                    {% elseif number == 3 %}
                                                     <li><i class="ico ico-star {{'tooltip__ico-selected'}}"></i></li>
                                                     <li><i class="ico ico-star {{'tooltip__ico-selected'}}"></i></li>
                                                     <li><i class="ico ico-star {{'tooltip__ico-selected'}}"></i></li>
                                                     <li><i class="ico ico-star {{'tooltip__ico-selected'}}"></i></li>
                                                     <li><i class="ico ico-star"></i></li>
                                                     <li class="count__numeric"><span class="count__current">4</span><span class="count__total">/5</span></li>
-                                                    {% elseif number == 9 or number == 10 %}
+                                                    {# {% elseif number == 9 or number == 10 %} #}
+                                                    {% elseif number == 4 %}
                                                     <li><i class="ico ico-star {{'tooltip__ico-selected'}}"></i></li>
                                                     <li><i class="ico ico-star {{'tooltip__ico-selected'}}"></i></li>
                                                     <li><i class="ico ico-star {{'tooltip__ico-selected'}}"></i></li>
