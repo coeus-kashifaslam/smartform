@@ -35,6 +35,16 @@
       }
     }
   }
+  .elem__rating__icons-container {
+    @media (max-width: 767px) {
+      padding-left: 0;
+      padding-right: 0;
+      .fixed__grid-table__row {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+  }
 }
 
 

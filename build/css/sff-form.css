@@ -12340,6 +12340,14 @@ html, body {
     .elem__rating__left-thumbnail__container {
         margin: 0 auto;
     }
+    .fixed__feedback__grid__thumbnail-left .elem__rating__icons-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .fixed__feedback__grid__thumbnail-left .elem__rating__icons-container .fixed__grid-table__row {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     .thank-you__content {
         padding: 15px;
         margin-bottom: 15px;
