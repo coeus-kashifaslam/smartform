@@ -1,7 +1,8 @@
 
 //Default Layout Fixes
 .fixed__feedback__thumbnail-left,
-.fixed__feedback__grid__thumbnail-left {
+.fixed__feedback__grid__thumbnail-left,
+.fixed__feedback__continuous__thumbnail {
   .ranking__message {
     @media (min-width: 768px) {
       margin-top: 50px;
@@ -14,6 +15,7 @@
     border: 0 none;
   }
 }
+
 
 //Default Layout Fixes
 .fixed__feedback__thumbnail-left {
@@ -37,3 +39,50 @@
 
 
 //Continuous Layout Fixes
+.fixed__feedback__continuous__thumbnail {
+  .feedback__continuous__container {
+    border: 0 none;
+  }
+
+  .feedback__continuous__emo-list {
+    display: block;
+    .feedback__continuous__emo-list__table-row,
+    .feedback__continuous__emo-list__item {
+      display: block;
+    }
+
+    .feedback__continuous__emo-list__table-row {
+      &.total-row {
+        margin-top: 10px;
+        border-top: 1px solid $default-border-color;
+        .feedback__continuous__emo-list__item {
+          border: 0 none;
+        }
+      }
+    }
+
+    .feedback__emo-list__description-count {
+      text-align: left;
+      font-size: $default-font-size;
+    }
+
+    .feedback__continuous__emo-list__item {
+      padding-top: 3px;
+      padding-bottom: 5px;
+    }
+  }
+
+  .feedback__continuous__shapes-list__items-container {
+    display: block;
+    float: none;
+  }
+
+  .feedback__container {
+    .feedback__emo-list {
+      .feedback__emo-list__description {
+        padding: 10px 20px 0 0;
+
+      }
+    }
+  }
+}
