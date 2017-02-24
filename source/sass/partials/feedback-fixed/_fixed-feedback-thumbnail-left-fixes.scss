@@ -1,11 +1,11 @@
 
 //Default Layout Fixes
-.fixed__feedback__thumbnail-left,
+.fixed__feedback__default__thumbnail-left,
 .fixed__feedback__grid__thumbnail-left,
 .fixed__feedback__continuous__thumbnail {
   .ranking__message {
     @media (min-width: 768px) {
-      margin-top: 50px;
+      margin-top: 30px;
     }
   }
   .rating__container {
@@ -18,12 +18,17 @@
 
 
 //Default Layout Fixes
-.fixed__feedback__thumbnail-left {
+.fixed__feedback__default__thumbnail-left {
   .form__elem__help-text {
     margin-bottom: 10px;
   }
+  .elem__table {
+    margin-bottom: 0;
+  }
+  label {
+    margin: 0;
+  }
 }
-
 
 
 //Grid Layout Fixes

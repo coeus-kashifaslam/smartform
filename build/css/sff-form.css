@@ -10913,16 +10913,24 @@ html, body {
     margin-bottom: 0 !important;
 }
 
-.fixed__feedback__thumbnail-left .rating__container, .fixed__feedback__grid__thumbnail-left .rating__container, .fixed__feedback__continuous__thumbnail .rating__container {
+.fixed__feedback__default__thumbnail-left .rating__container, .fixed__feedback__grid__thumbnail-left .rating__container, .fixed__feedback__continuous__thumbnail .rating__container {
     margin-top: 30px;
 }
 
-.fixed__feedback__thumbnail-left .elem__rating__left-thumbnail__container, .fixed__feedback__grid__thumbnail-left .elem__rating__left-thumbnail__container, .fixed__feedback__continuous__thumbnail .elem__rating__left-thumbnail__container {
+.fixed__feedback__default__thumbnail-left .elem__rating__left-thumbnail__container, .fixed__feedback__grid__thumbnail-left .elem__rating__left-thumbnail__container, .fixed__feedback__continuous__thumbnail .elem__rating__left-thumbnail__container {
     border: 0 none;
 }
 
-.fixed__feedback__thumbnail-left .form__elem__help-text {
+.fixed__feedback__default__thumbnail-left .form__elem__help-text {
     margin-bottom: 10px;
+}
+
+.fixed__feedback__default__thumbnail-left .elem__table {
+    margin-bottom: 0;
+}
+
+.fixed__feedback__default__thumbnail-left label {
+    margin: 0;
 }
 
 .fixed__feedback__grid__thumbnail-left .grid__header .fixed__grid-table__cell p {
@@ -11481,8 +11489,8 @@ html, body {
     .feedback__continuous__shapes-list__item-hover-current .feedback__item-tooltip-container {
         display: block;
     }
-    .fixed__feedback__thumbnail-left .ranking__message, .fixed__feedback__grid__thumbnail-left .ranking__message, .fixed__feedback__continuous__thumbnail .ranking__message {
-        margin-top: 50px;
+    .fixed__feedback__default__thumbnail-left .ranking__message, .fixed__feedback__grid__thumbnail-left .ranking__message, .fixed__feedback__continuous__thumbnail .ranking__message {
+        margin-top: 30px;
     }
 }
 
