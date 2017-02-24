@@ -1,0 +1,111 @@
+<!--Rating Start-->
+
+
+    <article class="form__elem form__elem__rating-thumbnail-right fixed__feedback__thumbnail-right fixed__feedback__default__thumbnail-right">
+        <div class="elem__rating elem__rating-thumbnail-right__header">
+            <h3 class="form__elem__title">Feedback Default with right thumbnail</h3>
+        </div>
+
+        <div class="elem__rating-thumbnail-right__body">
+            <div class="row">
+                <div class="col-sm-5 col-sm-push-7 rating__thumbnail__col">
+                    <div class="rating__thumbnail__col__content">
+                        <div class="rating__thumbnail__container">
+                            <img class="b-lazy product-thumbnail" data-src="images/product.jpg" src=images/loader.gif alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-7 col-sm-pull-5 rating__icons__col">
+                    <div class="rating__icons__col__content">
+                        <div class="form__elem__help-text__multiple">
+                            <p class="form__elem__help-text form__elem__help-text__left">Help Text Left</p>
+                            <p class="form__elem__help-text form__elem__help-text__right">Help Text Right</p>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="ranking__container hide-radio">
+                            <ul class="ranking__list list-unstyled ranking__list__default elem__table rating-comp__icons-list rating-comp__selection-type__single">
+
+
+                                {% set numbers = [0,1,2,3,4]%}
+                                {% for number in numbers %}
+                                <li class="ranking__list__item elem__table__cell">
+                                    <div class="ranking__list__item__label">
+                                        <input type="radio" name="feedbackDefault">
+                                        <label>
+                                            <i class="ico ico-{{number}} icomoon-default"></i>
+                                            <i class="ico ico-{{number}}-selected icomoon-sudo"></i>
+                                        </label>
+
+                                        <div class="ranking__list__item__tooltip">
+                                            <div class="ranking__list__item__tooltip-body">
+                                                <ul class="list-inline">
+                                                    {# {% if number == 0 or number == 1%} #}
+                                                    {% if number == 0 %}
+                                                    <li><i class="ico ico-star {{'tooltip__ico-selected'}}"></i></li>
+                                                    <li><i class="ico ico-star"></i></li>
+                                                    <li><i class="ico ico-star"></i></li>
+                                                    <li><i class="ico ico-star"></i></li>
+                                                    <li><i class="ico ico-star"></i></li>
+                                                    <li class="count__numeric"><span class="count__current">1</span><span class="count__total">/5</span></li>
+                                                    {# {% elseif number == 2 or number == 3 or number == 4 %} #}
+                                                    {% elseif number == 1 %}
+                                                    <li><i class="ico ico-star {{'tooltip__ico-selected'}}"></i></li>
+                                                    <li><i class="ico ico-star {{'tooltip__ico-selected'}}"></i></li>
+                                                    <li><i class="ico ico-star"></i></li>
+                                                    <li><i class="ico ico-star"></i></li>
+                                                    <li><i class="ico ico-star"></i></li>
+                                                    <li class="count__numeric"><span class="count__current">2</span><span class="count__total">/5</span></li>
+                                                    {# {% elseif number == 5 or number == 6 %} #}
+                                                    {% elseif number == 2 %}
+                                                    <li><i class="ico ico-star {{'tooltip__ico-selected'}}"></i></li>
+                                                    <li><i class="ico ico-star {{'tooltip__ico-selected'}}"></i></li>
+                                                    <li><i class="ico ico-star {{'tooltip__ico-selected'}}"></i></li>
+                                                    <li><i class="ico ico-star"></i></li>
+                                                    <li><i class="ico ico-star"></i></li>
+                                                    <li class="count__numeric"><span class="count__current">3</span><span class="count__total">/5</span></li>
+                                                    {# {% elseif number == 7 or number == 8 %} #}
+                                                    {% elseif number == 3 %}
+                                                    <li><i class="ico ico-star {{'tooltip__ico-selected'}}"></i></li>
+                                                    <li><i class="ico ico-star {{'tooltip__ico-selected'}}"></i></li>
+                                                    <li><i class="ico ico-star {{'tooltip__ico-selected'}}"></i></li>
+                                                    <li><i class="ico ico-star {{'tooltip__ico-selected'}}"></i></li>
+                                                    <li><i class="ico ico-star"></i></li>
+                                                    <li class="count__numeric"><span class="count__current">4</span><span class="count__total">/5</span></li>
+                                                    {# {% elseif number == 9 or number == 10 %} #}
+                                                    {% elseif number == 4 %}
+                                                    <li><i class="ico ico-star {{'tooltip__ico-selected'}}"></i></li>
+                                                    <li><i class="ico ico-star {{'tooltip__ico-selected'}}"></i></li>
+                                                    <li><i class="ico ico-star {{'tooltip__ico-selected'}}"></i></li>
+                                                    <li><i class="ico ico-star {{'tooltip__ico-selected'}}"></i></li>
+                                                    <li><i class="ico ico-star {{'tooltip__ico-selected'}}"></i></li>
+                                                    <li class="count__numeric"><span class="count__current">5</span><span class="count__total">/5</span></li>
+                                                    {% endif %}
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="ranking__message">
+                <p>
+                    You will find this review online as a
+                    <span><i class="ico ico-star ranking__message__selected"></i></span>
+                    <span><i class="ico ico-star ranking__message__selected"></i></span>
+                    <span><i class="ico ico-star ranking__message__selected"></i></span>
+                    <span><i class="ico ico-star"></i></span>
+                    <span><i class="ico ico-star"></i></span>
+                    <span class="count__current">3</span><span class="count__total">/5</span>
+                    rating.
+                </p>
+            </div>
+
+        </div>
+    </article>

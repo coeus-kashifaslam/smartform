@@ -10621,8 +10621,8 @@ html, body {
 }
 
 .ranking__list__default .ranking__list__item .ranking__list__item__label {
-    font-size: 33px;
-    color: #dfdae0;
+    font-size: 28px;
+    color: #bdbdbd;
     line-height: 1;
     text-align: center;
     padding-top: 6px;
@@ -10919,6 +10919,9 @@ html, body {
 
 .fixed__feedback__default__thumbnail-left .elem__rating__left-thumbnail__container, .fixed__feedback__grid__thumbnail-left .elem__rating__left-thumbnail__container, .fixed__feedback__continuous__thumbnail .elem__rating__left-thumbnail__container {
     border: 0 none;
+    padding: 0;
+    width: 100%;
+    max-width: 165px;
 }
 
 .fixed__feedback__default__thumbnail-left .form__elem__help-text {
@@ -10975,6 +10978,80 @@ html, body {
 
 .fixed__feedback__continuous__thumbnail .feedback__container .feedback__emo-list .feedback__emo-list__description {
     padding: 10px 20px 0 0;
+}
+
+.form__elem__rating-thumbnail-right .elem__rating-thumbnail-right__header .form__elem__help-text {
+    margin-bottom: 0;
+}
+
+.elem__rating-thumbnail-right__body {
+    padding: 0;
+    border: 0 none;
+}
+
+.elem__rating-thumbnail-right__body .rating__thumbnail__col__content, .elem__rating-thumbnail-right__body .rating__icons__col__content {
+    border: 1px solid #dfdae0;
+}
+
+.elem__rating-thumbnail-right__body .rating__thumbnail__col__content {
+    width: 100%;
+    overflow: hidden;
+}
+
+.elem__rating-thumbnail-right__body .rating__thumbnail__col__content .rating__thumbnail__container {
+    vertical-align: middle;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.elem__rating-thumbnail-right__body .rating__thumbnail__col__content .product-thumbnail {
+    position: relative;
+    margin: 0 auto;
+    height: auto;
+    width: auto;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    max-height: 85%;
+    max-width: 100%;
+}
+
+.elem__rating-thumbnail-right__body .rating__icons__col__content {
+    padding: 20px 15px;
+    min-height: 210px;
+}
+
+.elem__rating-thumbnail-right__body .rating__icons__col__content > .row:last-of-type, .elem__rating-thumbnail-right__body .rating__icons__col__content > .row:last-of-type .rating-comp__row {
+    margin-bottom: 0;
+}
+
+.fixed__feedback__thumbnail-right .elem__rating-thumbnail-right__body {
+    margin-top: 30px;
+}
+
+.fixed__feedback__thumbnail-right .elem__rating-thumbnail-right__body .rating__thumbnail__col__content {
+    border-top: 1px solid #dfdae0;
+}
+
+.fixed__feedback__thumbnail-right .elem__rating-thumbnail-right__body .rating__thumbnail__col__content .product-thumbnail {
+    max-height: none;
+    width: auto;
+    max-width: 100%;
+}
+
+.fixed__feedback__thumbnail-right .elem__rating-thumbnail-right__body .rating__icons__col__content {
+    padding-top: 30px;
+    padding-bottom: 0;
+}
+
+.fixed__feedback__thumbnail-right.form__elem {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.fixed__feedback__default__thumbnail-right .form__elem__help-text__multiple .form__elem__help-text {
+    margin-bottom: 10px;
 }
 
 .thank-you__content {
@@ -11491,6 +11568,23 @@ html, body {
     }
     .fixed__feedback__default__thumbnail-left .ranking__message, .fixed__feedback__grid__thumbnail-left .ranking__message, .fixed__feedback__continuous__thumbnail .ranking__message {
         margin-top: 30px;
+    }
+    .fixed__feedback__thumbnail-right .elem__rating-thumbnail-right__body .rating__thumbnail__col__content {
+        border: 0 none;
+    }
+    .fixed__feedback__thumbnail-right .elem__rating-thumbnail-right__body .rating__thumbnail__col__content .rating__thumbnail__container {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .fixed__feedback__thumbnail-right .elem__rating-thumbnail-right__header {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .fixed__feedback__thumbnail-right .ranking__message {
+        margin-top: 30px;
+    }
+    .fixed__feedback__default__thumbnail-right .form__elem__help-text__multiple {
+        margin-top: 35px;
     }
 }
 
@@ -12228,7 +12322,7 @@ html, body {
         font-size: 12px;
     }
     .ranking__list__default .ranking__list__item .ranking__list__item__label {
-        font-size: 25px;
+        font-size: 24px;
     }
     .fixed__feedback__grid {
         margin-left: -15px;
@@ -12355,6 +12449,40 @@ html, body {
     .fixed__feedback__grid__thumbnail-left .elem__rating__icons-container .fixed__grid-table__row {
         padding-left: 15px;
         padding-right: 15px;
+    }
+    .form__elem__rating-thumbnail-right .form__elem:first-child {
+        border-top: 0 none;
+    }
+    .elem__rating-thumbnail-right__body {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .elem__rating-thumbnail-right__body .rating__thumbnail__col, .elem__rating-thumbnail-right__body .rating__icons__col {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .elem__rating-thumbnail-right__body .rating__thumbnail__col__content, .elem__rating-thumbnail-right__body .rating__icons__col__content {
+        border-top: 0 none;
+        padding-top: 0;
+    }
+    .elem__rating-thumbnail-right__body .rating__thumbnail__col__content .product-thumbnail {
+        -webkit-transform: none;
+        transform: none;
+        max-height: none;
+        max-width: 100%;
+    }
+    .elem__rating-thumbnail-right__body .rating__thumbnail__container {
+        height: auto !important;
+        padding: 20px 0;
+    }
+    .elem__rating-thumbnail-right__body .rating__icons__col__content {
+        border-bottom: 0 none;
+    }
+    .fixed__feedback__thumbnail-right .elem__rating-thumbnail-right__body .rating__icons__col__content {
+        min-height: initial;
+    }
+    .fixed__feedback__thumbnail-right.form__elem:first-child {
+        border-bottom: 1px solid #dfdae0;
     }
     .thank-you__content {
         padding: 15px;
