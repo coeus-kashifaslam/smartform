@@ -10962,7 +10962,7 @@ html, body {
 }
 
 .fixed__feedback__continuous__thumbnail .feedback__continuous__emo-list .feedback__emo-list__description-count {
-    text-align: left;
+    text-align: initial;
     font-size: 16px;
 }
 
