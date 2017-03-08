@@ -10563,10 +10563,6 @@ html, body {
     font-size: 14px;
 }
 
-.feedback__continuous__container {
-    margin-bottom: 20px;
-}
-
 .feedback__container .feedback__emo-list .feedback__emo-list__description {
     padding-left: 10px;
     padding-right: 20px;
@@ -10600,6 +10596,11 @@ html, body {
 
 .feedback__count__message {
     text-align: center;
+    margin-top: 15px;
+}
+
+.feedback__count__message p {
+    margin-bottom: 0;
 }
 
 .feedback__count__message .feedback__count__message__icon-selected {
@@ -11007,6 +11008,7 @@ html, body {
 
 .feedback__continuous__container {
     border: 1px solid #dfdae0;
+    margin-bottom: -10px;
 }
 
 .feedback__continuous__emo-list {

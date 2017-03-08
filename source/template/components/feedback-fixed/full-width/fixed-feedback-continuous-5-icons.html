@@ -1,0 +1,106 @@
+<!--Feedback Continuous-->
+<article class="form__elem">
+    <div class="elem__feedback-continuous elem__feedback-continuous__thumbnail-false fixed__feedback__continuous">
+        <div class="elem__feedback__header elem__feedback__header__thumbnail-false">
+            <div class="elem_feedback__header-content">
+                <h3 class="form__elem__title">Feedback Continuous Full width</h3>
+                <p class="form__elem__help-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has root piece of classical Latin literature from 45 BC, making it over 2000 years</p>
+            </div>
+        </div>
+
+        <div class="form__elem__body">
+            <div class="feedback__container feedback__continuous__container">
+                <div class="feedback__emo-list feedback__continuous__emo-list hide__radio shapes__lg">
+                    {% set rownumbers = [
+                        {count: 0, string: 'There are many variations of passages', type: ''},
+                        {count: 1, string: 'There are many variations of passages desp Excepteur sint occaecat cupidatat non prois dent, sunt in culpa qui officia deserunt mol.', type: ''},
+                        {count: 2, string: 'Sed ut perspiciatis unde omnis iste natus er ror sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa qu. ', type: ''},
+                        {count: 3, string: '', type: 'total'}
+                    ]%}
+                    {% for rownumber in rownumbers %}
+                    {% if rownumber.type == 'total'%}
+                    <div class="feedback__continuous__emo-list__table-row total-row">
+                    {% else %}
+                    <div class="feedback__continuous__emo-list__table-row">
+                    {% endif %}
+
+                        <div class="feedback__emo-list__item feedback__emo-list__description feedback__continuous__emo-list__item feedback__continuous__emo-list__description">
+                            {% if rownumber.type == 'total'%}
+                            <p class="feedback__continuous__emo-list__description-count feedback__emo-list__description-count">
+                                <span class="count__string">Total: </span><span class="count__submit">3</span>/<span class="count__total">5</span>
+                            </p>
+                            {% else %}
+                            <p>{{rownumber.string}}</p>
+                            {% endif %}
+                        </div>
+                        <div class="feedback__emo-list__item feedback__continuous__emo-list__item feedback__continuous__shapes-list feedback__continuous__selection-continuous">
+                            <div class="feedback__continuous__shapes-list__items-container">
+                                {% set numbers = [0,1,2,3,4]%}
+                                {% for number in numbers %}
+
+                                    {% if number == 0 %}
+                                    {% set oneStar = 'tooltip__ico-selected' %}
+                                    {% set countStar = 1 %}
+
+                                    {% elseif number == 1 %}
+                                    {% set twoStar = oneStar %}
+                                    {% set countStar = 2 %}
+
+                                    {% elseif number == 2 %}
+                                    {% set threeStar = oneStar %}
+                                    {% set countStar = 3 %}
+
+                                    {% elseif number == 3 %}
+                                    {% set fourStar = oneStar %}
+                                    {% set countStar = 4 %}
+
+                                    {% elseif number == 4 %}
+                                    {% set fiveStar = oneStar %}
+                                    {% set countStar = 5 %}
+
+                                    {% endif %}
+
+                                <div class="feedback__continuous__shapes-list__item">
+                                    <input type="radio" name="feedbackContinuous">
+                                    <label class="feedback__item-label">
+                                        <i class="ico ico-star icomoon-default"></i>
+                                        <i class="ico ico-star-selected icomoon-sudo"></i>
+                                    </label>
+                                    <div class="feedback__item-tooltip-container feedback__continuous__shapes-list__item-tooltip-container top">
+                                        <div class="feedback__item__tooltip-body">
+                                            <ul class="list-inline">
+                                                <li><i class="ico ico-star {{oneStar}}"></i></li>
+                                                <li><i class="ico ico-star {{twoStar}}"></i></li>
+                                                <li><i class="ico ico-star {{threeStar}}"></i></li>
+                                                <li><i class="ico ico-star {{fourStar}}"></i></li>
+                                                <li><i class="ico ico-star {{fiveStar}}"></i></li>
+                                                <li class="feedback__defautl-emo__tooltip-count">
+                                                    <span class="feedback__selected">{{countStar}}</span>/<span class="feedback__total">5</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="feedback__count__message">
+                <p>
+                    You will find this review online as a
+                    <span><i class="ico ico-star feedback__count__message__icon-selected"></i></span>
+                    <span><i class="ico ico-star feedback__count__message__icon-selected"></i></span>
+                    <span><i class="ico ico-star feedback__count__message__icon-selected"></i></span>
+                    <span><i class="ico ico-star"></i></span>
+                    <span><i class="ico ico-star"></i></span>
+                    <span class="count__current">3</span><span class="count__total">/5</span>
+                    rating.
+                </p>
+            </div>
+            <p class="form__elem__error-text">This is error Message</p>
+        </div>
+    </div>
+</article>
+<!--Feedback Continuous-->

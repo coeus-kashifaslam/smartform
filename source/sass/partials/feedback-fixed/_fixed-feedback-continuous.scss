@@ -1,6 +1,7 @@
 .feedback__continuous__container {
   border: 1px solid $default-border-color;
-  @extend %feedback-container-margin-bottom;
+  //@extend %feedback-container-margin-bottom;
+  margin-bottom: -10px;
 }
 .feedback__continuous__emo-list {
   display: table;

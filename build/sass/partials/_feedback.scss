@@ -68,6 +68,10 @@
 /********************** Feebback message ********************/
 .feedback__count__message {
   text-align: center;
+  margin-top: 15px;
+  p {
+    margin-bottom: 0;
+  }
   .feedback__count__message__icon-selected {
     color: $sudo-rating-color-old;
   }
