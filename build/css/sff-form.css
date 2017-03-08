@@ -11190,6 +11190,10 @@ html, body {
     padding: 10px 20px 0 0;
 }
 
+.form__elem__rating-thumbnail-right .elem__rating-thumbnail-right__header {
+    margin-bottom: 35px;
+}
+
 .form__elem__rating-thumbnail-right .elem__rating-thumbnail-right__header .form__elem__help-text {
     margin-bottom: 0;
 }
@@ -11216,19 +11220,15 @@ html, body {
 }
 
 .elem__rating-thumbnail-right__body .rating__thumbnail__col__content .product-thumbnail {
-    position: relative;
     margin: 0 auto;
     height: auto;
     width: auto;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    max-height: 85%;
+    max-height: 200px;
     max-width: 100%;
 }
 
 .elem__rating-thumbnail-right__body .rating__icons__col__content {
-    padding: 20px 15px;
+    padding: 15px;
     min-height: 210px;
 }
 
@@ -11236,26 +11236,16 @@ html, body {
     margin-bottom: 0;
 }
 
-.fixed__feedback__thumbnail-right .elem__rating-thumbnail-right__body {
-    margin-top: 30px;
-}
-
-.fixed__feedback__thumbnail-right .elem__rating-thumbnail-right__body .rating__thumbnail__col__content {
+.form__elem__rating-thumbnail-right .elem__rating-thumbnail-right__body .rating__thumbnail__col__content {
     border-top: 1px solid #dfdae0;
 }
 
-.fixed__feedback__thumbnail-right .elem__rating-thumbnail-right__body .rating__thumbnail__col__content .product-thumbnail {
-    max-height: none;
+.form__elem__rating-thumbnail-right .elem__rating-thumbnail-right__body .rating__thumbnail__col__content .product-thumbnail {
     width: auto;
     max-width: 100%;
 }
 
-.fixed__feedback__thumbnail-right .elem__rating-thumbnail-right__body .rating__icons__col__content {
-    padding-top: 30px;
-    padding-bottom: 0;
-}
-
-.fixed__feedback__thumbnail-right.form__elem {
+.form__elem__rating-thumbnail-right.form__elem {
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -11787,22 +11777,24 @@ html, body {
     .fixed__feedback__default__thumbnail-left .ranking__message, .fixed__feedback__grid__thumbnail-left .ranking__message, .fixed__feedback__continuous__thumbnail .ranking__message {
         margin-top: 30px;
     }
-    .fixed__feedback__thumbnail-right .elem__rating-thumbnail-right__body .rating__thumbnail__col__content {
+    .form__elem__rating-thumbnail-right .rating__thumbnail__col, .form__elem__rating-thumbnail-right .rating__icons__col, .form__elem__rating-thumbnail-right .rating__icons__col .rating__icons__col__content {
+        float: none;
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .state__single.form__elem__rating-thumbnail-right .rating__icons__col .rating__icons__col__content {
+        height: 210px;
+    }
+    .form__elem__rating-thumbnail-right .elem__rating-thumbnail-right__body .rating__thumbnail__col__content {
         border: 0 none;
     }
-    .fixed__feedback__thumbnail-right .elem__rating-thumbnail-right__body .rating__thumbnail__col__content .rating__thumbnail__container {
+    .form__elem__rating-thumbnail-right .elem__rating-thumbnail-right__body .rating__thumbnail__col__content .rating__thumbnail__container {
         padding-top: 0;
         padding-bottom: 0;
     }
-    .fixed__feedback__thumbnail-right .elem__rating-thumbnail-right__header {
+    .form__elem__rating-thumbnail-right .elem__rating-thumbnail-right__header {
         padding-left: 15px;
         padding-right: 15px;
-    }
-    .fixed__feedback__thumbnail-right .ranking__message {
-        margin-top: 30px;
-    }
-    .fixed__feedback__default__thumbnail-right .form__elem__help-text__multiple {
-        margin-top: 35px;
     }
 }
 
@@ -12773,11 +12765,13 @@ html, body {
     }
     .elem__rating-thumbnail-right__body .rating__thumbnail__col__content, .elem__rating-thumbnail-right__body .rating__icons__col__content {
         border-top: 0 none;
-        padding-top: 0;
+        padding-top: 10px;
+        padding-bottom: 0;
+    }
+    .elem__rating-thumbnail-right__body .rating__thumbnail__col__content ul, .elem__rating-thumbnail-right__body .rating__icons__col__content ul {
+        margin: 0;
     }
     .elem__rating-thumbnail-right__body .rating__thumbnail__col__content .product-thumbnail {
-        -webkit-transform: none;
-        transform: none;
         max-height: none;
         max-width: 100%;
     }
@@ -12788,10 +12782,10 @@ html, body {
     .elem__rating-thumbnail-right__body .rating__icons__col__content {
         border-bottom: 0 none;
     }
-    .fixed__feedback__thumbnail-right .elem__rating-thumbnail-right__body .rating__icons__col__content {
+    .form__elem__rating-thumbnail-right .elem__rating-thumbnail-right__body .rating__icons__col__content {
         min-height: initial;
     }
-    .fixed__feedback__thumbnail-right.form__elem:first-child {
+    .form__elem__rating-thumbnail-right.form__elem:first-child {
         border-bottom: 1px solid #dfdae0;
     }
     .thank-you__content {
