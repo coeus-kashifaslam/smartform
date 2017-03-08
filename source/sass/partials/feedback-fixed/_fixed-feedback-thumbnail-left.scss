@@ -62,3 +62,14 @@ $rating-label-color: #424242;
     margin: 0 auto;
   }
 }
+
+@media (min-width: 768px) {
+  .elem__rating-thumbnail-left {
+    .elem__rating__thumbnail-container,
+    .elem__rating__icons-container {
+      display: table-cell;
+      float: none;
+      vertical-align: middle;
+    }
+  }
+}
