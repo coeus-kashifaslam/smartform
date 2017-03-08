@@ -21,12 +21,12 @@
                                 {count: 3, string: '', type: 'total'}
                                 ]%}
                                 {% for rownumber in rownumbers %}
-                                {% if rownumber.type == 'total'%}
-                                <div class="feedback__continuous__emo-list__table-row total-row">
-                                {% else %}
-                                <div class="feedback__continuous__emo-list__table-row">
-                                {% endif %}
-
+                                    {% if rownumber.type == 'total'%}
+                                    {% set totalClass = 'total-row' %}
+                                    {% else %}
+                                    {% set totalClass = '' %}
+                                    {% endif %}
+                                <div class="feedback__continuous__emo-list__table-row {{totalClass}}">
                                     <div class="feedback__emo-list__item feedback__emo-list__description feedback__continuous__emo-list__item feedback__continuous__emo-list__description">
                                             {% if rownumber.type == 'total'%}
                                             <p class="feedback__continuous__emo-list__description-count feedback__emo-list__description-count">
