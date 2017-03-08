@@ -44,11 +44,6 @@
     }
   }
 
-  //.ranking__message {
-  //  @media (min-width: 768px) {
-  //    margin-top: 30px;
-  //  }
-  //}
 }
 
 
@@ -63,3 +58,14 @@
     }
   }
 }
+
+//Grid Layout
+.fixed__feedback__grid__thumbnail-right {
+  .elem__rating-thumbnail-right__body {
+    .rating__icons__col__content {
+      padding: 0;
+      border: 0 none;
+    }
+  }
+}
+

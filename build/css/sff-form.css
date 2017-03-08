@@ -11191,7 +11191,7 @@ html, body {
 }
 
 .form__elem__rating-thumbnail-right .elem__rating-thumbnail-right__header {
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 
 .form__elem__rating-thumbnail-right .elem__rating-thumbnail-right__header .form__elem__help-text {
@@ -11252,6 +11252,11 @@ html, body {
 
 .fixed__feedback__default__thumbnail-right .form__elem__help-text__multiple .form__elem__help-text {
     margin-bottom: 10px;
+}
+
+.fixed__feedback__grid__thumbnail-right .elem__rating-thumbnail-right__body .rating__icons__col__content {
+    padding: 0;
+    border: 0 none;
 }
 
 .thank-you__content {
