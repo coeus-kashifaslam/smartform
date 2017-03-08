@@ -69,3 +69,31 @@
   }
 }
 
+//Continuous layout 5 Icons specific styling
+@media (min-width: 768px) {
+  .form__elem__rating-thumbnail-right {
+    .rating__icons__col {
+      .shapes__lg {
+        .feedback__continuous__container {
+          padding: 0;
+          border: 0 none;
+          .feedback__emo-list {
+            .feedback__emo-list__description {
+              padding: 5px 10px 0 5px;
+            }
+            .feedback__continuous__emo-list__item {
+              padding: 5px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .form__elem__rating-thumbnail-right {
+    .rating__thumbnail__col {
+      margin-bottom: 10px;
+    }
+  }
+}

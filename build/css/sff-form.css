@@ -11146,7 +11146,7 @@ html, body {
     margin: 0;
 }
 
-.fixed__feedback__grid__thumbnail-left .grid__header .fixed__grid-table__cell p {
+.fixed__feedback__grid__thumbnail-left .grid__header .fixed__grid-table__cell p, .fixed__feedback__grid__thumbnail-right .grid__header .fixed__grid-table__cell p {
     font-size: 12px;
 }
 
@@ -11800,6 +11800,16 @@ html, body {
     .form__elem__rating-thumbnail-right .elem__rating-thumbnail-right__header {
         padding-left: 15px;
         padding-right: 15px;
+    }
+    .form__elem__rating-thumbnail-right .rating__icons__col .shapes__lg .feedback__continuous__container {
+        padding: 0;
+        border: 0 none;
+    }
+    .form__elem__rating-thumbnail-right .rating__icons__col .shapes__lg .feedback__continuous__container .feedback__emo-list .feedback__emo-list__description {
+        padding: 5px 10px 0 5px;
+    }
+    .form__elem__rating-thumbnail-right .rating__icons__col .shapes__lg .feedback__continuous__container .feedback__emo-list .feedback__continuous__emo-list__item {
+        padding: 5px 0;
     }
 }
 
@@ -12749,11 +12759,11 @@ html, body {
     .elem__rating__left-thumbnail__container {
         margin: 0 auto;
     }
-    .fixed__feedback__grid__thumbnail-left .elem__rating__icons-container {
+    .fixed__feedback__grid__thumbnail-left .elem__rating__icons-container, .fixed__feedback__grid__thumbnail-right .elem__rating__icons-container {
         padding-left: 0;
         padding-right: 0;
     }
-    .fixed__feedback__grid__thumbnail-left .elem__rating__icons-container .fixed__grid-table__row {
+    .fixed__feedback__grid__thumbnail-left .elem__rating__icons-container .fixed__grid-table__row, .fixed__feedback__grid__thumbnail-right .elem__rating__icons-container .fixed__grid-table__row {
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -12792,6 +12802,9 @@ html, body {
     }
     .form__elem__rating-thumbnail-right.form__elem:first-child {
         border-bottom: 1px solid #dfdae0;
+    }
+    .form__elem__rating-thumbnail-right .rating__thumbnail__col {
+        margin-bottom: 10px;
     }
     .thank-you__content {
         padding: 15px;
