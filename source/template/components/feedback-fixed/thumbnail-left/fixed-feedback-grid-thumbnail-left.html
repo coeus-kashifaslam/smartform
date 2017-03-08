@@ -1,0 +1,70 @@
+<!--Rating Start-->
+<article class="form__elem">
+    <div class="elem__rating elem__rating-thumbnail-left fixed__feedback__grid__thumbnail-left">
+        <h3 class="form__elem__title">Feedback Grid Thumbnail Left</h3>
+        <p class="form__elem__help-text">Help Text Goes here</p>
+        <div class="form__elem__body">
+            <div class="rating__container">
+                <div class="row">
+                    <div class="col-sm-3 elem__rating__thumbnail-container">
+                        <div class="elem__rating__left-thumbnail__container">
+                            <img class="b-lazy elem__rating__left-thumbnail" src=images/loader.gif data-src="images/product.jpg" alt="..." />
+                        </div>
+                    </div>
+                    <div class="col-sm-9 elem__rating__icons-container">
+                        <div class="elem_fixed__grid__container fixed__grid-table hide-radio">
+                            <div class="grid__header fixed__grid-table__row fixed__grid-tooltip__row">
+                                <div class="fixed__grid-table__cell"></div>
+                                {% set gridCols = [0,1,2,3,4,5,6,7,8,9,10]%}
+                                {% for gridCol in gridCols %}
+                                <div class="fixed__grid-table__cell fixed__grid-shape__col">
+                                    <p>Toolti {{gridCol + 1}}</p>
+                                </div>
+                                {% endfor %}
+                            </div>
+
+                            {% set gridRows = [0,1,2]%}
+                            {% for gridRow in gridRows %}
+                            <div class="grid__body fixed__grid-table__row fixed__grid-content__row fixed__grid__selection-single">
+                                <div class="fixed__grid-table__cell fixed__grid-label-col">
+                                    <p>Lorem Ipsum Goes Here</p>
+                                </div>
+                                {% set gridColsbody = [0,1,2,3,4,5,6,7,8,9,10]%}
+                                {% for gridColbody in gridColsbody %}
+                                <div class="fixed__grid-table__cell fixed__grid-shape__col">
+                                    <input type="radio">
+                                    <label class="grid-shape-label">
+                                        <span class="grid-shape-span">
+                                            <i class="fixed__grid-shape icomoon-default ico ico-comments"></i>
+                                            <i class="fixed__grid-shape icomoon-sudo ico ico-comments-selected"></i>
+                                        </span>
+                                        <span class="grid-text-span">Some text</span>
+                                        <!--For icon add classes ico ico-ICON-NAME-->
+                                        <!--<span class="grid-text-span ico ico-comments"></span>-->
+                                    </label>
+                                </div>
+                                {% endfor %}
+                            </div>
+                            {% endfor %}
+                        </div>
+                        <div class="ranking__message">
+                            <p>
+                                You will find this review online as a
+                                <span><i class="ico ico-star ranking__message__selected"></i></span>
+                                <span><i class="ico ico-star ranking__message__selected"></i></span>
+                                <span><i class="ico ico-star ranking__message__selected"></i></span>
+                                <span><i class="ico ico-star"></i></span>
+                                <span><i class="ico ico-star"></i></span>
+                                <span class="count__current">3</span><span class="count__total">/5</span>
+                                rating.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <p class="form__elem__error-text">This is error Message</p>
+        </div>
+    </div>
+</article>
+<!--Rating End-->
