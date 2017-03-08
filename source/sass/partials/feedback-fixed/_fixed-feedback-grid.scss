@@ -150,3 +150,17 @@
     }
   }
 }
+
+
+
+//Settings for 5 shapes scenerio
+.shapes__lg {
+  .fixed__grid-shape__col {
+    @media (min-width: 768px) {
+      width: $default-icon-lg + 25px;
+    }
+    .fixed__grid-shape {
+      font-size: $default-icon-lg;
+    }
+  }
+}

@@ -25,12 +25,12 @@ $font-fontawesome: 'FontAwesome';
 
 $ekomi-green: #2DA137;
 $kpn-blue: #0077bb;
-$axs-blue: #3054AE;
+$axa-blue: #3054AE;
 //Defaults
 $white: #fff;
 $black: #000;
 $default-body-bg: #efefef;
-$default-theme: $axs-blue;
+$default-theme: $axa-blue;
 $default-border-color: #dfdae0;
 $default-font-size: 16px;
 $default-text-color: #707070;
@@ -38,9 +38,12 @@ $default-component-margin: 32px;
 $default-input-font-color: #888;
 $default-footer-bg: #fafafa;
 $default-footer-link: #2DA137;
+$default-background-light: #f3f3f3;
+
+//Icons Sizes
 $default-icon-font-size: 28px;
 $default-icon-small-font-size: 24px;
-$default-background-light: #f3f3f3;
+$default-icon-lg: 40px;
 
 //Header Title
 $default-header-color: #424242;
