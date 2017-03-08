@@ -41,7 +41,8 @@
 .feedback__continuous__shapes-list__item {
   display: table-cell;
   @extend %shape-col-minwidth;
-  @extend %shape-col-maxwidth;
+  padding-left: 2px;
+  padding-right: 2px;
   vertical-align: middle;
   text-align: center;
   position: relative;
@@ -193,4 +194,12 @@
     }
   }
   //upper bracket is to End mobile media
+}
+
+.shapes__lg {
+  .feedback__item-label {
+    .ico {
+      font-size: $default-icon-lg;
+    }
+  }
 }

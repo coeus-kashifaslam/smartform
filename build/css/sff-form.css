@@ -10559,10 +10559,6 @@ html, body {
     min-width: 33px;
 }
 
-.feedback__continuous__shapes-list__item {
-    max-width: 40px;
-}
-
 .feedback__continuous__emo-list .feedback__continuous__emo-list__description p {
     font-size: 14px;
 }
@@ -11044,6 +11040,8 @@ html, body {
 
 .feedback__continuous__shapes-list__item {
     display: table-cell;
+    padding-left: 2px;
+    padding-right: 2px;
     vertical-align: middle;
     text-align: center;
     position: relative;
@@ -11087,6 +11085,10 @@ html, body {
 .fixed__feedback__continuous .feedback__container .feedback__emo-list .feedback__emo-list__description p {
     margin-bottom: 0;
     font-size: 16px;
+}
+
+.shapes__lg .feedback__item-label .ico {
+    font-size: 40px;
 }
 
 .elem__rating__left-thumbnail__container {
