@@ -1,12 +1,7 @@
 .form__elem__option-rows {
-  .elem-type__radio {
-    margin-top: 20px;
-  }
-  .form__elem__options-row {
-    &:first-child {
-      .elem-type__radio {
-        margin-top: 0;
-      }
+  .radio-col:nth-of-type(n+3) {
+    .elem-type__radio {
+      margin-top: 20px;
     }
   }
 }
@@ -15,6 +10,7 @@
 //radio
 .elem-type__radio {
   position: relative;
+  display: inline-block;
   .form-radio {
     + label {
       margin: 0;

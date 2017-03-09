@@ -10354,16 +10354,13 @@ html, body {
     color: #bc1818;
 }
 
-.form__elem__option-rows .elem-type__radio {
+.form__elem__option-rows .radio-col:nth-of-type(n+3) .elem-type__radio {
     margin-top: 20px;
-}
-
-.form__elem__option-rows .form__elem__options-row:first-child .elem-type__radio {
-    margin-top: 0;
 }
 
 .elem-type__radio {
     position: relative;
+    display: inline-block;
 }
 
 .elem-type__radio .form-radio + label {
@@ -10400,16 +10397,13 @@ html, body {
     content: "";
 }
 
-.form__elem__option-rows .elem-type__checkbox {
+.form__elem__options-row .checkbox-col:nth-of-type(n+3) .elem-type__checkbox, .form__elem__options-row .checkbox-col:nth-of-type(n+3) .elem-type__radio, .form__elem__options-row .radio-col:nth-of-type(n+3) .elem-type__checkbox, .form__elem__options-row .radio-col:nth-of-type(n+3) .elem-type__radio {
     margin-top: 20px;
-}
-
-.form__elem__option-rows .form__elem__options-row:first-child .elem-type__checkbox {
-    margin-top: 0;
 }
 
 .elem-type__checkbox {
     position: relative;
+    display: inline-block;
 }
 
 .form-checkbox {
@@ -12614,10 +12608,10 @@ html, body {
         margin-bottom: 22px;
         border-bottom: 1px solid #dfdae0;
     }
-    .form__elem__options-row > div + div {
-        margin-top: 25px;
+    .form__elem__options-row .checkbox-col:nth-of-type(n+2) .elem-type__checkbox, .form__elem__options-row .checkbox-col:nth-of-type(n+2) .elem-type__radio, .form__elem__options-row .radio-col:nth-of-type(n+2) .elem-type__checkbox, .form__elem__options-row .radio-col:nth-of-type(n+2) .elem-type__radio {
+        margin-top: 20px;
     }
-    .form__elem__options-row > div + div.clearfix {
+    .form__elem__options-row .checkbox-col:nth-of-type(n+2).clearfix, .form__elem__options-row .radio-col:nth-of-type(n+2).clearfix {
         margin: 0;
     }
     .elem__long-text__one-col .form-textarea {

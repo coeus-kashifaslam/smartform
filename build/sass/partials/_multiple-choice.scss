@@ -1,18 +1,16 @@
-.form__elem__option-rows {
-  .elem-type__checkbox {
-    margin-top: 20px;
-  }
-  .form__elem__options-row {
-    &:first-child {
-      .elem-type__checkbox {
-        margin-top: 0;
-      }
+.form__elem__options-row {
+  .checkbox-col:nth-of-type(n+3),
+  .radio-col:nth-of-type(n+3) {
+    .elem-type__checkbox,
+    .elem-type__radio {
+      margin-top: 20px;
     }
   }
 }
 
 .elem-type__checkbox {
   position: relative;
+  display: inline-block;
 }
 .form-checkbox {
   display: none;
@@ -60,12 +58,14 @@
 
 @media (max-width: 767px) {
   .form__elem__options-row {
-    > div {
-      + div {
-        margin-top: 25px;
-        &.clearfix {
-          margin: 0;
-        }
+    .checkbox-col:nth-of-type(n+2),
+    .radio-col:nth-of-type(n+2){
+      .elem-type__checkbox,
+      .elem-type__radio {
+        margin-top: 20px;
+      }
+      &.clearfix {
+        margin: 0;
       }
     }
   }
