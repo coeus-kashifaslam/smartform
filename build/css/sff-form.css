@@ -11232,6 +11232,24 @@ html, body {
     margin-bottom: 0;
 }
 
+.state__single.fixed__feedback__continuous__thumbnail .feedback__continuous__emo-list .feedback__continuous__emo-list__table-row.total-row, .state__single.fixed__feedback__continuous__thumbnail .feedback__continuous__emo-list .feedback__continuous__emo-list__table-row .feedback__continuous__emo-list__item, .state__single.form__elem__rating-thumbnail-right .feedback__continuous__emo-list .feedback__continuous__emo-list__table-row.total-row, .state__single.form__elem__rating-thumbnail-right .feedback__continuous__emo-list .feedback__continuous__emo-list__table-row .feedback__continuous__emo-list__item {
+    border: 0 none;
+    margin: 0;
+    padding-top: 0;
+}
+
+.state__single.fixed__feedback__continuous__thumbnail .feedback__container .feedback__emo-list .feedback__emo-list__description, .state__single.form__elem__rating-thumbnail-right .feedback__container .feedback__emo-list .feedback__emo-list__description {
+    padding: 0;
+}
+
+.state__single.fixed__feedback__continuous__thumbnail .feedback__continuous__container, .state__single.form__elem__rating-thumbnail-right .feedback__continuous__container {
+    margin: 0;
+}
+
+.state__single.fixed__feedback__continuous__thumbnail .feedback__emo-list__description-count, .state__single.form__elem__rating-thumbnail-right .feedback__emo-list__description-count {
+    text-align: left;
+}
+
 .form__elem__rating-thumbnail-right .elem__rating-thumbnail-right__body .rating__thumbnail__col__content {
     border-top: 1px solid #dfdae0;
 }
@@ -11239,11 +11257,6 @@ html, body {
 .form__elem__rating-thumbnail-right .elem__rating-thumbnail-right__body .rating__thumbnail__col__content .product-thumbnail {
     width: auto;
     max-width: 100%;
-}
-
-.form__elem__rating-thumbnail-right.form__elem {
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 .fixed__feedback__default__thumbnail-right .form__elem__help-text__multiple .form__elem__help-text {
@@ -11790,29 +11803,12 @@ html, body {
     .state__single.form__elem__rating-thumbnail-right .rating__icons__col .rating__icons__col__content {
         height: 210px;
     }
-    .state__single.fixed__feedback__continuous__thumbnail .feedback__continuous__emo-list .feedback__continuous__emo-list__table-row.total-row, .state__single.fixed__feedback__continuous__thumbnail .feedback__continuous__emo-list .feedback__continuous__emo-list__table-row .feedback__continuous__emo-list__item, .state__single.form__elem__rating-thumbnail-right .feedback__continuous__emo-list .feedback__continuous__emo-list__table-row.total-row, .state__single.form__elem__rating-thumbnail-right .feedback__continuous__emo-list .feedback__continuous__emo-list__table-row .feedback__continuous__emo-list__item {
-        border: 0 none;
-        margin: 0;
-    }
-    .state__single.fixed__feedback__continuous__thumbnail .feedback__container .feedback__emo-list .feedback__emo-list__description, .state__single.form__elem__rating-thumbnail-right .feedback__container .feedback__emo-list .feedback__emo-list__description {
-        padding: 0;
-    }
-    .state__single.fixed__feedback__continuous__thumbnail .feedback__continuous__container, .state__single.form__elem__rating-thumbnail-right .feedback__continuous__container {
-        margin: 0;
-    }
-    .state__single.fixed__feedback__continuous__thumbnail .feedback__emo-list__description-count, .state__single.form__elem__rating-thumbnail-right .feedback__emo-list__description-count {
-        text-align: left;
-    }
     .form__elem__rating-thumbnail-right .elem__rating-thumbnail-right__body .rating__thumbnail__col__content {
         border: 0 none;
     }
     .form__elem__rating-thumbnail-right .elem__rating-thumbnail-right__body .rating__thumbnail__col__content .rating__thumbnail__container {
         padding-top: 0;
         padding-bottom: 0;
-    }
-    .form__elem__rating-thumbnail-right .elem__rating-thumbnail-right__header {
-        padding-left: 15px;
-        padding-right: 15px;
     }
     .form__elem__rating-thumbnail-right .rating__icons__col .shapes__lg .feedback__continuous__container {
         padding: 0;

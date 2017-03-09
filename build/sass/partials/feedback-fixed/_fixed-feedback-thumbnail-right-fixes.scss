@@ -28,8 +28,8 @@
 
   }
   &.form__elem {
-    padding-left: 15px;
-    padding-right: 15px;
+    //padding-left: 15px;
+    //padding-right: 15px;
     @media (max-width: 767px) {
       &:first-child {
         border-bottom: 1px solid $default-border-color;
@@ -37,12 +37,12 @@
     }
   }
 
-  .elem__rating-thumbnail-right__header {
-    @media (min-width: 768px) {
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-  }
+  //.elem__rating-thumbnail-right__header {
+  //  @media (min-width: 768px) {
+  //    padding-left: 15px;
+  //    padding-right: 15px;
+  //  }
+  //}
 
 }
 
