@@ -157,7 +157,7 @@
 .shapes__lg {
   .fixed__grid-shape__col {
     @media (min-width: 768px) {
-      width: $default-icon-lg + 25px;
+      width: $default-icon-lg + 20px;
     }
     .fixed__grid-shape {
       font-size: $default-icon-lg;

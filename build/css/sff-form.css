@@ -10596,7 +10596,8 @@ html, body {
 
 .feedback__count__message {
     text-align: center;
-    margin-top: 15px;
+    margin-top: 30px;
+    font-size: 14px;
 }
 
 .feedback__count__message p {
@@ -10901,8 +10902,9 @@ html, body {
 }
 
 .ranking__message {
-    margin-top: 15px;
+    margin-top: 30px;
     text-align: center;
+    font-size: 14px;
 }
 
 .ranking__message .ico.ranking__message__selected {
@@ -11766,7 +11768,7 @@ html, body {
         display: none;
     }
     .shapes__lg .fixed__grid-shape__col {
-        width: 65px;
+        width: 60px;
     }
     .feedback__continuous__emo-list .feedback__continuous__emo-list__table-row.total-row .feedback__continuous__emo-list__item {
         border-top: 1px solid #dfdae0;
@@ -11782,6 +11784,10 @@ html, body {
     .fixed__feedback__default__thumbnail-left .ranking__message, .fixed__feedback__grid__thumbnail-left .ranking__message, .fixed__feedback__continuous__thumbnail .ranking__message {
         margin-top: 30px;
     }
+    .elem__rating-thumbnail-right__body .rating__icons__col-sm .rating__icons__col__content {
+        width: 363px;
+        max-width: 363px;
+    }
     .form__elem__rating-thumbnail-right .rating__thumbnail__col, .form__elem__rating-thumbnail-right .rating__icons__col, .form__elem__rating-thumbnail-right .rating__icons__col .rating__icons__col__content {
         float: none;
         display: table-cell;
@@ -11789,6 +11795,19 @@ html, body {
     }
     .state__single.form__elem__rating-thumbnail-right .rating__icons__col .rating__icons__col__content {
         height: 210px;
+    }
+    .state__single.fixed__feedback__continuous__thumbnail .feedback__continuous__emo-list .feedback__continuous__emo-list__table-row.total-row, .state__single.fixed__feedback__continuous__thumbnail .feedback__continuous__emo-list .feedback__continuous__emo-list__table-row .feedback__continuous__emo-list__item, .state__single.form__elem__rating-thumbnail-right .feedback__continuous__emo-list .feedback__continuous__emo-list__table-row.total-row, .state__single.form__elem__rating-thumbnail-right .feedback__continuous__emo-list .feedback__continuous__emo-list__table-row .feedback__continuous__emo-list__item {
+        border: 0 none;
+        margin: 0;
+    }
+    .state__single.fixed__feedback__continuous__thumbnail .feedback__container .feedback__emo-list .feedback__emo-list__description, .state__single.form__elem__rating-thumbnail-right .feedback__container .feedback__emo-list .feedback__emo-list__description {
+        padding: 0;
+    }
+    .state__single.fixed__feedback__continuous__thumbnail .feedback__continuous__container, .state__single.form__elem__rating-thumbnail-right .feedback__continuous__container {
+        margin: 0;
+    }
+    .state__single.fixed__feedback__continuous__thumbnail .feedback__emo-list__description-count, .state__single.form__elem__rating-thumbnail-right .feedback__emo-list__description-count {
+        text-align: left;
     }
     .form__elem__rating-thumbnail-right .elem__rating-thumbnail-right__body .rating__thumbnail__col__content {
         border: 0 none;
@@ -11975,6 +11994,10 @@ html, body {
     }
     .modal-lg {
         width: 900px;
+    }
+    .elem__rating-thumbnail-right__body .rating__icons__col-sm .rating__icons__col__content {
+        width: 415px;
+        max-width: none;
     }
 }
 
@@ -12901,6 +12924,11 @@ html, body {
     }
     .hidden-sm {
         display: none !important;
+    }
+    .feedback__continuous__shapes-list__item {
+        min-width: 30px;
+        padding-left: 1px;
+        padding-right: 1px;
     }
 }
 

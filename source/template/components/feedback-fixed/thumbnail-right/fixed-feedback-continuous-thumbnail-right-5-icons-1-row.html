@@ -1,6 +1,6 @@
 <!--Rating Start-->
 
-<article class="form__elem form__elem__rating-thumbnail-right fixed__feedback__continuous fixed__feedback__continuous__thumbnail-right">
+<article class="form__elem form__elem__rating-thumbnail-right fixed__feedback__continuous fixed__feedback__continuous__thumbnail-right state__single">
     <div class="elem__rating elem__rating-thumbnail-right__header">
         <h3 class="form__elem__title">Feedback Continuous Thumbnail Right 5 Options</h3>
         <p class="form__elem__help-text">Help Text Goes here</p>
@@ -20,10 +20,7 @@
                     <div class="feedback__container feedback__continuous__container">
                         <div class="feedback__emo-list feedback__continuous__emo-list hide__radio">
                             {% set rownumbers = [
-                            {count: 0, string: 'There are many variations of passages', type: ''},
-                            {count: 1, string: 'There are many variations of passages desp Excepteur sint occaecat cupidatat non prois dent, sunt in culpa qui officia deserunt mol.', type: ''},
-                            {count: 2, string: 'Sed ut perspiciatis unde omnis iste natus er ror sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. ', type: ''},
-                            {count: 3, string: '', type: 'total'}
+                            {count: 0, string: '', type: 'total'}
                             ]%}
                             {% for rownumber in rownumbers %}
                                 {% if rownumber.type == 'total'%}

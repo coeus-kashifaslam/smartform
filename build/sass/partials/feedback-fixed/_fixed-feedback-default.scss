@@ -118,8 +118,9 @@ $tooltip-icon-sudo-color: $sudo-rating-color;
 }
 
 .ranking__message {
-  margin-top: 15px;
+  margin-top: 30px;
   text-align: center;
+  font-size: $feedback-tooltip-font-size;
   .ico {
     &.ranking__message__selected {
       color: $sudo-rating-color-old;
