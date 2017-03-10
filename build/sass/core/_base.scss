@@ -11,10 +11,3 @@ html, body {
 .comp {
   margin-bottom: $default-component-margin;
 }
-.content__rtl {
-  direction: rtl;
-  ul, ol {
-    padding: 0;
-    margin-right: -5px;
-  }
-}
