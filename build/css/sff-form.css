@@ -11247,7 +11247,7 @@ html, body {
 }
 
 .state__single.fixed__feedback__continuous__thumbnail .feedback__emo-list__description-count, .state__single.form__elem__rating-thumbnail-right .feedback__emo-list__description-count {
-    text-align: left;
+    text-align: initial;
 }
 
 .form__elem__rating-thumbnail-right .elem__rating-thumbnail-right__body .rating__thumbnail__col__content {
@@ -11281,6 +11281,16 @@ html, body {
 .elem__thank-you img {
     max-width: 100%;
     height: auto;
+}
+
+.content__rtl .custom-footer__address-block .list__contact-info li .contact-info__content {
+    padding-left: 0;
+    padding-right: 25px;
+}
+
+.content__rtl .custom-footer__address-block .list__contact-info li .contact-info__icon {
+    left: auto;
+    right: 0;
 }
 
 @media print {
@@ -11819,6 +11829,35 @@ html, body {
     }
     .form__elem__rating-thumbnail-right .rating__icons__col .shapes__lg .feedback__continuous__container .feedback__emo-list .feedback__continuous__emo-list__item {
         padding: 5px 0;
+    }
+    .content__rtl .col-sm-push-7 {
+        right: 58.33333333%;
+        left: auto;
+    }
+    .content__rtl .col-sm-pull-5 {
+        left: 41.66666667%;
+        right: auto;
+    }
+    .content__rtl .col-sm-push-9 {
+        right: 75%;
+        left: auto;
+    }
+    .content__rtl .col-sm-pull-3 {
+        left: 25%;
+        right: auto;
+    }
+    .content__rtl .state__single .feedback__continuous__shapes-list__items-container {
+        float: left;
+    }
+    .content__rtl .state__single.fixed__feedback__continuous__thumbnail .feedback__continuous__shapes-list__items-container {
+        float: none;
+    }
+    .content__rtl .fixed__feedback__continuous__thumbnail .feedback__container .feedback__emo-list .feedback__emo-list__description {
+        padding-right: 0;
+    }
+    .content__rtl .fixed__feedback__continuous .feedback__container .feedback__emo-list .feedback__emo-list__description {
+        padding-right: 0;
+        padding-left: 20px;
     }
 }
 
@@ -12570,6 +12609,10 @@ html, body {
     .page__footer__quick-links > li a {
         font-size: 11px;
     }
+    .power-by__info {
+        text-align: center;
+        margin-top: 10px;
+    }
     .custom-footer__col-title {
         background: #e3e3e3;
         padding: 7px 15px 10px;
@@ -12718,7 +12761,7 @@ html, body {
         background: #f3f3f3;
     }
     .feedback__continuous__emo-list .feedback__continuous__emo-list__description .feedback__continuous__emo-list__description-count {
-        text-align: left;
+        text-align: initial;
     }
     .feedback__continuous__shapes-list__items-container {
         float: none;

@@ -102,6 +102,8 @@ $icon-cols-width-mobile: 100%;
     }
   }
 }
+
+
 .state__single {
   &.fixed__feedback__continuous__thumbnail,
   &.form__elem__rating-thumbnail-right {
@@ -129,7 +131,7 @@ $icon-cols-width-mobile: 100%;
     }
 
     .feedback__emo-list__description-count {
-      text-align: left;
+      text-align: initial;
     }
 
   }
