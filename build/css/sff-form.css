@@ -11080,6 +11080,15 @@ html, body {
     font-size: 40px;
 }
 
+.feedback__continuous__emo-list.subquestion__false .feedback__emo-list__description-count {
+    text-align: initial;
+}
+
+.feedback__continuous__emo-list.subquestion__false .feedback__continuous__emo-list__table-row.total-row .feedback__continuous__emo-list__item {
+    border: 0 none;
+    padding: 0;
+}
+
 .elem__rating__left-thumbnail__container {
     width: 150px;
     height: 150px;
