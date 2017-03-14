@@ -4,20 +4,8 @@
 
 **1:** install Node.js (https://nodejs.org/en/)
 
-**2:** Install ruby and its dev kit (https://rubyinstaller.org/)
-
-**3:** Install ruby gem compass (https://rubygems.org/search?utf8=%E2%9C%93&query=compass)
-Command => ruby install compass
-
-**4:** Now install Bower (https://bower.io/)
-Command => npm install -g bower
-
-**5:** Now install npm dependencies
+**2:** Now install npm dependencies
 Command => npm install
-
-**5:** Now install bower dependencies
-Command => npm install bower
-
 
 ----------------------
 # Directory Structure

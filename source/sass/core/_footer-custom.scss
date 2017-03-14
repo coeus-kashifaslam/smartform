@@ -44,14 +44,14 @@ $custom-footer-font-size: 14px;
     a {
       color: $utility-link-color;
       text-decoration: none;
-      @include transition(0.3s all ease-in-out);
+      transition: 0.3s all ease-in-out;
       &:hover,
       &:focus,
       &:active {
         color: darken($utility-link-color, 7%);
         text-decoration: underline;
         outline: none;
-        @include transition(0.3s all ease-in-out);
+        transition: 0.3s all ease-in-out;
       }
     }
     @media (max-width: 767px) {

@@ -10235,16 +10235,16 @@ html, body {
 .custom-footer__links-block .list__utility-links a {
     color: #4c4c4c;
     text-decoration: none;
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+    -webkit-transition: .3s all ease-in-out;
+    transition: .3s all ease-in-out;
 }
 
 .custom-footer__links-block .list__utility-links a:hover, .custom-footer__links-block .list__utility-links a:focus, .custom-footer__links-block .list__utility-links a:active {
     color: #3a3a3a;
     text-decoration: underline;
     outline: none;
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+    -webkit-transition: .3s all ease-in-out;
+    transition: .3s all ease-in-out;
 }
 
 .custom-footer__social-media-block .list__social-media-links a {
