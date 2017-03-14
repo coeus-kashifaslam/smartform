@@ -1,0 +1,29 @@
+.ico, %iconfont-icomoon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+%default-font {
+  font-family: $font-regular;
+  font-weight: 400;
+}
+%default-font-light {
+  font-family: $font-light;
+  font-weight: 100;
+}
+%default-font-bold {
+  font-family: $font-bold;
+  //font-weight: normal;
+}
+%default-fontawesome {
+  font-family: "FontAwesome";
+}

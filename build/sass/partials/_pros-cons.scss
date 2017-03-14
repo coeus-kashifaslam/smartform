@@ -1,0 +1,69 @@
+$default-pros-icon: "\f055";
+$default-pros-icon-clr: #1cac00;
+$default-cons-icon: "\f056";
+$default-cons-icon-clr: #bc1818;
+
+.row__pros-cons {
+  .form-control {
+     height: 45px;
+    padding-left: 50px;
+    padding-right: 30px;
+  }
+  li {
+    position: relative;
+    &:before {
+      @extend %default-fontawesome;
+      position: absolute;
+      font-size: 18px;
+      top: 50%;
+      margin-top: -13px;
+      left: 13px;
+    }
+  }
+  .list-unstyled {
+    margin-bottom: 0;
+    @media (max-width: 767px) {
+      + .list-unstyled {
+        margin-top: 15px;
+      }
+    }
+    li {
+      + li {
+        margin-top: 10px;
+      }
+    }
+  }
+  .fa-remove {
+    cursor: pointer;
+    position: absolute;
+    right: 13px;
+    top: 15px;
+    font-size: 13px;
+  }
+}
+.pros__list {
+  li {
+    &:before {
+      content: $default-pros-icon;
+      color: $default-pros-icon-clr;
+    }
+  }
+}
+.cons__list {
+  li {
+    &:before {
+      content: $default-cons-icon;
+      color: $default-cons-icon-clr;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .row__pros-cons {
+    .pros__list {
+      padding-bottom: 22px;
+      margin-bottom: 22px;
+      border-bottom: 1px solid $default-border-color;
+    }
+  }
+}

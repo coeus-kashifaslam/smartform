@@ -1,0 +1,106 @@
+
+//Default Layout Fixes
+.fixed__feedback__default__thumbnail-left,
+.fixed__feedback__grid__thumbnail-left,
+.fixed__feedback__continuous__thumbnail {
+  .ranking__message {
+    @media (min-width: 768px) {
+      margin-top: 30px;
+    }
+  }
+  .rating__container {
+    margin-top: 30px;
+  }
+  .elem__rating__left-thumbnail__container {
+    border: 0 none;
+    padding: 0;
+    width: 100%;
+    max-width: 165px;
+  }
+}
+
+
+//Default Layout Fixes
+.fixed__feedback__default__thumbnail-left {
+  .form__elem__help-text {
+    margin-bottom: 10px;
+  }
+  .elem__table {
+    margin-bottom: 0;
+  }
+  label {
+    margin: 0;
+  }
+}
+
+
+//Grid Layout Fixes
+.fixed__feedback__grid__thumbnail-left,
+.fixed__feedback__grid__thumbnail-right {
+  .grid__header {
+    .fixed__grid-table__cell {
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+  .elem__rating__icons-container {
+    @media (max-width: 767px) {
+      padding-left: 0;
+      padding-right: 0;
+      .fixed__grid-table__row {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+  }
+}
+
+
+//Continuous Layout Fixes
+.fixed__feedback__continuous__thumbnail {
+  .feedback__continuous__container {
+    border: 0 none;
+  }
+
+  .feedback__continuous__emo-list {
+    display: block;
+    .feedback__continuous__emo-list__table-row,
+    .feedback__continuous__emo-list__description {
+      display: block;
+    }
+
+    .feedback__continuous__emo-list__table-row {
+      &.total-row {
+        margin-top: 10px;
+        border-top: 1px solid $default-border-color;
+        .feedback__continuous__emo-list__item {
+          border: 0 none;
+        }
+      }
+    }
+
+    .feedback__emo-list__description-count {
+      text-align: initial;
+      font-size: $default-font-size;
+    }
+
+    .feedback__continuous__emo-list__item {
+      padding: 3px 2px 5px 2px;
+    }
+  }
+
+  .feedback__container {
+    .feedback__emo-list {
+      .feedback__emo-list__description {
+        padding: 10px 20px 0 0;
+
+      }
+    }
+  }
+  &, .shapes__lg {
+    .feedback__continuous__emo-list__shape-item {
+      width: auto;
+    }
+  }
+}

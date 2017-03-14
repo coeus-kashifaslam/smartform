@@ -1,0 +1,13 @@
+html, body {
+  overflow-x: hidden;
+}
+//Form Base
+.sff-form__body {
+  max-width: 960px;
+  background: $white;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.comp {
+  margin-bottom: $default-component-margin;
+}

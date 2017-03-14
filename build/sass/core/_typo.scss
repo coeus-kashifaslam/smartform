@@ -1,0 +1,21 @@
+body {
+  @extend %default-font;
+  font-size: $default-font-size;
+  color: $default-text-color;
+  background: $default-body-bg;
+}
+label {
+  font-weight: normal;
+}
+.form__legend {
+  @extend %default-font-bold;
+  color: $default-header-color;
+  font-size: $default-header-size;
+}
+
+.form__elem__title {
+  @extend %default-font-bold;
+  color: $default-subHeader-color;
+  font-size: $default-subHeader-size;
+  //font-weight: $default-subHeader-font-weight;
+}

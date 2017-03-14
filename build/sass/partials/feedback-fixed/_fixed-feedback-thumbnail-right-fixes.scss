@@ -1,0 +1,99 @@
+//General
+.form__elem__rating-thumbnail-right {
+  .elem__rating-thumbnail-right__body {
+    .rating__thumbnail__col__content {
+      border-top: 1px solid $default-border-color;
+      @media (min-width: 768px) {
+        border: 0 none;
+      }
+      .rating__thumbnail__container {
+        @media (min-width: 768px) {
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+      }
+
+      .product-thumbnail {
+        width: auto;
+        max-width: 100%;
+      }
+
+    }
+
+    .rating__icons__col__content {
+      @media (max-width: 767px) {
+        min-height: initial;
+      }
+    }
+
+  }
+  &.form__elem {
+    //padding-left: 15px;
+    //padding-right: 15px;
+    @media (max-width: 767px) {
+      &:first-child {
+        border-bottom: 1px solid $default-border-color;
+      }
+    }
+  }
+
+  //.elem__rating-thumbnail-right__header {
+  //  @media (min-width: 768px) {
+  //    padding-left: 15px;
+  //    padding-right: 15px;
+  //  }
+  //}
+
+}
+
+
+
+
+
+//Default Layout
+.fixed__feedback__default__thumbnail-right {
+  .form__elem__help-text__multiple {
+    .form__elem__help-text {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+//Grid Layout
+.fixed__feedback__grid__thumbnail-right {
+  .elem__rating-thumbnail-right__body {
+    .rating__icons__col__content {
+      padding: 0;
+      border: 0 none;
+    }
+  }
+}
+
+//Continuous layout 5 Icons specific styling
+@media (min-width: 768px) {
+  .form__elem__rating-thumbnail-right {
+    .rating__icons__col {
+      .shapes__lg {
+        .feedback__continuous__container {
+          padding: 0;
+          border: 0 none;
+          .feedback__emo-list {
+            .feedback__emo-list__description {
+              padding: 5px 10px 0 5px;
+            }
+            .feedback__continuous__emo-list__item {
+              padding: 5px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .form__elem__rating-thumbnail-right {
+    .rating__thumbnail__col {
+      margin-bottom: 10px;
+    }
+  }
+}
