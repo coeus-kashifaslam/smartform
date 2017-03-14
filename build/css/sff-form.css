@@ -10540,10 +10540,6 @@ html, body {
     color: #07b;
 }
 
-.feedback__continuous__shapes-list__item {
-    min-width: 33px;
-}
-
 .feedback__continuous__emo-list .feedback__continuous__emo-list__description p {
     font-size: 14px;
 }
@@ -11001,6 +10997,7 @@ html, body {
 .feedback__continuous__emo-list {
     display: table;
     width: 100%;
+    border-collapse: collapse;
 }
 
 .feedback__continuous__emo-list .feedback__continuous__emo-list__table-row {
@@ -11014,26 +11011,24 @@ html, body {
 .feedback__continuous__emo-list .feedback__continuous__emo-list__item {
     display: table-cell;
     vertical-align: middle;
-    padding: 15px 0;
+    padding: 5px 0;
+}
+
+.feedback__continuous__emo-list .feedback__continuous__emo-list__item .feedback__item-label {
+    margin-left: -5px;
+    margin-right: -5px;
 }
 
 .feedback__continuous__emo-list .feedback__continuous__emo-list__description p {
     margin: 0;
 }
 
-.feedback__continuous__shapes-list__items-container {
-    display: table;
-    table-layout: fixed;
-    float: right;
-}
-
 .feedback__continuous__shapes-list__item {
-    display: table-cell;
-    padding-left: 2px;
-    padding-right: 2px;
     vertical-align: middle;
     text-align: center;
     position: relative;
+    margin: 0 auto;
+    display: block;
 }
 
 .feedback__continuous__shapes-list__item .icomoon-sudo {
@@ -11061,7 +11056,6 @@ html, body {
 }
 
 .fixed__feedback__continuous .feedback__continuous__emo-list .feedback__continuous__emo-list__item {
-    border: 0 none;
     padding: 10px 0;
 }
 
@@ -12752,30 +12746,25 @@ html, body {
     .feedback__continuous__container {
         border: 0 none;
     }
-    .feedback__continuous__emo-list {
-        display: block;
-    }
-    .feedback__continuous__emo-list .feedback__continuous__emo-list__table-row, .feedback__continuous__emo-list .feedback__continuous__emo-list__item {
-        display: block;
-    }
     .feedback__continuous__emo-list .feedback__continuous__emo-list__table-row {
+        display: block;
         border: 1px solid #dfdae0;
         margin-bottom: 15px;
     }
     .feedback__continuous__emo-list .feedback__continuous__emo-list__item {
         border: 0 none;
     }
+    .feedback__continuous__emo-list .feedback__continuous__emo-list__item .feedback__item-label {
+        margin-left: 0;
+        margin-right: 0;
+    }
     .feedback__continuous__emo-list .feedback__continuous__emo-list__description {
         padding: 7px 5px;
         background: #f3f3f3;
+        display: block;
     }
     .feedback__continuous__emo-list .feedback__continuous__emo-list__description .feedback__continuous__emo-list__description-count {
         text-align: initial;
-    }
-    .feedback__continuous__shapes-list__items-container {
-        float: none;
-        display: block;
-        overflow: hidden;
     }
     .feedback__continuous__shapes-list__item {
         max-width: none;
@@ -12968,7 +12957,6 @@ html, body {
         display: none !important;
     }
     .feedback__continuous__shapes-list__item {
-        min-width: 30px;
         padding-left: 1px;
         padding-right: 1px;
     }
