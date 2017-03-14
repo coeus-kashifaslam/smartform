@@ -43,23 +43,23 @@
                                 {% for number in numbers %}
                                 <div class="feedback__emo-list__item feedback__emo-list__shape-item feedback__continuous__emo-list__item feedback__continuous__emo-list__shape-item">
 
-                                    {% if number == 0 or number == 1 %}
+                                    {% if number == 0 %}
                                     {% set oneStar = 'tooltip__ico-selected' %}
                                     {% set countStar = 1 %}
 
-                                    {% elseif number == 2 or number == 3 or number == 4 %}
+                                    {% elseif number == 1 %}
                                     {% set twoStar = oneStar %}
                                     {% set countStar = 2 %}
 
-                                    {% elseif number == 5 or number == 6 %}
+                                    {% elseif number == 2 %}
                                     {% set threeStar = oneStar %}
                                     {% set countStar = 3 %}
 
-                                    {% elseif number == 7 or number == 8 %}
+                                    {% elseif number == 3 %}
                                     {% set fourStar = oneStar %}
                                     {% set countStar = 4 %}
 
-                                    {% elseif number == 9 or number == 10 %}
+                                    {% elseif number == 4 %}
                                     {% set fiveStar = oneStar %}
                                     {% set countStar = 5 %}
 
