@@ -28,22 +28,12 @@
 
   }
   &.form__elem {
-    //padding-left: 15px;
-    //padding-right: 15px;
     @media (max-width: 767px) {
       &:first-child {
         border-bottom: 1px solid $default-border-color;
       }
     }
   }
-
-  //.elem__rating-thumbnail-right__header {
-  //  @media (min-width: 768px) {
-  //    padding-left: 15px;
-  //    padding-right: 15px;
-  //  }
-  //}
-
 }
 
 
@@ -80,9 +70,12 @@
           .feedback__emo-list {
             .feedback__emo-list__description {
               padding: 5px 10px 0 5px;
+              p {
+                padding-right: 10px;
+              }
             }
             .feedback__continuous__emo-list__item {
-              padding: 5px 0;
+              padding: 10px 0;
             }
           }
         }
@@ -94,6 +87,18 @@
   .form__elem__rating-thumbnail-right {
     .rating__thumbnail__col {
       margin-bottom: 10px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .fixed__feedback__continuous__thumbnail {
+    &.fixed__feedback__continuous__thumbnail-right {
+      .feedback__continuous__emo-list {
+        .feedback__continuous__emo-list__item {
+          padding: 3px 0 5px;
+        }
+      }
     }
   }
 }

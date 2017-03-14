@@ -65,6 +65,10 @@
   }
 }
 
+.feedback__item-disabled .feedback__item-label{
+  pointer-events: none;
+}
+
 /********************** Feebback message ********************/
 .feedback__count__message {
   text-align: center;

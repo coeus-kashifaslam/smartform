@@ -9526,6 +9526,7 @@ html, body {
     color: red;
     margin-top: 12px;
     margin-bottom: 0;
+    display: none;
 }
 
 .sff-form__footer {
@@ -10573,6 +10574,10 @@ html, body {
 
 .feedback__item-label .icomoon-sudo {
     color: #3054ae;
+}
+
+.feedback__item-disabled .feedback__item-label {
+    pointer-events: none;
 }
 
 .feedback__count__message {
@@ -11828,8 +11833,11 @@ html, body {
     .form__elem__rating-thumbnail-right .rating__icons__col .shapes__lg .feedback__continuous__container .feedback__emo-list .feedback__emo-list__description {
         padding: 5px 10px 0 5px;
     }
+    .form__elem__rating-thumbnail-right .rating__icons__col .shapes__lg .feedback__continuous__container .feedback__emo-list .feedback__emo-list__description p {
+        padding-right: 10px;
+    }
     .form__elem__rating-thumbnail-right .rating__icons__col .shapes__lg .feedback__continuous__container .feedback__emo-list .feedback__continuous__emo-list__item {
-        padding: 5px 0;
+        padding: 10px 0;
     }
     .content__rtl .col-sm-push-7 {
         right: 58.33333333%;
@@ -12951,6 +12959,9 @@ html, body {
     .feedback__continuous__shapes-list__item {
         padding-left: 1px;
         padding-right: 1px;
+    }
+    .fixed__feedback__continuous__thumbnail.fixed__feedback__continuous__thumbnail-right .feedback__continuous__emo-list .feedback__continuous__emo-list__item {
+        padding: 3px 0 5px;
     }
 }
 
