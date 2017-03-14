@@ -26,10 +26,6 @@
     display: table-cell;
     vertical-align: middle;
     padding: 5px 0;
-    .feedback__item-label {
-      margin-left: -5px;
-      margin-right: -5px;
-    }
   }
   .feedback__continuous__emo-list__description {
     p {
@@ -37,14 +33,14 @@
       @extend %feedback-label-fontsize;
     }
   }
+  .feedback__continuous__emo-list__shape-item {
+    width: 33px;
+  }
 }
 
 .feedback__continuous__shapes-list__item {
-  vertical-align: middle;
   text-align: center;
   position: relative;
-  margin: 0 auto;
-  display: block;
   .icomoon-sudo {
     display: none;
   }
@@ -55,8 +51,8 @@
 }
 
 .feedback__continuous__selection-continuous {
-  .feedback__continuous__shapes-list__item-hover,
-  .feedback__continuous__shapes-list__item-selected {
+  .feedback__continuous__emo-list__shape-item-hover,
+  .feedback__continuous__emo-list__shape-item-selected {
     .icomoon-default {
       display: none;
     }
@@ -67,8 +63,8 @@
 }
 
 .feedback__continuous__selection-single {
-  .feedback__continuous__shapes-list__item-hover-current,
-  .feedback__continuous__shapes-list__item-selected-current {
+  .feedback__continuous__emo-list__shape-item-hover-current,
+  .feedback__continuous__emo-list__shape-item-selected-current {
     .icomoon-default {
       display: none;
     }
@@ -79,7 +75,7 @@
 }
 
 @media (min-width: 768px) {
-  .feedback__continuous__shapes-list__item-hover-current {
+  .feedback__continuous__emo-list__shape-item-hover-current {
     .feedback__item-tooltip-container {
       display: block;
     }
@@ -100,10 +96,6 @@
     }
     .feedback__continuous__emo-list__item {
       border: 0 none;
-      .feedback__item-label {
-        margin-left: 0;
-        margin-right: 0;
-      }
     }
     .feedback__continuous__emo-list__description {
       padding: 7px 5px;
@@ -115,8 +107,6 @@
     }
   }
   .feedback__continuous__shapes-list__item {
-    max-width: none;
-    min-width: unset;
     overflow: hidden;
     padding-left: 1px;
     padding-right: 1px;
@@ -198,6 +188,9 @@
     .ico {
       font-size: $default-icon-lg;
     }
+  }
+  .feedback__continuous__emo-list__shape-item {
+    width: 45px;
   }
 }
 

@@ -12,9 +12,9 @@
             <div class="feedback__container feedback__continuous__container">
                 <div class="feedback__emo-list feedback__continuous__emo-list hide__radio">
                     {% set rownumbers = [
-                        {count: 0, string: 'There are many variations of passages', type: ''},
-                        {count: 1, string: 'There are many variations of passages desp Excepteur sint occaecat cupidatat non prois dent, sunt in culpa qui officia deserunt mol.', type: ''},
-                        {count: 2, string: 'Sed ut perspiciatis unde omnis iste natus er ror sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa qu. ', type: ''},
+                        {count: 0, string: 'There are .', type: ''},
+                        {count: 1, string: 'There are many variations .', type: ''},
+                        {count: 2, string: 'Sed ut perspiciatis. ', type: ''},
                         {count: 3, string: '', type: 'total'}
                     ]%}
                     {% for rownumber in rownumbers %}
@@ -23,7 +23,7 @@
                         {% else %}
                         {% set totalClass = '' %}
                         {% endif %}
-                    <div class="feedback__continuous__emo-list__table-row {{totalClass}}">
+                    <div class="feedback__continuous__emo-list__table-row {{totalClass}} feedback__continuous__selection-single">
                         <div class="feedback__emo-list__item feedback__emo-list__description feedback__continuous__emo-list__item feedback__continuous__emo-list__description">
                             {% if rownumber.type == 'total'%}
                             <p class="feedback__continuous__emo-list__description-count feedback__emo-list__description-count">
@@ -33,56 +33,56 @@
                             <p>{{rownumber.string}}</p>
                             {% endif %}
                         </div>
-                        <div class="feedback__emo-list__item feedback__continuous__emo-list__item feedback__continuous__shapes-list feedback__continuous__selection-continuous">
-                            <div class="feedback__continuous__shapes-list__items-container">
-                                {% set numbers = [0,1,2,3,4,5,6,7,8,9,10]%}
-                                {% for number in numbers %}
 
-                                    {% if number == 0 or number == 1 %}
-                                    {% set oneStar = 'tooltip__ico-selected' %}
-                                    {% set countStar = 1 %}
+                        {% set numbers = [0,1,2,3,4,5,6,7,8,9,10]%}
+                        {% for number in numbers %}
+                        <div class="feedback__emo-list__item feedback__emo-list__shape-item feedback__continuous__emo-list__item feedback__continuous__emo-list__shape-item">
 
-                                    {% elseif number == 2 or number == 3 or number == 4 %}
-                                    {% set twoStar = oneStar %}
-                                    {% set countStar = 2 %}
+                            {% if number == 0 or number == 1 %}
+                            {% set oneStar = 'tooltip__ico-selected' %}
+                            {% set countStar = 1 %}
 
-                                    {% elseif number == 5 or number == 6 %}
-                                    {% set threeStar = oneStar %}
-                                    {% set countStar = 3 %}
+                            {% elseif number == 2 or number == 3 or number == 4 %}
+                            {% set twoStar = oneStar %}
+                            {% set countStar = 2 %}
 
-                                    {% elseif number == 7 or number == 8 %}
-                                    {% set fourStar = oneStar %}
-                                    {% set countStar = 4 %}
+                            {% elseif number == 5 or number == 6 %}
+                            {% set threeStar = oneStar %}
+                            {% set countStar = 3 %}
 
-                                    {% elseif number == 9 or number == 10 %}
-                                    {% set fiveStar = oneStar %}
-                                    {% set countStar = 5 %}
+                            {% elseif number == 7 or number == 8 %}
+                            {% set fourStar = oneStar %}
+                            {% set countStar = 4 %}
 
-                                    {% endif %}
+                            {% elseif number == 9 or number == 10 %}
+                            {% set fiveStar = oneStar %}
+                            {% set countStar = 5 %}
 
-                                <div class="feedback__continuous__shapes-list__item">
-                                    <input type="radio" name="feedbackContinuous">
-                                    <label class="feedback__item-label">
-                                        <i class="ico ico-star icomoon-default"></i>
-                                        <i class="ico ico-star-selected icomoon-sudo"></i>
-                                    </label>
-                                    <div class="feedback__item-tooltip-container feedback__continuous__shapes-list__item-tooltip-container top">
-                                        <div class="feedback__item__tooltip-body">
-                                            <ul class="list-inline">
-                                                <li><i class="ico ico-star {{oneStar}}"></i></li>
-                                                <li><i class="ico ico-star {{twoStar}}"></i></li>
-                                                <li><i class="ico ico-star {{threeStar}}"></i></li>
-                                                <li><i class="ico ico-star {{fourStar}}"></i></li>
-                                                <li><i class="ico ico-star {{fiveStar}}"></i></li>
-                                                <li class="feedback__defautl-emo__tooltip-count">
-                                                    <span class="feedback__selected">{{countStar}}</span>/<span class="feedback__total">5</span></li>
-                                            </ul>
-                                        </div>
+                            {% endif %}
+
+                            <div class="feedback__continuous__shapes-list__item">
+                                <input type="radio" name="feedbackContinuous">
+                                <label class="feedback__item-label">
+                                    <i class="ico ico-happy icomoon-default"></i>
+                                    <i class="ico ico-happy-selected icomoon-sudo"></i>
+                                </label>
+                                <div class="feedback__item-tooltip-container feedback__continuous__shapes-list__item-tooltip-container top">
+                                    <div class="feedback__item__tooltip-body">
+                                        <ul class="list-inline">
+                                            <li><i class="ico ico-star {{oneStar}}"></i></li>
+                                            <li><i class="ico ico-star {{twoStar}}"></i></li>
+                                            <li><i class="ico ico-star {{threeStar}}"></i></li>
+                                            <li><i class="ico ico-star {{fourStar}}"></i></li>
+                                            <li><i class="ico ico-star {{fiveStar}}"></i></li>
+                                            <li class="feedback__defautl-emo__tooltip-count">
+                                                <span class="feedback__selected">{{countStar}}</span>/<span class="feedback__total">5</span></li>
+                                        </ul>
                                     </div>
                                 </div>
-                                {% endfor %}
                             </div>
                         </div>
+                        {% endfor %}
+
                     </div>
                     {% endfor %}
                 </div>
