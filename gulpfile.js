@@ -50,7 +50,7 @@
 
  	pleeeaseOptions = {
  		autoprefixer: {
- 			browsers: ['> 2%','last 2 versions'], 
+ 			browsers: ['> 2%','last 3 versions'],
  			cascade: false
  		},
  		pseudoElements: true,
