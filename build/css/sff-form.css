@@ -9526,6 +9526,7 @@ html, body {
     color: red;
     margin-top: 12px;
     margin-bottom: 0;
+    display: none;
 }
 
 .sff-form__footer {
@@ -10540,10 +10541,6 @@ html, body {
     color: #07b;
 }
 
-.feedback__continuous__shapes-list__item {
-    min-width: 33px;
-}
-
 .feedback__continuous__emo-list .feedback__continuous__emo-list__description p {
     font-size: 14px;
 }
@@ -10577,6 +10574,10 @@ html, body {
 
 .feedback__item-label .icomoon-sudo {
     color: #3054ae;
+}
+
+.feedback__item-disabled .feedback__item-label {
+    pointer-events: none;
 }
 
 .feedback__count__message {
@@ -11001,6 +11002,7 @@ html, body {
 .feedback__continuous__emo-list {
     display: table;
     width: 100%;
+    border-collapse: collapse;
 }
 
 .feedback__continuous__emo-list .feedback__continuous__emo-list__table-row {
@@ -11014,24 +11016,18 @@ html, body {
 .feedback__continuous__emo-list .feedback__continuous__emo-list__item {
     display: table-cell;
     vertical-align: middle;
-    padding: 15px 0;
+    padding: 5px 0;
 }
 
 .feedback__continuous__emo-list .feedback__continuous__emo-list__description p {
     margin: 0;
 }
 
-.feedback__continuous__shapes-list__items-container {
-    display: table;
-    table-layout: fixed;
-    float: right;
+.feedback__continuous__emo-list .feedback__continuous__emo-list__shape-item {
+    width: 33px;
 }
 
 .feedback__continuous__shapes-list__item {
-    display: table-cell;
-    padding-left: 2px;
-    padding-right: 2px;
-    vertical-align: middle;
     text-align: center;
     position: relative;
 }
@@ -11040,19 +11036,19 @@ html, body {
     display: none;
 }
 
-.feedback__continuous__selection-continuous .feedback__continuous__shapes-list__item-hover .icomoon-default, .feedback__continuous__selection-continuous .feedback__continuous__shapes-list__item-selected .icomoon-default {
+.feedback__continuous__selection-continuous .feedback__continuous__emo-list__shape-item-hover .icomoon-default, .feedback__continuous__selection-continuous .feedback__continuous__emo-list__shape-item-selected .icomoon-default {
     display: none;
 }
 
-.feedback__continuous__selection-continuous .feedback__continuous__shapes-list__item-hover .icomoon-sudo, .feedback__continuous__selection-continuous .feedback__continuous__shapes-list__item-selected .icomoon-sudo {
+.feedback__continuous__selection-continuous .feedback__continuous__emo-list__shape-item-hover .icomoon-sudo, .feedback__continuous__selection-continuous .feedback__continuous__emo-list__shape-item-selected .icomoon-sudo {
     display: inline-block;
 }
 
-.feedback__continuous__selection-single .feedback__continuous__shapes-list__item-hover-current .icomoon-default, .feedback__continuous__selection-single .feedback__continuous__shapes-list__item-selected-current .icomoon-default {
+.feedback__continuous__selection-single .feedback__continuous__emo-list__shape-item-hover-current .icomoon-default, .feedback__continuous__selection-single .feedback__continuous__emo-list__shape-item-selected-current .icomoon-default {
     display: none;
 }
 
-.feedback__continuous__selection-single .feedback__continuous__shapes-list__item-hover-current .icomoon-sudo, .feedback__continuous__selection-single .feedback__continuous__shapes-list__item-selected-current .icomoon-sudo {
+.feedback__continuous__selection-single .feedback__continuous__emo-list__shape-item-hover-current .icomoon-sudo, .feedback__continuous__selection-single .feedback__continuous__emo-list__shape-item-selected-current .icomoon-sudo {
     display: inline-block;
 }
 
@@ -11061,7 +11057,6 @@ html, body {
 }
 
 .fixed__feedback__continuous .feedback__continuous__emo-list .feedback__continuous__emo-list__item {
-    border: 0 none;
     padding: 10px 0;
 }
 
@@ -11078,6 +11073,10 @@ html, body {
 
 .shapes__lg .feedback__item-label .ico {
     font-size: 40px;
+}
+
+.shapes__lg .feedback__continuous__emo-list__shape-item {
+    width: 45px;
 }
 
 .feedback__continuous__emo-list.subquestion__false .feedback__emo-list__description-count {
@@ -11154,7 +11153,7 @@ html, body {
     display: block;
 }
 
-.fixed__feedback__continuous__thumbnail .feedback__continuous__emo-list .feedback__continuous__emo-list__table-row, .fixed__feedback__continuous__thumbnail .feedback__continuous__emo-list .feedback__continuous__emo-list__item {
+.fixed__feedback__continuous__thumbnail .feedback__continuous__emo-list .feedback__continuous__emo-list__table-row, .fixed__feedback__continuous__thumbnail .feedback__continuous__emo-list .feedback__continuous__emo-list__description {
     display: block;
 }
 
@@ -11173,17 +11172,15 @@ html, body {
 }
 
 .fixed__feedback__continuous__thumbnail .feedback__continuous__emo-list .feedback__continuous__emo-list__item {
-    padding-top: 3px;
-    padding-bottom: 5px;
-}
-
-.fixed__feedback__continuous__thumbnail .feedback__continuous__shapes-list__items-container {
-    display: block;
-    float: none;
+    padding: 3px 2px 5px;
 }
 
 .fixed__feedback__continuous__thumbnail .feedback__container .feedback__emo-list .feedback__emo-list__description {
     padding: 10px 20px 0 0;
+}
+
+.fixed__feedback__continuous__thumbnail .feedback__continuous__emo-list__shape-item, .fixed__feedback__continuous__thumbnail .shapes__lg .feedback__continuous__emo-list__shape-item {
+    width: auto;
 }
 
 .form__elem__rating-thumbnail-right .elem__rating-thumbnail-right__header {
@@ -11799,7 +11796,7 @@ html, body {
     .feedback__continuous__emo-list .feedback__continuous__emo-list__table-row.total-row .feedback__continuous__emo-list__item {
         border-top: 1px solid #dfdae0;
     }
-    .feedback__continuous__shapes-list__item-hover-current .feedback__item-tooltip-container {
+    .feedback__continuous__emo-list__shape-item-hover-current .feedback__item-tooltip-container {
         display: block;
     }
     .elem__rating-thumbnail-left .elem__rating__thumbnail-container, .elem__rating-thumbnail-left .elem__rating__icons-container {
@@ -11836,8 +11833,11 @@ html, body {
     .form__elem__rating-thumbnail-right .rating__icons__col .shapes__lg .feedback__continuous__container .feedback__emo-list .feedback__emo-list__description {
         padding: 5px 10px 0 5px;
     }
+    .form__elem__rating-thumbnail-right .rating__icons__col .shapes__lg .feedback__continuous__container .feedback__emo-list .feedback__emo-list__description p {
+        padding-right: 10px;
+    }
     .form__elem__rating-thumbnail-right .rating__icons__col .shapes__lg .feedback__continuous__container .feedback__emo-list .feedback__continuous__emo-list__item {
-        padding: 5px 0;
+        padding: 10px 0;
     }
     .content__rtl .col-sm-push-7 {
         right: 58.33333333%;
@@ -12752,13 +12752,8 @@ html, body {
     .feedback__continuous__container {
         border: 0 none;
     }
-    .feedback__continuous__emo-list {
-        display: block;
-    }
-    .feedback__continuous__emo-list .feedback__continuous__emo-list__table-row, .feedback__continuous__emo-list .feedback__continuous__emo-list__item {
-        display: block;
-    }
     .feedback__continuous__emo-list .feedback__continuous__emo-list__table-row {
+        display: block;
         border: 1px solid #dfdae0;
         margin-bottom: 15px;
     }
@@ -12768,18 +12763,12 @@ html, body {
     .feedback__continuous__emo-list .feedback__continuous__emo-list__description {
         padding: 7px 5px;
         background: #f3f3f3;
+        display: block;
     }
     .feedback__continuous__emo-list .feedback__continuous__emo-list__description .feedback__continuous__emo-list__description-count {
         text-align: initial;
     }
-    .feedback__continuous__shapes-list__items-container {
-        float: none;
-        display: block;
-        overflow: hidden;
-    }
     .feedback__continuous__shapes-list__item {
-        max-width: none;
-        min-width: unset;
         overflow: hidden;
         padding-left: 1px;
         padding-right: 1px;
@@ -12968,9 +12957,11 @@ html, body {
         display: none !important;
     }
     .feedback__continuous__shapes-list__item {
-        min-width: 30px;
         padding-left: 1px;
         padding-right: 1px;
+    }
+    .fixed__feedback__continuous__thumbnail.fixed__feedback__continuous__thumbnail-right .feedback__continuous__emo-list .feedback__continuous__emo-list__item {
+        padding: 3px 0 5px;
     }
 }
 

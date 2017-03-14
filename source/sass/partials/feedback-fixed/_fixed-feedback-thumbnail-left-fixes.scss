@@ -66,7 +66,7 @@
   .feedback__continuous__emo-list {
     display: block;
     .feedback__continuous__emo-list__table-row,
-    .feedback__continuous__emo-list__item {
+    .feedback__continuous__emo-list__description {
       display: block;
     }
 
@@ -86,14 +86,8 @@
     }
 
     .feedback__continuous__emo-list__item {
-      padding-top: 3px;
-      padding-bottom: 5px;
+      padding: 3px 2px 5px;
     }
-  }
-
-  .feedback__continuous__shapes-list__items-container {
-    display: block;
-    float: none;
   }
 
   .feedback__container {
@@ -102,6 +96,11 @@
         padding: 10px 20px 0 0;
 
       }
+    }
+  }
+  &, .shapes__lg {
+    .feedback__continuous__emo-list__shape-item {
+      width: auto;
     }
   }
 }

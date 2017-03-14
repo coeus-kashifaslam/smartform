@@ -20,7 +20,7 @@
                         {% else %}
                         {% set totalClass = '' %}
                         {% endif %}
-                    <div class="feedback__continuous__emo-list__table-row {{totalClass}}">
+                    <div class="feedback__continuous__emo-list__table-row {{totalClass}} feedback__continuous__selection-continuous">
                         <div class="feedback__emo-list__item feedback__emo-list__description feedback__continuous__emo-list__item feedback__continuous__emo-list__description">
                             {% if rownumber.type == 'total'%}
                             <p class="feedback__continuous__emo-list__description-count feedback__emo-list__description-count">
@@ -30,10 +30,10 @@
                             <p>{{rownumber.string}}</p>
                             {% endif %}
                         </div>
-                        <div class="feedback__emo-list__item feedback__continuous__emo-list__item feedback__continuous__shapes-list feedback__continuous__selection-continuous">
-                            <div class="feedback__continuous__shapes-list__items-container">
+
                                 {% set numbers = [0,1,2,3,4,5,6,7,8,9,10]%}
                                 {% for number in numbers %}
+                        <div class="feedback__emo-list__item feedback__emo-list__shape-item feedback__continuous__emo-list__item feedback__continuous__emo-list__shape-item">
 
                                     {% if number == 0 or number == 1 %}
                                     {% set oneStar = 'tooltip__ico-selected' %}
@@ -60,8 +60,8 @@
                                 <div class="feedback__continuous__shapes-list__item">
                                     <input type="radio" name="feedbackContinuous">
                                     <label class="feedback__item-label">
-                                        <i class="ico ico-star icomoon-default"></i>
-                                        <i class="ico ico-star-selected icomoon-sudo"></i>
+                                        <i class="ico ico-happy icomoon-default"></i>
+                                        <i class="ico ico-happy-selected icomoon-sudo"></i>
                                     </label>
                                     <div class="feedback__item-tooltip-container feedback__continuous__shapes-list__item-tooltip-container top">
                                         <div class="feedback__item__tooltip-body">
@@ -77,9 +77,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                {% endfor %}
-                            </div>
                         </div>
+                                {% endfor %}
+
                     </div>
                     {% endfor %}
                 </div>

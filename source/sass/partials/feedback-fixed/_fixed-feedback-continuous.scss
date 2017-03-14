@@ -1,11 +1,12 @@
 .feedback__continuous__container {
   border: 1px solid $default-border-color;
-  //@extend %feedback-container-margin-bottom;
   margin-bottom: -10px;
 }
+
 .feedback__continuous__emo-list {
   display: table;
   width: 100%;
+  border-collapse: collapse;
   .feedback__continuous__emo-list__table-row {
     display: table-row;
     &:last-of-type {
@@ -24,7 +25,7 @@
   .feedback__continuous__emo-list__item {
     display: table-cell;
     vertical-align: middle;
-    padding: 15px 0;
+    padding: 5px 0;
   }
   .feedback__continuous__emo-list__description {
     p {
@@ -32,34 +33,26 @@
       @extend %feedback-label-fontsize;
     }
   }
+  .feedback__continuous__emo-list__shape-item {
+    width: 33px;
+  }
 }
 
-.feedback__continuous__shapes-list__items-container {
-  display: table;
-  table-layout: fixed;
-  float: right;
-}
 .feedback__continuous__shapes-list__item {
-  display: table-cell;
-  @extend %shape-col-minwidth;
-  padding-left: 2px;
-  padding-right: 2px;
-  vertical-align: middle;
   text-align: center;
   position: relative;
   .icomoon-sudo {
     display: none;
   }
   @media (min-width: 768px) and (max-width: 991px) {
-    min-width: 30px;
     padding-left: 1px;
     padding-right: 1px;
   }
 }
 
 .feedback__continuous__selection-continuous {
-  .feedback__continuous__shapes-list__item-hover,
-  .feedback__continuous__shapes-list__item-selected {
+  .feedback__continuous__emo-list__shape-item-hover,
+  .feedback__continuous__emo-list__shape-item-selected {
     .icomoon-default {
       display: none;
     }
@@ -70,8 +63,8 @@
 }
 
 .feedback__continuous__selection-single {
-  .feedback__continuous__shapes-list__item-hover-current,
-  .feedback__continuous__shapes-list__item-selected-current {
+  .feedback__continuous__emo-list__shape-item-hover-current,
+  .feedback__continuous__emo-list__shape-item-selected-current {
     .icomoon-default {
       display: none;
     }
@@ -82,7 +75,7 @@
 }
 
 @media (min-width: 768px) {
-  .feedback__continuous__shapes-list__item-hover-current {
+  .feedback__continuous__emo-list__shape-item-hover-current {
     .feedback__item-tooltip-container {
       display: block;
     }
@@ -96,12 +89,8 @@
     border: 0 none;
   }
   .feedback__continuous__emo-list {
-    display: block;
-    .feedback__continuous__emo-list__table-row,
-    .feedback__continuous__emo-list__item {
-      display: block;
-    }
     .feedback__continuous__emo-list__table-row {
+      display: block;
       border: 1px solid $default-border-color;
       margin-bottom: 15px;
     }
@@ -111,20 +100,13 @@
     .feedback__continuous__emo-list__description {
       padding: 7px 5px;
       background: $default-background-light;
+      display: block;
       .feedback__continuous__emo-list__description-count {
         text-align: initial;
       }
     }
   }
-  .feedback__continuous__shapes-list__items-container {
-    float: none;
-    display: block;
-    overflow: hidden;
-  }
   .feedback__continuous__shapes-list__item {
-    max-width: none;
-    min-width: unset;
-    //width: 1%;
     overflow: hidden;
     padding-left: 1px;
     padding-right: 1px;
@@ -144,7 +126,6 @@
   }
   .feedback__continuous__emo-list {
     .feedback__continuous__emo-list__item {
-      border: 0 none;
       padding: 10px 0;
     }
   }
@@ -208,9 +189,10 @@
       font-size: $default-icon-lg;
     }
   }
+  .feedback__continuous__emo-list__shape-item {
+    width: 45px;
+  }
 }
-
-
 
 //single Row
 .feedback__continuous__emo-list {
