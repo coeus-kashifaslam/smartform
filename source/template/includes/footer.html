@@ -1,0 +1,32 @@
+<!--Footer Start-->
+{% if footerBg == 'active'%}
+<footer class="page__footer page__footer__active">
+{% else %}
+<footer class="page__footer">
+{% endif %}
+    <div class="sff-form__content-wrap">
+        <div class="page__footer-wrap">
+            <div class="row">
+                <div class="col-sm-7">
+                    <ul class="list-inline page__footer__quick-links">
+                        <li><a href="#">homepage</a></li>
+                        <li><a href="#">ALGEMENE VOORWAARDEN</a></li>
+                        <li><a href="#">PRIVACY</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-5">
+                    <p class="power-by__info">
+                        <span>powered by</span>
+                        {% if footerBg == 'active'%}
+                        <span class="power-by__logo"><img class="b-lazy" data-src="images/powered-by-white.png" src=images/loader.gif alt="..."></span>
+                        {% else %}
+                            <span class="power-by__logo"><img class="b-lazy" data-src="images/powered-by.png" src=images/loader.gif alt="..."></span>
+                        {% endif %}
+                    </p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--Footer End-->

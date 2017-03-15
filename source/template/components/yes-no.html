@@ -1,0 +1,27 @@
+<!--Yes No Start-->
+<article class="form__elem">
+    <div class="elem__yes-no">
+        <h3 class="form__elem__title">Yes No</h3>
+        <div class="form__elem__body">
+            <p class="form__elem__help-text">Help Text goes here</p>
+            <div class="row form__elem__options-row">
+                {% set radioElements = [1,2,3,4,5,6]%}
+                {% for radioElement in radioElements %}
+                <div class="col-sm-6 radio-col">
+                    <div class="elem-type__radio">
+                        <input type="radio" class="form-radio" name="radio" id="radioRow{{radioRow}}-radio{{radioElement}}">
+                        <label for="radioRow{{radioRow}}-radio{{radioElement}}">
+                            <span class="elem-type__radio__label">Radio 1</span>
+                        </label>
+                    </div>
+                </div>
+                {% if checkboxElement % 2 == 0 %}
+                <div class="clearfix"></div>
+                {% endif %}
+                {% endfor %}
+            </div>
+            <p class="form__elem__error-text">This is error Message</p>
+        </div>
+    </div>
+</article>
+<!--Yes No End-->

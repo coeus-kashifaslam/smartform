@@ -1,0 +1,72 @@
+<!--Form Content Start-->
+<div class="sff-form__wrapper">
+    <div class="sff-form__content-wrap">
+        <div class="sff-form__content-body">
+            <form action="#">
+                <div class="sff-form__legend">
+                    <h1 class="form__legend">Form Name Goes Here</h1>
+                </div>
+                <div class="form-fieldset">
+
+                    {# Thumbnail Right #}
+                    {% include 'template/components/feedback-fixed/thumbnail-right/fixed-feedback-continuous-thumbnail-right-1-row.html' %}
+                    {% include 'template/components/feedback-fixed/thumbnail-right/fixed-feedback-continuous-thumbnail-right.html' %}
+                    {% include 'template/components/feedback-fixed/thumbnail-right/fixed-feedback-continuous-thumbnail-right-5-icons-1-row.html' %}
+                    {% include 'template/components/feedback-fixed/thumbnail-right/fixed-feedback-continuous-thumbnail-right-5-icons.html' %}
+
+
+                    {% include 'template/components/feedback-fixed/thumbnail-right/fixed-feedback-grid-thumbnail-right-5-icons.html' %}
+                    {% include 'template/components/feedback-fixed/thumbnail-right/fixed-feedback-grid-thumbnail-right.html' %}
+                    {% include 'template/components/feedback-fixed/thumbnail-right/fixed-feedback-default-thumbnail-right-5-icons.html' %}
+                    {% include 'template/components/feedback-fixed/thumbnail-right/fixed-feedback-default-thumbnail-right.html' %}
+
+                    {# Thumbnail Left #}
+                    {% include 'template/components/feedback-fixed/thumbnail-left/fixed-feedback-continuous-thumbnail-left-5-icons.html' %}
+                    {% include 'template/components/feedback-fixed/thumbnail-left/fixed-feedback-continuous-thumbnail-left.html' %}
+                    {% include 'template/components/feedback-fixed/thumbnail-left/fixed-feedback-grid-thumbnail-left-5-icons.html' %}
+                    {% include 'template/components/feedback-fixed/thumbnail-left/fixed-feedback-grid-thumbnail-left.html' %}
+                    {% include 'template/components/feedback-fixed/thumbnail-left/fixed-feedback-default-thumbnail-left-5-icons.html' %}
+                    {% include 'template/components/feedback-fixed/thumbnail-left/fixed-feedback-default-thumbnail-left.html' %}
+
+                    {# Full width #}
+                    {% include 'template/components/feedback-fixed/full-width/fixed-feedback-continuous.html' %}
+                    {% include 'template/components/feedback-fixed/full-width/fixed-feedback-continuous-1-row.html' %}
+                    {% include 'template/components/feedback-fixed/full-width/fixed-feedback-continuous-5-icons.html' %}
+                    {% include 'template/components/feedback-fixed/full-width/fixed-feedback-grid-5-icons.html' %}
+                    {% include 'template/components/feedback-fixed/full-width/fixed-feedback-grid.html' %}
+                    {% include 'template/components/feedback-fixed/full-width/fixed-feedback-default-5-icons.html' %}
+                    {% include 'template/components/feedback-fixed/full-width/fixed-feedback-default.html' %}
+
+                    {# Fixed Feedback Elements
+                        {% include 'template/components/feedback-fixed/fixed-feedback-default-thumbnail-right.html' %}
+                    #}
+
+                    {% include 'template/components/short-text.html' %}
+                    {% set singleCol = 'true' %}
+                    {% include 'template/components/long-text.html' %}
+                    {% set singleCol = 'false' %}
+                    {% include 'template/components/long-text.html' %}
+
+                    {% include 'template/components/dropdown.html' %}
+                    {% include 'template/components/multiple-choice.html' %}
+                    {% include 'template/components/yes-no.html' %}
+                    {% include 'template/components/legal-text.html' %}
+                    {% include 'template/components/pros-cons.html' %}
+                    {% include 'template/components/picture.html' %}
+
+                    {% set excludeBorder= 'false' %}
+                    {% include 'template/components/free-text.html' %}
+                    {% set excludeBorder= 'true' %}
+                    {% include 'template/components/free-text.html' %}
+                    {% include 'template/components/feedback-popup.html' %}
+
+                </div>
+            </form>
+        </div>
+        <div class="sff-form__footer">
+            <button class="sff-form__submit">Submit</button>
+        </div>
+    </div>
+</div>
+<!--Form Content End-->
+

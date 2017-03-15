@@ -1,0 +1,26 @@
+{
+  "name": "starter",
+  "description": "",
+  "main": "build/index.html",
+  "authors": [
+    "coeus-kashifaslam <kashif.aslam@coeus-solutions.de>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/coeus-kashifaslam/starter",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "fontawesome#^4.7.0",
+    "modernizer": "^2.8.2",
+    "bootstrap-select": "^1.12.1",
+    "jquery": "1.9.1",
+    "bLazy": "blazy#^1.8.2"
+  }
+}

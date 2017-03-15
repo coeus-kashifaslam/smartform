@@ -1,0 +1,26 @@
+.form-textarea {
+  resize: none;
+}
+.elem__long-text__one-col {
+  .form-textarea {
+    //border: 0 none;
+    //padding: 7px 0 0 0;
+  }
+}
+.elem__long-text__two-col {
+  .form-textarea {
+    height: 150px;
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .elem__long-text__one-col {
+    .form-textarea {
+      border: 1px solid $default-border-color;
+      padding: 15px;
+      height: 150px;
+    }
+  }
+}
