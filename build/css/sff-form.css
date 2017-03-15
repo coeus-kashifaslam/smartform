@@ -10189,6 +10189,7 @@ html, body {
 .page__footer__quick-links {
     padding: 12px 0 12px 1px;
     margin: 0;
+    text-align: left;
 }
 
 .page__footer__quick-links > li {
@@ -11345,6 +11346,31 @@ html, body {
     padding-right: 40px;
 }
 
+.content__rtl .elem-type__radio .form-radio + label {
+    padding-left: 0;
+    padding-right: 45px;
+}
+
+.content__rtl .form-radio + label:before {
+    right: 0;
+    left: auto;
+}
+
+.content__rtl .form-checkbox + label {
+    padding-left: 0;
+    padding-right: 45px;
+}
+
+.content__rtl .form-checkbox + label span:before {
+    right: 0;
+    left: auto;
+}
+
+.content__rtl .form-checkbox:checked + label span:after {
+    right: 5px;
+    left: auto;
+}
+
 .content__rtl .custom-footer__address-block .list__contact-info li .contact-info__content {
     padding-left: 0;
     padding-right: 25px;
@@ -11929,6 +11955,9 @@ html, body {
     }
     .content__rtl .popup__input-col {
         right: 25%;
+    }
+    .content__rtl .sff-form__footer {
+        text-align: left;
     }
 }
 
