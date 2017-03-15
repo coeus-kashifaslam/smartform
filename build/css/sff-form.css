@@ -10547,7 +10547,7 @@ html, body {
 }
 
 .caption-form__form-group__label {
-    line-height: 45px;
+    padding-top: 13px;
 }
 
 .caption-form__form-gorup__control {
