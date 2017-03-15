@@ -144,12 +144,11 @@ $icon-cols-width-mobile: 100%;
     }
   }
 
-  .state__single {
-    &.form__elem__rating-thumbnail-right {
-      .rating__icons__col {
-        .rating__icons__col__content {
-          height: $thumbnail-left-icons-col-height;
-        }
+
+  .form__elem__rating-thumbnail-right {
+    .rating__icons__col {
+      .rating__icons__col__content {
+        height: $thumbnail-left-icons-col-height;
       }
     }
   }
