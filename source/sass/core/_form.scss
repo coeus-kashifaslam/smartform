@@ -57,6 +57,7 @@
   }
 }
 .form-fieldset {
+  //overflow: hidden;
   > .form__elem {
     &:last-child {
       margin-bottom: 0;
