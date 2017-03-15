@@ -11089,11 +11089,11 @@ html, body {
     display: inline-block;
 }
 
-.feedback__continuous__selection-single .feedback__continuous__emo-list__shape-item-hover-current .icomoon-default, .feedback__continuous__selection-single .feedback__continuous__emo-list__shape-item-selected-current .icomoon-default {
+.feedback__continuous__selection-single .feedback__continuous__emo-list__shape-item-selected-current .icomoon-default {
     display: none;
 }
 
-.feedback__continuous__selection-single .feedback__continuous__emo-list__shape-item-hover-current .icomoon-sudo, .feedback__continuous__selection-single .feedback__continuous__emo-list__shape-item-selected-current .icomoon-sudo {
+.feedback__continuous__selection-single .feedback__continuous__emo-list__shape-item-selected-current .icomoon-sudo {
     display: inline-block;
 }
 
