@@ -11335,6 +11335,16 @@ html, body {
     margin-right: -5px;
 }
 
+.content__rtl .caption-form__icon {
+    left: auto;
+    right: 12px;
+}
+
+.content__rtl .caption-form__caption-top {
+    padding-left: 15px;
+    padding-right: 40px;
+}
+
 .content__rtl .custom-footer__address-block .list__contact-info li .contact-info__content {
     padding-left: 0;
     padding-right: 25px;
@@ -11913,6 +11923,12 @@ html, body {
     .content__rtl .fixed__feedback__continuous .feedback__container .feedback__emo-list .feedback__emo-list__description {
         padding-right: 0;
         padding-left: 20px;
+    }
+    .content__rtl .popup__label-col {
+        left: 75%;
+    }
+    .content__rtl .popup__input-col {
+        right: 25%;
     }
 }
 

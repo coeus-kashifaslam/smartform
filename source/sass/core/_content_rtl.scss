@@ -59,6 +59,23 @@
       }
     }
 
+
+    .popup__label-col {
+      left: 75%;
+    }
+    .popup__input-col {
+      right: 25%;
+    }
+
+  }
+
+  .caption-form__icon {
+    left: auto;
+    right: 12px;
+  }
+  .caption-form__caption-top {
+    padding-left: 15px;
+    padding-right: 40px;
   }
 
   //Custom footer Address section
@@ -76,4 +93,8 @@
       }
     }
   }
+
 }
+
+
+
