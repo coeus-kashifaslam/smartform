@@ -39,18 +39,14 @@
 @import "partials/short-text";
 @import "partials/popup";
 
-//@import "partials/feedback-designed/rating-comp";
+@import "partials/feedback-designed/rating-comp";
 @import "partials/feedback-designed/ranking-scale-grid";
-//@import "partials/feedback-designed/ranking-scale-continuous";
-//@import "partials/feedback-designed/rating-full-width";
-//@import "partials/feedback-designed/rating-thumbnail-right";
-//@import "partials/feedback-designed/rating-thumbnail-left";
-
-
+@import "partials/feedback-designed/ranking-scale-continuous";
+@import "partials/feedback-designed/rating-full-width";
+@import "partials/feedback-designed/rating-thumbnail-right";
+@import "partials/feedback-designed/rating-thumbnail-left";
 @import "partials/feedback-designed/ranking-scale-default";
-@import "partials/feedback-fixed/fixed-seller-rating-default";
 
-@import "partials/feedback-fixed/fixed-seller-rating-grid";
 
 @import "partials/feedback";
 @import "partials/feedback-default";

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Smart Form</title>
-    <link rel="stylesheet" href="css/sff-form.css?version=2031776">
+    <link rel="stylesheet" href="css/sff-form.css?version=4928910">
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -77,282 +77,1379 @@
                 <div class="form-fieldset">
 
                     
-                    <!--Ranking Scale Frid-->
+
+                    <!--Rating Start-->
+
 <article class="form__elem">
-    <div class="elem__rating fixed__rating__grid">
-        <h3 class="form__elem__title">Seller Rating Grid</h3>
+    <div class="elem__rating elem__rating__full-width elem__rating-seller">
+        <h3 class="form__elem__title">Rating</h3>
         <div class="form__elem__body">
-            <p class="form__elem__help-text">Help Text</p>
-            <div class="elem_fixed__grid__container fixed__grid-table hide-radio">
-                <div class="grid__header fixed__grid-table__row fixed__grid-tooltip__row">
-                    <div class="fixed__grid-table__cell"></div>
+            <p class="form__elem__help-text">Help Text goes here</p>
+            <div class="rating__container">
+                
+                
+                <!--Rating Comp Start-->
+<div class="row">
+
+    <div class="rating-comp__row">
+
+        
+        <div class="col-sm-7 rating-comp__col-label">
+            
+                <p class="rating-comp__label">Rating Quesion Label</p>
+            
+        
+
+        </div>
+
+        
+            <div class="col-sm-5 rating-comp__col-icons">
+        
+
+            <div class="rating-comp__col-icons__open">
+                <!--To add border around ratig element add this class in above div tag (rating-comp__col-icons__bordered)-->
+
+                <ul class="list-inline rating-comp__icons-list rating-comp__selection-type__continuous">
+                    <!--to show large stars on mobile add this class in above ul tag (rating-comp__icons-count__large)-->
+                    <!--to show large stars on mobile add this class in above ul tag (rating-comp__icons-count__small)-->
                     
-                    
-                    <div class="fixed__grid-table__cell fixed__grid-shape__col">
-                        <p>Toolti 1</p>
-                    </div>
-                    
-                    <div class="fixed__grid-table__cell fixed__grid-shape__col">
-                        <p>Toolti 2</p>
-                    </div>
-                    
-                    <div class="fixed__grid-table__cell fixed__grid-shape__col">
-                        <p>Toolti 3</p>
-                    </div>
-                    
-                    <div class="fixed__grid-table__cell fixed__grid-shape__col">
-                        <p>Toolti 4</p>
-                    </div>
-                    
-                    <div class="fixed__grid-table__cell fixed__grid-shape__col">
-                        <p>Toolti 5</p>
-                    </div>
-                    
-                </div>
+                    <li>
+                        <input type="radio" name="rating-radio" value="radio0" id="fw-rating-row1-radio0">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="fw-rating-row1-radio0">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio1" id="fw-rating-row1-radio1">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="fw-rating-row1-radio1">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio2" id="fw-rating-row1-radio2">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="fw-rating-row1-radio2">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio3" id="fw-rating-row1-radio3">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="fw-rating-row1-radio3">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio4" id="fw-rating-row1-radio4">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="fw-rating-row1-radio4">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li>
+                </ul>
 
                 
+                    
+                        <p class="rating-comp__value-count">
+                            <span class="rating-comp__value-count__calculated">4</span>/<span class="rating-comp__value-count__total">5</span>
+                        </p>
+                    
                 
-                <div class="grid__body fixed__grid-table__row fixed__grid-content__row fixed__grid__selection-single">
-                    <div class="fixed__grid-table__cell fixed__grid-label-col">
-                        <p>Lorem Ipsum Goes Here</p>
-                    </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!--Rating Comp End-->
+
+                
+                <!--Rating Comp Start-->
+<div class="row">
+
+    <div class="rating-comp__row">
+
+        
+        <div class="col-sm-7 rating-comp__col-label">
+            
+                <p class="rating-comp__label">Rating Quesion Label</p>
+            
+        
+
+        </div>
+
+        
+            <div class="col-sm-5 rating-comp__col-icons">
+        
+
+            <div class="rating-comp__col-icons__open">
+                <!--To add border around ratig element add this class in above div tag (rating-comp__col-icons__bordered)-->
+
+                <ul class="list-inline rating-comp__icons-list rating-comp__selection-type__continuous">
+                    <!--to show large stars on mobile add this class in above ul tag (rating-comp__icons-count__large)-->
+                    <!--to show large stars on mobile add this class in above ul tag (rating-comp__icons-count__small)-->
                     
-                    
-                    <div class="fixed__grid-table__cell fixed__grid-shape__col">
-                        <input type="radio" id="gridRow0-gridCell0">
-                        <label for="gridRow0-gridCell0" class="grid-shape-label">
-                            <span class="grid-shape-span">
-                                <i class="fixed__grid-shape icomoon-default ico ico-comments"></i>
-                                <i class="fixed__grid-shape icomoon-sudo ico ico-comments-selected"></i>
-                            </span>
-                            <span class="grid-text-span">Some text</span>
-                            <!--For icon add classes ico ico-ICON-NAME-->
-                            <!--<span class="grid-text-span ico ico-comments"></span>-->
+                    <li>
+                        <input type="radio" name="rating-radio" value="radio0" id="fw-rating-row2-radio0">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="fw-rating-row2-radio0">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
                         </label>
-                    </div>
-                    
-                    <div class="fixed__grid-table__cell fixed__grid-shape__col">
-                        <input type="radio" id="gridRow0-gridCell1">
-                        <label for="gridRow0-gridCell1" class="grid-shape-label">
-                            <span class="grid-shape-span">
-                                <i class="fixed__grid-shape icomoon-default ico ico-comments"></i>
-                                <i class="fixed__grid-shape icomoon-sudo ico ico-comments-selected"></i>
-                            </span>
-                            <span class="grid-text-span">Some text</span>
-                            <!--For icon add classes ico ico-ICON-NAME-->
-                            <!--<span class="grid-text-span ico ico-comments"></span>-->
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio1" id="fw-rating-row2-radio1">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="fw-rating-row2-radio1">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
                         </label>
-                    </div>
-                    
-                    <div class="fixed__grid-table__cell fixed__grid-shape__col">
-                        <input type="radio" id="gridRow0-gridCell2">
-                        <label for="gridRow0-gridCell2" class="grid-shape-label">
-                            <span class="grid-shape-span">
-                                <i class="fixed__grid-shape icomoon-default ico ico-comments"></i>
-                                <i class="fixed__grid-shape icomoon-sudo ico ico-comments-selected"></i>
-                            </span>
-                            <span class="grid-text-span">Some text</span>
-                            <!--For icon add classes ico ico-ICON-NAME-->
-                            <!--<span class="grid-text-span ico ico-comments"></span>-->
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio2" id="fw-rating-row2-radio2">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="fw-rating-row2-radio2">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
                         </label>
-                    </div>
-                    
-                    <div class="fixed__grid-table__cell fixed__grid-shape__col">
-                        <input type="radio" id="gridRow0-gridCell3">
-                        <label for="gridRow0-gridCell3" class="grid-shape-label">
-                            <span class="grid-shape-span">
-                                <i class="fixed__grid-shape icomoon-default ico ico-comments"></i>
-                                <i class="fixed__grid-shape icomoon-sudo ico ico-comments-selected"></i>
-                            </span>
-                            <span class="grid-text-span">Some text</span>
-                            <!--For icon add classes ico ico-ICON-NAME-->
-                            <!--<span class="grid-text-span ico ico-comments"></span>-->
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio3" id="fw-rating-row2-radio3">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="fw-rating-row2-radio3">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
                         </label>
-                    </div>
-                    
-                    <div class="fixed__grid-table__cell fixed__grid-shape__col">
-                        <input type="radio" id="gridRow0-gridCell4">
-                        <label for="gridRow0-gridCell4" class="grid-shape-label">
-                            <span class="grid-shape-span">
-                                <i class="fixed__grid-shape icomoon-default ico ico-comments"></i>
-                                <i class="fixed__grid-shape icomoon-sudo ico ico-comments-selected"></i>
-                            </span>
-                            <span class="grid-text-span">Some text</span>
-                            <!--For icon add classes ico ico-ICON-NAME-->
-                            <!--<span class="grid-text-span ico ico-comments"></span>-->
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio4" id="fw-rating-row2-radio4">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="fw-rating-row2-radio4">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
                         </label>
-                    </div>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li>
+                </ul>
+
+                
                     
+                        <p class="rating-comp__value-count">
+                            <span class="rating-comp__value-count__calculated">4</span>/<span class="rating-comp__value-count__total">5</span>
+                        </p>
+                    
+                
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!--Rating Comp End-->
+
+                <div class="rating-comp__separater"></div>
+                
+                
+                
+                <!--Rating Comp Start-->
+<div class="row">
+
+    <div class="rating-comp__row">
+
+        
+        <div class="col-sm-7 rating-comp__col-label">
+            
+                <p class="rating-comp__label rating-comp__label__bold">Total:
+            
+        
+
+        </div>
+
+        
+            <div class="col-sm-5 rating-comp__col-icons">
+        
+
+            <div class="rating-comp__col-icons__open">
+                <!--To add border around ratig element add this class in above div tag (rating-comp__col-icons__bordered)-->
+
+                <ul class="list-inline rating-comp__icons-list rating-comp__selection-type__continuous">
+                    <!--to show large stars on mobile add this class in above ul tag (rating-comp__icons-count__large)-->
+                    <!--to show large stars on mobile add this class in above ul tag (rating-comp__icons-count__small)-->
+                    
+                    <li>
+                        <input type="radio" name="rating-radio" value="radio0" id="fw-rating-row3-radio0">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="fw-rating-row3-radio0">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio1" id="fw-rating-row3-radio1">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="fw-rating-row3-radio1">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio2" id="fw-rating-row3-radio2">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="fw-rating-row3-radio2">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio3" id="fw-rating-row3-radio3">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="fw-rating-row3-radio3">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio4" id="fw-rating-row3-radio4">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="fw-rating-row3-radio4">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li>
+                </ul>
+
+                
+                    
+                        <p class="rating-comp__value-count">
+                            <span class="rating-comp__value-count__calculated">4</span>/<span class="rating-comp__value-count__total">5</span>
+                        </p>
+                    
+                
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!--Rating Comp End-->
+
+            </div>
+        </div>
+    </div>
+    <div class="form__elem form__elem__no-border">
+    <div class="rating-comp__caption-form">
+        <div class="caption-form__legend">
+
+            <span class="caption-form__icon">
+                <i class="ico ico-exclamation"></i>
+            </span>
+
+            <p class="caption-form__caption-top">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci aperiam aspernatur, assumenda consectetur consequuntur corporis culpa debitis deleniti dignissimos dolorem dolores eius
+            </p>
+        </div>
+        <div class="caption-form__wrap">
+            <div class="caption-form__form-group">
+                
+                
+                <div class="row">
+                    <div class="col-sm-3">
+                        <p class="caption-form__form-group__label">Feedback Email 1</p>
+                    </div>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control caption-form__form-gorup__control" placeholder="Some Placeholder">
+                    </div>
+                    <div class="clearfix"></div>
                 </div>
                 
-                <div class="grid__body fixed__grid-table__row fixed__grid-content__row fixed__grid__selection-single">
-                    <div class="fixed__grid-table__cell fixed__grid-label-col">
-                        <p>Lorem Ipsum Goes Here</p>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <p class="caption-form__form-group__label">Feedback Email 2</p>
                     </div>
-                    
-                    
-                    <div class="fixed__grid-table__cell fixed__grid-shape__col">
-                        <input type="radio" id="gridRow1-gridCell0">
-                        <label for="gridRow1-gridCell0" class="grid-shape-label">
-                            <span class="grid-shape-span">
-                                <i class="fixed__grid-shape icomoon-default ico ico-comments"></i>
-                                <i class="fixed__grid-shape icomoon-sudo ico ico-comments-selected"></i>
-                            </span>
-                            <span class="grid-text-span">Some text</span>
-                            <!--For icon add classes ico ico-ICON-NAME-->
-                            <!--<span class="grid-text-span ico ico-comments"></span>-->
-                        </label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control caption-form__form-gorup__control" placeholder="Some Placeholder">
                     </div>
-                    
-                    <div class="fixed__grid-table__cell fixed__grid-shape__col">
-                        <input type="radio" id="gridRow1-gridCell1">
-                        <label for="gridRow1-gridCell1" class="grid-shape-label">
-                            <span class="grid-shape-span">
-                                <i class="fixed__grid-shape icomoon-default ico ico-comments"></i>
-                                <i class="fixed__grid-shape icomoon-sudo ico ico-comments-selected"></i>
-                            </span>
-                            <span class="grid-text-span">Some text</span>
-                            <!--For icon add classes ico ico-ICON-NAME-->
-                            <!--<span class="grid-text-span ico ico-comments"></span>-->
-                        </label>
-                    </div>
-                    
-                    <div class="fixed__grid-table__cell fixed__grid-shape__col">
-                        <input type="radio" id="gridRow1-gridCell2">
-                        <label for="gridRow1-gridCell2" class="grid-shape-label">
-                            <span class="grid-shape-span">
-                                <i class="fixed__grid-shape icomoon-default ico ico-comments"></i>
-                                <i class="fixed__grid-shape icomoon-sudo ico ico-comments-selected"></i>
-                            </span>
-                            <span class="grid-text-span">Some text</span>
-                            <!--For icon add classes ico ico-ICON-NAME-->
-                            <!--<span class="grid-text-span ico ico-comments"></span>-->
-                        </label>
-                    </div>
-                    
-                    <div class="fixed__grid-table__cell fixed__grid-shape__col">
-                        <input type="radio" id="gridRow1-gridCell3">
-                        <label for="gridRow1-gridCell3" class="grid-shape-label">
-                            <span class="grid-shape-span">
-                                <i class="fixed__grid-shape icomoon-default ico ico-comments"></i>
-                                <i class="fixed__grid-shape icomoon-sudo ico ico-comments-selected"></i>
-                            </span>
-                            <span class="grid-text-span">Some text</span>
-                            <!--For icon add classes ico ico-ICON-NAME-->
-                            <!--<span class="grid-text-span ico ico-comments"></span>-->
-                        </label>
-                    </div>
-                    
-                    <div class="fixed__grid-table__cell fixed__grid-shape__col">
-                        <input type="radio" id="gridRow1-gridCell4">
-                        <label for="gridRow1-gridCell4" class="grid-shape-label">
-                            <span class="grid-shape-span">
-                                <i class="fixed__grid-shape icomoon-default ico ico-comments"></i>
-                                <i class="fixed__grid-shape icomoon-sudo ico ico-comments-selected"></i>
-                            </span>
-                            <span class="grid-text-span">Some text</span>
-                            <!--For icon add classes ico ico-ICON-NAME-->
-                            <!--<span class="grid-text-span ico ico-comments"></span>-->
-                        </label>
-                    </div>
-                    
-                </div>
-                
-                <div class="grid__body fixed__grid-table__row fixed__grid-content__row fixed__grid__selection-single">
-                    <div class="fixed__grid-table__cell fixed__grid-label-col">
-                        <p>Lorem Ipsum Goes Here</p>
-                    </div>
-                    
-                    
-                    <div class="fixed__grid-table__cell fixed__grid-shape__col">
-                        <input type="radio" id="gridRow2-gridCell0">
-                        <label for="gridRow2-gridCell0" class="grid-shape-label">
-                            <span class="grid-shape-span">
-                                <i class="fixed__grid-shape icomoon-default ico ico-comments"></i>
-                                <i class="fixed__grid-shape icomoon-sudo ico ico-comments-selected"></i>
-                            </span>
-                            <span class="grid-text-span">Some text</span>
-                            <!--For icon add classes ico ico-ICON-NAME-->
-                            <!--<span class="grid-text-span ico ico-comments"></span>-->
-                        </label>
-                    </div>
-                    
-                    <div class="fixed__grid-table__cell fixed__grid-shape__col">
-                        <input type="radio" id="gridRow2-gridCell1">
-                        <label for="gridRow2-gridCell1" class="grid-shape-label">
-                            <span class="grid-shape-span">
-                                <i class="fixed__grid-shape icomoon-default ico ico-comments"></i>
-                                <i class="fixed__grid-shape icomoon-sudo ico ico-comments-selected"></i>
-                            </span>
-                            <span class="grid-text-span">Some text</span>
-                            <!--For icon add classes ico ico-ICON-NAME-->
-                            <!--<span class="grid-text-span ico ico-comments"></span>-->
-                        </label>
-                    </div>
-                    
-                    <div class="fixed__grid-table__cell fixed__grid-shape__col">
-                        <input type="radio" id="gridRow2-gridCell2">
-                        <label for="gridRow2-gridCell2" class="grid-shape-label">
-                            <span class="grid-shape-span">
-                                <i class="fixed__grid-shape icomoon-default ico ico-comments"></i>
-                                <i class="fixed__grid-shape icomoon-sudo ico ico-comments-selected"></i>
-                            </span>
-                            <span class="grid-text-span">Some text</span>
-                            <!--For icon add classes ico ico-ICON-NAME-->
-                            <!--<span class="grid-text-span ico ico-comments"></span>-->
-                        </label>
-                    </div>
-                    
-                    <div class="fixed__grid-table__cell fixed__grid-shape__col">
-                        <input type="radio" id="gridRow2-gridCell3">
-                        <label for="gridRow2-gridCell3" class="grid-shape-label">
-                            <span class="grid-shape-span">
-                                <i class="fixed__grid-shape icomoon-default ico ico-comments"></i>
-                                <i class="fixed__grid-shape icomoon-sudo ico ico-comments-selected"></i>
-                            </span>
-                            <span class="grid-text-span">Some text</span>
-                            <!--For icon add classes ico ico-ICON-NAME-->
-                            <!--<span class="grid-text-span ico ico-comments"></span>-->
-                        </label>
-                    </div>
-                    
-                    <div class="fixed__grid-table__cell fixed__grid-shape__col">
-                        <input type="radio" id="gridRow2-gridCell4">
-                        <label for="gridRow2-gridCell4" class="grid-shape-label">
-                            <span class="grid-shape-span">
-                                <i class="fixed__grid-shape icomoon-default ico ico-comments"></i>
-                                <i class="fixed__grid-shape icomoon-sudo ico ico-comments-selected"></i>
-                            </span>
-                            <span class="grid-text-span">Some text</span>
-                            <!--For icon add classes ico ico-ICON-NAME-->
-                            <!--<span class="grid-text-span ico ico-comments"></span>-->
-                        </label>
-                    </div>
-                    
+                    <div class="clearfix"></div>
                 </div>
                 
             </div>
-            <div class="ranking__message">
-                <p>
-                    You will find this review online as a
-                    <span><i class="ico ico-star ranking__message__selected"></i></span>
-                    <span><i class="ico ico-star ranking__message__selected"></i></span>
-                    <span><i class="ico ico-star ranking__message__selected"></i></span>
-                    <span><i class="ico ico-star"></i></span>
-                    <span><i class="ico ico-star"></i></span>
-                    <span class="count__current">3</span><span class="count__total">/5</span>
-                    rating.
-                </p>
+            <div class="col-sm-offset-3 col-sm-9 caption-form__error-text">
+                <p class="form__elem__error-text">This is error Message</p>
+            </div>
+            <div class="clearfix"></div>
+            <div class="caption-form__caption-bottom">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A asperiores autem beatae cupiditate distinctio dolore earum est fugit, itaque laborum nisi nulla, obcaecati odit optio quis repudiandae tempora temporibus ut.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</article>
+<!--Rating End-->
+
+                    <!--Rating Start-->
+
+<div class="form__elem__rating-thumbnail-right">
+    <article class="form__elem">
+        <div class="elem__rating elem__rating-thumbnail-right__header">
+            <h3 class="form__elem__title">Rating</h3>
+            <p class="form__elem__help-text">Help Text goes here</p>
+        </div>
+    </article>
+
+    <div class="form__elem elem__rating-thumbnail-right__body">
+        <div class="row">
+            <div class="col-sm-5 col-sm-push-7 rating__thumbnail__col">
+                <div class="rating__thumbnail__col__content">
+                    <div class="rating__thumbnail__container">
+                        <img class="b-lazy product-thumbnail" data-src="images/product.jpg" src=images/loader.gif alt="...">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-7 col-sm-pull-5 rating__icons__col">
+                <div class="rating__icons__col__content">
+                    
+                    
+                    
+                    <!--Rating Comp Start-->
+<div class="row">
+
+    <div class="rating-comp__row">
+
+        
+        <div class="col-sm-6 rating-comp__col-label">
+            
+            <p class="rating-comp__label">Rating Quesion Label</p>
+            
+
+        
+
+        </div>
+
+        
+            <div class="col-sm-6 rating-comp__col-icons">
+        
+
+            <div class="rating-comp__col-icons__open">
+                <!--To add border around ratig element add this class in above div tag (rating-comp__col-icons__bordered)-->
+
+                <ul class="list-inline rating-comp__icons-list rating-comp__selection-type__continuous">
+                    <!--to show large stars on mobile add this class in above ul tag (rating-comp__icons-count__large)-->
+                    <!--to show large stars on mobile add this class in above ul tag (rating-comp__icons-count__small)-->
+                    
+                    <li>
+                        <input type="radio" name="rating-radio" value="radio0" id="tr-rating-row1-radio0">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tr-rating-row1-radio0">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio1" id="tr-rating-row1-radio1">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tr-rating-row1-radio1">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio2" id="tr-rating-row1-radio2">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tr-rating-row1-radio2">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio3" id="tr-rating-row1-radio3">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tr-rating-row1-radio3">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio4" id="tr-rating-row1-radio4">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tr-rating-row1-radio4">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li>
+                </ul>
+
+                
+                    <!--It will be empty in this case-->
+                
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!--Rating Comp End-->
+
+                    
+                    <!--Rating Comp Start-->
+<div class="row">
+
+    <div class="rating-comp__row">
+
+        
+        <div class="col-sm-6 rating-comp__col-label">
+            
+            <p class="rating-comp__label">Rating Quesion Label</p>
+            
+
+        
+
+        </div>
+
+        
+            <div class="col-sm-6 rating-comp__col-icons">
+        
+
+            <div class="rating-comp__col-icons__open">
+                <!--To add border around ratig element add this class in above div tag (rating-comp__col-icons__bordered)-->
+
+                <ul class="list-inline rating-comp__icons-list rating-comp__selection-type__continuous">
+                    <!--to show large stars on mobile add this class in above ul tag (rating-comp__icons-count__large)-->
+                    <!--to show large stars on mobile add this class in above ul tag (rating-comp__icons-count__small)-->
+                    
+                    <li>
+                        <input type="radio" name="rating-radio" value="radio0" id="tr-rating-row2-radio0">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tr-rating-row2-radio0">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio1" id="tr-rating-row2-radio1">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tr-rating-row2-radio1">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio2" id="tr-rating-row2-radio2">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tr-rating-row2-radio2">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio3" id="tr-rating-row2-radio3">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tr-rating-row2-radio3">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio4" id="tr-rating-row2-radio4">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tr-rating-row2-radio4">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li>
+                </ul>
+
+                
+                    <!--It will be empty in this case-->
+                
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!--Rating Comp End-->
+
+                    
+                    <!--Rating Comp Start-->
+<div class="row">
+
+    <div class="rating-comp__row">
+
+        
+        <div class="col-sm-6 rating-comp__col-label">
+            
+            <p class="rating-comp__label">Rating Quesion Label</p>
+            
+
+        
+
+        </div>
+
+        
+            <div class="col-sm-6 rating-comp__col-icons">
+        
+
+            <div class="rating-comp__col-icons__open">
+                <!--To add border around ratig element add this class in above div tag (rating-comp__col-icons__bordered)-->
+
+                <ul class="list-inline rating-comp__icons-list rating-comp__selection-type__continuous">
+                    <!--to show large stars on mobile add this class in above ul tag (rating-comp__icons-count__large)-->
+                    <!--to show large stars on mobile add this class in above ul tag (rating-comp__icons-count__small)-->
+                    
+                    <li>
+                        <input type="radio" name="rating-radio" value="radio0" id="tr-rating-row3-radio0">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tr-rating-row3-radio0">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio1" id="tr-rating-row3-radio1">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tr-rating-row3-radio1">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio2" id="tr-rating-row3-radio2">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tr-rating-row3-radio2">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio3" id="tr-rating-row3-radio3">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tr-rating-row3-radio3">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio4" id="tr-rating-row3-radio4">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tr-rating-row3-radio4">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li>
+                </ul>
+
+                
+                    <!--It will be empty in this case-->
+                
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!--Rating Comp End-->
+
+                    <div class="rating-comp__separater"></div>
+                    
+                    
+                    
+                    
+                    <!--Rating Comp Start-->
+<div class="row">
+
+    <div class="rating-comp__row">
+
+        
+        <div class="col-sm-4 rating-comp__col-label">
+            
+                <p class="rating-comp__label rating-comp__label__bold">Total: <span class="rating-comp__value-count__calculated">4</span>/<span class="rating-comp__value-count__total">5</span>
+            
+
+        
+
+        </div>
+
+        
+            <div class="col-sm-8 rating-comp__col-icons">
+        
+
+            <div class="rating-comp__col-icons__open">
+                <!--To add border around ratig element add this class in above div tag (rating-comp__col-icons__bordered)-->
+
+                <ul class="list-inline rating-comp__icons-list rating-comp__selection-type__continuous">
+                    <!--to show large stars on mobile add this class in above ul tag (rating-comp__icons-count__large)-->
+                    <!--to show large stars on mobile add this class in above ul tag (rating-comp__icons-count__small)-->
+                    
+                    <li>
+                        <input type="radio" name="rating-radio" value="radio0" id="tr-rating-row4-radio0">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tr-rating-row4-radio0">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio1" id="tr-rating-row4-radio1">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tr-rating-row4-radio1">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio2" id="tr-rating-row4-radio2">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tr-rating-row4-radio2">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio3" id="tr-rating-row4-radio3">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tr-rating-row4-radio3">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio4" id="tr-rating-row4-radio4">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tr-rating-row4-radio4">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li>
+                </ul>
+
+                
+                    <!--It will be empty in this case-->
+                
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!--Rating Comp End-->
+
+                    <p class="form__elem__error-text">This is error Message</p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+
+<!--Rating End-->
+
+                    <!--Rating Start-->
+
+<article class="form__elem">
+    <div class="elem__rating elem__rating-thumbnail-left">
+        <h3 class="form__elem__title">Rating</h3>
+        <div class="form__elem__body">
+            <p class="form__elem__help-text">Help Text goes here</p>
+            <div class="rating__container">
+                <div class="row">
+                    <div class="col-sm-4 elem__rating__thumbnail-container">
+                        <div class="elem__rating__left-thumbnail__container">
+                            <img class="b-lazy elem__rating__left-thumbnail" src=images/loader.gif data-src="images/product.jpg" alt="..." />
+                        </div>
+                    </div>
+                    <div class="col-sm-8 elem__rating__icons-container">
+                        
+                        
+                        
+                        <!--Rating Comp Start-->
+<div class="row">
+
+    <div class="rating-comp__row">
+
+        
+        <div class="col-sm-5 rating-comp__col-label">
+            
+                <p class="rating-comp__label">Rating Quesion Label</p>
+            
+
+        
+
+        </div>
+
+        
+            <div class="col-sm-7 rating-comp__col-icons">
+        
+
+            <div class="rating-comp__col-icons__open">
+                <!--To add border around ratig element add this class in above div tag (rating-comp__col-icons__bordered)-->
+
+                <ul class="list-inline rating-comp__icons-list rating-comp__selection-type__continuous">
+                    <!--to show large stars on mobile add this class in above ul tag (rating-comp__icons-count__large)-->
+                    <!--to show large stars on mobile add this class in above ul tag (rating-comp__icons-count__small)-->
+                    
+                    <li>
+                        <input type="radio" name="rating-radio" value="radio0" id="tl-rating-row1-radio0">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tl-rating-row1-radio0">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio1" id="tl-rating-row1-radio1">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tl-rating-row1-radio1">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio2" id="tl-rating-row1-radio2">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tl-rating-row1-radio2">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio3" id="tl-rating-row1-radio3">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tl-rating-row1-radio3">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio4" id="tl-rating-row1-radio4">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tl-rating-row1-radio4">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li>
+                </ul>
+
+                
+                    
+                        <p class="rating-comp__value-count"></p>
+                    
+                
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!--Rating Comp End-->
+
+                        
+                        <!--Rating Comp Start-->
+<div class="row">
+
+    <div class="rating-comp__row">
+
+        
+        <div class="col-sm-5 rating-comp__col-label">
+            
+                <p class="rating-comp__label">Rating Quesion Label</p>
+            
+
+        
+
+        </div>
+
+        
+            <div class="col-sm-7 rating-comp__col-icons">
+        
+
+            <div class="rating-comp__col-icons__open">
+                <!--To add border around ratig element add this class in above div tag (rating-comp__col-icons__bordered)-->
+
+                <ul class="list-inline rating-comp__icons-list rating-comp__selection-type__continuous">
+                    <!--to show large stars on mobile add this class in above ul tag (rating-comp__icons-count__large)-->
+                    <!--to show large stars on mobile add this class in above ul tag (rating-comp__icons-count__small)-->
+                    
+                    <li>
+                        <input type="radio" name="rating-radio" value="radio0" id="tl-rating-row2-radio0">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tl-rating-row2-radio0">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio1" id="tl-rating-row2-radio1">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tl-rating-row2-radio1">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio2" id="tl-rating-row2-radio2">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tl-rating-row2-radio2">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio3" id="tl-rating-row2-radio3">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tl-rating-row2-radio3">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio4" id="tl-rating-row2-radio4">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tl-rating-row2-radio4">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li>
+                </ul>
+
+                
+                    
+                        <p class="rating-comp__value-count"></p>
+                    
+                
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!--Rating Comp End-->
+
+                        
+                        <!--Rating Comp Start-->
+<div class="row">
+
+    <div class="rating-comp__row">
+
+        
+        <div class="col-sm-5 rating-comp__col-label">
+            
+                <p class="rating-comp__label">Rating Quesion Label</p>
+            
+
+        
+
+        </div>
+
+        
+            <div class="col-sm-7 rating-comp__col-icons">
+        
+
+            <div class="rating-comp__col-icons__open">
+                <!--To add border around ratig element add this class in above div tag (rating-comp__col-icons__bordered)-->
+
+                <ul class="list-inline rating-comp__icons-list rating-comp__selection-type__continuous">
+                    <!--to show large stars on mobile add this class in above ul tag (rating-comp__icons-count__large)-->
+                    <!--to show large stars on mobile add this class in above ul tag (rating-comp__icons-count__small)-->
+                    
+                    <li>
+                        <input type="radio" name="rating-radio" value="radio0" id="tl-rating-row3-radio0">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tl-rating-row3-radio0">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio1" id="tl-rating-row3-radio1">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tl-rating-row3-radio1">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio2" id="tl-rating-row3-radio2">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tl-rating-row3-radio2">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio3" id="tl-rating-row3-radio3">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tl-rating-row3-radio3">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio4" id="tl-rating-row3-radio4">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tl-rating-row3-radio4">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li>
+                </ul>
+
+                
+                    
+                        <p class="rating-comp__value-count"></p>
+                    
+                
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!--Rating Comp End-->
+
+                        
+                        <!--Rating Comp Start-->
+<div class="row">
+
+    <div class="rating-comp__row">
+
+        
+        <div class="col-sm-5 rating-comp__col-label">
+            
+                <p class="rating-comp__label">Rating Quesion Label</p>
+            
+
+        
+
+        </div>
+
+        
+            <div class="col-sm-7 rating-comp__col-icons">
+        
+
+            <div class="rating-comp__col-icons__open">
+                <!--To add border around ratig element add this class in above div tag (rating-comp__col-icons__bordered)-->
+
+                <ul class="list-inline rating-comp__icons-list rating-comp__selection-type__continuous">
+                    <!--to show large stars on mobile add this class in above ul tag (rating-comp__icons-count__large)-->
+                    <!--to show large stars on mobile add this class in above ul tag (rating-comp__icons-count__small)-->
+                    
+                    <li>
+                        <input type="radio" name="rating-radio" value="radio0" id="tl-rating-row4-radio0">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tl-rating-row4-radio0">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio1" id="tl-rating-row4-radio1">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tl-rating-row4-radio1">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio2" id="tl-rating-row4-radio2">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tl-rating-row4-radio2">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio3" id="tl-rating-row4-radio3">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tl-rating-row4-radio3">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio4" id="tl-rating-row4-radio4">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tl-rating-row4-radio4">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li>
+                </ul>
+
+                
+                    
+                        <p class="rating-comp__value-count"></p>
+                    
+                
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!--Rating Comp End-->
+
+                        
+                        <!--Rating Comp Start-->
+<div class="row">
+
+    <div class="rating-comp__row">
+
+        
+        <div class="col-sm-5 rating-comp__col-label">
+            
+                <p class="rating-comp__label">Rating Quesion Label</p>
+            
+
+        
+
+        </div>
+
+        
+            <div class="col-sm-7 rating-comp__col-icons">
+        
+
+            <div class="rating-comp__col-icons__open">
+                <!--To add border around ratig element add this class in above div tag (rating-comp__col-icons__bordered)-->
+
+                <ul class="list-inline rating-comp__icons-list rating-comp__selection-type__continuous">
+                    <!--to show large stars on mobile add this class in above ul tag (rating-comp__icons-count__large)-->
+                    <!--to show large stars on mobile add this class in above ul tag (rating-comp__icons-count__small)-->
+                    
+                    <li>
+                        <input type="radio" name="rating-radio" value="radio0" id="tl-rating-row5-radio0">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tl-rating-row5-radio0">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio1" id="tl-rating-row5-radio1">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tl-rating-row5-radio1">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio2" id="tl-rating-row5-radio2">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tl-rating-row5-radio2">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio3" id="tl-rating-row5-radio3">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tl-rating-row5-radio3">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio4" id="tl-rating-row5-radio4">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tl-rating-row5-radio4">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li>
+                </ul>
+
+                
+                    
+                        <p class="rating-comp__value-count"></p>
+                    
+                
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!--Rating Comp End-->
+
+                        
+                        <!--Rating Comp Start-->
+<div class="row">
+
+    <div class="rating-comp__row">
+
+        
+        <div class="col-sm-5 rating-comp__col-label">
+            
+                <p class="rating-comp__label">Rating Quesion Label</p>
+            
+
+        
+
+        </div>
+
+        
+            <div class="col-sm-7 rating-comp__col-icons">
+        
+
+            <div class="rating-comp__col-icons__open">
+                <!--To add border around ratig element add this class in above div tag (rating-comp__col-icons__bordered)-->
+
+                <ul class="list-inline rating-comp__icons-list rating-comp__selection-type__continuous">
+                    <!--to show large stars on mobile add this class in above ul tag (rating-comp__icons-count__large)-->
+                    <!--to show large stars on mobile add this class in above ul tag (rating-comp__icons-count__small)-->
+                    
+                    <li>
+                        <input type="radio" name="rating-radio" value="radio0" id="tl-rating-row6-radio0">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tl-rating-row6-radio0">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio1" id="tl-rating-row6-radio1">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tl-rating-row6-radio1">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio2" id="tl-rating-row6-radio2">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tl-rating-row6-radio2">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio3" id="tl-rating-row6-radio3">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tl-rating-row6-radio3">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio4" id="tl-rating-row6-radio4">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tl-rating-row6-radio4">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li>
+                </ul>
+
+                
+                    
+                        <p class="rating-comp__value-count"></p>
+                    
+                
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!--Rating Comp End-->
+
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="rating-comp__separater"></div>
+                <div class="row">
+                    <div class="col-sm-4 elem__rating__thumbnail-container empty"></div>
+                    <div class="col-sm-8 elem__rating__icons-container">
+                        
+                        
+                        
+                        
+                        <!--Rating Comp Start-->
+<div class="row">
+
+    <div class="rating-comp__row">
+
+        
+        <div class="col-sm-5 rating-comp__col-label">
+            
+                <p class="rating-comp__label rating-comp__label__bold">Total:
+            
+
+        
+
+        </div>
+
+        
+            <div class="col-sm-7 rating-comp__col-icons">
+        
+
+            <div class="rating-comp__col-icons__open">
+                <!--To add border around ratig element add this class in above div tag (rating-comp__col-icons__bordered)-->
+
+                <ul class="list-inline rating-comp__icons-list rating-comp__selection-type__continuous">
+                    <!--to show large stars on mobile add this class in above ul tag (rating-comp__icons-count__large)-->
+                    <!--to show large stars on mobile add this class in above ul tag (rating-comp__icons-count__small)-->
+                    
+                    <li>
+                        <input type="radio" name="rating-radio" value="radio0" id="tl-rating-row7-radio0">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tl-rating-row7-radio0">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio1" id="tl-rating-row7-radio1">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tl-rating-row7-radio1">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio2" id="tl-rating-row7-radio2">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tl-rating-row7-radio2">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio3" id="tl-rating-row7-radio3">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tl-rating-row7-radio3">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio4" id="tl-rating-row7-radio4">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="tl-rating-row7-radio4">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li>
+                </ul>
+
+                
+                    
+                        <p class="rating-comp__value-count">
+                            <span class="rating-comp__value-count__calculated">4</span>/<span class="rating-comp__value-count__total">5</span>
+                        </p>
+                    
+                
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!--Rating Comp End-->
+
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
             </div>
             <p class="form__elem__error-text">This is error Message</p>
         </div>
     </div>
 </article>
-<!--Ranking Scale Grid-->
+<!--Rating End-->
 
                     <!--Ranking Scale Default-->
 <article class="form__elem">
-    <div class="elem__rating elem__ranking-scale__layout-default fixed__seller-rating__default">
+    <div class="elem__rating elem__ranking-scale__layout-default">
         <h3 class="form__elem__title">Ranking Scale Default</h3>
         <div class="form__elem__body">
             <div class="form__elem__help-text__multiple">
@@ -361,7 +1458,7 @@
                 <div class="clearfix"></div>
             </div>
             <div class="ranking__container">
-                <ul class="ranking__list list-unstyled ranking__list__default elem__table rating-comp__icons-list rating-comp__selection-type__single">
+                <ul class="ranking__list list-unstyled ranking__list__default elem__table rating-comp__icons-list rating-comp__selection-type__continuous">
 
 
                     
@@ -640,16 +1737,519 @@
 </article>
 <!--Ranking Scale Default-->
 
+                    <!--Ranking Scale as Rating Start-->
 
+<article class="form__elem">
+    <div class="elem__rating elem__ranking-scale__layout-continuous">
+        <h3 class="form__elem__title">Ranking Scale as Rating</h3>
+        <div class="form__elem__body">
+            <p class="form__elem__help-text">Help Text goes here</p>
+            <div class="rating__container rating__continuous__container">
+                
+                
+                <!--Rating Comp Start-->
+<div class="row">
+
+    <div class="rating-comp__row">
+
+        
+        <div class="col-sm-4 rating-comp__col-label">
+            
+                <p class="rating-comp__label">Rating Quesion Label</p>
+            
+
+        
+
+        </div>
+
+        
+            <div class="col-sm-8 rating-comp__col-icons">
+        
+
+            <div class="rating-comp__col-icons__open">
+                <!--To add border around ratig element add this class in above div tag (rating-comp__col-icons__bordered)-->
+
+                <ul class="list-inline rating-comp__icons-list rating-comp__selection-type__continuous">
+                    <!--to show large stars on mobile add this class in above ul tag (rating-comp__icons-count__large)-->
+                    <!--to show large stars on mobile add this class in above ul tag (rating-comp__icons-count__small)-->
+                    
+                    <li>
+                        <input type="radio" name="rating-radio" value="radio0" id="rs-rating-row1-radio0">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="rs-rating-row1-radio0">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio1" id="rs-rating-row1-radio1">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="rs-rating-row1-radio1">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio2" id="rs-rating-row1-radio2">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="rs-rating-row1-radio2">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio3" id="rs-rating-row1-radio3">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="rs-rating-row1-radio3">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio4" id="rs-rating-row1-radio4">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="rs-rating-row1-radio4">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li>
+                </ul>
+
+                
+                    <!--It will be empty in this case-->
+                
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!--Rating Comp End-->
+
+                
+                <!--Rating Comp Start-->
+<div class="row">
+
+    <div class="rating-comp__row">
+
+        
+        <div class="col-sm-4 rating-comp__col-label">
+            
+                <p class="rating-comp__label">Rating Quesion Label</p>
+            
+
+        
+
+        </div>
+
+        
+            <div class="col-sm-8 rating-comp__col-icons">
+        
+
+            <div class="rating-comp__col-icons__open">
+                <!--To add border around ratig element add this class in above div tag (rating-comp__col-icons__bordered)-->
+
+                <ul class="list-inline rating-comp__icons-list rating-comp__selection-type__continuous">
+                    <!--to show large stars on mobile add this class in above ul tag (rating-comp__icons-count__large)-->
+                    <!--to show large stars on mobile add this class in above ul tag (rating-comp__icons-count__small)-->
+                    
+                    <li>
+                        <input type="radio" name="rating-radio" value="radio0" id="rs-rating-row2-radio0">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="rs-rating-row2-radio0">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio1" id="rs-rating-row2-radio1">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="rs-rating-row2-radio1">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio2" id="rs-rating-row2-radio2">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="rs-rating-row2-radio2">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio3" id="rs-rating-row2-radio3">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="rs-rating-row2-radio3">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio4" id="rs-rating-row2-radio4">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="rs-rating-row2-radio4">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li>
+                </ul>
+
+                
+                    <!--It will be empty in this case-->
+                
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!--Rating Comp End-->
+
+                <div class="rating-comp__separater"></div>
+                
+                
+                <!--Rating Comp Start-->
+<div class="row">
+
+    <div class="rating-comp__row">
+
+        
+        <div class="col-sm-4 rating-comp__col-label">
+            
+                <p class="rating-comp__label rating-comp__label__bold">Total: <span class="rating-comp__value-count__calculated">4</span>/<span class="rating-comp__value-count__total">5</span>
+            
+
+        
+
+        </div>
+
+        
+            <div class="col-sm-8 rating-comp__col-icons">
+        
+
+            <div class="rating-comp__col-icons__open">
+                <!--To add border around ratig element add this class in above div tag (rating-comp__col-icons__bordered)-->
+
+                <ul class="list-inline rating-comp__icons-list rating-comp__selection-type__continuous">
+                    <!--to show large stars on mobile add this class in above ul tag (rating-comp__icons-count__large)-->
+                    <!--to show large stars on mobile add this class in above ul tag (rating-comp__icons-count__small)-->
+                    
+                    <li>
+                        <input type="radio" name="rating-radio" value="radio0" id="rs-rating-row3-radio0">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="rs-rating-row3-radio0">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio1" id="rs-rating-row3-radio1">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="rs-rating-row3-radio1">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio2" id="rs-rating-row3-radio2">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="rs-rating-row3-radio2">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio3" id="rs-rating-row3-radio3">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="rs-rating-row3-radio3">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li><li>
+                        <input type="radio" name="rating-radio" value="radio4" id="rs-rating-row3-radio4">
+                        <label class="rating-comp__icon-single ranking__list__item__label" for="rs-rating-row3-radio4">
+                            <i class="icomoon-default ico ico-star"></i>
+                            <i class="icomoon-sudo ico ico-star-selected"></i>
+                        </label>
+                        <div class="rating-comp__tooltip">
+                            <p class="rating-comp__tooltip-content">lorem Ipsum</p>
+                        </div>
+                    </li>
+                </ul>
+
+                
+                    <!--It will be empty in this case-->
+                
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!--Rating Comp End-->
+
+            </div>
+            <p class="form__elem__error-text">This is error Message</p>
+        </div>
+    </div>
+</article>
+<!--Ranking Scale as Rating End-->
+
+                    <!--Ranking Scale Frid-->
+<article class="form__elem">
+    <div class="elem__rating elem__ranking-scale__layout-grid">
+        <h3 class="form__elem__title">Ranking Scale Grid</h3>
+        <div class="form__elem__body">
+            <p class="form__elem__help-text">Help Text</p>
+            <div class="ranking__container">
+                <div class="ranking__container__grid elem__table">
 
                     
-
-
-
-
                     
-
+                        
+                            <ul class="ranking__list list-unstyled ranking__list__grid elem__table__row ranking__list__grid__tooltip-row">
+                                
+                                
+                                <li class="ranking__list__item elem__table__cell">
+                                    <input type="radio" name="some__name" value="some__value">
+                                    <p class="ranking__list__item__label"></p>
+                                </li>
+                                
+                                <li class="ranking__list__item elem__table__cell">
+                                    <input type="radio" name="some__name" value="some__value">
+                                    <p class="ranking__list__item__label">Tooltip 1</p>
+                                </li>
+                                
+                                <li class="ranking__list__item elem__table__cell">
+                                    <input type="radio" name="some__name" value="some__value">
+                                    <p class="ranking__list__item__label">Tooltip 2</p>
+                                </li>
+                                
+                                <li class="ranking__list__item elem__table__cell">
+                                    <input type="radio" name="some__name" value="some__value">
+                                    <p class="ranking__list__item__label">Tooltip 3</p>
+                                </li>
+                                
+                                <li class="ranking__list__item elem__table__cell">
+                                    <input type="radio" name="some__name" value="some__value">
+                                    <p class="ranking__list__item__label">Tooltip 4</p>
+                                </li>
+                                
+                                <li class="ranking__list__item elem__table__cell">
+                                    <input type="radio" name="some__name" value="some__value">
+                                    <p class="ranking__list__item__label">Tooltip 5</p>
+                                </li>
+                                
+                            </ul>
+                        
                     
+                        
+                            <ul class="ranking__list list-unstyled ranking__list__grid elem__table__row rating-comp__icons-list rating-comp__selection-type__continuous">
+                                <li class="ranking__list__item elem__table__cell ranking__list__item__label-cell">
+                                    <p class="ranking__list__item__label-content">Lorem Ipsum</p>
+                                </li>
+                                
+                                
+                                <li class="ranking__list__item elem__table__cell">
+                                    <input type="radio" name="some__name" value="some__value">
+                                    <i class="ranking__list__item__icon icomoon-default ico ico-comments"></i>
+                                    <i class="ranking__list__item__icon icomoon-sudo ico ico-comments-selected"></i>
+                                    <label class="ranking__list__item__label">Item 0 sdfasfafds asfd asf afsdasdf a</label>
+                                </li>
+                                
+                                <li class="ranking__list__item elem__table__cell">
+                                    <input type="radio" name="some__name" value="some__value">
+                                    <i class="ranking__list__item__icon icomoon-default ico ico-comments"></i>
+                                    <i class="ranking__list__item__icon icomoon-sudo ico ico-comments-selected"></i>
+                                    <label class="ranking__list__item__label">Item 1</label>
+                                </li>
+                                
+                                <li class="ranking__list__item elem__table__cell">
+                                    <input type="radio" name="some__name" value="some__value">
+                                    <i class="ranking__list__item__icon icomoon-default ico ico-comments"></i>
+                                    <i class="ranking__list__item__icon icomoon-sudo ico ico-comments-selected"></i>
+                                    <label class="ranking__list__item__label">Item 2</label>
+                                </li>
+                                
+                                <li class="ranking__list__item elem__table__cell">
+                                    <input type="radio" name="some__name" value="some__value">
+                                    <i class="ranking__list__item__icon icomoon-default ico ico-comments"></i>
+                                    <i class="ranking__list__item__icon icomoon-sudo ico ico-comments-selected"></i>
+                                    <label class="ranking__list__item__label">Item 3</label>
+                                </li>
+                                
+                                <li class="ranking__list__item elem__table__cell">
+                                    <input type="radio" name="some__name" value="some__value">
+                                    <i class="ranking__list__item__icon icomoon-default ico ico-comments"></i>
+                                    <i class="ranking__list__item__icon icomoon-sudo ico ico-comments-selected"></i>
+                                    <label class="ranking__list__item__label">Item 4</label>
+                                </li>
+                                
+                            </ul>
+                        
+                    
+                        
+                            <ul class="ranking__list list-unstyled ranking__list__grid elem__table__row rating-comp__icons-list rating-comp__selection-type__continuous">
+                                <li class="ranking__list__item elem__table__cell ranking__list__item__label-cell">
+                                    <p class="ranking__list__item__label-content">Lorem Ipsum</p>
+                                </li>
+                                
+                                
+                                <li class="ranking__list__item elem__table__cell">
+                                    <input type="radio" name="some__name" value="some__value">
+                                    <i class="ranking__list__item__icon icomoon-default ico ico-comments"></i>
+                                    <i class="ranking__list__item__icon icomoon-sudo ico ico-comments-selected"></i>
+                                    <label class="ranking__list__item__label">Item 0 sdfasfafds asfd asf afsdasdf a</label>
+                                </li>
+                                
+                                <li class="ranking__list__item elem__table__cell">
+                                    <input type="radio" name="some__name" value="some__value">
+                                    <i class="ranking__list__item__icon icomoon-default ico ico-comments"></i>
+                                    <i class="ranking__list__item__icon icomoon-sudo ico ico-comments-selected"></i>
+                                    <label class="ranking__list__item__label">Item 1</label>
+                                </li>
+                                
+                                <li class="ranking__list__item elem__table__cell">
+                                    <input type="radio" name="some__name" value="some__value">
+                                    <i class="ranking__list__item__icon icomoon-default ico ico-comments"></i>
+                                    <i class="ranking__list__item__icon icomoon-sudo ico ico-comments-selected"></i>
+                                    <label class="ranking__list__item__label">Item 2</label>
+                                </li>
+                                
+                                <li class="ranking__list__item elem__table__cell">
+                                    <input type="radio" name="some__name" value="some__value">
+                                    <i class="ranking__list__item__icon icomoon-default ico ico-comments"></i>
+                                    <i class="ranking__list__item__icon icomoon-sudo ico ico-comments-selected"></i>
+                                    <label class="ranking__list__item__label">Item 3</label>
+                                </li>
+                                
+                                <li class="ranking__list__item elem__table__cell">
+                                    <input type="radio" name="some__name" value="some__value">
+                                    <i class="ranking__list__item__icon icomoon-default ico ico-comments"></i>
+                                    <i class="ranking__list__item__icon icomoon-sudo ico ico-comments-selected"></i>
+                                    <label class="ranking__list__item__label">Item 4</label>
+                                </li>
+                                
+                            </ul>
+                        
+                    
+                        
+                            <ul class="ranking__list list-unstyled ranking__list__grid elem__table__row rating-comp__icons-list rating-comp__selection-type__continuous">
+                                <li class="ranking__list__item elem__table__cell ranking__list__item__label-cell">
+                                    <p class="ranking__list__item__label-content">Lorem Ipsum</p>
+                                </li>
+                                
+                                
+                                <li class="ranking__list__item elem__table__cell">
+                                    <input type="radio" name="some__name" value="some__value">
+                                    <i class="ranking__list__item__icon icomoon-default ico ico-comments"></i>
+                                    <i class="ranking__list__item__icon icomoon-sudo ico ico-comments-selected"></i>
+                                    <label class="ranking__list__item__label">Item 0 sdfasfafds asfd asf afsdasdf a</label>
+                                </li>
+                                
+                                <li class="ranking__list__item elem__table__cell">
+                                    <input type="radio" name="some__name" value="some__value">
+                                    <i class="ranking__list__item__icon icomoon-default ico ico-comments"></i>
+                                    <i class="ranking__list__item__icon icomoon-sudo ico ico-comments-selected"></i>
+                                    <label class="ranking__list__item__label">Item 1</label>
+                                </li>
+                                
+                                <li class="ranking__list__item elem__table__cell">
+                                    <input type="radio" name="some__name" value="some__value">
+                                    <i class="ranking__list__item__icon icomoon-default ico ico-comments"></i>
+                                    <i class="ranking__list__item__icon icomoon-sudo ico ico-comments-selected"></i>
+                                    <label class="ranking__list__item__label">Item 2</label>
+                                </li>
+                                
+                                <li class="ranking__list__item elem__table__cell">
+                                    <input type="radio" name="some__name" value="some__value">
+                                    <i class="ranking__list__item__icon icomoon-default ico ico-comments"></i>
+                                    <i class="ranking__list__item__icon icomoon-sudo ico ico-comments-selected"></i>
+                                    <label class="ranking__list__item__label">Item 3</label>
+                                </li>
+                                
+                                <li class="ranking__list__item elem__table__cell">
+                                    <input type="radio" name="some__name" value="some__value">
+                                    <i class="ranking__list__item__icon icomoon-default ico ico-comments"></i>
+                                    <i class="ranking__list__item__icon icomoon-sudo ico ico-comments-selected"></i>
+                                    <label class="ranking__list__item__label">Item 4</label>
+                                </li>
+                                
+                            </ul>
+                        
+                    
+                        
+                            <ul class="ranking__list list-unstyled ranking__list__grid elem__table__row rating-comp__icons-list rating-comp__selection-type__continuous">
+                                <li class="ranking__list__item elem__table__cell ranking__list__item__label-cell">
+                                    <p class="ranking__list__item__label-content">Lorem Ipsum</p>
+                                </li>
+                                
+                                
+                                <li class="ranking__list__item elem__table__cell">
+                                    <input type="radio" name="some__name" value="some__value">
+                                    <i class="ranking__list__item__icon icomoon-default ico ico-comments"></i>
+                                    <i class="ranking__list__item__icon icomoon-sudo ico ico-comments-selected"></i>
+                                    <label class="ranking__list__item__label">Item 0 sdfasfafds asfd asf afsdasdf a</label>
+                                </li>
+                                
+                                <li class="ranking__list__item elem__table__cell">
+                                    <input type="radio" name="some__name" value="some__value">
+                                    <i class="ranking__list__item__icon icomoon-default ico ico-comments"></i>
+                                    <i class="ranking__list__item__icon icomoon-sudo ico ico-comments-selected"></i>
+                                    <label class="ranking__list__item__label">Item 1</label>
+                                </li>
+                                
+                                <li class="ranking__list__item elem__table__cell">
+                                    <input type="radio" name="some__name" value="some__value">
+                                    <i class="ranking__list__item__icon icomoon-default ico ico-comments"></i>
+                                    <i class="ranking__list__item__icon icomoon-sudo ico ico-comments-selected"></i>
+                                    <label class="ranking__list__item__label">Item 2</label>
+                                </li>
+                                
+                                <li class="ranking__list__item elem__table__cell">
+                                    <input type="radio" name="some__name" value="some__value">
+                                    <i class="ranking__list__item__icon icomoon-default ico ico-comments"></i>
+                                    <i class="ranking__list__item__icon icomoon-sudo ico ico-comments-selected"></i>
+                                    <label class="ranking__list__item__label">Item 3</label>
+                                </li>
+                                
+                                <li class="ranking__list__item elem__table__cell">
+                                    <input type="radio" name="some__name" value="some__value">
+                                    <i class="ranking__list__item__icon icomoon-default ico ico-comments"></i>
+                                    <i class="ranking__list__item__icon icomoon-sudo ico ico-comments-selected"></i>
+                                    <label class="ranking__list__item__label">Item 4</label>
+                                </li>
+                                
+                            </ul>
+                        
+                    
+                </div>
+            </div>
+            <p class="form__elem__error-text">This is error Message</p>
+        </div>
+    </div>
+</article>
+<!--Ranking Scale Grid-->
+
+
 
                     <!--Short text Start-->
 <article class="form__elem">
@@ -1031,16 +2631,8 @@
 <script type="text/javascript" src="js/libs/bootstrap-select.js"></script>
 
 <!--For Designed Versions-->
-<!--<script type="text/javascript" src="js/partials/thumbnail-right.js"></script>-->
-
-<!--For Fixed versions-->
+<script type="text/javascript" src="js/partials/thumbnail-right.js"></script>
 <script type="text/javascript" src="js/partials/ranking-scale-default.js"></script>
-<script type="text/javascript" src="js/partials/fixed-rating-grid.js"></script>
-
-<!--For proposed versions-->
-<script type="text/javascript" src="js/partials/feedback-default.js"></script>
-<script type="text/javascript" src="js/partials/feedback-continuous.js"></script>
-<script type="text/javascript" src="js/partials/feedback-grid.js"></script>
 
 <script type="text/javascript" src="js/script.js"></script>
 </body>
