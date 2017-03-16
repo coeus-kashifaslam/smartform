@@ -152,13 +152,22 @@ gulp.task('cleanBuild', function(){
 gulp.task('browsersync', function(){
 	browsersync(browsersyncOptions);
 });
-
-
 /*
- * Task to Build HTML from templates and minify HTMl for Production
+ * Task to Build HTML from templates
  * ...
  */
 gulp.task('html', function(){
+	return gulp
+		.src(html.in)
+		.pipe(njk.compile())
+		.pipe(gulp.dest(html.out));
+});
+
+/*
+ * Task to Build HTML from templates and validate it
+ * ...
+ */
+gulp.task('htmlValidate', function(){
 	return gulp
 	.src(html.in)
 	.pipe(njk.compile())
@@ -166,6 +175,7 @@ gulp.task('html', function(){
 	.pipe(w3cjs(html.out))
 	.pipe(w3cjs.reporter());
 });
+
 /*
  * Task to Merge and Compile Sass files
  * ...
