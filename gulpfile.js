@@ -15,6 +15,7 @@
 	imacss = require('gulp-imacss'),	
 
 	njk = require('gulp-nunjucks'),
+	w3cjs = require('gulp-w3cjs');
 
 	sass = require('gulp-sass'),
 	pleeease = require('gulp-pleeease'),
@@ -162,8 +163,9 @@ gulp.task('html', function(){
 	.src(html.in)
 	.pipe(njk.compile())
 	.pipe(gulp.dest(html.out))
+	.pipe(w3cjs(html.out))
+	.pipe(w3cjs.reporter());
 });
-
 /*
  * Task to Merge and Compile Sass files
  * ...
