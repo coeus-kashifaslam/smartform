@@ -196,14 +196,12 @@
 //single Row
 .feedback__continuous__emo-list {
   &.subquestion__false {
-    .feedback__emo-list__description-count {
-      text-align: initial;
-    }
     .feedback__continuous__emo-list__table-row {
       &.total-row {
         .feedback__continuous__emo-list__item {
           border: 0 none;
-          padding: 0;
+          padding-top: 0;
+          padding-bottom: 0;
         }
       }
     }

@@ -11123,13 +11123,10 @@ html, body {
     width: 45px;
 }
 
-.feedback__continuous__emo-list.subquestion__false .feedback__emo-list__description-count {
-    text-align: initial;
-}
-
 .feedback__continuous__emo-list.subquestion__false .feedback__continuous__emo-list__table-row.total-row .feedback__continuous__emo-list__item {
     border: 0 none;
-    padding: 0;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .elem__rating__left-thumbnail__container {
@@ -11286,10 +11283,6 @@ html, body {
 
 .state__single.fixed__feedback__continuous__thumbnail .feedback__continuous__container, .state__single.form__elem__rating-thumbnail-right .feedback__continuous__container {
     margin: 0;
-}
-
-.state__single.fixed__feedback__continuous__thumbnail .feedback__emo-list__description-count, .state__single.form__elem__rating-thumbnail-right .feedback__emo-list__description-count {
-    text-align: initial;
 }
 
 .form__elem__rating-thumbnail-right .elem__rating-thumbnail-right__body .rating__thumbnail__col__content {
@@ -11947,6 +11940,9 @@ html, body {
     .content__rtl .fixed__feedback__continuous .feedback__container .feedback__emo-list .feedback__emo-list__description {
         padding-right: 0;
         padding-left: 20px;
+    }
+    .content__rtl .feedback__emo-list__description-count {
+        text-align: left;
     }
     .content__rtl .popup__label-col {
         left: 75%;

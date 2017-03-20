@@ -1,5 +1,5 @@
 $(document).ready(function (){
-    var ratingListItem = $('.no-touch .ranking__list__default > li .ranking__list__item__label');
+    var ratingListItem = $('.ranking__list__default > li .ranking__list__item__label');
 
     $(ratingListItem).hover(
         function() {
