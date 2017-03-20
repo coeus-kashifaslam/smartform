@@ -11,7 +11,7 @@ $custom-footer-font-size: 14px;
   margin-bottom: 10px;
   @media (max-width: 767px) {
     background: $custom-footer-dark-bg;
-    padding: 7px 15px 10px 15px;
+    padding: 7px 15px 10px;
     margin-left: -15px;
     margin-right: -15px;
   }
@@ -97,7 +97,7 @@ $custom-footer-font-size: 14px;
   }
 }
 
-.custom-footer__section__defautl-quick-links {
+.custom-footer__section__default-quick-links {
   .page__footer__quick-links {
     > li {
       &:first-child {
@@ -128,4 +128,16 @@ $custom-footer-font-size: 14px;
       text-align: center;
     }
   }
+}
+
+
+@media (max-width: 767px) {
+  .custom-footer__col-header,
+  .custom-footer__col-content,
+  .custom-footer__info-section-content,
+  .custom-footer__section__default-quick-links {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
 }

@@ -11876,35 +11876,42 @@ html, body {
     color: #3054ae;
 }
 
-.custom-footer__section__defautl-quick-links .page__footer__quick-links > li:first-child:after {
+.custom-footer__section__default-quick-links .page__footer__quick-links > li:first-child:after {
     content: '';
 }
 
 @media (max-width: 767px) {
-    .custom-footer__section__defautl-quick-links .page__footer__quick-links > li:first-child {
+    .custom-footer__section__default-quick-links .page__footer__quick-links > li:first-child {
         display: block;
     }
 }
 
-.custom-footer__section__defautl-quick-links .page__footer__quick-links > li:after {
+.custom-footer__section__default-quick-links .page__footer__quick-links > li:after {
     color: #707070;
 }
 
-.custom-footer__section__defautl-quick-links .page__footer__quick-links > li a {
+.custom-footer__section__default-quick-links .page__footer__quick-links > li a {
     color: #707070;
 }
 
-.custom-footer__section__defautl-quick-links .page__footer__quick-links > li a:hover, .custom-footer__section__defautl-quick-links .page__footer__quick-links > li a:focus, .custom-footer__section__defautl-quick-links .page__footer__quick-links > li a:active {
+.custom-footer__section__default-quick-links .page__footer__quick-links > li a:hover, .custom-footer__section__default-quick-links .page__footer__quick-links > li a:focus, .custom-footer__section__default-quick-links .page__footer__quick-links > li a:active {
     color: #707070;
     text-decoration: underline;
 }
 
 @media (max-width: 767px) {
-    .custom-footer__section__defautl-quick-links {
+    .custom-footer__section__default-quick-links {
         font-size: 14px;
     }
-    .custom-footer__section__defautl-quick-links .power-by__info {
+    .custom-footer__section__default-quick-links .power-by__info {
         text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .custom-footer__col-header, .custom-footer__col-content, .custom-footer__info-section-content, .custom-footer__section__default-quick-links {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
@@ -12123,6 +12130,13 @@ html, body {
     border: 1px solid #3054ae;
     border-top: 0 none !important;
     position: relative;
+}
+
+@media (max-width: 767px) {
+    .caption-form__wrap {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 
 .caption-form__wrap .caption-form__error-text {
