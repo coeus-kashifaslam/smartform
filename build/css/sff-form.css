@@ -9482,6 +9482,10 @@ html, body {
     color: rgba(255, 255, 255, 0);
 }
 
+.form__elem .form__elem {
+    margin: 0;
+}
+
 .form-fieldset > .form__elem:last-child {
     margin-bottom: 0;
 }
@@ -10649,7 +10653,7 @@ html, body {
 
 .elem__feedback__header {
     position: relative;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
     min-height: 165px;
 }
 
@@ -11231,7 +11235,7 @@ html, body {
 }
 
 .form__elem__rating-thumbnail-right .elem__rating-thumbnail-right__header {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .form__elem__rating-thumbnail-right .elem__rating-thumbnail-right__header .form__elem__help-text {
@@ -11325,6 +11329,10 @@ html, body {
 .elem__thank-you img {
     max-width: 100%;
     height: auto;
+}
+
+.content__ltr {
+    direction: ltr;
 }
 
 .content__rtl {
