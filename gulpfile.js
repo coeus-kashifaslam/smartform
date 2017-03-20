@@ -15,7 +15,7 @@
 	imacss = require('gulp-imacss'),	
 
 	njk = require('gulp-nunjucks'),
-	w3cjs = require('gulp-w3cjs');
+	w3cjs = require('gulp-w3cjs'),
 
 	sass = require('gulp-sass'),
 	pleeease = require('gulp-pleeease'),
@@ -23,9 +23,9 @@
 	csscomb = require ('gulp-csscomb'),
 
 	jshint = require('gulp-jshint'),
-	concat = require('gulp-concat'),
-	stripdebug = require('gulp-strip-debug'),
-	uglify = require('gulp-uglify'),
+	// concat = require('gulp-concat'),
+	// stripdebug = require('gulp-strip-debug'),
+	// uglify = require('gulp-uglify'),
 
 
 /*
