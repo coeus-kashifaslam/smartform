@@ -87,6 +87,11 @@
 
     .feedback__continuous__emo-list__item {
       padding: 3px 2px 5px;
+
+      @media (max-width: 767px) {
+        padding-left: 0;
+        padding-right: 0;
+      }
     }
   }
 
