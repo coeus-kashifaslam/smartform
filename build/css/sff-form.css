@@ -13166,7 +13166,7 @@ html, body {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
     .elem__rating-thumbnail-right__body .rating__icons__col-sm .rating__icons__col__content {
         width: 363px;
         max-width: 363px;
