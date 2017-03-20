@@ -13119,6 +13119,13 @@ html, body {
     padding: 3px 2px 5px;
 }
 
+@media (max-width: 767px) {
+    .fixed__feedback__continuous__thumbnail .feedback__continuous__emo-list .feedback__continuous__emo-list__item {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
 .fixed__feedback__continuous__thumbnail .feedback__container .feedback__emo-list .feedback__emo-list__description {
     padding: 10px 20px 0 0;
 }
