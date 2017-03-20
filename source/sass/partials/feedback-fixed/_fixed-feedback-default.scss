@@ -34,7 +34,7 @@ $tooltip-icon-sudo-color: $sudo-rating-color;
 }
 
 .rating-comp__selection-type__single {
-  .rating-comp__selected {
+  .rating-comp__selected__current {
     .ranking__list__item__label {
       @extend %rating-comp__selection-type__sudo;
       .icomoon-sudo {
@@ -47,8 +47,9 @@ $tooltip-icon-sudo-color: $sudo-rating-color;
   }
 }
 .rating-comp__selection-type__continuous {
-  .rating-comp__selected,
-  .rating-comp__hover {
+  .rating-comp__hover,
+  .rating-comp__hover__current,
+  .rating-comp__selected {
     .ranking__list__item__label {
       @extend %rating-comp__selection-type__sudo;
       .icomoon-sudo {
@@ -63,13 +64,11 @@ $tooltip-icon-sudo-color: $sudo-rating-color;
 
 
 .ranking__list__default {
-  .ranking__list__item {
+  .rating-comp__hover__current {
     .ranking__list__item__label {
-      &:hover {
-        .ranking__list__item__tooltip {
-          @media (min-width: 768px) {
-            display: block;
-          }
+      .ranking__list__item__tooltip {
+        @media (min-width: 768px) {
+          display: block;
         }
       }
     }
