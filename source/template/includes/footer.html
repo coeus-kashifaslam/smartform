@@ -1,9 +1,11 @@
 <!--Footer Start-->
 {% if footerBg == 'active'%}
-<footer class="page__footer page__footer__active">
+{% set footerBgClass = 'page__footer__active'%}
 {% else %}
-<footer class="page__footer">
+{% set footerBgClass = ''%}
 {% endif %}
+
+<footer class="page__footer {{footerBgClass}}">
     <div class="sff-form__content-wrap">
         <div class="page__footer-wrap">
             <div class="row">

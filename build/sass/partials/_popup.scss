@@ -6,6 +6,10 @@
   border: 1px solid $default-theme;
   border-top: 0 none !important;
   position: relative;
+  @media (max-width: 767px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   .caption-form__error-text {
     padding-left: 10px;
     @media (max-width: 767px) {
