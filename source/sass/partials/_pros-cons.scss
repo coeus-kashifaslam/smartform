@@ -5,9 +5,12 @@ $default-cons-icon-clr: #bc1818;
 
 .row__pros-cons {
   .form-control {
-     height: 45px;
+    height: 45px;
     padding-left: 50px;
     padding-right: 30px;
+    &::-ms-clear {
+      display: none;
+    }
   }
   li {
     position: relative;
