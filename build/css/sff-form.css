@@ -11131,7 +11131,6 @@ html, body {
 
 .elem__rating__left-thumbnail__container {
     width: 150px;
-    height: 150px;
     border: 2px solid #dfdae0;
     overflow: hidden;
     text-align: center;
@@ -11142,10 +11141,6 @@ html, body {
     position: relative;
     display: inline-block;
     width: 100%;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
 }
 
 .elem__rating-thumbnail-left .rating__container .row:last-child .rating-comp__row {
@@ -11876,6 +11871,15 @@ html, body {
     .feedback__continuous__emo-list__shape-item-hover-current .feedback__item-tooltip-container {
         display: block;
     }
+    .elem__rating__left-thumbnail__container {
+        height: 150px;
+    }
+    .elem__rating__left-thumbnail__container .elem__rating__left-thumbnail {
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
     .elem__rating-thumbnail-left .elem__rating__thumbnail-container, .elem__rating-thumbnail-left .elem__rating__icons-container {
         display: table-cell;
         float: none;
@@ -11883,6 +11887,10 @@ html, body {
     }
     .fixed__feedback__default__thumbnail-left .ranking__message, .fixed__feedback__grid__thumbnail-left .ranking__message, .fixed__feedback__continuous__thumbnail .ranking__message {
         margin-top: 30px;
+    }
+    .fixed__feedback__default__thumbnail-left .elem__rating__left-thumbnail__container, .fixed__feedback__grid__thumbnail-left .elem__rating__left-thumbnail__container, .fixed__feedback__continuous__thumbnail .elem__rating__left-thumbnail__container {
+        display: table-cell;
+        vertical-align: middle;
     }
     .form__elem__rating-thumbnail-right .rating__thumbnail__col, .form__elem__rating-thumbnail-right .rating__icons__col, .form__elem__rating-thumbnail-right .rating__icons__col .rating__icons__col__content {
         float: none;

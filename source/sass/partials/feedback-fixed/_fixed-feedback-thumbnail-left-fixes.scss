@@ -16,6 +16,10 @@
     padding: 0;
     width: 100%;
     max-width: 165px;
+    @media (min-width: 768px) {
+      display: table-cell;
+      vertical-align: middle;
+    }
   }
 }
 

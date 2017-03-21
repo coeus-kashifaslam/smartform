@@ -2,7 +2,6 @@ $thumbail-dimension: 150px;
 $rating-label-color: #424242;
 .elem__rating__left-thumbnail__container {
   width: $thumbail-dimension;
-  height: $thumbail-dimension;
   border: 2px solid $default-border-color;
   overflow: hidden;
   text-align: center;
@@ -11,8 +10,13 @@ $rating-label-color: #424242;
     position: relative;
     display: inline-block;
     width: 100%;
-    top: 50%;
-    transform: translateY(-50%);
+  }
+  @media (min-width: 768px) {
+    height: $thumbail-dimension;
+    .elem__rating__left-thumbnail {
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
 }
 .elem__rating-thumbnail-left {
