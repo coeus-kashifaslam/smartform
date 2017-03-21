@@ -89,6 +89,10 @@ $icon-cols-width-mobile: 100%;
         max-height: none;
         max-width: 100%;
       }
+      .rating__thumbnail__container {
+        padding-right: 30px;
+        padding-left: 30px;
+      }
     }
     .rating__thumbnail__container {
       height: auto !important;
