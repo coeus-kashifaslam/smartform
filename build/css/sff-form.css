@@ -10346,6 +10346,10 @@ html, body {
     padding-right: 30px;
 }
 
+.row__pros-cons .form-control::-ms-clear {
+    display: none;
+}
+
 .row__pros-cons li {
     position: relative;
 }
@@ -10917,13 +10921,10 @@ html, body {
     content: '';
     display: block;
     position: absolute;
-    bottom: -8px;
+    bottom: -7px;
     width: 0;
     height: 0;
     border-style: solid;
-}
-
-.ranking__list__item__tooltip-body:before {
     left: 50%;
     margin-left: -7px;
     border-color: #3054ae transparent transparent;

@@ -94,17 +94,16 @@ $tooltip-icon-sudo-color: $sudo-rating-color;
     content: '';
     display: block;
     position: absolute;
-    bottom: -8px;
+    bottom: -7px;
     width: 0;
     height: 0;
     border-style: solid;
-  }
-  &:before {
     left: 50%;
     margin-left: -7px;
     border-color: $default-theme transparent transparent transparent;
     border-width: 8px 6px 0;
   }
+
   li {
     margin-left: 0;
     padding: 0;
