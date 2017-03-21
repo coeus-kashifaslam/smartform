@@ -12949,6 +12949,10 @@ html, body {
         max-height: none;
         max-width: 100%;
     }
+    .elem__rating-thumbnail-right__body .rating__thumbnail__col__content .rating__thumbnail__container {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
     .elem__rating-thumbnail-right__body .rating__thumbnail__container {
         height: auto !important;
         padding: 20px 0;
