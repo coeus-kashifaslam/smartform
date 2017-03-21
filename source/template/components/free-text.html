@@ -1,9 +1,11 @@
 <!--Free text Start-->
 {% if excludeBorder == 'true' %}
-<article class="form__elem form__elem__no-border">
+{% set freeTextWithoutBorder == 'form__elem__no-border' %}
 {% else %}
-<article class="form__elem">
+{% set freeTextWithoutBorder == '' %}
 {% endif %}
+
+<article class="form__elem {{freeTextWithoutBorder}}">
     <div class="elem__free-text">
         <h3 class="form__elem__title">Free Test</h3>
         <div class="form__elem__body">
