@@ -11877,12 +11877,6 @@ html, body {
     .elem__rating__left-thumbnail__container {
         height: 150px;
     }
-    .elem__rating__left-thumbnail__container .elem__rating__left-thumbnail {
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-    }
     .elem__rating-thumbnail-left .elem__rating__thumbnail-container, .elem__rating-thumbnail-left .elem__rating__icons-container {
         display: table-cell;
         float: none;
@@ -11902,6 +11896,10 @@ html, body {
     }
     .form__elem__rating-thumbnail-right .rating__icons__col .rating__icons__col__content {
         height: 210px;
+    }
+    .form__elem__rating-thumbnail-right .elem__rating-thumbnail-right__body .rating__thumbnail__col-sm .rating__thumbnail__col__content .product-thumbnail {
+        max-width: 135px;
+        width: 100%;
     }
     .form__elem__rating-thumbnail-right .elem__rating-thumbnail-right__body .rating__thumbnail__col__content {
         border: 0 none;

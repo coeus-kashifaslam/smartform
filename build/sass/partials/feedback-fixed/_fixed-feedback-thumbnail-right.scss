@@ -57,8 +57,8 @@ $icon-cols-width-mobile: 100%;
       }
     }
   }
-
 }
+
 @media (max-width: 767px) {
   .form__elem__rating-thumbnail-right {
     .form__elem {
@@ -148,6 +148,24 @@ $icon-cols-width-mobile: 100%;
     .rating__icons__col {
       .rating__icons__col__content {
         height: $thumbnail-left-icons-col-height;
+      }
+    }
+  }
+}
+
+
+//IE 11 fix for grid with child with 10 options
+
+.form__elem__rating-thumbnail-right {
+  .elem__rating-thumbnail-right__body {
+    .rating__thumbnail__col-sm {
+      .rating__thumbnail__col__content {
+        .product-thumbnail {
+          @media (min-width: 768px) {
+            max-width: 135px;
+            width: 100%;
+          }
+        }
       }
     }
   }
