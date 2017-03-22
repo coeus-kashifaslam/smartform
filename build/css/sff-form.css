@@ -9595,9 +9595,14 @@ html, body {
     margin-bottom: 20px;
 }
 
-.languages__list .selected a {
+.languages__list a {
+    border: 1px solid transparent;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.languages__list a.selected {
     border: 1px solid #dfdae0;
-    padding: 0 2px;
 }
 
 .languages__list img {
@@ -10510,6 +10515,7 @@ html, body {
 
 .caption-form__wrap .caption-form__error-text {
     padding-left: 10px;
+    padding-right: 10px;
 }
 
 .caption-form__wrap .row + .row p {
@@ -11207,7 +11213,7 @@ html, body {
 }
 
 .fixed__feedback__continuous__thumbnail .feedback__continuous__emo-list .feedback__emo-list__description-count {
-    text-align: initial;
+    text-align: inherit;
     font-size: 16px;
 }
 
@@ -11958,6 +11964,10 @@ html, body {
     }
     .content__rtl .popup__input-col {
         right: 25%;
+    }
+    .content__rtl .caption-form__error-text {
+        margin-left: 0;
+        margin-right: 25%;
     }
     .content__rtl .sff-form__footer {
         text-align: left;
@@ -12776,6 +12786,7 @@ html, body {
     }
     .caption-form__wrap .caption-form__error-text {
         padding-left: 0;
+        padding-right: 0;
     }
     .caption-form__error-icon .error-page__icon {
         font-size: 250px;
@@ -12869,7 +12880,7 @@ html, body {
         display: block;
     }
     .feedback__continuous__emo-list .feedback__continuous__emo-list__description .feedback__continuous__emo-list__description-count {
-        text-align: initial;
+        text-align: inherit;
     }
     .feedback__continuous__shapes-list__item {
         overflow: hidden;
