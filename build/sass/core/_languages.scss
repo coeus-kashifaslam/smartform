@@ -5,10 +5,12 @@ $flags-border: #dfdae0;
   li {
     margin-bottom: 20px;
   }
-  .selected {
-    a {
+  a {
+    border: 1px solid transparent;
+    padding: 2px;
+    cursor: pointer;
+    &.selected {
       border: 1px solid $flags-border;
-      padding: 0 2px;
     }
   }
   img {
