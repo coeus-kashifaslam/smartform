@@ -25,4 +25,10 @@ $(document).ready(function () {
         $this.closest('.fixed__grid-shape__col').prevAll().addClass('fixed__grid-shape__selected');
     });
 
+    $(".fixed__grid-table").each(function() {
+        var $thisTable = $(this),
+            colWidth = parseInt($thisTable.find('.fixed__grid-shape').css('font-size'));
+        $thisTable.find('.fixed__grid-shape__col').css("width" , colWidth + 10 + "px");
+    });
+
 });

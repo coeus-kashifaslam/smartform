@@ -10997,7 +10997,6 @@ html, body {
 }
 
 .fixed__grid-shape__col {
-    width: 36px;
     text-align: center;
     padding-left: 2px;
     padding-right: 2px;
@@ -11076,10 +11075,6 @@ html, body {
     margin: 0;
 }
 
-.feedback__continuous__emo-list .feedback__continuous__emo-list__shape-item {
-    width: 33px;
-}
-
 .feedback__continuous__shapes-list__item {
     text-align: center;
     position: relative;
@@ -11126,10 +11121,6 @@ html, body {
 
 .shapes__lg .feedback__item-label .ico {
     font-size: 40px;
-}
-
-.shapes__lg .feedback__continuous__emo-list__shape-item {
-    width: 45px;
 }
 
 .feedback__continuous__emo-list.subquestion__false .feedback__continuous__emo-list__table-row.total-row .feedback__continuous__emo-list__item {
@@ -11223,10 +11214,6 @@ html, body {
 
 .fixed__feedback__continuous__thumbnail .feedback__container .feedback__emo-list .feedback__emo-list__description {
     padding: 10px 20px 0 0;
-}
-
-.fixed__feedback__continuous__thumbnail .feedback__continuous__emo-list__shape-item, .fixed__feedback__continuous__thumbnail .shapes__lg .feedback__continuous__emo-list__shape-item {
-    width: auto;
 }
 
 .form__elem__rating-thumbnail-right .elem__rating-thumbnail-right__header {
@@ -11870,9 +11857,6 @@ html, body {
     }
     .fixed__grid-shape__col .grid-text-span {
         display: none;
-    }
-    .shapes__lg .fixed__grid-shape__col {
-        width: 60px;
     }
     .feedback__continuous__emo-list .feedback__continuous__emo-list__table-row.total-row .feedback__continuous__emo-list__item {
         border-top: 1px solid #dfdae0;
@@ -12842,7 +12826,7 @@ html, body {
         width: 100%;
     }
     .fixed__grid-shape__col {
-        width: 49%;
+        width: 49% !important;
         display: inline-block;
         text-align: initial;
         overflow: hidden;
