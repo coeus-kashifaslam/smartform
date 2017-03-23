@@ -33,9 +33,6 @@
       @extend %feedback-label-fontsize;
     }
   }
-  .feedback__continuous__emo-list__shape-item {
-    width: 33px;
-  }
 }
 
 .feedback__continuous__shapes-list__item {
@@ -187,9 +184,6 @@
     .ico {
       font-size: $default-icon-lg;
     }
-  }
-  .feedback__continuous__emo-list__shape-item {
-    width: 45px;
   }
 }
 
