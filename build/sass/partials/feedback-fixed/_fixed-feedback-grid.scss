@@ -24,7 +24,6 @@
   }
 }
 .fixed__grid-shape__col {
-  width: 36px;
   text-align: center;
   padding-left: 2px;
   padding-right: 2px;
@@ -117,7 +116,7 @@
   }
 
   .fixed__grid-shape__col {
-    width: 49%;
+    width: 49% !important;
     display: inline-block;
     text-align: initial;
     overflow: hidden;
@@ -156,9 +155,6 @@
 //Settings for 5 shapes scenerio
 .shapes__lg {
   .fixed__grid-shape__col {
-    @media (min-width: 768px) {
-      width: $default-icon-lg + 20px;
-    }
     .fixed__grid-shape {
       font-size: $default-icon-lg;
     }

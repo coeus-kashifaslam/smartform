@@ -28,7 +28,7 @@ $(document).ready(function () {
     $(".fixed__grid-table").each(function() {
         var $thisTable = $(this),
             colWidth = parseInt($thisTable.find('.fixed__grid-shape').css('font-size'));
-        $thisTable.find('.fixed__grid-shape__col').css("width" , colWidth + 15 + "px");
+        $thisTable.find('.fixed__grid-shape__col').css("width" , colWidth + 10 + "px");
     });
 
 });

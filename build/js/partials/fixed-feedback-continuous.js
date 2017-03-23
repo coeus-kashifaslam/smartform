@@ -26,4 +26,10 @@ $(document).ready(function () {
         $this.closest('.feedback__continuous__emo-list__shape-item').prevAll().addClass('feedback__continuous__emo-list__shape-item-selected');
     });
 
+    $(".feedback__continuous__emo-list").each(function() {
+        var $thisContinuous = $(this),
+            colWidth = parseInt($thisContinuous.find('.feedback__item-label .ico').css('font-size'));
+        $thisContinuous.find('.feedback__continuous__emo-list__shape-item').css("width" , colWidth + 3 + "px");
+    });
+
 });
