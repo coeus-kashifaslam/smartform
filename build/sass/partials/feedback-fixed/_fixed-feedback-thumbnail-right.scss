@@ -49,7 +49,7 @@ $icon-cols-width-mobile: 100%;
     .rating__icons__col__content {
       @media (min-width: 992px) {
         width: $icon-cols-width-desktop;
-        max-width: none;
+        max-width: $icon-cols-width-desktop;
       }
       @media (min-width: 768px) and (max-width: 991px){
         width: $icon-cols-width-tablet;
