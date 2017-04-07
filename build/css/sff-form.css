@@ -12123,7 +12123,7 @@ html, body {
     }
     .elem__rating-thumbnail-right__body .rating__icons__col-sm .rating__icons__col__content {
         width: 415px;
-        max-width: none;
+        max-width: 415px;
     }
 }
 
