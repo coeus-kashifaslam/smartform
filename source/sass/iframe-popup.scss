@@ -10,6 +10,7 @@
 #sff_127__iframe__wrapper {
   width: 90%;
   height: 90%;
+  max-width: 1020px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -29,15 +30,25 @@
 }
 #sff_127__iframe__close-x {
   position: fixed;
-  right: 8%;
-  top: 6%;
+  //right: 8%;
+  //top: 6%;
+  right: 50px;
+  top: 30px;
   color: #000;
+  opacity: 0.2;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 24px;
   z-index: 99999;
   text-align: center;
   margin: 0;
   font-family: Arial;
+  display: none;
+  &:hover {
+    opacity: 0.7;
+  }
+  @media (max-width: 991px) {
+    right: 35px;
+  }
 }
 @media (max-width: 1024px) {
   #sff_127__iframe__wrapper {

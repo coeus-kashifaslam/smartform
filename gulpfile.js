@@ -44,7 +44,7 @@
  	sassOptions = {
  		errToLogConsole: true,
  		precision: 4,
- 		outputStyle: 'expanded',
+ 		outputStyle: 'compressed',
  		sourceComments: false,
  		indentWidth: 4
  	},
