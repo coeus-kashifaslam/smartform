@@ -12,7 +12,6 @@ $(document).ready(function (){
             height: ratingHeight + 'px'
         }, 1000);
     }
-
 });
 
 ;(function() {
