@@ -1,0 +1,101 @@
+<!--Feedback Continuous-->
+<article class="form__elem">
+    <div class="elem__feedback-continuous elem__feedback-continuous__thumbnail-false fixed__feedback__continuous text-center">
+        <div class="elem__feedback__header elem__feedback__header__thumbnail-false">
+            <div class="elem_feedback__header-content">
+                <h3 class="form__elem__title">Wie viele Sterne gibst du Liederheld?</h3>
+            </div>
+        </div>
+
+        <div class="form__elem__body">
+            <div class="feedback__container feedback__continuous__container">
+                <div class="feedback__emo-list feedback__continuous__emo-list feedback__continuous__emo-list__view-center hide__radio subquestion__false shapes__lg">
+                    {% set rownumbers = [
+                        {count: 3, string: '', type: 'total'}
+                    ]%}
+                    {% for rownumber in rownumbers %}
+                        {% if rownumber.type == 'total'%}
+                        {% set totalClass = 'total-row' %}
+                        {% else %}
+                        {% set totalClass = '' %}
+                        {% endif %}
+                    <div class="feedback__continuous__emo-list__table-row {{totalClass}} feedback__continuous__selection-continuous">
+                        {% set numbers = [0,1,2,3,4]%}
+                        {% for number in numbers %}
+                        <div class="feedback__emo-list__item feedback__emo-list__shape-item feedback__continuous__emo-list__item feedback__continuous__emo-list__shape-item">
+
+                                    {% if number == 0 %}
+                                    {% set oneStar = 'tooltip__ico-selected' %}
+                                    {% set countStar = 1 %}
+
+                                    {% elseif number == 1 %}
+                                    {% set twoStar = oneStar %}
+                                    {% set countStar = 2 %}
+
+                                    {% elseif number == 2 %}
+                                    {% set threeStar = oneStar %}
+                                    {% set countStar = 3 %}
+
+                                    {% elseif number == 3 %}
+                                    {% set fourStar = oneStar %}
+                                    {% set countStar = 4 %}
+
+                                    {% elseif number == 4 %}
+                                    {% set fiveStar = oneStar %}
+                                    {% set countStar = 5 %}
+
+                                    {% endif %}
+
+                                <div class="feedback__continuous__shapes-list__item">
+                                    <input type="radio" name="feedbackContinuous">
+                                    <label class="feedback__item-label">
+                                        <i class="ico ico-star icomoon-default"></i>
+                                        <i class="ico ico-star-selected icomoon-sudo"></i>
+                                    </label>
+                                    <div class="feedback__item-tooltip-container feedback__continuous__shapes-list__item-tooltip-container top">
+                                        <div class="feedback__item__tooltip-body">
+                                            <ul class="list-inline">
+                                                <li><i class="ico ico-star {{oneStar}}"></i></li>
+                                                <li><i class="ico ico-star {{twoStar}}"></i></li>
+                                                <li><i class="ico ico-star {{threeStar}}"></i></li>
+                                                <li><i class="ico ico-star {{fourStar}}"></i></li>
+                                                <li><i class="ico ico-star {{fiveStar}}"></i></li>
+                                                <li class="feedback__defautl-emo__tooltip-count">
+                                                    <span class="feedback__selected">{{countStar}}</span>/<span class="feedback__total">5</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <p class="form__elem__help-text">Den Lieferservices selbst kannst du spater bewerten</p>
+
+            <p class="form__elem__error-text">This is error Message</p>
+        </div>
+    </div>
+</article>
+<!--Feedback Continuous-->
+
+<!--Long text Start-->
+<article class="form__elem">
+    <div class="elem__long-text">
+        <div class="form__elem__body">
+            <!--Add this for single Column layout-->
+            <div class="elem__long-text__one-col">
+                <div class="elem-type__textarea">
+                    <textarea class="form-control form-textarea" placeholder="Klicke hier, um deinen Kommentar zuschreiben"></textarea>
+                </div>
+            </div>
+            <div class="remaining_characters_div">
+                <span id="show_remaining_chars_message_3055" class="show_remaining_chars_message">Remaining characters: 298/300</span>
+            </div>
+
+        </div>
+    </div>
+</article>
+<!--Long text End-->
