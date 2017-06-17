@@ -1,6 +1,6 @@
 <!--Feedback Continuous-->
 <article class="form__elem form__elem__no-border">
-    <div class="elem__feedback-continuous elem__feedback-continuous__thumbnail-false fixed__feedback__continuous text-center">
+    <div class="elem__feedback-continuous elem__feedback-continuous__thumbnail-false fixed__feedback__continuous feedback__continuous__view-center">
         <div class="elem__feedback__header elem__feedback__header__thumbnail-false">
             <div class="elem_feedback__header-content">
                 <h3 class="form__elem__title">Wie viele Sterne gibst du Liederheld?</h3>
@@ -9,9 +9,9 @@
 
         <div class="form__elem__body">
             <div class="feedback__container feedback__continuous__container">
-                <div class="feedback__emo-list feedback__continuous__emo-list feedback__continuous__emo-list__view-center hide__radio subquestion__false shapes__lg">
+                <div class="feedback__emo-list feedback__continuous__emo-list hide__radio subquestion__false shapes__lg">
                     {% set rownumbers = [
-                        {count: 3, string: '', type: 'total'}
+                        {count: 3, string: '', type: ''}
                     ]%}
                     {% for rownumber in rownumbers %}
                         {% if rownumber.type == 'total'%}
@@ -80,22 +80,3 @@
     </div>
 </article>
 <!--Feedback Continuous-->
-
-<!--Long text Start-->
-<article class="form__elem form__elem__no-border">
-    <div class="elem__long-text">
-        <div class="form__elem__body">
-            <!--Add this for single Column layout-->
-            <div class="elem__long-text__one-col">
-                <div class="elem-type__textarea">
-                    <textarea class="form-control form-textarea" placeholder="Klicke hier, um deinen Kommentar zuschreiben"></textarea>
-                </div>
-            </div>
-            <div class="remaining_characters_div">
-                <span id="show_remaining_chars_message_3055" class="show_remaining_chars_message">Remaining characters: 298/300</span>
-            </div>
-
-        </div>
-    </div>
-</article>
-<!--Long text End-->

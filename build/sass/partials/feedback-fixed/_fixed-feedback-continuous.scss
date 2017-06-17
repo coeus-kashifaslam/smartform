@@ -203,14 +203,23 @@
 }
 
 //View Center
-.feedback__continuous__emo-list__view-center {
-  display: block;
-  margin-bottom: 25px;
-  .feedback__continuous__emo-list__table-row {
+.feedback__continuous__view-center {
+  text-align: center;
+  .feedback__continuous__container {
+    margin-bottom: 0;
+  }
+  .form__elem__help-text {
+    margin-bottom: 0;
+  }
+  .feedback__continuous__emo-list {
     display: block;
-    .feedback__continuous__emo-list__item {
-      display: inline-block;
-      width: auto !important;
+    margin-bottom: 25px;
+    .feedback__continuous__emo-list__table-row {
+      display: block;
+      .feedback__continuous__emo-list__item {
+        display: inline-block;
+        width: auto !important;
+      }
     }
   }
 }
