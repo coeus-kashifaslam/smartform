@@ -10,6 +10,9 @@
 
                     {# Centered Layout #}
                     {% include 'template/components/feedback-fixed/full-width/fixed-feedback-continuous-centered-1-row.html' %}
+                    {% set singleCol = 'true' %}
+                    {% include 'template/components/long-text.html' %}
+                    
                     {# Thumbnail Right #}
                     {% include 'template/components/feedback-fixed/thumbnail-right/fixed-feedback-continuous-thumbnail-right-1-row.html' %}
                     {% include 'template/components/feedback-fixed/thumbnail-right/fixed-feedback-continuous-thumbnail-right.html' %}
@@ -45,6 +48,7 @@
                     {% include 'template/components/long-text.html' %}
                     {% set singleCol = 'false' %}
                     {% include 'template/components/long-text.html' %}
+
 
                     {% include 'template/components/dropdown.html' %}
                     {% include 'template/components/multiple-choice.html' %}

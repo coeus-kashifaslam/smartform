@@ -201,3 +201,16 @@
     }
   }
 }
+
+//View Center
+.feedback__continuous__emo-list__view-center {
+  display: block;
+  margin-bottom: 25px;
+  .feedback__continuous__emo-list__table-row {
+    display: block;
+    .feedback__continuous__emo-list__item {
+      display: inline-block;
+      width: auto !important;
+    }
+  }
+}
