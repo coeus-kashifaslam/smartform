@@ -251,9 +251,6 @@
       }
     }
   }
-
-  @media (min-width: 768px) {
-  }
   @media (max-width: 767px) {
     &.fixed__grid-table__cell {
       margin-top: 0;
@@ -274,16 +271,20 @@
   .form__elem__disable-option {
     margin-top: 0;
   }
-  &.state__single {
-    .form__elem__disable-option {
-      margin-top: 20px;
-    }
-  }
   &.fixed__feedback__continuous {
     .form__elem__disable-option {
       @media (max-width: 767px) {
         padding-left: 0;
         padding-right: 0;
+      }
+    }
+  }
+  &.state__single {
+    .form__elem__disable-option {
+      margin-top: 20px;
+      @media (max-width: 767px) {
+        padding-left: 15px;
+        padding-right: 15px;
       }
     }
   }
