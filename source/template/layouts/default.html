@@ -7,6 +7,8 @@
     <p class="close__form">×</p>
     {% include 'template/includes/languages.html' %}
 
+    {% include 'template/includes/custom-header-lieferheld.html' %}
+
     {% include 'template/includes/banner.html' %}
 
     {#
@@ -19,8 +21,11 @@
 
     {% block content %}{% endblock %}
 
-    {% include 'template/includes/footer.html' %}
+
+    {% include 'template/includes/footer-custom-bankingCheck.html' %}
     {% set footerBg = 'active'%}
+    {% include 'template/includes/footer.html' %}
+    {% set footerBg = 'false'%}
     {% include 'template/includes/footer.html' %}
 
     {% include 'template/includes/footer-custom.html' %}

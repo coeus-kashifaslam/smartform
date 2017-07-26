@@ -14,6 +14,12 @@
     padding: 15px;
   }
 }
+.centered__elem__long-text {
+  text-align: center;
+  .form-textarea {
+    text-align: initial;
+  }
+}
 
 @media (max-width: 767px) {
   .elem__long-text__one-col {

@@ -141,3 +141,74 @@ $custom-footer-font-size: 14px;
   }
 
 }
+
+
+
+//BankingCheck custom footer
+//.page__footer__backing-check {
+//  .logo__container {
+//    padding: 20px 0;
+//    img {
+//      max-width: 190px;
+//    }
+//  }
+//  .logo-left {
+//    text-align: left;
+//  }
+//  .logo-right {
+//    text-align: right;
+//  }
+//
+//  .list__utility-links {
+//    margin: 0;
+//    .list__label {
+//      font-weight: bold;
+//    }
+//    li {
+//      margin-top: 5px;
+//      margin-bottom: 10px;
+//      font-size: 13px;
+//      padding: 0;
+//      &:after {
+//        color: $default-footer-link;
+//        content: "|";
+//        padding: 0 5px;
+//      }
+//      &:first-child,
+//      &:last-child {
+//        &:after {
+//          content: '';
+//          padding-right: 0;
+//        }
+//      }
+//      a {
+//        color: $default-footer-link;
+//        text-transform: uppercase;
+//        &:hover,
+//        &:focus {
+//          text-decoration: underline;
+//        }
+//      }
+//    }
+//  }
+//  @media (max-width: 767px) {
+//    .logo-left,
+//    .logo-right {
+//      text-align: center;
+//    }
+//
+//    .list__utility-links {
+//      text-align: center;
+//      margin-bottom: 15px;
+//      .list__label {
+//        display: block;
+//        font-size: 13px;
+//      }
+//      li {
+//        font-size: 11px;
+//        margin-top: 0;
+//        margin-bottom: 5px;
+//      }
+//    }
+//  }
+//}

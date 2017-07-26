@@ -1,0 +1,55 @@
+<style type="text/css">
+    .comp__lieferheld-header {
+        border-bottom: 1px solid #ccc;
+        border-top: 1px solid #ccc;
+    }
+    .lieferheld-header__container {
+        position: relative;
+        padding:  30px 50px;
+    }
+    .lieferheld__logo {
+        position: absolute;
+        left: 5px;
+        top: 50%;
+        margin-top: -19px;
+    }
+    .lieferheld-header__title {
+        margin: 0;
+        font-size: 30px;
+        font-family: 'Ubuntu-Bold';
+        color: #343B46;
+    }
+    .lieherfeld-thumbnail {
+        max-width: 48px;
+    }
+    @media (max-width: 767px) {
+        .lieferheld-header__container {
+            padding: 30px 40px;
+        }
+        .lieferheld__logo {
+            margin-top: -15px;
+            left: 0;
+        }
+        .lieferheld-header__title {
+            font-size: 24px;
+        }
+        .lieherfeld-thumbnail {
+            width: 35px;
+        }
+
+    }
+</style>
+<!--Custom header for lieferheld Start-->
+<div class="comp comp__lieferheld-header">
+    <div class="sff-form__content-wrap">
+        <div class="lieferheld-header__container">
+            <div class="custom-header__logo lieferheld__logo">
+                <img src="https://s3-eu-west-1.amazonaws.com/sff-codedeploy/uploads/thanku_banner/lieferheld-799900-1497864456.png" alt="..." class="lieherfeld-thumbnail">
+            </div>
+            <div class="custom-header__heder-text text-center">
+                <h2 class="custom-header__title lieferheld-header__title">Custom header text goes here</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Custom header for lieferheld End-->
