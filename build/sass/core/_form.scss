@@ -223,7 +223,7 @@
 }
 
 
-
+//3075
 .form__elem__disable-option {
   margin-top: 20px;
   .disableOption-text {
@@ -262,5 +262,20 @@
   }
   &.fixed__continuous-table__item {
     margin-top: 0;
+  }
+}
+
+
+.fixed__feedback__continuous__thumbnail-left {
+  .form__elem__disable-option {
+    margin-top: 0;
+  }
+  &.fixed__feedback__continuous {
+    .form__elem__disable-option {
+      @media (max-width: 767px) {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
   }
 }
