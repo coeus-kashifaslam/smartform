@@ -226,6 +226,9 @@
 //3075
 .form__elem__disable-option {
   margin-top: 20px;
+  p {
+    margin-bottom: 0;
+  }
   .disableOption-text {
     @media (min-width: 768px) {
       display: none;
@@ -266,9 +269,15 @@
 }
 
 
-.fixed__feedback__continuous__thumbnail-left {
+.fixed__feedback__continuous__thumbnail-left,
+.fixed__feedback__continuous__thumbnail-right {
   .form__elem__disable-option {
     margin-top: 0;
+  }
+  &.state__single {
+    .form__elem__disable-option {
+      margin-top: 20px;
+    }
   }
   &.fixed__feedback__continuous {
     .form__elem__disable-option {
