@@ -13,6 +13,9 @@
                         <p>Toolti {{gridCol + 1}}</p>
                     </div>
                     {% endfor %}
+                    <div class="fixed__grid-table__cell fixed__grid-shape__col">
+                        <p>Can not answer</p>
+                    </div>
                 </div>
 
                 {% set gridRows = [0,1,2]%}
@@ -36,6 +39,18 @@
                         </label>
                     </div>
                     {% endfor %}
+                    <div class="form__elem__disable-option fixed__grid-table__cell">
+                        <div class="checkbox-col">
+                            <div class="elem-type__checkbox">
+                                <input type="checkbox" class="form-checkbox" name="disableOption"
+                                       id="disableMultipleChoice">
+                                <label for="disableMultipleChoice">
+                                    <span></span>
+                                    <span class="disableOption-text">Can not Answer</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 {% endfor %}
             </div>

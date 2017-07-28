@@ -11,6 +11,25 @@
         <div class="form__elem__body">
             <div class="feedback__container feedback__continuous__container">
                 <div class="feedback__emo-list feedback__continuous__emo-list hide__radio">
+
+                    <div class="feedback__continuous__emo-list__table-row {{totalClass}} feedback__continuous__selection-continuous">
+                        <div class="feedback__emo-list__item feedback__emo-list__description feedback__continuous__emo-list__item feedback__continuous__emo-list__description">
+                        </div>
+
+                        {% set numbers = [0,1,2,3,4,5,6,7,8,9,10]%}
+                        {% for number in numbers %}
+                        <div class="feedback__emo-list__item feedback__emo-list__shape-item feedback__continuous__emo-list__item feedback__continuous__emo-list__shape-item">
+                        </div>
+                        {% endfor %}
+
+                        <div class="feedback__emo-list__item feedback__emo-list__shape-item feedback__continuous__emo-list__item feedback__continuous__emo-list__shape-item form__elem__disable-option  fixed__continuous-table__item">
+                            <p>Can not answer</p>
+                        </div>
+
+                    </div>
+
+
+
                     {% set rownumbers = [
                         {count: 0, string: 'There are .', type: ''},
                         {count: 1, string: 'There are many variations .', type: ''},
@@ -82,6 +101,21 @@
                             </div>
                         </div>
                         {% endfor %}
+
+                        <div class="feedback__emo-list__item feedback__emo-list__shape-item feedback__continuous__emo-list__item feedback__continuous__emo-list__shape-item form__elem__disable-option  fixed__continuous-table__item">
+                            <div class="fixed__continuous-table__cell">
+                                <div class="checkbox-col">
+                                    <div class="elem-type__checkbox">
+                                        <input type="checkbox" class="form-checkbox" name="disableOption"
+                                               id="disableffc{{rownumber.count}}">
+                                        <label for="disableffc{{rownumber.count}}">
+                                            <span></span>
+                                            <span class="disableOption-text">Can not Answer</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                     {% endfor %}
