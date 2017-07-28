@@ -39,6 +39,7 @@ $progress-bg: #606060;
         p {
           margin: 0;
           position: relative;
+          min-width: 25px;
           &:before {
             content: '';
             position: absolute;
