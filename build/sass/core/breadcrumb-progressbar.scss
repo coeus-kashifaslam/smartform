@@ -28,11 +28,14 @@ $progress-bg: #606060;
         font-family: $font-regular;
         position: absolute;
         top: -35px;
-        left: 96%;
+        left: 94%;
         background: $ekomi-green;
         border-radius: 15px;
         padding: 5px 10px 6px 10px;
         z-index: 999;
+        @media (max-width: 767px) {
+          left: 85%;
+        }
         p {
           margin: 0;
           position: relative;
