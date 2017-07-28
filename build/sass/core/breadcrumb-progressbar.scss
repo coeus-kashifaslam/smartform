@@ -1,0 +1,52 @@
+$progress-bg: #606060;
+.breadcrumb__progressbar {
+  padding: 25px 15px 30px 15px;
+  background-color: $breadcrumb-fill;
+  border: 1px solid $breadcrumb-border;
+}
+.breadcrumb__page-type {
+  margin-bottom: 40px;
+  .breadcrumb__page-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: $font-bold;
+    font-size: $default-subHeader-size;
+  }
+}
+.breadcrumb__progress {
+  .progress {
+    margin-bottom: 0;
+    height: 10px;
+    background: $progress-bg;
+    overflow: visible;
+    &-bar {
+      background: $ekomi-green;
+      line-height: 10px;
+      border-radius: 4px;
+      position: relative;
+      &__paging {
+        font-family: $font-regular;
+        position: absolute;
+        top: -35px;
+        left: 96%;
+        background: $ekomi-green;
+        border-radius: 15px;
+        padding: 5px 10px 6px 10px;
+        z-index: 999;
+        p {
+          margin: 0;
+          position: relative;
+          &:before {
+            content: '';
+            position: absolute;
+            top: 14px;
+            left: -5px;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 10px solid $ekomi-green;
+          }
+        }
+      }
+    }
+  }
+}
