@@ -1,0 +1,138 @@
+$slider-color: $ekomi-green;
+.irs-min,
+.irs-max,
+.irs-from,
+.irs-to,
+.irs-single{
+    display: none;
+}
+.irs {
+    height: 30px;
+    &-bar,
+    &-bar-edge {
+        height: 5px;
+        top: 15px;
+    }
+    &-bar,
+    &-bar-edge,
+    &-slider {
+        &, &:hover, &:focus, &:active,&.state_hover {
+            background: $ekomi-green;
+        }
+    }
+    &-slider {
+        box-shadow: none;
+        height: 25px;
+        width: 25px;
+        z-index: 3;
+        top: 5px;
+        border: 1px solid $ekomi-green;
+    }
+    &-line {
+        height: 5px;
+        top: 14px;
+        &-left,
+        &-mid,
+        &-right {
+            height: 3px;
+        }
+    }
+}
+.elem__constant-sum {
+    &__table {
+        display: table;
+        width: 100%;
+    }
+    &__row {
+        display: table-row;
+    }
+    &__column {
+        display: table-cell;
+        vertical-align: middle;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        p {
+            margin: 0;
+        }
+        &.constant-sum__slider {
+            width: 250px;
+            padding: 5px 10px;
+        }
+        &.constant-sum__input {
+            width: 80px;
+            padding: 5px 10px;
+            .form-control {
+                width: 100%;
+                height: 35px;
+            }
+        }
+        &.constant-sum__state {
+            text-align: center;
+            width: 100px;
+            padding: 5px 10px 5px 0;
+            .form__elem__disable-option {
+                margin-top: 0;
+            }
+            .form-checkbox {
+                + label {
+                    padding-left: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .elem__constant-sum {
+        &__table,
+        &__row {
+            //display: block;
+        }
+        &__row {
+            display: block;
+            margin-bottom: 15px;
+            &.constant-sum__header-row {
+                display: none;
+            }
+        }
+        &__column {
+            &.constant-sum__description,
+            &.constant-sum__state {
+                display: block;
+                width: 100%;
+                padding-left: 0;
+                padding-right: 0;
+            }
+            &.constant-sum__slider {
+                padding-left: 0;
+                width: 70%;
+                display: inline-block;
+            }
+            &.constant-sum__input {
+                padding-right: 0;
+                display: inline-block;
+            }
+             &.constant-sum__state {
+                text-align: initial;
+                .form__elem__disable-option {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+.content__rtl {
+    .elem__constant-sum {
+        &__column {
+            &.constant-sum__state {
+                .form-checkbox {
+                    + label {
+                        padding-left: 0;
+                        padding-right: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
