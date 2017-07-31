@@ -32,40 +32,25 @@ $(document).ready(function (){
 
 
 // Range slider
-;(function () {
-    var $range = $(".js-range-slider"),
-        $input = $(".js-input"),
-        instance,
-        min = 0,
-        max = 100;
+$(function () {
+    var $document   = $(document),
+        $inputRange = $('input[type="range"]');
 
-    $range.ionRangeSlider({
-        type: "single",
-        min: min,
-        max: max,
-        from: 0,
-        onStart: function (data) {
-            $input.prop("value", data.from);
-        },
-        onChange: function (data) {
-            $input.prop("value", data.from);
-        }
+    // Example functionality to demonstrate a value feedback
+    function valueOutput(element) {
+        var value = element.value,
+            output = element.parentNode.parentNode.getElementsByClassName("js-input");
+            output[0].value = value;
+    }
+    for (var i = $inputRange.length - 1; i >= 0; i--) {
+        valueOutput($inputRange[i]);
+    };
+    $document.on('input', 'input[type="range"]', function(e) {
+        valueOutput(e.target);
     });
+    // end
 
-    instance = $range.data("ionRangeSlider");
-
-    $input.on("change keyup", function () {
-        var val = $(this).prop("value");
-
-        // validate
-        if (val < min) {
-            val = min;
-        } else if (val > max) {
-            val = max;
-        }
-
-        instance.update({
-            from: val
-        });
+    $inputRange.rangeslider({
+        polyfill: false
     });
-})();
+});
