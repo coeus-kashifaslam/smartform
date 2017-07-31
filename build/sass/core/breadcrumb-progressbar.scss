@@ -20,7 +20,7 @@ $progress-bg: #606060;
     background: $progress-bg;
     overflow: visible;
     &-bar {
-      background: $ekomi-green;
+      background: $default-theme;
       line-height: 10px;
       border-radius: 4px;
       position: relative;
@@ -29,7 +29,7 @@ $progress-bg: #606060;
         position: absolute;
         top: -35px;
         left: 94%;
-        background: $ekomi-green;
+        background: $default-theme;
         border-radius: 15px;
         padding: 5px 10px 6px 10px;
         z-index: 999;
@@ -46,7 +46,7 @@ $progress-bg: #606060;
             left: -5px;
             border-left: 5px solid transparent;
             border-right: 5px solid transparent;
-            border-top: 10px solid $ekomi-green;
+            border-top: 10px solid $default-theme;
           }
         }
       }
