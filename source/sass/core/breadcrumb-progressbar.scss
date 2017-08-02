@@ -24,6 +24,7 @@ $progress-bg: #606060;
       line-height: 10px;
       border-radius: 4px;
       position: relative;
+      max-width: 100%;
       &__paging {
         font-family: $font-regular;
         position: absolute;
