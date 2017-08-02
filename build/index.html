@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Smart Form</title>
-    <link rel="stylesheet" href="css/sff-form.css?version=6588227">
+    <link rel="stylesheet" href="css/sff-form.css?version=6392349">
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -153,6 +153,89 @@
                     <h1 class="form__legend">Form Name Goes Here</h1>
                 </div>
                 <div class="form-fieldset">
+                    <!--Constant Sum Start-->
+<article class="form__elem">
+    <div class="elem__constant-sum">
+        <h3 class="form__elem__title">Constant Sum</h3>
+        <div class="form__elem__body">
+            <p class="form__elem__help-text">Help Text goes here</p>
+            <div class="elem__constant-sum__wrapper">
+                <div class="elem__costant-sum__container elem__constant-sum__table">
+                    <div class="elem__constant-sum__row constant-sum__header-row">
+                        <div class="elem__constant-sum__column constant-sum__description">
+                        </div>
+                        <div class="elem__constant-sum__column constant-sum__slider">
+                        </div>
+                        <div class="elem__constant-sum__column constant-sum__input">
+                        </div>
+                        <div class="elem__constant-sum__column constant-sum__state">
+                            <p>Can not answer</p>
+                        </div>
+                    </div>
+
+                    <!--Sigle constant sum Row Starts-->
+                    <div class="elem__constant-sum__row">
+                        <div class="elem__constant-sum__column constant-sum__description">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea labore molestiae odio, officia sint ut.</p>
+                        </div>
+                        <div class="elem__constant-sum__column constant-sum__slider">
+                            <input type="range" min="0" max="100" step="1" value="0">
+                        </div>
+                        <div class="elem__constant-sum__column constant-sum__input">
+                            <input type="text" class="form-control js-input" value="" />
+                        </div>
+                        <div class="elem__constant-sum__column constant-sum__state">
+                            <div class="form__elem__disable-option">
+                                <div class="checkbox-col">
+                                    <div class="elem-type__checkbox">
+                                        <input type="checkbox" class="form-checkbox" name="disableOption"
+                                               id="disableConstantSum">
+                                        <label for="disableConstantSum">
+                                            <span></span>
+                                            <span class="disableOption-text">Can not Answer</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Sigle constant sum Row Ends-->
+
+                    <!--Sigle constant sum Row Starts-->
+                    <div class="elem__constant-sum__row">
+                        <div class="elem__constant-sum__column constant-sum__description">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea iusto neque ratione soluta voluptatum? Dolorem?</p>
+                        </div>
+                        <div class="elem__constant-sum__column constant-sum__slider">
+                            <input type="range" min="0" max="100" step="1" value="0">
+                        </div>
+                        <div class="elem__constant-sum__column constant-sum__input">
+                            <input type="text" class="form-control js-input" value="" />
+                        </div>
+                        <div class="elem__constant-sum__column constant-sum__state">
+                            <div class="form__elem__disable-option">
+                                <div class="checkbox-col">
+                                    <div class="elem-type__checkbox">
+                                        <input type="checkbox" class="form-checkbox" name="disableOption"
+                                               id="disableConstantSum1">
+                                        <label for="disableConstantSum1">
+                                            <span></span>
+                                            <span class="disableOption-text">Can not Answer</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Sigle constant sum Row Ends-->
+                </div>
+            </div>
+            <p class="form__elem__error-text">This is error Message</p>
+        </div>
+    </div>
+</article>
+<!--Constant Sum End-->
+
 
                     
                     <!--Feedback Continuous-->
@@ -14320,7 +14403,7 @@
                 </div>
 
                 <div class="col-sm-3">
-                    <p class="power-by__info"><span>powered by</span> <span class="power-by__logo"><img alt="Logo not Available" src="/images/kpn-poweredbyekomi.png" /></span></p>
+                    <p class="power-by__info"><span>powered by</span> <span class="power-by__logo"><img alt="Logo not Available" src="/images/powered-by.png" /></span></p>
                 </div>
 
                 <div class="clearfix">&nbsp;</div>
@@ -14337,6 +14420,8 @@
 <script type="text/javascript" src="js/libs/modernizr.js"></script>
 <script type="text/javascript" src="js/libs/bootstrap.js"></script>
 <script type="text/javascript" src="js/libs/bootstrap-select.js"></script>
+<!--<script type="text/javascript" src="js/libs/ion.rangeSlider.js"></script>-->
+<script type="text/javascript" src="js/libs/rangeslider.js"></script>
 
 
 <!--For Fixed versions-->

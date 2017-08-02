@@ -1,6 +1,9 @@
 @import "libs/bootstrap";
 @import "libs/bootstrap-select";
 @import "libs/font-awesome";
+//@import "libs/ion-rangeSlider";
+//@import "libs/ion-rangeSlider-skinHTML5";
+@import "libs/rangeslider";
 
 @import "font-families/roboto";
 @import "font-families/helvetica";
@@ -49,6 +52,8 @@
 
 @import "partials/feedback-fixed/fixed-feedback-thumbnail-right";
 @import "partials/feedback-fixed/fixed-feedback-thumbnail-right-fixes";
+
+@import "partials/constant-sum";
 
 @import "partials/thank-you";
 
