@@ -160,3 +160,21 @@
     }
   }
 }
+
+
+//Changing tooltip from single line to multi line only for mobile view
+//@media (max-width: 767px) {
+//  .fixed__grid-shape__col {
+//    .grid-shape-label {
+//      display: table;
+//      white-space: normal;
+//    }
+//    .grid-shape-span,
+//    .grid-text-span {
+//      display: table-cell;
+//    }
+//    .grid-text-span {
+//      padding-left: 10px;
+//    }
+//  }
+//}
