@@ -19,6 +19,7 @@
                 <div class="rating__icons__col__content">
                     <div class="feedback__container feedback__continuous__container">
                         <div class="feedback__emo-list feedback__continuous__emo-list hide__radio">
+
                             {% set rownumbers = [
                             {count: 3, string: '', type: 'total'}
                             ]%}
@@ -87,7 +88,6 @@
                                     </div>
                                 </div>
                                 {% endfor %}
-
                             </div>
                             {% endfor %}
                         </div>
@@ -109,7 +109,17 @@
                 rating.
             </p>
         </div>
-
+        <div class="form__elem__disable-option">
+            <div class="checkbox-col">
+                <div class="elem-type__checkbox">
+                    <input type="checkbox" class="form-checkbox" name="disableOption"
+                           id="disableMultipleChoice">
+                    <label for="disableMultipleChoice">
+                        <span>Can not Answer</span>
+                    </label>
+                </div>
+            </div>
+        </div>
         <p class="form__elem__error-text">This is error Message</p>
 
     </div>
