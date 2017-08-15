@@ -289,3 +289,12 @@
     }
   }
 }
+.feedback__continuous__emo-list {
+  .feedback__continuous__emo-list__table-row {
+    &.feedback__continuous__emo-list__header-row {
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+  }
+}
