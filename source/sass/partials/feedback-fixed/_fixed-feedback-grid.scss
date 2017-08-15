@@ -178,3 +178,39 @@
     }
   }
 }
+
+
+
+
+//Layout changes for Centered tooltip for grid layout
+.fixed__grid-tooltip-centered {
+  .grid__header {
+    width: 100%;
+    display: table;
+    .fixed__grid-table__cell {
+      width: auto;
+    }
+  }
+  p {
+    margin: 0;
+  }
+  .fixed__grid-table__last-col {
+    padding-left: 2px;
+    padding-right: 2px;
+    text-align: center;
+  }
+  .grid__header-centered {
+    display: table;
+    width: 100%;
+    .grid__header-centered-col {
+      display: table-cell;
+      width: 1%;
+    }
+    .grid__header-centered-first-col {
+      text-align: left;
+    }
+    .grid__header-centered-last-col {
+      text-align: right;
+    }
+  }
+}
