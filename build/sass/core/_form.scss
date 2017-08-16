@@ -298,3 +298,24 @@
     }
   }
 }
+
+
+//Disable All options in row except the checkbox itself
+.disable__events {
+  * {
+    pointer-events: none;
+  }
+  > * {
+    opacity: 0.5;
+  }
+}
+.exclude__disable__events {
+  .form__elem__disable-option {
+    * {
+      pointer-events: all;
+    }
+  }
+  .excluded-item {
+    opacity: 1 !important;
+  }
+}
