@@ -263,6 +263,9 @@
   &.fixed__continuous-table__item {
     margin-top: 0;
   }
+  .form-checkbox + label span {
+    display: table-cell;
+  }
 }
 
 
@@ -289,6 +292,7 @@
     }
   }
 }
+//Hide can not answer header row
 .feedback__continuous__emo-list {
   .feedback__continuous__emo-list__table-row {
     &.feedback__continuous__emo-list__header-row {
