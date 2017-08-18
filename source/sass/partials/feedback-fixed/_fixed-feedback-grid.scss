@@ -241,8 +241,12 @@
       width: 1% !important;
       padding-left: 0;
       padding-right: 0;
+      text-align: center;
       .grid-text-span {
         display: none;
+      }
+      .grid-shape-label {
+        display: inline-block;
       }
     }
   }
