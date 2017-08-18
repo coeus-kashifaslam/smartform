@@ -259,12 +259,12 @@
     &.fixed__continuous-table__item {
       text-align: left;
     }
+    .form-checkbox + label span {
+      display: table-cell;
+    }
   }
   &.fixed__continuous-table__item {
     margin-top: 0;
-  }
-  .form-checkbox + label span {
-    display: table-cell;
   }
 }
 
