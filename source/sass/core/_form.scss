@@ -259,6 +259,9 @@
     &.fixed__continuous-table__item {
       text-align: left;
     }
+    .form-checkbox + label span {
+      display: table-cell;
+    }
   }
   &.fixed__continuous-table__item {
     margin-top: 0;
@@ -289,6 +292,7 @@
     }
   }
 }
+//Hide can not answer header row
 .feedback__continuous__emo-list {
   .feedback__continuous__emo-list__table-row {
     &.feedback__continuous__emo-list__header-row {
@@ -296,5 +300,26 @@
         display: none;
       }
     }
+  }
+}
+
+
+//Disable All options in row except the checkbox itself
+.disable__events {
+  * {
+    pointer-events: none;
+  }
+  > * {
+    opacity: 0.5;
+  }
+}
+.exclude__disable__events {
+  .form__elem__disable-option {
+    * {
+      pointer-events: all;
+    }
+  }
+  .excluded-item {
+    opacity: 1 !important;
   }
 }
