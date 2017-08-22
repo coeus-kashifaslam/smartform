@@ -54,6 +54,11 @@
                 width: 100%;
                 height: 35px;
             }
+            &.constant-sum__input-thick {
+                .form-control {
+                    border-width: 3px;
+                }
+            }
         }
         &.constant-sum__state {
             text-align: center;
