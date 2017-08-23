@@ -65,7 +65,8 @@ $custom-footer-font-size: 14px;
 
 .custom-footer__social-media-block {
   .list__social-media-links {
-    a {
+
+    a, p {
       color: $custom-footer-social-icons-color;
       font-size: 26px;
       &:hover,
@@ -76,6 +77,8 @@ $custom-footer-font-size: 14px;
     }
     @media (max-width: 767px) {
       text-align: center;
+      margin-bottom: -20px;
+      margin-top: 20px;
     }
   }
 }
@@ -132,9 +135,6 @@ $custom-footer-font-size: 14px;
 
 
 @media (max-width: 767px) {
-  .custom-footer__col-header,
-  .custom-footer__col-content,
-  .custom-footer__info-section-content,
   .custom-footer__section__default-quick-links {
     padding-left: 15px;
     padding-right: 15px;
