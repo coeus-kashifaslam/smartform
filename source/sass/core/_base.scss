@@ -29,6 +29,11 @@ html {
   margin-bottom: $default-component-margin;
 }
 
+.no-scroll {
+  &, & body {
+    overflow: hidden !important;
+  }
+}
 #pageloader {
   position: fixed;
   left: 0;

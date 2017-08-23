@@ -60,6 +60,8 @@
 @media (max-width: 767px) {
   .page__footer__quick-links {
     text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
     > li {
       a {
         font-size: 11px;
@@ -67,7 +69,7 @@
     }
   }
   .power-by__info {
-    text-align: center;
+    //text-align: center;
     margin-top: 10px;
   }
 }
