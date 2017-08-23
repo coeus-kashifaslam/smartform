@@ -202,8 +202,18 @@
     }
   }
 }
-
 //View Center
+.sff-form__borderless {
+  .sff-form__content-body {
+.feedback__continuous__view-center {
+      margin: -30px 0;
+      @media (max-width: 767px) {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+}
 .feedback__continuous__view-center {
   text-align: center;
   .feedback__continuous__container {
@@ -212,14 +222,36 @@
   .form__elem__help-text {
     margin-bottom: 0;
   }
+  .ranking__message {
+    margin-top: 10px;
+    > .ranking__message {
+      margin-top: 0;
+    }
+  }
+  .elem__feedback__header {
+    margin-bottom: 10px;
+  }
   .feedback__continuous__emo-list {
     display: block;
-    margin-bottom: 25px;
     .feedback__continuous__emo-list__table-row {
+      display: inline-block;
+      @media (max-width: 767px) {
       display: block;
+        &:last-of-type {
+          border: 0 none;
+          padding-top: 0;
+        }
+      }
       .feedback__continuous__emo-list__item {
         display: inline-block;
         width: auto !important;
+      }
+      .feedback__emo-list__description {
+        display: block;
+        padding: 0;
+      }
+      .feedback__emo-list__description-count {
+        text-align: center;
       }
     }
   }

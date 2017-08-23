@@ -27,13 +27,13 @@
     }
 
   }
-  &.form__elem {
-    @media (max-width: 767px) {
-      &:first-child {
-        border-bottom: 1px solid $default-border-color;
-      }
-    }
-  }
+  //&.form__elem {
+  //  @media (max-width: 767px) {
+  //    &:first-child {
+  //      border-bottom: 1px solid $default-border-color;
+  //    }
+  //  }
+  //}
 }
 
 
