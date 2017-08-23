@@ -13,7 +13,7 @@ $(document).ready(function () {
 
 
         centerColWidth = tableShapesColWidth * tableShapesCount;
-        $this.find('.fixed__grid-table__last-col').width(tableShapesColWidth);
+        // $this.find('.fixed__grid-table__last-col').width(tableShapesColWidth);
         $this.find('.fixed__grid-table__middle-col').width(centerColWidth);
     }
 });
