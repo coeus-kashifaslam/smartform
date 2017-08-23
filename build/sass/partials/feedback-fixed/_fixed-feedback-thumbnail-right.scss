@@ -90,8 +90,8 @@ $icon-cols-width-mobile: 100%;
         max-width: 100%;
       }
       .rating__thumbnail__container {
-        padding-right: 30px;
-        padding-left: 30px;
+        padding-right: 15px;
+        padding-left: 15px;
       }
     }
     .rating__thumbnail__container {
@@ -158,12 +158,22 @@ $icon-cols-width-mobile: 100%;
 
 .form__elem__rating-thumbnail-right {
   .elem__rating-thumbnail-right__body {
+    .rating__thumbnail__col {
+      .rating__thumbnail__col__content {
+        .product-thumbnail {
+          @media (min-width: 768px) {
+            max-width: 260px;
+            width: auto;
+          }
+        }
+      }
+    }
     .rating__thumbnail__col-sm {
       .rating__thumbnail__col__content {
         .product-thumbnail {
           @media (min-width: 768px) {
             max-width: 135px;
-            width: 100%;
+            width: auto;
           }
         }
       }
