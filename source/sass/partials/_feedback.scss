@@ -160,7 +160,7 @@
 
 
 .elem__feedback__header__thumbnail-false {
-  min-height: unset;
+  min-height: inherit;
 }
 
 
@@ -207,7 +207,7 @@
 
   &.top {
     left: 50%;
-    top: -40px;
+    bottom: 50px;
     transform: translateX(-50%);
     &:before {
       bottom: -8px;
