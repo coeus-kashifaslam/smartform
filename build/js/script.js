@@ -54,3 +54,5 @@ $(function () {
         polyfill: false
     });
 });
+
+$(".bootstrap-slider").slider({});
