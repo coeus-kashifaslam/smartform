@@ -352,7 +352,7 @@
 //Disable option column width
 @media (min-width: 768px) {
   .form__elem__disable-option.fixed__grid-table__cell,
-  .fixed__grid-tooltip-centered .grid__header .fixed__grid-table__last-col,
+  .fixed__grid-tooltip-centered .grid__header .fixed__grid-table__last-col.fixed__grid-table__cell,
   .fixed__grid-tooltip__row.grid__header .fixed__grid-last-col,
   .feedback__continuous__emo-list .feedback__continuous__emo-list__item.form__elem__disable-option{
     width: 100px;
