@@ -12,6 +12,15 @@ $(document).ready(function (){
             height: ratingHeight + 'px'
         }, 1000);
     }
+
+    $(".bootstrap-slider").slider();
+    $(".bootstrap-slider").on("slide", function(slideEvt) {
+        $this = $(this);
+        $this.parents('.elem__constant-sum__row')
+            .find('.js-input')
+            .val(slideEvt.value);
+    });
+
 });
 
 ;(function() {
@@ -30,29 +39,3 @@ $(document).ready(function (){
     });
 })();
 
-
-// Range slider
-$(function () {
-    var $document   = $(document),
-        $inputRange = $('input[type="range"]');
-
-    // Example functionality to demonstrate a value feedback
-    function valueOutput(element) {
-        var value = element.value,
-            output = element.parentNode.parentNode.getElementsByClassName("js-input");
-            output[0].value = value;
-    }
-    for (var i = $inputRange.length - 1; i >= 0; i--) {
-        valueOutput($inputRange[i]);
-    }
-    $document.on('input', 'input[type="range"]', function(e) {
-        valueOutput(e.target);
-    });
-    // end
-
-    $inputRange.rangeslider({
-        polyfill: false
-    });
-});
-
-$(".bootstrap-slider").slider({});
