@@ -20,6 +20,12 @@ $(document).ready(function (){
             .find('.js-input')
             .val(slideEvt.value);
     });
+    $(".bootstrap-slider").on("change", function(slideEvt) {
+        $this = $(this);
+        $this.parents('.elem__constant-sum__row')
+            .find('.js-input')
+            .val(slideEvt.value.newValue);
+    });
 
 });
 
