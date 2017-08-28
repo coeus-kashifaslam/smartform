@@ -18,24 +18,37 @@
                         </div>
                     </div>
 
+
+                    {% set rownumbers = [
+                    {count: 0, string: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea labore molestiae odio, officia sint ut.', type: ''},
+                    {count: 1, string: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea iusto neque ratione soluta voluptatum? Dolorem?', type: ''},
+                    {count: 2, string: '', type: 'total'}
+                    ]%}
+
+                    {% for rownumber in rownumbers %}
                     <!--Sigle constant sum Row Starts-->
-                    <div class="elem__constant-sum__row">
+                    <div class="elem__constant-sum__row {% if rownumber.type == 'total'%} elem__constant-sum__row-total {% endif %}">
                         <div class="elem__constant-sum__column constant-sum__description">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea labore molestiae odio, officia sint ut.</p>
+                            <p>{{rownumber.string}}</p>
                         </div>
                         <div class="elem__constant-sum__column constant-sum__slider">
+                            {% if rownumber.type != 'total' %}
                             <input class="bootstrap-slider" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="0"/>
+                            {% else %}
+                            <p class="total__label">Total:</p>
+                            {% endif %}
                         </div>
-                        <div class="elem__constant-sum__column constant-sum__input">
+                        <div class="elem__constant-sum__column constant-sum__input {% if rownumber.type == 'total' %}constant-sum__input-thick{% endif %}">
                             <input type="text" class="form-control js-input" value=""/>
                         </div>
+                        {% if rownumber.type != 'total' %}
                         <div class="elem__constant-sum__column constant-sum__state">
                             <div class="form__elem__disable-option">
                                 <div class="checkbox-col">
                                     <div class="elem-type__checkbox">
                                         <input type="checkbox" class="form-checkbox" name="disableOption"
-                                               id="disableConstantSum">
-                                        <label for="disableConstantSum">
+                                               id="disableConstantSum{{rownumber.count}}">
+                                        <label for="disableConstantSum{{rownumber.count}}">
                                             <span></span>
                                             <span class="disableOption-text">Can not Answer</span>
                                         </label>
@@ -43,36 +56,12 @@
                                 </div>
                             </div>
                         </div>
+                        {% endif %}
                     </div>
                     <!--Sigle constant sum Row Ends-->
 
-                    <!--Sigle constant sum Row Starts-->
-                    <div class="elem__constant-sum__row">
-                        <div class="elem__constant-sum__column constant-sum__description">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea iusto neque ratione soluta voluptatum? Dolorem?</p>
-                        </div>
-                        <div class="elem__constant-sum__column constant-sum__slider">
-                            <input class="bootstrap-slider" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="0"/>
-                        </div>
-                        <div class="elem__constant-sum__column constant-sum__input">
-                            <input type="text" class="form-control js-input" value="" />
-                        </div>
-                        <div class="elem__constant-sum__column constant-sum__state">
-                            <div class="form__elem__disable-option">
-                                <div class="checkbox-col">
-                                    <div class="elem-type__checkbox">
-                                        <input type="checkbox" class="form-checkbox" name="disableOption"
-                                               id="disableConstantSum1">
-                                        <label for="disableConstantSum1">
-                                            <span></span>
-                                            <span class="disableOption-text">Can not Answer</span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Sigle constant sum Row Ends-->
+                    {% endfor %}
+
                 </div>
             </div>
             <p class="form__elem__error-text">This is error Message</p>
