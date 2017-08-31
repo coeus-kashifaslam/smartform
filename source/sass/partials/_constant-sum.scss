@@ -58,6 +58,11 @@
             display: none;
         }
     }
+    &.slider-horizontal {
+        @media (max-width: 767px) {
+            width: 90%;
+        }
+    }
 }
 
 .elem__constant-sum {
@@ -107,9 +112,11 @@
             .form__elem__disable-option {
                 margin-top: 0;
             }
-            .form-checkbox {
-                + label {
-                    padding-left: 30px;
+            @media (min-width: 768px) {
+                .form-checkbox {
+                    + label {
+                        padding-left: 30px;
+                    }
                 }
             }
         }
@@ -163,7 +170,9 @@
                 .form-checkbox {
                     + label {
                         padding-left: 0;
-                        padding-right: 30px;
+                        @media (max-width: 768px) {
+                            padding-right: 30px;
+                        }
                     }
                 }
             }
