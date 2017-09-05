@@ -151,6 +151,40 @@
 
   }
 
+
+  .sff-form__footer-cta {
+    transform: scaleX(-1);
+    .sff-form__submit {
+      transform: scaleX(-1);
+      &.sff-form__cta-prev {
+        padding-right: 30px;
+        padding-left: 15px;
+      }
+      &.sff-form__cta-next {
+        padding-left: 30px;
+        padding-right: 15px;
+      }
+      .fa-previous {
+        right: 15px;
+        left: auto;
+        transform: scaleX(-1);
+      }
+      .fa-next {
+        left: 15px;
+        right: auto;
+        transform: scaleX(-1);
+      }
+      @media (max-width: 767px) {
+        .fa-previous {
+          right: 10px;
+        }
+        .fa-next {
+          left: 10px;
+        }
+      }
+    }
+  }
+
 }
 
 

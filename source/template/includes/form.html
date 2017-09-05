@@ -8,13 +8,6 @@
                 </div>
                 <div class="form-fieldset">
 
-                    {% include 'template/components/feedback-fixed/full-width/fixed-feedback-grid-tooltip-centered.html' %}
-
-
-                    {% include 'template/components/constant-sum.html' %}
-
-                    {# Centered Layout #}
-                    {% include 'template/components/feedback-fixed/full-width/fixed-feedback-continuous-centered-1-row.html' %}
 
                     {# Thumbnail Right #}
                     {% include 'template/components/feedback-fixed/thumbnail-right/fixed-feedback-continuous-thumbnail-right-1-row.html' %}
@@ -38,13 +31,18 @@
                     {% include 'template/components/feedback-fixed/thumbnail-left/fixed-feedback-default-thumbnail-left.html' %}
 
                     {# Full width #}
+                    {# Centered Layout #}
+                    {% include 'template/components/feedback-fixed/full-width/fixed-feedback-continuous-centered-1-row.html' %}
                     {% include 'template/components/feedback-fixed/full-width/fixed-feedback-continuous.html' %}
                     {% include 'template/components/feedback-fixed/full-width/fixed-feedback-continuous-1-row.html' %}
                     {% include 'template/components/feedback-fixed/full-width/fixed-feedback-continuous-5-icons.html' %}
+                    {% include 'template/components/feedback-fixed/full-width/fixed-feedback-grid-tooltip-centered.html' %}
                     {% include 'template/components/feedback-fixed/full-width/fixed-feedback-grid-5-icons.html' %}
                     {% include 'template/components/feedback-fixed/full-width/fixed-feedback-grid.html' %}
                     {% include 'template/components/feedback-fixed/full-width/fixed-feedback-default-5-icons.html' %}
                     {% include 'template/components/feedback-fixed/full-width/fixed-feedback-default.html' %}
+
+                    {% include 'template/components/constant-sum.html' %}
 
                     {% include 'template/components/short-text.html' %}
                     {% set singleCol = 'true' %}
@@ -72,7 +70,15 @@
             </form>
         </div>
         <div class="sff-form__footer">
-            <button class="sff-form__submit">Submit</button>
+            <div class="sff-form__footer-cta row">
+                <div class="sff-form__footer-cta__prev col-xs-6">
+                    <button class="sff-form__submit sff-form__cta-prev"><i class="fa fa-angle-left fa-previous"></i> <span>Previous</span></button>
+                </div>
+                <div class="sff-form__footer-cta__next col-xs-6">
+                    <button class="sff-form__submit sff-form__cta-next"><span>Next</span> <i class="fa fa-angle-right fa-next"></i></button>
+                </div>
+                <div class="clearfix"></div>
+            </div>
         </div>
     </div>
 </div>
