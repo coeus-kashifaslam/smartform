@@ -47,3 +47,17 @@ $(document).ready(function (){
     });
 })();
 
+$(window).load(function(){
+
+    var formShadow = $('.sff-form__shadow'),
+        alertContainer = $('.policy__alert-container'),
+        alertHeight = alertContainer.height(),
+        formMargin = alertHeight + 20;
+    $('body').addClass('dom-ready');
+    alertContainer.css('top','0');
+    formShadow.css('margin-top', formMargin);
+    $('.policy__alert-container .close').on('click',function(e){
+       $('body').removeClass('dom-ready');
+       formShadow.removeAttr('style');
+    });
+});
