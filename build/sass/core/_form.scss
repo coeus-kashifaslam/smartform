@@ -148,7 +148,7 @@
   @extend %default-font-bold;
   width: 272px;
   height: 48px;
-  padding: 0;
+  padding: 0 10px;
   text-align: center;
   text-transform: uppercase;
   font-size: 20px;
@@ -166,30 +166,22 @@
 }
 .sff-form__footer-cta__prev {
   text-align: left;
+  .fa {
+    margin-right: 5px;
+  }
 }
 .sff-form__footer-cta__next {
   text-align: right;
+  .fa {
+    margin-left: 5px;
+  }
 }
 .sff-form__footer-cta {
   .sff-form__submit {
     position: relative;
-    &.sff-form__cta-prev {
-      padding-left: 30px;
-    }
-    &.sff-form__cta-next {
-      padding-right: 30px;
-    }
     .fa {
       font-size: 25px;
-      position: absolute;
-      top: 50%;
       margin-top: -12px;
-    }
-    .fa-previous {
-      left: 15px;
-    }
-    .fa-next {
-      right: 15px;
     }
   }
 }
@@ -262,15 +254,12 @@
   }
   .sff-form__footer-cta {
     .sff-form__submit {
-      .fa-previous {
-        left: 10px;
-      }
-      .fa-next {
-        right: 10px;
+      .fa {
+        font-size: 16px;
+        margin-top: -8px;
       }
     }
   }
-
 }
 
 .sff-form__borderless {

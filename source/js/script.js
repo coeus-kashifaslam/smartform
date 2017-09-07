@@ -56,6 +56,7 @@ $(window).load(function(){
     $('body').addClass('dom-ready');
     alertContainer.css('top','0');
     formShadow.css('margin-top', formMargin);
+
     $('.policy__alert-container .close').on('click',function(e){
        $('body').removeClass('dom-ready');
        formShadow.removeAttr('style');
