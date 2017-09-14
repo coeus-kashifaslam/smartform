@@ -155,6 +155,8 @@
   color: $white;
   transition: all 0.3s ease;
   background: $default-theme;
+  display: inline-block;
+  line-height: 48px;
   &:hover,
   &:focus {
     transition: all 0.3s ease;
@@ -162,6 +164,8 @@
     outline: none;
     box-shadow: none;
     text-shadow: none;
+    color: $white;
+    text-decoration: none;
   }
 }
 .sff-form__footer-cta__prev {

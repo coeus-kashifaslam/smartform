@@ -256,3 +256,38 @@
     }
   }
 }
+
+
+
+
+
+//3351
+feedback__continuous__align-left {
+  .feedback__continuous__emo-list {
+    & &__table-row {
+      display: block;
+      &.total-row {
+        @media (min-width: 768px) {
+          .feedback__continuous__emo-list__item {
+            border-top: 0 none;
+          }
+          .feedback__continuous__emo-list__description {
+            border-top: 1px solid $default-border-color;
+          }
+        }
+      }
+    }
+    & &__description {
+      display: block;
+      width: 100%;
+      text-align: initial;
+      padding-bottom: 0 !important;
+    }
+    .feedback__emo-list__description-count {
+      text-align: initial;
+      padding: 0 !important;
+    }
+  }
+}
+
+//3351
