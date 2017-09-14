@@ -185,6 +185,21 @@
     }
   }
 
+
+  //Cannot answer checkbox fix
+  .form__elem__disable-option {
+    &.fixed__grid-table__cell,
+    &.fixed__continuous-table__item {
+      .form-checkbox {
+        + label {
+          padding-left: 0;
+          padding-right: 30px;
+        }
+      }
+    }
+  }
+
+
 }
 
 
