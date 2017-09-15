@@ -56,3 +56,28 @@
     height: 95%;
   }
 }
+
+
+
+
+//Embedable Iframe
+#sff_127__iframe__container {
+  &.sff_127__iframe__embadable {
+    background: transparent none repeat scroll 0 0;
+    bottom: auto;
+    left: auto;
+    position: relative;
+    right: auto;
+    top: auto;
+    z-index: 9999;
+  }
+  #sff_127__iframe__wrapper {
+    height: 1290px;
+    left: auto;
+    position: relative;
+    top: auto;
+    transform: none;
+    width: 100%;
+    z-index: 9999;
+  }
+}
