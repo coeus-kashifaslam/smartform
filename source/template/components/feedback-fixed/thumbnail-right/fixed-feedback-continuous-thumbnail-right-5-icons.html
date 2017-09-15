@@ -17,7 +17,14 @@
             </div>
             <div class="col-sm-7 col-sm-pull-5 rating__icons__col rating__icons__col-sm">
                 <div class="rating__icons__col__content shapes__lg">
-                    <div class="feedback__container feedback__continuous__container">
+
+                    {% if alignLeft == 'true' %}
+                    {% set alignLeftClass = 'feedback__continuous__align-left' %}
+                    {% else %}
+                    {% set alignLeftClass = '' %}
+                    {% endif %}
+
+                    <div class="feedback__container feedback__continuous__container {{alignLeftClass}}">
                         <div class="feedback__emo-list feedback__continuous__emo-list hide__radio">
 
                             <div class="feedback__continuous__emo-list__table-row feedback__continuous__selection-continuous feedback__continuous__emo-list__header-row">

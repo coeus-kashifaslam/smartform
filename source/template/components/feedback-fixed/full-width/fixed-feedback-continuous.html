@@ -8,8 +8,14 @@
             </div>
         </div>
 
+        {% if alignLeft == 'true' %}
+        {% set alignLeftClass = 'feedback__continuous__align-left' %}
+        {% else %}
+        {% set alignLeftClass = '' %}
+        {% endif %}
+
         <div class="form__elem__body">
-            <div class="feedback__container feedback__continuous__container">
+            <div class="feedback__container feedback__continuous__container {{alignLeftClass}}">
                 <div class="feedback__emo-list feedback__continuous__emo-list hide__radio">
 
                     <div class="feedback__continuous__emo-list__table-row {{totalClass}} feedback__continuous__selection-continuous feedback__continuous__emo-list__header-row">
