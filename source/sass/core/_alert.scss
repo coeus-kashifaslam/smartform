@@ -1,16 +1,29 @@
-.dom-ready {
-  .alert-container {
+.ready__top-alert {
+  .alert__stick-top {
+    top: 0;
     transition: top linear 0.5s;
   }
   .sff-form__shadow {
     transition: margin linear 0.5s;
   }
 }
+.ready__bottom-alert {
+  .alert__stick-bottom {
+    bottom: 0;
+    transition: bottom linear 0.5s;
+  }
+}
+.alert__stick-top {
+  top: -100%;
+}
+.alert__stick-bottom {
+  bottom: -100%;
+}
+
 .alert-container {
   position: fixed;
   left: 0;
   right: 0;
-  top: -100%;
   z-index: 999;
   .alert {
     margin-bottom: 0;
@@ -22,6 +35,7 @@
     z-index: 99;
   }
 }
+
 .container__policy-info {
   max-width: 960px;
   padding-right: 100px;
@@ -55,7 +69,8 @@
       position: relative;
       right: auto;
       top: auto;
-      margin: 0 auto;
+      margin: 0;
+      display: block;
     }
   }
 }
