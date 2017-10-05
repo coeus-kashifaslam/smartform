@@ -397,3 +397,32 @@
     text-align: center;
   }
 }
+
+
+//To show conditional question inside of the same box
+.form__elem {
+  &.elem__conditional-container {
+    > .form__elem {
+      margin-bottom: $default-component-margin;
+    }
+
+    @media (max-width: 767px) {
+      > .form__elem {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      .form__elem__rating-thumbnail-right {
+        .form__elem__title,
+        .form__elem__help-text,
+        .feedback__continuous__emo-list__table-row,
+        .form__elem__error-text,
+        .ranking__message,
+        .form__elem__disable-option {
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+    }
+
+  }
+}
