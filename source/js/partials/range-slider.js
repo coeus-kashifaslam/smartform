@@ -1,6 +1,5 @@
 $(document).ready(function (){
-
-    $(".bootstrap-slider").slider();
+    $(".bootstrap-slider").bootstrapSlider();
     $(".bootstrap-slider").on("change", function(slideEvt) {
         $this = $(this);
         $this.parents('.elem__constant-sum__row')
@@ -13,7 +12,7 @@ $(document).ready(function (){
             inputVal = $this.val();
         $this.parents('.elem__constant-sum__row')
             .find('.bootstrap-slider')
-            .slider('setValue',inputVal);
+            .bootstrapSlider('setValue',inputVal);
     });
 
 });
