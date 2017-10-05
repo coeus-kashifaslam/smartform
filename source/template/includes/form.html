@@ -8,7 +8,11 @@
                 </div>
                 <div class="form-fieldset">
 
+                    {% set conditionalContainer = false %}
+
+                    {% if (conditionalContainer == true) %}
                     <div class="form__elem elem__conditional-container">
+                    {% endif %}
 
                     {# Thumbnail Right #}
                     {% include 'template/components/feedback-fixed/thumbnail-right/fixed-feedback-continuous-thumbnail-right-1-row.html' %}
@@ -86,7 +90,9 @@
                     {% include 'template/components/free-text.html' %}
                     {% include 'template/components/feedback-popup.html' %}
 
+                    {% if (conditionalContainer == true) %}
                     </div>
+                    {% endif %}
 
                 </div>
             </form>
