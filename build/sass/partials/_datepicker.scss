@@ -173,8 +173,12 @@ $addon-border: #ccc;
    }
  }
   .datepicker__row,
-  .datepicker__col {
+  .datepicker__col,
+  .datepicker__label{
     transform: scaleX(-1);
+  }
+  .datepicker__label {
+    display: block;
   }
 }
 
