@@ -1,0 +1,32 @@
+body {
+  font-family: $font-regular;
+  font-size: $font-md;
+  color: $text;
+}
+
+
+
+h1, .h1 {
+  font-family: $font-bold;
+  font-size: $font-lg;
+}
+
+h2, .h2 {
+  font-family: $font-bold;
+  font-size: $font-md;
+}
+
+h3, .h3 {
+  font-family: $font-regular;
+  font-size: $font-md;
+}
+
+h4, .h4 {
+  font-family: $font-bold;
+  font-size: $font-sm;
+}
+
+h5, .h5 {
+  font-family: $font-regular;
+  font-size: $font-sm;
+}
