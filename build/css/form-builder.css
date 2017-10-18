@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -9045,6 +9046,204 @@ select.bs-select-hidden, select.selectpicker {
     src: url(../fonts/font-families/arial/Arial-BoldMT.eot?#iefix) format("embedded-opentype"), url(../fonts/font-families/arial/Arial-BoldMT.woff) format("woff"), url(../fonts/font-families/arial/Arial-BoldMT.ttf) format("truetype"), url(../fonts/font-families/arial/Arial-BoldMT.svg#Arial-BoldMT) format("svg");
 }
 
+@font-face {
+    font-family: formBuilder-icons;
+    src: url(../fonts/form-builder/icomoon.eot?81ofbs);
+    src: url(../fonts/form-builder/icomoon.eot?81ofbs#iefix) format("embedded-opentype"), url(../fonts/form-builder/icomoon.ttf?81ofbs) format("truetype"), url(../fonts/form-builder/icomoon.woff?81ofbs) format("woff"), url(../fonts/form-builder/icomoon.svg?81ofbs#icomoon) format("svg");
+}
+
+[class^=ico-], [class*=" ico-"] {
+    font-family: formBuilder-icons !important;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #606060;
+}
+
+.ico-arrow-thick:before {
+    content: "\e900";
+}
+
+.ico-arrow-thin:before {
+    content: "\e901";
+}
+
+.ico-checkbox:before {
+    content: "\e902";
+}
+
+.ico-checkbox-fill:before {
+    content: "\e903";
+}
+
+.ico-constant-sum:before {
+    content: "\e904";
+}
+
+.ico-date:before {
+    content: "\e905";
+}
+
+.ico-delete:before {
+    content: "\e906";
+}
+
+.ico-dropdown:before {
+    content: "\e907";
+}
+
+.ico-edit:before {
+    content: "\e908";
+}
+
+.ico-eye:before {
+    content: "\e909";
+}
+
+.ico-font:before {
+    content: "\e90a";
+}
+
+.ico-goto:before {
+    content: "\e90b";
+}
+
+.ico-heart:before {
+    content: "\e90c";
+}
+
+.ico-link:before {
+    content: "\e90d";
+}
+
+.ico-long-text:before {
+    content: "\e90e";
+}
+
+.ico-mrf:before {
+    content: "\e90f";
+}
+
+.ico-multiple-choice:before {
+    content: "\e910";
+}
+
+.ico-plus:before {
+    content: "\e911";
+}
+
+.ico-pros-cons:before {
+    content: "\e912";
+}
+
+.ico-radio:before {
+    content: "\e913";
+}
+
+.ico-radio-fill:before {
+    content: "\e914";
+}
+
+.ico-ranking-scale:before {
+    content: "\e915";
+}
+
+.ico-seller:before {
+    content: "\e916";
+}
+
+.ico-settings:before {
+    content: "\e917";
+}
+
+.ico-short-text:before {
+    content: "\e918";
+}
+
+.ico-text:before {
+    content: "\e919";
+}
+
+.ico-thumbnail:before {
+    content: "\e91a";
+}
+
+.ico-upload:before {
+    content: "\e91b";
+}
+
+.bootstrap-select .dropdown-toggle, .bootstrap-select.open .dropdown-toggle {
+    border: 1px solid #c3c3c3;
+    background: transparent;
+    box-shadow: none;
+}
+
+.bootstrap-select .dropdown-toggle:hover, .bootstrap-select .dropdown-toggle:focus, .bootstrap-select .dropdown-toggle:active, .bootstrap-select.open .dropdown-toggle:hover, .bootstrap-select.open .dropdown-toggle:focus, .bootstrap-select.open .dropdown-toggle:active {
+    background: transparent;
+    outline: none !important;
+    border-color: #c3c3c3;
+}
+
+.bootstrap-select > .dropdown-toggle {
+    padding: 10px 25px 10px 15px;
+    position: relative;
+}
+
+.bootstrap-select .caret {
+    display: none;
+}
+
+.bootstrap-select .bs-caret {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -9px;
+    line-height: 1;
+}
+
+.bootstrap-select .bs-caret:before {
+    content: "";
+    font-family: formBuilder-icons;
+    font-size: 12px;
+    line-height: 1;
+    color: #c3c3c3;
+}
+
+.bootstrap-select .dropdown-menu {
+    border-radius: 0;
+    padding: 0;
+    box-shadow: none;
+    margin-top: -3px;
+    border: 1px solid #c3c3c3;
+    font-size: 16px;
+}
+
+.bootstrap-select .dropdown-menu > li > a {
+    padding: 10px 15px;
+}
+
+.bootstrap-select .dropdown-menu > li > a:hover, .bootstrap-select .dropdown-menu > li > a:focus, .bootstrap-select .dropdown-menu > li > a:active {
+    background: #f4f4f4;
+}
+
+.bootstrap-select .dropdown-menu > li.selected > a {
+    background: #f4f4f4;
+}
+
+.bootstrap-select .dropdown-menu > li + li {
+    border-top: 1px solid #c3c3c3;
+}
+
+.bootstrap-select.dropup .dropdown-menu {
+    margin-top: 0;
+    margin-bottom: -3px;
+}
+
 body {
     font-family: Roboto;
     font-size: 16px;
@@ -9074,6 +9273,122 @@ h4, .h4 {
 h5, .h5 {
     font-family: Roboto;
     font-size: 14px;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown > .btn.dropdown-toggle, .dropdown.open > .btn.dropdown-toggle {
+    padding: 10px 15px;
+    color: #606060;
+    border: 0 none;
+    background: transparent;
+    box-shadow: none;
+}
+
+.dropdown > .btn.dropdown-toggle:hover, .dropdown > .btn.dropdown-toggle:focus, .dropdown > .btn.dropdown-toggle:active, .dropdown.open > .btn.dropdown-toggle:hover, .dropdown.open > .btn.dropdown-toggle:focus, .dropdown.open > .btn.dropdown-toggle:active {
+    box-shadow: none;
+    background: transparent;
+    outline: none;
+}
+
+.dropdown .ico {
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+.dropdown .dropdown-menu {
+    padding: 0;
+    box-shadow: none;
+    border: 1px solid #c3c3c3;
+    font-size: 16px;
+    border-radius: 0 0 5px 5px;
+}
+
+.dropdown .dropdown-menu > li > a {
+    padding: 10px 15px;
+}
+
+.dropdown .dropdown-menu > li > a:hover, .dropdown .dropdown-menu > li > a:focus, .dropdown .dropdown-menu > li > a:active {
+    background: #f4f4f4;
+}
+
+.dropdown .dropdown-menu > li.selected > a {
+    background: #f4f4f4;
+}
+
+.dropdown .dropdown-menu > li + li {
+    border-top: 1px solid #c3c3c3;
+}
+
+.dropdown .dropdown-menu:before {
+    content: '';
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid #c3c3c3;
+    position: absolute;
+    top: -9px;
+    right: 11px;
+}
+
+.dropdown .dropdown-menu:after {
+    content: '';
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #fff;
+    position: absolute;
+    top: -7px;
+    right: 13px;
+}
+
+.btn {
+    padding: 10px 30px;
+    border: 1px solid transparent;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    color: #606060;
+}
+
+.btn:hover, .btn:focus, .btn:active {
+    text-decoration: none;
+    outline: none;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+.btn-fill {
+    background: #2da137;
+    color: #fff;
+}
+
+.btn-fill:hover, .btn-fill:focus, .btn-fill:active {
+    background: #3acf47;
+    color: #fff;
+}
+
+.btn-fill.btn-active {
+    background: #3acf47;
+}
+
+.btn-white {
+    background: transparent;
+    color: #606060;
+    border: 1px solid #606060;
+}
+
+.btn-white:hover, .btn-white:focus, .btn-white:active {
+    background: #606060;
+    color: #fff;
+}
+
+.btn-white.btn-active {
+    background: #606060;
+    color: #fff;
 }
 
 @media print {

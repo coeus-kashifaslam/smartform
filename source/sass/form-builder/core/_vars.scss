@@ -5,33 +5,38 @@ $ff-roboto: 'Roboto','Roboto-Light','Roboto-Bold';
 $font-regular: nth($ff-roboto, 1);
 $font-light: nth($ff-roboto, 2);
 $font-bold: nth($ff-roboto, 3);
+$font-icons: 'formBuilder-icons';
 
 //Fonnt Size
 $font-lg: 20px;
 $font-md: 16px;
 $font-sm: 14px;
+$font-xsm: 12px;
 
 
-//Backgrounds
 
+//Default
 $white: #fff;
 $black: #000;
-$green: #2da137;
-$green-dark: #196d01;
-$text: #606060;
+$green-primary: #2da137;
+$green-secondary: #196d01;
+$green-hover: #3acf47;
+$text-primary: #606060;
+$text-secondary: #b4b4b4;
 
-$bg-black: #1e1e1e;
+//Backgrounds
+$bg-main: #1e1e1e;
 $bg-element: #f4f4f4;
 $bg-dropping-space: #f2f2f2;
-$bg-empty-dropping-space: #faf6f1;
-$bg-tooltip: $text;
+$bg-empty-dropping-space: #fff20e;
 $bg-popup: #e3e3e3;
-
-
-//Font Colors
-$text-light: #b4b4b4;
-$text-builder-title: $bg-black;
 
 
 //Border
 $border: #c3c3c3;
+$radius: 5px;
+
+
+
+//Icons
+$icon-arrow-thick: "\e901";
