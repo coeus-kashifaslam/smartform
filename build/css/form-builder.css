@@ -9427,8 +9427,13 @@ h5, .h5 {
 }
 
 .header__menu-right .dropdown .btn.dropdown-toggle, .header__menu-right .dropdown.open .btn.dropdown-toggle {
+    color: #2da137;
     padding-left: 0;
     padding-right: 0;
+}
+
+.header__menu-right .ico {
+    color: #2da137;
 }
 
 .header__menu-right .dropdown-menu-right {
