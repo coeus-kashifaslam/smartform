@@ -14,6 +14,7 @@
   right: -3px;
   height: 2px;
   background: $white;
+  transition: all 0.3s ease-out;
 }
 
 .main-nav {
@@ -24,8 +25,10 @@
     > a {
       position: relative;
       color: $text-primary;
+      transition: all 0.3s ease-out;
       &:hover, &:focus, &:active {
         color: $white;
+        transition: all 0.3s ease-out;
         &:after {
           @extend .navbar-link-border;
         }

@@ -9542,6 +9542,8 @@ h5, .h5 {
     right: -3px;
     height: 2px;
     background: #fff;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
 }
 
 .main-nav {
@@ -9555,10 +9557,14 @@ h5, .h5 {
 .main-nav > li > a {
     position: relative;
     color: #606060;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
 }
 
 .main-nav > li > a:hover, .main-nav > li > a:focus, .main-nav > li > a:active {
     color: #fff;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
 }
 
 .main-nav > li.active > a {
