@@ -105,3 +105,17 @@ h5, .h5 {
     }
   }
 }
+
+
+.back-link {
+  padding-left: 25px;
+  position: relative;
+  font-size: $font-sm;
+  &:before {
+    content: $icon-arrow-thick;
+    font-family: $font-icons;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}

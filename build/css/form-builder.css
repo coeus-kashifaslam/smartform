@@ -9244,6 +9244,54 @@ select.bs-select-hidden, select.selectpicker {
     margin-bottom: -3px;
 }
 
+[type=radio]:checked, [type=radio]:not(:checked), [type=checkbox]:checked, [type=checkbox]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+[type=radio]:checked + label, [type=radio]:not(:checked) + label, [type=checkbox]:checked + label, [type=checkbox]:not(:checked) + label {
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 28px;
+    min-height: 20px;
+    margin: 0;
+}
+
+[type=radio]:checked + label span, [type=radio]:not(:checked) + label span, [type=checkbox]:checked + label span, [type=checkbox]:not(:checked) + label span {
+    margin-left: 10px;
+}
+
+[type=radio]:checked + label:before, [type=radio]:not(:checked) + label:before, [type=checkbox]:checked + label:before, [type=checkbox]:not(:checked) + label:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 20px;
+    font-family: formBuilder-icons;
+}
+
+[type=radio]:checked + label:before, [type=checkbox]:checked + label:before {
+    color: #2da137;
+}
+
+[type=radio]:not(checked) + label:before {
+    content: "";
+}
+
+[type=radio]:checked + label:before {
+    content: "";
+}
+
+[type=checkbox]:not(checked) + label:before {
+    content: "";
+}
+
+[type=checkbox]:checked + label:before {
+    content: "";
+}
+
 body {
     font-family: Roboto;
     font-size: 16px;
@@ -9340,6 +9388,20 @@ h5, .h5 {
     position: absolute;
     top: -7px;
     right: 13px;
+}
+
+.back-link {
+    padding-left: 25px;
+    position: relative;
+    font-size: 14px;
+}
+
+.back-link:before {
+    content: "";
+    font-family: formBuilder-icons;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 .btn {

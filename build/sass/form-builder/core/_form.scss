@@ -1,3 +1,4 @@
+//Select option Stylings
 .bootstrap-select {
   &, &.open {
     .dropdown-toggle {
@@ -31,7 +32,7 @@
     line-height: 1;
 
     &:before {
-      content: $icon-arrow-thick;
+      content: $icon-arrow-thin;
       font-family: $font-icons;
       font-size: $font-xsm;
       line-height: 1;
@@ -73,6 +74,86 @@
     .dropdown-menu {
       margin-top: 0;
       margin-bottom: -3px;
+    }
+  }
+}
+
+
+
+
+
+//Radio and checkbox
+[type="radio"],
+[type = "checkbox"]{
+  &:checked,
+  &:not(:checked) {
+    position: absolute;
+    left: -9999px;
+
+    + label {
+      position: relative;
+      padding-left: 20px;
+      cursor: pointer;
+      display: inline-block;
+      font-weight: normal;
+      line-height: 28px;
+      min-height: 20px;
+      margin: 0;
+
+      span {
+        margin-left: 10px;
+      }
+
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 20px;
+        font-family: $font-icons;
+      }
+    }
+  }
+
+  &:checked {
+    + label {
+      &:before {
+        color: $green-primary;
+      }
+    }
+  }
+}
+
+
+[type="radio"] {
+  &:not(checked) {
+    + label {
+      &:before {
+        content: $icon-radio;
+      }
+    }
+  }
+  &:checked {
+    + label {
+      &:before {
+        content: $icon-radio-fill;
+      }
+    }
+  }
+}
+
+[type="checkbox"] {
+  &:not(checked) {
+    + label {
+      &:before {
+        content: $icon-checkbox;
+      }
+    }
+  }
+  &:checked {
+    + label {
+      &:before {
+        content: $icon-checkbox-fill;
+      }
     }
   }
 }

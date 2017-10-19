@@ -1,0 +1,159 @@
+//Select option Stylings
+.bootstrap-select {
+  &, &.open {
+    .dropdown-toggle {
+      border: 1px solid $border;
+      background: transparent;
+      box-shadow: none;
+      &:hover,
+      &:focus,
+      &:active {
+        background: transparent;
+        outline: none !important;
+        border-color: $border;
+      }
+    }
+  }
+
+  > .dropdown-toggle {
+    padding: 10px 25px 10px 15px;
+    position: relative;
+  }
+
+  .caret {
+    display: none;
+  }
+
+  .bs-caret {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -9px;
+    line-height: 1;
+
+    &:before {
+      content: $icon-arrow-thin;
+      font-family: $font-icons;
+      font-size: $font-xsm;
+      line-height: 1;
+      color: $border;
+    }
+  }
+
+
+  .dropdown-menu {
+    border-radius: 0;
+    padding: 0;
+    box-shadow: none;
+    margin-top: -3px;
+    border: 1px solid $border;
+    font-size: $font-md;
+
+    > li {
+      > a {
+        padding: 10px 15px;
+        &:hover,
+        &:focus,
+        &:active {
+          background: $bg-element;
+        }
+      }
+      &.selected {
+        > a {
+          background: $bg-element;
+        }
+      }
+      + li {
+        border-top: 1px solid $border;
+      }
+    }
+  }
+
+
+  &.dropup {
+    .dropdown-menu {
+      margin-top: 0;
+      margin-bottom: -3px;
+    }
+  }
+}
+
+
+
+
+
+//Radio and checkbox
+[type="radio"],
+[type = "checkbox"]{
+  &:checked,
+  &:not(:checked) {
+    position: absolute;
+    left: -9999px;
+
+    + label {
+      position: relative;
+      padding-left: 20px;
+      cursor: pointer;
+      display: inline-block;
+      font-weight: normal;
+      line-height: 28px;
+      min-height: 20px;
+      margin: 0;
+
+      span {
+        margin-left: 10px;
+      }
+
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 20px;
+        font-family: $font-icons;
+      }
+    }
+  }
+
+  &:checked {
+    + label {
+      &:before {
+        color: $green-primary;
+      }
+    }
+  }
+}
+
+
+[type="radio"] {
+  &:not(checked) {
+    + label {
+      &:before {
+        content: $icon-radio;
+      }
+    }
+  }
+  &:checked {
+    + label {
+      &:before {
+        content: $icon-radio-fill;
+      }
+    }
+  }
+}
+
+[type="checkbox"] {
+  &:not(checked) {
+    + label {
+      &:before {
+        content: $icon-checkbox;
+      }
+    }
+  }
+  &:checked {
+    + label {
+      &:before {
+        content: $icon-checkbox-fill;
+      }
+    }
+  }
+}
