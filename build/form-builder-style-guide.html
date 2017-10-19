@@ -9,56 +9,83 @@
 <body>
 
 <div class="container-fluid">
-    <div class="header__container">
-        <div class="col-xs-3">
-            <div class="header__logo">
-                <img src="images/smartforms-logo.png" alt="Logo not found">
+    <div class="row">
+        <div class="header__container">
+            <div class="col-xs-3">
+                <div class="header__logo">
+                    <img src="images/smartforms-logo.png" alt="Logo not found">
+                </div>
             </div>
-        </div>
-        <div class="col-xs-6">
-            <div class="header__text text-center">
-                <h1 class="form__name">
-                    <i class="ico ico-seller"></i>
-                    <span>Form Name goes here</span>
-                </h1>
+            <div class="col-xs-6">
+                <div class="header__text text-center">
+                    <h1 class="form__name">
+                        <i class="ico ico-seller"></i>
+                        <span>Form Name goes here</span>
+                    </h1>
+                </div>
             </div>
+            <div class="col-xs-3">
+                <div class="header__menu-right">
+                    <ul class="list-inline">
+                        <li>
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Englist
+                                    <span class="ico ico-arrow-thin"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                                    <li><a href="#">Urdu</a></li>
+                                    <li><a href="#">Arabic</a></li>
+                                    <li><a href="#">German</a></li>
+                                    <li><a href="#">Farsi</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><span class="separator__top-menu"></span></li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    665
+                                    <span class="ico ico-arrow-thin"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clearfix"></div>
         </div>
-        <div class="col-xs-3">
-            <div class="header__menu-right">
-                <ul class="list-inline">
-                    <li>
-                        <div class="dropdown">
-                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                Englist
-                                <span class="ico ico-arrow-thin"></span>
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                                <li><a href="#">Urdu</a></li>
-                                <li><a href="#">Arabic</a></li>
-                                <li><a href="#">German</a></li>
-                                <li><a href="#">Farsi</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><span class="separator__top-menu"></span></li>
-                    <li>
-                        <div class="dropdown">
-                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                665
-                                <span class="ico ico-arrow-thin"></span>
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li><a href="#">Separated link</a></li>
-                            </ul>
-                        </div>
-                    </li>
+    </div>
+</div>
+<!--Navbar-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="navbar-container">
+            <div class="col-xs-3">
+                <div class="navigate__back">
+                    <a href="#" class="back-link">Back to listing</a>
+                </div>
+            </div>
+            <div class="col-xs-6 navigation-center">
+                <ul class="nav nav-pills main-nav">
+                    <li role="presentation"><a href="#">Build</a></li>
+                    <li role="presentation"><a href="#">Design</a></li>
+                    <li role="presentation"><a href="#">Configure</a></li>
                 </ul>
             </div>
+            <div class="col-xs-3">
+                <div class="navigate__to-form text-right">
+                    <a href="#" class="view-form-link">View this Form</a>
+                </div>
+            </div>
+            <div class="clearfix"></div>
         </div>
-        <div class="clearfix"></div>
     </div>
 </div>
 
@@ -236,6 +263,18 @@
                 <div class="section-body">
                     <ul class="list-inline">
                         <a href="#" class="back-link">Back to listing</a>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <div class="col-sm-4">
+            <section class="section-viewForm-link">
+                <header>
+                    <h1>Back Link</h1>
+                </header>
+                <div class="section-body">
+                    <ul class="list-inline">
+                        <a href="#" class="view-form-link">View this Form</a>
                     </ul>
                 </div>
             </section>

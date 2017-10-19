@@ -2,7 +2,7 @@ body {
   font-family: $font-regular;
   font-size: $font-md;
   color: $text-primary;
-  background: $white;
+  background: $bg-main;
 }
 
 
@@ -33,158 +33,35 @@ h5, .h5 {
 }
 
 
-
-//Dropdown
-.dropdown {
-  display: inline-block;
-  &,
-  &.open {
-    > .btn.dropdown-toggle {
-      padding: 10px 15px;
-      color: $text-primary;
-      border: 0 none;
-      background: transparent;
-      box-shadow: none;
-      &:hover,
-      &:focus,
-      &:active {
-        box-shadow: none;
-        background: transparent;
-        outline: none;
-      }
-    }
-  }
-  .ico {
-    font-size: $font-xsm;
-    margin-left: 15px;
-  }
-  .dropdown-menu {
-    padding: 0;
-    box-shadow: none;
-    border: 1px solid $border;
-    font-size: $font-md;
-    border-radius:  0 0 $radius $radius;
-
-    > li {
-      > a {
-        padding: 10px 15px;
-        &:hover,
-        &:focus,
-        &:active {
-          background: $bg-element;
-        }
-      }
-      &.selected {
-        > a {
-          background: $bg-element;
-        }
-      }
-      + li {
-        border-top: 1px solid $border;
-      }
-    }
-
-
-    &:before {
-      content: '';
-      border-left: 9px solid transparent;
-      border-right: 9px solid transparent;
-      border-bottom: 9px solid $border;
-      position: absolute;
-      top: -9px;
-      right: 11px;
-    }
-
-    &:after {
-      content: '';
-      border-left: 7px solid transparent;
-      border-right: 7px solid transparent;
-      border-bottom: 7px solid $white;
-      position: absolute;
-      top: -7px;
-      right: 13px;
-    }
-  }
-}
-
 //Back Link
-.back-link {
+.back-link,
+.view-form-link {
   padding-left: 25px;
   position: relative;
   font-size: $font-sm;
   &:before {
-    content: $icon-arrow-thick;
     font-family: $font-icons;
     position: absolute;
     left: 0;
     top: 0;
   }
-}
-
-
-
-
-//Header
-.header__container {
-  padding: 15px 0;
-}
-.header__logo {
-  img {
-    max-width: 225px;
-  }
-}
-.header__text {
-  .form__name {
-    margin: 8px 0 0;
-    line-height: 1.4;
-  }
-  span {
-    margin-left: 5px;
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    color: $text-secondary;
+    text-decoration: none;
   }
 }
 
-
-.header__menu-right {
-  text-align: right;
-  .dropdown {
-    &, &.open {
-      .btn {
-        &.dropdown-toggle {
-          color: $green-primary;
-          padding-left: 0;
-          padding-right: 0;
-        }
-      }
-    }
+.back-link {
+  &:before {
+    content: $icon-arrow-thick;
   }
+}
 
-  .ico {
-    color: $green-primary;
-  }
-
-  .dropdown-menu-right {
-    right: -15px;
-  }
-
-  ul {
-    margin: 0;
-  }
-
-  li {
-    padding: 0;
-  }
-  .separator__top-menu {
-    position: relative;
-    width: 20px;
-    display: inline-block;
-    &:before {
-      content: '';
-      position: absolute;
-      width: 1px;
-      height: 30px;
-      top: -18px;
-      left: 50%;
-      background: $border;
-    }
+.view-form-link {
+  &:before {
+    content: $icon-goto;
   }
 }
