@@ -9296,6 +9296,7 @@ body {
     font-family: Roboto;
     font-size: 16px;
     color: #606060;
+    background: #fff;
 }
 
 h1, .h1 {
@@ -9402,6 +9403,60 @@ h5, .h5 {
     position: absolute;
     left: 0;
     top: 0;
+}
+
+.header__container {
+    padding: 15px 0;
+}
+
+.header__logo img {
+    max-width: 225px;
+}
+
+.header__text .form__name {
+    margin: 8px 0 0;
+    line-height: 1.4;
+}
+
+.header__text span {
+    margin-left: 5px;
+}
+
+.header__menu-right {
+    text-align: right;
+}
+
+.header__menu-right .dropdown .btn.dropdown-toggle, .header__menu-right .dropdown.open .btn.dropdown-toggle {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.header__menu-right .dropdown-menu-right {
+    right: -15px;
+}
+
+.header__menu-right ul {
+    margin: 0;
+}
+
+.header__menu-right li {
+    padding: 0;
+}
+
+.header__menu-right .separator__top-menu {
+    position: relative;
+    width: 20px;
+    display: inline-block;
+}
+
+.header__menu-right .separator__top-menu:before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 30px;
+    top: -18px;
+    left: 50%;
+    background: #c3c3c3;
 }
 
 .btn {

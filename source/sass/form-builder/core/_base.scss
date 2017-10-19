@@ -2,13 +2,14 @@ body {
   font-family: $font-regular;
   font-size: $font-md;
   color: $text-primary;
+  background: $white;
 }
 
 
 
 h1, .h1 {
   font-family: $font-bold;
-  font-size: $font-lg;
+  font-size: $font-xlg;
 }
 
 h2, .h2 {
@@ -106,7 +107,7 @@ h5, .h5 {
   }
 }
 
-
+//Back Link
 .back-link {
   padding-left: 25px;
   position: relative;
@@ -117,5 +118,68 @@ h5, .h5 {
     position: absolute;
     left: 0;
     top: 0;
+  }
+}
+
+
+
+
+//Header
+.header__container {
+  padding: 15px 0;
+}
+.header__logo {
+  img {
+    max-width: 225px;
+  }
+}
+.header__text {
+  .form__name {
+    margin: 8px 0 0;
+    line-height: 1.4;
+  }
+  span {
+    margin-left: 5px;
+  }
+}
+
+
+.header__menu-right {
+  text-align: right;
+  .dropdown {
+    &, &.open {
+      .btn {
+        &.dropdown-toggle {
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+    }
+  }
+
+  .dropdown-menu-right {
+    right: -15px;
+  }
+
+  ul {
+    margin: 0;
+  }
+
+  li {
+    padding: 0;
+  }
+  .separator__top-menu {
+    position: relative;
+    width: 20px;
+    display: inline-block;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 30px;
+      top: -18px;
+      left: 50%;
+      background: $border;
+    }
   }
 }

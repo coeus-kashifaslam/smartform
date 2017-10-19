@@ -1,13 +1,9 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Style Guide</title>
-    <link rel="stylesheet" href="css/form-builder.css">
-</head>
-<body>
-<div class="container">
+{% extends 'template/form-builder/layouts/default.html' %}
+{% set pageTitle = "Style Guide" %}
+
+{% block content %}
+
+<div class="container-fluid">
     <div class="row">
         <div class="col-sm-4">
             <section class="headings">
@@ -185,17 +181,6 @@
         </div>
         <div class="clearfix"></div>
     </div>
-
 </div>
 
-<script type="text/javascript" src="js/libs/jquery.js"></script>
-<script type="text/javascript" src="js/libs/modernizr.js"></script>
-<script type="text/javascript" src="js/libs/bootstrap.js"></script>
-<script type="text/javascript" src="js/libs/bootstrap-select.js"></script>
-<script type="text/javascript" src="js/form-builder.js"></script>
-
-
-
-
-</body>
-</html>
+{% endblock %}
