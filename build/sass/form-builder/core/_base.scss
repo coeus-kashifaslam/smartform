@@ -32,6 +32,10 @@ h5, .h5 {
   font-size: $font-sm;
 }
 
+.container-fluid {
+  min-width: 1024px;
+}
+
 
 //Back Link
 .back-link,

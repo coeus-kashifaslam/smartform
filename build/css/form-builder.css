@@ -9440,6 +9440,10 @@ h5, .h5 {
     font-size: 14px;
 }
 
+.container-fluid {
+    min-width: 1024px;
+}
+
 .back-link, .view-form-link {
     padding-left: 25px;
     position: relative;
