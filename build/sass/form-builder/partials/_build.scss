@@ -1,0 +1,91 @@
+//Build Step
+.draggable__list {
+  > .draggable__item {
+    padding: 10px 15px;
+  }
+}
+
+.draggable__item {
+  background: $white;
+  border-radius: $radius;
+  margin-bottom: 15px;
+  cursor: pointer;
+
+  &-pill {
+    position: relative;
+    p {
+      margin: 0;
+    }
+
+    .ico,
+    .draggable__item-name {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  &-name {
+    margin-left: 5px;
+  }
+}
+
+.standout-group-item {
+  width: 100%;
+  display: table;
+  margin-bottom: 15px;
+  .standout-group-btn,
+  .standout-group-addon {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    color: $white;
+    height: 44px;
+  }
+
+  .standout-group-btn {
+    background: $bg-standout-group;
+    border-radius: $radius 0 0 $radius;
+  }
+
+  .standout-group-addon {
+    width: 40px;
+    background: $green-secondary;
+    &, .ico {
+      color: $white;
+      &:hover,
+      &:focus,
+      &:active {
+        text-decoration: none;
+      }
+    }
+
+    &:last-of-type {
+      border-left: 1px solid $border-standout-group;
+      border-radius: 0 $radius $radius 0;
+      font-size: $font-lg;
+    }
+  }
+}
+
+
+
+
+.section-table {
+  display: table;
+  width: 100%;
+  .section-table-cell {
+    display: table-cell;
+  }
+}
+
+
+
+.section-build {
+  &__sidebar {
+    width: 250px;
+    padding-right: 15px;
+  }
+  &__content {
+    background: $white;
+    border-radius: $radius $radius 0 0;
+  }
+}
