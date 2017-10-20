@@ -1,0 +1,140 @@
+//Build Step
+.form-components__list {
+  > .form-component__item {
+    padding: 0;
+  }
+}
+
+.form-component__item {
+  &-pill {
+    padding: 10px 15px;
+    background: $white;
+    border-radius: $radius;
+    margin-bottom: 15px;
+    position: relative;
+    p {
+      margin: 0;
+    }
+
+    .ico,
+    .form-component__item-name {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    &-actions {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      margin-top: -11px;
+      li {
+        padding-left: 2px;
+        padding-right: 2px;
+        a {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  &-name {
+    margin-left: 5px;
+  }
+}
+
+.list-sub-components {
+  padding-left: 50px;
+}
+
+
+.standout-group-item {
+  width: 100%;
+  display: table;
+  margin-bottom: 15px;
+  .standout-group-btn,
+  .standout-group-addon {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    color: $white;
+    height: 44px;
+  }
+
+  .standout-group-btn {
+    background: $bg-standout-group;
+    border-radius: $radius 0 0 $radius;
+  }
+
+  .standout-group-addon {
+    width: 40px;
+    background: $green-secondary;
+    &, .ico {
+      color: $white;
+      &:hover,
+      &:focus,
+      &:active {
+        text-decoration: none;
+      }
+    }
+
+    &:last-of-type {
+      border-left: 1px solid $border-standout-group;
+      border-radius: 0 $radius $radius 0;
+      font-size: $font-lg;
+    }
+  }
+}
+
+
+
+
+.section-table {
+  display: table;
+  width: 100%;
+  .section-table-cell {
+    display: table-cell;
+    vertical-align: top;
+  }
+}
+
+
+
+.section-build {
+  &__sidebar {
+    width: 250px;
+    padding-right: 15px;
+
+    .form-component__item {
+      &-pill {
+        cursor: pointer;
+        &-actions {
+            display: none;
+        }
+      }
+    }
+  }
+
+
+  &__content {
+    background: $white;
+    border-radius: $radius $radius 0 0;
+    padding: 30px 15px;
+
+    .form-component__item {
+      &-pill {
+        background: $bg-element;
+        border: 1px solid $border;
+        box-shadow: 0 1px 0 $border-shadow;
+        cursor: move;
+        padding-right: 100px;
+      }
+    }
+  }
+}
+
+
+
+.section-build__content {
+  &__actions-container {
+    margin-bottom: 30px;
+  }
+}
