@@ -9229,6 +9229,7 @@ select.bs-select-hidden, select.selectpicker {
 
 .bootstrap-select .dropdown-menu > li > a:hover, .bootstrap-select .dropdown-menu > li > a:focus, .bootstrap-select .dropdown-menu > li > a:active {
     background: #f4f4f4;
+    outline: none;
 }
 
 .bootstrap-select .dropdown-menu > li.selected > a {
@@ -9584,32 +9585,49 @@ h5, .h5 {
     outline: none;
 }
 
-.draggable__list > .draggable__item {
-    padding: 10px 15px;
+.form-components__list > .form-component__item {
+    padding: 0;
 }
 
-.draggable__item {
+.form-component__item-pill {
+    padding: 10px 15px;
     background: #fff;
     border-radius: 5px;
     margin-bottom: 15px;
-    cursor: pointer;
-}
-
-.draggable__item-pill {
     position: relative;
 }
 
-.draggable__item-pill p {
+.form-component__item-pill p {
     margin: 0;
 }
 
-.draggable__item-pill .ico, .draggable__item-pill .draggable__item-name {
+.form-component__item-pill .ico, .form-component__item-pill .form-component__item-name {
     display: inline-block;
     vertical-align: middle;
 }
 
-.draggable__item-name {
+.form-component__item-pill-actions {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -11px;
+}
+
+.form-component__item-pill-actions li {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.form-component__item-pill-actions li a {
+    cursor: pointer;
+}
+
+.form-component__item-name {
     margin-left: 5px;
+}
+
+.list-sub-components {
+    padding-left: 50px;
 }
 
 .standout-group-item {
@@ -9657,6 +9675,7 @@ h5, .h5 {
 
 .section-table .section-table-cell {
     display: table-cell;
+    vertical-align: top;
 }
 
 .section-build__sidebar {
@@ -9664,9 +9683,30 @@ h5, .h5 {
     padding-right: 15px;
 }
 
+.section-build__sidebar .form-component__item-pill {
+    cursor: pointer;
+}
+
+.section-build__sidebar .form-component__item-pill-actions {
+    display: none;
+}
+
 .section-build__content {
     background: #fff;
     border-radius: 5px 5px 0 0;
+    padding: 30px 15px;
+}
+
+.section-build__content .form-component__item-pill {
+    background: #f4f4f4;
+    border: 1px solid #c3c3c3;
+    box-shadow: 0 1px 0 #d6d6d6;
+    cursor: move;
+    padding-right: 100px;
+}
+
+.section-build__content__actions-container {
+    margin-bottom: 30px;
 }
 
 @media print {
