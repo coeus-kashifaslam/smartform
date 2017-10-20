@@ -2,10 +2,11 @@ body {
   font-family: $font-regular;
   font-size: $font-md;
   color: $text-primary;
-  background: $bg-main;
 }
 
-
+.bg-dark {
+  background: $bg-main;
+}
 
 h1, .h1 {
   font-family: $font-bold;
@@ -37,7 +38,7 @@ h5, .h5 {
 }
 
 
-//Back Link
+//Go back and View form links
 .back-link,
 .view-form-link {
   padding-left: 25px;

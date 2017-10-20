@@ -9412,6 +9412,9 @@ body {
     font-family: Roboto;
     font-size: 16px;
     color: #606060;
+}
+
+.bg-dark {
     background: #1e1e1e;
 }
 
@@ -9579,6 +9582,91 @@ h5, .h5 {
     padding: 0;
     background: transparent;
     outline: none;
+}
+
+.draggable__list > .draggable__item {
+    padding: 10px 15px;
+}
+
+.draggable__item {
+    background: #fff;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.draggable__item-pill {
+    position: relative;
+}
+
+.draggable__item-pill p {
+    margin: 0;
+}
+
+.draggable__item-pill .ico, .draggable__item-pill .draggable__item-name {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.draggable__item-name {
+    margin-left: 5px;
+}
+
+.standout-group-item {
+    width: 100%;
+    display: table;
+    margin-bottom: 15px;
+}
+
+.standout-group-item .standout-group-btn, .standout-group-item .standout-group-addon {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    height: 44px;
+}
+
+.standout-group-item .standout-group-btn {
+    background: #238208;
+    border-radius: 5px 0 0 5px;
+}
+
+.standout-group-item .standout-group-addon {
+    width: 40px;
+    background: #196d01;
+}
+
+.standout-group-item .standout-group-addon, .standout-group-item .standout-group-addon .ico {
+    color: #fff;
+}
+
+.standout-group-item .standout-group-addon:hover, .standout-group-item .standout-group-addon:focus, .standout-group-item .standout-group-addon:active, .standout-group-item .standout-group-addon .ico:hover, .standout-group-item .standout-group-addon .ico:focus, .standout-group-item .standout-group-addon .ico:active {
+    text-decoration: none;
+}
+
+.standout-group-item .standout-group-addon:last-of-type {
+    border-left: 1px solid #166101;
+    border-radius: 0 5px 5px 0;
+    font-size: 18px;
+}
+
+.section-table {
+    display: table;
+    width: 100%;
+}
+
+.section-table .section-table-cell {
+    display: table-cell;
+}
+
+.section-build__sidebar {
+    width: 250px;
+    padding-right: 15px;
+}
+
+.section-build__content {
+    background: #fff;
+    border-radius: 5px 5px 0 0;
 }
 
 @media print {
