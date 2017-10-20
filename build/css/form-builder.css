@@ -9697,12 +9697,26 @@ h5, .h5 {
     padding: 30px 15px;
 }
 
+.section-build__content .sortables-container > .form-components__list {
+    margin-bottom: 50px;
+}
+
 .section-build__content .form-component__item-pill {
     background: #f4f4f4;
     border: 1px solid #c3c3c3;
     box-shadow: 0 1px 0 #d6d6d6;
     cursor: move;
     padding-right: 100px;
+}
+
+.section-build__content .form-component__item-placeholder .form-component__item-pill {
+    color: rgba(96, 96, 96, 0.5);
+    border: 2px dashed #c3c3c3;
+    text-align: center;
+    font-family: Roboto-Bold;
+    background: #faf6f1;
+    box-shadow: none;
+    cursor: auto;
 }
 
 .section-build__content__actions-container {

@@ -119,6 +119,12 @@
     border-radius: $radius $radius 0 0;
     padding: 30px 15px;
 
+    .sortables-container {
+      > .form-components__list {
+        margin-bottom: 50px;
+      }
+    }
+
     .form-component__item {
       &-pill {
         background: $bg-element;
@@ -126,6 +132,19 @@
         box-shadow: 0 1px 0 $border-shadow;
         cursor: move;
         padding-right: 100px;
+      }
+    }
+
+
+    .form-component__item-placeholder {
+      .form-component__item-pill {
+        color: rgba($text-primary, 0.5);
+        border: 2px dashed $border;
+        text-align: center;
+        font-family: $font-bold;
+        background: $bg-conditional-ques;
+        box-shadow: none;
+        cursor: auto;
       }
     }
   }
