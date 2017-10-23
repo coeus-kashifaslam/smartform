@@ -1,0 +1,106 @@
+.modal__form-builder {
+
+  .modal-dialog {
+    min-width: 1100px;
+    width: 90%;
+  }
+
+
+  .modal-content {
+    background: $bg-element;
+    .modal-header,
+    .modal-footer,
+    .modal-body {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+
+  .modal-header {
+    border-bottom: 0 none;
+    background: $bg-popup;
+    border-radius: 6px 6px 0 0;
+    .close {
+      opacity: 1;
+      margin-top: 2px;
+      &:hover,
+      &:focus,
+      &:active {
+        outline: none;
+      }
+      .ico {
+        font-size: $font-sm;
+        color: $ico-close;
+      }
+    }
+
+
+    .modal-title {
+      .ico,
+      .modal-title-text {
+        color: $modal-title;
+      }
+    }
+  }
+
+  .modal-body {
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+  }
+
+  .modal-footer {
+    border-top: 1px solid $border;
+  }
+
+}
+
+.modal-col-title,
+.article-item-title {
+  margin-top: 0;
+}
+
+.modal-col-body {
+  padding: 15px 0;
+  background: $white;
+  border-radius: $radius;
+}
+
+
+.item-type__multilingual {
+  .article-item-header {
+    display: table;
+    width: 100%;
+    .article-item-title,
+    .article-item-selectpicker {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    .article-item-selectpicker {
+      text-align: right;
+
+      .bootstrap-select {
+        &:not([class*="col-"]) {
+          &:not([class*="form-control"]) {
+            &:not(.input-group-btn) {
+              width: 185px;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
+
+
+.article-item {
+  padding: 0 15px;
+  border-bottom: 1px solid $border;
+  margin-bottom: 15px;
+}
+
+.article-item-header {
+  margin-bottom: 15px;
+}

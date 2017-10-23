@@ -230,3 +230,15 @@
     }
   }
 }
+
+
+.form-control {
+  border: 1px solid $border;
+  border-radius: $radius;
+  box-shadow: 0 1px 0 $border-shadow;
+  resize: none;
+
+  &.form-control-textarea {
+    height: 100px;
+  }
+}
