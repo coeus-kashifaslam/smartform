@@ -14,9 +14,16 @@
     position: relative;
     p {
       margin: 0;
-    }
+      position: relative;
+      padding-left: 20px;
 
-    .ico,
+      .ico {
+        position: absolute;
+        left: 0;
+        top: 4px;
+      }
+
+    }
     .form-component__item-name {
       display: inline-block;
       vertical-align: middle;
@@ -25,13 +32,18 @@
     &-actions {
       position: absolute;
       right: 15px;
-      top: 50%;
+      top: 23px;
       margin-top: -11px;
       li {
         padding-left: 2px;
         padding-right: 2px;
         a {
           cursor: pointer;
+          &:hover,
+          &:focus,
+          &:active {
+            text-decoration: none;
+          }
         }
       }
     }
@@ -111,6 +123,11 @@
         }
       }
     }
+
+    .list-sub-components {
+      display: none;
+    }
+
   }
 
 
@@ -131,7 +148,7 @@
         border: 1px solid $border;
         box-shadow: 0 1px 0 $border-shadow;
         cursor: move;
-        padding-right: 100px;
+        padding-right: 115px;
       }
     }
 

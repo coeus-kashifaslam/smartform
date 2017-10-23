@@ -70,3 +70,22 @@ h5, .h5 {
     content: $icon-goto;
   }
 }
+
+
+.tooltip {
+  white-space: nowrap;
+  font-family: $font-bold;
+  color: $bg-element;
+  &-inner {
+    background: $text-primary;
+    padding: 5px 10px;
+  }
+  &.top {
+    .tooltip-arrow {
+      border-top-color: $text-primary;
+    }
+  }
+  &.in {
+    opacity: 1;
+  }
+}

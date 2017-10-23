@@ -9474,6 +9474,26 @@ h5, .h5 {
     content: "";
 }
 
+.tooltip {
+    white-space: nowrap;
+    font-family: Roboto-Bold;
+    color: #f4f4f4;
+}
+
+.tooltip-inner {
+    background: #606060;
+    padding: 5px 10px;
+}
+
+.tooltip.top .tooltip-arrow {
+    border-top-color: #606060;
+}
+
+.tooltip.in {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
 .header__container {
     padding: 15px 0;
     background: #fff;
@@ -9599,9 +9619,17 @@ h5, .h5 {
 
 .form-component__item-pill p {
     margin: 0;
+    position: relative;
+    padding-left: 20px;
 }
 
-.form-component__item-pill .ico, .form-component__item-pill .form-component__item-name {
+.form-component__item-pill p .ico {
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+
+.form-component__item-pill .form-component__item-name {
     display: inline-block;
     vertical-align: middle;
 }
@@ -9609,7 +9637,7 @@ h5, .h5 {
 .form-component__item-pill-actions {
     position: absolute;
     right: 15px;
-    top: 50%;
+    top: 23px;
     margin-top: -11px;
 }
 
@@ -9620,6 +9648,10 @@ h5, .h5 {
 
 .form-component__item-pill-actions li a {
     cursor: pointer;
+}
+
+.form-component__item-pill-actions li a:hover, .form-component__item-pill-actions li a:focus, .form-component__item-pill-actions li a:active {
+    text-decoration: none;
 }
 
 .form-component__item-name {
@@ -9691,6 +9723,10 @@ h5, .h5 {
     display: none;
 }
 
+.section-build__sidebar .list-sub-components {
+    display: none;
+}
+
 .section-build__content {
     background: #fff;
     border-radius: 5px 5px 0 0;
@@ -9706,7 +9742,7 @@ h5, .h5 {
     border: 1px solid #c3c3c3;
     box-shadow: 0 1px 0 #d6d6d6;
     cursor: move;
-    padding-right: 100px;
+    padding-right: 115px;
 }
 
 .section-build__content .form-component__item-placeholder .form-component__item-pill {
