@@ -9048,8 +9048,8 @@ select.bs-select-hidden, select.selectpicker {
 
 @font-face {
     font-family: formBuilder-icons;
-    src: url(../fonts/form-builder/icomoon.eot?81ofbs);
-    src: url(../fonts/form-builder/icomoon.eot?81ofbs#iefix) format("embedded-opentype"), url(../fonts/form-builder/icomoon.ttf?81ofbs) format("truetype"), url(../fonts/form-builder/icomoon.woff?81ofbs) format("woff"), url(../fonts/form-builder/icomoon.svg?81ofbs#icomoon) format("svg");
+    src: url(../fonts/form-builder/icomoon.eot);
+    src: url(../fonts/form-builder/icomoon.eot#iefix) format("embedded-opentype"), url(../fonts/form-builder/icomoon.ttf) format("truetype"), url(../fonts/form-builder/icomoon.woff) format("woff"), url(../fonts/form-builder/icomoon.svg#icomoon) format("svg");
 }
 
 [class^=ico-], [class*=" ico-"] {
@@ -9063,6 +9063,10 @@ select.bs-select-hidden, select.selectpicker {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #606060;
+}
+
+.ico-times:before {
+    content: "\e91c";
 }
 
 .ico-arrow-thick:before {
