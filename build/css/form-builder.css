@@ -9046,25 +9046,6 @@ select.bs-select-hidden, select.selectpicker {
     src: url(../fonts/font-families/arial/Arial-BoldMT.eot?#iefix) format("embedded-opentype"), url(../fonts/font-families/arial/Arial-BoldMT.woff) format("woff"), url(../fonts/font-families/arial/Arial-BoldMT.ttf) format("truetype"), url(../fonts/font-families/arial/Arial-BoldMT.svg#Arial-BoldMT) format("svg");
 }
 
-@font-face {
-    font-family: formBuilder-icons;
-    src: url(../fonts/form-builder/icomoon.eot);
-    src: url(../fonts/form-builder/icomoon.eot#iefix) format("embedded-opentype"), url(../fonts/form-builder/icomoon.ttf) format("truetype"), url(../fonts/form-builder/icomoon.woff) format("woff"), url(../fonts/form-builder/icomoon.svg#icomoon) format("svg");
-}
-
-[class^=ico-], [class*=" ico-"] {
-    font-family: formBuilder-icons !important;
-    speak: none;
-    font-style: normal;
-    font-weight: 400;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    color: #606060;
-}
-
 .ico-times:before {
     content: "\e91c";
 }
@@ -9179,6 +9160,25 @@ select.bs-select-hidden, select.selectpicker {
 
 .ico-upload:before {
     content: "\e91b";
+}
+
+@font-face {
+    font-family: formBuilder-icons;
+    src: url(../fonts/form-builder/icomoon.eot);
+    src: url(../fonts/form-builder/icomoon.eot#iefix) format("embedded-opentype"), url(../fonts/form-builder/icomoon.ttf) format("truetype"), url(../fonts/form-builder/icomoon.woff) format("woff"), url(../fonts/form-builder/icomoon.svg#icomoon) format("svg");
+}
+
+[class^=ico-], [class*=" ico-"] {
+    font-family: formBuilder-icons !important;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #606060;
 }
 
 .bootstrap-select .dropdown-toggle, .bootstrap-select.open .dropdown-toggle {
