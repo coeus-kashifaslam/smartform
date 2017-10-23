@@ -101,6 +101,15 @@
   margin-bottom: 15px;
 }
 
+.modal-col-body {
+  > .article-item {
+    &:last-of-type {
+      margin-bottom: 0;
+      border-bottom: 0;
+    }
+  }
+}
+
 .article-item-header {
   margin-bottom: 15px;
 }
