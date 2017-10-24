@@ -9924,7 +9924,8 @@ h5, .h5 {
 .modal__form-builder .modal-header .close {
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    margin-top: 2px;
+    margin-top: 0;
+    margin-right: -15px;
 }
 
 .modal__form-builder .modal-header .close:hover, .modal__form-builder .modal-header .close:focus, .modal__form-builder .modal-header .close:active {
