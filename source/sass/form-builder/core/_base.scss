@@ -91,3 +91,30 @@ h5, .h5 {
     opacity: 1;
   }
 }
+
+
+
+//Color Picker
+
+.colorpicker-component {
+  border: 1px solid $border;
+  box-shadow: 0 1px 0 $border-shadow;
+  border-radius: $radius;
+  .input-group-addon {
+    padding: 0;
+  }
+
+  .input-group-addon,
+  .add-on {
+    border: 0 none;
+    i {
+      width: 44px;
+      height: 44px;
+      border-radius: $radius 0 0 $radius;
+    }
+  }
+  .form-control {
+    border: 0 none;
+    box-shadow: none;
+  }
+}

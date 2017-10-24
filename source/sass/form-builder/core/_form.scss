@@ -237,6 +237,9 @@
   border-radius: $radius;
   box-shadow: 0 1px 0 $border-shadow;
   resize: none;
+  font-size: $font-md;
+  color: $text-primary;
+  min-height: 44px;
 
   &:focus {
     border-color: $border;
