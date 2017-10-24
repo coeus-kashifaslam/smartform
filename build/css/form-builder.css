@@ -9856,6 +9856,10 @@ h5, .h5 {
     padding-right: 115px;
 }
 
+.section-build__content .form-component__item-pill.conditional-linking__true {
+    background: #f7f1e9;
+}
+
 .section-build__content .form-component__item-placeholder .form-component__item-pill {
     color: rgba(96, 96, 96, 0.5);
     border: 2px dashed #c3c3c3;
