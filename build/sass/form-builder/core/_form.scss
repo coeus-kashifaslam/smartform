@@ -1,3 +1,7 @@
+@mixin  box-shadow {
+  box-shadow: 0 1px 0 $border-shadow;
+}
+
 //Select option Stylings
 .bootstrap-select {
   &, &.open {
@@ -128,6 +132,12 @@
       + li {
         border-top: 1px solid $border;
       }
+
+      &:last-child {
+        a {
+          border-radius: 0 0 $radius $radius;
+        }
+      }
     }
 
 
@@ -235,7 +245,7 @@
 .form-control {
   border: 1px solid $border;
   border-radius: $radius;
-  box-shadow: 0 1px 0 $border-shadow;
+  @include box-shadow();
   resize: none;
   font-size: $font-md;
   color: $text-primary;
@@ -243,7 +253,7 @@
 
   &:focus {
     border-color: $border;
-    box-shadow: 0 1px 0 $border-shadow;
+    @include box-shadow();
   }
   &.form-control-textarea {
     height: 100px;

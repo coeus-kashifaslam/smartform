@@ -9540,6 +9540,10 @@ select.bs-select-hidden, select.selectpicker {
     border-top: 1px solid #c3c3c3;
 }
 
+.dropdown .dropdown-menu > li:last-child a {
+    border-radius: 0 0 5px 5px;
+}
+
 .dropdown .dropdown-menu:before {
     content: '';
     border-left: 9px solid transparent;

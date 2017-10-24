@@ -146,7 +146,7 @@
       &-pill {
         background: $bg-element;
         border: 1px solid $border;
-        box-shadow: 0 1px 0 $border-shadow;
+        @include box-shadow();
         cursor: move;
         padding-right: 115px;
         &.conditional-linking__true {

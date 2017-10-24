@@ -71,8 +71,6 @@ h5, .h5 {
   }
 }
 
-
-
 //Tooltip
 .tooltip {
   white-space: nowrap;
@@ -95,10 +93,9 @@ h5, .h5 {
 
 
 //Color Picker
-
 .colorpicker-component {
   border: 1px solid $border;
-  box-shadow: 0 1px 0 $border-shadow;
+  @include box-shadow();
   border-radius: $radius;
   .input-group-addon {
     padding: 0;
