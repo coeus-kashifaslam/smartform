@@ -138,9 +138,6 @@
     padding-left: 0;
     padding-right: 0;
   }
-  .item-type__font {
-    width:65%;
-  }
 }
 
 .tab-footer {
@@ -171,12 +168,18 @@
 .tab-pane__fonts {
   .tab-body__row {
     .article-item {
+      width: 65%;
       border-bottom: 0 none;
       margin-bottom: 10px;
     }
 
-    .article-item-title {
-      width: 40%;
+    .article-item-selectpicker {
+      width: $selectpicker-lg + 20;
     }
+
+    .article-item-selectpicker__font-size {
+      width: $selectpicker-sm + 20;
+    }
+
   }
 }

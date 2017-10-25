@@ -84,7 +84,7 @@
         &:not([class*="col-"]) {
           &:not([class*="form-control"]) {
             &:not(.input-group-btn) {
-              width: 185px;
+              width: $selectpicker-lg;
             }
           }
         }
@@ -96,7 +96,7 @@
         &:not([class*="col-"]) {
           &:not([class*="form-control"]) {
             &:not(.input-group-btn) {
-              width: 125px;
+              width: $selectpicker-sm;
             }
           }
         }

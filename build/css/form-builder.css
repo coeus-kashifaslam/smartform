@@ -9791,6 +9791,7 @@ h5, .h5 {
     border: 1px solid #c3c3c3;
     box-shadow: 0 1px 0 #d6d6d6;
     border-radius: 5px;
+    width: 150px;
 }
 
 .colorpicker-component .input-group-addon {
@@ -10293,10 +10294,6 @@ h5, .h5 {
     padding-right: 0;
 }
 
-.tab-body__row .item-type__font {
-    width: 65%;
-}
-
 .tab-footer {
     text-align: right;
 }
@@ -10311,12 +10308,17 @@ h5, .h5 {
 }
 
 .tab-pane__fonts .tab-body__row .article-item {
+    width: 65%;
     border-bottom: 0 none;
     margin-bottom: 10px;
 }
 
-.tab-pane__fonts .tab-body__row .article-item-title {
-    width: 40%;
+.tab-pane__fonts .tab-body__row .article-item-selectpicker {
+    width: 205px;
+}
+
+.tab-pane__fonts .tab-body__row .article-item-selectpicker__font-size {
+    width: 145px;
 }
 
 @media print {
