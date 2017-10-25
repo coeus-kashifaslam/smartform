@@ -149,11 +149,13 @@
 }
 
 .tab-pane__general-settings,
-.tab-pane__fonts {
+.tab-pane__fonts,
+.tab-pane__colors {
   .tab-body__row {
     .article-item {
       &:last-of-type {
         margin-bottom: 0;
+        border-bottom: 0 none;
       }
     }
   }
@@ -184,5 +186,23 @@
       width: $selectpicker-sm + 20;
     }
 
+  }
+}
+
+
+.tab-pane__colors {
+  .colorpicker-label {
+    color: $text-secondary;
+    white-space: nowrap;
+    font-size: $font-sm;
+  }
+
+  .article-item {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+  }
+
+  .article-item-title {
+    text-decoration: underline;
   }
 }
