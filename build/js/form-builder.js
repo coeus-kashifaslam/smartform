@@ -6,14 +6,18 @@ $(document).ready(function () {
     // Show Base Modal
     // $('.modal__form-builder').modal('show');
 
-
-    // Init Color Picker
-    $(function() {
-        $('.colorpicker-component').colorpicker({
-            format: 'hex'
-        });
+    $('.section-design__sidebar-list .list-group-item').on('click', function () {
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
     });
 
+});
+
+// Init Color Picker
+$(function() {
+    $('.colorpicker-component').colorpicker({
+        format: 'hex'
+    });
 });
 
 

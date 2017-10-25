@@ -10199,7 +10199,7 @@ h5, .h5 {
 .section-design__sidebar-list .list-group-item:hover, .section-design__sidebar-list .list-group-item.active, .section-design__sidebar-list .list-group-item.active:hover {
     background: #fafafa;
     font-family: Roboto-Bold;
-    border-color: #c3c3c3;
+    border-bottom-color: #c3c3c3;
 }
 
 .section-design__sidebar-list .list-group-item:hover .item-text, .section-design__sidebar-list .list-group-item.active .item-text, .section-design__sidebar-list .list-group-item.active:hover .item-text {

@@ -35,7 +35,7 @@
     &.active:hover {
       background: $design-sidebar-item-active;
       font-family: $font-bold;
-      border-color: $border;
+      border-bottom-color: $border;
       .item-text {
         color: $text-primary;
       }
