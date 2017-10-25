@@ -1,11 +1,11 @@
 .section-design__sidebar {
   width: 400px;
+  border-right: 1px solid $border;
+  background: $bg-element;
 }
 .section-design__sidebar-container {
   min-height: calc(100vh - 132px);
   overflow: auto;
-  background: $bg-element;
-  border-right: 1px solid $border;
 }
 
 
@@ -106,4 +106,35 @@
   }
 
 
+}
+
+
+
+.section-design__content {
+  padding: 20px 15px;
+}
+
+.tab-header {
+  padding-bottom: 22px;
+  border-bottom: 1px solid $border;
+  margin-bottom: 25px;
+  .tab__header-title {
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
+  .tab__header-excerpt {
+    color: $text-secondary;
+    margin-bottom: 0;
+    font-size: $font-sm;
+  }
+}
+
+
+.tab-body__row {
+  .article-item {
+    border-bottom: 0 none;
+    margin-bottom: 50px;
+  }
 }
