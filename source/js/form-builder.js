@@ -4,7 +4,7 @@ $(document).ready(function () {
     $('.selectpicker').selectpicker();
 
     // Show Base Modal
-    // $('.modal__form-builder').modal('show');
+    $('.modal__form-builder').modal('show');
 
     $('.section-design__sidebar-list .list-group-item').on('click', function () {
         $(this).siblings().removeClass('active');

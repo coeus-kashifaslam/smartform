@@ -133,6 +133,7 @@
 
 
 .tab-body__row {
+  margin-bottom: 50px;
   .article-item {
     padding-left: 0;
     padding-right: 0;
@@ -145,6 +146,18 @@
 .tab-footer {
   text-align: right;
 }
+
+.tab-pane__general-settings,
+.tab-pane__fonts {
+  .tab-body__row {
+    .article-item {
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
 
 .tab-pane__general-settings {
   .tab-body__row {

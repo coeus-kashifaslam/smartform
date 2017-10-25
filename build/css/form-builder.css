@@ -9983,25 +9983,25 @@ h5, .h5 {
     border-radius: 5px;
 }
 
-.item-type__multilingual .article-item-header {
+.item-type__grid .item-type__grid-row {
     display: table;
     width: 100%;
 }
 
-.item-type__multilingual .article-item-header .article-item-title, .item-type__multilingual .article-item-header .article-item-selectpicker {
+.item-type__grid .item-type__grid-row .article-item-title, .item-type__grid .item-type__grid-row .article-item-selectpicker {
     display: table-cell;
     vertical-align: middle;
 }
 
-.item-type__multilingual .article-item-header .article-item-selectpicker {
+.item-type__grid .item-type__grid-row .article-item-selectpicker {
     text-align: right;
 }
 
-.item-type__multilingual .article-item-header .article-item-selectpicker .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+.item-type__grid .item-type__grid-row .article-item-selectpicker .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
     width: 185px;
 }
 
-.item-type__multilingual .article-item-header .article-item-selectpicker__font-size .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+.item-type__grid .item-type__grid-row .article-item-selectpicker__font-size .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
     width: 125px;
 }
 
@@ -10284,6 +10284,10 @@ h5, .h5 {
     font-size: 14px;
 }
 
+.tab-body__row {
+    margin-bottom: 50px;
+}
+
 .tab-body__row .article-item {
     padding-left: 0;
     padding-right: 0;
@@ -10295,6 +10299,10 @@ h5, .h5 {
 
 .tab-footer {
     text-align: right;
+}
+
+.tab-pane__general-settings .tab-body__row .article-item:last-of-type, .tab-pane__fonts .tab-body__row .article-item:last-of-type {
+    margin-bottom: 0;
 }
 
 .tab-pane__general-settings .tab-body__row .article-item {
