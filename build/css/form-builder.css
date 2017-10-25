@@ -9631,7 +9631,7 @@ select.bs-select-hidden, select.selectpicker {
     height: 100px;
 }
 
-.form-control.form-control-textarea-small {
+.form-control.form-control-textarea-small, .form-control.form-control-input-small {
     height: 44px;
     border-top: none;
     border-left: none;
@@ -10302,7 +10302,7 @@ h5, .h5 {
     padding-right: 0;
 }
 
-.tab-pane__general-settings .tab-body__row .article-item:last-of-type, .tab-pane__fonts .tab-body__row .article-item:last-of-type, .tab-pane__colors .tab-body__row .article-item:last-of-type {
+.tab-pane__general-settings .tab-body__row .article-item:last-of-type, .tab-pane__fonts .tab-body__row .article-item:last-of-type, .tab-pane__colors .tab-body__row .article-item:last-of-type, .tab-pane__form-buttons .tab-body__row .article-item:last-of-type {
     margin-bottom: 0;
     border-bottom: 0 none;
 }
@@ -10327,18 +10327,27 @@ h5, .h5 {
     width: 145px;
 }
 
-.tab-pane__colors .colorpicker-label {
+.tab-pane__colors .form-group-label, .tab-pane__form-buttons .form-group-label {
     white-space: nowrap;
     font-size: 14px;
 }
 
-.tab-pane__colors .article-item {
+.tab-pane__colors .article-item, .tab-pane__form-buttons .article-item {
     margin-bottom: 25px;
     padding-bottom: 25px;
 }
 
-.tab-pane__colors .article-item-title {
+.tab-pane__colors .article-item-title, .tab-pane__form-buttons .article-item-title {
     text-decoration: underline;
+}
+
+.button-details-list > li {
+    position: relative;
+    vertical-align: top;
+}
+
+.button-details-list > li + li {
+    margin-left: 15px;
 }
 
 @media print {

@@ -150,7 +150,8 @@
 
 .tab-pane__general-settings,
 .tab-pane__fonts,
-.tab-pane__colors {
+.tab-pane__colors,
+.tab-pane__form-buttons {
   .tab-body__row {
     .article-item {
       &:last-of-type {
@@ -192,8 +193,9 @@
 }
 
 
-.tab-pane__colors {
-  .colorpicker-label {
+.tab-pane__colors,
+.tab-pane__form-buttons {
+  .form-group-label {
     white-space: nowrap;
     font-size: $font-sm;
   }
@@ -205,5 +207,16 @@
 
   .article-item-title {
     text-decoration: underline;
+  }
+}
+
+
+.button-details-list {
+  > li {
+    position: relative;
+    vertical-align: top;
+    + li {
+      margin-left: 15px;
+    }
   }
 }

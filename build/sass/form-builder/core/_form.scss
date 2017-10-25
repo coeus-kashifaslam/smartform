@@ -259,7 +259,8 @@
     height: 100px;
   }
 
-  &.form-control-textarea-small {
+  &.form-control-textarea-small,
+  &.form-control-input-small {
     height: 44px;
     border-top: none;
     border-left: none;
