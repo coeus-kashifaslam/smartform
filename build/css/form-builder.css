@@ -9690,6 +9690,14 @@ body {
     background: #1e1e1e;
 }
 
+.bg-white {
+    background: #fff;
+}
+
+.bg-light {
+    background: #b4c3ca;
+}
+
 h1, .h1 {
     font-family: Roboto-Bold;
     font-size: 20px;
@@ -9717,6 +9725,10 @@ h5, .h5 {
 
 .container-fluid {
     min-width: 1200px;
+}
+
+.container-fluid.noPadding {
+    padding: 0;
 }
 
 .back-link, .view-form-link {
@@ -9852,6 +9864,7 @@ h5, .h5 {
 
 .navbar-container {
     padding: 15px 0;
+    background: #1e1e1e;
 }
 
 .navigation-center {
@@ -10149,6 +10162,90 @@ h5, .h5 {
 
 .section-build__content__actions-container {
     margin-bottom: 30px;
+}
+
+.section-design__sidebar {
+    width: 400px;
+}
+
+.section-design__sidebar-container {
+    min-height: calc(100vh - 132px);
+    overflow: auto;
+    background: #f4f4f4;
+    border-right: 1px solid #c3c3c3;
+}
+
+.section-design__sidebar-list {
+    margin-bottom: 0;
+}
+
+.section-design__sidebar-list .list-group-item {
+    background: #f4f4f4;
+    padding: 30px 15px;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #c3c3c3;
+    margin-bottom: 0;
+}
+
+.section-design__sidebar-list .list-group-item:first-child {
+    border-top: 0 none;
+}
+
+.section-design__sidebar-list .list-group-item:first-child, .section-design__sidebar-list .list-group-item:last-child {
+    border-radius: 0;
+}
+
+.section-design__sidebar-list .list-group-item:hover, .section-design__sidebar-list .list-group-item.active, .section-design__sidebar-list .list-group-item.active:hover {
+    background: #fafafa;
+    font-family: Roboto-Bold;
+    border-color: #c3c3c3;
+}
+
+.section-design__sidebar-list .list-group-item:hover .item-text, .section-design__sidebar-list .list-group-item.active .item-text, .section-design__sidebar-list .list-group-item.active:hover .item-text {
+    color: #606060;
+}
+
+.section-design__sidebar-list .list-group-item:hover.section-design__sidebar-general-settings .item-icon .ico, .section-design__sidebar-list .list-group-item.active.section-design__sidebar-general-settings .item-icon .ico, .section-design__sidebar-list .list-group-item.active:hover.section-design__sidebar-general-settings .item-icon .ico {
+    color: #f7c80a;
+}
+
+.section-design__sidebar-list .list-group-item:hover.section-design__sidebar-fonts .item-icon .ico, .section-design__sidebar-list .list-group-item.active.section-design__sidebar-fonts .item-icon .ico, .section-design__sidebar-list .list-group-item.active:hover.section-design__sidebar-fonts .item-icon .ico {
+    color: #ee2700;
+}
+
+.section-design__sidebar-list .list-group-item:hover.section-design__sidebar-color .item-icon .ico, .section-design__sidebar-list .list-group-item.active.section-design__sidebar-color .item-icon .ico, .section-design__sidebar-list .list-group-item.active:hover.section-design__sidebar-color .item-icon .ico {
+    color: #ee2700;
+}
+
+.section-design__sidebar-list .list-group-item:hover.section-design__sidebar-form-buttons .item-icon .ico, .section-design__sidebar-list .list-group-item.active.section-design__sidebar-form-buttons .item-icon .ico, .section-design__sidebar-list .list-group-item.active:hover.section-design__sidebar-form-buttons .item-icon .ico {
+    color: #0072bc;
+}
+
+.section-design__sidebar-list .list-group-item:hover.section-design__sidebar-image .item-icon .ico, .section-design__sidebar-list .list-group-item.active.section-design__sidebar-image .item-icon .ico, .section-design__sidebar-list .list-group-item.active:hover.section-design__sidebar-image .item-icon .ico {
+    color: #9b04e1;
+}
+
+.section-design__sidebar-list .list-group-item:hover.section-design__sidebar-breadcrumb .item-icon .ico, .section-design__sidebar-list .list-group-item.active.section-design__sidebar-breadcrumb .item-icon .ico, .section-design__sidebar-list .list-group-item.active:hover.section-design__sidebar-breadcrumb .item-icon .ico {
+    color: #31a397;
+}
+
+.section-design__sidebar-list .list-group-item .item-icon {
+    color: #777;
+}
+
+.section-design__sidebar-list .list-group-item .item-text {
+    color: #b4b4b4;
+    margin-left: 10px;
+}
+
+.section-design__sidebar-list .list-group-item .item-icon, .section-design__sidebar-list .list-group-item .item-text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.section-design__sidebar-list > .list-group-item + .list-group-item {
+    border-top: 1px solid #fff;
 }
 
 @media print {

@@ -8,6 +8,14 @@ body {
   background: $bg-main;
 }
 
+.bg-white {
+  background: $white;
+}
+
+.bg-light {
+  background: $bg-main-secondary;
+}
+
 h1, .h1 {
   font-family: $font-bold;
   font-size: $font-xlg;
@@ -35,6 +43,9 @@ h5, .h5 {
 
 .container-fluid {
   min-width: 1200px;
+  &.noPadding {
+    padding: 0;
+  }
 }
 
 

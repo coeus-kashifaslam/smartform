@@ -1,0 +1,51 @@
+{% extends 'template/form-builder/layouts/default.html' %}
+{% set page = {title: "Design | Form Builder", class: 'bg-white', name: 'build'} %}
+
+{% block content %}
+<div class="container-fluid noPadding">
+    <div class="section-table section-build">
+
+
+        <!-- Sidebar -->
+        <div class="section-design__sidebar section-table-cell">
+            <div class="section-design__sidebar-container">
+                <div class="section-design__sidebar-list list-group">
+                    <a href="#design-general-settings" class="section-design__sidebar-general-settings list-group-item active" aria-controls="design-general-settings" role="tab" data-toggle="tab">
+                        <span class="item-icon"><i class="ico ico-settings"></i></span>
+                        <span class="item-text">General Settings</span>
+                    </a>
+                    <a href="#design-fonts" class="section-design__sidebar-fonts list-group-item" aria-controls="design-fonts" role="tab" data-toggle="tab">
+                        <span class="item-icon"><i class="ico ico-font"></i></span>
+                        <span class="item-text">Fonts</span>
+                    </a>
+                    <a href="#design-color" class="section-design__sidebar-color list-group-item" aria-controls="design-color" role="tab" data-toggle="tab">
+                        <span class="item-icon"><i class="ico ico-settings"></i></span>
+                        <span class="item-text">Color</span>
+                    </a>
+                    <a href="#design-form-buttons" class="section-design__sidebar-form-buttons list-group-item" aria-controls="design-form-buttons" role="tab" data-toggle="tab">
+                        <span class="item-icon"><i class="ico ico-settings"></i></span>
+                        <span class="item-text">Form Buttons</span>
+                    </a>
+                    <a href="#design-image" class="section-design__sidebar-image list-group-item" aria-controls="design-image" role="tab" data-toggle="tab">
+                        <span class="item-icon"><i class="ico ico-settings"></i></span>
+                        <span class="item-text">Image</span>
+                    </a>
+                    <a href="#design-breadcrumb" class="section-design__sidebar-breadcrumb list-group-item" aria-controls="design-breadcrumb" role="tab" data-toggle="tab">
+                        <span class="item-icon"><i class="ico ico-settings"></i></span>
+                        <span class="item-text">Breadcrumb</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- /.Sidebar -->
+
+
+
+        <!-- Content Area -->
+        <div class="section-design__content section-table-cell">
+
+        </div>
+        <!-- /.Content Area -->
+    </div>
+</div>
+{% endblock %}
