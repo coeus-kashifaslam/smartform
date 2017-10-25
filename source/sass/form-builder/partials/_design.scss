@@ -134,7 +134,36 @@
 
 .tab-body__row {
   .article-item {
-    border-bottom: 0 none;
-    margin-bottom: 50px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .item-type__font {
+    width:65%;
+  }
+}
+
+.tab-footer {
+  text-align: right;
+}
+
+.tab-pane__general-settings {
+  .tab-body__row {
+    .article-item {
+      border-bottom: 0 none;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.tab-pane__fonts {
+  .tab-body__row {
+    .article-item {
+      border-bottom: 0 none;
+      margin-bottom: 10px;
+    }
+
+    .article-item-title {
+      width: 40%;
+    }
   }
 }

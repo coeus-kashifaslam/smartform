@@ -9637,9 +9637,8 @@ select.bs-select-hidden, select.selectpicker {
     border-left: none;
     border-right: none;
     border-radius: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
     box-shadow: none;
+    padding: 10px 0;
 }
 
 .btn {
@@ -10002,6 +10001,10 @@ h5, .h5 {
     width: 185px;
 }
 
+.item-type__multilingual .article-item-header .article-item-selectpicker__font-size .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 125px;
+}
+
 .article-item {
     padding: 0 15px;
     border-bottom: 1px solid #c3c3c3;
@@ -10282,8 +10285,30 @@ h5, .h5 {
 }
 
 .tab-body__row .article-item {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.tab-body__row .item-type__font {
+    width: 65%;
+}
+
+.tab-footer {
+    text-align: right;
+}
+
+.tab-pane__general-settings .tab-body__row .article-item {
     border-bottom: 0 none;
     margin-bottom: 50px;
+}
+
+.tab-pane__fonts .tab-body__row .article-item {
+    border-bottom: 0 none;
+    margin-bottom: 10px;
+}
+
+.tab-pane__fonts .tab-body__row .article-item-title {
+    width: 40%;
 }
 
 @media print {

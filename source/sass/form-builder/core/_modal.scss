@@ -89,8 +89,21 @@
           }
         }
       }
-
     }
+
+    .article-item-selectpicker__font-size  {
+      .bootstrap-select {
+        &:not([class*="col-"]) {
+          &:not([class*="form-control"]) {
+            &:not(.input-group-btn) {
+              width: 125px;
+            }
+          }
+        }
+      }
+    }
+
+
   }
 }
 
