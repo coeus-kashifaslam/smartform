@@ -10314,7 +10314,9 @@ h5, .h5 {
 
 .tab-pane__fonts .tab-body__row .article-item {
     border-bottom: 0 none;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #c3c3c3;
 }
 
 .tab-pane__fonts .tab-body__row .article-item-selectpicker {
@@ -10326,7 +10328,6 @@ h5, .h5 {
 }
 
 .tab-pane__colors .colorpicker-label {
-    color: #b4b4b4;
     white-space: nowrap;
     font-size: 14px;
 }

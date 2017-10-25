@@ -106,11 +106,11 @@
                         <span class="item-icon"><i class="ico ico-font"></i></span>
                         <span class="item-text">Fonts</span>
                     </a>
-                    <a href="#design-color" class="section-design__sidebar-color list-group-item active" aria-controls="design-color" role="tab" data-toggle="tab">
+                    <a href="#design-color" class="section-design__sidebar-color list-group-item" aria-controls="design-color" role="tab" data-toggle="tab">
                         <span class="item-icon"><i class="ico ico-settings"></i></span>
                         <span class="item-text">Color</span>
                     </a>
-                    <a href="#design-form-buttons" class="section-design__sidebar-form-buttons list-group-item" aria-controls="design-form-buttons" role="tab" data-toggle="tab">
+                    <a href="#design-form-buttons" class="section-design__sidebar-form-buttons list-group-item active" aria-controls="design-form-buttons" role="tab" data-toggle="tab">
                         <span class="item-icon"><i class="ico ico-settings"></i></span>
                         <span class="item-text">Form Buttons</span>
                     </a>
@@ -382,7 +382,7 @@
     <!--</footer>-->
 </div>
 
-                    <div role="tabpanel" class="tab-pane active tab-pane__colors" id="design-color">
+                    <div role="tabpanel" class="tab-pane tab-pane__colors" id="design-color">
     <header class="tab-header">
         <h2 class="tab__header-title">Color</h2>
         <p class="tab__header-excerpt">Define Font Colors For Types Here</p>
@@ -504,7 +504,127 @@
     <!--</footer>-->
 </div>
 
-                    <div role="tabpanel" class="tab-pane" id="design-form-buttons">Form Buttons</div>
+                    <div role="tabpanel" class="tab-pane tab-pane__form-buttons active" id="design-form-buttons">
+    <header class="tab-header">
+        <h2 class="tab__header-title">Form Buttons</h2>
+        <p class="tab__header-excerpt">Define all the buttons specifications here </p>
+        <button class="btn btn-fill btn-right-centered">Save</button>
+    </header>
+
+    <div class="tab-body">
+
+        <div class="row">
+            <div class="col-xs-9">
+                <div class="tab-body__row">
+
+                    <!-- article item -->
+                    <article class="article-item item-type__grid item-type__color">
+                        <header class="article-item-header">
+                            <h4 class="article-item-title">General Font Setting</h4>
+                        </header>
+                        <div class="article-item-body">
+                            <ul class="list-colors-list list-inline">
+                                <li>
+                                    <div class="form-group">
+                                        <label class="colorpicker-label">Form Background</label>
+                                        <div class="input-group colorpicker-component">
+                                            <span class="input-group-addon"><i></i></span>
+                                            <input type="text" value="#00AABB" class="form-control" />
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-group">
+                                        <label class="colorpicker-label">Header Background</label>
+                                        <div class="input-group colorpicker-component">
+                                            <span class="input-group-addon"><i></i></span>
+                                            <input type="text" value="#00AABB" class="form-control" />
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-group">
+                                        <label class="colorpicker-label">Email Box Border</label>
+                                        <div class="input-group colorpicker-component">
+                                            <span class="input-group-addon"><i></i></span>
+                                            <input type="text" value="#00AABB" class="form-control" />
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-group">
+                                        <label class="colorpicker-label">Checkbox/Radio Selected</label>
+                                        <div class="input-group colorpicker-component">
+                                            <span class="input-group-addon"><i></i></span>
+                                            <input type="text" value="#00AABB" class="form-control" />
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- article item -->
+                    <article class="article-item item-type__grid item-type__color">
+                        <header class="article-item-header">
+                            <h4 class="article-item-title">Form Content</h4>
+                        </header>
+                        <div class="article-item-body">
+                            <ul class="list-colors-list list-inline">
+                                <li>
+                                    <div class="form-group">
+                                        <label class="colorpicker-label">Question</label>
+                                        <div class="input-group colorpicker-component">
+                                            <span class="input-group-addon"><i></i></span>
+                                            <input type="text" value="#00AABB" class="form-control" />
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-group">
+                                        <label class="colorpicker-label">Help Text</label>
+                                        <div class="input-group colorpicker-component">
+                                            <span class="input-group-addon"><i></i></span>
+                                            <input type="text" value="#00AABB" class="form-control" />
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-group">
+                                        <label class="colorpicker-label">Placeholder</label>
+                                        <div class="input-group colorpicker-component">
+                                            <span class="input-group-addon"><i></i></span>
+                                            <input type="text" value="#00AABB" class="form-control" />
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-group">
+                                        <label class="colorpicker-label">Error Text</label>
+                                        <div class="input-group colorpicker-component">
+                                            <span class="input-group-addon"><i></i></span>
+                                            <input type="text" value="#00AABB" class="form-control" />
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--<footer class="tab-footer">-->
+    <!--<ul class="list-inline">-->
+    <!--<li>-->
+    <!--<button class="btn btn-fill">Save</button>-->
+    <!--</li>-->
+    <!--</ul>-->
+    <!--</footer>-->
+</div>
 
                     <div role="tabpanel" class="tab-pane" id="design-image">Image</div>
 

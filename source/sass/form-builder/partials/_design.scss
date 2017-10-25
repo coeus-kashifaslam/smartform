@@ -175,7 +175,9 @@
   .tab-body__row {
     .article-item {
       border-bottom: 0 none;
-      margin-bottom: 10px;
+      margin-bottom: 25px;
+      padding-bottom: 25px;
+      border-bottom: 1px solid $border;
     }
 
     .article-item-selectpicker {
@@ -192,7 +194,6 @@
 
 .tab-pane__colors {
   .colorpicker-label {
-    color: $text-secondary;
     white-space: nowrap;
     font-size: $font-sm;
   }
