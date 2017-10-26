@@ -10348,7 +10348,7 @@ h5, .h5 {
     padding-right: 0;
 }
 
-.tab-pane__general-settings .tab-body__row .article-item:last-of-type, .tab-pane__fonts .tab-body__row .article-item:last-of-type, .tab-pane__colors .tab-body__row .article-item:last-of-type, .tab-pane__form-buttons .tab-body__row .article-item:last-of-type {
+.tab-pane__general-settings .tab-body__row .article-item:last-of-type, .tab-pane__fonts .tab-body__row .article-item:last-of-type, .tab-pane__colors .tab-body__row .article-item:last-of-type, .tab-pane__form-buttons .tab-body__row .article-item:last-of-type, .tab-pane__breadcrumb .tab-body__row .article-item:last-of-type {
     margin-bottom: 0;
     border-bottom: 0 none;
 }
@@ -10378,11 +10378,11 @@ h5, .h5 {
     padding-bottom: 25px;
 }
 
-.tab-pane__form-buttons .article-item-title, .tab-pane__colors .article-item-title {
+.tab-pane__form-buttons .article-item-title, .tab-pane__colors .article-item-title, .tab-pane__breadcrumb .article-item-title {
     text-decoration: underline;
 }
 
-.tab-pane__form-buttons .form-group-label, .tab-pane__colors .form-group-label {
+.tab-pane__form-buttons .form-group-label, .tab-pane__colors .form-group-label, .tab-pane__breadcrumb .form-group-label {
     white-space: nowrap;
     font-size: 14px;
 }
@@ -10476,6 +10476,15 @@ h5, .h5 {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+
+.tab-pane__breadcrumb .tab-body__row-checkbox {
+    margin-bottom: 35px;
+}
+
+.tab-pane__breadcrumb .item-type__font {
+    border-bottom: 0 none;
+    margin-bottom: 35px;
 }
 
 @media print {

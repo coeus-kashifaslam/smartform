@@ -144,6 +144,7 @@
   position: relative;
 }
 
+
 .tab-header {
   padding-bottom: 17px;
   border-bottom: 1px solid $border;
@@ -184,7 +185,8 @@
 .tab-pane__general-settings,
 .tab-pane__fonts,
 .tab-pane__colors,
-.tab-pane__form-buttons {
+.tab-pane__form-buttons,
+.tab-pane__breadcrumb {
   .tab-body__row {
     .article-item {
       &:last-of-type {
@@ -233,7 +235,8 @@
 
 
 .tab-pane__form-buttons,
-.tab-pane__colors {
+.tab-pane__colors,
+.tab-pane__breadcrumb {
   .article-item-title {
     text-decoration: underline;
   }
@@ -332,4 +335,16 @@
     }
   }
 
+}
+
+
+.tab-pane__breadcrumb {
+  .tab-body__row-checkbox {
+    margin-bottom: 35px;
+  }
+
+  .item-type__font {
+    border-bottom: 0 none;
+    margin-bottom: 35px;
+  }
 }
