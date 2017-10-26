@@ -30,6 +30,34 @@
       border-radius: 0;
     }
 
+    &.section-design__sidebar {
+
+      &-color {
+        .item-icon .ico {
+          font-size: $font-md + 8;
+        }
+      }
+
+      &-form-buttons {
+        .item-icon .ico {
+          font-size: $font-md + 8;
+        }
+      }
+
+      &-image {
+        .item-icon .ico {
+          font-size: $font-md;
+        }
+      }
+
+      &-breadcrumb {
+        .item-icon .ico {
+          font-size: $font-md + 2;
+        }
+      }
+
+    }
+
     &:hover,
     &.active,
     &.active:hover {
@@ -179,6 +207,13 @@
       margin-bottom: 25px;
       padding-bottom: 25px;
       border-bottom: 1px solid $border;
+    }
+
+    .selectpicker__font-family {
+      width: $selectpicker-font-family + 20;
+    }
+    .selectpicker__font-size {
+      width: $selectpicker-font-size + 20;
     }
   }
 }

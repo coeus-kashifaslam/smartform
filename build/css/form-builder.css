@@ -9290,6 +9290,26 @@ select.bs-select-hidden, select.selectpicker {
     src: url(../fonts/font-families/arial/Arial-BoldMT.eot?#iefix) format("embedded-opentype"), url(../fonts/font-families/arial/Arial-BoldMT.woff) format("woff"), url(../fonts/font-families/arial/Arial-BoldMT.ttf) format("truetype"), url(../fonts/font-families/arial/Arial-BoldMT.svg#Arial-BoldMT) format("svg");
 }
 
+.ico-image:before {
+    content: "\e921";
+}
+
+.ico-breadcrumb:before {
+    content: "\e91d";
+}
+
+.ico-color-picker:before {
+    content: "\e91e";
+}
+
+.ico-form-buttons:before {
+    content: "\e91f";
+}
+
+.ico-product:before {
+    content: "\e920";
+}
+
 .ico-times:before {
     content: "\e91c";
 }
@@ -10220,6 +10240,22 @@ h5, .h5 {
     border-radius: 0;
 }
 
+.section-design__sidebar-list .list-group-item.section-design__sidebar-color .item-icon .ico {
+    font-size: 24px;
+}
+
+.section-design__sidebar-list .list-group-item.section-design__sidebar-form-buttons .item-icon .ico {
+    font-size: 24px;
+}
+
+.section-design__sidebar-list .list-group-item.section-design__sidebar-image .item-icon .ico {
+    font-size: 16px;
+}
+
+.section-design__sidebar-list .list-group-item.section-design__sidebar-breadcrumb .item-icon .ico {
+    font-size: 18px;
+}
+
 .section-design__sidebar-list .list-group-item:hover, .section-design__sidebar-list .list-group-item.active, .section-design__sidebar-list .list-group-item.active:hover {
     background: #fafafa;
     font-family: Roboto-Bold;
@@ -10239,7 +10275,7 @@ h5, .h5 {
 }
 
 .section-design__sidebar-list .list-group-item:hover.section-design__sidebar-color .item-icon .ico, .section-design__sidebar-list .list-group-item.active.section-design__sidebar-color .item-icon .ico, .section-design__sidebar-list .list-group-item.active:hover.section-design__sidebar-color .item-icon .ico {
-    color: #ee2700;
+    color: #2ec605;
 }
 
 .section-design__sidebar-list .list-group-item:hover.section-design__sidebar-form-buttons .item-icon .ico, .section-design__sidebar-list .list-group-item.active.section-design__sidebar-form-buttons .item-icon .ico, .section-design__sidebar-list .list-group-item.active:hover.section-design__sidebar-form-buttons .item-icon .ico {
@@ -10326,6 +10362,14 @@ h5, .h5 {
     margin-bottom: 25px;
     padding-bottom: 25px;
     border-bottom: 1px solid #c3c3c3;
+}
+
+.tab-pane__fonts .tab-body__row .selectpicker__font-family {
+    width: 205px;
+}
+
+.tab-pane__fonts .tab-body__row .selectpicker__font-size {
+    width: 145px;
 }
 
 .tab-pane__colors .form-group-label, .tab-pane__form-buttons .form-group-label {
