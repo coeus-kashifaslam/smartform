@@ -1,3 +1,5 @@
+//Design Page Sidebar
+
 .section-design__sidebar {
   width: 400px;
   border-right: 1px solid $border;
@@ -7,7 +9,6 @@
   min-height: calc(100vh - 132px);
   overflow: auto;
 }
-
 
 .section-design__sidebar-list {
 
@@ -135,7 +136,7 @@
 
 
 }
-
+//Design Page Sidebar Ends
 
 
 .section-design__content {
@@ -222,30 +223,48 @@
 }
 
 
-.tab-pane__colors,
-.tab-pane__form-buttons {
-  .form-group-label {
-    white-space: nowrap;
-    font-size: $font-sm;
-  }
-
+.tab-pane__colors {
   .article-item {
     margin-bottom: 25px;
     padding-bottom: 25px;
   }
-
-  .article-item-title {
-    text-decoration: underline;
-  }
 }
 
 
-.button-details-list {
-  > li {
-    position: relative;
-    vertical-align: top;
-    + li {
-      margin-left: 20px;
+.tab-pane__form-buttons,
+.tab-pane__colors {
+  .article-item-title {
+    text-decoration: underline;
+  }
+  .form-group-label {
+    white-space: nowrap;
+    font-size: $font-sm;
+  }
+}
+
+.tab-pane__form-buttons {
+  .article-item {
+    margin-bottom: 0;
+    border-bottom: 0 none;
+
+    &:last-of-type {
+      .button-details-list {
+        border-bottom: 0 none;
+      }
+    }
+  }
+  .button-details-list {
+    display: inline-block;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid $border;
+
+    > li {
+      position: relative;
+      vertical-align: top;
+      + li {
+        margin-left: 20px;
+      }
     }
   }
 }

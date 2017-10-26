@@ -9851,6 +9851,11 @@ h5, .h5 {
     margin-left: 5px;
 }
 
+.header__text .ico {
+    display: inline-block;
+    vertical-align: middle;
+}
+
 .header__menu-right {
     text-align: right;
 }
@@ -10366,26 +10371,42 @@ h5, .h5 {
     width: 145px;
 }
 
-.tab-pane__colors .form-group-label, .tab-pane__form-buttons .form-group-label {
-    white-space: nowrap;
-    font-size: 14px;
-}
-
-.tab-pane__colors .article-item, .tab-pane__form-buttons .article-item {
+.tab-pane__colors .article-item {
     margin-bottom: 25px;
     padding-bottom: 25px;
 }
 
-.tab-pane__colors .article-item-title, .tab-pane__form-buttons .article-item-title {
+.tab-pane__form-buttons .article-item-title, .tab-pane__colors .article-item-title {
     text-decoration: underline;
 }
 
-.button-details-list > li {
+.tab-pane__form-buttons .form-group-label, .tab-pane__colors .form-group-label {
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.tab-pane__form-buttons .article-item {
+    margin-bottom: 0;
+    border-bottom: 0 none;
+}
+
+.tab-pane__form-buttons .article-item:last-of-type .button-details-list {
+    border-bottom: 0 none;
+}
+
+.tab-pane__form-buttons .button-details-list {
+    display: inline-block;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #c3c3c3;
+}
+
+.tab-pane__form-buttons .button-details-list > li {
     position: relative;
     vertical-align: top;
 }
 
-.button-details-list > li + li {
+.tab-pane__form-buttons .button-details-list > li + li {
     margin-left: 20px;
 }
 
