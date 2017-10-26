@@ -143,11 +143,11 @@
 }
 
 .tab-header {
-  padding-bottom: 22px;
+  padding-bottom: 17px;
   border-bottom: 1px solid $border;
   margin-bottom: 25px;
   position: relative;
-  .tab__header-title {
+  .tab__heading {
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 5px;
@@ -157,6 +157,9 @@
     color: $text-secondary;
     margin-bottom: 0;
     font-size: $font-sm;
+    font-family: $font-regular;
+    margin-top: 10px;
+    text-transform: none;
   }
 
   .btn-right-centered {
