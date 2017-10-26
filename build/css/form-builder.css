@@ -9493,6 +9493,10 @@ select.bs-select-hidden, select.selectpicker {
     margin-bottom: -3px;
 }
 
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 220px;
+}
+
 .dropdown {
     display: inline-block;
 }
@@ -10007,11 +10011,11 @@ h5, .h5 {
     text-align: right;
 }
 
-.item-type__grid .item-type__grid-row .article-item-selectpicker .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+.selectpicker__font-family .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
     width: 185px;
 }
 
-.item-type__grid .item-type__grid-row .article-item-selectpicker__font-size .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+.selectpicker__font-size .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
     width: 125px;
 }
 
@@ -10326,14 +10330,6 @@ h5, .h5 {
     margin-bottom: 25px;
     padding-bottom: 25px;
     border-bottom: 1px solid #c3c3c3;
-}
-
-.tab-pane__fonts .tab-body__row .article-item-selectpicker {
-    width: 205px;
-}
-
-.tab-pane__fonts .tab-body__row .article-item-selectpicker__font-size {
-    width: 145px;
 }
 
 .tab-pane__colors .form-group-label, .tab-pane__form-buttons .form-group-label {

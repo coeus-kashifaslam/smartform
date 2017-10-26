@@ -79,34 +79,34 @@
 
     .article-item-selectpicker {
       text-align: right;
-
-      .bootstrap-select {
-        &:not([class*="col-"]) {
-          &:not([class*="form-control"]) {
-            &:not(.input-group-btn) {
-              width: $selectpicker-lg;
-            }
-          }
-        }
-      }
     }
-
-    .article-item-selectpicker__font-size  {
-      .bootstrap-select {
-        &:not([class*="col-"]) {
-          &:not([class*="form-control"]) {
-            &:not(.input-group-btn) {
-              width: $selectpicker-sm;
-            }
-          }
-        }
-      }
-    }
-
-
   }
 }
 
+
+.selectpicker__font-family {
+  .bootstrap-select {
+    &:not([class*="col-"]) {
+      &:not([class*="form-control"]) {
+        &:not(.input-group-btn) {
+          width: $selectpicker-font-family;
+        }
+      }
+    }
+  }
+}
+
+.selectpicker__font-size  {
+  .bootstrap-select {
+    &:not([class*="col-"]) {
+      &:not([class*="form-control"]) {
+        &:not(.input-group-btn) {
+          width: $selectpicker-font-size;
+        }
+      }
+    }
+  }
+}
 
 
 .article-item {
