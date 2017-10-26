@@ -9493,10 +9493,6 @@ select.bs-select-hidden, select.selectpicker {
     margin-bottom: -3px;
 }
 
-.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
-    width: 220px;
-}
-
 .dropdown {
     display: inline-block;
 }
