@@ -14,7 +14,12 @@ $(document).ready(function () {
 
     $('.js-upload-logo-cta-trigger').on('click',function (e) {
         e.preventDefault();
-        $(this).closest('.upload-logo-cta').find('.js-form-logo-file-input').trigger('click');
+        $(this).closest('.upload-logo-cta').find('.js-upload-logo-file-input').trigger('click');
+    });
+
+
+    $('.js-del-placeholder').on('click', function () {
+        $(this).closest('.upload-logo').find('.js-placeholder-img-tag').attr('src', '');
     });
 
 
@@ -23,12 +28,12 @@ $(document).ready(function () {
             var reader = new FileReader();
 
             reader.onload = function (e) {
-                $('.js-form-log-tag').attr('src', e.target.result);
+                $('.js-placeholder-img-tag').attr('src', e.target.result);
             }
             reader.readAsDataURL(input.files[0]);
         }
     }
-    $(".js-form-logo-file-input").change(function(){
+    $(".js-upload-logo-file-input").change(function(){
         readURL(this);
     });
 

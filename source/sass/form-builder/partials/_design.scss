@@ -273,32 +273,6 @@
 
 
 .tab-pane__image {
-  .upload-logo-placeholder {
-    width: 250px;
-    height: 250px;
-    border: 2px dashed $border;
-    border-radius: $radius;
-    position: relative;
-    margin: 0 auto;
-
-    .js-form-log-tag {
-      border-radius: $border;
-      max-width: 100%;
-      max-height: 246px;
-      margin: 0 auto;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-  }
-
-  .upload-logo-cta {
-    margin-top: 20px;
-    .js-form-logo-file-input {
-      display: none;
-    }
-  }
 
   .upload-logo-excerpt {
     color: $text-secondary;
@@ -310,5 +284,52 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    //margin-top: 35px;
   }
+
+  .upload-logo-cta {
+    margin-top: 20px;
+    .js-upload-logo-file-input {
+      display: none;
+    }
+  }
+
+  .js-del-placeholder {
+    position: absolute;
+    top: 0;
+    right: -35px;
+    font-size: $font-lg;
+    cursor: pointer;
+  }
+  .upload-logo-placeholder {
+    width: 250px;
+    height: 250px;
+    border: 2px dashed $border;
+    border-radius: $radius;
+    position: relative;
+    margin: 0 auto;
+
+    .js-placeholder-img-tag {
+      border-radius: $border;
+      max-width: 100%;
+      max-height: 246px;
+      margin: 0 auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &:before {
+      content: $icon-image;
+      font-family: $font-icons;
+      font-size: 100px;
+      color: $text-light;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
 }
