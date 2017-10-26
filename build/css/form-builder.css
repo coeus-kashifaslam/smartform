@@ -9761,15 +9761,6 @@ h5, .h5 {
     padding: 0;
 }
 
-.list-justified {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-}
-
 .back-link, .view-form-link {
     padding-left: 25px;
     position: relative;
@@ -10387,6 +10378,15 @@ h5, .h5 {
 
 .tab-pane__colors .article-item-title, .tab-pane__form-buttons .article-item-title {
     text-decoration: underline;
+}
+
+.button-details-list > li {
+    position: relative;
+    vertical-align: top;
+}
+
+.button-details-list > li + li {
+    margin-left: 20px;
 }
 
 @media print {

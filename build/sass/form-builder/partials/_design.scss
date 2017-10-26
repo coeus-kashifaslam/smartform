@@ -240,9 +240,12 @@
 }
 
 
-//.button-details-list {
-//  > li {
-//    position: relative;
-//    vertical-align: top;
-//  }
-//}
+.button-details-list {
+  > li {
+    position: relative;
+    vertical-align: top;
+    + li {
+      margin-left: 20px;
+    }
+  }
+}
