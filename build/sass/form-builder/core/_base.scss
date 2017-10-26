@@ -49,6 +49,12 @@ h5, .h5 {
 }
 
 
+.list-justified {
+  display: flex;
+  justify-content: space-between;
+}
+
+
 //Go back and View form links
 .back-link,
 .view-form-link {
