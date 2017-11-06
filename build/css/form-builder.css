@@ -9838,6 +9838,109 @@ h5, .h5 {
     box-shadow: none;
 }
 
+.section-table-cell__sidebar {
+    width: 400px;
+    border-right: 1px solid #c3c3c3;
+    background: #f4f4f4;
+}
+
+.section-table-cell__sidebar-container {
+    min-height: calc(100vh - 132px);
+    overflow: auto;
+}
+
+.section-table-cell__sidebar-list {
+    margin-bottom: 0;
+}
+
+.section-table-cell__sidebar-list .list-group-item {
+    background: #f4f4f4;
+    padding: 30px 15px;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #c3c3c3;
+    margin-bottom: 0;
+}
+
+.section-table-cell__sidebar-list .list-group-item:first-child {
+    border-top: 0 none;
+}
+
+.section-table-cell__sidebar-list .list-group-item:first-child, .section-table-cell__sidebar-list .list-group-item:last-child {
+    border-radius: 0;
+}
+
+.section-table-cell__sidebar-list .list-group-item:hover, .section-table-cell__sidebar-list .list-group-item.active, .section-table-cell__sidebar-list .list-group-item.active:hover {
+    background: #fafafa;
+    font-family: Roboto-Bold;
+    border-bottom-color: #c3c3c3;
+}
+
+.section-table-cell__sidebar-list .list-group-item:hover .item-text, .section-table-cell__sidebar-list .list-group-item.active .item-text, .section-table-cell__sidebar-list .list-group-item.active:hover .item-text {
+    color: #606060;
+}
+
+.section-table-cell__sidebar-list .list-group-item .item-icon {
+    color: #777;
+}
+
+.section-table-cell__sidebar-list .list-group-item .item-text {
+    color: #b4b4b4;
+    margin-left: 10px;
+}
+
+.section-table-cell__sidebar-list .list-group-item .item-icon, .section-table-cell__sidebar-list .list-group-item .item-text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.section-table-cell__sidebar-list > .list-group-item + .list-group-item {
+    border-top: 1px solid #fff;
+}
+
+.section-table-cell__content {
+    padding: 20px 15px 20px 30px;
+    position: relative;
+}
+
+.tab-header {
+    padding-bottom: 17px;
+    border-bottom: 1px solid #c3c3c3;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.tab-header .tab__heading {
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.tab-header .tab__header-excerpt {
+    color: #b4b4b4;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-family: Roboto;
+    margin-top: 10px;
+    text-transform: none;
+}
+
+.tab-header .btn-right-centered {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -33px;
+}
+
+.tab-body__row {
+    margin-bottom: 50px;
+}
+
+.tab-body__row .article-item {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .header__container {
     padding: 15px 0;
     background: #fff;
@@ -10209,38 +10312,6 @@ h5, .h5 {
     margin-bottom: 30px;
 }
 
-.section-design__sidebar {
-    width: 400px;
-    border-right: 1px solid #c3c3c3;
-    background: #f4f4f4;
-}
-
-.section-design__sidebar-container {
-    min-height: calc(100vh - 132px);
-    overflow: auto;
-}
-
-.section-design__sidebar-list {
-    margin-bottom: 0;
-}
-
-.section-design__sidebar-list .list-group-item {
-    background: #f4f4f4;
-    padding: 30px 15px;
-    border-left: none;
-    border-right: none;
-    border-bottom: 1px solid #c3c3c3;
-    margin-bottom: 0;
-}
-
-.section-design__sidebar-list .list-group-item:first-child {
-    border-top: 0 none;
-}
-
-.section-design__sidebar-list .list-group-item:first-child, .section-design__sidebar-list .list-group-item:last-child {
-    border-radius: 0;
-}
-
 .section-design__sidebar-list .list-group-item.section-design__sidebar-color .item-icon .ico {
     font-size: 24px;
 }
@@ -10255,16 +10326,6 @@ h5, .h5 {
 
 .section-design__sidebar-list .list-group-item.section-design__sidebar-breadcrumb .item-icon .ico {
     font-size: 18px;
-}
-
-.section-design__sidebar-list .list-group-item:hover, .section-design__sidebar-list .list-group-item.active, .section-design__sidebar-list .list-group-item.active:hover {
-    background: #fafafa;
-    font-family: Roboto-Bold;
-    border-bottom-color: #c3c3c3;
-}
-
-.section-design__sidebar-list .list-group-item:hover .item-text, .section-design__sidebar-list .list-group-item.active .item-text, .section-design__sidebar-list .list-group-item.active:hover .item-text {
-    color: #606060;
 }
 
 .section-design__sidebar-list .list-group-item:hover.section-design__sidebar-general-settings .item-icon .ico, .section-design__sidebar-list .list-group-item.active.section-design__sidebar-general-settings .item-icon .ico, .section-design__sidebar-list .list-group-item.active:hover.section-design__sidebar-general-settings .item-icon .ico {
@@ -10289,67 +10350,6 @@ h5, .h5 {
 
 .section-design__sidebar-list .list-group-item:hover.section-design__sidebar-breadcrumb .item-icon .ico, .section-design__sidebar-list .list-group-item.active.section-design__sidebar-breadcrumb .item-icon .ico, .section-design__sidebar-list .list-group-item.active:hover.section-design__sidebar-breadcrumb .item-icon .ico {
     color: #31a397;
-}
-
-.section-design__sidebar-list .list-group-item .item-icon {
-    color: #777;
-}
-
-.section-design__sidebar-list .list-group-item .item-text {
-    color: #b4b4b4;
-    margin-left: 10px;
-}
-
-.section-design__sidebar-list .list-group-item .item-icon, .section-design__sidebar-list .list-group-item .item-text {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.section-design__sidebar-list > .list-group-item + .list-group-item {
-    border-top: 1px solid #fff;
-}
-
-.section-design__content {
-    padding: 20px 15px;
-    position: relative;
-}
-
-.tab-header {
-    padding-bottom: 17px;
-    border-bottom: 1px solid #c3c3c3;
-    margin-bottom: 25px;
-    position: relative;
-}
-
-.tab-header .tab__heading {
-    text-transform: uppercase;
-    margin-top: 0;
-    margin-bottom: 5px;
-}
-
-.tab-header .tab__header-excerpt {
-    color: #b4b4b4;
-    margin-bottom: 0;
-    font-size: 14px;
-    font-family: Roboto;
-    margin-top: 10px;
-    text-transform: none;
-}
-
-.tab-header .btn-right-centered {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    margin-top: -33px;
-}
-
-.tab-body__row {
-    margin-bottom: 50px;
-}
-
-.tab-body__row .article-item {
-    padding-left: 0;
-    padding-right: 0;
 }
 
 .tab-body__general-settings .tab-body__row .article-item:last-of-type, .tab-body__fonts .tab-body__row .article-item:last-of-type, .tab-body__colors .tab-body__row .article-item:last-of-type, .tab-body__form-buttons .tab-body__row .article-item:last-of-type, .tab-body__breadcrumb .tab-body__row .article-item:last-of-type {
