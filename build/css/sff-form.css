@@ -9805,6 +9805,7 @@ label {
 .storage__alert-container .alert .container {
     padding-left: 0;
     padding-right: 0;
+    width: 100%;
 }
 
 html, body {
@@ -12970,7 +12971,6 @@ html.form_as_widget .close__form, html.form_as_widget body .close__form {
         padding-right: 64px;
     }
     html.form_as_widget, html.form_as_widget body {
-        height: 98%;
         overflow: visible;
     }
     .form__elem__disable-option .disableOption-text {
