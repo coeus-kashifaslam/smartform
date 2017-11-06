@@ -9785,6 +9785,28 @@ label {
     display: inline-block;
 }
 
+.storage__alert-container {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: auto;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    z-index: 99;
+}
+
+.storage__alert-container .alert {
+    border: 0 none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.storage__alert-container .alert .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 html, body {
     overflow-x: hidden;
 }
@@ -12943,7 +12965,12 @@ html.form_as_widget .close__form, html.form_as_widget body .close__form {
     .modal-sm {
         width: 300px;
     }
+    .storage__alert-container .alert {
+        padding-left: 64px;
+        padding-right: 64px;
+    }
     html.form_as_widget, html.form_as_widget body {
+        height: 98%;
         overflow: visible;
     }
     .form__elem__disable-option .disableOption-text {
