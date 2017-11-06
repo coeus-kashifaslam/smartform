@@ -24,6 +24,7 @@ $green-secondary: #196d01;
 $green-hover: #3acf47;
 $text-primary: #606060;
 $text-secondary: #b4b4b4;
+$text-light: #ededed;
 
 
 //Modal
@@ -32,6 +33,7 @@ $modal-title: #333;
 
 //Backgrounds
 $bg-main: #1e1e1e;
+$bg-main-secondary: #b4c3ca;
 $bg-element: #f4f4f4;
 $bg-dropping-space: #f2f2f2;
 $bg-empty-dropping-space: #fff20e;
@@ -56,3 +58,26 @@ $icon-radio-fill: "\e914";
 $icon-checkbox: "\e902";
 $icon-checkbox-fill: "\e903";
 $icon-goto: "\e90b";
+$icon-image: "\e921";
+
+
+
+//Widths
+$selectpicker-sync: 220px;
+$selectpicker-font-family: 185px;
+$selectpicker-font-size: 125px;
+$colorpicker: 150px;
+
+
+
+
+//Design
+$design-sidebar-icon-inactive: #777777;
+$design-sidebar-item-active: #fafafa;
+
+$design-sidebar-settings-active :#f7c80a;
+$design-sidebar-fonts-active :#ee2700;
+$design-sidebar-color-active :#2ec605;
+$design-sidebar-buttons-active :#0072bc;
+$design-sidebar-image-active :#9b04e1;
+$design-sidebar-breadcrumb-active :#31a397;

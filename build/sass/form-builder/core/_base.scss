@@ -2,10 +2,19 @@ body {
   font-family: $font-regular;
   font-size: $font-md;
   color: $text-primary;
+  background: $bg-main;
 }
 
 .bg-dark {
   background: $bg-main;
+}
+
+.bg-white {
+  background: $white;
+}
+
+.bg-light {
+  background: $bg-main-secondary;
 }
 
 h1, .h1 {
@@ -35,8 +44,10 @@ h5, .h5 {
 
 .container-fluid {
   min-width: 1200px;
+  &.noPadding {
+    padding: 0;
+  }
 }
-
 
 //Go back and View form links
 .back-link,
@@ -97,6 +108,7 @@ h5, .h5 {
   border: 1px solid $border;
   @include box-shadow();
   border-radius: $radius;
+  width: $colorpicker;
   .input-group-addon {
     padding: 0;
   }

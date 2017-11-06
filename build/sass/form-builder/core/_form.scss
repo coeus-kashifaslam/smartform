@@ -83,7 +83,6 @@
   }
 }
 
-
 //Dropdown
 .dropdown {
   display: inline-block;
@@ -257,5 +256,16 @@
   }
   &.form-control-textarea {
     height: 100px;
+  }
+
+  &.form-control-textarea-small,
+  &.form-control-input-small {
+    height: 44px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 10px 0;
   }
 }

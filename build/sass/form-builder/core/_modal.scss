@@ -67,8 +67,8 @@
 }
 
 
-.item-type__multilingual {
-  .article-item-header {
+.item-type__grid {
+  .item-type__grid-row {
     display: table;
     width: 100%;
     .article-item-title,
@@ -79,21 +79,34 @@
 
     .article-item-selectpicker {
       text-align: right;
-
-      .bootstrap-select {
-        &:not([class*="col-"]) {
-          &:not([class*="form-control"]) {
-            &:not(.input-group-btn) {
-              width: 185px;
-            }
-          }
-        }
-      }
-
     }
   }
 }
 
+
+.selectpicker__font-family {
+  .bootstrap-select {
+    &:not([class*="col-"]) {
+      &:not([class*="form-control"]) {
+        &:not(.input-group-btn) {
+          width: $selectpicker-font-family;
+        }
+      }
+    }
+  }
+}
+
+.selectpicker__font-size  {
+  .bootstrap-select {
+    &:not([class*="col-"]) {
+      &:not([class*="form-control"]) {
+        &:not(.input-group-btn) {
+          width: $selectpicker-font-size;
+        }
+      }
+    }
+  }
+}
 
 
 .article-item {
