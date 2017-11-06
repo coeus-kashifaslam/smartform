@@ -1,36 +1,7 @@
-//Design Page Sidebar
-
-.section-design__sidebar {
-  width: 400px;
-  border-right: 1px solid $border;
-  background: $bg-element;
-}
-.section-design__sidebar-container {
-  min-height: calc(100vh - 132px);
-  overflow: auto;
-}
+//Design Page Sidebar Ends
 
 .section-design__sidebar-list {
-
-  margin-bottom: 0;
-
   .list-group-item {
-    background: $bg-element;
-    padding: 30px 15px;
-    border-left: none;
-    border-right: none;
-    border-bottom: 1px solid $border;
-    margin-bottom: 0;
-
-    &:first-child {
-      border-top: 0 none;
-    }
-
-    &:first-child,
-    &:last-child {
-      border-radius: 0;
-    }
-
     &.section-design__sidebar {
 
       &-color {
@@ -62,12 +33,6 @@
     &:hover,
     &.active,
     &.active:hover {
-      background: $design-sidebar-item-active;
-      font-family: $font-bold;
-      border-bottom-color: $border;
-      .item-text {
-        color: $text-primary;
-      }
 
       &.section-design__sidebar {
 
@@ -110,77 +75,9 @@
       }
 
     }
-
-    .item-icon {
-      color: $design-sidebar-icon-inactive;
-    }
-    .item-text {
-      color: $text-secondary;
-      margin-left: 10px;
-    }
-
-    .item-icon,
-    .item-text {
-      display: inline-block;
-      vertical-align: middle;
-    }
-
-
-  }
-
-  > .list-group-item {
-    + .list-group-item {
-      border-top: 1px solid $white;
-    }
-  }
-
-
-}
-//Design Page Sidebar Ends
-
-
-.section-design__content {
-  padding: 20px 15px;
-  position: relative;
-}
-
-
-.tab-header {
-  padding-bottom: 17px;
-  border-bottom: 1px solid $border;
-  margin-bottom: 25px;
-  position: relative;
-  .tab__heading {
-    text-transform: uppercase;
-    margin-top: 0;
-    margin-bottom: 5px;
-  }
-
-  .tab__header-excerpt {
-    color: $text-secondary;
-    margin-bottom: 0;
-    font-size: $font-sm;
-    font-family: $font-regular;
-    margin-top: 10px;
-    text-transform: none;
-  }
-
-  .btn-right-centered {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    margin-top: -33px;
   }
 }
 
-
-.tab-body__row {
-  margin-bottom: 50px;
-  .article-item {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
 
 .tab-body__general-settings,
 .tab-body__fonts,
