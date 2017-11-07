@@ -36,9 +36,9 @@
 
       &.section-design__sidebar {
 
-        &-general-settings {
+        &-layout {
           .item-icon .ico {
-            color: $design-sidebar-settings-active;
+            color: $design-sidebar-layout-active;
           }
         }
 
@@ -79,7 +79,6 @@
 }
 
 
-.tab-body__general-settings,
 .tab-body__fonts,
 .tab-body__colors,
 .tab-body__form-buttons,
@@ -95,22 +94,11 @@
 }
 
 
-.tab-body__general-settings {
-  .tab-body__row {
-    .article-item {
-      border-bottom: 0 none;
-      margin-bottom: 50px;
-    }
-  }
-}
-
 .tab-body__fonts {
   .tab-body__row {
     .article-item {
       border-bottom: 0 none;
-      margin-bottom: 25px;
-      padding-bottom: 25px;
-      border-bottom: 1px solid $border;
+      margin-bottom: 35px;
     }
 
     .selectpicker__font-family {
