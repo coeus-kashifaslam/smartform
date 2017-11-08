@@ -10,7 +10,7 @@
         }
       }
 
-      &-form-buttons {
+      &-buttons {
         .item-icon .ico {
           font-size: $font-md + 8;
         }
@@ -54,7 +54,7 @@
           }
         }
 
-        &-form-buttons {
+        &-buttons {
           .item-icon .ico {
             color: $design-sidebar-buttons-active;
           }
@@ -81,7 +81,7 @@
 
 .tab-body__fonts,
 .tab-body__colors,
-.tab-body__form-buttons,
+.tab-body__buttons,
 .tab-body__breadcrumb {
   .tab-body__row {
     .article-item {
@@ -119,7 +119,7 @@
 }
 
 
-.tab-body__form-buttons,
+.tab-body__buttons,
 .tab-body__colors,
 .tab-body__breadcrumb {
   .article-item-title {
@@ -131,7 +131,7 @@
   }
 }
 
-.tab-body__form-buttons {
+.tab-body__buttons {
   .article-item {
     margin-bottom: 0;
     border-bottom: 0 none;
@@ -172,7 +172,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    //margin-top: 35px;
+    margin-top: 35px;
   }
 
   .upload-logo-cta {

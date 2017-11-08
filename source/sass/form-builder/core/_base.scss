@@ -101,10 +101,22 @@ h5, .h5 {
     opacity: 1;
   }
 }
-.info-tooltip {
+.tooltip-top-right {
   margin-left: 10px;
+  position: relative;
   .ico {
     color: $text-secondary;
+  }
+  .tooltip {
+    left: -8px !important;
+    &.top,
+    &.right,
+    &.bottom,
+    &.left {
+      .tooltip-arrow {
+        left: 15px !important;
+      }
+    }
   }
 }
 
