@@ -90,6 +90,7 @@ h5, .h5 {
   &-inner {
     background: $text-primary;
     padding: 5px 10px;
+    max-width: none;
   }
   &.top {
     .tooltip-arrow {
@@ -98,6 +99,12 @@ h5, .h5 {
   }
   &.in {
     opacity: 1;
+  }
+}
+.info-tooltip {
+  margin-left: 10px;
+  .ico {
+    color: $text-secondary;
   }
 }
 

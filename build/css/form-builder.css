@@ -9290,6 +9290,10 @@ select.bs-select-hidden, select.selectpicker {
     src: url(../fonts/font-families/arial/Arial-BoldMT.eot?#iefix) format("embedded-opentype"), url(../fonts/font-families/arial/Arial-BoldMT.woff) format("woff"), url(../fonts/font-families/arial/Arial-BoldMT.ttf) format("truetype"), url(../fonts/font-families/arial/Arial-BoldMT.svg#Arial-BoldMT) format("svg");
 }
 
+.ico-info:before {
+    content: "\e923";
+}
+
 .ico-layout:before {
     content: "\e922";
 }
@@ -9801,6 +9805,7 @@ h5, .h5 {
 .tooltip-inner {
     background: #606060;
     padding: 5px 10px;
+    max-width: none;
 }
 
 .tooltip.top .tooltip-arrow {
@@ -9810,6 +9815,14 @@ h5, .h5 {
 .tooltip.in {
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.info-tooltip {
+    margin-left: 10px;
+}
+
+.info-tooltip .ico {
+    color: #b4b4b4;
 }
 
 .colorpicker-component {
@@ -10445,11 +10458,16 @@ h5, .h5 {
 }
 
 .tab-body__image .upload-logo-cta {
-    margin-top: 20px;
+    margin: 20px auto 0;
+    width: 250px;
 }
 
 .tab-body__image .upload-logo-cta .js-upload-logo-file-input {
     display: none;
+}
+
+.tab-body__image .upload-logo-cta .btn {
+    width: 100%;
 }
 
 .tab-body__image .js-del-placeholder {

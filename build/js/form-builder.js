@@ -45,6 +45,7 @@ $(function () {
         placement: 'top'
     });
 });
+// $('[data-toggle="tooltip"]').tooltip('show');
 
 // Fuction to show image preview
 function readURL(input) {
