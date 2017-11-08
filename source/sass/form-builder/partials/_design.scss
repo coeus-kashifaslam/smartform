@@ -85,22 +85,22 @@
 .tab-body__breadcrumb {
   .tab-body__row {
     .article-item {
+      border-bottom: 0 none;
+      margin-bottom: 25px;
       &:last-of-type {
         margin-bottom: 0;
         border-bottom: 0 none;
       }
     }
   }
+  .tab-body__row-checkbox {
+    margin-bottom: 25px;
+  }
 }
 
 
 .tab-body__fonts {
   .tab-body__row {
-    .article-item {
-      border-bottom: 0 none;
-      margin-bottom: 35px;
-    }
-
     .selectpicker__font-family {
       width: $selectpicker-font-family + 20;
     }
@@ -110,13 +110,6 @@
   }
 }
 
-
-.tab-body__colors {
-  .article-item {
-    margin-bottom: 25px;
-    padding-bottom: 25px;
-  }
-}
 
 
 .tab-body__buttons,
@@ -132,22 +125,8 @@
 }
 
 .tab-body__buttons {
-  .article-item {
-    margin-bottom: 0;
-    border-bottom: 0 none;
-
-    &:last-of-type {
-      .button-details-list {
-        border-bottom: 0 none;
-      }
-    }
-  }
   .button-details-list {
-    display: inline-block;
-    margin-bottom: 25px;
-    padding-bottom: 25px;
-    border-bottom: 1px solid $border;
-
+    margin-bottom: 0;
     > li {
       position: relative;
       vertical-align: top;
@@ -155,6 +134,12 @@
         margin-left: 20px;
       }
     }
+  }
+}
+
+.tab-body__breadcrumb {
+  .item-type__color {
+    margin-top: 35px;
   }
 }
 
@@ -224,16 +209,4 @@
     }
   }
 
-}
-
-
-.tab-body__breadcrumb {
-  .tab-body__row-checkbox {
-    margin-bottom: 35px;
-  }
-
-  .item-type__font {
-    border-bottom: 0 none;
-    margin-bottom: 35px;
-  }
 }
