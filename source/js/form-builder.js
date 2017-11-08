@@ -44,7 +44,10 @@ $(function () {
     $('[data-toggle="tooltip"]').tooltip({
         placement: 'top'
     });
+
+    // $('[data-toggle="tooltip"]').tooltip('show');
 });
+
 
 // Fuction to show image preview
 function readURL(input) {

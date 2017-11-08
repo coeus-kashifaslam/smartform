@@ -90,6 +90,7 @@ h5, .h5 {
   &-inner {
     background: $text-primary;
     padding: 5px 10px;
+    max-width: none;
   }
   &.top {
     .tooltip-arrow {
@@ -98,6 +99,24 @@ h5, .h5 {
   }
   &.in {
     opacity: 1;
+  }
+}
+.tooltip-top-right {
+  margin-left: 10px;
+  position: relative;
+  .ico {
+    color: $text-secondary;
+  }
+  .tooltip {
+    left: -8px !important;
+    &.top,
+    &.right,
+    &.bottom,
+    &.left {
+      .tooltip-arrow {
+        left: 15px !important;
+      }
+    }
   }
 }
 
@@ -256,5 +275,22 @@ h5, .h5 {
   .article-item {
     padding-left: 0;
     padding-right: 0;
+  }
+}
+
+.elem-language-selector {
+  padding-bottom: 20px;
+  border-bottom: 1px solid $border;
+  margin-bottom: 25px;
+  h4, .h4 {
+    color: $text-secondary;
+  }
+  .list-inline {
+    margin-bottom: 0;
+    > li {
+      &:last-of-type {
+        margin-left: 20px;
+      }
+    }
   }
 }
