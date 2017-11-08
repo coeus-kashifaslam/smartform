@@ -9860,6 +9860,22 @@ h5, .h5 {
     border-right: none;
     border-bottom: 1px solid #c3c3c3;
     margin-bottom: 0;
+    position: relative;
+}
+
+.section-table-cell__sidebar-list .list-group-item:after {
+    content: "";
+    font-family: formBuilder-icons;
+    color: #b4b4b4;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -7px;
+    line-height: 1;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    font-size: 14px;
 }
 
 .section-table-cell__sidebar-list .list-group-item:first-child {
@@ -9880,7 +9896,11 @@ h5, .h5 {
     color: #606060;
 }
 
-.section-table-cell__sidebar-list .list-group-item .item-icon {
+.section-table-cell__sidebar-list .list-group-item:hover:after, .section-table-cell__sidebar-list .list-group-item.active:after, .section-table-cell__sidebar-list .list-group-item.active:hover:after {
+    color: #606060;
+}
+
+.section-table-cell__sidebar-list .list-group-item .item-icon .ico {
     color: #777;
 }
 
@@ -10328,7 +10348,7 @@ h5, .h5 {
     font-size: 18px;
 }
 
-.section-design__sidebar-list .list-group-item:hover.section-design__sidebar-general-settings .item-icon .ico, .section-design__sidebar-list .list-group-item.active.section-design__sidebar-general-settings .item-icon .ico, .section-design__sidebar-list .list-group-item.active:hover.section-design__sidebar-general-settings .item-icon .ico {
+.section-design__sidebar-list .list-group-item:hover.section-design__sidebar-layout .item-icon .ico, .section-design__sidebar-list .list-group-item.active.section-design__sidebar-layout .item-icon .ico, .section-design__sidebar-list .list-group-item.active:hover.section-design__sidebar-layout .item-icon .ico {
     color: #f7c80a;
 }
 
@@ -10352,21 +10372,14 @@ h5, .h5 {
     color: #31a397;
 }
 
-.tab-body__general-settings .tab-body__row .article-item:last-of-type, .tab-body__fonts .tab-body__row .article-item:last-of-type, .tab-body__colors .tab-body__row .article-item:last-of-type, .tab-body__form-buttons .tab-body__row .article-item:last-of-type, .tab-body__breadcrumb .tab-body__row .article-item:last-of-type {
+.tab-body__fonts .tab-body__row .article-item:last-of-type, .tab-body__colors .tab-body__row .article-item:last-of-type, .tab-body__form-buttons .tab-body__row .article-item:last-of-type, .tab-body__breadcrumb .tab-body__row .article-item:last-of-type {
     margin-bottom: 0;
     border-bottom: 0 none;
 }
 
-.tab-body__general-settings .tab-body__row .article-item {
-    border-bottom: 0 none;
-    margin-bottom: 50px;
-}
-
 .tab-body__fonts .tab-body__row .article-item {
     border-bottom: 0 none;
-    margin-bottom: 25px;
-    padding-bottom: 25px;
-    border-bottom: 1px solid #c3c3c3;
+    margin-bottom: 35px;
 }
 
 .tab-body__fonts .tab-body__row .selectpicker__font-family {

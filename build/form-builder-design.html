@@ -99,7 +99,7 @@
         <div class="section-table-cell__sidebar section-table-cell section-design__sidebar">
             <div class="section-table-cell__sidebar-container section-design__sidebar-container">
                 <div class="section-table-cell__sidebar-list section-design__sidebar-list list-group">
-                    <a href="#design-general-settings" class="section-design__sidebar-general-settings list-group-item" aria-controls="design-general-settings" role="tab" data-toggle="tab">
+                    <a href="#design-layout" class="section-design__sidebar-layout list-group-item" aria-controls="design-layout" role="tab" data-toggle="tab">
                         <span class="item-icon"><i class="ico ico-layout"></i></span>
                         <span class="item-text">Layout</span>
                     </a>
@@ -134,108 +134,27 @@
         <div class="section-table-cell__content section-table-cell section-design__content">
             <div class="section-design__tabs-container section-table-cell__tabs-container">
                 <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane tab-pane__general-settings" id="design-general-settings">
+                    <div role="tabpanel" class="tab-pane tab-pane__layout" id="design-layout">
     <header class="tab-header">
         <h2 class="tab__heading">
-            <span class="tab__header-title">General Settings</span>
-            <p class="tab__header-excerpt">Define the Form name and other settings</p>
+            <span class="tab__header-title">Layout Settings</span>
+            <p class="tab__header-excerpt">Define the Form layout settings here.</p>
         </h2>
-        <button class="btn btn-fill btn-right-centered">Save</button>
     </header>
 
-    <div class="tab-body tab-body__general-settings">
+    <div class="tab-body tab-body__layout">
 
         <div class="row">
             <div class="col-xs-7">
 
                 <div class="tab-body__row">
 
-                    <!-- article item -->
-                    <article class="article-item item-type__grid">
-                        <header class="article-item-header item-type__grid-row">
-                            <h4 class="article-item-title">Write down the Form Name</h4>
-                            <div class="article-item-selectpicker">
-                                <select class="selectpicker">
-                                    <option>Select Language</option>
-                                    <option>Mustard</option>
-                                    <option>Ketchup</option>
-                                    <option>Relish</option>
-                                    <option>Mustard</option>
-                                </select>
-                            </div>
-                        </header>
-                        <div class="article-item-body">
-                            <div class="form-group">
-                                <textarea class="form-control form-control-textarea-small" placeholder="Type your form name here ."></textarea>
-                            </div>
-                        </div>
-                    </article>
+                    <div class="tab-body__row-checkbox">
 
+                        <input id="checkbox1" name="checkbox-group" type="checkbox">
+                        <label for="checkbox1"><span>Enable Form Border</span></label>
 
-                    <!-- article item -->
-                    <article class="article-item item-type__grid">
-                        <header class="article-item-header item-type__grid-row">
-                            <h4 class="article-item-title">MRF Form</h4>
-                            <div class="article-item-selectpicker">
-                                <select class="selectpicker">
-                                    <option>Select Language</option>
-                                    <option>Mustard</option>
-                                    <option>Ketchup</option>
-                                    <option>Relish</option>
-                                    <option>Mustard</option>
-                                </select>
-                            </div>
-                        </header>
-                        <div class="article-item-body">
-                            <div class="form-group">
-                                <textarea class="form-control form-control-textarea-small" placeholder="Type Marketing Research Form Name here."></textarea>
-                            </div>
-                        </div>
-                    </article>
-
-
-                    <!-- article item -->
-                    <article class="article-item item-type__grid">
-                        <header class="article-item-header item-type__grid-row">
-                            <h4 class="article-item-title">Seller Form</h4>
-                            <div class="article-item-selectpicker">
-                                <select class="selectpicker">
-                                    <option>Select Language</option>
-                                    <option>Mustard</option>
-                                    <option>Ketchup</option>
-                                    <option>Relish</option>
-                                    <option>Mustard</option>
-                                </select>
-                            </div>
-                        </header>
-                        <div class="article-item-body">
-                            <div class="form-group">
-                                <textarea class="form-control form-control-textarea-small" placeholder="Type Seller Form Name Here."></textarea>
-                            </div>
-                        </div>
-                    </article>
-
-
-                    <!-- article item -->
-                    <article class="article-item item-type__grid">
-                        <header class="article-item-header item-type__grid-row">
-                            <h4 class="article-item-title">Product Form</h4>
-                            <div class="article-item-selectpicker">
-                                <select class="selectpicker">
-                                    <option>Select Language</option>
-                                    <option>Mustard</option>
-                                    <option>Ketchup</option>
-                                    <option>Relish</option>
-                                    <option>Mustard</option>
-                                </select>
-                            </div>
-                        </header>
-                        <div class="article-item-body">
-                            <div class="form-group">
-                                <textarea class="form-control form-control-textarea-small" placeholder="Type Product Form Name Here."></textarea>
-                            </div>
-                        </div>
-                    </article>
+                    </div>
 
 
                 </div>
@@ -246,13 +165,6 @@
 
     </div>
 
-    <!--<footer class="tab-footer">-->
-        <!--<ul class="list-inline">-->
-            <!--<li>-->
-                <!--<button class="btn btn-fill">Save</button>-->
-            <!--</li>-->
-        <!--</ul>-->
-    <!--</footer>-->
 </div>
 
                     <div role="tabpanel" class="tab-pane tab-pane__fonts" id="design-fonts">

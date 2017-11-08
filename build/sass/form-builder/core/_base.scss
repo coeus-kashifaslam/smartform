@@ -153,6 +153,20 @@ h5, .h5 {
     border-right: none;
     border-bottom: 1px solid $border;
     margin-bottom: 0;
+    position: relative;
+
+    &:after {
+      content: $icon-arrow-thick;
+      font-family: $font-icons;
+      color: $text-secondary;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      margin-top: -7px;
+      line-height: 1;
+      transform: rotate(180deg);
+      font-size: $font-sm;
+    }
 
     &:first-child {
       border-top: 0 none;
@@ -173,9 +187,13 @@ h5, .h5 {
         color: $text-primary;
       }
 
+      &:after {
+        color: $text-primary;
+      }
+
     }
 
-    .item-icon {
+    .item-icon .ico {
       color: $design-sidebar-icon-inactive;
     }
     .item-text {
