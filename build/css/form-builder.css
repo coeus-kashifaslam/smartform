@@ -9290,6 +9290,10 @@ select.bs-select-hidden, select.selectpicker {
     src: url(../fonts/font-families/arial/Arial-BoldMT.eot?#iefix) format("embedded-opentype"), url(../fonts/font-families/arial/Arial-BoldMT.woff) format("woff"), url(../fonts/font-families/arial/Arial-BoldMT.ttf) format("truetype"), url(../fonts/font-families/arial/Arial-BoldMT.svg#Arial-BoldMT) format("svg");
 }
 
+.ico-callback:before {
+    content: "\e926";
+}
+
 .ico-header:before {
     content: "\e925";
 }

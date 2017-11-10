@@ -1,0 +1,45 @@
+{% extends 'template/form-builder/layouts/default.html' %}
+{% set page = {title: "Content | Form Builder", class: 'bg-white', name: 'content'} %}
+
+{% block content %}
+<div class="container-fluid noPadding">
+    <div class="section-table section-build">
+
+
+        <!-- Sidebar -->
+        <div class="section-table-cell__sidebar section-table-cell section-config__sidebar">
+            <div class="section-table-cell__sidebar-container section-config__sidebar-container">
+                <div class="section-table-cell__sidebar-list section-config__sidebar-list list-group">
+                    <a href="#config-general-settings" class="section-config__sidebar-general-settings list-group-item" aria-controls="config__general-settings" role="tab" data-toggle="tab">
+                        <span class="item-icon"><i class="ico ico-settings"></i></span>
+                        <span class="item-text">General Settings</span>
+                    </a>
+                    <a href="#config-language" class="section-config__sidebar-header list-group-item active" aria-controls="config-language" role="tab" data-toggle="tab">
+                        <span class="item-icon"><i class="ico ico-font"></i></span>
+                        <span class="item-text">Language</span>
+                    </a>
+                    <a href="#config-conditionl-callback" class="section-config__sidebar-footer list-group-item" aria-controls="config-conditionl-callback" role="tab" data-toggle="tab">
+                        <span class="item-icon"><i class="ico ico-callback"></i></span>
+                        <span class="item-text">Conditional Callback</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- /.Sidebar -->
+
+
+
+        <!-- Content Area -->
+        <div class="section-table-cell__content section-table-cell section-config__content">
+            <div class="section-config__tabs-container section-table-cell__tabs-container">
+                <div class="tab-config">
+                    {% include 'template/form-builder/partials/config/tab-general-settings.html' %}
+                    {% include 'template/form-builder/partials/config/tab-language.html' %}
+                    {% include 'template/form-builder/partials/config/tab-callback.html' %}
+                </div>
+            </div>
+        </div>
+        <!-- /.Content Area -->
+    </div>
+</div>
+{% endblock %}
