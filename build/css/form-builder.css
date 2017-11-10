@@ -9290,6 +9290,14 @@ select.bs-select-hidden, select.selectpicker {
     src: url(../fonts/font-families/arial/Arial-BoldMT.eot?#iefix) format("embedded-opentype"), url(../fonts/font-families/arial/Arial-BoldMT.woff) format("woff"), url(../fonts/font-families/arial/Arial-BoldMT.ttf) format("truetype"), url(../fonts/font-families/arial/Arial-BoldMT.svg#Arial-BoldMT) format("svg");
 }
 
+.ico-header:before {
+    content: "\e925";
+}
+
+.ico-footer:before {
+    content: "\e924";
+}
+
 .ico-info:before {
     content: "\e923";
 }
@@ -9667,6 +9675,15 @@ select.bs-select-hidden, select.selectpicker {
     border-radius: 0;
     box-shadow: none;
     padding: 10px 0;
+}
+
+.form-group-label {
+    font-size: 14px;
+}
+
+.form-group__level-block .form-control {
+    display: block;
+    width: 100%;
 }
 
 .btn {
@@ -10440,7 +10457,6 @@ h5, .h5 {
 
 .tab-body__buttons .form-group-label, .tab-body__colors .form-group-label, .tab-body__breadcrumb .form-group-label {
     white-space: nowrap;
-    font-size: 14px;
 }
 
 .tab-body__buttons .button-details-list {

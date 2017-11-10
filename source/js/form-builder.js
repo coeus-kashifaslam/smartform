@@ -6,7 +6,7 @@ $(document).ready(function () {
     // Show Base Modal
     // $('.modal__form-builder').modal('show');
 
-    $('.section-design__sidebar-list .list-group-item').on('click', function () {
+    $('.section-table-cell__sidebar-list .list-group-item').on('click', function () {
         $(this).siblings().removeClass('active');
         $(this).addClass('active');
     });
@@ -26,6 +26,16 @@ $(document).ready(function () {
     // show image Preview
     $(".js-upload-logo-file-input").change(function(){
         readURL(this);
+    });
+
+    // CkEditor
+    $('.elem__ckeditor').each(function(e){
+        CKEDITOR.replace( this.id,
+            {
+                toolbar: [
+                    ['Bold', 'Italic', 'Underline', 'Strike', 'Font', 'FontSize', 'TextColor', 'BGColor']
+                ]
+            });
     });
 
 

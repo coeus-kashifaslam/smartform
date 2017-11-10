@@ -269,3 +269,15 @@
     padding: 10px 0;
   }
 }
+
+
+.form-group-label {
+  font-size: $font-sm;
+}
+
+.form-group__level-block {
+  .form-control {
+    display: block;
+    width: 100%;
+  }
+}
