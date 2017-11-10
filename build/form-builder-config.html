@@ -99,15 +99,15 @@
         <div class="section-table-cell__sidebar section-table-cell section-configure__sidebar">
             <div class="section-table-cell__sidebar-container section-configure__sidebar-container">
                 <div class="section-table-cell__sidebar-list section-configure__sidebar-list list-group">
-                    <a href="#configure-general-settings" class="section-configure__sidebar-general-settings list-group-item" aria-controls="configure__general-settings" role="tab" data-toggle="tab">
+                    <a href="#configure-general-settings" class="section-configure__sidebar-general-settings list-group-item active" aria-controls="configure__general-settings" role="tab" data-toggle="tab">
                         <span class="item-icon"><i class="ico ico-settings"></i></span>
                         <span class="item-text">General Settings</span>
                     </a>
-                    <a href="#configure-language" class="section-configure__sidebar-header list-group-item active" aria-controls="configure-language" role="tab" data-toggle="tab">
+                    <a href="#configure-language" class="section-configure__sidebar-header list-group-item" aria-controls="configure-language" role="tab" data-toggle="tab">
                         <span class="item-icon"><i class="ico ico-font"></i></span>
                         <span class="item-text">Language</span>
                     </a>
-                    <a href="#configure-conditionl-callback" class="section-configure__sidebar-footer list-group-item" aria-controls="configure-conditionl-callback" role="tab" data-toggle="tab">
+                    <a href="#configure-conditional-callback" class="section-configure__sidebar-footer list-group-item" aria-controls="configure-conditionl-callback" role="tab" data-toggle="tab">
                         <span class="item-icon"><i class="ico ico-callback"></i></span>
                         <span class="item-text">Conditional Callback</span>
                     </a>
@@ -121,8 +121,8 @@
         <!-- Content Area -->
         <div class="section-table-cell__content section-table-cell section-configure__content">
             <div class="section-configure__tabs-container section-table-cell__tabs-container">
-                <div class="tab-configure">
-                    <div role="tabpanel" class="tab-pane tab-pane__general-settings active" id="content-general-settings">
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane tab-pane__general-settings active" id="configure-general-settings">
     <header class="tab-header">
         <h2 class="tab__heading">
             <span class="tab__header-title">General Settings</span>
@@ -132,89 +132,35 @@
     </header>
 
     <div class="tab-body tab-body__general-settings">
-
-        <div class="elem-language-selector">
-            <ul class="list-inline">
-                <li><h4>Select Language to add Translation :</h4></li>
-                <li>
-                    <select class="selectpicker language-selectpicker">
-                        <option>Mustard</option>
-                        <option>Ketchup</option>
-                        <option>Relish</option>
-                        <option>Mustard</option>
-                    </select>
-                </li>
-            </ul>
-        </div>
-
-        <div class="tab-body__row">
-
-            <div class="form-group form-group__level-block">
-                <label class="form-group-label">Write down the Form Name</label>
-                <div class="row">
-                    <div class="col-xs-6">
-                        <input type="text" class="form-control form-control-input-small" placeholder="Type your form name here" />
-                    </div>
-                </div>
-            </div>
-
-        </div>
 
     </div>
 </div>
 
-                    <div role="tabpanel" class="tab-pane tab-pane__general-settings" id="content-general-settings">
+                    <div role="tabpanel" class="tab-pane tab-pane__language" id="configure-language">
     <header class="tab-header">
         <h2 class="tab__heading">
-            <span class="tab__header-title">General Settings</span>
+            <span class="tab__header-title">Language</span>
             <p class="tab__header-excerpt">Edit General Settins Here.</p>
         </h2>
         <button class="btn btn-fill btn-right-centered">Save</button>
     </header>
 
-    <div class="tab-body tab-body__general-settings">
+    <div class="tab-body tab-body__language">
 
 
     </div>
 </div>
 
-                    <div role="tabpanel" class="tab-pane tab-pane__general-settings" id="content-general-settings">
+                    <div role="tabpanel" class="tab-pane tab-pane__conditional-callback" id="configure-conditional-callback">
     <header class="tab-header">
         <h2 class="tab__heading">
-            <span class="tab__header-title">General Settings</span>
+            <span class="tab__header-title">Conditional Callback</span>
             <p class="tab__header-excerpt">Edit General Settins Here.</p>
         </h2>
         <button class="btn btn-fill btn-right-centered">Save</button>
     </header>
 
-    <div class="tab-body tab-body__general-settings">
-
-        <div class="elem-language-selector">
-            <ul class="list-inline">
-                <li><h4>Select Language to add Translation :</h4></li>
-                <li>
-                    <select class="selectpicker language-selectpicker">
-                        <option>Mustard</option>
-                        <option>Ketchup</option>
-                        <option>Relish</option>
-                        <option>Mustard</option>
-                    </select>
-                </li>
-            </ul>
-        </div>
-
-        <div class="tab-body__row">
-
-            <div class="form-group form-group__level-block">
-                <label class="form-group-label">Write down the Form Name</label>
-                <div class="row">
-                    <div class="col-xs-6">
-                        <input type="text" class="form-control form-control-input-small" placeholder="Type your form name here" />
-                    </div>
-                </div>
-            </div>
-
-        </div>
+    <div class="tab-body tab-body__conditional-callback">
 
     </div>
 </div>
