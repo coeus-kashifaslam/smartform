@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Content | Form Builder</title>
+    <link rel="stylesheet" href="css/form-builder.css">
+</head>
+<body class="bg-white">
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="header__container">
+            <div class="col-xs-3">
+                <div class="header__logo">
+                    <img src="images/smartforms-logo.png" alt="Logo not found">
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <div class="header__text text-center">
+                    <h1 class="form__name">
+                        <i class="ico ico-seller"></i>
+                        <span>Form Name goes here</span>
+                    </h1>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div class="header__menu-right">
+                    <ul class="list-inline">
+                        <li>
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    English
+                                    <span class="ico ico-arrow-thin"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                                    <li><a href="#">Urdu</a></li>
+                                    <li><a href="#">Arabic</a></li>
+                                    <li><a href="#">German</a></li>
+                                    <li><a href="#">Farsi</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><span class="separator__top-menu"></span></li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    665
+                                    <span class="ico ico-arrow-thin"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!--Navbar-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="navbar-container">
+            <div class="col-xs-3">
+                <div class="navigate__back">
+                    <a href="#" class="back-link">Back to listing</a>
+                </div>
+            </div>
+            <div class="col-xs-6 navigation-center">
+                <ul class="nav nav-pills main-nav">
+                    <li role="presentation" class=""><a href="form-builder-build.html">Build</a></li>
+                    <li role="presentation" class=""><a href="form-builder-design.html">Design</a></li>
+                    <li role="presentation" class=""><a href="#">Configure</a></li>
+                    <li role="presentation" class="active"><a href="form-builder-content.html">Content</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-3">
+                <div class="navigate__to-form text-right">
+                    <a href="#" class="view-form-link">View this Form</a>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid noPadding">
+    <div class="section-table section-build">
+
+
+        <!-- Sidebar -->
+        <div class="section-table-cell__sidebar section-table-cell section-content__sidebar">
+            <div class="section-table-cell__sidebar-container section-content__sidebar-container">
+                <div class="section-table-cell__sidebar-list section-content__sidebar-list list-group">
+                    <a href="#content-general-settings" class="section-content__sidebar-general-settings list-group-item" aria-controls="content__general-settings" role="tab" data-toggle="tab">
+                        <span class="item-icon"><i class="ico ico-settings"></i></span>
+                        <span class="item-text">General Settings</span>
+                    </a>
+                    <a href="#content-header" class="section-content__sidebar-header list-group-item active" aria-controls="content-header" role="tab" data-toggle="tab">
+                        <span class="item-icon"><i class="ico ico-header"></i></span>
+                        <span class="item-text">Header</span>
+                    </a>
+                    <a href="#content-footer" class="section-content__sidebar-footer list-group-item" aria-controls="content-footer" role="tab" data-toggle="tab">
+                        <span class="item-icon"><i class="ico ico-footer"></i></span>
+                        <span class="item-text">Footer</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- /.Sidebar -->
+
+
+
+        <!-- Content Area -->
+        <div class="section-table-cell__content section-table-cell section-content__content">
+            <div class="section-content__tabs-container section-table-cell__tabs-container">
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane tab-pane__general-settings" id="content-general-settings">
+    <header class="tab-header">
+        <h2 class="tab__heading">
+            <span class="tab__header-title">General Settings</span>
+            <p class="tab__header-excerpt">Edit General Settins Here.</p>
+        </h2>
+        <button class="btn btn-fill btn-right-centered">Save</button>
+    </header>
+
+    <div class="tab-body tab-body__general-settings">
+
+        <div class="elem-language-selector">
+            <ul class="list-inline">
+                <li><h4>Select Language to add Translation :</h4></li>
+                <li>
+                    <select class="selectpicker language-selectpicker">
+                        <option>Mustard</option>
+                        <option>Ketchup</option>
+                        <option>Relish</option>
+                        <option>Mustard</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+
+        <div class="tab-body__row">
+
+            <div class="form-group form-group__level-block">
+                <label class="form-group-label">Write down the Form Name</label>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <input type="text" class="form-control form-control-input-small" placeholder="Type your form name here" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+                    <div role="tabpanel" class="tab-pane tab-pane__header active" id="content-header">
+    <header class="tab-header">
+        <h2 class="tab__heading">
+            <span class="tab__header-title">Custom Header</span>
+            <p class="tab__header-excerpt">Edit Custom Header Here.</p>
+        </h2>
+        <button class="btn btn-fill btn-right-centered">Save</button>
+    </header>
+
+    <div class="tab-body tab-body__header">
+
+        <div class="elem-language-selector">
+            <ul class="list-inline">
+                <li><h4>Select Language to add Translation :</h4></li>
+                <li>
+                    <select class="selectpicker language-selectpicker" disabled>
+                        <option>Mustard</option>
+                        <option>Ketchup</option>
+                        <option>Relish</option>
+                        <option>Mustard</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+
+        <div class="tab-body__row-checkbox">
+
+            <input id="custom-header" name="checkbox-group" type="checkbox">
+            <label for="custom-header"><span>Enable Custom Header</span></label>
+
+        </div>
+
+        <div class="ck-editor-wrap">
+            <div class="form-group">
+                <textarea class="elem__ckeditor ckeditor" id="elem__ckedito-header"></textarea>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+                    <div role="tabpanel" class="tab-pane tab-pane__footer" id="content-footer">
+    <header class="tab-header">
+        <h2 class="tab__heading">
+            <span class="tab__header-title">Custom Footer</span>
+            <p class="tab__header-excerpt">Edit Custom Footer Here.</p>
+        </h2>
+        <button class="btn btn-fill btn-right-centered">Save</button>
+    </header>
+
+    <div class="tab-body tab-body__footer">
+
+        <div class="elem-language-selector">
+            <ul class="list-inline">
+                <li><h4>Select Language to add Translation :</h4></li>
+                <li>
+                    <select class="selectpicker language-selectpicker" disabled>
+                        <option>Mustard</option>
+                        <option>Ketchup</option>
+                        <option>Relish</option>
+                        <option>Mustard</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+
+        <div class="tab-body__row-checkbox">
+
+            <input id="custom-footer" name="checkbox-group" type="checkbox">
+            <label for="custom-footer"><span>Enable Custom Footer</span></label>
+
+        </div>
+
+        <div class="ck-editor-wrap">
+            <div class="form-group">
+                <textarea class="elem__ckeditor ckeditor" id="elem__ckedito-footer"></textarea>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+                </div>
+            </div>
+        </div>
+        <!-- /.Content Area -->
+    </div>
+</div>
+
+
+
+<div class="modal fade modal__form-builder" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="ico ico-times"></span></button>
+                <h2 class="modal-title h1">
+                    <span class="modal-title-icon"><i class="ico ico-ranking-scale"></i></span>
+                    <span class="modal-title-text">Ranking Scale</span>
+                </h2>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <!-- Modal Column Single -->
+                    <div class="modal-col col-xs-6">
+                        <section class="modal-section">
+                            <header class="modal-col-header">
+                                <h2 class="modal-col-title">Content</h2>
+                            </header>
+                            <div class="modal-col-body">
+
+                                <!-- article item -->
+                                <article class="article-item item-type__grid">
+                                    <header class="article-item-header item-type__grid-row">
+                                        <h4 class="article-item-title">Question</h4>
+                                        <div class="article-item-selectpicker">
+                                            <select class="selectpicker">
+                                                <option>Select Language</option>
+                                                <option>Mustard</option>
+                                                <option>Ketchup</option>
+                                                <option>Relish</option>
+                                                <option>Mustard</option>
+                                            </select>
+                                        </div>
+                                    </header>
+                                    <div class="article-item-body">
+                                        <div class="form-group">
+                                            <textarea class="form-control form-control-textarea" placeholder="Enter text"></textarea>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- article item -->
+                                <article class="article-item item-type__grid">
+                                    <header class="article-item-header item-type__grid-row">
+                                        <h4 class="article-item-title">Help Text</h4>
+                                        <div class="article-item-selectpicker">
+                                            <select class="selectpicker">
+                                                <option>Select Language</option>
+                                                <option>Mustard</option>
+                                                <option>Ketchup</option>
+                                                <option>Relish</option>
+                                                <option>Mustard</option>
+                                            </select>
+                                        </div>
+                                    </header>
+                                    <div class="article-item-body">
+                                        <div class="form-group">
+                                            <textarea class="form-control form-control-textarea" placeholder="Enter text"></textarea>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- article item -->
+                                <article class="article-item item-type__grid">
+                                    <header class="article-item-header item-type__grid-row">
+                                        <h4 class="article-item-title">Placeholder</h4>
+                                        <div class="article-item-selectpicker">
+                                            <select class="selectpicker">
+                                                <option>Select Language</option>
+                                                <option>Mustard</option>
+                                                <option>Ketchup</option>
+                                                <option>Relish</option>
+                                                <option>Mustard</option>
+                                            </select>
+                                        </div>
+                                    </header>
+                                    <div class="article-item-body">
+                                        <div class="form-group">
+                                            <textarea class="form-control form-control-textarea" placeholder="Enter text"></textarea>
+                                        </div>
+                                    </div>
+                                </article>
+
+                            </div>
+                        </section>
+                    </div>
+                    <!-- Modal Column Single -->
+
+                    <!-- Modal Column Single -->
+                    <div class="modal-col col-xs-6">
+                        <section class="modal-section">
+                            <header class="modal-col-header">
+                                <h2 class="modal-col-title">Content</h2>
+                            </header>
+                            <div class="modal-col-body">
+
+                                <!-- article item -->
+                                <article class="article-item">
+                                    <header class="article-item-header item-type__grid-row">
+                                        <h4 class="article-item-title">Color Picker</h4>
+                                    </header>
+                                    <div class="article-item-body">
+                                        <div class="form-group">
+                                            <div class="input-group colorpicker-component">
+                                                <span class="input-group-addon"><i></i></span>
+                                                <input type="text" value="#00AABB" class="form-control" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+                            </div>
+                        </section>
+                    </div>
+                    <!-- Modal Column Single -->
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="col-xs-12">
+                    <button type="button" class="btn btn-fill">Save</button>
+                    <button type="button" class="btn btn-white" data-dismiss="modal">Preview</button>
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<script type="text/javascript" src="js/libs/jquery.js"></script>
+<script type="text/javascript" src="js/libs/modernizr.js"></script>
+<script type="text/javascript" src="js/libs/bootstrap.js"></script>
+<script type="text/javascript" src="js/libs/bootstrap-select.js"></script>
+<script type="text/javascript" src="js/libs/bootstrap-colorpicker.js"></script>
+<script type="text/javascript" src="js/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="js/form-builder.js"></script>
+
+</body>
+</html>

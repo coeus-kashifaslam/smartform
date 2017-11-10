@@ -81,3 +81,9 @@ $design-sidebar-color-active :#2ec605;
 $design-sidebar-buttons-active :#0072bc;
 $design-sidebar-image-active :#9b04e1;
 $design-sidebar-breadcrumb-active :#31a397;
+
+//Content
+$content-sidebar-general-settings-active: $design-sidebar-layout-active;
+$content-sidebar-header-active: #0e9f7f;
+$content-sidebar-footer-active: $design-sidebar-buttons-active;
+//$content-sidebar-footer-active: #a1916b;

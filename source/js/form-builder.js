@@ -6,7 +6,7 @@ $(document).ready(function () {
     // Show Base Modal
     // $('.modal__form-builder').modal('show');
 
-    $('.section-design__sidebar-list .list-group-item').on('click', function () {
+    $('.section-table-cell__sidebar-list .list-group-item').on('click', function () {
         $(this).siblings().removeClass('active');
         $(this).addClass('active');
     });
@@ -27,7 +27,6 @@ $(document).ready(function () {
     $(".js-upload-logo-file-input").change(function(){
         readURL(this);
     });
-
 
 });
 
