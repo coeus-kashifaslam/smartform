@@ -1,0 +1,36 @@
+.section-content__sidebar-list {
+  .list-group-item {
+    &:hover,
+    &.active,
+    &.active:hover {
+      &.section-content__sidebar {
+
+
+        &-general-settings {
+          .item-icon .ico {
+            color: $content-sidebar-general-settings-active;
+          }
+        }
+
+        &-header {
+          .item-icon .ico {
+            color: $content-sidebar-header-active;
+          }
+        }
+
+        &-footer {
+          .item-icon .ico {
+            color: $content-sidebar-footer-active;
+          }
+        }
+
+
+      }
+    }
+  }
+}
+
+.ck-editor-wrap {
+  margin-top: 30px;
+}
+

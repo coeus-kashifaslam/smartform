@@ -10548,6 +10548,22 @@ h5, .h5 {
     transform: translate(-50%, -50%);
 }
 
+.section-content__sidebar-list .list-group-item:hover.section-content__sidebar-general-settings .item-icon .ico, .section-content__sidebar-list .list-group-item.active.section-content__sidebar-general-settings .item-icon .ico, .section-content__sidebar-list .list-group-item.active:hover.section-content__sidebar-general-settings .item-icon .ico {
+    color: #f7c80a;
+}
+
+.section-content__sidebar-list .list-group-item:hover.section-content__sidebar-header .item-icon .ico, .section-content__sidebar-list .list-group-item.active.section-content__sidebar-header .item-icon .ico, .section-content__sidebar-list .list-group-item.active:hover.section-content__sidebar-header .item-icon .ico {
+    color: #0e9f7f;
+}
+
+.section-content__sidebar-list .list-group-item:hover.section-content__sidebar-footer .item-icon .ico, .section-content__sidebar-list .list-group-item.active.section-content__sidebar-footer .item-icon .ico, .section-content__sidebar-list .list-group-item.active:hover.section-content__sidebar-footer .item-icon .ico {
+    color: #0072bc;
+}
+
+.ck-editor-wrap {
+    margin-top: 30px;
+}
+
 @media print {
     *, *:before, *:after {
         color: #000 !important;
