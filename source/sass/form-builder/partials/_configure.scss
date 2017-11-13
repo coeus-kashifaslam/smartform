@@ -43,6 +43,11 @@
 .languages-list {
   > li {
     margin-bottom: 15px;
-    margin-right: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
+}
+
+.languages-row {
+  margin-left: -10px;
 }

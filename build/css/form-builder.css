@@ -9701,8 +9701,15 @@ select.bs-select-hidden, select.selectpicker {
 .language-pill {
     border-radius: 5px;
     border: 1px solid #c3c3c3;
-    width: 275px;
-    padding: 7px 15px;
+    padding: 10px 15px 5px;
+    width: 100%;
+    min-width: 160px;
+}
+
+.language-pill [type=radio]:checked + label, .language-pill [type=radio]:not(:checked) + label, .language-pill [type=checkbox]:checked + label, .language-pill [type=checkbox]:not(:checked) + label {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .language-pill [type=radio]:checked + label span, .language-pill [type=radio]:not(:checked) + label span, .language-pill [type=checkbox]:checked + label span, .language-pill [type=checkbox]:not(:checked) + label span {
@@ -9711,6 +9718,7 @@ select.bs-select-hidden, select.selectpicker {
 
 .language-pill [type=radio]:checked + label, .language-pill [type=checkbox]:checked + label {
     color: #2da137;
+    font-weight: 700;
 }
 
 .language-pill [type=radio]:disabled + label, .language-pill [type=checkbox]:disabled + label {
@@ -10063,6 +10071,9 @@ h5, .h5 {
 .header__text .form__name {
     margin: 8px 0 0;
     line-height: 1.4;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .header__text span {
@@ -10607,7 +10618,12 @@ h5, .h5 {
 
 .languages-list > li {
     margin-bottom: 15px;
-    margin-right: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.languages-row {
+    margin-left: -10px;
 }
 
 @media print {
