@@ -82,6 +82,31 @@
     }
   }
 }
+.selectpicker__font-family {
+  .bootstrap-select {
+    &:not([class*="col-"]) {
+      &:not([class*="form-control"]) {
+        &:not(.input-group-btn) {
+          width: $selectpicker-font-family;
+        }
+      }
+    }
+  }
+}
+
+.selectpicker__font-size,
+.selectpicker__days  {
+  .bootstrap-select {
+    &:not([class*="col-"]) {
+      &:not([class*="form-control"]) {
+        &:not(.input-group-btn) {
+          width: $selectpicker-font-size;
+        }
+      }
+    }
+  }
+}
+
 
 //Dropdown
 .dropdown {
