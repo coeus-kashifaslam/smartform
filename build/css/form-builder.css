@@ -9704,6 +9704,7 @@ select.bs-select-hidden, select.selectpicker {
     padding: 10px 15px 5px;
     width: 100%;
     min-width: 160px;
+    font-size: 14px;
 }
 
 .language-pill [type=radio]:checked + label, .language-pill [type=radio]:not(:checked) + label, .language-pill [type=checkbox]:checked + label, .language-pill [type=checkbox]:not(:checked) + label {
