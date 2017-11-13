@@ -1,0 +1,48 @@
+.section-configure__sidebar-list {
+  .list-group-item {
+
+    &:hover,
+    &.active,
+    &.active:hover {
+
+      &.section-configure__sidebar {
+
+        &-general-settings {
+          .item-icon .ico {
+            color: $configure-sidebar-general-settings-active;
+          }
+        }
+
+        &-language {
+          .item-icon .ico {
+            color: $configure-sidebar-language-active;
+          }
+        }
+
+        &-callback {
+          .item-icon .ico {
+            color: $configure-sidebar-callback-active;
+          }
+        }
+
+      }
+
+    }
+  }
+}
+
+.general-settings__list {
+  > li {
+    + li {
+      margin-top: 25px;
+    }
+  }
+}
+
+
+.languages-list {
+  > li {
+    margin-bottom: 15px;
+    margin-right: 5px;
+  }
+}

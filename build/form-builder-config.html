@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Configure | Form Builder</title>
+    <link rel="stylesheet" href="css/form-builder.css">
+</head>
+<body class="bg-white">
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="header__container">
+            <div class="col-xs-3">
+                <div class="header__logo">
+                    <img src="images/smartforms-logo.png" alt="Logo not found">
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <div class="header__text text-center">
+                    <h1 class="form__name">
+                        <i class="ico ico-seller"></i>
+                        <span>Form Name goes here</span>
+                    </h1>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div class="header__menu-right">
+                    <ul class="list-inline">
+                        <li>
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    English
+                                    <span class="ico ico-arrow-thin"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                                    <li><a href="#">Urdu</a></li>
+                                    <li><a href="#">Arabic</a></li>
+                                    <li><a href="#">German</a></li>
+                                    <li><a href="#">Farsi</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><span class="separator__top-menu"></span></li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    665
+                                    <span class="ico ico-arrow-thin"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!--Navbar-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="navbar-container">
+            <div class="col-xs-3">
+                <div class="navigate__back">
+                    <a href="#" class="back-link">Back to listing</a>
+                </div>
+            </div>
+            <div class="col-xs-6 navigation-center">
+                <ul class="nav nav-pills main-nav">
+                    <li role="presentation" class=""><a href="form-builder-build.html">Build</a></li>
+                    <li role="presentation" class=""><a href="form-builder-design.html">Design</a></li>
+                    <li role="presentation" class="active"><a href="form-builder-config.html">Configure</a></li>
+                    <li role="presentation" class=""><a href="form-builder-content.html">Content</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-3">
+                <div class="navigate__to-form text-right">
+                    <a href="#" class="view-form-link">View this Form</a>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid noPadding">
+    <div class="section-table section-build">
+
+
+        <!-- Sidebar -->
+        <div class="section-table-cell__sidebar section-table-cell section-configure__sidebar">
+            <div class="section-table-cell__sidebar-container section-configure__sidebar-container">
+                <div class="section-table-cell__sidebar-list section-configure__sidebar-list list-group">
+                    <a href="#configure-general-settings" class="section-configure__sidebar-general-settings list-group-item active" aria-controls="configure__general-settings" role="tab" data-toggle="tab">
+                        <span class="item-icon"><i class="ico ico-settings"></i></span>
+                        <span class="item-text">General Settings</span>
+                    </a>
+                    <a href="#configure-language" class="section-configure__sidebar-language list-group-item" aria-controls="configure-language" role="tab" data-toggle="tab">
+                        <span class="item-icon"><i class="ico ico-font"></i></span>
+                        <span class="item-text">Language</span>
+                    </a>
+                    <a href="#configure-callback" class="section-configure__sidebar-callback list-group-item" aria-controls="configure-callback" role="tab" data-toggle="tab">
+                        <span class="item-icon"><i class="ico ico-callback"></i></span>
+                        <span class="item-text">Conditional Callback</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- /.Sidebar -->
+
+
+
+        <!-- Content Area -->
+        <div class="section-table-cell__content section-table-cell section-configure__content">
+            <div class="section-configure__tabs-container section-table-cell__tabs-container">
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane tab-pane__general-settings active" id="configure-general-settings">
+    <header class="tab-header">
+        <h2 class="tab__heading">
+            <span class="tab__header-title">General Settings</span>
+            <p class="tab__header-excerpt">Edit General Settins Here.</p>
+        </h2>
+        <button class="btn btn-fill btn-right-centered">Save</button>
+    </header>
+
+    <div class="tab-body tab-body__general-settings">
+
+        <div class="tab-body__row">
+
+            <ul class="list-unstyled general-settings__list">
+                <li>
+                    <input id="checkbox" name="checkbox-group" type="checkbox">
+                    <label for="checkbox"><span>Load Meta Data</span></label>
+                </li>
+                <li>
+                    <input id="checkbox1" name="checkbox-group" type="checkbox">
+                    <label for="checkbox1"><span>Enable Expiry Reviews</span></label>
+                </li>
+                <li class="item-expxiry-days">
+                    <ul class="list-inline">
+                        <li><h4>Number of expiry Days:</h4></li>
+                        <li class="selectpicker__days">
+                            <select class="selectpicker">
+                                <option>01</option>
+                                <option>02</option>
+                                <option>03</option>
+                                <option>04</option>
+                                <option>05</option>
+                                <option>06</option>
+                                <option>07</option>
+                                <option>08</option>
+                                <option>09</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                                <option>13</option>
+                                <option>14</option>
+                                <option>15</option>
+                                <option>16</option>
+                                <option>17</option>
+                                <option>18</option>
+                                <option>19</option>
+                                <option>20</option>
+                                <option>21</option>
+                                <option>22</option>
+                                <option>23</option>
+                                <option>24</option>
+                                <option>25</option>
+                                <option>26</option>
+                                <option>27</option>
+                                <option>28</option>
+                                <option>29</option>
+                                <option>30</option>
+                                <option>31</option>
+                            </select>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+</div>
+
+                    <div role="tabpanel" class="tab-pane tab-pane__configure-language" id="configure-language">
+    <header class="tab-header">
+        <h2 class="tab__heading">
+            <span class="tab__header-title">Languages</span>
+            <p class="tab__header-excerpt">Edit General Settins Here.</p>
+        </h2>
+        <button class="btn btn-fill btn-right-centered">Save</button>
+    </header>
+
+    <div class="tab-body tab-body__configure-language">
+
+        <div class="tab-body__row">
+
+            <ul class="list-inline languages-list">
+                <li>
+                    <div class="language-pill">
+                        <input id="language1" name="checkbox-group" type="checkbox" checked="checked" disabled>
+                        <label for="language1"><span>English</span></label>
+                    </div>
+                </li>
+                <li>
+                    <div class="language-pill">
+                        <input id="language2" name="checkbox-group" type="checkbox">
+                        <label for="language2"><span>English</span></label>
+                    </div>
+                </li>
+                <li>
+                    <div class="language-pill">
+                        <input id="language3" name="checkbox-group" type="checkbox">
+                        <label for="language3"><span>English</span></label>
+                    </div>
+                </li>
+                <li>
+                    <div class="language-pill">
+                        <input id="language4" name="checkbox-group" type="checkbox">
+                        <label for="language4"><span>English</span></label>
+                    </div>
+                </li>
+                <li>
+                    <div class="language-pill">
+                        <input id="language5" name="checkbox-group" type="checkbox">
+                        <label for="language5"><span>English</span></label>
+                    </div>
+                </li>
+                <li>
+                    <div class="language-pill">
+                        <input id="language6" name="checkbox-group" type="checkbox">
+                        <label for="language6"><span>English</span></label>
+                    </div>
+                </li>
+                <li>
+                    <div class="language-pill">
+                        <input id="language7" name="checkbox-group" type="checkbox">
+                        <label for="language7"><span>English</span></label>
+                    </div>
+                </li>
+                <li>
+                    <div class="language-pill">
+                        <input id="language8" name="checkbox-group" type="checkbox">
+                        <label for="language8"><span>English</span></label>
+                    </div>
+                </li>
+                <li>
+                    <div class="language-pill">
+                        <input id="language9" name="checkbox-group" type="checkbox">
+                        <label for="language9"><span>English</span></label>
+                    </div>
+                </li>
+                <li>
+                    <div class="language-pill">
+                        <input id="language10" name="checkbox-group" type="checkbox">
+                        <label for="language10"><span>English</span></label>
+                    </div>
+                </li>
+                <li>
+                    <div class="language-pill">
+                        <input id="language11" name="checkbox-group" type="checkbox">
+                        <label for="language11"><span>English</span></label>
+                    </div>
+                </li>
+                <li>
+                    <div class="language-pill">
+                        <input id="language12" name="checkbox-group" type="checkbox">
+                        <label for="language12"><span>English</span></label>
+                    </div>
+                </li>
+                <li>
+                    <div class="language-pill">
+                        <input id="language13" name="checkbox-group" type="checkbox">
+                        <label for="language13"><span>English</span></label>
+                    </div>
+                </li>
+                <li>
+                    <div class="language-pill">
+                        <input id="language14" name="checkbox-group" type="checkbox">
+                        <label for="language14"><span>English</span></label>
+                    </div>
+                </li>
+                <li>
+                    <div class="language-pill">
+                        <input id="language15" name="checkbox-group" type="checkbox">
+                        <label for="language15"><span>English</span></label>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+</div>
+
+                    <div role="tabpanel" class="tab-pane tab-pane__configure-callback" id="configure-callback">
+    <header class="tab-header">
+        <h2 class="tab__heading">
+            <span class="tab__header-title">Callbacks</span>
+            <p class="tab__header-excerpt">Edit General Settins Here.</p>
+        </h2>
+        <button class="btn btn-fill btn-right-centered">Save</button>
+    </header>
+
+    <div class="tab-body tab-body__configure-callback">
+
+        <div class="tab-body__row">
+        </div>
+
+    </div>
+</div>
+
+                </div>
+            </div>
+        </div>
+        <!-- /.Content Area -->
+    </div>
+</div>
+
+
+
+<div class="modal fade modal__form-builder" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="ico ico-times"></span></button>
+                <h2 class="modal-title h1">
+                    <span class="modal-title-icon"><i class="ico ico-ranking-scale"></i></span>
+                    <span class="modal-title-text">Ranking Scale</span>
+                </h2>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <!-- Modal Column Single -->
+                    <div class="modal-col col-xs-6">
+                        <section class="modal-section">
+                            <header class="modal-col-header">
+                                <h2 class="modal-col-title">Content</h2>
+                            </header>
+                            <div class="modal-col-body">
+
+                                <!-- article item -->
+                                <article class="article-item item-type__grid">
+                                    <header class="article-item-header item-type__grid-row">
+                                        <h4 class="article-item-title">Question</h4>
+                                        <div class="article-item-selectpicker">
+                                            <select class="selectpicker">
+                                                <option>Select Language</option>
+                                                <option>Mustard</option>
+                                                <option>Ketchup</option>
+                                                <option>Relish</option>
+                                                <option>Mustard</option>
+                                            </select>
+                                        </div>
+                                    </header>
+                                    <div class="article-item-body">
+                                        <div class="form-group">
+                                            <textarea class="form-control form-control-textarea" placeholder="Enter text"></textarea>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- article item -->
+                                <article class="article-item item-type__grid">
+                                    <header class="article-item-header item-type__grid-row">
+                                        <h4 class="article-item-title">Help Text</h4>
+                                        <div class="article-item-selectpicker">
+                                            <select class="selectpicker">
+                                                <option>Select Language</option>
+                                                <option>Mustard</option>
+                                                <option>Ketchup</option>
+                                                <option>Relish</option>
+                                                <option>Mustard</option>
+                                            </select>
+                                        </div>
+                                    </header>
+                                    <div class="article-item-body">
+                                        <div class="form-group">
+                                            <textarea class="form-control form-control-textarea" placeholder="Enter text"></textarea>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- article item -->
+                                <article class="article-item item-type__grid">
+                                    <header class="article-item-header item-type__grid-row">
+                                        <h4 class="article-item-title">Placeholder</h4>
+                                        <div class="article-item-selectpicker">
+                                            <select class="selectpicker">
+                                                <option>Select Language</option>
+                                                <option>Mustard</option>
+                                                <option>Ketchup</option>
+                                                <option>Relish</option>
+                                                <option>Mustard</option>
+                                            </select>
+                                        </div>
+                                    </header>
+                                    <div class="article-item-body">
+                                        <div class="form-group">
+                                            <textarea class="form-control form-control-textarea" placeholder="Enter text"></textarea>
+                                        </div>
+                                    </div>
+                                </article>
+
+                            </div>
+                        </section>
+                    </div>
+                    <!-- Modal Column Single -->
+
+                    <!-- Modal Column Single -->
+                    <div class="modal-col col-xs-6">
+                        <section class="modal-section">
+                            <header class="modal-col-header">
+                                <h2 class="modal-col-title">Content</h2>
+                            </header>
+                            <div class="modal-col-body">
+
+                                <!-- article item -->
+                                <article class="article-item">
+                                    <header class="article-item-header item-type__grid-row">
+                                        <h4 class="article-item-title">Color Picker</h4>
+                                    </header>
+                                    <div class="article-item-body">
+                                        <div class="form-group">
+                                            <div class="input-group colorpicker-component">
+                                                <span class="input-group-addon"><i></i></span>
+                                                <input type="text" value="#00AABB" class="form-control" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+                            </div>
+                        </section>
+                    </div>
+                    <!-- Modal Column Single -->
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="col-xs-12">
+                    <button type="button" class="btn btn-fill">Save</button>
+                    <button type="button" class="btn btn-white" data-dismiss="modal">Preview</button>
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<script type="text/javascript" src="js/libs/jquery.js"></script>
+<script type="text/javascript" src="js/libs/modernizr.js"></script>
+<script type="text/javascript" src="js/libs/bootstrap.js"></script>
+<script type="text/javascript" src="js/libs/bootstrap-select.js"></script>
+<script type="text/javascript" src="js/libs/bootstrap-colorpicker.js"></script>
+<script type="text/javascript" src="js/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="js/form-builder.js"></script>
+
+</body>
+</html>

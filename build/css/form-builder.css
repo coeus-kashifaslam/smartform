@@ -9290,6 +9290,10 @@ select.bs-select-hidden, select.selectpicker {
     src: url(../fonts/font-families/arial/Arial-BoldMT.eot?#iefix) format("embedded-opentype"), url(../fonts/font-families/arial/Arial-BoldMT.woff) format("woff"), url(../fonts/font-families/arial/Arial-BoldMT.ttf) format("truetype"), url(../fonts/font-families/arial/Arial-BoldMT.svg#Arial-BoldMT) format("svg");
 }
 
+.ico-callback:before {
+    content: "\e926";
+}
+
 .ico-header:before {
     content: "\e925";
 }
@@ -9529,6 +9533,14 @@ select.bs-select-hidden, select.selectpicker {
     margin-bottom: -3px;
 }
 
+.selectpicker__font-family .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 185px;
+}
+
+.selectpicker__font-size .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn), .selectpicker__days .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 125px;
+}
+
 .dropdown {
     display: inline-block;
 }
@@ -9684,6 +9696,27 @@ select.bs-select-hidden, select.selectpicker {
 .form-group__level-block .form-control {
     display: block;
     width: 100%;
+}
+
+.language-pill {
+    border-radius: 5px;
+    border: 1px solid #c3c3c3;
+    width: 275px;
+    padding: 7px 15px;
+}
+
+.language-pill [type=radio]:checked + label span, .language-pill [type=radio]:not(:checked) + label span, .language-pill [type=checkbox]:checked + label span, .language-pill [type=checkbox]:not(:checked) + label span {
+    margin-left: 15px;
+}
+
+.language-pill [type=radio]:checked + label, .language-pill [type=checkbox]:checked + label {
+    color: #2da137;
+}
+
+.language-pill [type=radio]:disabled + label, .language-pill [type=checkbox]:disabled + label {
+    cursor: not-allowed;
+    opacity: .6;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
 }
 
 .btn {
@@ -10208,14 +10241,6 @@ h5, .h5 {
     text-align: right;
 }
 
-.selectpicker__font-family .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
-    width: 185px;
-}
-
-.selectpicker__font-size .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
-    width: 125px;
-}
-
 .article-item {
     padding: 0 15px;
     border-bottom: 1px solid #c3c3c3;
@@ -10562,6 +10587,27 @@ h5, .h5 {
 
 .ck-editor-wrap {
     margin-top: 30px;
+}
+
+.section-configure__sidebar-list .list-group-item:hover.section-configure__sidebar-general-settings .item-icon .ico, .section-configure__sidebar-list .list-group-item.active.section-configure__sidebar-general-settings .item-icon .ico, .section-configure__sidebar-list .list-group-item.active:hover.section-configure__sidebar-general-settings .item-icon .ico {
+    color: #f7c80a;
+}
+
+.section-configure__sidebar-list .list-group-item:hover.section-configure__sidebar-language .item-icon .ico, .section-configure__sidebar-list .list-group-item.active.section-configure__sidebar-language .item-icon .ico, .section-configure__sidebar-list .list-group-item.active:hover.section-configure__sidebar-language .item-icon .ico {
+    color: #ee2700;
+}
+
+.section-configure__sidebar-list .list-group-item:hover.section-configure__sidebar-callback .item-icon .ico, .section-configure__sidebar-list .list-group-item.active.section-configure__sidebar-callback .item-icon .ico, .section-configure__sidebar-list .list-group-item.active:hover.section-configure__sidebar-callback .item-icon .ico {
+    color: #00b4ae;
+}
+
+.general-settings__list > li + li {
+    margin-top: 25px;
+}
+
+.languages-list > li {
+    margin-bottom: 15px;
+    margin-right: 5px;
 }
 
 @media print {

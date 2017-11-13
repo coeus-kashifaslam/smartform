@@ -84,31 +84,6 @@
 }
 
 
-.selectpicker__font-family {
-  .bootstrap-select {
-    &:not([class*="col-"]) {
-      &:not([class*="form-control"]) {
-        &:not(.input-group-btn) {
-          width: $selectpicker-font-family;
-        }
-      }
-    }
-  }
-}
-
-.selectpicker__font-size  {
-  .bootstrap-select {
-    &:not([class*="col-"]) {
-      &:not([class*="form-control"]) {
-        &:not(.input-group-btn) {
-          width: $selectpicker-font-size;
-        }
-      }
-    }
-  }
-}
-
-
 .article-item {
   padding: 0 15px;
   border-bottom: 1px solid $border;
