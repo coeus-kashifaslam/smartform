@@ -311,8 +311,9 @@
 .language-pill {
   border-radius: $radius;
   border: 1px solid $border;
-  width: 275px;
-  padding: 7px 15px;
+  padding: 10px 15px 5px 15px;
+  width: 100%;
+  min-width: 160px;
 
   [type="radio"],
   [type = "checkbox"] {
@@ -320,6 +321,9 @@
     &:checked,
     &:not(:checked) {
       + label {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
         span {
           margin-left: 15px;
         }
@@ -329,6 +333,7 @@
     &:checked {
       + label {
         color: $green-primary;
+        font-weight: bold;
       }
     }
 
