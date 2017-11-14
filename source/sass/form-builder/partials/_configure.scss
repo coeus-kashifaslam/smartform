@@ -51,3 +51,33 @@
 .languages-row {
   margin-left: -10px;
 }
+
+.callback-options-list {
+  margin-bottom: 35px;
+
+  > li {
+    + li {
+      margin-left: 30px;
+    }
+  }
+}
+
+
+.callback-questions-list {
+  .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 100%;
+    max-width: 650px;
+
+    .dropdown-toggle .filter-option{
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+
+  .bootstrap-select.btn-group .dropdown-menu .inner > li .text{
+    max-width: 605px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

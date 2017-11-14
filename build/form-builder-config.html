@@ -99,7 +99,7 @@
         <div class="section-table-cell__sidebar section-table-cell section-configure__sidebar">
             <div class="section-table-cell__sidebar-container section-configure__sidebar-container">
                 <div class="section-table-cell__sidebar-list section-configure__sidebar-list list-group">
-                    <a href="#configure-general-settings" class="section-configure__sidebar-general-settings list-group-item active" aria-controls="configure__general-settings" role="tab" data-toggle="tab">
+                    <a href="#configure-general-settings" class="section-configure__sidebar-general-settings list-group-item" aria-controls="configure__general-settings" role="tab" data-toggle="tab">
                         <span class="item-icon"><i class="ico ico-settings"></i></span>
                         <span class="item-text">General Settings</span>
                     </a>
@@ -107,7 +107,7 @@
                         <span class="item-icon"><i class="ico ico-font"></i></span>
                         <span class="item-text">Language</span>
                     </a>
-                    <a href="#configure-callback" class="section-configure__sidebar-callback list-group-item" aria-controls="configure-callback" role="tab" data-toggle="tab">
+                    <a href="#configure-callback" class="section-configure__sidebar-callback list-group-item active" aria-controls="configure-callback" role="tab" data-toggle="tab">
                         <span class="item-icon"><i class="ico ico-callback"></i></span>
                         <span class="item-text">Conditional Callback</span>
                     </a>
@@ -122,7 +122,7 @@
         <div class="section-table-cell__content section-table-cell section-configure__content">
             <div class="section-configure__tabs-container section-table-cell__tabs-container">
                 <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane tab-pane__general-settings active" id="configure-general-settings">
+                    <div role="tabpanel" class="tab-pane tab-pane__general-settings" id="configure-general-settings">
     <header class="tab-header">
         <h2 class="tab__heading">
             <span class="tab__header-title">General Settings</span>
@@ -302,7 +302,7 @@
     </div>
 </div>
 
-                    <div role="tabpanel" class="tab-pane tab-pane__configure-callback" id="configure-callback">
+                    <div role="tabpanel" class="tab-pane tab-pane__configure-callback active" id="configure-callback">
     <header class="tab-header">
         <h2 class="tab__heading">
             <span class="tab__header-title">Callbacks</span>
@@ -314,6 +314,42 @@
     <div class="tab-body tab-body__configure-callback">
 
         <div class="tab-body__row">
+            <ul class="list-inline callback-options-list">
+                <li>
+                    <input id="conditional-callback" name="checkbox-group" type="checkbox">
+                    <label for="conditional-callback"><span>Enable Conditional Callback</span></label>
+                </li>
+                <li>
+                    <input id="traffic-split" name="checkbox-group" type="checkbox">
+                    <label for="traffic-split"><span>Enable Traffic Split</span></label>
+                </li>
+            </ul>
+
+            <div class="row">
+                <div class="callbacks-section col-xs-10">
+                    <div class="callback-questions-list">
+                        <ul class="list-unstyled">
+                            <li>
+                                <h4>Form Questions:</h4>
+                            </li>
+                            <li>
+                                <select class="selectpicker condtional-callbacks-selectpicker">
+                                    <option>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam commodi expedita facere fuga, iste magnam sapiente soluta voluptas voluptate voluptatum! Aliquid, architecto asperiores dolorum, ea eos et ipsam maiores obcaecati pariatur, quis quisquam repellat. Ab, aliquam amet doloremque, eligendi fugit, hic iste magni minus nemo neque nisi numquam obcaecati officia quas quasi quidem quod ratione unde! Aperiam dolor eos id iste! Assumenda illo incidunt iusto laboriosam placeat! Aperiam aspernatur, culpa distinctio error excepturi explicabo ipsa mollitia officiis omnis optio perferendis porro quasi, recusandae repellat saepe suscipit voluptatum? Accusamus assumenda autem, dolores ea, eos necessitatibus non reprehenderit saepe suscipit velit voluptate!</option>
+                                    <option>Ketchup</option>
+                                    <option>Relish</option>
+                                    <option>Mustard</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="callback-answers-list">
+                        <ul class="list-unstyled">
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
     </div>

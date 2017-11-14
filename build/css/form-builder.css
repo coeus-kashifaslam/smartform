@@ -9478,7 +9478,7 @@ select.bs-select-hidden, select.selectpicker {
 }
 
 .bootstrap-select > .dropdown-toggle {
-    padding: 10px 25px 10px 15px;
+    padding: 10px 30px 10px 15px;
     position: relative;
 }
 
@@ -10625,6 +10625,30 @@ h5, .h5 {
 
 .languages-row {
     margin-left: -10px;
+}
+
+.callback-options-list {
+    margin-bottom: 35px;
+}
+
+.callback-options-list > li + li {
+    margin-left: 30px;
+}
+
+.callback-questions-list .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 100%;
+    max-width: 650px;
+}
+
+.callback-questions-list .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) .dropdown-toggle .filter-option {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.callback-questions-list .bootstrap-select.btn-group .dropdown-menu .inner > li .text {
+    max-width: 605px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 @media print {
