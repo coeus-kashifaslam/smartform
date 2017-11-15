@@ -9777,7 +9777,7 @@ select.bs-select-hidden, select.selectpicker {
     color: #fff;
 }
 
-.btn-add-more {
+.btn-add-more, .btn-remove-item {
     width: 40px;
     height: 35px;
     border: 0 none;
@@ -9786,16 +9786,22 @@ select.bs-select-hidden, select.selectpicker {
     background: #cacaca;
 }
 
-.btn-add-more .ico {
+.btn-add-more .ico, .btn-remove-item .ico {
     color: #fff;
     text-align: center;
     padding-top: 15px;
 }
 
-.btn-add-more:hover, .btn-add-more:focus, .btn-add-more:active {
+.btn-add-more:hover, .btn-add-more:focus, .btn-add-more:active, .btn-remove-item:hover, .btn-remove-item:focus, .btn-remove-item:active {
     background: #cacaca;
     outline: none;
     box-shadow: none;
+}
+
+.btn-remove-item .fa {
+    padding: 0;
+    color: #fff;
+    font-size: 20px;
 }
 
 body {
@@ -10691,13 +10697,15 @@ h5, .h5 {
 }
 
 .callback-answers-list > ul > li > .traffic-split-list-item .btn-add-more {
-    visibility: hidden;
-    pointer-events: none;
+    display: none;
+}
+
+.callback-answers-list > ul > li > .traffic-split-list-item:last-of-type .btn-remove-item {
+    display: none;
 }
 
 .callback-answers-list > ul > li > .traffic-split-list-item:last-of-type .btn-add-more {
-    visibility: visible;
-    pointer-events: all;
+    display: block;
 }
 
 .callback-answers-list > ul .callback-answer-redirection {

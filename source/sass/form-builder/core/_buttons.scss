@@ -47,7 +47,8 @@
 }
 
 
-.btn-add-more {
+.btn-add-more,
+.btn-remove-item {
   width: 40px;
   height: 35px;
   border: 0 none;
@@ -65,5 +66,14 @@
     background: $btn-add-more;
     outline: none;
     box-shadow: none;
+  }
+}
+
+
+.btn-remove-item {
+  .fa {
+    padding: 0;
+    color: $white;
+    font-size: $font-xlg;
   }
 }

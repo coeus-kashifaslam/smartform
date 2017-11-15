@@ -98,13 +98,14 @@ $callbacks-answer-width: 220px;
 
       > .traffic-split-list-item {
         .btn-add-more {
-          visibility: hidden;
-          pointer-events: none;
+          display: none;
         }
         &:last-of-type {
+          .btn-remove-item {
+            display: none;
+          }
           .btn-add-more {
-            visibility: visible;
-            pointer-events: all;
+            display: block;
           }
         }
       }
