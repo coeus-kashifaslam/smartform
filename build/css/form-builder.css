@@ -9472,7 +9472,7 @@ select.bs-select-hidden, select.selectpicker {
 }
 
 .bootstrap-select .dropdown-toggle:hover, .bootstrap-select .dropdown-toggle:focus, .bootstrap-select .dropdown-toggle:active, .bootstrap-select.open .dropdown-toggle:hover, .bootstrap-select.open .dropdown-toggle:focus, .bootstrap-select.open .dropdown-toggle:active {
-    background: transparent;
+    background: #fff;
     outline: none !important;
     border-color: #c3c3c3;
 }
