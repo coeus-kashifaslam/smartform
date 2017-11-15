@@ -9467,18 +9467,18 @@ select.bs-select-hidden, select.selectpicker {
 
 .bootstrap-select .dropdown-toggle, .bootstrap-select.open .dropdown-toggle {
     border: 1px solid #c3c3c3;
-    background: transparent;
+    background: #fff;
     box-shadow: none;
 }
 
 .bootstrap-select .dropdown-toggle:hover, .bootstrap-select .dropdown-toggle:focus, .bootstrap-select .dropdown-toggle:active, .bootstrap-select.open .dropdown-toggle:hover, .bootstrap-select.open .dropdown-toggle:focus, .bootstrap-select.open .dropdown-toggle:active {
-    background: transparent;
+    background: #fff;
     outline: none !important;
     border-color: #c3c3c3;
 }
 
 .bootstrap-select > .dropdown-toggle {
-    padding: 10px 25px 10px 15px;
+    padding: 10px 30px 10px 15px;
     position: relative;
 }
 
@@ -9704,6 +9704,7 @@ select.bs-select-hidden, select.selectpicker {
     padding: 10px 15px 5px;
     width: 100%;
     min-width: 160px;
+    font-size: 14px;
 }
 
 .language-pill [type=radio]:checked + label, .language-pill [type=radio]:not(:checked) + label, .language-pill [type=checkbox]:checked + label, .language-pill [type=checkbox]:not(:checked) + label {
@@ -9774,6 +9775,27 @@ select.bs-select-hidden, select.selectpicker {
 .btn-white.btn-active {
     background: #606060;
     color: #fff;
+}
+
+.btn-add-more {
+    width: 40px;
+    height: 35px;
+    border: 0 none;
+    box-shadow: none;
+    border-radius: 5px;
+    background: #cacaca;
+}
+
+.btn-add-more .ico {
+    color: #fff;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.btn-add-more:hover, .btn-add-more:focus, .btn-add-more:active {
+    background: #cacaca;
+    outline: none;
+    box-shadow: none;
 }
 
 body {
@@ -10624,6 +10646,133 @@ h5, .h5 {
 
 .languages-row {
     margin-left: -10px;
+}
+
+.callback-options-list {
+    margin-bottom: 25px;
+}
+
+.callback-options-list > li + li {
+    margin-left: 30px;
+}
+
+.callback-questions-list {
+    margin-bottom: 25px;
+}
+
+.callback-questions-list__title {
+    margin-bottom: 15px;
+}
+
+.callback-questions-list .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 650px;
+}
+
+.callback-questions-list .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) .dropdown-toggle .filter-option {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.callback-questions-list .bootstrap-select.btn-group .dropdown-menu .inner > li .text {
+    width: 605px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.callback-answers-list > ul {
+    width: 650px;
+}
+
+.callback-answers-list > ul > li {
+    margin-bottom: 25px;
+    padding: 10px 5px 10px 10px;
+    background: #f4f4f4;
+    border-radius: 5px;
+}
+
+.callback-answers-list > ul > li > .traffic-split-list-item .btn-add-more {
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.callback-answers-list > ul > li > .traffic-split-list-item:last-of-type .btn-add-more {
+    visibility: visible;
+    pointer-events: all;
+}
+
+.callback-answers-list > ul .callback-answer-redirection {
+    width: 220px;
+}
+
+.callback-answers-list .elem__table {
+    width: 100%;
+    display: table;
+    padding-left: 5px;
+}
+
+.callback-answers-list .elem__table > .elem__table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0;
+}
+
+.callback-answers-list .elem__table > .elem__table-cell p {
+    margin: 0;
+}
+
+.callback-answers-list .elem__table > .callback-answer-text {
+    padding-right: 15px;
+}
+
+.callback-answers-list .callback-asnwer__item-url {
+    margin-top: 10px;
+    padding-right: 5px;
+}
+
+.callback-answers-list .traffic-split-list-item {
+    padding-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.callback-answers-list .traffic-split-list-item:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -3px;
+    width: 6px;
+    height: 6px;
+    background: #777;
+    border-radius: 50%;
+}
+
+.callback-answers-list .traffic-split-list-item > ul .traffic-split__url, .callback-answers-list .traffic-split-list-item > ul .traffic-split__percentage {
+    padding-right: 15px;
+}
+
+.callback-answers-list .traffic-split-list-item > ul .traffic-split__url .form-control, .callback-answers-list .traffic-split-list-item > ul .traffic-split__percentage .form-control {
+    background: transparent;
+}
+
+.callback-answers-list .traffic-split-list-item > ul .traffic-split__url {
+    width: 450px;
+}
+
+.callback-answers-list .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 220px;
+}
+
+.callback-answers-list .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) .dropdown-toggle .filter-option {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.callback-answers-list .bootstrap-select.btn-group .dropdown-menu .inner > li .text {
+    width: 175px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 @media print {

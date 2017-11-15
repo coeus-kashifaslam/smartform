@@ -99,7 +99,7 @@
         <div class="section-table-cell__sidebar section-table-cell section-configure__sidebar">
             <div class="section-table-cell__sidebar-container section-configure__sidebar-container">
                 <div class="section-table-cell__sidebar-list section-configure__sidebar-list list-group">
-                    <a href="#configure-general-settings" class="section-configure__sidebar-general-settings list-group-item active" aria-controls="configure__general-settings" role="tab" data-toggle="tab">
+                    <a href="#configure-general-settings" class="section-configure__sidebar-general-settings list-group-item" aria-controls="configure__general-settings" role="tab" data-toggle="tab">
                         <span class="item-icon"><i class="ico ico-settings"></i></span>
                         <span class="item-text">General Settings</span>
                     </a>
@@ -107,7 +107,7 @@
                         <span class="item-icon"><i class="ico ico-font"></i></span>
                         <span class="item-text">Language</span>
                     </a>
-                    <a href="#configure-callback" class="section-configure__sidebar-callback list-group-item" aria-controls="configure-callback" role="tab" data-toggle="tab">
+                    <a href="#configure-callback" class="section-configure__sidebar-callback list-group-item active" aria-controls="configure-callback" role="tab" data-toggle="tab">
                         <span class="item-icon"><i class="ico ico-callback"></i></span>
                         <span class="item-text">Conditional Callback</span>
                     </a>
@@ -122,7 +122,7 @@
         <div class="section-table-cell__content section-table-cell section-configure__content">
             <div class="section-configure__tabs-container section-table-cell__tabs-container">
                 <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane tab-pane__general-settings active" id="configure-general-settings">
+                    <div role="tabpanel" class="tab-pane tab-pane__general-settings" id="configure-general-settings">
     <header class="tab-header">
         <h2 class="tab__heading">
             <span class="tab__header-title">General Settings</span>
@@ -208,67 +208,67 @@
                 <li class="col-sm-3">
                     <div class="language-pill">
                         <input id="language1" name="checkbox-group" type="checkbox" checked="checked" disabled>
-                        <label for="language1"><span>English</span></label>
+                        <label for="language1"><span>English - en-UK</span></label>
                     </div>
                 </li>
                 <li class="col-sm-3">
                     <div class="language-pill">
                         <input id="language2" name="checkbox-group" type="checkbox">
-                        <label for="language2"><span>English</span></label>
+                        <label for="language2"><span>Deutsch - de-DE</span></label>
                     </div>
                 </li>
                 <li class="col-sm-3">
                     <div class="language-pill">
                         <input id="language3" name="checkbox-group" type="checkbox">
-                        <label for="language3"><span>English</span></label>
+                        <label for="language3"><span>汉语/漢語 - cn-CN</span></label>
                     </div>
                 </li>
                 <li class="col-sm-3">
                     <div class="language-pill">
                         <input id="language4" name="checkbox-group" type="checkbox">
-                        <label for="language4"><span>English</span></label>
+                        <label for="language4"><span>Français - fr-FR</span></label>
                     </div>
                 </li>
                 <li class="col-sm-3">
                     <div class="language-pill">
                         <input id="language5" name="checkbox-group" type="checkbox">
-                        <label for="language5"><span>English</span></label>
+                        <label for="language5"><span>Dutch - nl-NL</span></label>
                     </div>
                 </li>
                 <li class="col-sm-3">
                     <div class="language-pill">
                         <input id="language6" name="checkbox-group" type="checkbox">
-                        <label for="language6"><span>English</span></label>
+                        <label for="language6"><span>Dutch - nl-NL</span></label>
                     </div>
                 </li>
                 <li class="col-sm-3">
                     <div class="language-pill">
                         <input id="language7" name="checkbox-group" type="checkbox">
-                        <label for="language7"><span>English</span></label>
+                        <label for="language7"><span>Italiano - it-IT</span></label>
                     </div>
                 </li>
                 <li class="col-sm-3">
                     <div class="language-pill">
                         <input id="language8" name="checkbox-group" type="checkbox">
-                        <label for="language8"><span>English</span></label>
+                        <label for="language8"><span>日本語 - jp-JP</span></label>
                     </div>
                 </li>
                 <li class="col-sm-3">
                     <div class="language-pill">
                         <input id="language9" name="checkbox-group" type="checkbox">
-                        <label for="language9"><span>English</span></label>
+                        <label for="language9"><span>Italiano - it-IT</span></label>
                     </div>
                 </li>
                 <li class="col-sm-3">
                     <div class="language-pill">
                         <input id="language10" name="checkbox-group" type="checkbox">
-                        <label for="language10"><span>English</span></label>
+                        <label for="language10"><span>Dutch - nl-NL</span></label>
                     </div>
                 </li>
                 <li class="col-sm-3">
                     <div class="language-pill">
                         <input id="language11" name="checkbox-group" type="checkbox">
-                        <label for="language11"><span>English</span></label>
+                        <label for="language11"><span>日本語 - jp-JP</span></label>
                     </div>
                 </li>
                 <li class="col-sm-3">
@@ -302,7 +302,7 @@
     </div>
 </div>
 
-                    <div role="tabpanel" class="tab-pane tab-pane__configure-callback" id="configure-callback">
+                    <div role="tabpanel" class="tab-pane tab-pane__configure-callback active" id="configure-callback">
     <header class="tab-header">
         <h2 class="tab__heading">
             <span class="tab__header-title">Callbacks</span>
@@ -314,6 +314,253 @@
     <div class="tab-body tab-body__configure-callback">
 
         <div class="tab-body__row">
+
+            <!--.callback-options-list-->
+            <ul class="list-inline callback-options-list">
+                <li>
+                    <input id="conditional-callback" name="checkbox-group" type="checkbox">
+                    <label for="conditional-callback"><span>Enable Conditional Callback</span></label>
+                </li>
+                <li>
+                    <input id="traffic-split" name="checkbox-group" type="checkbox">
+                    <label for="traffic-split"><span>Enable Traffic Split</span></label>
+                </li>
+            </ul>
+            <!--/.callback-options-list-->
+
+
+            <!--.callbacks-section-->
+            <div class="callbacks-section">
+
+                <div class="callback-questions-list">
+                    <ul class="list-unstyled">
+                        <li>
+                            <h4 class="callback-questions-list__title">Form Questions:</h4>
+                        </li>
+                        <li>
+                            <select class="selectpicker condtional-callbacks-selectpicker">
+                                <option>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam commodi expedita facere fuga, iste magnam sapiente soluta voluptas voluptate voluptatum! Aliquid, architecto asperiores dolorum, ea eos et ipsam maiores obcaecati pariatur, quis quisquam repellat. Ab, aliquam amet doloremque, eligendi fugit, hic iste magni minus nemo neque nisi numquam obcaecati officia quas quasi quidem quod ratione unde! Aperiam dolor eos id iste! Assumenda illo incidunt iusto laboriosam placeat! Aperiam aspernatur, culpa distinctio error excepturi explicabo ipsa mollitia officiis omnis optio perferendis porro quasi, recusandae repellat saepe suscipit voluptatum? Accusamus assumenda autem, dolores ea, eos necessitatibus non reprehenderit saepe suscipit velit voluptate!</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                                <option>Mustard</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--.callback-answers-list-->
+                <div class="callback-answers-list">
+                    <ul class="list-unstyled">
+                        <li>
+                            <ul class="list-inline elem__table">
+                                <li class="elem__table-cell callback-answer-text">
+                                    <div class="elem__table-cell callback-answer-text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid architecto autem consequatur deleniti dignissimos et eum facilis illum ipsam, iste, laborum magni minus molestiae nam natus nemo nesciunt nihil nostrum.</p>
+                                    </div>
+                                </li>
+                                <li class="elem__table-cell callback-answer-redirection">
+                                    <input type="text" class="form-control" placeholder="Enter URL">
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <ul class="list-inline elem__table">
+                                <li class="elem__table-cell callback-answer-text">
+                                    <div class="elem__table-cell callback-answer-text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad explicabo in necessitatibus odit quasi, veniam.</p>
+                                    </div>
+                                </li>
+                                <li class="elem__table-cell callback-answer-redirection">
+                                    <select class="selectpicker callback-answer-selectpicker">
+                                        <option>Lorem ipsum dolor sit</option>
+                                        <option>Ketchup</option>
+                                        <option>Relish</option>
+                                        <option>Mustard</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <ul class="list-inline elem__table">
+                                <li class="elem__table-cell callback-answer-text">
+                                    <div class="elem__table-cell callback-answer-text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad explicabo in necessitatibus odit quasi, veniam.</p>
+                                    </div>
+                                </li>
+                                <li class="elem__table-cell callback-answer-redirection">
+                                    <select class="selectpicker callback-answer-selectpicker">
+                                        <option>Lorem ipsum dolor sit goeshere hask jlkasjf kjaklsj lajf kjasl f</option>
+                                        <option>Ketchup</option>
+                                        <option>Relish</option>
+                                        <option>Mustard</option>
+                                    </select>
+                                </li>
+                            </ul>
+                            <!--Conditionl call back URL input-->
+                            <div class="callback-asnwer__item-url">
+                                <input type="text" class="form-control" placeholder="Enter Url http://www.google.com">
+                            </div>
+                            <!--/Conditionl call back URL input-->
+
+                        </li>
+
+                        <li>
+                            <ul class="list-inline elem__table">
+                                <li class="elem__table-cell callback-answer-text">
+                                    <div class="elem__table-cell callback-answer-text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad explicabo in necessitatibus odit quasi, veniam.</p>
+                                    </div>
+                                </li>
+                                <li class="elem__table-cell callback-answer-redirection">
+                                    <select class="selectpicker callback-answer-selectpicker">
+                                        <option>Lorem ipsum dolor sit</option>
+                                        <option>Ketchup</option>
+                                        <option>Relish</option>
+                                        <option>Mustard</option>
+                                    </select>
+                                </li>
+                            </ul>
+
+                            <!--Traffic Split Item-->
+                            <div class="traffic-split-list-item">
+                                <ul class="list-inline elem__table">
+                                    <li class="elem__table-cell traffic-split__url">
+                                        <input type="text" class="form-control form-control-input-small" placeholder="http://www.google.com">
+                                    </li>
+                                    <li class="elem__table-cell traffic-split__percentage">
+                                        <input type="text" class="form-control form-control-input-small" placeholder="Percentage%">
+                                    </li>
+                                    <li class="elem__table-cell traffic-split__add-more">
+                                        <button class="btn-add-more">
+                                            <i class="ico ico-plus"></i>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--/Traffic Split Item-->
+
+                        </li>
+
+                        <li>
+                            <ul class="list-inline elem__table">
+                                <li class="elem__table-cell callback-answer-text">
+                                    <div class="elem__table-cell callback-answer-text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad explicabo in necessitatibus odit quasi, veniam.</p>
+                                    </div>
+                                </li>
+                                <li class="elem__table-cell callback-answer-redirection">
+                                    <select class="selectpicker callback-answer-selectpicker">
+                                        <option>Lorem ipsum dolor sit</option>
+                                        <option>Ketchup</option>
+                                        <option>Relish</option>
+                                        <option>Mustard</option>
+                                    </select>
+                                </li>
+                            </ul>
+
+                            <!--Traffic Split Item-->
+                            <div class="traffic-split-list-item">
+                                <ul class="list-inline elem__table">
+                                    <li class="elem__table-cell traffic-split__url">
+                                        <input type="text" class="form-control form-control-input-small" placeholder="http://www.google.com">
+                                    </li>
+                                    <li class="elem__table-cell traffic-split__percentage">
+                                        <input type="text" class="form-control form-control-input-small" placeholder="Percentage%">
+                                    </li>
+                                    <li class="elem__table-cell traffic-split__add-more">
+                                        <button class="btn-add-more">
+                                            <i class="ico ico-plus"></i>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--/Traffic Split Item-->
+
+                            <!--Traffic Split Item-->
+                            <div class="traffic-split-list-item">
+                                <ul class="list-inline elem__table">
+                                    <li class="elem__table-cell traffic-split__url">
+                                        <input type="text" class="form-control form-control-input-small" placeholder="http://www.google.com">
+                                    </li>
+                                    <li class="elem__table-cell traffic-split__percentage">
+                                        <input type="text" class="form-control form-control-input-small" placeholder="Percentage%">
+                                    </li>
+                                    <li class="elem__table-cell traffic-split__add-more">
+                                        <button class="btn-add-more">
+                                            <i class="ico ico-plus"></i>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--/Traffic Split Item-->
+
+                            <!--Traffic Split Item-->
+                            <div class="traffic-split-list-item">
+                                <ul class="list-inline elem__table">
+                                    <li class="elem__table-cell traffic-split__url">
+                                        <input type="text" class="form-control form-control-input-small" placeholder="http://www.google.com">
+                                    </li>
+                                    <li class="elem__table-cell traffic-split__percentage">
+                                        <input type="text" class="form-control form-control-input-small" placeholder="Percentage%">
+                                    </li>
+                                    <li class="elem__table-cell traffic-split__add-more">
+                                        <button class="btn-add-more">
+                                            <i class="ico ico-plus"></i>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--/Traffic Split Item-->
+
+                            <!--Traffic Split Item-->
+                            <div class="traffic-split-list-item">
+                                <ul class="list-inline elem__table">
+                                    <li class="elem__table-cell traffic-split__url">
+                                        <input type="text" class="form-control form-control-input-small" placeholder="http://www.google.com">
+                                    </li>
+                                    <li class="elem__table-cell traffic-split__percentage">
+                                        <input type="text" class="form-control form-control-input-small" placeholder="Percentage%">
+                                    </li>
+                                    <li class="elem__table-cell traffic-split__add-more">
+                                        <button class="btn-add-more">
+                                            <i class="ico ico-plus"></i>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--/Traffic Split Item-->
+
+                            <!--Traffic Split Item-->
+                            <div class="traffic-split-list-item">
+                                <ul class="list-inline elem__table">
+                                    <li class="elem__table-cell traffic-split__url">
+                                        <input type="text" class="form-control form-control-input-small" placeholder="http://www.google.com">
+                                    </li>
+                                    <li class="elem__table-cell traffic-split__percentage">
+                                        <input type="text" class="form-control form-control-input-small" placeholder="Percentage%">
+                                    </li>
+                                    <li class="elem__table-cell traffic-split__add-more">
+                                        <button class="btn-add-more">
+                                            <i class="ico ico-plus"></i>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--/Traffic Split Item-->
+
+                        </li>
+
+                    </ul>
+                </div>
+                <!--/.callback-answers-list    -->
+
+            </div>
+            <!--/.callbacks-section-->
+
+
+
         </div>
 
     </div>

@@ -51,3 +51,142 @@
 .languages-row {
   margin-left: -10px;
 }
+
+.callback-options-list {
+  margin-bottom: 25px;
+
+  > li {
+    + li {
+      margin-left: 30px;
+    }
+  }
+}
+
+$callbacks-question-width: 650px;
+.callback-questions-list {
+  margin-bottom: 25px;
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: $callbacks-question-width;
+
+    .dropdown-toggle .filter-option{
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+
+  .bootstrap-select.btn-group .dropdown-menu .inner > li .text{
+    width: $callbacks-question-width - 45;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+$callbacks-answer-width: 220px;
+.callback-answers-list {
+  > ul {
+    width: $callbacks-question-width;
+    > li {
+      margin-bottom: 25px;
+      padding: 10px 5px 10px 10px;
+      background: $callback-listItem-bg;
+      border-radius: $radius;
+
+      > .traffic-split-list-item {
+        .btn-add-more {
+          visibility: hidden;
+          pointer-events: none;
+        }
+        &:last-of-type {
+          .btn-add-more {
+            visibility: visible;
+            pointer-events: all;
+          }
+        }
+      }
+
+    }
+
+    .callback-answer-redirection {
+      width: 220px;
+    }
+  }
+
+
+  .elem__table {
+    width: 100%;
+    display: table;
+    padding-left: 5px;
+    > .elem__table-cell {
+      display: table-cell;
+      vertical-align: middle;
+      padding: 0;
+      p {
+        margin: 0;
+      }
+    }
+
+    > .callback-answer-text {
+      padding-right: 15px;
+    }
+  }
+
+
+
+  .callback-asnwer__item-url {
+    margin-top: 10px;
+    padding-right: 5px;
+  }
+
+  .traffic-split-list-item {
+    padding-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      margin-top: -3px;
+      width: 6px;
+      height: 6px;
+      background: $bullet;
+      border-radius: 50%;
+    }
+    > ul {
+      .traffic-split__url,
+      .traffic-split__percentage {
+        padding-right: 15px;
+        .form-control {
+          background: transparent;
+        }
+      }
+      .traffic-split__url {
+        width: 450px;
+      }
+    }
+  }
+
+
+  .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: $callbacks-answer-width;
+
+    .dropdown-toggle .filter-option{
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+
+  .bootstrap-select.btn-group .dropdown-menu .inner > li .text{
+    width: $callbacks-answer-width - 45;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

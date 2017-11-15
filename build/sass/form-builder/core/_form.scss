@@ -7,12 +7,12 @@
   &, &.open {
     .dropdown-toggle {
       border: 1px solid $border;
-      background: transparent;
+      background: $white;
       box-shadow: none;
       &:hover,
       &:focus,
       &:active {
-        background: transparent;
+        background:$white;
         outline: none !important;
         border-color: $border;
       }
@@ -20,7 +20,7 @@
   }
 
   > .dropdown-toggle {
-    padding: 10px 25px 10px 15px;
+    padding: 10px 30px 10px 15px;
     position: relative;
   }
 
@@ -314,6 +314,7 @@
   padding: 10px 15px 5px 15px;
   width: 100%;
   min-width: 160px;
+  font-size: $font-sm;
 
   [type="radio"],
   [type = "checkbox"] {
