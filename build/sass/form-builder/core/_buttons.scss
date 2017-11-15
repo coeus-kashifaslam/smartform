@@ -45,3 +45,25 @@
     color: $white;
   }
 }
+
+
+.btn-add-more {
+  width: 40px;
+  height: 35px;
+  border: 0 none;
+  box-shadow: none;
+  border-radius: $radius;
+  background: $btn-add-more;
+  .ico {
+    color: $white;
+    text-align: center;
+    padding-top: 15px;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    background: $btn-add-more;
+    outline: none;
+    box-shadow: none;
+  }
+}

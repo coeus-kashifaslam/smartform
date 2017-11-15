@@ -314,6 +314,8 @@
     <div class="tab-body tab-body__configure-callback">
 
         <div class="tab-body__row">
+
+            <!--.callback-options-list-->
             <ul class="list-inline callback-options-list">
                 <li>
                     <input id="conditional-callback" name="checkbox-group" type="checkbox">
@@ -324,31 +326,240 @@
                     <label for="traffic-split"><span>Enable Traffic Split</span></label>
                 </li>
             </ul>
+            <!--/.callback-options-list-->
 
-            <div class="row">
-                <div class="callbacks-section col-xs-10">
-                    <div class="callback-questions-list">
-                        <ul class="list-unstyled">
-                            <li>
-                                <h4>Form Questions:</h4>
-                            </li>
-                            <li>
-                                <select class="selectpicker condtional-callbacks-selectpicker">
-                                    <option>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam commodi expedita facere fuga, iste magnam sapiente soluta voluptas voluptate voluptatum! Aliquid, architecto asperiores dolorum, ea eos et ipsam maiores obcaecati pariatur, quis quisquam repellat. Ab, aliquam amet doloremque, eligendi fugit, hic iste magni minus nemo neque nisi numquam obcaecati officia quas quasi quidem quod ratione unde! Aperiam dolor eos id iste! Assumenda illo incidunt iusto laboriosam placeat! Aperiam aspernatur, culpa distinctio error excepturi explicabo ipsa mollitia officiis omnis optio perferendis porro quasi, recusandae repellat saepe suscipit voluptatum? Accusamus assumenda autem, dolores ea, eos necessitatibus non reprehenderit saepe suscipit velit voluptate!</option>
-                                    <option>Ketchup</option>
-                                    <option>Relish</option>
-                                    <option>Mustard</option>
-                                </select>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="callback-answers-list">
-                        <ul class="list-unstyled">
-                            <li></li>
-                        </ul>
-                    </div>
+
+            <!--.callbacks-section-->
+            <div class="callbacks-section">
+
+                <div class="callback-questions-list">
+                    <ul class="list-unstyled">
+                        <li>
+                            <h4 class="callback-questions-list__title">Form Questions:</h4>
+                        </li>
+                        <li>
+                            <select class="selectpicker condtional-callbacks-selectpicker">
+                                <option>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam commodi expedita facere fuga, iste magnam sapiente soluta voluptas voluptate voluptatum! Aliquid, architecto asperiores dolorum, ea eos et ipsam maiores obcaecati pariatur, quis quisquam repellat. Ab, aliquam amet doloremque, eligendi fugit, hic iste magni minus nemo neque nisi numquam obcaecati officia quas quasi quidem quod ratione unde! Aperiam dolor eos id iste! Assumenda illo incidunt iusto laboriosam placeat! Aperiam aspernatur, culpa distinctio error excepturi explicabo ipsa mollitia officiis omnis optio perferendis porro quasi, recusandae repellat saepe suscipit voluptatum? Accusamus assumenda autem, dolores ea, eos necessitatibus non reprehenderit saepe suscipit velit voluptate!</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                                <option>Mustard</option>
+                            </select>
+                        </li>
+                    </ul>
                 </div>
+
+                <!--.callback-answers-list-->
+                <div class="callback-answers-list">
+                    <ul class="list-unstyled">
+                        <li>
+                            <ul class="list-inline elem__table">
+                                <li class="elem__table-cell callback-answer-text">
+                                    <div class="elem__table-cell callback-answer-text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad explicabo in necessitatibus odit quasi, veniam.</p>
+                                    </div>
+                                </li>
+                                <li class="elem__table-cell callback-answer-redirection">
+                                    <input type="text" class="form-control" placeholder="Enter URL">
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <ul class="list-inline elem__table">
+                                <li class="elem__table-cell callback-answer-text">
+                                    <div class="elem__table-cell callback-answer-text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad explicabo in necessitatibus odit quasi, veniam.</p>
+                                    </div>
+                                </li>
+                                <li class="elem__table-cell callback-answer-redirection">
+                                    <select class="selectpicker callback-answer-selectpicker">
+                                        <option>Lorem ipsum dolor sit</option>
+                                        <option>Ketchup</option>
+                                        <option>Relish</option>
+                                        <option>Mustard</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <ul class="list-inline elem__table">
+                                <li class="elem__table-cell callback-answer-text">
+                                    <div class="elem__table-cell callback-answer-text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad explicabo in necessitatibus odit quasi, veniam.</p>
+                                    </div>
+                                </li>
+                                <li class="elem__table-cell callback-answer-redirection">
+                                    <select class="selectpicker callback-answer-selectpicker">
+                                        <option>Lorem ipsum dolor sit</option>
+                                        <option>Ketchup</option>
+                                        <option>Relish</option>
+                                        <option>Mustard</option>
+                                    </select>
+                                </li>
+                            </ul>
+                            <!--Conditionl call back URL input-->
+                            <div class="callback-asnwer__item-url">
+                                <input type="text" class="form-control" placeholder="Enter Url http://www.google.com">
+                            </div>
+                            <!--/Conditionl call back URL input-->
+
+                        </li>
+
+                        <li>
+                            <ul class="list-inline elem__table">
+                                <li class="elem__table-cell callback-answer-text">
+                                    <div class="elem__table-cell callback-answer-text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad explicabo in necessitatibus odit quasi, veniam.</p>
+                                    </div>
+                                </li>
+                                <li class="elem__table-cell callback-answer-redirection">
+                                    <select class="selectpicker callback-answer-selectpicker">
+                                        <option>Lorem ipsum dolor sit</option>
+                                        <option>Ketchup</option>
+                                        <option>Relish</option>
+                                        <option>Mustard</option>
+                                    </select>
+                                </li>
+                            </ul>
+
+                            <!--Traffic Split Item-->
+                            <div class="traffic-split-list-item">
+                                <ul class="list-inline elem__table">
+                                    <li class="elem__table-cell traffic-split__url">
+                                        <input type="text" class="form-control form-control-input-small" placeholder="http://www.google.com">
+                                    </li>
+                                    <li class="elem__table-cell traffic-split__percentage">
+                                        <input type="text" class="form-control form-control-input-small" placeholder="Percentage%">
+                                    </li>
+                                    <li class="elem__table-cell traffic-split__add-more">
+                                        <button class="btn-add-more">
+                                            <i class="ico ico-plus"></i>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--/Traffic Split Item-->
+
+                        </li>
+
+                        <li>
+                            <ul class="list-inline elem__table">
+                                <li class="elem__table-cell callback-answer-text">
+                                    <div class="elem__table-cell callback-answer-text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad explicabo in necessitatibus odit quasi, veniam.</p>
+                                    </div>
+                                </li>
+                                <li class="elem__table-cell callback-answer-redirection">
+                                    <select class="selectpicker callback-answer-selectpicker">
+                                        <option>Lorem ipsum dolor sit</option>
+                                        <option>Ketchup</option>
+                                        <option>Relish</option>
+                                        <option>Mustard</option>
+                                    </select>
+                                </li>
+                            </ul>
+
+                            <!--Traffic Split Item-->
+                            <div class="traffic-split-list-item">
+                                <ul class="list-inline elem__table">
+                                    <li class="elem__table-cell traffic-split__url">
+                                        <input type="text" class="form-control form-control-input-small" placeholder="http://www.google.com">
+                                    </li>
+                                    <li class="elem__table-cell traffic-split__percentage">
+                                        <input type="text" class="form-control form-control-input-small" placeholder="Percentage%">
+                                    </li>
+                                    <li class="elem__table-cell traffic-split__add-more">
+                                        <button class="btn-add-more">
+                                            <i class="ico ico-plus"></i>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--/Traffic Split Item-->
+
+                            <!--Traffic Split Item-->
+                            <div class="traffic-split-list-item">
+                                <ul class="list-inline elem__table">
+                                    <li class="elem__table-cell traffic-split__url">
+                                        <input type="text" class="form-control form-control-input-small" placeholder="http://www.google.com">
+                                    </li>
+                                    <li class="elem__table-cell traffic-split__percentage">
+                                        <input type="text" class="form-control form-control-input-small" placeholder="Percentage%">
+                                    </li>
+                                    <li class="elem__table-cell traffic-split__add-more">
+                                        <button class="btn-add-more">
+                                            <i class="ico ico-plus"></i>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--/Traffic Split Item-->
+
+                            <!--Traffic Split Item-->
+                            <div class="traffic-split-list-item">
+                                <ul class="list-inline elem__table">
+                                    <li class="elem__table-cell traffic-split__url">
+                                        <input type="text" class="form-control form-control-input-small" placeholder="http://www.google.com">
+                                    </li>
+                                    <li class="elem__table-cell traffic-split__percentage">
+                                        <input type="text" class="form-control form-control-input-small" placeholder="Percentage%">
+                                    </li>
+                                    <li class="elem__table-cell traffic-split__add-more">
+                                        <button class="btn-add-more">
+                                            <i class="ico ico-plus"></i>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--/Traffic Split Item-->
+
+                            <!--Traffic Split Item-->
+                            <div class="traffic-split-list-item">
+                                <ul class="list-inline elem__table">
+                                    <li class="elem__table-cell traffic-split__url">
+                                        <input type="text" class="form-control form-control-input-small" placeholder="http://www.google.com">
+                                    </li>
+                                    <li class="elem__table-cell traffic-split__percentage">
+                                        <input type="text" class="form-control form-control-input-small" placeholder="Percentage%">
+                                    </li>
+                                    <li class="elem__table-cell traffic-split__add-more">
+                                        <button class="btn-add-more">
+                                            <i class="ico ico-plus"></i>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--/Traffic Split Item-->
+
+                            <!--Traffic Split Item-->
+                            <div class="traffic-split-list-item">
+                                <ul class="list-inline elem__table">
+                                    <li class="elem__table-cell traffic-split__url">
+                                        <input type="text" class="form-control form-control-input-small" placeholder="http://www.google.com">
+                                    </li>
+                                    <li class="elem__table-cell traffic-split__percentage">
+                                        <input type="text" class="form-control form-control-input-small" placeholder="Percentage%">
+                                    </li>
+                                    <li class="elem__table-cell traffic-split__add-more">
+                                        <button class="btn-add-more">
+                                            <i class="ico ico-plus"></i>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--/Traffic Split Item-->
+
+                        </li>
+
+                    </ul>
+                </div>
+                <!--/.callback-answers-list    -->
+
             </div>
+            <!--/.callbacks-section-->
+
+
 
         </div>
 

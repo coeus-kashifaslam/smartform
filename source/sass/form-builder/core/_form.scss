@@ -7,7 +7,7 @@
   &, &.open {
     .dropdown-toggle {
       border: 1px solid $border;
-      background: transparent;
+      background: $white;
       box-shadow: none;
       &:hover,
       &:focus,
