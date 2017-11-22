@@ -98,8 +98,8 @@
         <!-- Sidebar -->
         <div class="section-table-cell__sidebar section-table-cell section-content__sidebar">
             <div class="section-table-cell__sidebar-container section-content__sidebar-container">
-                <div class="section-table-cell__sidebar-list section-content__sidebar-list list-group">
-                    <a href="#content-general-settings" class="section-content__sidebar-general-settings list-group-item active" aria-controls="content__general-settings" role="tab" data-toggle="tab">
+                <div class="section-table-cell__sidebar-list section-content__sidebar-list list-group" role="tablist">
+                    <a href="#content-general-settings" class="section-content__sidebar-general-settings list-group-item active" aria-controls="content-general-settings" role="tab" data-toggle="tab">
                         <span class="item-icon"><i class="ico ico-settings"></i></span>
                         <span class="item-text">General Settings</span>
                     </a>
@@ -126,7 +126,7 @@
     <header class="tab-header">
         <h2 class="tab__heading">
             <span class="tab__header-title">General Settings</span>
-            <p class="tab__header-excerpt">Edit General Settins Here.</p>
+            <span class="tab__header-excerpt">Edit General Settins Here.</span>
         </h2>
         <button class="btn btn-fill btn-right-centered">Save</button>
     </header>
@@ -167,7 +167,7 @@
     <header class="tab-header">
         <h2 class="tab__heading">
             <span class="tab__header-title">Custom Header</span>
-            <p class="tab__header-excerpt">Edit Custom Header Here.</p>
+            <span class="tab__header-excerpt">Edit Custom Header Here.</span>
         </h2>
         <button class="btn btn-fill btn-right-centered">Save</button>
     </header>
@@ -208,7 +208,7 @@
     <header class="tab-header">
         <h2 class="tab__heading">
             <span class="tab__header-title">Custom Footer</span>
-            <p class="tab__header-excerpt">Edit Custom Footer Here.</p>
+            <span class="tab__header-excerpt">Edit Custom Footer Here.</span>
         </h2>
         <button class="btn btn-fill btn-right-centered">Save</button>
     </header>
@@ -389,6 +389,14 @@
                                             <label for="feedback-email-validation"><span>Feedback Email Validation</span></label>
                                         </li>
                                     </ul>
+                                </div>
+
+                                <!-- article item -->
+                                <div class="article-item">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                    </div>
                                 </div>
 
                             </div>

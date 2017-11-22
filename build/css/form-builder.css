@@ -10029,6 +10029,7 @@ h5, .h5 {
     font-family: Roboto;
     margin-top: 10px;
     text-transform: none;
+    display: block;
 }
 
 .tab-header .btn-right-centered {
