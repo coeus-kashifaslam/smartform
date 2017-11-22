@@ -47,6 +47,11 @@
   .modal-body {
     max-height: calc(100vh - 200px);
     overflow-y: auto;
+
+    > .row {
+      margin-left: -10px;
+      margin-right: -10px;
+    }
   }
 
   .modal-footer {
@@ -54,7 +59,16 @@
   }
 
 }
+.modal-header__language-selector {
+  position: absolute;
+  top: 6px;
+  right: 50px;
+}
 
+.modal-col {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 .modal-col-title,
 .article-item-title {
   margin-top: 0;
@@ -64,6 +78,16 @@
   padding: 15px 0;
   background: $white;
   border-radius: $radius;
+
+  input[type='checkbox'] {
+    + label {
+      font-weight: bold;
+      font-size: $font-sm;
+      &:before {
+        font-weight: normal;
+      }
+    }
+  }
 }
 
 
@@ -75,10 +99,6 @@
     .article-item-selectpicker {
       display: table-cell;
       vertical-align: middle;
-    }
-
-    .article-item-selectpicker {
-      text-align: right;
     }
   }
 }
@@ -101,4 +121,25 @@
 
 .article-item-header {
   margin-bottom: 15px;
+  position: relative;
+  .article-item-toggle {
+    position: absolute;
+    right: -9px;
+    top: -6px;
+  }
 }
+
+
+.modal-checkbox-list {
+  > li {
+    margin-bottom: 5px;
+  }
+}
+
+
+
+
+
+
+
+//Ranking scale

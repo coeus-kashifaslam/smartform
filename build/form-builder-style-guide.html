@@ -481,7 +481,8 @@
 
 
 
-<div class="modal fade modal__form-builder" tabindex="-1" role="dialog">
+
+<div class="modal fade modal__form-builder modal__ranking-scale" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -490,11 +491,25 @@
                     <span class="modal-title-icon"><i class="ico ico-ranking-scale"></i></span>
                     <span class="modal-title-text">Ranking Scale</span>
                 </h2>
+                <div class="modal-header__language-selector">
+                    <ul class="list-inline">
+                        <li>Select language to add translations</li>
+                        <li>
+                            <select class="selectpicker">
+                                <option>Select Language</option>
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                                <option>Mustard</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="modal-body">
                 <div class="row">
                     <!-- Modal Column Single -->
-                    <div class="modal-col col-xs-6">
+                    <div class="modal-col col-xs-4">
                         <section class="modal-section">
                             <header class="modal-col-header">
                                 <h2 class="modal-col-title">Content</h2>
@@ -502,18 +517,9 @@
                             <div class="modal-col-body">
 
                                 <!-- article item -->
-                                <article class="article-item item-type__grid">
-                                    <header class="article-item-header item-type__grid-row">
+                                <article class="article-item ">
+                                    <header class="article-item-header">
                                         <h4 class="article-item-title">Question</h4>
-                                        <div class="article-item-selectpicker">
-                                            <select class="selectpicker">
-                                                <option>Select Language</option>
-                                                <option>Mustard</option>
-                                                <option>Ketchup</option>
-                                                <option>Relish</option>
-                                                <option>Mustard</option>
-                                            </select>
-                                        </div>
                                     </header>
                                     <div class="article-item-body">
                                         <div class="form-group">
@@ -523,17 +529,36 @@
                                 </article>
 
                                 <!-- article item -->
-                                <article class="article-item item-type__grid">
-                                    <header class="article-item-header item-type__grid-row">
+                                <article class="article-item">
+                                    <header class="article-item-header">
                                         <h4 class="article-item-title">Help Text</h4>
-                                        <div class="article-item-selectpicker">
-                                            <select class="selectpicker">
-                                                <option>Select Language</option>
-                                                <option>Mustard</option>
-                                                <option>Ketchup</option>
-                                                <option>Relish</option>
-                                                <option>Mustard</option>
-                                            </select>
+                                    </header>
+                                    <div class="article-item-body">
+                                        <div class="form-group">
+                                            <textarea class="form-control form-control-textarea" placeholder="Enter text"></textarea>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- article item -->
+                                <article class="article-item">
+                                    <header class="article-item-header">
+                                        <h4 class="article-item-title">Placeholder</h4>
+                                    </header>
+                                    <div class="article-item-body">
+                                        <div class="form-group">
+                                            <textarea class="form-control form-control-textarea" placeholder="Enter text"></textarea>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- article item -->
+                                <article class="article-item ">
+                                    <header class="article-item-header">
+                                        <h4 class="article-item-title">Error Text</h4>
+                                        <div class="article-item-toggle">
+                                            <input id="toggle1" name="checkbox-group" type="checkbox">
+                                            <label for="toggle1"><span></span></label>
                                         </div>
                                     </header>
                                     <div class="article-item-body">
@@ -544,17 +569,12 @@
                                 </article>
 
                                 <!-- article item -->
-                                <article class="article-item item-type__grid">
-                                    <header class="article-item-header item-type__grid-row">
-                                        <h4 class="article-item-title">Placeholder</h4>
-                                        <div class="article-item-selectpicker">
-                                            <select class="selectpicker">
-                                                <option>Select Language</option>
-                                                <option>Mustard</option>
-                                                <option>Ketchup</option>
-                                                <option>Relish</option>
-                                                <option>Mustard</option>
-                                            </select>
+                                <article class="article-item ">
+                                    <header class="article-item-header">
+                                        <h4 class="article-item-title">Allow not to Answer</h4>
+                                        <div class="article-item-toggle">
+                                            <input id="toggle2" name="checkbox-group" type="checkbox">
+                                            <label for="toggle2"><span></span></label>
                                         </div>
                                     </header>
                                     <div class="article-item-body">
@@ -570,7 +590,40 @@
                     <!-- Modal Column Single -->
 
                     <!-- Modal Column Single -->
-                    <div class="modal-col col-xs-6">
+                    <div class="modal-col col-xs-4">
+                        <section class="modal-section">
+                            <header class="modal-col-header">
+                                <h2 class="modal-col-title">Rating</h2>
+                            </header>
+                            <div class="modal-col-body">
+
+                                <!-- article item -->
+                                <div class="article-item">
+                                    <ul class="list-unstyled modal-checkbox-list">
+                                        <li>
+                                            <input id="shapes-instead-title" name="checkbox-group" type="checkbox">
+                                            <label for="shapes-instead-title"><span>Shapes Instead of Title</span></label>
+                                        </li>
+
+                                        <li>
+                                            <input id="different-shapes" name="checkbox-group" type="checkbox">
+                                            <label for="different-shapes"><span>Different Shape for Each Option</span></label>
+                                        </li>
+
+                                        <li>
+                                            <input id="feedback-email-validation" name="checkbox-group" type="checkbox">
+                                            <label for="feedback-email-validation"><span>Feedback Email Validation</span></label>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </section>
+                    </div>
+                    <!-- Modal Column Single -->
+
+                    <!-- Modal Column Single -->
+                    <div class="modal-col col-xs-4">
                         <section class="modal-section">
                             <header class="modal-col-header">
                                 <h2 class="modal-col-title">Content</h2>
@@ -579,7 +632,7 @@
 
                                 <!-- article item -->
                                 <article class="article-item">
-                                    <header class="article-item-header item-type__grid-row">
+                                    <header class="article-item-header">
                                         <h4 class="article-item-title">Color Picker</h4>
                                     </header>
                                     <div class="article-item-body">
@@ -596,7 +649,6 @@
                         </section>
                     </div>
                     <!-- Modal Column Single -->
-
                 </div>
             </div>
             <div class="modal-footer">
