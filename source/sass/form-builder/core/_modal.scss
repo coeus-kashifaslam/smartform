@@ -42,6 +42,12 @@
         color: $modal-title;
       }
     }
+
+    .modal-title-icon {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 3px;
+    }
   }
 
   .modal-body {
