@@ -59,6 +59,7 @@
   }
 
 }
+
 .modal-header__language-selector {
   position: absolute;
   top: 6px;
@@ -104,7 +105,7 @@
 
 .article-item {
   padding: 0 15px;
-  border-bottom: 1px solid $border;
+  border-bottom: 1px solid $border-light;
   margin-bottom: 15px;
 }
 
