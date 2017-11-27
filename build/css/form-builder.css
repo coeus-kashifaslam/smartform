@@ -10265,7 +10265,6 @@ h5, .h5 {
 .modal-col-body {
     padding: 15px 0;
     background: #fff;
-    border-radius: 5px;
 }
 
 .modal-col-body label {
@@ -10397,6 +10396,10 @@ h5, .h5 {
 
 .modal__free-text .modal-body-full div.article-item {
     margin-bottom: 30px;
+}
+
+.modal__free-text .modal-col-full, .modal__picture .modal-col-full {
+    margin-bottom: 20px;
 }
 
 .form-components__list > .form-component__item {

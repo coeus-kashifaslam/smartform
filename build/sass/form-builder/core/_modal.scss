@@ -93,7 +93,7 @@
 .modal-col-body {
   padding: 15px 0;
   background: $white;
-  border-radius: $radius;
+  //border-radius: $radius;
 
   label {
     font-weight: bold;
@@ -267,5 +267,12 @@
     div.article-item {
       margin-bottom: 30px;
     }
+  }
+}
+
+.modal__free-text,
+.modal__picture {
+  .modal-col-full {
+    margin-bottom: 20px;
   }
 }
