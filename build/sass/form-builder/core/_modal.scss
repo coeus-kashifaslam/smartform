@@ -5,6 +5,13 @@
     width: 90%;
   }
 
+  &.modal-small {
+    .modal-dialog {
+      min-width: 830px;
+      width: 830px;
+    }
+  }
+
 
   .modal-content {
     background: $bg-element;
