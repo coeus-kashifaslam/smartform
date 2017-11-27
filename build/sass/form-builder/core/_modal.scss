@@ -66,10 +66,6 @@
   right: 45px;
 }
 
-.modal-col {
-  padding-left: 10px;
-  padding-right: 10px;
-}
 .modal-col-title,
 .article-item-title {
   margin-top: 0;
@@ -137,8 +133,33 @@
 
 
 
-
-
+//Making the modal columns height equal
+.modal-col-header {
+  background: $bg-element;
+  height: 45px;
+  .modal-col-title {
+    line-height: 30px;
+  }
+}
+.modal-body {
+  > .row {
+    display: table;
+  }
+}
+.modal-col {
+  display: table-cell;
+  float: none;
+  background: $white;
+  border-left: 10px solid $bg-element;
+  border-right: 10px solid $bg-element;
+  border-bottom: 20px solid $bg-element;
+  padding-left: 0;
+  padding-right: 0;
+  min-width: 386px;
+  &.bg-transparent {
+    background: transparent;
+  }
+}
 
 
 //Ranking scale
@@ -151,7 +172,8 @@
     }
   }
 
-  input[type='checkbox'] {
+  input[type='checkbox'],
+  input[type='radio'] {
     + label {
       font-family: $font-bold;
       font-size: $font-sm;
@@ -204,4 +226,10 @@
       }
     }
   }
+}
+
+
+
+.input-characters {
+  width: 90px;
 }

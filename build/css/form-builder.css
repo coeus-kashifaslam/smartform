@@ -10243,11 +10243,6 @@ h5, .h5 {
     right: 45px;
 }
 
-.modal-col {
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
 .modal-col-title, .article-item-title {
     margin-top: 0;
 }
@@ -10303,6 +10298,35 @@ h5, .h5 {
     margin-bottom: 5px;
 }
 
+.modal-col-header {
+    background: #f4f4f4;
+    height: 45px;
+}
+
+.modal-col-header .modal-col-title {
+    line-height: 30px;
+}
+
+.modal-body > .row {
+    display: table;
+}
+
+.modal-col {
+    display: table-cell;
+    float: none;
+    background: #fff;
+    border-left: 10px solid #f4f4f4;
+    border-right: 10px solid #f4f4f4;
+    border-bottom: 20px solid #f4f4f4;
+    padding-left: 0;
+    padding-right: 0;
+    min-width: 386px;
+}
+
+.modal-col.bg-transparent {
+    background: transparent;
+}
+
 .modal-col-body .form-group {
     margin-bottom: 15px;
 }
@@ -10311,12 +10335,12 @@ h5, .h5 {
     margin-bottom: 10px;
 }
 
-.modal-col-body input[type=checkbox] + label {
+.modal-col-body input[type=checkbox] + label, .modal-col-body input[type=radio] + label {
     font-family: Roboto-Bold;
     font-size: 14px;
 }
 
-.modal-col-body input[type=checkbox] + label:before {
+.modal-col-body input[type=checkbox] + label:before, .modal-col-body input[type=radio] + label:before {
     font-weight: 400;
 }
 
@@ -10345,6 +10369,10 @@ h5, .h5 {
     display: inline-block;
     padding-left: 0;
     line-height: 16px;
+}
+
+.input-characters {
+    width: 90px;
 }
 
 .form-components__list > .form-component__item {
