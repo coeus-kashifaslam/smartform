@@ -74,7 +74,7 @@
             </div>
             <div class="col-xs-6 navigation-center">
                 <ul class="nav nav-pills main-nav">
-                    <li role="presentation" class=""><a href="form-builder-build.html">Build</a></li>
+                    <li role="presentation" class=""><a href="form-builder.html">Build</a></li>
                     <li role="presentation" class=""><a href="form-builder-design.html">Design</a></li>
                     <li role="presentation" class="active"><a href="form-builder-config.html">Configure</a></li>
                     <li role="presentation" class=""><a href="form-builder-content.html">Content</a></li>
@@ -591,9 +591,679 @@
 
 
 
-
-
 <div class="modal fade modal__form-builder modal__ranking-scale" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="ico ico-times"></span></button>
+                <h2 class="modal-title h1">
+                    <span class="modal-title-icon"><i class="ico ico-ranking-scale"></i></span>
+                    <span class="modal-title-text">Ranking Scale</span>
+                </h2>
+                <div class="modal-header__language-selector">
+                    <ul class="list-inline">
+                        <li>Select language to add translations</li>
+                        <li>
+                            <select class="selectpicker">
+                                <option>Select Language</option>
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                                <option>Mustard</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <!-- Modal Column Single -->
+                    <div class="modal-col col-xs-4">
+                        <section class="modal-section">
+                            <header class="modal-col-header">
+                                <h2 class="modal-col-title">Content</h2>
+                            </header>
+                            <div class="modal-col-body">
+
+                                <!-- article item -->
+                                <article class="article-item ">
+                                    <header class="article-item-header">
+                                        <h4 class="article-item-title">Question</h4>
+                                    </header>
+                                    <div class="article-item-body">
+                                        <div class="form-group">
+                                            <textarea class="form-control form-control-textarea" placeholder="Enter text"></textarea>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- article item -->
+                                <article class="article-item">
+                                    <header class="article-item-header">
+                                        <h4 class="article-item-title">Help Text</h4>
+                                    </header>
+                                    <div class="article-item-body">
+                                        <div class="form-group">
+                                            <textarea class="form-control form-control-textarea" placeholder="Enter text"></textarea>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- article item -->
+                                <article class="article-item">
+                                    <header class="article-item-header">
+                                        <h4 class="article-item-title">Placeholder</h4>
+                                    </header>
+                                    <div class="article-item-body">
+                                        <div class="form-group">
+                                            <textarea class="form-control form-control-textarea" placeholder="Enter text"></textarea>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- article item -->
+                                <article class="article-item ">
+                                    <header class="article-item-header">
+                                        <h4 class="article-item-title">Error Text</h4>
+                                        <div class="article-item-toggle">
+                                            <input id="toggle1" name="checkbox-group" type="checkbox">
+                                            <label for="toggle1"><span></span></label>
+                                        </div>
+                                    </header>
+                                    <div class="article-item-body">
+                                        <div class="form-group">
+                                            <textarea class="form-control form-control-textarea" placeholder="Enter text"></textarea>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- article item -->
+                                <article class="article-item ">
+                                    <header class="article-item-header">
+                                        <h4 class="article-item-title">Allow not to Answer</h4>
+                                        <div class="article-item-toggle">
+                                            <input id="toggle2" name="checkbox-group" type="checkbox">
+                                            <label for="toggle2"><span></span></label>
+                                        </div>
+                                    </header>
+                                    <div class="article-item-body">
+                                        <div class="form-group">
+                                            <textarea class="form-control form-control-textarea" placeholder="Enter text"></textarea>
+                                        </div>
+                                    </div>
+                                </article>
+
+                            </div>
+                        </section>
+                    </div>
+                    <!-- Modal Column Single -->
+
+                    <!-- Modal Column Single -->
+                    <div class="modal-col col-xs-4">
+                        <section class="modal-section">
+                            <header class="modal-col-header">
+                                <h2 class="modal-col-title">Rating</h2>
+                            </header>
+                            <div class="modal-col-body">
+
+                                <!-- article item -->
+                                <div class="article-item">
+                                    <ul class="list-unstyled modal-checkbox-list">
+                                        <li>
+                                            <input id="shapes-instead-title" name="checkbox-group" type="checkbox">
+                                            <label for="shapes-instead-title"><span>Shapes Instead of Title</span></label>
+                                        </li>
+
+                                        <li>
+                                            <input id="different-shapes" name="checkbox-group" type="checkbox">
+                                            <label for="different-shapes"><span>Different Shape for Each Option</span></label>
+                                        </li>
+
+                                        <li>
+                                            <input id="feedback-email-validation" name="checkbox-group" type="checkbox">
+                                            <label for="feedback-email-validation"><span>Feedback Email Validation</span></label>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- article item -->
+                                <div class="article-item">
+                                    <div class="form-group selectpicker-block">
+                                        <h4>Feedback</h4>
+                                        <select class="selectpicker">
+                                            <option>Select Language</option>
+                                            <option>Mustard</option>
+                                            <option>Ketchup</option>
+                                            <option>Relish</option>
+                                            <option>Mustard</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group selectpicker-block">
+                                        <h4>Show Mailbox At</h4>
+                                        <select class="selectpicker">
+                                            <option>Select Language</option>
+                                            <option>Mustard</option>
+                                            <option>Ketchup</option>
+                                            <option>Relish</option>
+                                            <option>Mustard</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group selectpicker-block">
+                                        <h4>Range</h4>
+                                        <select class="selectpicker">
+                                            <option>Select Language</option>
+                                            <option>Mustard</option>
+                                            <option>Ketchup</option>
+                                            <option>Relish</option>
+                                            <option>Mustard</option>
+                                        </select>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="col-xs-6 tooltips-col">
+                                            <ul class="list-unstyled">
+                                                <li><h4>Tooltip</h4></li>
+                                                <li><input type="text" class="form-control" placeholder="Tooltip Text"></li>
+                                                <li><input type="text" class="form-control" placeholder="Tooltip Text"></li>
+                                                <li><input type="text" class="form-control" placeholder="Tooltip Text"></li>
+                                                <li><input type="text" class="form-control" placeholder="Tooltip Text"></li>
+                                                <li><input type="text" class="form-control" placeholder="Tooltip Text"></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xs-6 shapes-col">
+                                            <ul class="list-unstyled">
+                                                <li><h4>Shapes</h4></li>
+                                                <li class="selectpicker-block">
+                                                    <select class="selectpicker">
+                                                        <option>Shape</option>
+                                                        <option>Mustard</option>
+                                                        <option>Ketchup</option>
+                                                        <option>Relish</option>
+                                                        <option>Mustard</option>
+                                                    </select>
+                                                </li>
+                                                <li class="selectpicker-block">
+                                                    <select class="selectpicker">
+                                                        <option>Shape</option>
+                                                        <option>Mustard</option>
+                                                        <option>Ketchup</option>
+                                                        <option>Relish</option>
+                                                        <option>Mustard</option>
+                                                    </select>
+                                                </li>
+                                                <li class="selectpicker-block">
+                                                    <select class="selectpicker">
+                                                        <option>Shape</option>
+                                                        <option>Mustard</option>
+                                                        <option>Ketchup</option>
+                                                        <option>Relish</option>
+                                                        <option>Mustard</option>
+                                                    </select>
+                                                </li>
+                                                <li class="selectpicker-block">
+                                                    <select class="selectpicker">
+                                                        <option>Shape</option>
+                                                        <option>Mustard</option>
+                                                        <option>Ketchup</option>
+                                                        <option>Relish</option>
+                                                        <option>Mustard</option>
+                                                    </select>
+                                                </li>
+                                                <li class="selectpicker-block">
+                                                    <select class="selectpicker">
+                                                        <option>Shape</option>
+                                                        <option>Mustard</option>
+                                                        <option>Ketchup</option>
+                                                        <option>Relish</option>
+                                                        <option>Mustard</option>
+                                                    </select>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </section>
+                    </div>
+                    <!-- Modal Column Single -->
+
+                    <!-- Modal Column Single -->
+                    <div class="modal-col col-xs-4">
+                        <section class="modal-section">
+                            <header class="modal-col-header">
+                                <h2 class="modal-col-title">General</h2>
+                            </header>
+                            <div class="modal-col-body">
+
+                                <!-- article item -->
+                                <div class="article-item">
+                                    <ul class="list-unstyled modal-checkbox-list">
+                                        <li>
+                                            <input id="randomize-children" name="checkbox-group" type="checkbox">
+                                            <label for="randomize-children"><span>Randomize Children</span></label>
+                                        </li>
+
+                                        <li>
+                                            <input id="apply-axs-formula" name="checkbox-group" type="checkbox">
+                                            <label for="apply-axs-formula"><span>Apply AXA Formula</span></label>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- article item -->
+                                <div class="article-item">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <ul class="list-unstyled items-list">
+                                                <li><h4>Tooltip font size</h4></li>
+                                                <li class="selectpicker-block">
+                                                    <select class="selectpicker">
+                                                        <option>Shape</option>
+                                                        <option>Mustard</option>
+                                                        <option>Ketchup</option>
+                                                        <option>Relish</option>
+                                                        <option>Mustard</option>
+                                                    </select>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <ul class="list-unstyled items-list">
+                                                <li><h4>Label Font size</h4></li>
+                                                <li class="selectpicker-block">
+                                                    <select class="selectpicker">
+                                                        <option>Shape</option>
+                                                        <option>Mustard</option>
+                                                        <option>Ketchup</option>
+                                                        <option>Relish</option>
+                                                        <option>Mustard</option>
+                                                    </select>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+
+                                <!-- article item -->
+                                <div class="article-item">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <ul class="list-unstyled items-list ">
+                                                <li><h4>Shape Size Desktop</h4></li>
+                                                <li class="selectpicker-block">
+                                                    <select class="selectpicker">
+                                                        <option>Shape</option>
+                                                        <option>Mustard</option>
+                                                        <option>Ketchup</option>
+                                                        <option>Relish</option>
+                                                        <option>Mustard</option>
+                                                    </select>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <ul class="list-unstyled items-list">
+                                                <li><h4>Shape Size Mobile</h4></li>
+                                                <li class="selectpicker-block">
+                                                    <select class="selectpicker">
+                                                        <option>Shape</option>
+                                                        <option>Mustard</option>
+                                                        <option>Ketchup</option>
+                                                        <option>Relish</option>
+                                                        <option>Mustard</option>
+                                                    </select>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <ul class="list-unstyled items-list">
+                                                <li><h4>Allow not to Answer Font size</h4></li>
+                                                <li class="selectpicker-block">
+                                                    <select class="selectpicker">
+                                                        <option>Shape</option>
+                                                        <option>Mustard</option>
+                                                        <option>Ketchup</option>
+                                                        <option>Relish</option>
+                                                        <option>Mustard</option>
+                                                    </select>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <ul class="list-unstyled items-list ">
+                                                <li><h4>Shape Unselected Color</h4></li>
+                                                <li>
+                                                    <div class="input-group colorpicker-component">
+                                                        <span class="input-group-addon"><i></i></span>
+                                                        <input type="text" value="#00AABB" class="form-control" />
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <ul class="list-unstyled items-list">
+                                                <li><h4>Shape Selected Color</h4></li>
+                                                <li>
+                                                    <div class="input-group colorpicker-component">
+                                                        <span class="input-group-addon"><i></i></span>
+                                                        <input type="text" value="#00AABB" class="form-control" />
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+
+
+                                <!-- article item -->
+                                <div class="article-item checkbox-text__middle">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <ul class="list-unstyled items-list">
+                                                <li><h4>Selection Behavior</h4></li>
+                                                <li class="selectpicker-block">
+                                                    <select class="selectpicker">
+                                                        <option>Shape</option>
+                                                        <option>Mustard</option>
+                                                        <option>Ketchup</option>
+                                                        <option>Relish</option>
+                                                        <option>Mustard</option>
+                                                    </select>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <ul class="list-unstyled items-list">
+                                                <li><h4>Desktop View</h4></li>
+                                                <li class="selectpicker-block">
+                                                    <select class="selectpicker">
+                                                        <option>Shape</option>
+                                                        <option>Mustard</option>
+                                                        <option>Ketchup</option>
+                                                        <option>Relish</option>
+                                                        <option>Mustard</option>
+                                                    </select>
+                                                </li>
+                                            </ul>
+
+                                            <ul class="list-unstyled modal-checkbox-list">
+                                                <li>
+                                                    <input id="show-numerical-rating" name="checkbox-group" type="checkbox">
+                                                    <label for="show-numerical-rating"><span>Show Numerical Rating</span></label>
+                                                </li>
+
+                                                <li>
+                                                    <input id="centered-layout" name="checkbox-group" type="checkbox">
+                                                    <label for="centered-layout"><span>Centered Layout</span></label>
+                                                </li>
+
+                                                <li>
+                                                    <input id="caption-for-total" name="checkbox-group" type="checkbox">
+                                                    <label for="caption-for-total"><span>Show caption for total</span></label>
+                                                </li>
+                                                <li><h4>Shapes Alignment</h4></li>
+                                                <li class="selectpicker-block">
+                                                    <select class="selectpicker">
+                                                        <option>Shape</option>
+                                                        <option>Mustard</option>
+                                                        <option>Ketchup</option>
+                                                        <option>Relish</option>
+                                                        <option>Mustard</option>
+                                                    </select>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <ul class="list-unstyled items-list">
+                                                <li><h4>Mobile View</h4></li>
+                                                <li class="selectpicker-block">
+                                                    <select class="selectpicker">
+                                                        <option>Shape</option>
+                                                        <option>Mustard</option>
+                                                        <option>Ketchup</option>
+                                                        <option>Relish</option>
+                                                        <option>Mustard</option>
+                                                    </select>
+                                                </li>
+                                            </ul>
+
+                                            <ul class="list-unstyled modal-checkbox-list">
+                                                <li>
+                                                    <input id="two-column-tooltip" name="checkbox-group" type="checkbox">
+                                                    <label for="two-column-tooltip"><span>Show Only two column Tooltip</span></label>
+                                                </li>
+
+                                                <li>
+                                                    <input id="show-tooltip" name="checkbox-group" type="checkbox">
+                                                    <label for="show-tooltip"><span>Show Tooltip</span></label>
+                                                </li>
+                                            </ul>
+
+                                            <ul class="list-unstyled items-list">
+                                                <li><h4>NPS Helptext Position</h4></li>
+                                                <li class="selectpicker-block">
+                                                    <select class="selectpicker">
+                                                        <option>Shape</option>
+                                                        <option>Mustard</option>
+                                                        <option>Ketchup</option>
+                                                        <option>Relish</option>
+                                                        <option>Mustard</option>
+                                                    </select>
+                                                </li>
+
+                                                <li><h4>Shape Column Width</h4></li>
+                                                <li>
+                                                    <input type="text" class="form-control" placeholder="24px">
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+
+                                </div>
+
+
+
+
+                            </div>
+                        </section>
+                    </div>
+                    <!-- Modal Column Single -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="col-xs-12">
+                    <button type="button" class="btn btn-fill">Save</button>
+                    <button type="button" class="btn btn-white" data-dismiss="modal">Preview</button>
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<div class="modal fade modal__form-builder modal__short-text" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="ico ico-times"></span></button>
+                <h2 class="modal-title h1">
+                    <span class="modal-title-icon"><i class="ico ico-short-text"></i></span>
+                    <span class="modal-title-text">Short Text</span>
+                </h2>
+                <div class="modal-header__language-selector">
+                    <ul class="list-inline">
+                        <li>Select language to add translations</li>
+                        <li>
+                            <select class="selectpicker">
+                                <option>Select Language</option>
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                                <option>Mustard</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <!-- Modal Column Single -->
+                    <div class="modal-col col-xs-4">
+                        <section class="modal-section">
+                            <header class="modal-col-header">
+                                <h2 class="modal-col-title">Content</h2>
+                            </header>
+                            <div class="modal-col-body">
+
+                                <!-- article item -->
+                                <article class="article-item ">
+                                    <header class="article-item-header">
+                                        <h4 class="article-item-title">Question</h4>
+                                    </header>
+                                    <div class="article-item-body">
+                                        <div class="form-group">
+                                            <textarea class="form-control form-control-textarea" placeholder="Enter text"></textarea>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- article item -->
+                                <article class="article-item">
+                                    <header class="article-item-header">
+                                        <h4 class="article-item-title">Help Text</h4>
+                                    </header>
+                                    <div class="article-item-body">
+                                        <div class="form-group">
+                                            <textarea class="form-control form-control-textarea" placeholder="Enter text"></textarea>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- article item -->
+                                <article class="article-item">
+                                    <header class="article-item-header">
+                                        <h4 class="article-item-title">Placeholder</h4>
+                                    </header>
+                                    <div class="article-item-body">
+                                        <div class="form-group">
+                                            <textarea class="form-control form-control-textarea" placeholder="Enter text"></textarea>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- article item -->
+                                <article class="article-item ">
+                                    <header class="article-item-header">
+                                        <h4 class="article-item-title">Error Text</h4>
+                                        <div class="article-item-toggle">
+                                            <input id="toggle1" name="checkbox-group" type="checkbox">
+                                            <label for="toggle1"><span></span></label>
+                                        </div>
+                                    </header>
+                                    <div class="article-item-body">
+                                        <div class="form-group">
+                                            <textarea class="form-control form-control-textarea" placeholder="Enter text"></textarea>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- article item -->
+                                <article class="article-item ">
+                                    <header class="article-item-header">
+                                        <h4 class="article-item-title">Allow not to Answer</h4>
+                                        <div class="article-item-toggle">
+                                            <input id="toggle2" name="checkbox-group" type="checkbox">
+                                            <label for="toggle2"><span></span></label>
+                                        </div>
+                                    </header>
+                                    <div class="article-item-body">
+                                        <div class="form-group">
+                                            <textarea class="form-control form-control-textarea" placeholder="Enter text"></textarea>
+                                        </div>
+                                    </div>
+                                </article>
+
+                            </div>
+                        </section>
+                    </div>
+                    <!-- Modal Column Single -->
+
+                    <!-- Modal Column Single -->
+                    <div class="modal-col col-xs-4">
+                        <section class="modal-section">
+                            <header class="modal-col-header">
+                                <h2 class="modal-col-title">General</h2>
+                            </header>
+                            <div class="modal-col-body">
+
+                                <!-- article item -->
+                                <div class="article-item">
+                                    <ul class="list-unstyled modal-checkbox-list">
+                                        <li>
+                                            <input id="display-remaining-characters" name="checkbox-group" type="checkbox">
+                                            <label for="display-remaining-characters"><span>Display Remaining Characters</span></label>
+                                        </li>
+
+                                        <li>
+                                            <input id="enable-email-validation" name="checkbox-group" type="checkbox">
+                                            <label for="enable-email-validation"><span>Enable Email Validation</span></label>
+                                        </li>
+
+                                        <li>
+                                            <input id="submit-to-core" name="checkbox-group" type="checkbox">
+                                            <label for="submit-to-core"><span>Submit to core</span></label>
+                                        </li>
+
+                                        <li>
+                                            <input id="enable-phone-number-validation" name="checkbox-group" type="checkbox">
+                                            <label for="enable-phone-number-validation"><span>Enable Phone number Validation</span></label>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- article item -->
+                                <div class="article-item">
+                                    <div class="form-group selectpicker-block">
+                                        <h4>Minimum Number of Characters</h4>
+                                        <input type="text" class="form-control input-characters" placeholder="30">
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </section>
+                    </div>
+                    <!-- Modal Column Single -->
+
+                    <div class="modal-col col-xs-4 bg-transparent"></div>
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="col-xs-12">
+                    <button type="button" class="btn btn-fill">Save</button>
+                    <button type="button" class="btn btn-white" data-dismiss="modal">Preview</button>
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<div class="modal fade modal__form-builder modal__long-text" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">

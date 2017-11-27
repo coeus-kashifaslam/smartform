@@ -1,6 +1,6 @@
 
 <ul class="list-unstyled form-components__list {{placementClass}}">
-    <li class="form-component__item form-component__item-short-text">
+    <li class="form-component__item form-component__item-short-text" data-toggle="modal" data-target=".modal__short-text">
         <div class="form-component__item-pill conditional-linking__true">
             <p>
                 <span class="ico ico-short-text"></span>
@@ -33,44 +33,11 @@
             </div>
         </div>
     </li>
-    <li class="form-component__item form-component__item-long-text">
+    <li class="form-component__item form-component__item-long-text" data-toggle="modal" data-target=".modal__long-text">
         <div class="form-component__item-pill">
             <p>
                 <span class="ico ico-long-text"></span>
                 <span class="form-component__item-name">Long Text</span>
-            </p>
-            <div class="form-component__item-pill-actions">
-                <ul class="list-inline">
-                    <li>
-                        <a href="#"
-                           data-toggle="tooltip"
-                           title="Add Conditional Questions">
-                            <span class="ico ico-link"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"
-                           data-toggle="tooltip"
-                           title="Edit Item">
-                            <span class="ico ico-edit"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"
-                           data-toggle="tooltip"
-                           title="Delete Item">
-                            <span class="ico ico-delete"></span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </li>
-    <li class="form-component__item form-component__item-multiple-choice">
-        <div class="form-component__item-pill">
-            <p>
-                <span class="ico ico-multiple-choice"></span>
-                <span class="form-component__item-name">Multiple Choice</span>
             </p>
             <div class="form-component__item-pill-actions">
                 <ul class="list-inline">
@@ -132,7 +99,40 @@
             </div>
         </div>
     </li>
-    <li class="form-component__item form-component__item-ranking-scale">
+    <li class="form-component__item form-component__item-multiple-choice">
+        <div class="form-component__item-pill">
+            <p>
+                <span class="ico ico-multiple-choice"></span>
+                <span class="form-component__item-name">Multiple Choice</span>
+            </p>
+            <div class="form-component__item-pill-actions">
+                <ul class="list-inline">
+                    <li>
+                        <a href="#"
+                           data-toggle="tooltip"
+                           title="Add Conditional Questions">
+                            <span class="ico ico-link"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                           data-toggle="tooltip"
+                           title="Edit Item">
+                            <span class="ico ico-edit"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                           data-toggle="tooltip"
+                           title="Delete Item">
+                            <span class="ico ico-delete"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </li>
+    <li class="form-component__item form-component__item-ranking-scale" data-toggle="modal" data-target=".modal__ranking-scale">
         <div class="form-component__item-pill">
             <p>
                 <span class="ico ico-ranking-scale"></span>
