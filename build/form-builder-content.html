@@ -256,14 +256,16 @@
 
 
 
+
+
 <div class="modal fade modal__form-builder modal__ranking-scale" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="ico ico-times"></span></button>
                 <h2 class="modal-title h1">
-                    <span class="modal-title-icon"><i class="ico ico-ranking-scale"></i></span>
-                    <span class="modal-title-text">Ranking Scale</span>
+                    <span class="modal-title-icon"><i class="ico ico-long-text"></i></span>
+                    <span class="modal-title-text">Long Text</span>
                 </h2>
                 <div class="modal-header__language-selector">
                     <ul class="list-inline">
@@ -367,7 +369,7 @@
                     <div class="modal-col col-xs-4">
                         <section class="modal-section">
                             <header class="modal-col-header">
-                                <h2 class="modal-col-title">Rating</h2>
+                                <h2 class="modal-col-title">General</h2>
                             </header>
                             <div class="modal-col-body">
 
@@ -375,28 +377,34 @@
                                 <div class="article-item">
                                     <ul class="list-unstyled modal-checkbox-list">
                                         <li>
-                                            <input id="shapes-instead-title" name="checkbox-group" type="checkbox">
-                                            <label for="shapes-instead-title"><span>Shapes Instead of Title</span></label>
+                                            <input id="longtext-display-remaining-characters" name="checkbox-group" type="checkbox">
+                                            <label for="longtext-display-remaining-characters"><span>Display Remaining Characters</span></label>
                                         </li>
 
                                         <li>
-                                            <input id="different-shapes" name="checkbox-group" type="checkbox">
-                                            <label for="different-shapes"><span>Different Shape for Each Option</span></label>
+                                            <input id="show-question-title" name="checkbox-group" type="checkbox">
+                                            <label for="show-question-title"><span>Show Question Title</span></label>
                                         </li>
 
                                         <li>
-                                            <input id="feedback-email-validation" name="checkbox-group" type="checkbox">
-                                            <label for="feedback-email-validation"><span>Feedback Email Validation</span></label>
+                                            <input id="show-in-on-column" name="long-text-radio-group" type="radio">
+                                            <label for="show-in-on-column"><span>Show in one Column</span></label>
+                                        </li>
+
+                                        <li>
+                                            <input id="show-in-two-column" name="long-text-radio-group" type="radio">
+                                            <label for="show-in-two-column"><span>Show in two Column</span></label>
                                         </li>
                                     </ul>
                                 </div>
 
                                 <!-- article item -->
                                 <div class="article-item">
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">Email address</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                    <div class="form-group selectpicker-block">
+                                        <h4>Minimum Number of Characters</h4>
+                                        <input type="text" class="form-control input-characters" placeholder="30">
                                     </div>
+
                                 </div>
 
                             </div>
@@ -404,33 +412,8 @@
                     </div>
                     <!-- Modal Column Single -->
 
-                    <!-- Modal Column Single -->
-                    <div class="modal-col col-xs-4">
-                        <section class="modal-section">
-                            <header class="modal-col-header">
-                                <h2 class="modal-col-title">Content</h2>
-                            </header>
-                            <div class="modal-col-body">
+                    <div class="modal-col col-xs-4 bg-transparent"></div>
 
-                                <!-- article item -->
-                                <article class="article-item">
-                                    <header class="article-item-header">
-                                        <h4 class="article-item-title">Color Picker</h4>
-                                    </header>
-                                    <div class="article-item-body">
-                                        <div class="form-group">
-                                            <div class="input-group colorpicker-component">
-                                                <span class="input-group-addon"><i></i></span>
-                                                <input type="text" value="#00AABB" class="form-control" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-
-                            </div>
-                        </section>
-                    </div>
-                    <!-- Modal Column Single -->
                 </div>
             </div>
             <div class="modal-footer">
