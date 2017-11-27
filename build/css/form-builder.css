@@ -10244,6 +10244,10 @@ h5, .h5 {
     margin-right: -10px;
 }
 
+.modal__form-builder .modal-body-full > .row {
+    margin-left: 0;
+}
+
 .modal__form-builder .modal-footer {
     border-top: 1px solid #c3c3c3;
 }
@@ -10320,6 +10324,11 @@ h5, .h5 {
 
 .modal-body > .row {
     display: table;
+    width: 100%;
+}
+
+.modal-body.modal-body-full > .row {
+    display: block;
 }
 
 .modal-col {
@@ -10384,6 +10393,10 @@ h5, .h5 {
 
 .input-characters {
     width: 90px;
+}
+
+.modal__free-text .modal-body-full div.article-item {
+    margin-bottom: 30px;
 }
 
 .form-components__list > .form-component__item {

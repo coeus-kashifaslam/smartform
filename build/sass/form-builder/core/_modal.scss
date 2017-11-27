@@ -67,6 +67,12 @@
     }
   }
 
+  .modal-body-full {
+    > .row {
+      margin-left: 0;
+    }
+  }
+
   .modal-footer {
     border-top: 1px solid $border;
   }
@@ -157,6 +163,13 @@
 .modal-body {
   > .row {
     display: table;
+    width: 100%;
+  }
+
+  &.modal-body-full {
+    > .row {
+      display: block;
+    }
   }
 }
 .modal-col {
@@ -173,6 +186,7 @@
     background: transparent;
   }
 }
+
 
 
 //Ranking scale
@@ -245,4 +259,13 @@
 
 .input-characters {
   width: 90px;
+}
+
+
+.modal__free-text {
+  .modal-body-full {
+    div.article-item {
+      margin-bottom: 30px;
+    }
+  }
 }
