@@ -10423,7 +10423,7 @@ h5, .h5 {
     margin-bottom: 30px;
 }
 
-.modal__free-text .modal-col-full, .modal__picture .modal-col-full {
+.modal__free-text .modal-col-full, .modal__picture .modal-col-full, .modal__pros-cons .modal-col-full {
     margin-bottom: 20px;
 }
 
