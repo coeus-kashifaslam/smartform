@@ -276,3 +276,32 @@
     margin-bottom: 20px;
   }
 }
+
+
+
+.article-item__options-list {
+  margin-bottom: 25px;
+  > li {
+    position: relative;
+    margin-bottom: 15px;
+
+    .ico {
+      position: absolute;
+      right: 0;
+      top: 6px;
+      font-size: $font-xsm - 2;
+      cursor: pointer;
+    }
+
+    .option-label {
+      font-family: $font-bold;
+      font-size: $font-sm;
+    }
+  }
+}
+
+
+.btn-add-options {
+  padding-left: 15px;
+  padding-right: 15px;
+}
