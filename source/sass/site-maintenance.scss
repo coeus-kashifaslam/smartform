@@ -1,0 +1,65 @@
+@import "libs/font-awesome";
+@import "font-families/roboto";
+@import "form-builder/core/vars";
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $green-primary;
+  color: $white;
+  font-family: $font-bold;
+  position: relative;
+  text-align: center;
+}
+
+.temp__site-maintenance {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  &__logo {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    img {
+      width: 125px;
+    }
+  }
+
+  &__wrapper {
+    padding: 15px;
+  }
+
+  &__ico-container {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 50%;
+    position: relative;
+  }
+  &__ico {
+    color: $green-primary;
+    font-size: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__main-liner,
+  &__sub-liner {
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+  &__main-liner {
+    font-size: 35px;
+  }
+  &__sub-liner {
+  }
+}
