@@ -10398,7 +10398,7 @@ h5, .h5 {
     margin-bottom: 30px;
 }
 
-.modal__free-text .modal-col-full, .modal__picture .modal-col-full, .modal__pros-cons .modal-col-full {
+.modal__free-text .modal-col-full, .modal__picture .modal-col-full, .modal__pros-cons .modal-col-full, .modal__thank-you .modal-col-full {
     margin-bottom: 20px;
 }
 
@@ -10570,7 +10570,7 @@ h5, .h5 {
 }
 
 .section-build__content .form-component__item-pill.conditional-linking__true {
-    background: #f7f1e9;
+    background: #f3eade;
 }
 
 .section-build__content .form-component__item-placeholder .form-component__item-pill {
