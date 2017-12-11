@@ -15,7 +15,7 @@
     p {
       margin: 0;
       position: relative;
-      padding-left: 20px;
+      padding-left: 25px;
 
       .ico {
         position: absolute;
@@ -23,6 +23,10 @@
         top: 4px;
       }
 
+    }
+
+    .ico {
+      font-size: 15px;
     }
     .form-component__item-name {
       display: inline-block;
