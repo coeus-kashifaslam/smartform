@@ -10427,7 +10427,7 @@ h5, .h5 {
     width: 90px;
 }
 
-.modal__free-text .modal-body-full div.article-item {
+.modal__free-text .modal-body-full div.article-item, .modal__thank-you .modal-body-full div.article-item {
     margin-bottom: 30px;
 }
 
