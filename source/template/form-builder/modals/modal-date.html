@@ -1,11 +1,11 @@
-<div class="modal fade modal__form-builder modal-small modal__picture" tabindex="-1" role="dialog">
+<div class="modal fade modal__form-builder modal-small modal__date" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="ico ico-times"></span></button>
                 <h2 class="modal-title h1">
-                    <span class="modal-title-icon"><i class="ico ico-upload"></i></span>
-                    <span class="modal-title-text">Upload</span>
+                    <span class="modal-title-icon"><i class="ico ico-date"></i></span>
+                    <span class="modal-title-text">Date</span>
                 </h2>
                 <div class="modal-header__language-selector">
                     <ul class="list-inline">
@@ -22,10 +22,10 @@
                     </ul>
                 </div>
             </div>
-            <div class="modal-body modal-body-full">
+            <div class="modal-body">
                 <div class="row">
                     <!-- Modal Column Single -->
-                    <div class="modal-col-full">
+                    <div class="modal-col col-xs-6">
                         <section class="modal-section">
                             <header class="modal-col-header">
                                 <h2 class="modal-col-title">Content</h2>
@@ -87,6 +87,52 @@
                                         </div>
                                     </div>
                                 </article>
+
+                            </div>
+                        </section>
+                    </div>
+                    <!-- Modal Column Single -->
+
+                    <!-- Modal Column Single -->
+                    <div class="modal-col col-xs-6">
+                        <section class="modal-section">
+                            <header class="modal-col-header">
+                                <h2 class="modal-col-title">General</h2>
+                            </header>
+                            <div class="modal-col-body">
+
+                                <!-- article item -->
+                                <div class="article-item">
+                                    <ul class="list-unstyled modal-checkbox-list">
+                                        <li>
+                                            <input id="show-option-labels" name="checkbox-group" type="checkbox">
+                                            <label for="show-option-labels"><span>Show Option Labels</span></label>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                                <!-- article item -->
+                                <div class="article-item">
+                                    <header class="article-item-header">
+                                        <h2 class="article-item-title">Add Options</h2>
+                                    </header>
+                                    <div class="article-item-body">
+                                        <ul class="list-unstyled article-item__options-list">
+                                            <li>
+                                                <i class="ico ico-times"></i>
+                                                <p class="option-label">Option 1</p>
+                                                <input type="text" class="form-control">
+                                            </li>
+                                            <li>
+                                                <i class="ico ico-times"></i>
+                                                <p class="option-label">Option 2</p>
+                                                <input type="text" class="form-control">
+                                            </li>
+                                        </ul>
+                                        <button class="btn btn-white btn-add-options">Add More</button>
+                                    </div>
+                                </div>
 
                             </div>
                         </section>
