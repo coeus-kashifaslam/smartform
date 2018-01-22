@@ -9349,6 +9349,21 @@ select.bs-select-hidden, select.selectpicker {
     src: url(../fonts/font-families/arial/Arial-BoldMT.eot?#iefix) format("embedded-opentype"), url(../fonts/font-families/arial/Arial-BoldMT.woff) format("woff"), url(../fonts/font-families/arial/Arial-BoldMT.ttf) format("truetype"), url(../fonts/font-families/arial/Arial-BoldMT.svg#Arial-BoldMT) format("svg");
 }
 
+@font-face {
+    font-family: DinPro;
+    src: url(../fonts/font-families/dinpro/DINPro-Medium.eot) format("embedded-opentype"), url(../fonts/font-families/dinpro/DINPro-Medium.woff) format("woff"), url(../fonts/font-families/dinpro/DINPro-Medium.ttf) format("truetype"), url(../fonts/font-families/dinpro/DINPro-Medium.otf) format("otf"), url(../fonts/font-families/dinpro/DINPro-Medium.svg) format("svg");
+}
+
+@font-face {
+    font-family: DinPro-Light;
+    src: url(../fonts/font-families/dinpro/DINPro-Regular.eot) format("embedded-opentype"), url(../fonts/font-families/dinpro/DINPro-Regular.woff) format("woff"), url(../fonts/font-families/dinpro/DINPro-Regular.ttf) format("truetype"), url(../fonts/font-families/dinpro/DINPro-Regular.otf) format("otf"), url(../fonts/font-families/dinpro/DINPro-Regular.svg) format("svg");
+}
+
+@font-face {
+    font-family: DinPro-Bold;
+    src: url(../fonts/font-families/dinpro/DINPro-Bold.eot) format("embedded-opentype"), url(../fonts/font-families/dinpro/DINPro-Bold.woff) format("woff"), url(../fonts/font-families/dinpro/DINPro-Bold.ttf) format("truetype"), url(../fonts/font-families/dinpro/DINPro-Bold.otf) format("otf"), url(../fonts/font-families/dinpro/DINPro-Bold.svg) format("svg");
+}
+
 .ico, .form-radio + label:before, .form-checkbox:checked + label span:after {
     font-family: icomoon !important;
     speak: none;
@@ -9362,17 +9377,17 @@ select.bs-select-hidden, select.selectpicker {
 }
 
 body, .wizard__breadcrumb-list > li .bubble__number, .wizard__breadcrumb-list > li .step__title, .custom-footer__address-block .list__contact-info li {
-    font-family: Roboto;
+    font-family: DinPro;
     font-weight: 400;
 }
 
 .form__elem input[type=text], .form__elem input[type=password], .form__elem input[type=email], .form__elem textarea, .caption-form__form-group__label, .caption-form__caption-bottom {
-    font-family: Roboto-Light;
+    font-family: DinPro-Light;
     font-weight: 100;
 }
 
 .form__legend, .form__elem__title, .form__elem__error-text, .sff-form__submit, .wizard__breadcrumb-list > li.active .step__title, .custom-footer__col-title, .custom-footer__info-section__label, .feedback__emo-list__description-count {
-    font-family: Roboto-Bold;
+    font-family: DinPro-Bold;
 }
 
 .row__pros-cons li:before {
@@ -10569,7 +10584,7 @@ html.form_as_widget .close__form, html.form_as_widget body .close__form {
 .breadcrumb__page-type .breadcrumb__page-title {
     margin-top: 0;
     margin-bottom: 0;
-    font-family: Roboto-Bold;
+    font-family: DinPro-Bold;
     font-size: 20px;
 }
 
@@ -10589,7 +10604,7 @@ html.form_as_widget .close__form, html.form_as_widget body .close__form {
 }
 
 .breadcrumb__progress .progress-bar__paging {
-    font-family: Roboto;
+    font-family: DinPro;
     position: absolute;
     top: -35px;
     left: 94%;
@@ -12159,7 +12174,7 @@ html.form_as_widget .close__form, html.form_as_widget body .close__form {
 }
 
 .elem__constant-sum__column.constant-sum__slider .total__label {
-    font-family: Roboto-Bold;
+    font-family: DinPro-Bold;
     text-align: right;
 }
 

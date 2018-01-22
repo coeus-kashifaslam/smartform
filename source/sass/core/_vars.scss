@@ -16,9 +16,9 @@ $ff-notosansjapanese: 'NotoSansJapanese','NotoSansJapanese-Light','NotoSansJapan
 $ff-arial: 'Arial','Arial-Light','Arial-Bold';
 $ff-dinpro: 'DinPro','DinPro-Light','DinPro-Bold';
 
-$font-regular: nth($ff-roboto, 1);
-$font-light: nth($ff-roboto, 2);
-$font-bold: nth($ff-roboto, 3);
+$font-regular: nth($ff-dinpro, 1);
+$font-light: nth($ff-dinpro, 2);
+$font-bold: nth($ff-dinpro, 3);
 $font-fontawesome: 'FontAwesome';
 
 

@@ -9270,6 +9270,29 @@ select.bs-select-hidden, select.selectpicker {
     src: url(../fonts/font-families/arial/Arial-BoldMT.eot?#iefix) format("embedded-opentype"), url(../fonts/font-families/arial/Arial-BoldMT.woff) format("woff"), url(../fonts/font-families/arial/Arial-BoldMT.ttf) format("truetype"), url(../fonts/font-families/arial/Arial-BoldMT.svg#Arial-BoldMT) format("svg");
 }
 
+@font-face {
+    font-family: DinPro;
+    src: url(../fonts/font-families/dinpro/DINPro-Medium.eot) format("embedded-opentype"), url(../fonts/font-families/dinpro/DINPro-Medium.woff) format("woff"), url(../fonts/font-families/dinpro/DINPro-Medium.ttf) format("truetype"), url(../fonts/font-families/dinpro/DINPro-Medium.otf) format("otf"), url(../fonts/font-families/dinpro/DINPro-Medium.svg) format("svg");
+}
+
+@font-face {
+    font-family: DinPro-Light;
+    src: url(../fonts/font-families/dinpro/DINPro-Regular.eot) format("embedded-opentype"), url(../fonts/font-families/dinpro/DINPro-Regular.woff) format("woff"), url(../fonts/font-families/dinpro/DINPro-Regular.ttf) format("truetype"), url(../fonts/font-families/dinpro/DINPro-Regular.otf) format("otf"), url(../fonts/font-families/dinpro/DINPro-Regular.svg) format("svg");
+}
+
+@font-face {
+    font-family: DinPro-Bold;
+    src: url(../fonts/font-families/dinpro/DINPro-Bold.eot) format("embedded-opentype"), url(../fonts/font-families/dinpro/DINPro-Bold.woff) format("woff"), url(../fonts/font-families/dinpro/DINPro-Bold.ttf) format("truetype"), url(../fonts/font-families/dinpro/DINPro-Bold.otf) format("otf"), url(../fonts/font-families/dinpro/DINPro-Bold.svg) format("svg");
+}
+
+.ico-yes-no:before {
+    content: "\e927";
+}
+
+.ico-legal-text:before {
+    content: "\e928";
+}
+
 .ico-callback:before {
     content: "\e926";
 }
@@ -10394,7 +10417,7 @@ h5, .h5 {
     width: 90px;
 }
 
-.modal__free-text .modal-body-full div.article-item {
+.modal__free-text .modal-body-full div.article-item, .modal__thank-you .modal-body-full div.article-item {
     margin-bottom: 30px;
 }
 
@@ -10444,13 +10467,17 @@ h5, .h5 {
 .form-component__item-pill p {
     margin: 0;
     position: relative;
-    padding-left: 20px;
+    padding-left: 25px;
 }
 
 .form-component__item-pill p .ico {
     position: absolute;
     left: 0;
     top: 4px;
+}
+
+.form-component__item-pill .ico {
+    font-size: 15px;
 }
 
 .form-component__item-pill .form-component__item-name {
