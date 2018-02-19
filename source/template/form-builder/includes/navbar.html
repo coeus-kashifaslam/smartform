@@ -1,0 +1,26 @@
+<!--Navbar-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="navbar-container">
+            <div class="col-xs-3">
+                <div class="navigate__back">
+                    <a href="#" class="back-link">Back to listing</a>
+                </div>
+            </div>
+            <div class="col-xs-6 navigation-center">
+                <ul class="nav nav-pills main-nav">
+                    <li role="presentation" class="{% if (page.name == 'build') %}active{% endif %}"><a href="form-builder.html">Build</a></li>
+                    <li role="presentation" class="{% if (page.name == 'design') %}active{% endif %}"><a href="form-builder-design.html">Design</a></li>
+                    <li role="presentation" class="{% if (page.name == 'configure') %}active{% endif %}"><a href="form-builder-config.html">Configure</a></li>
+                    <li role="presentation" class="{% if (page.name == 'content') %}active{% endif %}"><a href="form-builder-content.html">Content</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-3">
+                <div class="navigate__to-form text-right">
+                    <a href="#" class="view-form-link">View this Form</a>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>

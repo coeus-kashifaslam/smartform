@@ -74,3 +74,30 @@
     }
   }
 }
+
+.storage__alert-container {
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: auto;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  z-index: 99;
+  .alert {
+    border: 0 none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+      width: 100%;
+    }
+  }
+  @media (min-width: 768px) {
+    .alert {
+      padding-left: 64px;
+      padding-right: 64px;
+    }
+  }
+}

@@ -44,7 +44,7 @@
  	sassOptions = {
  		errToLogConsole: true,
  		precision: 4,
- 		outputStyle: 'compressed',
+ 		outputStyle: 'expanded',
  		sourceComments: false,
  		indentWidth: 4
  	},
@@ -93,7 +93,7 @@
 		in: [
 			// Add All vendor paths here
 			source + 'js/*.js',
-			source + 'js/**/*.js'
+			source + 'js/**/*.*'
 		],
 		out: destination + 'js/',
 		filename: 'main.js'

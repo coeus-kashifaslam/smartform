@@ -1,0 +1,393 @@
+{% extends 'template/form-builder/layouts/default.html' %}
+{% set page = {title: "Style Guide | Form Builder", class: 'bg-dark', name: ''} %}
+
+
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-4">
+            <section class="headings">
+                <header>
+                    <h1 class="section-header">
+                        Fonts
+                    </h1>
+                </header>
+                <div class="section-body">
+                    <h1>H1 | Roboto-Bold | 20px</h1>
+                    <h2>H2 | Roboto-Bold | 16px</h2>
+                    <h3>H2 | Roboto-Regular | 16px</h3>
+                    <h4>H2 | Roboto-Bold | 14px</h4>
+                    <h5>H2 | Roboto-Regular | 14px</h5>
+                </div>
+            </section>
+        </div>
+        <div class="col-sm-4">
+            <section class="buttons">
+                <header>
+                    <h1 class="section-header">Buttons</h1>
+                </header>
+                <div class="section-body">
+                    <div class="button-fill">
+                        <ul class="list-inline">
+                            <li><button class="btn btn-fill">Save</button></li>
+                            <li><button class="btn btn-fill btn-active">Save</button></li>
+                        </ul>
+                    </div>
+                    <div class="button-white">
+                        <ul class="list-inline">
+                            <li><button class="btn btn-white">Save</button></li>
+                            <li><button class="btn btn-white btn-active">Save</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="col-sm-4">
+            <section class="icons">
+                <header>
+                    <h1>
+                        Icons
+                    </h1>
+                </header>
+                <div class="section-body">
+                    <ul class="list-inline">
+                        <li><i class="ico ico-arrow-thick"></i></li>
+                        <li><i class="ico ico-arrow-thin"></i></li>
+                        <li><i class="ico ico-checkbox"></i></li>
+                        <li><i class="ico ico-checkbox-fill"></i></li>
+                        <li><i class="ico ico-constant-sum"></i></li>
+                        <li><i class="ico ico-date"></i></li>
+                        <li><i class="ico ico-delete"></i></li>
+                        <li><i class="ico ico-dropdown"></i></li>
+                        <li><i class="ico ico-edit"></i></li>
+                        <li><i class="ico ico-eye"></i></li>
+                        <li><i class="ico ico-font"></i></li>
+                        <li><i class="ico ico-goto"></i></li>
+                        <li><i class="ico ico-heart"></i></li>
+                        <li><i class="ico ico-link"></i></li>
+                        <li><i class="ico ico-long-text"></i></li>
+                        <li><i class="ico ico-mrf"></i></li>
+                        <li><i class="ico ico-multiple-choice"></i></li>
+                        <li><i class="ico ico-plus"></i></li>
+                        <li><i class="ico ico-pros-cons"></i></li>
+                        <li><i class="ico ico-radio"></i></li>
+                        <li><i class="ico ico-radio-fill"></i></li>
+                        <li><i class="ico ico-ranking-scale"></i></li>
+                        <li><i class="ico ico-seller"></i></li>
+                        <li><i class="ico ico-settings"></i></li>
+                        <li><i class="ico ico-short-text"></i></li>
+                        <li><i class="ico ico-text"></i></li>
+                        <li><i class="ico ico-thumbnail"></i></li>
+                        <li><i class="ico ico-upload"></i></li>
+                        <li><i class="ico ico-times"></i></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <section class="html-select">
+                <header>
+                    <h1>HTML Select</h1>
+                </header>
+                <div class="section-body">
+                    <select class="selectpicker">
+                        <option>Mustard</option>
+                        <option>Ketchup</option>
+                        <option>Relish</option>
+                        <option>Mustard</option>
+                        <option>Ketchup</option>
+                        <option>Relish</option>
+                        <option>Mustard</option>
+                        <option>Ketchup</option>
+                        <option>Relish</option>
+                        <option>Mustard</option>
+                        <option>Ketchup</option>
+                        <option>Relish</option>
+                        <option>Mustard</option>
+                        <option>Ketchup</option>
+                        <option>Relish</option>
+                        <option>Mustard</option>
+                        <option>Ketchup</option>
+                        <option>Relish</option>
+                    </select>
+
+                </div>
+            </section>
+        </div>
+        <div class="col-sm-4">
+            <section class="dropdown">
+                <header>
+                    <h1>Dropdown</h1>
+                </header>
+                <div class="section-body">
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Dropdown
+                            <span class="ico ico-arrow-thin"></span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="col-sm-4">
+            <section class="form-controls">
+                <header>
+                    <h1>Form controls</h1>
+                </header>
+                <div class="section-body">
+                    <ul class="list-unstyled">
+                        <li>
+                            <input type="radio" id="radio1" name="radio-group">
+                            <label for="radio1"><span>Radio Unchecked</span></label>
+                        </li>
+                        <li>
+                            <input type="radio" id="radio2" name="radio-group" checked>
+                            <label for="radio2"><span>Radio Checked</span></label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="checkbox1" name="checkbox-group">
+                            <label for="checkbox1"><span>Checkbox Unchecked</span></label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="checkbox2" name="checkbox-group" checked>
+                            <label for="checkbox2"><span>Checkbox Checked</span></label>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <section class="section-back-link">
+                <header>
+                    <h1>Back Link</h1>
+                </header>
+                <div class="section-body">
+                    <ul class="list-inline">
+                        <a href="#" class="back-link">Back to listing</a>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <div class="col-sm-4">
+            <section class="section-viewForm-link">
+                <header>
+                    <h1>Back Link</h1>
+                </header>
+                <div class="section-body">
+                    <ul class="list-inline">
+                        <li><a href="#" class="view-form-link">View this Form</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <div class="col-sm-12">
+            <section class="draggable-items">
+                <header>
+                    <h1>Draggable Items</h1>
+                </header>
+                <div class="section-body">
+                    <ul class="list-unstyled form-components__list list-draggables">
+                        <li class="form-component__item form-component__item-placeholder">
+                            <div class="form-component__item-pill">
+                                <p>Drag & Drop Conditional Questions Here</p>
+                            </div>
+                        </li>
+                        <li class="form-component__item form-component__item-short-text">
+                            <div class="form-component__item-pill">
+                                <p>
+                                    <span class="ico ico-short-text"></span>
+                                    <span class="form-component__item-name">Long Text</span>
+                                </p>
+                                <div class="form-component__item-pill-actions">
+                                    <ul class="list-inline">
+                                        <li><a href="#"><span class="ico ico-link"></span></a></li>
+                                        <li><a href="#"><span class="ico ico-edit"></span></a></li>
+                                        <li><a href="#"><span class="ico ico-delete"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="form-component__item form-component__item-long-text">
+                            <div class="form-component__item-pill">
+                                <p>
+                                    <span class="ico ico-long-text"></span>
+                                    <span class="form-component__item-name">Short Text</span>
+                                </p>
+                                <div class="form-component__item-pill-actions">
+                                    <ul class="list-inline">
+                                        <li><a href="#"><span class="ico ico-link"></span></a></li>
+                                        <li><a href="#"><span class="ico ico-edit"></span></a></li>
+                                        <li><a href="#"><span class="ico ico-delete"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="form-component__item form-component__item-multiple-choice">
+                            <div class="form-component__item-pill">
+                                <p>
+                                    <span class="ico ico-multiple-choice"></span>
+                                    <span class="form-component__item-name">Multiple Choice</span>
+                                </p>
+                                <div class="form-component__item-pill-actions">
+                                    <ul class="list-inline">
+                                        <li><a href="#"><span class="ico ico-link"></span></a></li>
+                                        <li><a href="#"><span class="ico ico-edit"></span></a></li>
+                                        <li><a href="#"><span class="ico ico-delete"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="form-component__item form-component__item-dropdown">
+                            <div class="form-component__item-pill">
+                                <p>
+                                    <span class="ico ico-dropdown"></span>
+                                    <span class="form-component__item-name">Dropdown</span>
+                                </p>
+                                <div class="form-component__item-pill-actions">
+                                    <ul class="list-inline">
+                                        <li><a href="#"><span class="ico ico-link"></span></a></li>
+                                        <li><a href="#"><span class="ico ico-edit"></span></a></li>
+                                        <li><a href="#"><span class="ico ico-delete"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="form-component__item form-component__item-ranking-scale">
+                            <div class="form-component__item-pill">
+                                <p>
+                                    <span class="ico ico-ranking-scale"></span>
+                                    <span class="form-component__item-name">Rating</span>
+                                </p>
+                                <div class="form-component__item-pill-actions">
+                                    <ul class="list-inline">
+                                        <li><a href="#"><span class="ico ico-plus"></span></a></li>
+                                        <li><a href="#"><span class="ico ico-link"></span></a></li>
+                                        <li><a href="#"><span class="ico ico-edit"></span></a></li>
+                                        <li><a href="#"><span class="ico ico-delete"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <ul class="list-unstyled form-components__list list-sub-components">
+                                <li class="form-component__item form-component__item-ranking-scale">
+                                    <div class="form-component__item-pill">
+                                        <p>
+                                            <span class="ico ico-ranking-scale"></span>
+                                            <span class="form-component__item-name">Rating</span>
+                                        </p>
+                                        <div class="form-component__item-pill-actions">
+                                            <ul class="list-inline">
+                                                <li><a href="#"><span class="ico ico-plus"></span></a></li>
+                                                <li><a href="#"><span class="ico ico-link"></span></a></li>
+                                                <li><a href="#"><span class="ico ico-edit"></span></a></li>
+                                                <li><a href="#"><span class="ico ico-delete"></span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="form-component__item form-component__item-pros-cons">
+                            <div class="form-component__item-pill">
+                                <p>
+                                    <span class="ico ico-pros-cons"></span>
+                                    <span class="form-component__item-name">Pros & Cons</span>
+                                </p>
+                                <div class="form-component__item-pill-actions">
+                                    <ul class="list-inline">
+                                        <li><a href="#"><span class="ico ico-link"></span></a></li>
+                                        <li><a href="#"><span class="ico ico-edit"></span></a></li>
+                                        <li><a href="#"><span class="ico ico-delete"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="form-component__item form-component__item-upload">
+                            <div class="form-component__item-pill">
+                                <p>
+                                    <span class="ico ico-upload"></span>
+                                    <span class="form-component__item-name">Upload</span>
+                                </p>
+                                <div class="form-component__item-pill-actions">
+                                    <ul class="list-inline">
+                                        <li><a href="#"><span class="ico ico-link"></span></a></li>
+                                        <li><a href="#"><span class="ico ico-edit"></span></a></li>
+                                        <li><a href="#"><span class="ico ico-delete"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="form-component__item form-component__item-constant-sum">
+                            <div class="form-component__item-pill">
+                                <p>
+                                    <span class="ico ico-constant-sum"></span>
+                                    <span class="form-component__item-name">Constant Sum</span>
+                                </p>
+                                <div class="form-component__item-pill-actions">
+                                    <ul class="list-inline">
+                                        <li><a href="#"><span class="ico ico-link"></span></a></li>
+                                        <li><a href="#"><span class="ico ico-edit"></span></a></li>
+                                        <li><a href="#"><span class="ico ico-delete"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="form-component__item form-component__item-date">
+                            <div class="form-component__item-pill">
+                                <p>
+                                    <span class="ico ico-date"></span>
+                                    <span class="form-component__item-name">Date</span>
+                                </p>
+                                <div class="form-component__item-pill-actions">
+                                    <ul class="list-inline">
+                                        <li><a href="#"><span class="ico ico-link"></span></a></li>
+                                        <li><a href="#"><span class="ico ico-edit"></span></a></li>
+                                        <li><a href="#"><span class="ico ico-delete"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="form-component__item form-component__item-text">
+                            <div class="form-component__item-pill">
+                                <p>
+                                    <span class="ico ico-text"></span>
+                                    <span class="form-component__item-name">Free Text</span>
+                                </p>
+                                <div class="form-component__item-pill-actions">
+                                    <ul class="list-inline">
+                                        <li><a href="#"><span class="ico ico-link"></span></a></li>
+                                        <li><a href="#"><span class="ico ico-edit"></span></a></li>
+                                        <li><a href="#"><span class="ico ico-delete"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="drggable__standout-group-item">
+                        <div class="standout-group-item thankyou__group-item">
+                            <p class="standout-group-btn">Thank you</p>
+                            <a href="#" class="standout-group-addon"><span class="ico ico-edit"></span></a>
+                            <a href="#" class="standout-group-addon"><span class="ico ico-eye"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+{% endblock %}

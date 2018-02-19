@@ -1,0 +1,61 @@
+//Navbar
+.navbar-container {
+  padding: 15px 0;
+  background: $bg-main;
+}
+.navigation-center {
+  text-align: center;
+}
+
+.navbar-link-border {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: -3px;
+  right: -3px;
+  height: 2px;
+  background: $white;
+  transition: all 0.3s ease-out;
+}
+
+.main-nav {
+  display: inline-block;
+  > li {
+    padding: 0 25px;
+
+    > a {
+      position: relative;
+      color: $text-primary;
+      transition: all 0.3s ease-out;
+      &:hover, &:focus, &:active {
+        color: $white;
+        transition: all 0.3s ease-out;
+        &:after {
+          @extend .navbar-link-border;
+        }
+      }
+    }
+
+    &.active {
+      > a {
+        color: $white;
+        &:after {
+          @extend .navbar-link-border;
+        }
+      }
+    }
+
+
+
+    &, &.active {
+      > a {
+        &, &:hover, &:focus {
+          padding: 0;
+          background: transparent;
+          outline: none;
+        }
+      }
+    }
+
+  }
+}

@@ -1,0 +1,311 @@
+.modal__form-builder {
+
+  .modal-dialog {
+    min-width: 1100px;
+    width: 90%;
+  }
+
+  &.modal-small {
+    .modal-dialog {
+      min-width: 830px;
+      width: 830px;
+    }
+  }
+
+
+  .modal-content {
+    background: $bg-element;
+    .modal-header,
+    .modal-footer,
+    .modal-body {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+
+  .modal-header {
+    border-bottom: 0 none;
+    background: $bg-popup;
+    border-radius: 6px 6px 0 0;
+    .close {
+      opacity: 1;
+      margin-top: 0;
+      margin-right: -15px;
+      &:hover,
+      &:focus,
+      &:active {
+        outline: none;
+      }
+      .ico {
+        font-size: $font-sm;
+        color: $ico-close;
+      }
+    }
+
+
+    .modal-title {
+      .ico,
+      .modal-title-text {
+        color: $modal-title;
+      }
+    }
+
+    .modal-title-icon {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 3px;
+    }
+  }
+
+  .modal-body {
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+
+    > .row {
+      margin-left: -10px;
+      margin-right: -10px;
+    }
+  }
+
+  .modal-body-full {
+    > .row {
+      margin-left: 0;
+    }
+  }
+
+  .modal-footer {
+    border-top: 1px solid $border;
+  }
+
+}
+
+.modal-header__language-selector {
+  position: absolute;
+  top: 6px;
+  right: 45px;
+}
+
+.modal-col-title,
+.article-item-title {
+  margin-top: 0;
+}
+
+.modal-col-body {
+  padding: 15px 0;
+  background: $white;
+  //border-radius: $radius;
+
+  label {
+    font-weight: bold;
+    font-size: $font-sm;
+    &:before {
+      font-weight: normal;
+    }
+  }
+}
+
+
+.item-type__grid {
+  .item-type__grid-row {
+    display: table;
+    width: 100%;
+    .article-item-title,
+    .article-item-selectpicker {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+}
+
+
+.article-item {
+  padding: 0 15px;
+  border-bottom: 1px solid $border-light;
+  margin-bottom: 15px;
+}
+
+.modal-col-body {
+  > .article-item {
+    &:last-of-type {
+      margin-bottom: 0;
+      border-bottom: 0;
+    }
+  }
+}
+
+.article-item-header {
+  margin-bottom: 15px;
+  position: relative;
+  .article-item-toggle {
+    position: absolute;
+    right: -9px;
+    top: -6px;
+  }
+}
+
+
+.modal-checkbox-list {
+  > li {
+    margin-bottom: 5px;
+  }
+}
+
+
+
+//Making the modal columns height equal
+.modal-col-header {
+  background: $bg-element;
+  height: 45px;
+  .modal-col-title {
+    line-height: 30px;
+  }
+}
+.modal-body {
+  > .row {
+    display: table;
+    width: 100%;
+  }
+
+  &.modal-body-full {
+    > .row {
+      display: block;
+    }
+  }
+}
+.modal-col {
+  display: table-cell;
+  float: none;
+  background: $white;
+  border-left: 10px solid $bg-element;
+  border-right: 10px solid $bg-element;
+  border-bottom: 20px solid $bg-element;
+  padding-left: 0;
+  padding-right: 0;
+  min-width: 386px;
+  &.bg-transparent {
+    background: transparent;
+  }
+}
+
+
+
+//Ranking scale
+.modal-col-body {
+  .form-group {
+    margin-bottom: 15px;
+
+    h4, .h4 {
+      margin-bottom: 10px;
+    }
+  }
+
+  input[type='checkbox'],
+  input[type='radio'] {
+    + label {
+      font-family: $font-bold;
+      font-size: $font-sm;
+      &:before {
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+.selectpicker-block {
+  .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 100%;
+  }
+}
+
+.tooltips-col,
+.shapes-col {
+  h4 {
+    margin-bottom: 0;
+  }
+  > ul {
+    > li {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.items-list {
+  > li {
+    margin-bottom: 15px;
+
+    h4 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.checkbox-text__middle {
+  input[type="checkbox"] {
+    &:checked,
+    &:not(:checked) {
+      + label {
+        span {
+          display: inline-block;
+          padding-left: 0;
+          line-height: 16px;
+        }
+      }
+    }
+  }
+}
+
+
+
+.input-characters {
+  width: 90px;
+}
+
+
+.modal__free-text ,
+.modal__thank-you {
+  .modal-body-full {
+    div.article-item {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.modal__free-text,
+.modal__picture,
+.modal__pros-cons,
+.modal__thank-you,
+.modal__legal-text {
+  .modal-col-full {
+    margin-bottom: 20px;
+  }
+}
+
+
+
+.article-item__options-list {
+  margin-bottom: 25px;
+  > li {
+    position: relative;
+    margin-bottom: 15px;
+
+    .ico {
+      position: absolute;
+      right: 0;
+      top: 6px;
+      font-size: $font-xsm - 2;
+      cursor: pointer;
+    }
+
+    .option-label {
+      font-family: $font-bold;
+      font-size: $font-sm;
+    }
+  }
+}
+
+
+.btn-add-options {
+  padding-left: 15px;
+  padding-right: 15px;
+}

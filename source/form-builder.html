@@ -1,0 +1,81 @@
+{% extends 'template/form-builder/layouts/default.html' %}
+{% set page = {title: "Build | Form Builder", class: 'bg-dark', name: 'build'} %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="section-table section-build">
+
+
+        <!-- Sidebar -->
+        <div class="section-build__sidebar section-table-cell">
+
+            <!-- Form Components -->
+            <div class="draggables-container">
+                {% set placementClass = 'list-draggables' %}
+                {% include 'template/form-builder/partials/build/form-items-list.html' %}
+            </div>
+            <!-- /.Form Components -->
+
+            <!-- Thank you Component -->
+            <div class="form-component__standout-group-item">
+                <div class="standout-group-item thankyou__group-item">
+                    <p class="standout-group-btn">Thank you</p>
+                    <a href="#" data-toggle="modal" data-target=".modal__thank-you" class="standout-group-addon"><span class="ico ico-edit"></span></a>
+                    <a href="#" class="standout-group-addon"><span class="ico ico-eye"></span></a>
+                </div>
+            </div>
+            <!-- Thank you Component -->
+
+        </div>
+        <!-- /.Sidebar -->
+
+
+
+        <!-- Content Area -->
+        <div class="section-build__content section-table-cell">
+
+            <!-- Build Actions -->
+            <div class="section-build__content__actions-container">
+                <div class="row">
+                    <div class="section-build__content__actions-left col-xs-6">
+                        <div class="section-build__content__sync-action">
+                            <select class="selectpicker">
+                                <option>Select Sync Option</option>
+                                <option>Sync Research</option>
+                                <option>Sync Market Research</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="section-build__content__actions-left col-xs-6 text-right">
+                        <button class="btn btn-fill">Save</button>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <!-- /.Build Actions -->
+
+            <!-- Form Components -->
+            <div class="sortables-container">
+                {% set placementClass = 'list-sortables' %}
+                {% include 'template/form-builder/partials/build/form-items-list.html' %}
+            </div>
+            <!-- /.Form Components -->
+
+            <!-- Conditional Questions Drop able -->
+            <div class="sortables-container">
+                <ul class="list-unstyled form-components__list list-sortables">
+                    <li class="form-component__item form-component__item-placeholder">
+                        <div class="form-component__item-pill">
+                            <p>Drag & Drop Conditional Questions Here</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- Conditional Questions Drop able -->
+
+
+        </div>
+        <!-- /.Content Area -->
+    </div>
+</div>
+{% endblock %}

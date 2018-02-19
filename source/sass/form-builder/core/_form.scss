@@ -1,0 +1,348 @@
+@mixin  box-shadow {
+  box-shadow: 0 1px 0 $border-shadow;
+}
+
+//Select option Stylings
+.bootstrap-select {
+  &, &.open {
+    .dropdown-toggle {
+      border: 1px solid $border;
+      background: $white;
+      box-shadow: none;
+      &:hover,
+      &:focus,
+      &:active {
+        background: $white;
+        outline: none !important;
+        border-color: $border;
+      }
+    }
+  }
+
+  > .dropdown-toggle {
+    padding: 10px 30px 10px 15px;
+    position: relative;
+  }
+
+  .caret {
+    display: none;
+  }
+
+  .bs-caret {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -9px;
+    line-height: 1;
+
+    &:before {
+      content: $icon-arrow-thin;
+      font-family: $font-icons;
+      font-size: $font-xsm;
+      line-height: 1;
+      color: $border;
+    }
+  }
+
+
+  .dropdown-menu {
+    border-radius: 0;
+    padding: 0;
+    box-shadow: none;
+    margin-top: -3px;
+    border: 1px solid $border;
+    font-size: $font-md;
+
+    > li {
+      > a {
+        padding: 10px 15px;
+        &:hover,
+        &:focus,
+        &:active {
+          background: $bg-element;
+          outline: none;
+        }
+      }
+      &.selected {
+        > a {
+          background: $bg-element;
+        }
+      }
+      + li {
+        border-top: 1px solid $border;
+      }
+    }
+  }
+
+
+  &.dropup {
+    .dropdown-menu {
+      margin-top: 0;
+      margin-bottom: -3px;
+    }
+  }
+}
+.selectpicker__font-family {
+  .bootstrap-select {
+    &:not([class*="col-"]) {
+      &:not([class*="form-control"]) {
+        &:not(.input-group-btn) {
+          width: $selectpicker-font-family;
+        }
+      }
+    }
+  }
+}
+
+.selectpicker__font-size,
+.selectpicker__days  {
+  .bootstrap-select {
+    &:not([class*="col-"]) {
+      &:not([class*="form-control"]) {
+        &:not(.input-group-btn) {
+          width: $selectpicker-font-size;
+        }
+      }
+    }
+  }
+}
+
+
+//Dropdown
+.dropdown {
+  display: inline-block;
+  &,
+  &.open {
+    > .btn.dropdown-toggle {
+      padding: 10px 15px;
+      color: $text-primary;
+      border: 0 none;
+      background: transparent;
+      box-shadow: none;
+      &:hover,
+      &:focus,
+      &:active {
+        box-shadow: none;
+        background: transparent;
+        outline: none;
+      }
+    }
+  }
+  .ico {
+    font-size: $font-xsm;
+    margin-left: 15px;
+  }
+  .dropdown-menu {
+    padding: 0;
+    box-shadow: none;
+    border: 1px solid $border;
+    font-size: $font-md;
+    border-radius:  0 0 $radius $radius;
+
+    > li {
+      > a {
+        padding: 10px 15px;
+        &:hover,
+        &:focus,
+        &:active {
+          background: $bg-element;
+        }
+      }
+      &.selected {
+        > a {
+          background: $bg-element;
+        }
+      }
+      + li {
+        border-top: 1px solid $border;
+      }
+
+      &:last-child {
+        a {
+          border-radius: 0 0 $radius $radius;
+        }
+      }
+    }
+
+
+    &:before {
+      content: '';
+      border-left: 9px solid transparent;
+      border-right: 9px solid transparent;
+      border-bottom: 9px solid $border;
+      position: absolute;
+      top: -9px;
+      right: 11px;
+    }
+
+    &:after {
+      content: '';
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      border-bottom: 7px solid $white;
+      position: absolute;
+      top: -7px;
+      right: 13px;
+    }
+  }
+}
+
+
+
+//Radio and checkbox
+[type="radio"],
+[type = "checkbox"]{
+  &:checked,
+  &:not(:checked) {
+    position: absolute;
+    left: -9999px;
+
+    + label {
+      position: relative;
+      padding-left: 20px;
+      cursor: pointer;
+      display: inline-block;
+      font-weight: normal;
+      line-height: 28px;
+      min-height: 20px;
+      margin: 0;
+
+      span {
+        margin-left: 10px;
+      }
+
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 20px;
+        font-family: $font-icons;
+      }
+    }
+  }
+
+  &:checked {
+    + label {
+      &:before {
+        color: $green-primary;
+      }
+    }
+  }
+}
+
+
+[type="radio"] {
+  &:not(checked) {
+    + label {
+      &:before {
+        content: $icon-radio;
+      }
+    }
+  }
+  &:checked {
+    + label {
+      &:before {
+        content: $icon-radio-fill;
+      }
+    }
+  }
+}
+
+[type="checkbox"] {
+  &:not(checked) {
+    + label {
+      &:before {
+        content: $icon-checkbox;
+      }
+    }
+  }
+  &:checked {
+    + label {
+      &:before {
+        content: $icon-checkbox-fill;
+      }
+    }
+  }
+}
+
+
+.form-control {
+  border: 1px solid $border;
+  border-radius: $radius;
+  @include box-shadow();
+  resize: none;
+  font-size: $font-md;
+  color: $text-primary;
+  min-height: 45px;
+
+  &:focus {
+    border-color: $border;
+    @include box-shadow();
+  }
+  &.form-control-textarea {
+    height: 100px;
+  }
+
+  &.form-control-textarea-small,
+  &.form-control-input-small {
+    height: 44px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 10px 0;
+  }
+}
+
+
+.form-group-label {
+  font-size: $font-sm;
+}
+
+.form-group__level-block {
+  .form-control {
+    display: block;
+    width: 100%;
+  }
+}
+
+
+.language-pill {
+  border-radius: $radius;
+  border: 1px solid $border;
+  padding: 10px 15px 5px 15px;
+  width: 100%;
+  min-width: 160px;
+  font-size: $font-sm;
+
+  [type="radio"],
+  [type = "checkbox"] {
+
+    &:checked,
+    &:not(:checked) {
+      + label {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        span {
+          margin-left: 15px;
+        }
+      }
+    }
+
+    &:checked {
+      + label {
+        color: $green-primary;
+        font-weight: bold;
+      }
+    }
+
+    &:disabled {
+      + label {
+        cursor: not-allowed;
+        opacity: 0.6;
+      }
+    }
+  }
+}

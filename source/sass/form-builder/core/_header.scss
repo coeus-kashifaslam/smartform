@@ -1,0 +1,72 @@
+//Header
+.header__container {
+  padding: 15px 0;
+  background: $white;
+}
+.header__logo {
+  img {
+    max-width: 225px;
+  }
+}
+.header__text {
+  .form__name {
+    margin: 8px 0 0;
+    line-height: 1.4;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  span {
+    margin-left: 5px;
+  }
+  .ico {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+
+.header__menu-right {
+  text-align: right;
+  .dropdown {
+    &, &.open {
+      .btn {
+        &.dropdown-toggle {
+          color: $green-primary;
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+    }
+  }
+
+  .ico {
+    color: $green-primary;
+  }
+
+  .dropdown-menu-right {
+    right: -15px;
+  }
+
+  ul {
+    margin: 0;
+  }
+
+  li {
+    padding: 0;
+  }
+  .separator__top-menu {
+    position: relative;
+    width: 20px;
+    display: inline-block;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 30px;
+      top: -18px;
+      left: 50%;
+      background: $border;
+    }
+  }
+}

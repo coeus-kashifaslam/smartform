@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Smart Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/sff-form.css?version=5964823">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+<div class="policy__alert-container alert-container alert__stick-top">
+    <div class="alert alert-info alert-dismissible fade in" role="alert">
+        <button type="button" class="close close-top" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span>
+        </button>
+        <div class="container container__policy-info">
+            <p>Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat
+                porttitor ligula, eget lacinia</p>
+            <button type="button" class="btn btn-info btn__policy-info">OK</button>
+        </div>
+    </div>
+</div>
+
+
+
+<!--<div class="cookie__alert-container alert-container alert__stick-bottom">-->
+    <!--<div class="alert alert-info alert-dismissible fade in" role="alert">-->
+        <!--<button type="button" class="close close-bottom" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span>-->
+        <!--</button>-->
+        <!--<div class="container container__policy-info">-->
+            <!--<p>Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat-->
+                <!--porttitor ligula, eget lacinia</p>-->
+            <!--<button type="button" class="btn btn-info btn__policy-info">OK</button>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+<div class="sff-form__body sff-form__shadow">
+    <p class="close__form">×</p>
+
+    <div class="storage__alert-container alert-container">
+    <div class="alert alert-info fade in" role="alert">
+        <div class="container container__policy-info">
+            <p>Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat
+                porttitor ligula, eget lacinia</p>
+        </div>
+    </div>
+</div>
+
+    <!--Languages Start-->
+<div class="comp__languages">
+    <div class="sff-form__content-wrap">
+        <ul class="list-inline languages__list">
+            <li><a href="#"><img data-src="images/flags/32x32/de.png" src="images/loader.gif" alt="..." class="b-lazy language__flag"></a></li>
+            <li><a href="#"><img data-src="images/flags/32x32/gb.png" src="images/loader.gif" alt="..." class="b-lazy language__flag"></a></li>
+        </ul>
+    </div>
+</div>
+<!--Languages End-->
+
+
+    <style type="text/css">
+    .comp__lieferheld-header {
+        border-bottom: 1px solid #ccc;
+        border-top: 1px solid #ccc;
+    }
+    .lieferheld-header__container {
+        position: relative;
+        padding:  30px 50px;
+    }
+    .lieferheld__logo {
+        position: absolute;
+        left: 5px;
+        top: 50%;
+        margin-top: -19px;
+    }
+    .lieferheld-header__title {
+        margin: 0;
+        font-size: 30px;
+        font-family: 'Ubuntu-Bold';
+        color: #343B46;
+    }
+    .lieherfeld-thumbnail {
+        max-width: 48px;
+    }
+    @media (max-width: 767px) {
+        .lieferheld-header__container {
+            padding: 30px 40px;
+        }
+        .lieferheld__logo {
+            margin-top: -15px;
+            left: 0;
+        }
+        .lieferheld-header__title {
+            font-size: 24px;
+        }
+        .lieherfeld-thumbnail {
+            width: 35px;
+        }
+
+    }
+</style>
+<!--Custom header for lieferheld Start-->
+<div class="comp comp__lieferheld-header">
+    <div class="sff-form__content-wrap">
+        <div class="lieferheld-header__container">
+            <div class="custom-header__logo lieferheld__logo">
+                <img src="https://s3-eu-west-1.amazonaws.com/sff-codedeploy/uploads/thanku_banner/lieferheld-799900-1497864456.png" alt="..." class="lieherfeld-thumbnail">
+            </div>
+            <div class="custom-header__heder-text text-center">
+                <h2 class="custom-header__title lieferheld-header__title">Custom header text goes here</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Custom header for lieferheld End-->
+
+    <!--Banner Start-->
+
+
+
+<div class="comp__banner ">
+    <div class="sff-form__content-wrap">
+        <div class="form__logo">
+            <img class="b-lazy" data-src="images/default-logo.jpg" src="images/loader.gif" alt="...">
+        </div>
+    </div>
+</div>
+<!--Banner End-->
+
+
+    
+
+    <!--Breadcrumb Start-->
+<div class="comp comp__breadcrumb-progressbar">
+    <div class="sff-form__content-wrap">
+        <div class="breadcrumb__progressbar">
+            <div class="breadcrumb__page-type">
+                <h3 class="breadcrumb__page-title">Seller Form</h3>
+            </div>
+            <div class="breadcrumb__progress">
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                        <div class="progress-bar__paging">
+                            <p><span class="current">9</span><span class="total">/15</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Breadcrumb End-->
+    <!--Breadcrumb Start-->
+<div class="comp comp__breadcrumb">
+    <div class="sff-form__content-wrap">
+        <div class="wizardSliderBox">
+            <ul class="wizard__breadcrumb-list wizard__two-step"><li class="active">
+                <p class="bubble">
+                    <span class="bubble__number"> 1<i class="fa fa-check"></i></span>
+                </p>
+                <p class="step__title trans_product_rating">Product Rating</p>
+            </li><li class="">
+                <p class="bubble">
+                    <span class="bubble__number"> 2<i class="fa fa-check"></i></span>
+                </p>
+                <p class="step__title trans_thank_you">Thank You</p>
+            </li></ul>
+        </div>
+    </div>
+</div>
+<!--Breadcrumb End-->
+
+
+    
+<div class="sff-form__content-wrap">
+    <div class="form__elem">
+        <div class="rating-comp__caption-form rating-comp__caption-form__error-page">
+
+            <div class="caption-form__legend">
+
+                <span class="caption-form__icon">
+                    <i class="ico ico-exclamation"></i>
+                </span>
+
+                <p class="caption-form__caption-top">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci aperiam aspernatur, assumenda consectetur consequuntur corporis culpa debitis deleniti dignissimos dolorem dolores eius
+                </p>
+            </div>
+            <div class="caption-form__wrap">
+                <div class="caption-form__error-icon">
+                    <i class="fa fa-wrench error-page__icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <style type="text/css">
+    .page__footer__backing-check .logo__container {
+        padding: 20px 0;
+    }
+
+    .page__footer__backing-check .logo__container img {
+        max-width: 190px;
+    }
+
+    .page__footer__backing-check .logo-left {
+        text-align: left;
+    }
+
+    .page__footer__backing-check .logo-right {
+        text-align: right;
+    }
+
+    .page__footer__backing-check .list__utility-links {
+        margin: 0;
+    }
+
+    .page__footer__backing-check .list__utility-links .list__label {
+        font-weight: 700;
+    }
+
+    .page__footer__backing-check .list__utility-links li {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        font-size: 13px;
+        padding: 0;
+    }
+
+    .page__footer__backing-check .list__utility-links li:after {
+        color: #2da137;
+        content: "|";
+        padding: 0 5px;
+    }
+
+    .page__footer__backing-check .list__utility-links li:first-child:after, .page__footer__backing-check .list__utility-links li:last-child:after {
+        content: '';
+        padding-right: 0;
+    }
+
+    .page__footer__backing-check .list__utility-links li a {
+        color: #2da137;
+        text-transform: uppercase;
+    }
+
+    .page__footer__backing-check .list__utility-links li a:hover, .page__footer__backing-check .list__utility-links li a:focus {
+        text-decoration: underline;
+    }
+
+    @media (max-width: 767px) {
+        .page__footer__backing-check .logo-left, .page__footer__backing-check .logo-right {
+            text-align: center;
+        }
+        .page__footer__backing-check .list__utility-links {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .page__footer__backing-check .list__utility-links .list__label {
+            display: block;
+            font-size: 13px;
+        }
+        .page__footer__backing-check .list__utility-links li {
+            font-size: 11px;
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+    }
+</style>
+<footer class="page__footer page__footer__backing-check">
+    <div class="sff-form__content-wrap">
+        <div class="page__footer-wrap">
+            <div class="custom-footer__cols logos__cols">
+                <div class="row">
+                    <div class="col-sm-6 logo-left">
+                        <div class="logo__container">
+                            <img src="https://s3-eu-west-1.amazonaws.com/sff-codedeploy/uploads/thanku_banner/ekomi-logo-lg-924803-1500636107.png" alt="Logo not Available">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 logo-right">
+                        <div class="logo__container">
+                            <img src="https://s3-eu-west-1.amazonaws.com/sff-codedeploy/uploads/thanku_banner/BankingCheck_An-eKomi-Company_Logo_SOLO_REG_2000px-544478-1500636132.png" alt="Logo not Available">
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="footer__utility-links">
+                <ul class="list__utility-links list-inline">
+                    <li class="list__label">
+                        eKomi:
+                    </li>
+                    <li><a href="#">impressum</a></li>
+                    <li><a href="#">datenschutz</a></li>
+                    <li><a href="#">agb</a></li>
+                    <li><a href="#">bewertungsleitfaden</a></li>
+                    <li><a href="#">unternehmen</a></li>
+                    <li><a href="#">karriere</a></li>
+                </ul>
+            </div>
+            <div class="footer__utility-links">
+                <ul class="list__utility-links list-inline">
+                    <li class="list__label">
+                        BankingCheck:
+                    </li>
+                    <li><a href="#">impressum</a></li>
+                    <li><a href="#">datenschutz</a></li>
+                    <li><a href="#">bewertungsleitfaden</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+    <!--Footer Start-->
+
+
+
+
+<footer class="page__footer page__footer__active">
+    <div class="sff-form__content-wrap">
+        <div class="page__footer-wrap">
+            <div class="row">
+                <div class="col-sm-7">
+                    <ul class="list-inline page__footer__quick-links">
+                        <li><a href="#">homepage</a></li>
+                        <li><a href="#">ALGEMENE VOORWAARDEN</a></li>
+                        <li><a href="#">PRIVACY</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-5">
+                    <p class="power-by__info">
+                        <span>powered by</span>
+                        
+                        <span class="power-by__logo"><img class="b-lazy" data-src="images/powered-by-white.png" src="images/loader.gif" alt="..."></span>
+                        
+                    </p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--Footer End-->
+    
+    <!--Footer Start-->
+
+
+
+
+<footer class="page__footer ">
+    <div class="sff-form__content-wrap">
+        <div class="page__footer-wrap">
+            <div class="row">
+                <div class="col-sm-7">
+                    <ul class="list-inline page__footer__quick-links">
+                        <li><a href="#">homepage</a></li>
+                        <li><a href="#">ALGEMENE VOORWAARDEN</a></li>
+                        <li><a href="#">PRIVACY</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-5">
+                    <p class="power-by__info">
+                        <span>powered by</span>
+                        
+                            <span class="power-by__logo"><img class="b-lazy" data-src="images/powered-by.png" src="images/loader.gif" alt="..."></span>
+                        
+                    </p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--Footer End-->
+
+    <!--Footer Custom Start-->
+<footer class="page__footer">
+    <div class="sff-form__content-wrap">
+        <div class="page__footer-wrap">
+            <div class="custom-footer__cols">
+                <div class="row">
+                    <div class="col-sm-4 custom-footer__address-block">
+                        <div class="custom-footer__col-header">
+                            <p class="custom-footer__col-title">eKomi Head-Quater</p>
+                        </div>
+
+                        <div class="custom-footer__col-content">
+                            <ul class="list-unstyled list__contact-info">
+                                <li>
+                                    <p class="contact-info__icon fa fa-map-marker">&nbsp;</p>
+
+                                    <p class="contact-info__content">Chamber of Commerce HR B Nr. 672 USt.-Ident-Nr. New York</p>
+                                </li>
+                                <li>
+                                    <p class="contact-info__icon fa fa-phone">&nbsp;</p>
+
+                                    <p class="contact-info__content">+42 338 987669</p>
+                                </li>
+                                <li>
+                                    <p class="contact-info__icon fa fa-envelope">&nbsp;</p>
+
+                                    <p class="contact-info__content">hq@ekomi.de</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 custom-footer__links-block">
+                        <div class="custom-footer__col-header">
+                            <p class="custom-footer__col-title">ekomi Links</p>
+                        </div>
+
+                        <div class="custom-footer__col-content">
+                            <ul class="list-unstyled list__utility-links">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Feedback</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 custom-footer__social-media-block">
+                        <div class="custom-footer__col-header">
+                            <p class="custom-footer__col-title">eKomi Social</p>
+                        </div>
+
+                        <div class="custom-footer__col-content">
+                            <ul class="list-inline list__social-media-links">
+                                <li>
+                                    <p class="fa fa-facebook-square">&nbsp;</p>
+                                </li>
+                                <li>
+                                    <p class="fa fa-twitter-square">&nbsp;</p>
+                                </li>
+                                <li>
+                                    <p class="fa fa-google-plus-square">&nbsp;</p>
+                                </li>
+                                <li>
+                                    <p class="fa fa-linkedin-square">&nbsp;</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="clearfix">&nbsp;</div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12 custom-footer__info-section">
+                        <div class="custom-footer__info-section-content">
+                            <p class="custom-footer__info-section__label">If you have any questions about this please <a href="#">Contact</a></p>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row custom-footer__section__defautl-quick-links">
+                <div class="col-sm-9">
+                    <ul class="list-inline page__footer__quick-links">
+                        <li>Copyright © 2017 eKomi. All rights reserved</li>
+                        <li><a href="#">Imprint</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Review Guidelines</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-3">
+                    <p class="power-by__info"><span>powered by</span> <span class="power-by__logo"><img alt="Logo not Available" src="/images/powered-by.png" /></span></p>
+                </div>
+
+                <div class="clearfix">&nbsp;</div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--Footer Custom End-->
+
+</div>
+
+<script type="text/javascript" src="js/libs/blazy.js"></script>
+<script type="text/javascript" src="js/libs/jquery.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"
+ integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/libs/modernizr.js"></script>
+<script type="text/javascript" src="js/libs/bootstrap.js"></script>
+<script type="text/javascript" src="js/libs/bootstrap-select.js"></script>
+<script type="text/javascript" src="js/libs/bootstrap-slider.js"></script>
+
+
+
+<!--For Fixed versions-->
+<script type="text/javascript" src="js/partials/fixed-feedback-default.js"></script>
+<script type="text/javascript" src="js/partials/fixed-feedback-grid.js"></script>
+<script type="text/javascript" src="js/partials/fixed-feedback-grid-tooltip-centered.js"></script>
+<script type="text/javascript" src="js/partials/fixed-feedback-continuous.js"></script>
+<script type="text/javascript" src="js/partials/feedback-thumbnail-height.js"></script>
+<script type="text/javascript" src="js/partials/blazy.js"></script>
+<script type="text/javascript" src="js/partials/alert.js"></script>
+<script type="text/javascript" src="js/partials/datepicker-init.js"></script>
+<script type="text/javascript" src="js/partials/range-slider.js"></script>
+
+
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
