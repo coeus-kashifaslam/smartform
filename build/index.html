@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Smart Form</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.css">
-    <link rel="stylesheet" href="css/sff-form.css?version=3605982">
+    <link rel="stylesheet" href="css/sff-form.css?version=7463521">
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -67,7 +67,7 @@
 <!--Languages End-->
 
 
-    <style type="text/css">
+    <style>
     .comp__lieferheld-header {
         border-bottom: 1px solid #ccc;
         border-top: 1px solid #ccc;
@@ -192,20 +192,19 @@
             <div class="panel-heading" role="tab" id="js__products-breadcrumb">
                 <h4 class="panel-title">
                     <a role="button" data-toggle="collapse" data-parent="#products__accordion" href="#products__breadcrumb__collapse" aria-expanded="true" aria-controls="products__breadcrumb__collapse">
+                        <label class="product__active-info"><span class="product__current">1</span>/<span class="product__total">3</span> <span class="product__current-title">Brooklyn Lager</span></label>
 
-                        <p class="product__active-info"><span class="product__current">1</span>/<span class="product__total">3</span> <span class="product__current-title">Brooklyn Lager</span></p>
-
-                        <p class="product__active-sign"><span>999 products to review</span> <i class="fa fa-circle-o"></i></p>
+                        <label class="product__active-sign"><span>999 products to review</span> <i class="fa fa-circle-o"></i></label>
                     </a>
                 </h4>
             </div>
             <div id="products__breadcrumb__collapse" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="js__products-breadcrumb">
                 <ul class="list-group">
-                    <li class="list-group-item">1 - List Item <i class="fa fa-circle-o"></i></li>
-                    <li class="list-group-item">2 - List Item <i class="fa fa-circle-o"></i></li>
+                    <li class="list-group-item completed">1 - List Item <i class="fa fa-circle-o"></i></li>
+                    <li class="list-group-item active">2 - List Item <i class="fa fa-circle-o"></i></li>
                     <li class="list-group-item">3 - List Item <i class="fa fa-circle-o"></i></li>
                     <li class="list-group-item">4 - List Item <i class="fa fa-circle-o"></i></li>
-                    <li class="list-group-item active">5 - List Item <i class="fa fa-circle-o"></i></li>
+                    <li class="list-group-item">5 - List Item <i class="fa fa-circle-o"></i></li>
                     <li class="list-group-item">6 - List Item <i class="fa fa-circle-o"></i></li>
                     <li class="list-group-item">7 - List Item <i class="fa fa-circle-o"></i></li>
                     <li class="list-group-item">8 - List Item <i class="fa fa-circle-o"></i></li>
@@ -213,11 +212,24 @@
                     <li class="list-group-item">10 - List Item <i class="fa fa-circle-o"></i></li>
                 </ul>
             </div>
+
+            <a role="button" data-toggle="collapse" data-parent="#products__accordion" href="#products__breadcrumb__collapse" aria-expanded="true" aria-controls="products__breadcrumb__collapse">
+                <i class="fa fa-angle-down"></i>
+            </a>
         </div>
     </div>
 </div>
                 <div class="sff-form__legend">
-                    <h1 class="form__legend">Form Name Goes Here</h1>
+                    <h1 class="form__legend">
+                        Form Name Goes Here
+                    </h1>
+                    <div class="elem-type__checkbox skip-product__checkbox">
+                        <input type="checkbox" class="form-checkbox" name="skip-product"
+                               id="skip-product">
+                        <label for="skip-product">
+                            <span>Skip this product</span>
+                        </label>
+                    </div>
                 </div>
                 <div class="form-fieldset">
 
@@ -19533,29 +19545,29 @@
 
 </div>
 
-<script type="text/javascript" src="js/libs/blazy.js"></script>
-<script type="text/javascript" src="js/libs/jquery.js"></script>
+<script src="js/libs/blazy.js"></script>
+<script src="js/libs/jquery.js"></script>
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"
  integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="js/libs/modernizr.js"></script>
-<script type="text/javascript" src="js/libs/bootstrap.js"></script>
-<script type="text/javascript" src="js/libs/bootstrap-select.js"></script>
-<script type="text/javascript" src="js/libs/bootstrap-slider.js"></script>
+<script src="js/libs/modernizr.js"></script>
+<script src="js/libs/bootstrap.js"></script>
+<script src="js/libs/bootstrap-select.js"></script>
+<script src="js/libs/bootstrap-slider.js"></script>
 
 
 
 <!--For Fixed versions-->
-<script type="text/javascript" src="js/partials/fixed-feedback-default.js"></script>
-<script type="text/javascript" src="js/partials/fixed-feedback-grid.js"></script>
-<script type="text/javascript" src="js/partials/fixed-feedback-grid-tooltip-centered.js"></script>
-<script type="text/javascript" src="js/partials/fixed-feedback-continuous.js"></script>
-<script type="text/javascript" src="js/partials/feedback-thumbnail-height.js"></script>
-<script type="text/javascript" src="js/partials/blazy.js"></script>
-<script type="text/javascript" src="js/partials/alert.js"></script>
-<script type="text/javascript" src="js/partials/datepicker-init.js"></script>
-<script type="text/javascript" src="js/partials/range-slider.js"></script>
+<script src="js/partials/fixed-feedback-default.js"></script>
+<script src="js/partials/fixed-feedback-grid.js"></script>
+<script src="js/partials/fixed-feedback-grid-tooltip-centered.js"></script>
+<script src="js/partials/fixed-feedback-continuous.js"></script>
+<script src="js/partials/feedback-thumbnail-height.js"></script>
+<script src="js/partials/blazy.js"></script>
+<script src="js/partials/alert.js"></script>
+<script src="js/partials/datepicker-init.js"></script>
+<script src="js/partials/range-slider.js"></script>
 
 
-<script type="text/javascript" src="js/script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

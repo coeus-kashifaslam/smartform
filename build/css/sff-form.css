@@ -9995,11 +9995,16 @@ html.form_as_widget .close__form, html.form_as_widget body .close__form {
 
 .sff-form__legend {
     border: 0 none;
+    position: relative;
+    padding-right: 180px;
 }
 
 .form__legend {
     margin-top: 0;
     margin-bottom: 25px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .form__elem__no-border {
@@ -10683,12 +10688,13 @@ html.form_as_widget .close__form, html.form_as_widget body .close__form {
     text-decoration: none;
 }
 
-.products-breadcrumb__wrapper .panel-heading p {
+.products-breadcrumb__wrapper .panel-heading label {
     margin: 0;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     line-height: 1.4;
+    font-weight: 400;
 }
 
 .products-breadcrumb__wrapper .panel-heading .product__active-info {
@@ -10718,11 +10724,6 @@ html.form_as_widget .close__form, html.form_as_widget body .close__form {
 .products-breadcrumb__wrapper .panel-heading .product__active-sign span, .products-breadcrumb__wrapper .panel-heading .product__active-sign .fa {
     vertical-align: middle;
     display: inline-block;
-}
-
-.products-breadcrumb__wrapper .list-group {
-    max-height: 150px;
-    overflow: auto;
 }
 
 .products-breadcrumb__wrapper .list-group .list-group-item {
@@ -10773,6 +10774,21 @@ html.form_as_widget .close__form, html.form_as_widget body .close__form {
 
 .products-breadcrumb__wrapper .list-group .list-group-item.completed .fa:before {
     content: '\f111';
+}
+
+.elem-type__checkbox.skip-product__checkbox {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.disable__all-fields > .form__elem {
+    opacity: .5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    pointer-events: none;
 }
 
 .content__rtl .products-breadcrumb__wrapper .panel-heading .panel-title > a {
@@ -13772,7 +13788,7 @@ html.form_as_widget .close__form, html.form_as_widget body .close__form {
         padding-top: 22px;
     }
     .sff-form__legend {
-        padding: 0 15px;
+        padding: 0 185px 0 15px;
         margin-bottom: 30px;
     }
     .sff-form__wrapper .sff-form__content-wrap {

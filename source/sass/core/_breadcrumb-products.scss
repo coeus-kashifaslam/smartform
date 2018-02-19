@@ -9,6 +9,7 @@
         padding: 10px 170px 15px 15px;
         position: relative;
         display: block;
+        //pointer-events: none;
         &:hover,
         &:focus,
         &:active {
@@ -16,12 +17,13 @@
         }
       }
     }
-    p {
+    label {
       margin: 0;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
       line-height: 1.4;
+      font-weight: normal;
     }
 
     .product__active-info {
@@ -53,8 +55,6 @@
 
 
   .list-group {
-    max-height: 150px;
-    overflow: auto;
     .list-group-item {
       position: relative;
       //border-color: $default-border-color;
@@ -110,6 +110,20 @@
 }
 
 
+.elem-type__checkbox {
+ &.skip-product__checkbox {
+   position: absolute;
+   right: 15px;
+   top: 50%;
+   transform: translateY(-50%);
+ }
+}
+.disable__all-fields {
+  > .form__elem {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
 
 
 .content__rtl {
