@@ -10670,8 +10670,37 @@ html.form_as_widget .close__form, html.form_as_widget body .close__form {
     right: -5px;
 }
 
+.products-breadcrumb__wrapper {
+    position: relative;
+}
+
+.products-breadcrumb__wrapper .products__breadcrumb-toggler {
+    position: absolute;
+    left: 50%;
+    bottom: -30px;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    border: 1px solid #dfdae0;
+    color: #4c4c4c;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 30px;
+}
+
+.products-breadcrumb__wrapper .products__breadcrumb-toggler .fa {
+    vertical-align: middle;
+    margin-top: -28px;
+}
+
+.products-breadcrumb__wrapper .products__breadcrumb-toggler.collapsed .fa:before {
+    content: '\f107';
+}
+
 .products-breadcrumb__wrapper .panel-group {
-    margin-bottom: 25px;
+    margin-bottom: 55px;
 }
 
 .products-breadcrumb__wrapper .panel-heading {
@@ -10682,6 +10711,7 @@ html.form_as_widget .close__form, html.form_as_widget body .close__form {
     padding: 10px 170px 15px 15px;
     position: relative;
     display: block;
+    pointer-events: none;
 }
 
 .products-breadcrumb__wrapper .panel-heading .panel-title > a:hover, .products-breadcrumb__wrapper .panel-heading .panel-title > a:focus, .products-breadcrumb__wrapper .panel-heading .panel-title > a:active {
@@ -10819,6 +10849,11 @@ html.form_as_widget .close__form, html.form_as_widget body .close__form {
 }
 
 .content__rtl .products-breadcrumb__wrapper .list-group .list-group-item .fa {
+    right: auto;
+    left: 15px;
+}
+
+.content__rtl .elem-type__checkbox.skip-product__checkbox {
     right: auto;
     left: 15px;
 }
@@ -12556,6 +12591,11 @@ html.form_as_widget .close__form, html.form_as_widget body .close__form {
 .content__rtl ul, .content__rtl ol {
     padding: 0;
     margin-right: -5px;
+}
+
+.content__rtl .sff-form__legend {
+    padding-right: 0;
+    padding-left: 180px;
 }
 
 .content__rtl .caption-form__icon {

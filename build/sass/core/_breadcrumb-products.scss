@@ -1,6 +1,31 @@
 .products-breadcrumb__wrapper {
+  position: relative;
+  .products__breadcrumb-toggler {
+    position: absolute;
+    left: 50%;
+    bottom: -30px;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    border: 1px solid $default-border-color;
+    color: $default-subHeader-color;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 30px;
+    .fa {
+      vertical-align: middle;
+      margin-top: -28px;
+    }
+    &.collapsed {
+      .fa {
+        &:before {
+          content: '\f107';
+        }
+      }
+    }
+  }
   .panel-group {
-    margin-bottom: 25px;
+    margin-bottom: 55px;
   }
   .panel-heading {
     padding: 0;
@@ -9,7 +34,7 @@
         padding: 10px 170px 15px 15px;
         position: relative;
         display: block;
-        //pointer-events: none;
+        pointer-events: none;
         &:hover,
         &:focus,
         &:active {
@@ -157,6 +182,12 @@
           left: 15px;
         }
       }
+    }
+  }
+  .elem-type__checkbox {
+    &.skip-product__checkbox {
+      right: auto;
+      left: 15px;
     }
   }
 }
