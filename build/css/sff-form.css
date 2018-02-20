@@ -2147,6 +2147,7 @@ output {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
     -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
@@ -5013,8 +5014,8 @@ button.close {
 }
 
 .modal.fade .modal-dialog {
-    transition: -webkit-transform .3s ease-out;
     -webkit-transition: -webkit-transform .3s ease-out;
+    transition: -webkit-transform .3s ease-out;
     transition: transform .3s ease-out;
     transition: transform .3s ease-out,-webkit-transform .3s ease-out;
     -webkit-transform: translate(0, -25%);
@@ -5470,6 +5471,7 @@ button.close {
 
 .carousel-control.left {
     background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.0001)));
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000',endColorstr='#00000000',GradientType=1);
     background-repeat: repeat-x;
@@ -5479,6 +5481,7 @@ button.close {
     right: 0;
     left: auto;
     background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.5) 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.5)));
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.5) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000',endColorstr='#80000000',GradientType=1);
     background-repeat: repeat-x;
@@ -9992,11 +9995,16 @@ html.form_as_widget .close__form, html.form_as_widget body .close__form {
 
 .sff-form__legend {
     border: 0 none;
+    position: relative;
+    padding-right: 180px;
 }
 
 .form__legend {
     margin-top: 0;
     margin-bottom: 25px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .form__elem__no-border {
@@ -10660,6 +10668,198 @@ html.form_as_widget .close__form, html.form_as_widget body .close__form {
 .content__rtl .breadcrumb__progress .progress-bar__paging p:before {
     left: auto;
     right: -5px;
+}
+
+.products-breadcrumb__wrapper {
+    position: relative;
+}
+
+.products-breadcrumb__wrapper .products__breadcrumb-toggler {
+    position: absolute;
+    left: 50%;
+    bottom: -30px;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    border: 1px solid #dfdae0;
+    color: #4c4c4c;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 30px;
+}
+
+.products-breadcrumb__wrapper .products__breadcrumb-toggler .fa {
+    vertical-align: middle;
+    margin-top: -28px;
+}
+
+.products-breadcrumb__wrapper .products__breadcrumb-toggler.collapsed .fa:before {
+    content: '\f107';
+}
+
+.products-breadcrumb__wrapper .panel-group {
+    margin-bottom: 55px;
+}
+
+.products-breadcrumb__wrapper .panel-group .panel {
+    border-radius: 0;
+}
+
+.products-breadcrumb__wrapper .panel-heading {
+    padding: 0;
+}
+
+.products-breadcrumb__wrapper .panel-heading .panel-title > a {
+    padding: 10px 170px 15px 15px;
+    position: relative;
+    display: block;
+    pointer-events: none;
+}
+
+.products-breadcrumb__wrapper .panel-heading .panel-title > a:hover, .products-breadcrumb__wrapper .panel-heading .panel-title > a:focus, .products-breadcrumb__wrapper .panel-heading .panel-title > a:active {
+    text-decoration: none;
+}
+
+.products-breadcrumb__wrapper .panel-heading label {
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+.products-breadcrumb__wrapper .panel-heading .product__active-info {
+    font-size: 20px;
+    color: #707070;
+}
+
+.products-breadcrumb__wrapper .panel-heading .product__active-info .product__current-title {
+    color: #424242;
+    font-weight: 700;
+}
+
+.products-breadcrumb__wrapper .panel-heading .product__active-sign {
+    position: absolute;
+    right: 15px;
+    top: 18px;
+    font-size: 12px;
+    color: #4c4c4c;
+}
+
+.products-breadcrumb__wrapper .panel-heading .product__active-sign .fa {
+    color: #2da137;
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+.products-breadcrumb__wrapper .panel-heading .product__active-sign span, .products-breadcrumb__wrapper .panel-heading .product__active-sign .fa {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.products-breadcrumb__wrapper .list-group .list-group-item {
+    position: relative;
+    border: none;
+    padding: 10px 45px 10px 15px;
+}
+
+.products-breadcrumb__wrapper .list-group .list-group-item:before {
+    position: absolute;
+    content: '';
+    width: 2px;
+    right: 22px;
+    top: 0;
+    bottom: 0;
+    background: #dfdae0;
+}
+
+.products-breadcrumb__wrapper .list-group .list-group-item .fa {
+    position: absolute;
+    right: 15px;
+    font-size: 18px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: #fff;
+}
+
+.products-breadcrumb__wrapper .list-group .list-group-item.active, .products-breadcrumb__wrapper .list-group .list-group-item.active:hover, .products-breadcrumb__wrapper .list-group .list-group-item:hover, .products-breadcrumb__wrapper .list-group .list-group-item:focus, .products-breadcrumb__wrapper .list-group .list-group-item:active {
+    background: transparent;
+    color: #707070;
+    border: none;
+}
+
+.products-breadcrumb__wrapper .list-group .list-group-item.completed .fa, .products-breadcrumb__wrapper .list-group .list-group-item.active .fa {
+    color: #2da137;
+}
+
+.products-breadcrumb__wrapper .list-group .list-group-item.active {
+    font-weight: 700;
+    color: #424242;
+}
+
+.products-breadcrumb__wrapper .list-group .list-group-item.active:hover, .products-breadcrumb__wrapper .list-group .list-group-item.active:focus, .products-breadcrumb__wrapper .list-group .list-group-item.active:active {
+    color: #424242;
+}
+
+.products-breadcrumb__wrapper .list-group .list-group-item.completed .fa:before {
+    content: '\f111';
+}
+
+.elem-type__checkbox.skip-product__checkbox {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.disable__all-fields > .form__elem {
+    opacity: .5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    pointer-events: none;
+}
+
+.content__rtl .products-breadcrumb__wrapper .panel-heading .panel-title > a {
+    padding: 10px 15px 15px 170px;
+}
+
+.content__rtl .products-breadcrumb__wrapper .panel-heading .product__active-sign {
+    right: auto;
+    left: 15px;
+}
+
+.content__rtl .products-breadcrumb__wrapper .panel-heading .product__active-sign .fa {
+    margin-left: 0;
+    margin-right: 5px;
+}
+
+.content__rtl .products-breadcrumb__wrapper .list-group {
+    margin-right: 0;
+}
+
+.content__rtl .products-breadcrumb__wrapper .list-group .list-group-item {
+    padding: 10px 15px 10px 45px;
+}
+
+.content__rtl .products-breadcrumb__wrapper .list-group .list-group-item:before {
+    right: auto;
+    left: 22px;
+}
+
+.content__rtl .products-breadcrumb__wrapper .list-group .list-group-item .fa {
+    right: auto;
+    left: 15px;
+}
+
+.content__rtl .elem-type__checkbox.skip-product__checkbox {
+    right: auto;
+    left: 15px;
 }
 
 .content__rtl .wizard__breadcrumb-list {
@@ -12132,6 +12332,7 @@ html.form_as_widget .close__form, html.form_as_widget body .close__form {
     top: -6px;
     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4xIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g);
     background-size: 100%;
+    background-image: -webkit-gradient(linear, 50% 0, 50% 100%, color-stop(0, rgba(255, 255, 255, 0)), color-stop(100%, rgba(0, 0, 0, 0.1)));
     background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.1));
     background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.1));
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
@@ -12151,6 +12352,7 @@ html.form_as_widget .close__form, html.form_as_widget body .close__form {
     left: 0;
     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjEzIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==);
     background-size: 100%;
+    background-image: -webkit-gradient(linear, 50% 0, 50% 100%, color-stop(0, rgba(0, 0, 0, 0.13)), color-stop(100%, rgba(255, 255, 255, 0)));
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.13), rgba(255, 255, 255, 0));
     background-image: linear-gradient(rgba(0, 0, 0, 0.13), rgba(255, 255, 255, 0));
     border-radius: 50%;
@@ -12159,6 +12361,7 @@ html.form_as_widget .close__form, html.form_as_widget body .close__form {
 .slider-handle:active {
     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjEiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4xMiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==);
     background-size: 100%;
+    background-image: -webkit-gradient(linear, 50% 0, 50% 100%, color-stop(0, rgba(0, 0, 0, 0.1)), color-stop(100%, rgba(0, 0, 0, 0.12)));
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.12));
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.12));
 }
@@ -12392,6 +12595,11 @@ html.form_as_widget .close__form, html.form_as_widget body .close__form {
 .content__rtl ul, .content__rtl ol {
     padding: 0;
     margin-right: -5px;
+}
+
+.content__rtl .sff-form__legend {
+    padding-right: 0;
+    padding-left: 180px;
 }
 
 .content__rtl .caption-form__icon {
@@ -13624,7 +13832,7 @@ html.form_as_widget .close__form, html.form_as_widget body .close__form {
         padding-top: 22px;
     }
     .sff-form__legend {
-        padding: 0 15px;
+        padding: 0 185px 0 15px;
         margin-bottom: 30px;
     }
     .sff-form__wrapper .sff-form__content-wrap {
@@ -14315,8 +14523,8 @@ html.form_as_widget .close__form, html.form_as_widget body .close__form {
 
 @media all and (transform-3d), (-webkit-transform-3d) {
     .carousel-inner > .item {
-        transition: -webkit-transform .6s ease-in-out;
         -webkit-transition: -webkit-transform .6s ease-in-out;
+        transition: -webkit-transform .6s ease-in-out;
         transition: transform .6s ease-in-out;
         transition: transform .6s ease-in-out,-webkit-transform .6s ease-in-out;
         -webkit-backface-visibility: hidden;

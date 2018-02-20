@@ -99,10 +99,15 @@
 }
 .sff-form__legend {
   border: 0 none;
+  position: relative;
+  padding-right: 180px;
 }
 .form__legend {
   margin-top: 0;
   margin-bottom: 25px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .form__elem__no-border {
   border: 0 none;
@@ -229,7 +234,7 @@
     }
   }
   .sff-form__legend {
-    padding: 0 15px;
+    padding: 0 185px 0 15px;
     margin-bottom: 30px;
   }
   .sff-form__wrapper {
