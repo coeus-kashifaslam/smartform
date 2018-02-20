@@ -10703,6 +10703,10 @@ html.form_as_widget .close__form, html.form_as_widget body .close__form {
     margin-bottom: 55px;
 }
 
+.products-breadcrumb__wrapper .panel-group .panel {
+    border-radius: 0;
+}
+
 .products-breadcrumb__wrapper .panel-heading {
     padding: 0;
 }
