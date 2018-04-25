@@ -1,78 +1,291 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?5w7uxs');
-  src:  url('../fonts/icomoon.eot?5w7uxs#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?5w7uxs') format('truetype'),
-    url('../fonts/icomoon.woff?5w7uxs') format('woff'),
-    url('../fonts/icomoon.svg?5w7uxs#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?tozn7r');
+  src:  url('../fonts/icomoon.eot?tozn7r#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?tozn7r') format('truetype'),
+    url('../fonts/icomoon.woff?tozn7r') format('woff'),
+    url('../fonts/icomoon.svg?tozn7r#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
-.ico-square-0:before {
+.ico-bold-angry:before {
   content: "\e948";
 }
-.ico-square-0-selected:before {
+.ico-bold-angry-selected:before {
   content: "\e949";
 }
-.ico-square-1:before {
+.ico-bold-baffled:before {
   content: "\e94a";
 }
-.ico-square-1-selected:before {
+.ico-bold-baffled-selected:before {
   content: "\e94b";
 }
-.ico-square-2:before {
+.ico-bold-circle:before {
   content: "\e94c";
 }
-.ico-square-2-selected:before {
+.ico-bold-circle-selected:before {
   content: "\e94d";
 }
-.ico-square-3:before {
+.ico-bold-comment:before {
   content: "\e94e";
 }
-.ico-square-3-selected:before {
+.ico-bold-comments:before {
   content: "\e94f";
 }
-.ico-square-4:before {
+.ico-bold-comment-selected:before {
   content: "\e950";
 }
-.ico-square-4-selected:before {
+.ico-bold-comments-selected:before {
   content: "\e951";
 }
-.ico-square-5:before {
+.ico-bold-confused:before {
   content: "\e952";
 }
-.ico-square-5-selected:before {
+.ico-bold-confused-selected:before {
   content: "\e953";
 }
-.ico-square-6:before {
+.ico-bold-crying:before {
   content: "\e954";
 }
-.ico-square-6-selected:before {
+.ico-bold-crying-selected:before {
   content: "\e955";
 }
-.ico-square-7:before {
+.ico-bold-down:before {
   content: "\e956";
 }
-.ico-square-7-selected:before {
+.ico-bold-down-selected:before {
   content: "\e957";
 }
-.ico-square-8:before {
+.ico-bold-envelop:before {
   content: "\e958";
 }
-.ico-square-8-selected:before {
+.ico-bold-envelop-selected:before {
   content: "\e959";
 }
-.ico-square-9:before {
+.ico-bold-exclamation:before {
   content: "\e95a";
 }
-.ico-square-9-selected:before {
+.ico-bold-frustrated:before {
   content: "\e95b";
 }
-.ico-square-10:before {
+.ico-bold-frustrated-selected:before {
   content: "\e95c";
 }
-.ico-square-10-selected:before {
+.ico-bold-grin:before {
   content: "\e95d";
+}
+.ico-bold-grin-selected:before {
+  content: "\e95e";
+}
+.ico-bold-happy:before {
+  content: "\e95f";
+}
+.ico-bold-happy-selected:before {
+  content: "\e960";
+}
+.ico-bold-heart:before {
+  content: "\e961";
+}
+.ico-bold-heart-selected:before {
+  content: "\e962";
+}
+.ico-bold-question .path1:before {
+  content: "\e963";
+  color: rgb(0, 0, 0);
+}
+.ico-bold-question .path2:before {
+  content: "\e964";
+  margin-left: -1em;
+  color: rgb(1, 1, 1);
+}
+.ico-bold-question-circle-o:before {
+  content: "\e965";
+}
+.ico-bold-question-circle-o-selected:before {
+  content: "\e966";
+}
+.ico-bold-question-selected:before {
+  content: "\e967";
+}
+.ico-bold-sad:before {
+  content: "\e968";
+}
+.ico-bold-sad-selected:before {
+  content: "\e969";
+}
+.ico-bold-serious:before {
+  content: "\e96a";
+}
+.ico-bold-serious-selected:before {
+  content: "\e96b";
+}
+.ico-bold-smile:before {
+  content: "\e96c";
+}
+.ico-bold-smile-selected:before {
+  content: "\e96d";
+}
+.ico-bold-square:before {
+  content: "\e96e";
+}
+.ico-bold-square-0:before {
+  content: "\e96f";
+}
+.ico-bold-square-0-selected:before {
+  content: "\e970";
+}
+.ico-bold-square-1:before {
+  content: "\e971";
+}
+.ico-bold-square-1-selected:before {
+  content: "\e972";
+}
+.ico-bold-square-2:before {
+  content: "\e973";
+}
+.ico-bold-square-2-selected:before {
+  content: "\e974";
+}
+.ico-bold-square-3:before {
+  content: "\e975";
+}
+.ico-bold-square-3-selected:before {
+  content: "\e976";
+}
+.ico-bold-square-4:before {
+  content: "\e977";
+}
+.ico-bold-square-4-selected:before {
+  content: "\e978";
+}
+.ico-bold-square-5:before {
+  content: "\e979";
+}
+.ico-bold-square-5-selected:before {
+  content: "\e97a";
+}
+.ico-bold-square-6:before {
+  content: "\e97b";
+}
+.ico-bold-square-6-selected:before {
+  content: "\e97c";
+}
+.ico-bold-square-7:before {
+  content: "\e97d";
+}
+.ico-bold-square-7-selected:before {
+  content: "\e97e";
+}
+.ico-bold-square-8:before {
+  content: "\e97f";
+}
+.ico-bold-square-8-selected:before {
+  content: "\e980";
+}
+.ico-bold-square-9:before {
+  content: "\e981";
+}
+.ico-bold-square-9-selected:before {
+  content: "\e982";
+}
+.ico-bold-square-10:before {
+  content: "\e983";
+}
+.ico-bold-square-10-selected:before {
+  content: "\e984";
+}
+.ico-bold-square-selected:before {
+  content: "\e985";
+}
+.ico-bold-starburst:before {
+  content: "\e986";
+}
+.ico-bold-starburst-selected:before {
+  content: "\e987";
+}
+.ico-bold-target:before {
+  content: "\e988";
+}
+.ico-bold-target-selected:before {
+  content: "\e989";
+}
+.ico-bold-thumb-down:before {
+  content: "\e98a";
+}
+.ico-bold-thumb-down-selected:before {
+  content: "\e98b";
+}
+.ico-bold-thumb-up:before {
+  content: "\e98c";
+}
+.ico-bold-thumb-up-selected:before {
+  content: "\e98d";
+}
+.ico-square-0:before {
+  content: "\e98e";
+}
+.ico-square-0-selected:before {
+  content: "\e98f";
+}
+.ico-square-1:before {
+  content: "\e990";
+}
+.ico-square-1-selected:before {
+  content: "\e991";
+}
+.ico-square-2:before {
+  content: "\e992";
+}
+.ico-square-2-selected:before {
+  content: "\e993";
+}
+.ico-square-3:before {
+  content: "\e994";
+}
+.ico-square-3-selected:before {
+  content: "\e995";
+}
+.ico-square-4:before {
+  content: "\e996";
+}
+.ico-square-4-selected:before {
+  content: "\e997";
+}
+.ico-square-5:before {
+  content: "\e998";
+}
+.ico-square-5-selected:before {
+  content: "\e999";
+}
+.ico-square-6:before {
+  content: "\e99a";
+}
+.ico-square-6-selected:before {
+  content: "\e99b";
+}
+.ico-square-7:before {
+  content: "\e99c";
+}
+.ico-square-7-selected:before {
+  content: "\e99d";
+}
+.ico-square-8:before {
+  content: "\e99e";
+}
+.ico-square-8-selected:before {
+  content: "\e99f";
+}
+.ico-square-9:before {
+  content: "\e9a0";
+}
+.ico-square-9-selected:before {
+  content: "\e9a1";
+}
+.ico-square-10:before {
+  content: "\e9a2";
+}
+.ico-square-10-selected:before {
+  content: "\e9a3";
 }
 .ico-angry:before {
   content: "\e900";
