@@ -12,6 +12,14 @@
     text-align: center;
     vertical-align: middle;
     font-size: 30px;
+    &:hover,
+    &:focus,
+    &:active {
+      outline: none;
+    .fa {
+        outline: none;
+      }
+    }
     .fa {
       vertical-align: middle;
       margin-top: -28px;
@@ -77,6 +85,11 @@
         vertical-align: middle;
         display: inline-block;
       }
+      span {
+        span {
+          vertical-align: top;
+        }
+      }
     }
 
   }
@@ -89,6 +102,8 @@
       //border-color: transparent;
       border: none;
       padding: 10px 45px 10px 15px;
+      color: $default-text-color;
+
       &:before {
         position: absolute;
         content: '';
@@ -126,7 +141,7 @@
           color: $default-header-color;
         }
       }
-      &.completed {
+      &.completed, &.skipped {
         .fa {
           &:before {
             content: '\f111';
@@ -140,10 +155,9 @@
 
 .elem-type__checkbox {
  &.skip-product__checkbox {
-   position: absolute;
-   right: 15px;
-   top: 50%;
-   transform: translateY(-50%);
+    @media(min-width: 768px) {
+      margin-bottom: 30px;
+    }
  }
 }
 .disable__all-fields {
