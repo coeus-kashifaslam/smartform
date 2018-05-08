@@ -3,9 +3,25 @@
   table-layout: fixed;
   width: 100%;
 }
+.fixed__grid-table__total-row {
+  .feedback__emo-list__description-count {
+    text-align: left;
+  }
+}
 .fixed__grid-table__row {
   display: table-row;
 }
+.hidden-parent-rating {
+  .feedback__item-label {
+    display: none;
+  }
+  .fixed__grid-shape__col {
+    @media(max-width: 767px) {
+      display: none;
+    }
+  }
+}
+
 .fixed__grid-table__cell {
   display: table-cell;
   border-bottom: 1px solid $default-border-color;

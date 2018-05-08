@@ -3,7 +3,7 @@
 }
 .caption-form__wrap {
   padding: 45px 45px 25px;
-  border: 1px solid $default-theme;
+  border: 1px solid $ekomi-green;
   border-top: 0 none !important;
   position: relative;
   @media (max-width: 767px) {
@@ -27,7 +27,7 @@
   }
 }
 .caption-form__icon {
-  color: $default-theme;
+  color: $ekomi-green;
   font-size: 32px;
   position: absolute;
   line-height: 1;
@@ -58,7 +58,7 @@
     right: 0;
     top: 50%;
     bottom: 0;
-    border: 1px solid $default-theme;
+    border: 1px solid $ekomi-green;
     border-bottom: 0 none !important;
     margin-top: -1px;
   }

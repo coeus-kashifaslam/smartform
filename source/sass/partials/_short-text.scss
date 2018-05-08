@@ -13,3 +13,9 @@
     padding: 7px 15px;
   }
 }
+
+.content__rtl {
+  .intl-tel-input {
+    direction: ltr;
+ }
+}

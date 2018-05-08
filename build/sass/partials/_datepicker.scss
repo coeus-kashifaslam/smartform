@@ -11,6 +11,9 @@ $addon-border: #ccc;
   .input-group-addon {
     border-radius: 0;
   }
+  &[readonly] {
+    background: $white;
+  }
 }
 .datepicker__base {
   z-index: 3 !important;
