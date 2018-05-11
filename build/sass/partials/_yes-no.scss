@@ -79,7 +79,7 @@
   margin-bottom: 0;
 }
 .btn-switch__label + .btn-switch__label {
-  padding-right: .75em;
+  padding-right: .5em;
   padding-left: 0;
 }
 .btn-switch__txt {
@@ -127,7 +127,6 @@
 }
 .btn-switch__radio_yes:checked ~ .btn-switch__label_no:after {
   left: calc(100% - 2em);
-  background: #fff;
 }
 .btn-switch__radio_no:checked ~ .btn-switch__label_yes:before,
 .btn-switch__radio_yes:checked ~ .btn-switch__label_no:before {
