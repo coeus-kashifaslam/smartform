@@ -85,7 +85,7 @@
 	},
 
 	styles = {
-		in: source + 'sass/*.scss',
+		in: source + 'sass/sff-form.scss',
 		out: destination + 'css/'
 	},
 
