@@ -12476,6 +12476,29 @@ html.form_as_widget .close__form, html.form_as_widget body .close__form {
     display: none;
 }
 
+.fixed__feedback__grid__subrating-tooltip-two-column .fixed__grid-tooltip__row {
+    display: none;
+}
+
+.fixed__feedback__grid__subrating-tooltip-two-column .form__elem__disable-option.fixed__grid-table__cell {
+    display: none;
+}
+
+.fixed__feedback__grid__connect-icons .fixed__grid-shape__col:not(.fixed__grid__sub-tooltip-col) {
+    position: relative;
+}
+
+.fixed__feedback__grid__connect-icons .fixed__grid-shape__col:not(.fixed__grid__sub-tooltip-col):after {
+    content: '';
+    position: absolute;
+    left: calc(50% - 14px);
+    right: calc(50% - 14px);
+    top: 50%;
+    height: 1px;
+    margin-left: 28px;
+    background: #2da137;
+}
+
 .feedback__continuous__container {
     border: 1px solid #dfdae0;
     margin-bottom: -10px;
@@ -14786,6 +14809,9 @@ html.form_as_widget .close__form, html.form_as_widget body .close__form {
     }
     .fixed__grid__container-centered .fixed__grid-shape__col .grid-shape-label {
         display: inline-block;
+    }
+    .fixed__feedback__grid__subrating-tooltip-two-column {
+        display: none;
     }
     .feedback__continuous__container {
         border: 0 none;

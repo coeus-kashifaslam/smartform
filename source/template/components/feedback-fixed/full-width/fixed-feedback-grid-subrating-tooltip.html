@@ -1,0 +1,79 @@
+<!--Ranking Scale Frid-->
+<article class="form__elem">
+    <div class="elem__rating fixed__feedback__grid fixed__feedback__grid__subrating-tooltip-two-column fixed__feedback__grid__connect-icons">
+        <h3 class="form__elem__title">Feedback Grid Full Width <sup>*</sup></h3>
+        <div class="form__elem__body">
+            <p class="form__elem__help-text">Help Text</p>
+            <div class="elem_fixed__grid__container fixed__grid-table hide-radio">
+                <div class="grid__header fixed__grid-table__row fixed__grid-tooltip__row">
+                    <div class="fixed__grid-table__cell"></div>
+                    {% set gridCols = [0,1,2,3,4]%}
+                    {% for gridCol in gridCols %}
+                    <div class="fixed__grid-table__cell fixed__grid-shape__col">
+                        <p>Toolti {{gridCol + 1}}</p>
+                    </div>
+                    {% endfor %}
+                    <div class="fixed__grid-table__cell fixed__grid-last-col">
+                        <p>Can not Answer</p>
+                    </div>
+                </div>
+
+                {% set gridRows = [0,1,2]%}
+                {% for gridRow in gridRows %}
+                <div class="grid__body fixed__grid-table__row fixed__grid-content__row fixed__grid__selection-single">
+                    <div class="fixed__grid-table__cell fixed__grid-label-col">
+                        <p>Lorem Ipsum Goes Here</p>
+                    </div>
+                    <div class="fixed__grid-table__cell fixed__grid-shape__col fixed__grid__sub-tooltip-col">
+                        <p>Tooltip 1</p>
+                    </div>
+                    {% set gridColsbody = [0,1,2,3,4]%}
+                    {% for gridColbody in gridColsbody %}
+                    <div class="fixed__grid-table__cell fixed__grid-shape__col">
+                        <input type="radio">
+                        <label class="grid-shape-label">
+                            <span class="grid-shape-span">
+                                <i class="fixed__grid-shape icomoon-default ico {{icon.matrix}}"></i>
+                                <i class="fixed__grid-shape icomoon-sudo ico {{icon.matrix}}-selected"></i>
+                            </span>
+                            <span class="grid-text-span">Some text</span>
+                            <!--For icon add classes ico ico-ICON-NAME-->
+                            <!--<span class="grid-text-span ico ico-comments"></span>-->
+                        </label>
+                    </div>
+                    {% endfor %}
+                    <div class="fixed__grid-table__cell fixed__grid-shape__col fixed__grid__sub-tooltip-col">
+                        <p>Tooltip 2</p>
+                    </div>
+                    <div class="form__elem__disable-option fixed__grid-table__cell">
+                        <div class="checkbox-col">
+                            <div class="elem-type__checkbox">
+                                <input type="checkbox" class="form-checkbox" name="disableOption"
+                                       id="disableMultipleChoice">
+                                <label for="disableMultipleChoice">
+                                    <span></span>
+                                    <span class="disableOption-text">Can not Answer</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="feedback__count__message">
+                <p>
+                    You will find this review online as a
+                    <span><i class="ico ico-star feedback__count__message__icon-selected"></i></span>
+                    <span><i class="ico ico-star feedback__count__message__icon-selected"></i></span>
+                    <span><i class="ico ico-star feedback__count__message__icon-selected"></i></span>
+                    <span><i class="ico ico-star"></i></span>
+                    <span><i class="ico ico-star"></i></span>
+                    <span class="count__current">3</span><span class="count__separator">/</span><span class="count__total">5</span>
+                    rating.
+                </p>
+            </div>
+            <p class="form__elem__error-text">This is error Message</p>
+        </div>
+    </div>
+</article>
+<!--Ranking Scale Grid-->

@@ -268,3 +268,37 @@
     }
   }
 }
+
+
+
+
+.fixed__feedback__grid__subrating-tooltip-two-column {
+  @media (max-width: 767px) {
+    display: none;
+  }
+  .fixed__grid-tooltip__row {
+    display: none;
+  }
+  .form__elem__disable-option {
+    &.fixed__grid-table__cell {
+      display: none;
+    }
+  }
+}
+
+
+.fixed__feedback__grid__connect-icons {
+  .fixed__grid-shape__col:not(.fixed__grid__sub-tooltip-col) {
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      left: calc(50% - 14px);
+      right: calc(50% - 14px);
+      top: 50%;
+      height: 1px;
+      margin-left: 28px;
+      background: $ekomi-green;
+    }
+  }
+}
