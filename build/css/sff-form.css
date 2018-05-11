@@ -11681,6 +11681,9 @@ html.form_as_widget .close__form, html.form_as_widget body .close__form {
     -ms-user-select: none;
     user-select: none;
     margin: 0;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .btn-switch__radio {
