@@ -12488,15 +12488,30 @@ html.form_as_widget .close__form, html.form_as_widget body .close__form {
     position: relative;
 }
 
+.fixed__feedback__grid__connect-icons .fixed__grid-shape__col:not(.fixed__grid__sub-tooltip-col) .fixed__grid-shape {
+    background: #fff;
+    position: relative;
+    z-index: 2;
+}
+
 .fixed__feedback__grid__connect-icons .fixed__grid-shape__col:not(.fixed__grid__sub-tooltip-col):after {
     content: '';
     position: absolute;
-    left: calc(50% - 14px);
-    right: calc(50% - 14px);
+    left: 0;
+    right: 0;
     top: 50%;
     height: 1px;
-    margin-left: 28px;
-    background: #2da137;
+    background: #dfdae0;
+    z-index: 1;
+    margin-top: -1px;
+}
+
+.fixed__feedback__grid__connect-icons .fixed__grid-shape__col.first__shape:after {
+    left: 50%;
+}
+
+.fixed__feedback__grid__connect-icons .fixed__grid-shape__col.last__shape:after {
+    right: 50%;
 }
 
 .feedback__continuous__container {

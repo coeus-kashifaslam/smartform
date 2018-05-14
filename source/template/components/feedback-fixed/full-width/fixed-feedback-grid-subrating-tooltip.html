@@ -20,14 +20,29 @@
 
                 {% set gridRows = [0,1,2]%}
                 {% for gridRow in gridRows %}
-                <div class="grid__body fixed__grid-table__row fixed__grid-content__row fixed__grid__selection-single">
+                <div class="grid__body fixed__grid-table__row fixed__grid-content__row fixed__grid__selection-continuous">
                     <div class="fixed__grid-table__cell fixed__grid-label-col">
                         <p>Lorem Ipsum Goes Here</p>
                     </div>
                     <div class="fixed__grid-table__cell fixed__grid-shape__col fixed__grid__sub-tooltip-col">
                         <p>Tooltip 1</p>
                     </div>
-                    {% set gridColsbody = [0,1,2,3,4]%}
+
+
+
+                    <div class="fixed__grid-table__cell fixed__grid-shape__col first__shape">
+                        <input type="radio">
+                        <label class="grid-shape-label">
+                            <span class="grid-shape-span">
+                                <i class="fixed__grid-shape icomoon-default ico {{icon.matrix}}"></i>
+                                <i class="fixed__grid-shape icomoon-sudo ico {{icon.matrix}}-selected"></i>
+                            </span>
+                            <span class="grid-text-span">Some text</span>
+                            <!--For icon add classes ico ico-ICON-NAME-->
+                            <!--<span class="grid-text-span ico ico-comments"></span>-->
+                        </label>
+                    </div>
+                    {% set gridColsbody = [0,1,2]%}
                     {% for gridColbody in gridColsbody %}
                     <div class="fixed__grid-table__cell fixed__grid-shape__col">
                         <input type="radio">
@@ -42,6 +57,20 @@
                         </label>
                     </div>
                     {% endfor %}
+                    <div class="fixed__grid-table__cell fixed__grid-shape__col last__shape">
+                        <input type="radio">
+                        <label class="grid-shape-label">
+                            <span class="grid-shape-span">
+                                <i class="fixed__grid-shape icomoon-default ico {{icon.matrix}}"></i>
+                                <i class="fixed__grid-shape icomoon-sudo ico {{icon.matrix}}-selected"></i>
+                            </span>
+                            <span class="grid-text-span">Some text</span>
+                            <!--For icon add classes ico ico-ICON-NAME-->
+                            <!--<span class="grid-text-span ico ico-comments"></span>-->
+                        </label>
+                    </div>
+
+
                     <div class="fixed__grid-table__cell fixed__grid-shape__col fixed__grid__sub-tooltip-col">
                         <p>Tooltip 2</p>
                     </div>

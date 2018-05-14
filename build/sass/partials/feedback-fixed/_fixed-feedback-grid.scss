@@ -288,17 +288,35 @@
 
 
 .fixed__feedback__grid__connect-icons {
-  .fixed__grid-shape__col:not(.fixed__grid__sub-tooltip-col) {
-    position: relative;
-    &:after {
-      content: '';
-      position: absolute;
-      left: calc(50% - 14px);
-      right: calc(50% - 14px);
-      top: 50%;
-      height: 1px;
-      margin-left: 28px;
-      background: $ekomi-green;
+  .fixed__grid-shape__col {
+    &:not(.fixed__grid__sub-tooltip-col) {
+      position: relative;
+      .fixed__grid-shape {
+        background: $white;
+        position: relative;
+        z-index: 2;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        height: 1px;
+        background: $default-border-color;
+        z-index: 1;
+        margin-top: -1px;
+      }
+    }
+    &.first__shape {
+      &:after {
+        left: 50%;
+      }
+    }
+    &.last__shape {
+      &:after {
+        right: 50%;
+      }
     }
   }
 }
