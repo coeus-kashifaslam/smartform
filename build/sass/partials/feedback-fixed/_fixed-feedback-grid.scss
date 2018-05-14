@@ -308,12 +308,12 @@
         margin-top: -1px;
       }
     }
-    &.first__shape {
+    &.fixed__grid-shape__col-first {
       &:after {
         left: 50%;
       }
     }
-    &.last__shape {
+    &.fixed__grid-shape__col-last {
       &:after {
         right: 50%;
       }
@@ -323,13 +323,13 @@
 .content__rtl {
   .fixed__feedback__grid__connect-icons {
     .fixed__grid-shape__col {
-      &.first__shape {
+      &.fixed__grid-shape__col-first {
         &:after {
           left: 0;
           right: 50%;
         }
       }
-      &.last__shape {
+      &.fixed__grid-shape__col-last {
         &:after {
           right: 0;
           left: 50%;
