@@ -320,3 +320,21 @@
     }
   }
 }
+.content__rtl {
+  .fixed__feedback__grid__connect-icons {
+    .fixed__grid-shape__col {
+      &.first__shape {
+        &:after {
+          left: 0;
+          right: 50%;
+        }
+      }
+      &.last__shape {
+        &:after {
+          right: 0;
+          left: 50%;
+        }
+      }
+    }
+  }
+}

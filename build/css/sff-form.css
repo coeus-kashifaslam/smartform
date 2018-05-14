@@ -12514,6 +12514,16 @@ html.form_as_widget .close__form, html.form_as_widget body .close__form {
     right: 50%;
 }
 
+.content__rtl .fixed__feedback__grid__connect-icons .fixed__grid-shape__col.first__shape:after {
+    left: 0;
+    right: 50%;
+}
+
+.content__rtl .fixed__feedback__grid__connect-icons .fixed__grid-shape__col.last__shape:after {
+    right: 0;
+    left: 50%;
+}
+
 .feedback__continuous__container {
     border: 1px solid #dfdae0;
     margin-bottom: -10px;
