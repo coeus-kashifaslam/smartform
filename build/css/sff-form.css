@@ -12351,6 +12351,65 @@ html.form_as_widget .close__form, html.form_as_widget body .close__form {
     font-size: 40px;
 }
 
+.fixed__feedback__default__layout-segmented .ranking__list__default {
+    border: 1px solid #dfdae0;
+    border-radius: 7px;
+}
+
+.fixed__feedback__default__layout-segmented .ranking__list__default:hover {
+    border-color: #afa3b2;
+}
+
+.fixed__feedback__default__layout-segmented .ranking__list__default .ranking__list__item {
+    cursor: pointer;
+}
+
+.fixed__feedback__default__layout-segmented .ranking__list__default .ranking__list__item .ranking__list__item__label {
+    padding: 6px 0;
+    display: block;
+}
+
+.fixed__feedback__default__layout-segmented .rating-comp__selection-type__single .rating-comp__selected, .fixed__feedback__default__layout-segmented .rating-comp__selection-type__single .rating-comp__hover, .fixed__feedback__default__layout-segmented .rating-comp__selection-type__continuous .rating-comp__selected, .fixed__feedback__default__layout-segmented .rating-comp__selection-type__continuous .rating-comp__hover {
+    background: transparent;
+}
+
+.fixed__feedback__default__layout-segmented .rating-comp__selection-type__single .rating-comp__selected .ranking__list__item__label, .fixed__feedback__default__layout-segmented .rating-comp__selection-type__single .rating-comp__hover .ranking__list__item__label, .fixed__feedback__default__layout-segmented .rating-comp__selection-type__continuous .rating-comp__selected .ranking__list__item__label, .fixed__feedback__default__layout-segmented .rating-comp__selection-type__continuous .rating-comp__hover .ranking__list__item__label {
+    color: inherit;
+}
+
+.fixed__feedback__default__layout-segmented .rating-comp__selection-type__single .rating-comp__selected__current, .fixed__feedback__default__layout-segmented .rating-comp__selection-type__single .rating-comp__hover__current, .fixed__feedback__default__layout-segmented .rating-comp__selection-type__continuous .rating-comp__selected__current, .fixed__feedback__default__layout-segmented .rating-comp__selection-type__continuous .rating-comp__hover__current {
+    border-radius: 5px;
+}
+
+.fixed__feedback__default__layout-segmented .rating-comp__selection-type__single .rating-comp__hover__current, .fixed__feedback__default__layout-segmented .rating-comp__selection-type__continuous .rating-comp__hover__current {
+    background: #dfdae0;
+}
+
+.fixed__feedback__default__layout-segmented .rating-comp__selection-type__single .rating-comp__selected__current, .fixed__feedback__default__layout-segmented .rating-comp__selection-type__continuous .rating-comp__selected__current {
+    background: #2da137;
+}
+
+.fixed__feedback__default__layout-segmented .rating-comp__selection-type__single .rating-comp__selected__current .ranking__list__item__label, .fixed__feedback__default__layout-segmented .rating-comp__selection-type__continuous .rating-comp__selected__current .ranking__list__item__label {
+    color: #fff;
+}
+
+.fixed__feedback__default__layout-segmented.handheld__reverse .ranking__list__default {
+    direction: rtl;
+    padding-right: 0;
+}
+
+.fixed__feedback__default__layout-segmented .ranking__list__item__tooltip {
+    direction: ltr;
+}
+
+.content__rtl .fixed__feedback__default__layout-segmented.handheld__reverse .ranking__list__default {
+    direction: ltr;
+}
+
+.content__rtl .fixed__feedback__default__layout-segmented .ranking__list__item__tooltip {
+    direction: rtl;
+}
+
 .fixed__grid-table {
     display: table;
     table-layout: fixed;
@@ -14706,6 +14765,12 @@ html.form_as_widget .close__form, html.form_as_widget body .close__form {
     }
     .ranking__list__default .ranking__list__item .ranking__list__item__label {
         font-size: 24px;
+    }
+    .fixed__feedback__default__layout-segmented .ranking__list__default {
+        display: block;
+    }
+    .fixed__feedback__default__layout-segmented .ranking__list__item {
+        display: block;
     }
     .hidden-parent-rating .fixed__grid-shape__col {
         display: none;

@@ -1,0 +1,77 @@
+$segmented-border-radius: 7px;
+.fixed__feedback__default__layout-segmented {
+  .ranking__list__default {
+    border: 1px solid $default-border-color;
+    border-radius: $segmented-border-radius;
+    &:hover {
+      border-color: darken($default-border-color, 20%);
+    }
+
+    .ranking__list__item {
+      cursor: pointer;
+      .ranking__list__item__label {
+        padding: 6px 0;
+        display: block;
+      }
+    }
+  }
+
+  .rating-comp__selection-type__single,
+  .rating-comp__selection-type__continuous {
+    .rating-comp__selected,
+    .rating-comp__hover {
+      background: transparent;
+      .ranking__list__item__label {
+        color: inherit;
+      }
+    }
+    .rating-comp__selected__current,
+    .rating-comp__hover__current {
+      border-radius: $segmented-border-radius - 2;
+    }
+    .rating-comp__hover__current {
+      background: $default-border-color;
+    }
+    .rating-comp__selected__current {
+      background: $ekomi-green;
+      .ranking__list__item__label {
+        color: $white;
+      }
+    }
+  }
+
+  &.handheld__reverse {
+    .ranking__list__default {
+      direction: rtl;
+      padding-right: 0;
+    }
+  }
+  .ranking__list__item__tooltip {
+    direction: ltr;
+  }
+}
+
+
+.content__rtl {
+  .fixed__feedback__default__layout-segmented {
+    &.handheld__reverse {
+      .ranking__list__default {
+        direction: ltr;
+      }
+    }
+    .ranking__list__item__tooltip {
+      direction: rtl;
+    }
+  }
+}
+
+@media (max-width: 767px){
+  .fixed__feedback__default__layout-segmented {
+    .ranking__list__default {
+      display: block;
+    }
+    .ranking__list__item {
+      display: block;
+    }
+  }
+}
