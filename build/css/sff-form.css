@@ -14810,8 +14810,8 @@ html.form_as_widget .close__form, html.form_as_widget body .close__form {
     .handheld__reverse .ranking__list__default .ranking__list__item:before {
         top: auto;
         bottom: 0;
-        left: 25%;
-        right: 25%;
+        left: 20%;
+        right: 20%;
         height: 1px;
         width: auto;
     }
