@@ -3,17 +3,42 @@ $segmented-border-radius: 7px;
   .ranking__list__default {
     border: 1px solid $default-border-color;
     border-radius: $segmented-border-radius;
+    direction: rtl;
+    padding-right: 0;
     &:hover {
       border-color: darken($default-border-color, 20%);
     }
 
     .ranking__list__item {
       cursor: pointer;
+      position: relative;
+      vertical-align: middle;
       .ranking__list__item__label {
         padding: 6px 0;
         display: block;
+        > label span {
+          display: none;
+        }
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 7px;
+        bottom: 7px;
+        width: 1px;
+        background: $default-border-color;
+      }
+      &:last-child {
+        &:before {
+          display: none;
+        }
       }
     }
+  }
+
+  .ranking__list__item__tooltip {
+    direction: ltr;
   }
 
   .rating-comp__selection-type__single,
@@ -34,44 +59,59 @@ $segmented-border-radius: 7px;
     }
     .rating-comp__selected__current {
       background: $ekomi-green;
+      &:before {
+        display: none;
+      }
       .ranking__list__item__label {
         color: $white;
       }
     }
   }
-
-  &.handheld__reverse {
-    .ranking__list__default {
-      direction: rtl;
-      padding-right: 0;
-    }
-  }
-  .ranking__list__item__tooltip {
-    direction: ltr;
-  }
 }
 
 
 .content__rtl {
-  .fixed__feedback__default__layout-segmented {
-    &.handheld__reverse {
-      .ranking__list__default {
-        direction: ltr;
-      }
+  .form__elem__help-text__multiple {
+    transform: scaleX(-1);
+    .form__elem__help-text {
+      transform: scaleX(-1);
     }
-    .ranking__list__item__tooltip {
-      direction: rtl;
+    .form__elem__help-text__left {
+      text-align: right;
+    }
+    .form__elem__help-text__right {
+      text-align: left;
     }
   }
 }
 
 @media (max-width: 767px){
-  .fixed__feedback__default__layout-segmented {
-    .ranking__list__default {
-      display: block;
+  .handheld__reverse {
+    .form__elem__help-text__multiple {
+      display: none;
     }
-    .ranking__list__item {
+    .ranking__list__default {
+      direction: ltr;
       display: block;
+
+      .ranking__list__item {
+        display: block;
+        &:before {
+          top: auto;
+          bottom: 0;
+          left: 25%;
+          right: 25%;
+          height: 1px;
+          width: auto;
+        }
+        .ranking__list__item__label {
+          padding: 10px 0 15px 0;
+          > label span {
+            display: inline-block;
+          }
+        }
+      }
+
     }
   }
 }

@@ -12354,6 +12354,8 @@ html.form_as_widget .close__form, html.form_as_widget body .close__form {
 .fixed__feedback__default__layout-segmented .ranking__list__default {
     border: 1px solid #dfdae0;
     border-radius: 7px;
+    direction: rtl;
+    padding-right: 0;
 }
 
 .fixed__feedback__default__layout-segmented .ranking__list__default:hover {
@@ -12362,11 +12364,35 @@ html.form_as_widget .close__form, html.form_as_widget body .close__form {
 
 .fixed__feedback__default__layout-segmented .ranking__list__default .ranking__list__item {
     cursor: pointer;
+    position: relative;
+    vertical-align: middle;
 }
 
 .fixed__feedback__default__layout-segmented .ranking__list__default .ranking__list__item .ranking__list__item__label {
     padding: 6px 0;
     display: block;
+}
+
+.fixed__feedback__default__layout-segmented .ranking__list__default .ranking__list__item .ranking__list__item__label > label span {
+    display: none;
+}
+
+.fixed__feedback__default__layout-segmented .ranking__list__default .ranking__list__item:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 7px;
+    bottom: 7px;
+    width: 1px;
+    background: #dfdae0;
+}
+
+.fixed__feedback__default__layout-segmented .ranking__list__default .ranking__list__item:last-child:before {
+    display: none;
+}
+
+.fixed__feedback__default__layout-segmented .ranking__list__item__tooltip {
+    direction: ltr;
 }
 
 .fixed__feedback__default__layout-segmented .rating-comp__selection-type__single .rating-comp__selected, .fixed__feedback__default__layout-segmented .rating-comp__selection-type__single .rating-comp__hover, .fixed__feedback__default__layout-segmented .rating-comp__selection-type__continuous .rating-comp__selected, .fixed__feedback__default__layout-segmented .rating-comp__selection-type__continuous .rating-comp__hover {
@@ -12389,25 +12415,30 @@ html.form_as_widget .close__form, html.form_as_widget body .close__form {
     background: #2da137;
 }
 
+.fixed__feedback__default__layout-segmented .rating-comp__selection-type__single .rating-comp__selected__current:before, .fixed__feedback__default__layout-segmented .rating-comp__selection-type__continuous .rating-comp__selected__current:before {
+    display: none;
+}
+
 .fixed__feedback__default__layout-segmented .rating-comp__selection-type__single .rating-comp__selected__current .ranking__list__item__label, .fixed__feedback__default__layout-segmented .rating-comp__selection-type__continuous .rating-comp__selected__current .ranking__list__item__label {
     color: #fff;
 }
 
-.fixed__feedback__default__layout-segmented.handheld__reverse .ranking__list__default {
-    direction: rtl;
-    padding-right: 0;
+.content__rtl .form__elem__help-text__multiple {
+    -ms-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 
-.fixed__feedback__default__layout-segmented .ranking__list__item__tooltip {
-    direction: ltr;
+.content__rtl .form__elem__help-text__multiple .form__elem__help-text {
+    -ms-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 
-.content__rtl .fixed__feedback__default__layout-segmented.handheld__reverse .ranking__list__default {
-    direction: ltr;
+.content__rtl .form__elem__help-text__multiple .form__elem__help-text__left {
+    text-align: right;
 }
 
-.content__rtl .fixed__feedback__default__layout-segmented .ranking__list__item__tooltip {
-    direction: rtl;
+.content__rtl .form__elem__help-text__multiple .form__elem__help-text__right {
+    text-align: left;
 }
 
 .fixed__grid-table {
@@ -14766,11 +14797,29 @@ html.form_as_widget .close__form, html.form_as_widget body .close__form {
     .ranking__list__default .ranking__list__item .ranking__list__item__label {
         font-size: 24px;
     }
-    .fixed__feedback__default__layout-segmented .ranking__list__default {
+    .handheld__reverse .form__elem__help-text__multiple {
+        display: none;
+    }
+    .handheld__reverse .ranking__list__default {
+        direction: ltr;
         display: block;
     }
-    .fixed__feedback__default__layout-segmented .ranking__list__item {
+    .handheld__reverse .ranking__list__default .ranking__list__item {
         display: block;
+    }
+    .handheld__reverse .ranking__list__default .ranking__list__item:before {
+        top: auto;
+        bottom: 0;
+        left: 25%;
+        right: 25%;
+        height: 1px;
+        width: auto;
+    }
+    .handheld__reverse .ranking__list__default .ranking__list__item .ranking__list__item__label {
+        padding: 10px 0 15px;
+    }
+    .handheld__reverse .ranking__list__default .ranking__list__item .ranking__list__item__label > label span {
+        display: inline-block;
     }
     .hidden-parent-rating .fixed__grid-shape__col {
         display: none;

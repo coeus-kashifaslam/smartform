@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Smart Form</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.css">
-    <link rel="stylesheet" href="css/sff-form.css?version=4972864">
+    <link rel="stylesheet" href="css/sff-form.css?version=3751135">
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -248,11 +248,13 @@
 
                     
                     
-                    <li class="ranking__list__item elem__table__cell">
+                    <li class="ranking__list__item elem__table__cell ranking__list__item-first">
                         <div class="ranking__list__item__label">
                             <input type="radio" name="feedbackDefault-fullWidth">
-                            <label>4</label>
-
+                            <label>4
+                                <span class="help-text__last"> - Help Text End</span>
+                                
+                            </label>
                             <div class="ranking__list__item__tooltip">
                                 <div class="ranking__list__item__tooltip-body">
                                     <ul class="list-inline">
@@ -274,8 +276,10 @@
                     <li class="ranking__list__item elem__table__cell">
                         <div class="ranking__list__item__label">
                             <input type="radio" name="feedbackDefault-fullWidth">
-                            <label>3</label>
-
+                            <label>3
+                                
+                                
+                            </label>
                             <div class="ranking__list__item__tooltip">
                                 <div class="ranking__list__item__tooltip-body">
                                     <ul class="list-inline">
@@ -297,8 +301,10 @@
                     <li class="ranking__list__item elem__table__cell">
                         <div class="ranking__list__item__label">
                             <input type="radio" name="feedbackDefault-fullWidth">
-                            <label>2</label>
-
+                            <label>2
+                                
+                                
+                            </label>
                             <div class="ranking__list__item__tooltip">
                                 <div class="ranking__list__item__tooltip-body">
                                     <ul class="list-inline">
@@ -320,8 +326,10 @@
                     <li class="ranking__list__item elem__table__cell">
                         <div class="ranking__list__item__label">
                             <input type="radio" name="feedbackDefault-fullWidth">
-                            <label>1</label>
-
+                            <label>1
+                                
+                                
+                            </label>
                             <div class="ranking__list__item__tooltip">
                                 <div class="ranking__list__item__tooltip-body">
                                     <ul class="list-inline">
@@ -340,11 +348,13 @@
                         </div>
                     </li>
                     
-                    <li class="ranking__list__item elem__table__cell">
+                    <li class="ranking__list__item elem__table__cell ranking__list__item-last">
                         <div class="ranking__list__item__label">
                             <input type="radio" name="feedbackDefault-fullWidth">
-                            <label>0</label>
-
+                            <label>0
+                                
+                                <span class="help-text__first">- Help Text Start</span>
+                            </label>
                             <div class="ranking__list__item__tooltip">
                                 <div class="ranking__list__item__tooltip-body">
                                     <ul class="list-inline">
@@ -366,8 +376,8 @@
                 </ul>
             </div>
             <div class="form__elem__help-text__multiple">
-                <p class="form__elem__help-text form__elem__help-text__left">Help Text Left</p>
-                <p class="form__elem__help-text form__elem__help-text__right">Help Text Right</p>
+                <p class="form__elem__help-text form__elem__help-text__left">Help Text First</p>
+                <p class="form__elem__help-text form__elem__help-text__right">Help Text Last</p>
                 <div class="clearfix"></div>
             </div>
             <div class="feedback__count__message">

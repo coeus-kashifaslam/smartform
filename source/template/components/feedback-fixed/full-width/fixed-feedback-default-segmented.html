@@ -9,11 +9,13 @@
 
                     {% set numbers = [4,3,2,1,0]%}
                     {% for number in numbers %}
-                    <li class="ranking__list__item elem__table__cell">
+                    <li class="ranking__list__item elem__table__cell{% if loop.first%} ranking__list__item-first{% endif %}{% if loop.last%} ranking__list__item-last{% endif %}">
                         <div class="ranking__list__item__label">
                             <input type="radio" name="feedbackDefault-fullWidth">
-                            <label>{{number}}</label>
-
+                            <label>{{number}}
+                                {% if loop.first%}<span class="help-text__last"> - Help Text End</span>{% endif %}
+                                {% if loop.last%}<span class="help-text__first">- Help Text Start</span>{% endif %}
+                            </label>
                             <div class="ranking__list__item__tooltip">
                                 <div class="ranking__list__item__tooltip-body">
                                     <ul class="list-inline">
@@ -63,8 +65,8 @@
                 </ul>
             </div>
             <div class="form__elem__help-text__multiple">
-                <p class="form__elem__help-text form__elem__help-text__left">Help Text Left</p>
-                <p class="form__elem__help-text form__elem__help-text__right">Help Text Right</p>
+                <p class="form__elem__help-text form__elem__help-text__left">Help Text First</p>
+                <p class="form__elem__help-text form__elem__help-text__right">Help Text Last</p>
                 <div class="clearfix"></div>
             </div>
             <div class="feedback__count__message">
