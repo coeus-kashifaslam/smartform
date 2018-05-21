@@ -290,34 +290,36 @@
 
 .fixed__feedback__grid__connect-icons {
   .fixed__grid-content__row {
-    .fixed__grid-shape__col {
-      &:not(.fixed__grid__sub-tooltip-col) {
-        position: relative;
-        .fixed__grid-shape {
-          background: $white;
+    &:not(.fixed__grid-table__total-row) {
+      .fixed__grid-shape__col {
+        &:not(.fixed__grid__sub-tooltip-col) {
           position: relative;
-          z-index: 2;
+          .fixed__grid-shape {
+            background: $white;
+            position: relative;
+            z-index: 2;
+          }
+          &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 50%;
+            height: 1px;
+            background: $default-border-color;
+            z-index: 1;
+            margin-top: -1px;
+          }
         }
-        &:after {
-          content: '';
-          position: absolute;
-          left: 0;
-          right: 0;
-          top: 50%;
-          height: 1px;
-          background: $default-border-color;
-          z-index: 1;
-          margin-top: -1px;
+        &.fixed__grid-shape__col-first {
+          &:after {
+            left: 50%;
+          }
         }
-      }
-      &.fixed__grid-shape__col-first {
-        &:after {
-          left: 50%;
-        }
-      }
-      &.fixed__grid-shape__col-last {
-        &:after {
-          right: 50%;
+        &.fixed__grid-shape__col-last {
+          &:after {
+            right: 50%;
+          }
         }
       }
     }
