@@ -55,6 +55,7 @@
  			cascade: false
  		},
  		pseudoElements: true,
+ 		mqpacker: true,
  		opacity: true
  	},
 
