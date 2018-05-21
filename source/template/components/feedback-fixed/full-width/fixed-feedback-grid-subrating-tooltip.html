@@ -7,12 +7,18 @@
             <div class="elem_fixed__grid__container fixed__grid-table hide-radio">
                 <div class="grid__header fixed__grid-table__row fixed__grid-tooltip__row">
                     <div class="fixed__grid-table__cell"></div>
+                    <div class="fixed__grid-table__cell fixed__grid-shape__col fixed__grid__sub-tooltip-col">
+                        <p>Tooltip start</p>
+                    </div>
                     {% set gridCols = [0,1,2,3,4]%}
                     {% for gridCol in gridCols %}
                     <div class="fixed__grid-table__cell fixed__grid-shape__col">
                         <p>Toolti {{gridCol + 1}}</p>
                     </div>
                     {% endfor %}
+                    <div class="fixed__grid-table__cell fixed__grid-shape__col fixed__grid__sub-tooltip-col">
+                        <p>Tooltip end</p>
+                    </div>
                     <div class="fixed__grid-table__cell fixed__grid-last-col">
                         <p>Can not Answer</p>
                     </div>
