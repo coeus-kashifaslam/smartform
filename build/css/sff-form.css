@@ -12476,17 +12476,17 @@ html.form_as_widget .close__form, html.form_as_widget body .close__form {
     display: none;
 }
 
-.fixed__feedback__grid__connect-icons .fixed__grid-shape__col:not(.fixed__grid__sub-tooltip-col) {
+.fixed__feedback__grid__connect-icons .fixed__grid-content__row .fixed__grid-shape__col:not(.fixed__grid__sub-tooltip-col) {
     position: relative;
 }
 
-.fixed__feedback__grid__connect-icons .fixed__grid-shape__col:not(.fixed__grid__sub-tooltip-col) .fixed__grid-shape {
+.fixed__feedback__grid__connect-icons .fixed__grid-content__row .fixed__grid-shape__col:not(.fixed__grid__sub-tooltip-col) .fixed__grid-shape {
     background: #fff;
     position: relative;
     z-index: 2;
 }
 
-.fixed__feedback__grid__connect-icons .fixed__grid-shape__col:not(.fixed__grid__sub-tooltip-col):after {
+.fixed__feedback__grid__connect-icons .fixed__grid-content__row .fixed__grid-shape__col:not(.fixed__grid__sub-tooltip-col):after {
     content: '';
     position: absolute;
     left: 0;
@@ -12498,20 +12498,20 @@ html.form_as_widget .close__form, html.form_as_widget body .close__form {
     margin-top: -1px;
 }
 
-.fixed__feedback__grid__connect-icons .fixed__grid-shape__col.fixed__grid-shape__col-first:after {
+.fixed__feedback__grid__connect-icons .fixed__grid-content__row .fixed__grid-shape__col.fixed__grid-shape__col-first:after {
     left: 50%;
 }
 
-.fixed__feedback__grid__connect-icons .fixed__grid-shape__col.fixed__grid-shape__col-last:after {
+.fixed__feedback__grid__connect-icons .fixed__grid-content__row .fixed__grid-shape__col.fixed__grid-shape__col-last:after {
     right: 50%;
 }
 
-.content__rtl .fixed__feedback__grid__connect-icons .fixed__grid-shape__col.fixed__grid-shape__col-first:after {
+.content__rtl .fixed__feedback__grid__connect-icons .fixed__grid-content__row .fixed__grid-shape__col.fixed__grid-shape__col-first:after {
     left: 0;
     right: 50%;
 }
 
-.content__rtl .fixed__feedback__grid__connect-icons .fixed__grid-shape__col.fixed__grid-shape__col-last:after {
+.content__rtl .fixed__feedback__grid__connect-icons .fixed__grid-content__row .fixed__grid-shape__col.fixed__grid-shape__col-last:after {
     right: 0;
     left: 50%;
 }
@@ -14827,8 +14827,15 @@ html.form_as_widget .close__form, html.form_as_widget body .close__form {
     .fixed__grid__container-centered .fixed__grid-shape__col .grid-shape-label {
         display: inline-block;
     }
-    .fixed__feedback__grid__subrating-tooltip-two-column {
+    .fixed__feedback__grid__subrating-tooltip-two-column .fixed__grid-shape__col {
+        width: 1% !important;
+        display: table-cell;
+    }
+    .fixed__feedback__grid__subrating-tooltip-two-column .fixed__grid-shape__col .grid-text-span {
         display: none;
+    }
+    .fixed__feedback__grid__subrating-tooltip-two-column .fixed__grid-shape__col .grid-shape-label {
+        margin: 0 auto;
     }
     .feedback__continuous__container {
         border: 0 none;
