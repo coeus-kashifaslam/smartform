@@ -1,0 +1,117 @@
+$segmented-border-radius: 7px;
+.fixed__feedback__default__layout-segmented {
+  .ranking__list__default {
+    border: 1px solid $default-border-color;
+    border-radius: $segmented-border-radius;
+    direction: rtl;
+    padding-right: 0;
+    &:hover {
+      border-color: darken($default-border-color, 20%);
+    }
+
+    .ranking__list__item {
+      cursor: pointer;
+      position: relative;
+      vertical-align: middle;
+      .ranking__list__item__label {
+        padding: 6px 0;
+        display: block;
+        > label span {
+          display: none;
+        }
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 7px;
+        bottom: 7px;
+        width: 1px;
+        background: $default-border-color;
+      }
+      &:last-child {
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .ranking__list__item__tooltip {
+    direction: ltr;
+  }
+
+  .rating-comp__selection-type__single,
+  .rating-comp__selection-type__continuous {
+    .rating-comp__selected,
+    .rating-comp__hover {
+      background: transparent;
+      .ranking__list__item__label {
+        color: inherit;
+      }
+    }
+    .rating-comp__selected__current,
+    .rating-comp__hover__current {
+      border-radius: $segmented-border-radius - 2;
+    }
+    .rating-comp__hover__current {
+      background: $default-border-color;
+    }
+    .rating-comp__selected__current {
+      background: $ekomi-green;
+      &:before {
+        display: none;
+      }
+      .ranking__list__item__label {
+        color: $white;
+      }
+    }
+  }
+}
+
+
+.content__rtl {
+  .form__elem__help-text__multiple {
+    transform: scaleX(-1);
+    .form__elem__help-text {
+      transform: scaleX(-1);
+    }
+    .form__elem__help-text__left {
+      text-align: right;
+    }
+    .form__elem__help-text__right {
+      text-align: left;
+    }
+  }
+}
+
+@media (max-width: 767px){
+  .handheld__reverse {
+    .form__elem__help-text__multiple {
+      display: none;
+    }
+    .ranking__list__default {
+      direction: ltr;
+      display: block;
+
+      .ranking__list__item {
+        display: block;
+        &:before {
+          top: auto;
+          bottom: 0;
+          left: 20%;
+          right: 20%;
+          height: 1px;
+          width: auto;
+        }
+        .ranking__list__item__label {
+          padding: 10px 0 15px 0;
+          > label span {
+            display: inline-block;
+          }
+        }
+      }
+
+    }
+  }
+}
