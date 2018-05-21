@@ -13037,121 +13037,83 @@ html.form_as_widget .close__form, html.form_as_widget body .close__form {
     display: block;
 }
 
-.thank-you__content {
-    border: 1px solid #dfdae0;
-    padding: 30px;
-    margin-bottom: 30px;
+.a-heading {
+    margin: 0 0 15px;
+    font-family: Roboto;
+    letter-spacing: -.133px;
+    display: block;
+    color: #5c596d;
 }
 
-.elem__thank-you {
-    margin-bottom: 65px;
+.a-heading__light {
+    font-family: Roboto-Light;
 }
 
-.elem__thank-you img {
-    max-width: 100%;
-    height: auto;
+.a-heading__1 {
+    font-size: 42px;
+    font-size: 4.2rem;
+    line-height: 50px;
+    line-height: 5rem;
 }
 
-.content__ltr {
-    direction: ltr;
+.a-heading__2 {
+    font-size: 28px;
+    font-size: 2.8rem;
+    line-height: 34px;
+    line-height: 3.4rem;
 }
 
-.content__rtl {
-    direction: rtl;
+.a-heading__3 {
+    font-size: 20px;
+    font-size: 2rem;
+    line-height: 28px;
+    line-height: 2.8rem;
 }
 
-.content__rtl ul, .content__rtl ol {
-    padding: 0;
-    margin-right: -5px;
+.required__field {
+    color: #5c596d;
+    font-family: Roboto-Light;
+    margin-top: 25px;
+    margin-top: 2.5rem;
 }
 
-.content__rtl .sff-form__legend {
-    padding-right: 0;
-    padding-left: 180px;
+.aviva__link {
+    font-family: Roboto-Bold;
 }
 
-.content__rtl .caption-form__icon {
-    left: auto;
-    right: 12px;
+.aviva__link, .aviva__link:hover, .aviva__link:focus, .aviva__link:active {
+    color: #004fb6;
+    outline: none;
+    text-decoration: none;
 }
 
-.content__rtl .caption-form__caption-top {
-    padding-left: 15px;
-    padding-right: 40px;
+.aviva__cta-primary {
+    padding: 14px 30px;
+    padding: 1.4rem 3rem;
+    color: #004fb6;
+    background: #ffd900;
+    box-shadow: none;
+    border: 0 none;
+    border-radius: .4rem;
+    font-family: Roboto-Bold;
+    display: inline-block;
+    text-align: center;
 }
 
-.content__rtl .elem-type__radio .form-radio + label {
-    padding-left: 0;
-    padding-right: 45px;
+.aviva__cta-primary:hover, .aviva__cta-primary:focus, .aviva__cta-primary:active {
+    color: #fff;
+    background: #004fb6;
+    outline: none;
 }
 
-.content__rtl .form-radio + label:before {
-    right: 0;
-    left: auto;
+.hgroup__aviva__thank-you {
+    margin-bottom: 35px;
+    margin-bottom: 3.5rem;
 }
 
-.content__rtl .form-checkbox + label {
-    padding-left: 0;
-    padding-right: 45px;
-}
-
-.content__rtl .form-checkbox + label span:before {
-    right: 0;
-    left: auto;
-}
-
-.content__rtl .form-checkbox:checked + label span:after {
-    right: 5px;
-    left: auto;
-}
-
-.content__rtl .custom-footer__address-block .list__contact-info li .contact-info__content {
-    padding-left: 0;
-    padding-right: 25px;
-}
-
-.content__rtl .custom-footer__address-block .list__contact-info li .contact-info__icon {
-    left: auto;
-    right: 0;
-}
-
-.content__rtl .sff-form__footer-cta {
-    -ms-transform: scaleX(-1);
-    transform: scaleX(-1);
-}
-
-.content__rtl .sff-form__footer-cta .sff-form__submit {
-    -ms-transform: scaleX(-1);
-    transform: scaleX(-1);
-}
-
-.content__rtl .sff-form__footer-cta .sff-form__submit.sff-form__cta-prev {
-    padding-right: 30px;
-    padding-left: 15px;
-}
-
-.content__rtl .sff-form__footer-cta .sff-form__submit.sff-form__cta-next {
-    padding-left: 30px;
-    padding-right: 15px;
-}
-
-.content__rtl .sff-form__footer-cta .sff-form__submit .fa-previous {
-    right: 15px;
-    left: auto;
-    -ms-transform: scaleX(-1);
-    transform: scaleX(-1);
-}
-
-.content__rtl .sff-form__footer-cta .sff-form__submit .fa-next {
-    left: 15px;
-    right: auto;
-    -ms-transform: scaleX(-1);
-    transform: scaleX(-1);
-}
-
-.content__rtl .form__elem__disable-option.fixed__grid-table__cell .form-checkbox + label, .content__rtl .form__elem__disable-option.fixed__continuous-table__item .form-checkbox + label {
-    padding-left: 0;
-    padding-right: 30px;
+.aviva__thank-you__cta {
+    margin-top: 30px;
+    margin-top: 3rem;
 }
 
 @media print {
@@ -13736,48 +13698,6 @@ html.form_as_widget .close__form, html.form_as_widget body .close__form {
     }
     .elem__constant-sum__column.constant-sum__state .form-checkbox + label {
         padding-left: 30px;
-    }
-    .content__rtl .col-sm-push-7 {
-        right: 58.33333333%;
-        left: auto;
-    }
-    .content__rtl .col-sm-pull-5 {
-        left: 41.66666667%;
-        right: auto;
-    }
-    .content__rtl .col-sm-push-9 {
-        right: 75%;
-        left: auto;
-    }
-    .content__rtl .col-sm-pull-3 {
-        left: 25%;
-        right: auto;
-    }
-    .content__rtl .state__single .feedback__continuous__shapes-list__items-container {
-        float: left;
-    }
-    .content__rtl .state__single.fixed__feedback__continuous__thumbnail .feedback__continuous__shapes-list__items-container {
-        float: none;
-    }
-    .content__rtl .fixed__feedback__continuous__thumbnail .feedback__container .feedback__emo-list .feedback__emo-list__description {
-        padding-right: 0;
-    }
-    .content__rtl .fixed__feedback__continuous .feedback__container .feedback__emo-list .feedback__emo-list__description {
-        padding-right: 0;
-        padding-left: 20px;
-    }
-    .content__rtl .feedback__emo-list__description-count {
-        text-align: left;
-    }
-    .content__rtl .popup__label-col {
-        left: 75%;
-    }
-    .content__rtl .popup__input-col {
-        right: 25%;
-    }
-    .content__rtl .caption-form__error-text {
-        margin-left: 0;
-        margin-right: 25%;
     }
 }
 
@@ -14945,19 +14865,16 @@ html.form_as_widget .close__form, html.form_as_widget body .close__form {
     .elem__constant-sum__column.constant-sum__state .form__elem__disable-option {
         margin-top: 10px;
     }
-    .thank-you__content {
-        padding: 15px;
-        margin-bottom: 15px;
+    .a-heading__1 {
+        font-size: 3.2rem;
     }
-    .elem__thank-you {
-        padding: 15px;
-        margin-bottom: 30px;
+    .a-heading__2 {
+        font-size: 2.4rem;
     }
-    .content__rtl .sff-form__footer-cta .sff-form__submit .fa-previous {
-        right: 10px;
-    }
-    .content__rtl .sff-form__footer-cta .sff-form__submit .fa-next {
-        left: 10px;
+    .aviva__cta-primary {
+        display: block;
+        float: none;
+        width: 100%;
     }
 }
 
