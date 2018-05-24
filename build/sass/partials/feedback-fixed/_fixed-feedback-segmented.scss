@@ -14,10 +14,14 @@ $segmented-border-radius: 7px;
       position: relative;
       vertical-align: middle;
       .ranking__list__item__label {
-        padding: 6px 0;
+        padding: 0;
         display: block;
         > label span {
           display: none;
+        }
+        > label {
+          display: block;
+          padding: 6px 0;
         }
       }
       &:before {
