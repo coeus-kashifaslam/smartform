@@ -83,25 +83,30 @@
 .elem__long-text {
   .form__elem__body {
     position: relative;
-  }
-  .remaining_characters_div {
-    position: absolute;
-    margin: 0;
-    bottom: 15px;
-    left: 15px;
-    text-align: right;
-  }
-  .elem__long-text__two-col {
     .remaining_characters_div {
-      right: 30px;
+      text-align: right;
+      > span {
+        padding: 0 15px;
+      }
     }
-  }
-  .elem__long-text__one-col {
-    .remaining_characters_div {
-      right: 15px;
+    .elem__long-text__two-col {
+      .remaining_characters_div {
+        margin-top: -30px;
+        > div {
+          margin-top: 10px;
+        }
+      }
     }
-  }
-  .form-textarea {
-    padding-bottom: 45px;
+    .elem__long-text__one-col {
+      + .remaining_characters_div {
+        margin-top: -35px;
+        > div {
+          margin-top: 15px;
+        }
+      }
+    }
+    .form-textarea {
+      padding-bottom: 45px;
+    }
   }
 }

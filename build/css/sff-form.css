@@ -13110,23 +13110,31 @@ html.form_as_widget .close__form, html.form_as_widget body .close__form {
     position: relative;
 }
 
-.elem__long-text .remaining_characters_div {
-    position: absolute;
-    margin: 0;
-    bottom: 15px;
-    left: 15px;
+.elem__long-text .form__elem__body .remaining_characters_div {
     text-align: right;
 }
 
-.elem__long-text .elem__long-text__two-col .remaining_characters_div {
-    right: 30px;
+.elem__long-text .form__elem__body .remaining_characters_div > span {
+    padding: 0 15px;
 }
 
-.elem__long-text .elem__long-text__one-col .remaining_characters_div {
-    right: 15px;
+.elem__long-text .form__elem__body .elem__long-text__two-col .remaining_characters_div {
+    margin-top: -30px;
 }
 
-.elem__long-text .form-textarea {
+.elem__long-text .form__elem__body .elem__long-text__two-col .remaining_characters_div > div {
+    margin-top: 10px;
+}
+
+.elem__long-text .form__elem__body .elem__long-text__one-col + .remaining_characters_div {
+    margin-top: -35px;
+}
+
+.elem__long-text .form__elem__body .elem__long-text__one-col + .remaining_characters_div > div {
+    margin-top: 15px;
+}
+
+.elem__long-text .form__elem__body .form-textarea {
     padding-bottom: 45px;
 }
 
