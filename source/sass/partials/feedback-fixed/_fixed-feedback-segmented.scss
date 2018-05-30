@@ -20,8 +20,10 @@ $segmented-border-radius: 7px;
           display: none;
         }
         > label {
-          display: block;
-          padding: 6px 0;
+          display: inline-block;
+          width: 100%;
+          padding: 12px;
+          //font-size: 18px;
         }
       }
       &:before {
@@ -50,9 +52,9 @@ $segmented-border-radius: 7px;
     .rating-comp__selected,
     .rating-comp__hover {
       background: transparent;
-      .ranking__list__item__label {
-        color: inherit;
-      }
+      //.ranking__list__item__label {
+      //  color: inherit;
+      //}
     }
     .rating-comp__selected__current,
     .rating-comp__hover__current {
