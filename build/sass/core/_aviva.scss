@@ -171,6 +171,15 @@
       margin-top: 10px;
     }
   }
+  .form__elem__body {
+    &:not(.handheld__reverse) {
+      .ranking__container {
+        @media(min-width: 768px) {
+          max-width: 70%;
+        }
+      }
+    }
+  }
 }
 .fixed__feedback__continuous {
   .feedback__continuous__emo-list {
