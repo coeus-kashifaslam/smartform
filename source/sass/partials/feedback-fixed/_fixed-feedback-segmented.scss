@@ -5,6 +5,7 @@ $segmented-border-radius: 7px;
     border-radius: $segmented-border-radius;
     direction: rtl;
     padding-right: 0;
+    box-shadow: 0 2px 2px 0 hsla(0,0%,80%,.5);
     &:hover {
       border-color: darken($default-border-color, 20%);
     }
@@ -15,15 +16,14 @@ $segmented-border-radius: 7px;
       vertical-align: middle;
       .ranking__list__item__label {
         padding: 0;
-        display: block;
+        display: inline-block;
+        width: 100%;
         > label span {
           display: none;
         }
         > label {
-          display: inline-block;
-          width: 100%;
+          display: block;
           padding: 12px;
-          //font-size: 18px;
         }
       }
       &:before {
