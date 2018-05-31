@@ -73,7 +73,19 @@
     width: 100%;
   }
 }
-
+.sff-form__submit {
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+    background: $aviva-cta-active;
+    outline: none;
+  }
+}
+.aviva__text__term-and-condition {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
 .hgroup__aviva__thank-you {
   margin-bottom: 35px;
 }
@@ -146,6 +158,10 @@
     }
     .feedback__continuous__emo-list__item {
       padding-top: 0;
+      padding-right: 30px;
+      @media (max-width: 767px){
+        padding-right: 5px;
+      }
     }
   }
 }
@@ -166,6 +182,7 @@
     }
   }
 }
+
 @media (max-width: 767px) {
   .form__elem {
     padding: 0 15px 15px 15px;

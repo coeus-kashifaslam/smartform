@@ -1,10 +1,13 @@
 $segmented-border-radius: 7px;
+$segmented-bg: #f9f9f9;
 .fixed__feedback__default__layout-segmented {
   .ranking__list__default {
     border: 1px solid $default-border-color;
     border-radius: $segmented-border-radius;
     direction: rtl;
     padding-right: 0;
+    box-shadow: 0 2px 2px 0 hsla(0,0%,80%,.5);
+    background: $segmented-bg;
     &:hover {
       border-color: darken($default-border-color, 20%);
     }
@@ -15,15 +18,14 @@ $segmented-border-radius: 7px;
       vertical-align: middle;
       .ranking__list__item__label {
         padding: 0;
-        display: block;
+        display: inline-block;
+        width: 100%;
         > label span {
           display: none;
         }
         > label {
-          display: inline-block;
-          width: 100%;
+          display: block;
           padding: 12px;
-          //font-size: 18px;
         }
       }
       &:before {

@@ -1,4 +1,5 @@
 $segmented-border-radius: 7px;
+$segmented-bg: #f9f9f9;
 .fixed__feedback__default__layout-segmented {
   .ranking__list__default {
     border: 1px solid $default-border-color;
@@ -6,6 +7,7 @@ $segmented-border-radius: 7px;
     direction: rtl;
     padding-right: 0;
     box-shadow: 0 2px 2px 0 hsla(0,0%,80%,.5);
+    background: $segmented-bg;
     &:hover {
       border-color: darken($default-border-color, 20%);
     }
