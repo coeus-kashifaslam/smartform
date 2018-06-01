@@ -1,15 +1,21 @@
 $segmented-border-radius: 7px;
 $segmented-bg: #f9f9f9;
+$segmented-hover: #eee;
+$segmented-selected: $ekomi-green;
+$segmented-border: #aaa;
+$segmented-border-hover: #413e51;
 .fixed__feedback__default__layout-segmented {
   .ranking__list__default {
-    border: 1px solid $default-border-color;
+    border: 1px solid $segmented-border;
     border-radius: $segmented-border-radius;
     direction: rtl;
     padding-right: 0;
     box-shadow: 0 2px 2px 0 hsla(0,0%,80%,.5);
     background: $segmented-bg;
+    transition: border-color .35s;
     &:hover {
-      border-color: darken($default-border-color, 20%);
+      transition: border-color .35s;
+      border-color: $segmented-border-hover;
     }
 
     .ranking__list__item {
@@ -63,10 +69,12 @@ $segmented-bg: #f9f9f9;
       border-radius: $segmented-border-radius - 2;
     }
     .rating-comp__hover__current {
-      background: $default-border-color;
+      background: $segmented-hover;
+      transition: background-color .35s;
     }
     .rating-comp__selected__current {
-      background: $ekomi-green;
+      background: $segmented-selected;
+      transition: background-color .35s;
       &:before {
         display: none;
       }
