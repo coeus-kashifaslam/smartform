@@ -213,6 +213,16 @@ $aviva-font-light: nth($ff-sourcesans, 2);
   border: 0 none;
   border-radius: 0;
 }
+
+.form-checkbox {
+  + label {
+    span {
+      &:before {
+        border-radius: 3px;
+      }
+    }
+  }
+}
 //.fixed__feedback__default__layout-segmented {
 //  .ranking__list__item {
 //    .ranking__list__item__label {
