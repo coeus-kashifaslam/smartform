@@ -11133,12 +11133,24 @@ html.form_as_widget .close__form, html.form_as_widget body .close__form {
     top: 18px;
     font-size: 12px;
     color: #4c4c4c;
+    padding-right: 22px;
+    max-width: 150px;
 }
 
 .products-breadcrumb__wrapper .panel-heading .product__active-sign .fa {
+    position: absolute;
+    right: 0;
+    top: 0;
     color: #2da137;
     margin-left: 5px;
     font-size: 18px;
+}
+
+.products-breadcrumb__wrapper .panel-heading .product__active-sign > span {
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .products-breadcrumb__wrapper .panel-heading .product__active-sign span, .products-breadcrumb__wrapper .panel-heading .product__active-sign .fa {
