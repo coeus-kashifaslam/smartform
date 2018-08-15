@@ -76,10 +76,22 @@
       top: 18px;
       font-size: 12px;
       color: $default-subHeader-color;
+      padding-right: 22px;
       .fa {
         color: $ekomi-green;
         margin-left: 5px;
         font-size: 18px;
+      }
+      > span {
+        max-width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      > .fa {
+        position: absolute;
+        right: 0;
+        top: 0;
       }
       span, .fa {
         vertical-align: middle;
