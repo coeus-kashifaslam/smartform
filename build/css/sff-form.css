@@ -9341,6 +9341,12 @@ body, .wizard__breadcrumb-list > li .bubble__number, .wizard__breadcrumb-list > 
     font-family: FontAwesome;
 }
 
+@font-face {
+    font-family: icomoon;
+    src: url(../fonts/icomoon.eot?585rpk);
+    src: url(../fonts/icomoon.eot?585rpk#iefix) format("embedded-opentype"), url(../fonts/icomoon.ttf?585rpk) format("truetype"), url(../fonts/icomoon.woff?585rpk) format("woff"), url(../fonts/icomoon.svg?585rpk#icomoon) format("svg");
+}
+
 .ico-bold-0:before {
     content: "\e948";
 }
