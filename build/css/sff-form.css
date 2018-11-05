@@ -9341,12 +9341,6 @@ body, .wizard__breadcrumb-list > li .bubble__number, .wizard__breadcrumb-list > 
     font-family: FontAwesome;
 }
 
-@font-face {
-    font-family: icomoon;
-    src: url(../fonts/icomoon.eot?585rpk);
-    src: url(../fonts/icomoon.eot?585rpk#iefix) format("embedded-opentype"), url(../fonts/icomoon.ttf?585rpk) format("truetype"), url(../fonts/icomoon.woff?585rpk) format("woff"), url(../fonts/icomoon.svg?585rpk#icomoon) format("svg");
-}
-
 .ico-bold-0:before {
     content: "\e948";
 }
@@ -13201,6 +13195,31 @@ html.form_as_widget .close__form, html.form_as_widget body .close__form {
 
 .content__rtl .datepicker__label {
     display: block;
+}
+
+.fonts-disabled .icomoon-default {
+    background-image: url(../images/star-gray.png) !important;
+    display: inline-block;
+}
+
+.fonts-disabled .icomoon-sudo {
+    background-image: url(../images/star-yellow.png) !important;
+}
+
+.fonts-disabled .icomoon-default, .fonts-disabled .icomoon-sudo {
+    background-repeat: no-repeat !important;
+    background-size: 30px 30px !important;
+    background-position: center !important;
+    width: 40px;
+    height: 40px;
+}
+
+.fonts-disabled .icomoon-default:before, .fonts-disabled .icomoon-sudo:before {
+    display: none;
+}
+
+.fonts-disabled .rating-comp__selection-type__continuous .rating-comp__hover .ranking__list__item__label .icomoon-default, .fonts-disabled .rating-comp__selection-type__continuous .rating-comp__hover__current .ranking__list__item__label .icomoon-default, .fonts-disabled .rating-comp__selection-type__continuous .rating-comp__selected .ranking__list__item__label .icomoon-default, .fonts-disabled .rating-comp__selection-type__single .rating-comp__selected__current .ranking__list__item__label .icomoon-default, .fonts-disabled .fixed__grid__selection-continuous .fixed__grid-shape__hover .fixed__grid-shape.icomoon-default, .fonts-disabled .fixed__grid__selection-continuous .fixed__grid-shape__selected .fixed__grid-shape.icomoon-default, .fonts-disabled .fixed__grid__selection-single .fixed__grid-shape__selected-current .fixed__grid-shape.icomoon-default, .fonts-disabled .feedback__continuous__selection-continuous .feedback__continuous__emo-list__shape-item-hover .icomoon-default, .fonts-disabled .feedback__continuous__selection-continuous .feedback__continuous__emo-list__shape-item-selected .icomoon-default, .fonts-disabled .feedback__continuous__selection-single .feedback__continuous__emo-list__shape-item-selected-current .icomoon-default {
+    display: none;
 }
 
 @media print {
