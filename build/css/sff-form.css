@@ -10230,6 +10230,11 @@ html.form_as_widget .close__form, html.form_as_widget body .close__form {
     display: block;
 }
 
+html .sff-form__shadow {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .sff-form__body {
     max-width: 960px;
     background: #fff;
