@@ -21,13 +21,14 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  width: 90%;
 
   &__logo {
     position: absolute;
     left: 15px;
     top: 15px;
     img {
-      width: 125px;
+      width: 250px;
     }
   }
 
