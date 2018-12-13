@@ -13207,6 +13207,10 @@ html .sff-form__shadow {
     border-radius: 0;
 }
 
+.barometer-progressbar .progress > .progress-bar {
+    display: none;
+}
+
 .barometer-progressbar .progress > .progress-bar + .progress-bar {
     border-left: 2px solid #fff;
 }
@@ -13219,7 +13223,18 @@ html .sff-form__shadow {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     font-size: 25px;
+    opacity: .4;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
     color: #ffbe00;
+}
+
+.barometer-progressbar.completed:after {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.barometer-progressbar.in-progress .progress > .progress-bar.active {
+    display: block;
 }
 
 .from__elem-barometer {

@@ -1,4 +1,5 @@
 $barometer-section-bg: #F7F7F7;
+$progress-slug: progress !default;
 .barometer-progressbar {
   position: relative;
   padding-right: 60px;
@@ -7,6 +8,7 @@ $barometer-section-bg: #F7F7F7;
     margin-bottom: 10px;
     border-radius: 0;
     > .progress-bar {
+      display: none;
       + .progress-bar {
         border-left: 2px solid $white;
       }
@@ -20,7 +22,22 @@ $barometer-section-bg: #F7F7F7;
     top: 50%;
     transform: translateY(-50%);
     font-size: 25px;
+    opacity: 0.4;
     color: $sudo-rating-color-old;
+  }
+  &.completed {
+    &:after {
+      opacity: 1;
+    }
+  }
+  &.in-progress {
+    .progress {
+      > .progress-bar {
+        &.active {
+          display: block;
+        }
+      }
+    }
   }
 }
 
