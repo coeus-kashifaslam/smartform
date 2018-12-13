@@ -1,0 +1,75 @@
+$barometer-section-bg: #F7F7F7;
+.barometer-progressbar {
+  position: relative;
+  padding-right: 60px;
+  .progress {
+    height: 10px;
+    margin-bottom: 10px;
+    border-radius: 0;
+    > .progress-bar {
+      + .progress-bar {
+        border-left: 2px solid $white;
+      }
+    }
+  }
+  &:after {
+    content: $icon-crown;
+    @extend %iconfont-icomoon;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    color: $sudo-rating-color-old;
+  }
+}
+
+.from__elem-barometer {
+  border: 0 none;
+  background-color: $barometer-section-bg;
+  min-height: 150px;
+}
+
+
+.elem__barometer {
+  position: relative;
+}
+
+.barometer__elem__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: $default-subHeader-size;
+  font-weight: $default-subHeader-font-weight;
+  color: $default-subHeader-color;
+}
+
+.barometer-progress {
+  width: 290px;
+  .barometer__elem__title {
+    font-weight: 400;
+  }
+}
+
+.barometer__message {
+  font-size: 14px;
+  span {
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 768px) {
+  .barometer-progress {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .elem__barometer {
+    padding-right: 305px;
+  }
+}
+
+@media (max-width: 767px) {
+  .barometer-content {
+    margin-bottom: 30px;
+  }
+}
