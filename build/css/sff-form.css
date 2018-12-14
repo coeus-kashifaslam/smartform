@@ -13208,7 +13208,7 @@ html .sff-form__shadow {
 }
 
 .barometer-progressbar .progress > .progress-bar {
-    display: none;
+    background-color: #2da137;
 }
 
 .barometer-progressbar .progress > .progress-bar + .progress-bar {
@@ -13228,13 +13228,29 @@ html .sff-form__shadow {
     color: #ffbe00;
 }
 
-.barometer-progressbar.completed:after {
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+.barometer-progressbar.level__0 .progress > .progress-bar {
+    display: none;
 }
 
-.barometer-progressbar.in-progress .progress > .progress-bar.active {
-    display: block;
+.barometer-progressbar.level__1 .progress > .progress-bar:nth-child(n+2) {
+    display: none;
+}
+
+.barometer-progressbar.level__2 .progress > .progress-bar:nth-child(n+3) {
+    display: none;
+}
+
+.barometer-progressbar.level__3 .progress > .progress-bar:nth-child(n+4) {
+    display: none;
+}
+
+.barometer-progressbar.level__4 .progress > .progress-bar:nth-child(n+5) {
+    display: none;
+}
+
+.barometer-progressbar.level__5:after {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
 .from__elem-barometer {
