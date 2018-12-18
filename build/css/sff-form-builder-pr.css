@@ -9400,6 +9400,53 @@ body {
     outline: none;
 }
 
+.localisation__languages-list {
+    margin-bottom: 20px;
+}
+
+.localisation__languages-list > li {
+    position: relative;
+}
+
+.localisation__languages-list > li .fa {
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #c05c64;
+}
+
+.localisation__languages-list > li + li {
+    margin-top: 10px;
+}
+
+.localisation__language-picker {
+    margin-bottom: 20px;
+}
+
+.localisation__language-picker .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 100%;
+}
+
+.localisation__load-languages {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.localisation__load-languages span {
+    margin-left: 15px;
+}
+
+.localisation__load-languages a, .localisation__load-languages:hover, .localisation__load-languages:focus, .localisation__load-languages:active {
+    color: #606060;
+}
+
+.localisation__load-languages a span, .localisation__load-languages:hover span, .localisation__load-languages:focus span, .localisation__load-languages:active span {
+    text-decoration: underline;
+}
+
 @media print {
     *, *:before, *:after {
         color: #000 !important;
