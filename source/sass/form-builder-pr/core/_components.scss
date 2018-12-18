@@ -1,10 +1,10 @@
 body {
   @extend %default-font;
-  font-size: $base-font-size;
 }
 
 //checkbox
 .checkbox-custom {
+  margin-bottom: 10px;
   [type = "checkbox"] {
     &:checked,
     &:not(:checked) {
@@ -20,11 +20,9 @@ body {
         line-height: 28px;
         min-height: 20px;
         margin: 0;
-
         span {
           margin-left: 10px;
         }
-
         &:before {
           position: absolute;
           left: 0;
@@ -118,6 +116,7 @@ body {
     > li {
       > a {
         padding: 10px 15px;
+        white-space: normal;
         &:hover,
         &:focus,
         &:active {
@@ -216,5 +215,45 @@ body {
   &:focus {
     border-color: $border;
     @include box-shadow();
+  }
+}
+
+//Collapse Panel
+.panel__collapse-pr {
+  position: relative;
+  .panel-heading {
+    .panel-title {
+      text-decoration: underline;
+    }
+  }
+
+  .panel-body {
+    background-color: $well-bg;
+    padding-bottom: 0;
+  }
+  &.collapse-open {
+    > .panel-heading {
+      display: none;
+    }
+  }
+
+  label {
+    text-transform: lowercase;
+    &:first-letter {
+      text-transform: capitalize;
+    }
+  }
+}
+
+.collapse-toggler {
+  margin-top: -19px;
+  margin-bottom: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 24px;
+  float: right;
+  &:hover, &:focus, &:active, &:active:focus {
+    outline: none;
+    box-shadow: none;
   }
 }
