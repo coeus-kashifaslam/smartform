@@ -105,10 +105,37 @@ $barometer-section-bg: #F7F7F7;
   .elem__barometer {
     padding-right: 305px;
   }
+
+  .content__rtl {
+    .elem__barometer {
+      padding-left: 305px;
+      padding-right: 0;
+    }
+    .barometer-progress {
+      right: auto;
+      left: 0;
+    }
+  }
 }
 
 @media (max-width: 767px) {
   .barometer-content {
     margin-bottom: 30px;
+  }
+}
+
+.content__rtl {
+  .barometer-progressbar {
+    padding-right: 0;
+    padding-left: 60px;
+    &:after {
+      right: auto;
+      left: 0;
+    }
+  }
+  .barometer-progressbar {
+    .progress {
+      transform: rotateY(180deg);
+    }
   }
 }
