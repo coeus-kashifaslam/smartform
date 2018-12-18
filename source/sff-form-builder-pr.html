@@ -1,95 +1,896 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Smart Form</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/sff-form-builder-pr.css">
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
-</head>
-<body>
+{% extends 'template/layouts/form-builder-pr.html' %}
+
+{% block content %}
 
 <div class="container">
 
+    <!--Colors Section-->
+    <section class="section-pr">
+        <header>
+            <h3 class="section-pr__title">Colors</h3>
+        </header>
+        <div class="section-pr__body">
+            <div class="row">
+                <div class="col-sm-6 col__primary-color">
+                    <h4 class="section-pr__sub-title">
+                        Primary Color
+                    </h4>
+                    <div class="form-group">
+                        <div class="input-group colorpicker-component">
+                            <span class="input-group-addon"><i></i></span>
+                            <input type="text" value="#00AABB" class="form-control-pr form-control" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col__secondary-color">
+                    <h4 class="section-pr__sub-title">
+                        Secondary Color
+                    </h4>
+                    <div class="form-group">
+                        <div class="input-group colorpicker-component">
+                            <span class="input-group-addon"><i></i></span>
+                            <input type="text" value="#00AABB" class="form-control-pr form-control" />
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <!--Collapse panel-->
+                    <div class="panel panel-default panel__collapse-pr">
+                        <div class="panel-heading" role="tab">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-panel-colors" aria-expanded="false" aria-controls="collapse-panel-colors">
+                                    Advanced Settings
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse-panel-colors" class="panel-collapse collapse panel__collapse-content-pr" role="tabpanel" aria-labelledby="collapse-panel-colors">
+                            <div class="panel-body">
 
-    <!--Form Input-->
-    <div class="form-group">
-        <input type="text" class="form-control-pr form-control" />
-    </div>
+                               <div class="row">
+                                   <div class="col-sm-6">
+                                       <div class="col__layout-table">
+                                           <div class="picker">
+                                               <div class="form-group mb-0">
+                                                   <div class="input-group colorpicker-component">
+                                                       <span class="input-group-addon"><i></i></span>
+                                                       <input type="text" value="#00AABB" class="form-control-pr form-control" />
+                                                   </div>
+                                               </div>
+                                           </div>
+                                           <label class="pl-15">Background</label>
+                                       </div>
+                                   </div>
+                                   <div class="col-sm-6">
+                                       <div class="col__layout-table">
+                                           <div class="picker">
+                                               <div class="form-group mb-0">
+                                                   <div class="input-group colorpicker-component">
+                                                       <span class="input-group-addon"><i></i></span>
+                                                       <input type="text" value="#00AABB" class="form-control-pr form-control" />
+                                                   </div>
+                                               </div>
+                                           </div>
+                                           <label class="pl-15">Answer options</label>
+                                       </div>
+                                   </div>
+                                   <div class="clearix"></div>
+                               </div>
 
-    <!--Color Picker-->
-    <div class="form-group">
-        <div class="input-group colorpicker-component">
-            <span class="input-group-addon"><i></i></span>
-            <input type="text" value="#00AABB" class="form-control-pr form-control" />
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="col__layout-table">
+                                            <div class="picker">
+                                                <div class="form-group mb-0">
+                                                    <div class="input-group colorpicker-component">
+                                                        <span class="input-group-addon"><i></i></span>
+                                                        <input type="text" value="#00AABB" class="form-control-pr form-control" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <label class="pl-15">Breadcrumb bar</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="col__layout-table">
+                                            <div class="picker">
+                                                <div class="form-group mb-0">
+                                                    <div class="input-group colorpicker-component">
+                                                        <span class="input-group-addon"><i></i></span>
+                                                        <input type="text" value="#00AABB" class="form-control-pr form-control" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <label class="pl-15">Email box border</label>
+                                        </div>
+                                    </div>
+                                    <div class="clearix"></div>
+                                </div>
+
+                                <hr class="section-diver">
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="col__layout-table">
+                                            <div class="picker">
+                                                <div class="form-group mb-0">
+                                                    <div class="input-group colorpicker-component">
+                                                        <span class="input-group-addon"><i></i></span>
+                                                        <input type="text" value="#00AABB" class="form-control-pr form-control" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <label class="pl-15">Main Text</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="col__layout-table">
+                                            <div class="picker">
+                                                <div class="form-group mb-0">
+                                                    <div class="input-group colorpicker-component">
+                                                        <span class="input-group-addon"><i></i></span>
+                                                        <input type="text" value="#00AABB" class="form-control-pr form-control" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <label class="pl-15">Label Text</label>
+                                        </div>
+                                    </div>
+                                    <div class="clearix"></div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="col__layout-table">
+                                            <div class="picker">
+                                                <div class="form-group mb-0">
+                                                    <div class="input-group colorpicker-component">
+                                                        <span class="input-group-addon"><i></i></span>
+                                                        <input type="text" value="#00AABB" class="form-control-pr form-control" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <label class="pl-15">Help Text</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="col__layout-table">
+                                            <div class="picker">
+                                                <div class="form-group mb-0">
+                                                    <div class="input-group colorpicker-component">
+                                                        <span class="input-group-addon"><i></i></span>
+                                                        <input type="text" value="#00AABB" class="form-control-pr form-control" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <label class="pl-15">Placeholder Text</label>
+                                        </div>
+                                    </div>
+                                    <div class="clearix"></div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="col__layout-table">
+                                            <div class="picker">
+                                                <div class="form-group mb-0">
+                                                    <div class="input-group colorpicker-component">
+                                                        <span class="input-group-addon"><i></i></span>
+                                                        <input type="text" value="#00AABB" class="form-control-pr form-control" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <label class="pl-15">Input Text</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="col__layout-table">
+                                            <div class="picker">
+                                                <div class="form-group mb-0">
+                                                    <div class="input-group colorpicker-component">
+                                                        <span class="input-group-addon"><i></i></span>
+                                                        <input type="text" value="#00AABB" class="form-control-pr form-control" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <label class="pl-15">Breadcrumb Text</label>
+                                        </div>
+                                    </div>
+                                    <div class="clearix"></div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="col__layout-table">
+                                            <div class="picker">
+                                                <div class="form-group mb-0">
+                                                    <div class="input-group colorpicker-component">
+                                                        <span class="input-group-addon"><i></i></span>
+                                                        <input type="text" value="#00AABB" class="form-control-pr form-control" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <label class="pl-15">Breadcrumb Text (inactive)</label>
+                                        </div>
+                                    </div>
+                                    <div class="clearix"></div>
+                                </div>
+
+                                <hr class="section-diver">
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="col__layout-table">
+                                            <div class="picker">
+                                                <div class="form-group mb-0">
+                                                    <div class="input-group colorpicker-component">
+                                                        <span class="input-group-addon"><i></i></span>
+                                                        <input type="text" value="#00AABB" class="form-control-pr form-control" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <label class="pl-15">Navigation buttons</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="col__layout-table">
+                                            <div class="picker">
+                                                <div class="form-group mb-0">
+                                                    <div class="input-group colorpicker-component">
+                                                        <span class="input-group-addon"><i></i></span>
+                                                        <input type="text" value="#00AABB" class="form-control-pr form-control" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <label class="pl-15">Submit Button</label>
+                                        </div>
+                                    </div>
+                                    <div class="clearix"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn collapse-toggler" type="button" data-toggle="collapse" data-target="#collapse-panel-colors" aria-expanded="false" aria-controls="collapse-panel-colors">
+                        <i class="fa fa-angle-down"></i>
+                    </button>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <!--Fonts Section-->
+    <section class="section-pr">
+        <header>
+            <h3 class="section-pr__title">Fonts</h3>
+        </header>
+        <div class="section-pr__body">
+            <div class="row">
+                <div class="col-sm-6 col__primary-font">
+                    <h4 class="section-pr__sub-title">
+                        Primary font
+                    </h4>
+                    <div class="col__layout-table mb-15">
+                            <div class="font-family__container">
+                                <div class="article-item-selectpicker selectpicker__font-family">
+                                    <select class="selectpicker">
+                                        <option>Roboto</option>
+                                        <option>Arial</option>
+                                        <option>Helvetica</option>
+                                        <option>JosefinSlab</option>
+                                        <option>Lato</option>
+                                        <option>Ubuntu</option>
+                                        <option>Open Sans</option>
+                                        <option>Source Sans Pro</option>
+                                        <option>Noto Sans Japanese</option>
+                                        <option>DinPro</option>
+                                        <option>Frankfurter</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="cont-size__container pl-15">
+                                <div class="article-item-selectpicker selectpicker__font-size">
+                                    <select class="selectpicker">
+                                        <option value="8">8px</option>
+                                        <option value="9">9px</option>
+                                        <option value="10">10px</option>
+                                        <option value="11">11px</option>
+                                        <option value="12">12px</option>
+                                        <option value="14">14px</option>
+                                        <option selected="" value="16">16px</option>
+                                        <option value="18">18px</option>
+                                        <option value="20">20px</option>
+                                        <option value="24">24px</option>
+                                        <option value="28">28px</option>
+                                        <option value="33">33px</option>
+                                        <option value="36">36px</option>
+                                        <option value="48">48px</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+                <div class="col-sm-6 col__secondary-font">
+                    <h4 class="section-pr__sub-title">
+                        Secondary font
+                    </h4>
+                    <div class="col__layout-table mb-15">
+                            <div class="font-family__container">
+                                <div class="article-item-selectpicker selectpicker__font-family">
+                                    <select class="selectpicker">
+                                        <option>Roboto</option>
+                                        <option>Arial</option>
+                                        <option>Helvetica</option>
+                                        <option>JosefinSlab</option>
+                                        <option>Lato</option>
+                                        <option>Ubuntu</option>
+                                        <option>Open Sans</option>
+                                        <option>Source Sans Pro</option>
+                                        <option>Noto Sans Japanese</option>
+                                        <option>DinPro</option>
+                                        <option>Frankfurter</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="cont-size__container pl-15">
+                                <div class="article-item-selectpicker selectpicker__font-size">
+                                    <select class="selectpicker">
+                                        <option value="8">8px</option>
+                                        <option value="9">9px</option>
+                                        <option value="10">10px</option>
+                                        <option value="11">11px</option>
+                                        <option value="12">12px</option>
+                                        <option value="14">14px</option>
+                                        <option selected="" value="16">16px</option>
+                                        <option value="18">18px</option>
+                                        <option value="20">20px</option>
+                                        <option value="24">24px</option>
+                                        <option value="28">28px</option>
+                                        <option value="33">33px</option>
+                                        <option value="36">36px</option>
+                                        <option value="48">48px</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <!--Collapse panel-->
+                    <div class="panel panel-default panel__collapse-pr">
+                        <div class="panel-heading" role="tab">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-panel-fonts" aria-expanded="false" aria-controls="collapse-panel-fonts">
+                                    Advanced Settings
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse-panel-fonts" class="panel-collapse collapse panel__collapse-content-pr" role="tabpanel" aria-labelledby="collapse-panel-fonts">
+                            <div class="panel-body">
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="col__layout-table">
+                                            <div class="font-family__container">
+                                                <div class="article-item-selectpicker selectpicker__font-family">
+                                                    <select class="selectpicker">
+                                                        <option>Roboto</option>
+                                                        <option>Arial</option>
+                                                        <option>Helvetica</option>
+                                                        <option>JosefinSlab</option>
+                                                        <option>Lato</option>
+                                                        <option>Ubuntu</option>
+                                                        <option>Open Sans</option>
+                                                        <option>Source Sans Pro</option>
+                                                        <option>Noto Sans Japanese</option>
+                                                        <option>DinPro</option>
+                                                        <option>Frankfurter</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="cont-size__container pl-15">
+                                                <div class="article-item-selectpicker selectpicker__font-size">
+                                                    <select class="selectpicker">
+                                                        <option value="8">8px</option>
+                                                        <option value="9">9px</option>
+                                                        <option value="10">10px</option>
+                                                        <option value="11">11px</option>
+                                                        <option value="12">12px</option>
+                                                        <option value="14">14px</option>
+                                                        <option selected="" value="16">16px</option>
+                                                        <option value="18">18px</option>
+                                                        <option value="20">20px</option>
+                                                        <option value="24">24px</option>
+                                                        <option value="28">28px</option>
+                                                        <option value="33">33px</option>
+                                                        <option value="36">36px</option>
+                                                        <option value="48">48px</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <label class="pl-15">Main Text</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="col__layout-table">
+                                            <div class="font-family__container">
+                                                <div class="article-item-selectpicker selectpicker__font-family">
+                                                    <select class="selectpicker">
+                                                        <option>Roboto</option>
+                                                        <option>Arial</option>
+                                                        <option>Helvetica</option>
+                                                        <option>JosefinSlab</option>
+                                                        <option>Lato</option>
+                                                        <option>Ubuntu</option>
+                                                        <option>Open Sans</option>
+                                                        <option>Source Sans Pro</option>
+                                                        <option>Noto Sans Japanese</option>
+                                                        <option>DinPro</option>
+                                                        <option>Frankfurter</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="cont-size__container pl-15">
+                                                <div class="article-item-selectpicker selectpicker__font-size">
+                                                    <select class="selectpicker">
+                                                        <option value="8">8px</option>
+                                                        <option value="9">9px</option>
+                                                        <option value="10">10px</option>
+                                                        <option value="11">11px</option>
+                                                        <option value="12">12px</option>
+                                                        <option value="14">14px</option>
+                                                        <option selected="" value="16">16px</option>
+                                                        <option value="18">18px</option>
+                                                        <option value="20">20px</option>
+                                                        <option value="24">24px</option>
+                                                        <option value="28">28px</option>
+                                                        <option value="33">33px</option>
+                                                        <option value="36">36px</option>
+                                                        <option value="48">48px</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <label class="pl-15">Label Text</label>
+                                        </div>
+                                    </div>
+                                    <div class="clearix"></div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="col__layout-table">
+                                            <div class="font-family__container">
+                                                <div class="article-item-selectpicker selectpicker__font-family">
+                                                    <select class="selectpicker">
+                                                        <option>Roboto</option>
+                                                        <option>Arial</option>
+                                                        <option>Helvetica</option>
+                                                        <option>JosefinSlab</option>
+                                                        <option>Lato</option>
+                                                        <option>Ubuntu</option>
+                                                        <option>Open Sans</option>
+                                                        <option>Source Sans Pro</option>
+                                                        <option>Noto Sans Japanese</option>
+                                                        <option>DinPro</option>
+                                                        <option>Frankfurter</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="cont-size__container pl-15">
+                                                <div class="article-item-selectpicker selectpicker__font-size">
+                                                    <select class="selectpicker">
+                                                        <option value="8">8px</option>
+                                                        <option value="9">9px</option>
+                                                        <option value="10">10px</option>
+                                                        <option value="11">11px</option>
+                                                        <option value="12">12px</option>
+                                                        <option value="14">14px</option>
+                                                        <option selected="" value="16">16px</option>
+                                                        <option value="18">18px</option>
+                                                        <option value="20">20px</option>
+                                                        <option value="24">24px</option>
+                                                        <option value="28">28px</option>
+                                                        <option value="33">33px</option>
+                                                        <option value="36">36px</option>
+                                                        <option value="48">48px</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <label class="pl-15">Help Text</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="col__layout-table">
+                                            <div class="font-family__container">
+                                                <div class="article-item-selectpicker selectpicker__font-family">
+                                                    <select class="selectpicker">
+                                                        <option>Roboto</option>
+                                                        <option>Arial</option>
+                                                        <option>Helvetica</option>
+                                                        <option>JosefinSlab</option>
+                                                        <option>Lato</option>
+                                                        <option>Ubuntu</option>
+                                                        <option>Open Sans</option>
+                                                        <option>Source Sans Pro</option>
+                                                        <option>Noto Sans Japanese</option>
+                                                        <option>DinPro</option>
+                                                        <option>Frankfurter</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="cont-size__container pl-15">
+                                                <div class="article-item-selectpicker selectpicker__font-size">
+                                                    <select class="selectpicker">
+                                                        <option value="8">8px</option>
+                                                        <option value="9">9px</option>
+                                                        <option value="10">10px</option>
+                                                        <option value="11">11px</option>
+                                                        <option value="12">12px</option>
+                                                        <option value="14">14px</option>
+                                                        <option selected="" value="16">16px</option>
+                                                        <option value="18">18px</option>
+                                                        <option value="20">20px</option>
+                                                        <option value="24">24px</option>
+                                                        <option value="28">28px</option>
+                                                        <option value="33">33px</option>
+                                                        <option value="36">36px</option>
+                                                        <option value="48">48px</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <label class="pl-15">Placeholder Text</label>
+                                        </div>
+                                    </div>
+                                    <div class="clearix"></div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="col__layout-table">
+                                            <div class="font-family__container">
+                                                <div class="article-item-selectpicker selectpicker__font-family">
+                                                    <select class="selectpicker">
+                                                        <option>Roboto</option>
+                                                        <option>Arial</option>
+                                                        <option>Helvetica</option>
+                                                        <option>JosefinSlab</option>
+                                                        <option>Lato</option>
+                                                        <option>Ubuntu</option>
+                                                        <option>Open Sans</option>
+                                                        <option>Source Sans Pro</option>
+                                                        <option>Noto Sans Japanese</option>
+                                                        <option>DinPro</option>
+                                                        <option>Frankfurter</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="cont-size__container pl-15">
+                                                <div class="article-item-selectpicker selectpicker__font-size">
+                                                    <select class="selectpicker">
+                                                        <option value="8">8px</option>
+                                                        <option value="9">9px</option>
+                                                        <option value="10">10px</option>
+                                                        <option value="11">11px</option>
+                                                        <option value="12">12px</option>
+                                                        <option value="14">14px</option>
+                                                        <option selected="" value="16">16px</option>
+                                                        <option value="18">18px</option>
+                                                        <option value="20">20px</option>
+                                                        <option value="24">24px</option>
+                                                        <option value="28">28px</option>
+                                                        <option value="33">33px</option>
+                                                        <option value="36">36px</option>
+                                                        <option value="48">48px</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <label class="pl-15">Breadcrumb Text</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="col__layout-table">
+                                            <div class="font-family__container">
+                                                <div class="article-item-selectpicker selectpicker__font-family">
+                                                    <select class="selectpicker">
+                                                        <option>Roboto</option>
+                                                        <option>Arial</option>
+                                                        <option>Helvetica</option>
+                                                        <option>JosefinSlab</option>
+                                                        <option>Lato</option>
+                                                        <option>Ubuntu</option>
+                                                        <option>Open Sans</option>
+                                                        <option>Source Sans Pro</option>
+                                                        <option>Noto Sans Japanese</option>
+                                                        <option>DinPro</option>
+                                                        <option>Frankfurter</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="cont-size__container pl-15">
+                                                <div class="article-item-selectpicker selectpicker__font-size">
+                                                    <select class="selectpicker">
+                                                        <option value="8">8px</option>
+                                                        <option value="9">9px</option>
+                                                        <option value="10">10px</option>
+                                                        <option value="11">11px</option>
+                                                        <option value="12">12px</option>
+                                                        <option value="14">14px</option>
+                                                        <option selected="" value="16">16px</option>
+                                                        <option value="18">18px</option>
+                                                        <option value="20">20px</option>
+                                                        <option value="24">24px</option>
+                                                        <option value="28">28px</option>
+                                                        <option value="33">33px</option>
+                                                        <option value="36">36px</option>
+                                                        <option value="48">48px</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <label class="pl-15">Button Text</label>
+                                        </div>
+                                    </div>
+                                    <div class="clearix"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn collapse-toggler" type="button" data-toggle="collapse" data-target="#collapse-panel-fonts" aria-expanded="false" aria-controls="collapse-panel-fonts">
+                        <i class="fa fa-angle-down"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Buttons Section-->
+    <section class="section-pr">
+        <header>
+            <h3 class="section-pr__title">Buttons</h3>
+        </header>
+        <div class="section-pr__body">
+            <div class="row">
+                <div class="col-sm-6 col__primary-buttons">
+                    <h4 class="section-pr__sub-title">
+                        Text Transform
+                    </h4>
+                    <div class="col__layout-table mb-15">
+                        <div class="selectpicker__container">
+                            <div class="article-item-selectpicker">
+                                <select class="selectpicker">
+                                    <option>Uppercase</option>
+                                    <option>Lowercase</option>
+                                    <option>Capitalize</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col__secondary-buttons">
+                    <h4 class="section-pr__sub-title">
+                        Border Radius
+                    </h4>
+                    <div class="col__layout-table mb-15">
+                        <div class="selectpicker__container">
+                            <div class="article-item-selectpicker selectpicker__font-family">
+                                <select class="selectpicker">
+                                    <option value="1">1px</option>
+                                    <option value="2">2px</option>
+                                    <option value="3">3px</option>
+                                    <option value="4">4px</option>
+                                    <option value="5">5px</option>
+                                    <option value="6">6px</option>
+                                    <option value="7">7px</option>
+                                    <option value="8">8px</option>
+                                    <option value="9">9px</option>
+                                    <option value="10">10px</option>
+                                    <option value="11">11px</option>
+                                    <option value="12">12px</option>
+                                    <option value="13">13px</option>
+                                    <option value="14">14px</option>
+                                    <option value="15">15px</option>
+                                    <option value="16">16px</option>
+                                    <option value="17">17px</option>
+                                    <option value="18">18px</option>
+                                    <option value="19">19px</option>
+                                    <option value="20">20px</option>
+                                    <option value="21">21px</option>
+                                    <option value="22">22px</option>
+                                    <option value="23">23px</option>
+                                    <option value="24">24px</option>
+                                    <option value="25">25px</option>
+                                    <option value="26">26px</option>
+                                    <option value="27">27px</option>
+                                    <option value="28">28px</option>
+                                    <option value="29">29px</option>
+                                    <option value="30">30px</option>
+                                    <option value="31">31px</option>
+                                    <option value="32">32px</option>
+                                    <option value="33">33px</option>
+                                    <option value="34">34px</option>
+                                    <option value="35">35px</option>
+                                    <option value="36">36px</option>
+                                    <option value="37">37px</option>
+                                    <option value="38">38px</option>
+                                    <option value="39">39px</option>
+                                    <option value="40">40px</option>
+                                    <option value="41">41px</option>
+                                    <option value="42">42px</option>
+                                    <option value="43">43px</option>
+                                    <option value="44">44px</option>
+                                    <option value="45">45px</option>
+                                    <option value="46">46px</option>
+                                    <option value="47">47px</option>
+                                    <option value="48">48px</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </section>
+
+    <!--Layout Section-->
+    <section class="section-pr">
+        <header>
+            <h3 class="section-pr__title">Layout</h3>
+        </header>
+        <div class="section-pr__body">
+            <div class="row">
+                <div class="col-sm-6 col__primary-layout">
+                    <div class="checkbox-custom">
+                        <input id="layoutCheckbox1" name="checkbox-group" type="checkbox">
+                        <label for="layoutCheckbox1"><span>Enable breadcrumb</span></label>
+                    </div>
+                </div>
+                <div class="col-sm-6 col__secondary-layout">
+                    <div class="checkbox-custom">
+                        <input id="layoutCheckbox2" name="checkbox-group" type="checkbox">
+                        <label for="layoutCheckbox2"><span>Enable quality barometer</span></label>
+                    </div>
+                </div>
+                <div class="col-sm-6 col__primary-layout">
+                    <div class="checkbox-custom">
+                        <input id="layoutCheckbox3" name="checkbox-group" type="checkbox">
+                        <label for="layoutCheckbox3"><span>Enable borders</span></label>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <!--Collapse panel-->
+                    <div class="panel panel-default panel__collapse-pr">
+                        <div class="panel-heading" role="tab">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-panel-layout" aria-expanded="false" aria-controls="collapse-panel-layout">
+                                    Advanced Settings
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse-panel-layout" class="panel-collapse collapse panel__collapse-content-pr" role="tabpanel" aria-labelledby="collapse-panel-layout">
+                            <div class="panel-body">
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="checkbox-custom">
+                                            <input id="layoutCheckbox4" name="checkbox-group" type="checkbox">
+                                            <label for="layoutCheckbox4"><span>Enable custom header</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="checkbox-custom">
+                                            <input id="layoutCheckbox5" name="checkbox-group" type="checkbox">
+                                            <label for="layoutCheckbox5"><span>Enable custom footer</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="checkbox-custom">
+                                            <input id="layoutCheckbox6" name="checkbox-group" type="checkbox">
+                                            <label for="layoutCheckbox6"><span>Display an asterisk(*) for required questions</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="checkbox-custom">
+                                            <input id="layoutCheckbox7" name="checkbox-group" type="checkbox">
+                                            <label for="layoutCheckbox7"><span>Use image for ranking scale shapes</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="clearix"></div>
+                                </div>
 
 
-    <!--Select Option-->
-    <div class="article-item-selectpicker selectpicker__font-family">
-        <select class="selectpicker">
-            <option>Font Family</option>
-            <option>Mustard Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, sapiente!</option>
-            <option>Ketchup</option>
-            <option>Relish</option>
-            <option>Mustard</option>
-        </select>
-    </div>
-    <br />
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn collapse-toggler" type="button" data-toggle="collapse" data-target="#collapse-panel-layout" aria-expanded="false" aria-controls="collapse-panel-layout">
+                        <i class="fa fa-angle-down"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="article-item-selectpicker selectpicker__font-size">
-        <select class="selectpicker">
-            <option>Font Size</option>
-            <option>45px</option>
-            <option>50px</option>
-            <option>60px</option>
-            <option>90px</option>
-        </select>
-    </div>
-    <br />
+    <!--Data Section-->
+    <section class="section-pr">
+        <header>
+            <h3 class="section-pr__title">Data</h3>
+        </header>
+        <div class="section-pr__body">
+            <div class="row">
+                <div class="col-sm-6 col__primary-layout">
+                    <div class="checkbox-custom">
+                        <input id="dataCheckbox1" name="checkbox-group" type="checkbox">
+                        <label for="dataCheckbox1"><span>Load metadat from SRR(i.e [[FIRST_NAME]])</span></label>
+                    </div>
+                </div>
+                <div class="col-sm-6 col__secondary-layout">
+                    <div class="checkbox-custom">
+                        <input id="dataCheckbox2" name="checkbox-group" type="checkbox">
+                        <label for="dataCheckbox2"><span>Track click on thank you page links</span></label>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </section>
 
-
-    <!--checkbox-->
-    <div class="checkbox-custom">
-        <input id="checkbox1" name="checkbox-group" type="checkbox">
-        <label for="checkbox1"><span>Enable Form and Element Borders</span></label>
-    </div>
-    <br />
+    <!--Fonts Section-->
+    <section class="section-pr">
+        <header>
+            <h3 class="section-pr__title">Custom Styles</h3>
+        </header>
+        <div class="section-pr__body">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h4 class="section-pr__sub-title">
+                        Style Editor
+                    </h4>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <!--Collapse panel-->
+                    <div class="panel panel-default panel__collapse-pr mt-15">
+                        <div class="panel-heading" role="tab">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-panel-styles-editor" aria-expanded="false" aria-controls="collapse-panel-styles-editor">
+                                    See editor
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse-panel-styles-editor" class="panel-collapse collapse panel__collapse-content-pr" role="tabpanel" aria-labelledby="collapse-panel-styles-editor">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <p><strong>Paste your CSS code</strong></p>
+                                        <div class="styles-editor__textarea">
+                                            <textarea class="form-control" rows="30" placeholder="Enter your custom styles here"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="clearix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn collapse-toggler" type="button" data-toggle="collapse" data-target="#collapse-panel-styles-editor" aria-expanded="false" aria-controls="collapse-panel-styles-editor">
+                        <i class="fa fa-angle-down"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
 
-
-<script src="js/libs/jquery.js"></script>
-<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"
-        integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script>
-<script src="js/libs/modernizr.js"></script>
-<script src="js/libs/bootstrap.js"></script>
-<script src="js/libs/bootstrap-select.js"></script>
-<script src="js/libs/bootstrap-colorpicker.js"></script>
-<script>
-    $(document).ready(function () {
-        // Styled HTML 5 Select-Option Element
-        $('.selectpicker').selectpicker();
-    });
-
-    $(function() {
-        $('.colorpicker-component').colorpicker({
-            format: 'hex'
-        });
-    });
-</script>
-
-
-</body>
-</html>
+{% endblock %}
