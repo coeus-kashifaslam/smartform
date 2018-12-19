@@ -9314,14 +9314,6 @@ body {
     display: none;
 }
 
-.panel__collapse-pr label {
-    text-transform: lowercase;
-}
-
-.panel__collapse-pr label:first-letter {
-    text-transform: capitalize;
-}
-
 .collapse-toggler {
     margin-top: -19px;
     margin-bottom: 20px;
@@ -9344,12 +9336,20 @@ body {
     margin-bottom: 15px;
 }
 
+.mb-20 {
+    margin-bottom: 20px;
+}
+
 .mt-15 {
     margin-top: 15px;
 }
 
 .pl-15 {
     padding-left: 15px;
+}
+
+.section__padded {
+    padding: 15px;
 }
 
 .section-diver {
@@ -9367,10 +9367,6 @@ body {
 
 .col__layout-table label {
     font-weight: 400;
-}
-
-.col__layout-table .checkbox-custom label:first-letter {
-    text-transform: uppercase;
 }
 
 .panel-body > .row {
@@ -9422,29 +9418,60 @@ body {
     margin-top: 10px;
 }
 
-.localisation__language-picker {
-    margin-bottom: 20px;
-}
-
-.localisation__language-picker .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+.selectpicker__block .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
     width: 100%;
 }
 
-.localisation__load-languages {
+.panel__cta {
     margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 14px;
 }
 
-.localisation__load-languages span {
+.panel__cta span {
     margin-left: 15px;
 }
 
-.localisation__load-languages a, .localisation__load-languages:hover, .localisation__load-languages:focus, .localisation__load-languages:active {
+.panel__cta a, .panel__cta:hover, .panel__cta:focus, .panel__cta:active {
     color: #606060;
 }
 
-.localisation__load-languages a span, .localisation__load-languages:hover span, .localisation__load-languages:focus span, .localisation__load-languages:active span {
+.panel__cta a span, .panel__cta:hover span, .panel__cta:focus span, .panel__cta:active span {
     text-decoration: underline;
+}
+
+.row__link-type {
+    background-color: #f5f5f5;
+}
+
+.row__link-type .link-type__weblink .col__layout-table {
+    width: 100%;
+}
+
+.row__link-type .link-type__weblink .col__layout-table .link-type__input-percentage {
+    width: 25%;
+}
+
+.link-type__checkbox .checkbox-custom {
+    margin-bottom: 0;
+}
+
+.link-type__deeplink li {
+    padding-right: 30px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.link-type__deeplink li .fa {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+
+.question-option__title {
+    font-size: 18px;
 }
 
 @media print {
