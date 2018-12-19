@@ -1,0 +1,26 @@
+%default-font {
+  font-family: 'Roboto', sans-serif;
+}
+
+%font-light,
+%font-regular,
+%font-bold {
+  @extend %default-font;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+%default-fontawesome {
+  font-family: $font-icons;
+  background-color: transparent;
+}
