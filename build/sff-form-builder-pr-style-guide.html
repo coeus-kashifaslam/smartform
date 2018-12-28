@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Smart Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/sff-form-builder-pr.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+
+
+<div class="container">
+
+    <!--Base section-->
+    <section class="section-pr">
+        <header>
+            <h3 class="section-pr__title">Header</h3>
+        </header>
+        <div class="section-pr__body">
+            <h4 class="section-pr__sub-title">
+                Sub Header
+            </h4>
+        </div>
+    </section>
+
+
+
+    <!--Collapse panel-->
+    <div class="panel panel-default panel__collapse-pr">
+        <div class="panel-heading" role="tab">
+            <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-panel" aria-expanded="false" aria-controls="collapse-panel">
+                    Collapsible Group Item #2
+                </a>
+            </h4>
+        </div>
+        <div id="collapse-panel" class="panel-collapse collapse panel__collapse-content-pr" role="tabpanel" aria-labelledby="collapse-panel">
+            <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+        </div>
+    </div>
+    <button class="btn collapse-toggler" type="button" data-toggle="collapse" data-target="#collapse-panel" aria-expanded="false" aria-controls="collapse-panel">
+        <i class="fa fa-angle-down"></i>
+    </button>
+
+
+
+
+
+
+    <!--Form Input-->
+    <div class="form-group">
+        <input type="text" class="form-control-pr form-control" />
+    </div>
+
+    <!--Color Picker-->
+    <div class="form-group">
+        <div class="input-group colorpicker-component">
+            <span class="input-group-addon"><i></i></span>
+            <input type="text" value="#00AABB" class="form-control-pr form-control" />
+        </div>
+    </div>
+
+
+    <!--Select Option-->
+    <div class="article-item-selectpicker selectpicker__font-family">
+        <select class="selectpicker">
+            <option>Font Family</option>
+            <option>Mustard Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, sapiente!</option>
+            <option>Ketchup</option>
+            <option>Relish</option>
+            <option>Mustard</option>
+        </select>
+    </div>
+    <br />
+
+    <div class="article-item-selectpicker selectpicker__font-size">
+        <select class="selectpicker">
+            <option>Font Size</option>
+            <option>45px</option>
+            <option>50px</option>
+            <option>60px</option>
+            <option>90px</option>
+        </select>
+    </div>
+    <br />
+
+
+    <!--checkbox-->
+    <div class="checkbox-custom">
+        <input id="checkbox1" name="checkbox-group" type="checkbox">
+        <label for="checkbox1"><span>Enable Form and Element Borders</span></label>
+    </div>
+    <br />
+</div>
+
+
+
+
+<script src="js/libs/jquery.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"
+        integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script>
+<script src="js/libs/modernizr.js"></script>
+<script src="js/libs/bootstrap.js"></script>
+<script src="js/libs/bootstrap-select.js"></script>
+<script src="js/libs/bootstrap-colorpicker.js"></script>
+<script>
+    $(document).ready(function () {
+        // Styled HTML 5 Select-Option Element
+        $('.selectpicker').selectpicker();
+
+
+        $('.panel__collapse-content-pr').on('show.bs.collapse', function () {
+            $this = $(this);
+            $this.closest('.panel__collapse-pr').toggleClass('collapse-open');
+        });
+
+        $('.panel__collapse-content-pr').on('hidden.bs.collapse', function () {
+            $this = $(this);
+            $this.closest('.panel__collapse-pr').toggleClass('collapse-open');
+        });
+    });
+
+    $(function() {
+        $('.colorpicker-component').colorpicker({
+            format: 'hex'
+        });
+    });
+</script>
+
+
+</body>
+</html>

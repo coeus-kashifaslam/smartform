@@ -1,0 +1,23 @@
+{% extends 'template/layouts/site-maintenance.html' %}
+{% set pageTitle = "500 | Internal Server Error" %}
+
+{% block content %}
+<div class="temp__site-maintenance__logo">
+    <img src="images/smartforms-white.png" alt="Image not found" class="img-responsive">
+</div>
+<div class="temp__site-maintenance">
+    <div class="temp__site-maintenance__wrapper">
+        <div class="temp__site-maintenance__cover">
+            <div class="temp__site-maintenance__content">
+                <!--<div class="temp__site-maintenance__ico-container">-->
+                    <!--<i class="fa fa-warning temp__site-maintenance__ico"></i>-->
+                <!--</div>-->
+                <div class="temp__site-maintenance__content-body">
+                    <h1 class="temp__site-maintenance__main-liner">There’s been a glitch… </h1>
+                    <h3 class="temp__site-maintenance__sub-liner">We now know about this mistake and are working to fix it.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,252 @@
+body {
+  @extend %default-font;
+}
+
+//checkbox
+.checkbox-custom {
+  margin-bottom: 10px;
+  [type = "checkbox"] {
+    &:checked,
+    &:not(:checked) {
+      position: absolute;
+      left: -9999px;
+
+      + label {
+        position: relative;
+        padding-left: 20px;
+        cursor: pointer;
+        display: inline-block;
+        font-weight: normal;
+        line-height: 28px;
+        min-height: 20px;
+        margin: 0;
+        span {
+          margin-left: 10px;
+        }
+        &:before {
+          position: absolute;
+          left: 0;
+          top: 0;
+          font-size: 22px;
+          @extend %default-fontawesome;
+        }
+      }
+    }
+
+    &:checked {
+      + label {
+        &:before {
+          color: $green-primary;
+        }
+      }
+    }
+  }
+
+  [type="checkbox"] {
+    &:not(checked) {
+      + label {
+        &:before {
+          content: $fa-square-o;
+        }
+      }
+    }
+    &:checked {
+      + label {
+        &:before {
+          content: $fa-check-square;
+        }
+      }
+    }
+  }
+}
+
+
+
+//Select option Stylings
+.bootstrap-select {
+  &, &.open {
+    .dropdown-toggle {
+      border: 1px solid $border;
+      background: $white;
+      box-shadow: none;
+      &:hover,
+      &:focus,
+      &:active {
+        background: $white;
+        outline: none !important;
+        border-color: $border;
+      }
+    }
+  }
+
+  > .dropdown-toggle {
+    padding: 10px 30px 10px 15px;
+    position: relative;
+  }
+
+  .caret {
+    display: none;
+  }
+
+  .bs-caret {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -11px;
+    line-height: 1;
+
+    &:before {
+      content: $fa-angle-down;
+      @extend %default-fontawesome;
+      font-size: 22px;
+      line-height: 1;
+      color: $border;
+    }
+  }
+
+
+  .dropdown-menu {
+    border-radius: 0;
+    padding: 0;
+    box-shadow: none;
+    margin-top: -3px;
+    border: 1px solid $border;
+    font-size: $base-font-size;
+
+    > li {
+      > a {
+        padding: 10px 15px;
+        white-space: normal;
+        &:hover,
+        &:focus,
+        &:active {
+          background: $bg-element;
+          outline: none;
+        }
+      }
+      &.selected {
+        > a {
+          background: $bg-element;
+        }
+      }
+      + li {
+        border-top: 1px solid $border;
+      }
+    }
+  }
+
+
+  &.dropup {
+    .dropdown-menu {
+      margin-top: 0;
+      margin-bottom: -3px;
+    }
+  }
+}
+.selectpicker__font-family {
+  .bootstrap-select {
+    &:not([class*="col-"]) {
+      &:not([class*="form-control"]) {
+        &:not(.input-group-btn) {
+          width: $selectpicker-font-family;
+        }
+      }
+    }
+  }
+}
+
+.selectpicker__font-size,
+.selectpicker__days  {
+  .bootstrap-select {
+    &:not([class*="col-"]) {
+      &:not([class*="form-control"]) {
+        &:not(.input-group-btn) {
+          width: $selectpicker-font-size;
+        }
+      }
+    }
+  }
+}
+
+
+//Color Picker
+@mixin  box-shadow {
+  box-shadow: 0 1px 0 $border-shadow;
+}
+.colorpicker-component {
+  border: 1px solid $border;
+  border-radius: $radius;
+  width: $colorpicker;
+  .input-group-addon {
+    padding: 0;
+  }
+
+  .input-group-addon,
+  .add-on {
+    border: 0 none;
+    i {
+      width: 45px;
+      height: 45px;
+      border-radius: $radius 0 0 $radius;
+    }
+  }
+  .form-control {
+    border: 0 none;
+    box-shadow: none;
+  }
+
+  .form-control-pr {
+    resize: none;
+    font-size: $base-font-size;
+    color: $text-primary;
+    min-height: 45px;
+  }
+}
+
+.form-control-pr {
+  border: 1px solid $border;
+  border-radius: $radius;
+  @include box-shadow();
+  resize: none;
+  font-size: $base-font-size;
+  color: $text-primary;
+  min-height: 45px;
+
+  &:focus {
+    border-color: $border;
+    @include box-shadow();
+  }
+}
+
+//Collapse Panel
+.panel__collapse-pr {
+  position: relative;
+  .panel-heading {
+    .panel-title {
+      text-decoration: underline;
+    }
+  }
+
+  .panel-body {
+    background-color: $well-bg;
+    padding-bottom: 0;
+  }
+  &.collapse-open {
+    > .panel-heading {
+      display: none;
+    }
+  }
+}
+
+.collapse-toggler {
+  margin-top: -19px;
+  margin-bottom: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 24px;
+  float: right;
+  &:hover, &:focus, &:active, &:active:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
