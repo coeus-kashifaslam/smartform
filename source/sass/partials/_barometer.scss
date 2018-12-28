@@ -1,4 +1,5 @@
 $barometer-section-bg: #F7F7F7;
+$barometer-inactive: #ededed;
 .barometer-progressbar {
   position: relative;
   padding-right: 60px;
@@ -7,6 +8,7 @@ $barometer-section-bg: #F7F7F7;
     margin-bottom: 10px;
     border-radius: 0;
     > .progress-bar {
+      box-shadow: none;
       background-color: $ekomi-green;
       + .progress-bar {
         border-left: 2px solid $white;
@@ -42,7 +44,7 @@ $barometer-section-bg: #F7F7F7;
   &.level__0 {
     .progress {
       > .progress-bar {
-        display: none;
+        background-color: $barometer-inactive;
       }
     }
   }
@@ -50,7 +52,7 @@ $barometer-section-bg: #F7F7F7;
     &.level__#{$i} {
       .progress {
         > .progress-bar:nth-child(n + #{$i + 1}) {
-          display: none;
+          background-color: $barometer-inactive;
         }
       }
     }
