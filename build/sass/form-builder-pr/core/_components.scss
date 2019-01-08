@@ -208,10 +208,16 @@ $colorpicker-size: 45px;
   .input-group {
     position: relative;
     display: inline-block;
+    border: 1px solid $border;
+    border-radius: $radius;
+    @include box-shadow();
     padding-left: $colorpicker-size;
     .form-control-pr {
       width: 105px;
+      border: 0 none;
+      box-shadow: none;
       border-radius: 0 $radius $radius 0;
+      border-left: 1px solid $border;
     }
     .sp-replacer {
       position: absolute;
