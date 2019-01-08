@@ -169,38 +169,10 @@ body {
 }
 
 
-//Color Picker
+//Spectrum Color Picker
+$colorpicker-size: 45px;
 @mixin  box-shadow {
   box-shadow: 0 1px 0 $border-shadow;
-}
-.colorpicker-component {
-  border: 1px solid $border;
-  border-radius: $radius;
-  width: $colorpicker;
-  .input-group-addon {
-    padding: 0;
-  }
-
-  .input-group-addon,
-  .add-on {
-    border: 0 none;
-    i {
-      width: 45px;
-      height: 45px;
-      border-radius: $radius 0 0 $radius;
-    }
-  }
-  .form-control {
-    border: 0 none;
-    box-shadow: none;
-  }
-
-  .form-control-pr {
-    resize: none;
-    font-size: $base-font-size;
-    color: $text-primary;
-    min-height: 45px;
-  }
 }
 
 .form-control-pr {
@@ -217,6 +189,41 @@ body {
     @include box-shadow();
   }
 }
+
+.sp-replacer {
+  padding: 0;
+  border: 0 none;
+  background-color: transparent;
+  .sp-dd {
+    display: none;
+  }
+  .sp-preview {
+    margin: 0;
+    width: $colorpicker-size;
+    height: $colorpicker-size;
+    border: 0 none;
+  }
+}
+.form-group__spectrum {
+  .input-group {
+    position: relative;
+    display: inline-block;
+    padding-left: $colorpicker-size;
+    .form-control-pr {
+      width: 105px;
+      border-radius: 0 $radius $radius 0;
+    }
+    .sp-replacer {
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-radius: $radius 0 0 $radius;
+    }
+  }
+}
+
+
+
 
 //Collapse Panel
 .panel__collapse-pr {

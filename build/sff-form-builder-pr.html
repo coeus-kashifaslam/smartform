@@ -1530,7 +1530,7 @@
 <script src="js/libs/modernizr.js"></script>
 <script src="js/libs/bootstrap.js"></script>
 <script src="js/libs/bootstrap-select.js"></script>
-<script src="js/libs/bootstrap-colorpicker.js"></script>
+<script src="js/libs/spectrum.js"></script>
 <script>
     $(document).ready(function () {
         // Styled HTML 5 Select-Option Element
@@ -1548,11 +1548,14 @@
         });
     });
 
-    $(function() {
-        $('.colorpicker-component').colorpicker({
-            format: 'hex'
-        });
+    $(".colorpicker-component").spectrum({
+        color: "#f00",
+        preferredFormat: "hex"
     });
+    $(".colorpicker-component").show();
+
+
+
 </script>
 
 
