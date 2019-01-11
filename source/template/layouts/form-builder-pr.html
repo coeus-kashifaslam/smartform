@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.0/spectrum.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.min.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="css/sff-form-builder-pr.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -35,7 +35,11 @@
 <script>
     $(document).ready(function () {
         // Styled HTML 5 Select-Option Element
-//        $('.selectpicker').selectpicker();
+        $('.selectpicker').selectpicker({
+            iconBase: 'ico',
+            tickIcon: 'ico-tick',
+            showIcon: 'true'
+        });
 
 
         $('.panel__collapse-content-pr').on('show.bs.collapse', function () {

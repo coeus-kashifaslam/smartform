@@ -1,0 +1,26 @@
+.list__rs-types {
+  padding: 20px 0;
+  > li {
+    width: 20%;
+  }
+}
+
+
+.cell__layout-table {
+  .icon-arrow {
+    font-size: 22px;
+    color: $border;
+  }
+}
+
+.selectpicker__icons {
+  .bootstrap-select {
+    .dropdown-menu, .btn {
+      font-size: 25px;
+      color: $border;
+    }
+    .btn {
+      padding: 4px 30px 4px 15px;
+    }
+  }
+}

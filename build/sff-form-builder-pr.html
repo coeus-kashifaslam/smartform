@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.0/spectrum.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.min.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="css/sff-form-builder-pr.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -25,32 +25,81 @@
 
 
 <div class="container">
-    <!--Colors Section-->
+    <div class="section-pr section__rs-types">
+    <ul class="list-inline list__rs-types">
+        <li>
+            <div class="radio-custom">
+                <input id="radio1" name="radio-group" type="radio">
+                <label for="radio1"><span>Star rating</span></label>
+            </div>
+        </li>
+
+        <li>
+            <div class="radio-custom">
+                <input id="radio2" name="radio-group" type="radio">
+                <label for="radio2"><span>NPS</span></label>
+            </div>
+        </li>
+
+        <li>
+            <div class="radio-custom">
+                <input id="radio3" name="radio-group" type="radio">
+                <label for="radio3"><span>Custom</span></label>
+            </div>
+        </li>
+    </ul>
+</div>
+
+
+<!--Scale Section-->
 <section class="section-pr">
 
     <header>
-        <h3 class="section-pr__title">Ranking Scale</h3>
+        <h3 class="section-pr__title">Scale</h3>
     </header>
     <div class="section-pr__body">
         <div class="row">
-            <div class="col-sm-6 col__primary-color">
+            <div class="col-sm-6 col__primary-scale">
                 <h4 class="section-pr__sub-title">
-                    Primary Color
+                    Range
                 </h4>
-                <div class="form-group form-group__spectrum">
-                    <div class="input-group">
-                        <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" />
+                <div class="form-group col__layout-table">
+                    <div class="cell__layout-table">
+                        <div class="selectpicker__sm">
+                            <select class="form-control form-control-pr">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="cell__layout-table">
+                        <p class="icon-arrow mb-0 pl-15 pr-15"><i class="fa fa-angle-right"></i></p>
+                    </div>
+                    <div class="cell__layout-table">
+                        <div class="selectpicker__sm">
+                            <select class="form-control form-control-pr">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col__secondary-color">
+            <div class="col-sm-6 col__secondary-scale">
                 <h4 class="section-pr__sub-title">
-                    Secondary Color
+                    Type
                 </h4>
-                <div class="form-group form-group__spectrum">
-                    <div class="input-group">
-                        <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" />
-                    </div>
+                <div class="form-group selectpicker__lg">
+                    <select class="form-control form-control-pr">
+                        <option>Single</option>
+                        <option>Continuous</option>
+                    </select>
                 </div>
             </div>
             <div class="clearfix"></div>
@@ -61,37 +110,61 @@
                 <div class="panel panel-default panel__collapse-pr">
                     <div class="panel-heading" role="tab">
                         <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-panel-colors" aria-expanded="false" aria-controls="collapse-panel-colors">
+                            <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-panel-scale" aria-expanded="false" aria-controls="collapse-panel-scale">
                                 Advanced Settings
                             </a>
                         </h4>
                     </div>
-                    <div id="collapse-panel-colors" class="panel-collapse collapse panel__collapse-content-pr" role="tabpanel" aria-labelledby="collapse-panel-colors">
+                    <div id="collapse-panel-scale" class="panel-collapse collapse panel__collapse-content-pr" role="tabpanel" aria-labelledby="collapse-panel-scale">
                         <div class="panel-body">
 
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="col__layout-table">
-                                        <div class="picker">
-                                            <div class="form-group form-group__spectrum mb-0">
-                                                <div class="input-group">
-                                                    <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" />
-                                                </div>
-                                            </div>
+                                        <div class="article-item-selectpicker selectpicker__lg">
+                                            <select class="form-control form-control-pr">
+                                                <option>Matrix</option>
+                                                <option>Continuous</option>
+                                            </select>
                                         </div>
-                                        <label class="pl-15">Background</label>
+                                        <label class="pl-15">Desktop display</label>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="col__layout-table">
-                                        <div class="picker">
-                                            <div class="form-group form-group__spectrum mb-0">
-                                                <div class="input-group">
-                                                    <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" />
-                                                </div>
-                                            </div>
+                                        <div class="article-item-selectpicker selectpicker__lg">
+                                            <select class="form-control form-control-pr">
+                                                <option>Matrix</option>
+                                                <option>Continuous</option>
+                                            </select>
                                         </div>
-                                        <label class="pl-15">Answer options</label>
+                                        <label class="pl-15">Mobile display</label>
+                                    </div>
+                                </div>
+                                <div class="clearix"></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="col__layout-table">
+                                        <div class="article-item-selectpicker selectpicker__lg">
+                                            <select class="form-control form-control-pr">
+                                                <option>Left</option>
+                                                <option>Right</option>
+                                            </select>
+                                        </div>
+                                        <label class="pl-15">Alignment</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="col__layout-table">
+                                        <div class="article-item-selectpicker selectpicker__lg">
+                                            <select class="form-control form-control-pr">
+                                                <option>Normal</option>
+                                                <option>Random</option>
+                                            </select>
+                                        </div>
+                                        <label class="pl-15">Sub-question order</label>
                                     </div>
                                 </div>
                                 <div class="clearix"></div>
@@ -101,36 +174,283 @@
 
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <div class="col__layout-table">
-                                        <div class="picker">
-                                            <div class="form-group form-group__spectrum mb-0">
-                                                <div class="input-group">
-                                                    <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <label class="pl-15">Navigation buttons</label>
+                                    <div class="checkbox-custom">
+                                        <input id="checkbox1" type="checkbox">
+                                        <label for="checkbox1"><span>Show main rating</span></label>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
-                                    <div class="col__layout-table">
-                                        <div class="picker">
-                                            <div class="form-group form-group__spectrum mb-0">
-                                                <div class="input-group">
-                                                    <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <label class="pl-15">Submit Button</label>
+                                    <div class="checkbox-custom">
+                                        <input id="checkbox2" type="checkbox">
+                                        <label for="checkbox2"><span>Show total</span></label>
                                     </div>
                                 </div>
-                                <div class="clearix"></div>
+                                <div class="clearfix"></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="checkbox-custom">
+                                        <input id="checkbox3" type="checkbox">
+                                        <label for="checkbox3"><span>Show numerical value</span></label>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
                             </div>
 
                         </div>
                     </div>
                 </div>
-                <button class="btn collapse-toggler" type="button" data-toggle="collapse" data-target="#collapse-panel-colors" aria-expanded="false" aria-controls="collapse-panel-colors">
+                <button class="btn collapse-toggler" type="button" data-toggle="collapse" data-target="#collapse-panel-scale" aria-expanded="false" aria-controls="collapse-panel-scale">
+                    <i class="fa fa-angle-down"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--Content Section-->
+<section class="section-pr">
+
+    <header>
+        <h3 class="section-pr__title">Content</h3>
+    </header>
+    <div class="section-pr__body">
+
+        <div class="row">
+            <div class="section__user-inputs">
+                <div class="col-sm-12 section__user-inpute__item">
+                    <h4 class="section-pr__sub-title">Question</h4>
+                    <div class="form-group">
+                        <input type="text" class="form-control form-control-pr">
+                    </div>
+                </div>
+                <div class="col-sm-12 section__user-inpute__item">
+                    <h4 class="section-pr__sub-title">Help text</h4>
+                    <div class="form-group">
+                        <input type="text" class="form-control form-control-pr">
+                    </div>
+                </div>
+                <div class="col-sm-12 section__user-inpute__item">
+                    <h4 class="section-pr__sub-title">Error text</h4>
+                    <div class="form-group">
+                        <input type="text" class="form-control form-control-pr">
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <h4 class="section-pr__sub-title">Setup</h4>
+            </div>
+            <div class="col-sm-6">
+                <div class="checkbox-custom">
+                    <input id="checkbox10" type="checkbox">
+                    <label for="checkbox10"><span>Enable tooltips</span></label>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="checkbox-custom">
+                    <input id="checkbox11" type="checkbox">
+                    <label for="checkbox11"><span>Use different style for each option</span></label>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="rs__main-section">
+                    <div class="rs__main-section__row">
+                        <div class="col__layout-table">
+                            <div class="cell__layout-table">
+                                <div class="article-item-selectpicker selectpicker__sm selectpicker__icons">
+                                    <select class="selectpicker">
+                                        <option value="star" data-icon="ico-star"></option>
+                                        <option value="heart" data-icon="ico-heart"></option>
+                                        <option value="circle" data-icon="ico-circle"></option>
+                                        <option value="thumb-up" data-icon="ico-thumb-up"></option>
+                                        <option value="thumb-down" data-icon="ico-thumb-down"></option>
+                                        <option value="square" data-icon="ico-square"></option>
+                                        <option value="comment" data-icon="ico-comment"></option>
+                                        <option value="question" data-icon="ico-question"></option>
+                                        <option value="question-circle-o" data-icon="ico-question-circle-o"></option>
+                                        <option value="circle-with-number" data-icon="ico-0"></option>
+                                        <option value="square-with-number" data-icon="ico-square-0"></option>
+                                        <option value="flame" data-icon="ico-flame"></option>
+                                        <option value="smile" data-icon="ico-smile"></option>
+                                        <option value="happy" data-icon="ico-happy"></option>
+                                        <option value="sad" data-icon="ico-sad"></option>
+                                        <option value="serious" data-icon="ico-serious"></option>
+                                        <option value="down" data-icon="ico-down"></option>
+                                        <option value="confused" data-icon="ico-confused"></option>
+                                        <option value="crying" data-icon="ico-crying"></option>
+                                        <option value="frustrated" data-icon="ico-frustrated"></option>
+                                        <option value="angry" data-icon="ico-angry"></option>
+                                        <option value="baffled" data-icon="ico-baffled"></option>
+                                        <option value="grin" data-icon="ico-grin"></option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="cell__layout-table"></div>
+                            <div class="cell__layout-table"></div>
+                            <div class="cell__layout-table"></div>
+                            <div class="cell__layout-table"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <!--Collapse panel-->
+                <div class="panel panel-default panel__collapse-pr">
+                    <div class="panel-heading" role="tab">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-panel-content" aria-expanded="false" aria-controls="collapse-panel-content">
+                                Advanced Settings
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse-panel-content" class="panel-collapse collapse panel__collapse-content-pr" role="tabpanel" aria-labelledby="collapse-panel-content">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="col__layout-table">
+                                        <div class="article-item-selectpicker selectpicker__lg">
+                                            <select class="form-control form-control-pr">
+                                                <option>Matrix</option>
+                                                <option>Continuous</option>
+                                            </select>
+                                        </div>
+                                        <label class="pl-15">Desktop shape</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="col__layout-table">
+                                        <div class="article-item-selectpicker selectpicker__lg">
+                                            <select class="form-control form-control-pr">
+                                                <option>Matrix</option>
+                                                <option>Continuous</option>
+                                            </select>
+                                        </div>
+                                        <label class="pl-15">Mobile shape</label>
+                                    </div>
+                                </div>
+                                <div class="clearix"></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="col__layout-table">
+                                        <div class="article-item-selectpicker selectpicker__lg">
+                                            <select class="form-control form-control-pr">
+                                                <option>Matrix</option>
+                                                <option>Continuous</option>
+                                            </select>
+                                        </div>
+                                        <label class="pl-15">Tooltips</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="col__layout-table">
+                                        <div class="article-item-selectpicker selectpicker__lg">
+                                            <select class="form-control form-control-pr">
+                                                <option>Matrix</option>
+                                                <option>Continuous</option>
+                                            </select>
+                                        </div>
+                                        <label class="pl-15">Sub-questions</label>
+                                    </div>
+                                </div>
+                                <div class="clearix"></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="col__layout-table">
+                                        <div class="article-item-selectpicker selectpicker__lg">
+                                            <select class="form-control form-control-pr">
+                                                <option>Matrix</option>
+                                                <option>Continuous</option>
+                                            </select>
+                                        </div>
+                                        <label class="pl-15">Shapes column width</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="col__layout-table">
+                                        <div class="article-item-selectpicker selectpicker__lg">
+                                            <select class="form-control form-control-pr">
+                                                <option>Matrix</option>
+                                                <option>Continuous</option>
+                                            </select>
+                                        </div>
+                                        <label class="pl-15">Help text position</label>
+                                    </div>
+                                </div>
+                                <div class="clearix"></div>
+                            </div>
+
+                            <hr class="section-diver">
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="checkbox-custom">
+                                        <input id="checkbox4" type="checkbox">
+                                        <label for="checkbox4"><span>Use shapes as tooltips</span></label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="checkbox-custom">
+                                        <input id="checkbox5" type="checkbox">
+                                        <label for="checkbox5"><span>Show tooltips in two columns</span></label>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="checkbox-custom">
+                                        <input id="checkbox6" type="checkbox">
+                                        <label for="checkbox6"><span>Shwo tooltips for sub-questions</span></label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="checkbox-custom">
+                                        <input id="checkbox7" type="checkbox">
+                                        <label for="checkbox7"><span>Use centered layout</span></label>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="checkbox-custom">
+                                        <input id="checkbox8" type="checkbox">
+                                        <label for="checkbox8"><span>Use segmented view</span></label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="checkbox-custom">
+                                        <input id="checkbox9" type="checkbox">
+                                        <label for="checkbox9"><span>Apply thick borders to shapes</span></label>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <button class="btn collapse-toggler" type="button" data-toggle="collapse" data-target="#collapse-panel-content" aria-expanded="false" aria-controls="collapse-panel-content">
                     <i class="fa fa-angle-down"></i>
                 </button>
             </div>
@@ -154,7 +474,11 @@
 <script>
     $(document).ready(function () {
         // Styled HTML 5 Select-Option Element
-//        $('.selectpicker').selectpicker();
+        $('.selectpicker').selectpicker({
+            iconBase: 'ico',
+            tickIcon: 'ico-tick',
+            showIcon: 'true'
+        });
 
 
         $('.panel__collapse-content-pr').on('show.bs.collapse', function () {
