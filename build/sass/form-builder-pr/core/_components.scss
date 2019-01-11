@@ -3,9 +3,11 @@ body {
 }
 
 //checkbox
-.checkbox-custom {
+.checkbox-custom,
+.radio-custom {
   margin-bottom: 10px;
-  [type = "checkbox"] {
+  [type = "checkbox"],
+  [type = "radio"] {
     &:checked,
     &:not(:checked) {
       position: absolute;
@@ -54,6 +56,24 @@ body {
       + label {
         &:before {
           content: $fa-check-square;
+        }
+      }
+    }
+  }
+
+
+  [type="radio"] {
+    &:not(checked) {
+      + label {
+        &:before {
+          content: $fa-circle-o;
+        }
+      }
+    }
+    &:checked {
+      + label {
+        &:before {
+          content: $fa-dot-circle-o;
         }
       }
     }
@@ -153,6 +173,9 @@ body {
       }
     }
   }
+  .form-control-pr {
+    width: $selectpicker-font-family;
+  }
 }
 
 .selectpicker__font-size,
@@ -165,6 +188,9 @@ body {
         }
       }
     }
+  }
+  .form-control-pr {
+    width: $selectpicker-font-size;
   }
 }
 

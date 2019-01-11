@@ -1,10 +1,7 @@
-@import "libs/bootstrap";
-@import "libs/bootstrap-select";
-@import "libs/spectrum";
-@import "libs/font-awesome";
-
-@import "font-families/roboto";
 @import "form-builder-pr/core/vars";
 @import "form-builder-pr/core/fonts";
 @import "form-builder-pr/core/components";
-@import "form-builder-pr/settings";
+@import "form-builder-pr/core/base";
+
+@import "form-builder-pr/partials/form-settings";
+@import "form-builder-pr/partials/ranking-scale";

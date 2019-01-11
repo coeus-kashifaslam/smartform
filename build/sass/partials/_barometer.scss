@@ -83,7 +83,7 @@ $barometer-section-bg: #F7F7F7;
 }
 
 .barometer-progress {
-  width: 290px;
+  width: 225px;
   .barometer__elem__title {
     font-weight: 400;
   }
@@ -103,12 +103,12 @@ $barometer-section-bg: #F7F7F7;
     top: 0;
   }
   .elem__barometer {
-    padding-right: 305px;
+    padding-right: 240px;
   }
 
   .content__rtl {
     .elem__barometer {
-      padding-left: 305px;
+      padding-left: 240px;
       padding-right: 0;
     }
     .barometer-progress {
