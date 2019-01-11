@@ -26,21 +26,6 @@ $barometer-inactive: #ededed;
     opacity: 0.4;
     color: $sudo-rating-color-old;
   }
-  //&.completed {
-  //  &:after {
-  //    opacity: 1;
-  //  }
-  //}
-  //&.in-progress {
-  //  .progress {
-  //    > .progress-bar {
-  //      &.active {
-  //        display: block;
-  //      }
-  //    }
-  //  }
-  //}
-
   &.level__0 {
     .progress {
       > .progress-bar {
