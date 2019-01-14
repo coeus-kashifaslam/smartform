@@ -1,7 +1,16 @@
+.section__rs-types {
+  border-bottom: 1px solid $border;
+  margin-bottom: 20px;
+}
+
 .list__rs-types {
+  margin-bottom: 0;
   padding: 20px 0;
   > li {
     width: 20%;
+  }
+  .radio-custom {
+    margin-bottom: 0;
   }
 }
 
@@ -73,6 +82,7 @@
 .rs__main-section {
   padding: 15px;
   background-color: $well-bg;
+  border-radius: $radius;
   margin-bottom: 15px;
   .rs__main-section__row {
     + .rs__main-section__row {
