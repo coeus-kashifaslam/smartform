@@ -215,7 +215,7 @@ body {
 
 
 //Spectrum Color Picker
-$colorpicker-size: 45px;
+$colorpicker-size: 43px;
 @mixin  box-shadow {
   box-shadow: 0 1px 0 $border-shadow;
 }
@@ -227,7 +227,7 @@ $colorpicker-size: 45px;
   resize: none;
   font-size: $base-font-size;
   color: $text-primary;
-  min-height: 45px;
+  min-height: $colorpicker-size;
 
   &:focus {
     border-color: $border;
@@ -244,12 +244,13 @@ $colorpicker-size: 45px;
   }
   .sp-preview {
     margin: 0;
-    width: $colorpicker-size;
-    height: $colorpicker-size;
+    width: $colorpicker-size + 2;
+    height: $colorpicker-size + 2;
     border: 0 none;
   }
 }
 .form-group__spectrum {
+  height: $colorpicker-size + 2;
   .input-group {
     position: relative;
     display: inline-block;
@@ -257,6 +258,7 @@ $colorpicker-size: 45px;
     border-radius: $radius;
     @include box-shadow();
     padding-left: $colorpicker-size;
+    //max-height: $colorpicker-size;
     .form-control-pr {
       width: 105px;
       border: 0 none;

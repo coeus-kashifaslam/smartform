@@ -39,6 +39,9 @@
   label {
     font-weight: normal;
   }
+  &.layout__fixed {
+    table-layout: fixed;
+  }
 }
 
 .panel-body {
