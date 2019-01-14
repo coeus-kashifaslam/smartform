@@ -36,6 +36,13 @@
         color: $border;
       }
     }
+    &.btn-group {
+      .dropdown-toggle {
+        .filter-option {
+          text-align: center;
+        }
+      }
+    }
   }
   .dropdown-menu {
     > li {
@@ -62,7 +69,7 @@
       }
       &:last-child {
         padding-right: 0;
-        text-align: right;
+        text-align: center;
         width: 30px;
       }
     }
