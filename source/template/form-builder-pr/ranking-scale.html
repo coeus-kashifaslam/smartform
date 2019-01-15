@@ -36,7 +36,7 @@
                 <h4 class="section-pr__sub-title">
                     Range
                 </h4>
-                <div class="form-group col__layout-table">
+                <div class="col__layout-table">
                     <div class="cell__layout-table">
                         <div class="selectpicker__sm">
                             <select class="form-control form-control-pr">
@@ -68,7 +68,7 @@
                 <h4 class="section-pr__sub-title">
                     Type
                 </h4>
-                <div class="form-group selectpicker__lg">
+                <div class="selectpicker__lg">
                     <select class="form-control form-control-pr">
                         <option>Single</option>
                         <option>Continuous</option>
@@ -193,19 +193,19 @@
 
         <div class="row">
             <div class="section__user-inputs">
-                <div class="col-sm-12 section__user-inpute__item">
+                <div class="col-sm-12 section__user-inputs__item">
                     <h4 class="section-pr__sub-title">Question</h4>
                     <div class="form-group">
                         <input type="text" class="form-control form-control-pr">
                     </div>
                 </div>
-                <div class="col-sm-12 section__user-inpute__item">
+                <div class="col-sm-12 section__user-inputs__item">
                     <h4 class="section-pr__sub-title">Help text</h4>
                     <div class="form-group">
                         <input type="text" class="form-control form-control-pr">
                     </div>
                 </div>
-                <div class="col-sm-12 section__user-inpute__item">
+                <div class="col-sm-12 section__user-inputs__item">
                     <h4 class="section-pr__sub-title">Error text</h4>
                     <div class="form-group">
                         <input type="text" class="form-control form-control-pr">
@@ -220,13 +220,13 @@
                 <h4 class="section-pr__sub-title">Setup</h4>
             </div>
             <div class="col-sm-6">
-                <div class="checkbox-custom">
+                <div class="checkbox-custom mb-0">
                     <input id="checkbox10" type="checkbox">
                     <label for="checkbox10"><span>Enable tooltips</span></label>
                 </div>
             </div>
             <div class="col-sm-6">
-                <div class="checkbox-custom">
+                <div class="checkbox-custom mb-0">
                     <input id="checkbox11" type="checkbox">
                     <label for="checkbox11"><span>Use different style for each option</span></label>
                 </div>
@@ -236,7 +236,7 @@
 
         <div class="row">
             <div class="col-sm-12">
-                <div class="rs__main-section">
+                <div class="rs__main-section section__well">
                     {% set rankingScaleShapes = [0,1,2,3,4,5,6,7,8,9,10]%}
                     {% for rankingScaleShapeElement in rankingScaleShapes %}
                     <div class="rs__main-section__row">

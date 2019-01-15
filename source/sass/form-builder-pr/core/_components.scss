@@ -5,7 +5,7 @@ body {
 //checkbox
 .checkbox-custom,
 .radio-custom {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   [type = "checkbox"],
   [type = "radio"] {
     &:checked,
@@ -300,7 +300,7 @@ $colorpicker-size: 43px;
 
 .collapse-toggler {
   margin-top: -19px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   padding-top: 0;
   padding-bottom: 0;
   font-size: 24px;

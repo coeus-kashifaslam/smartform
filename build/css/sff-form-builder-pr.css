@@ -807,7 +807,7 @@ body {
 }
 
 .checkbox-custom, .radio-custom {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .checkbox-custom [type=checkbox]:checked, .checkbox-custom [type=checkbox]:not(:checked), .checkbox-custom [type=radio]:checked, .checkbox-custom [type=radio]:not(:checked), .radio-custom [type=checkbox]:checked, .radio-custom [type=checkbox]:not(:checked), .radio-custom [type=radio]:checked, .radio-custom [type=radio]:not(:checked) {
@@ -1029,7 +1029,7 @@ body {
 
 .collapse-toggler {
     margin-top: -19px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     padding-top: 0;
     padding-bottom: 0;
     font-size: 24px;
@@ -1043,6 +1043,10 @@ body {
 
 .mb-0 {
     margin-bottom: 0;
+}
+
+.mt-0 {
+    margin-top: 0;
 }
 
 .mb-15 {
@@ -1126,6 +1130,20 @@ body {
 
 .panel__cta a span, .panel__cta:hover span, .panel__cta:focus span, .panel__cta:active span {
     text-decoration: underline;
+}
+
+.section__well {
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+
+.section__user-inputs .section__user-inputs__item:nth-last-child(2) .form-group {
+    margin-bottom: 0;
+}
+
+.section-pr__body > .row + .row {
+    margin-top: 15px;
 }
 
 .styles-editor__textarea .form-control {
@@ -1272,13 +1290,6 @@ body {
 
 .rs__main-section__row .col__layout-table .form-group__spectrum .input-group .form-control-pr {
     width: 100%;
-}
-
-.rs__main-section {
-    padding: 15px;
-    background-color: #f5f5f5;
-    border-radius: 5px;
-    margin-bottom: 15px;
 }
 
 .rs__main-section .rs__main-section__row + .rs__main-section__row {
