@@ -1,5 +1,5 @@
 .section__rs-types {
-  border-bottom: 1px solid $border;
+  border-bottom: $border-width solid $border;
   margin-bottom: 20px;
 }
 
@@ -30,6 +30,7 @@
     }
     .btn {
       padding: 4px 30px 4px 10px;
+      height: $form-control-size + $double-border;
       &:hover,
       &:focus,
       &:active {
@@ -39,7 +40,12 @@
     &.btn-group {
       .dropdown-toggle {
         .filter-option {
-          text-align: center;
+          position: absolute;
+          left: 12px;
+          float: none;
+          text-align: left;
+          top: 50%;
+          transform: translateY(-50%);
         }
       }
     }

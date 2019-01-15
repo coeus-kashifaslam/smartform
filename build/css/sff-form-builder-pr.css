@@ -957,7 +957,7 @@ body {
     resize: none;
     font-size: 16px;
     color: #606060;
-    min-height: 43px;
+    height: 40px;
 }
 
 .form-control-pr:focus {
@@ -977,13 +977,13 @@ body {
 
 .sp-replacer .sp-preview {
     margin: 0;
-    width: 45px;
-    height: 45px;
+    width: 42px;
+    height: 42px;
     border: 0 none;
 }
 
 .form-group__spectrum {
-    height: 45px;
+    height: 42px;
 }
 
 .form-group__spectrum .input-group {
@@ -992,7 +992,7 @@ body {
     border: 1px solid #c3c3c3;
     border-radius: 5px;
     box-shadow: 0 1px 0 #d6d6d6;
-    padding-left: 43px;
+    padding-left: 40px;
 }
 
 .form-group__spectrum .input-group .form-control-pr {
@@ -1244,6 +1244,7 @@ body {
 
 .selectpicker__icons .bootstrap-select .btn {
     padding: 4px 30px 4px 10px;
+    height: 42px;
 }
 
 .selectpicker__icons .bootstrap-select .btn:hover, .selectpicker__icons .bootstrap-select .btn:focus, .selectpicker__icons .bootstrap-select .btn:active {
@@ -1251,7 +1252,13 @@ body {
 }
 
 .selectpicker__icons .bootstrap-select.btn-group .dropdown-toggle .filter-option {
-    text-align: center;
+    position: absolute;
+    left: 12px;
+    float: none;
+    text-align: left;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .selectpicker__icons .dropdown-menu > li > a {
