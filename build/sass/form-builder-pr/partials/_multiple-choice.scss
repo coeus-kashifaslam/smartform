@@ -25,3 +25,18 @@
     color: $danger;
   }
 }
+
+.header__option-group {
+  position: relative;
+  padding-right: 30px;
+  margin-bottom: 15px;
+  a {
+    position: absolute;
+    right: 0;
+    top: 30px;
+  }
+}
+
+.dd__section__well {
+  margin-bottom: 30px;
+}

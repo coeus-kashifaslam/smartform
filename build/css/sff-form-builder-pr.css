@@ -1126,6 +1126,7 @@ body {
 
 .panel__cta a, .panel__cta a:hover, .panel__cta a:focus, .panel__cta a:active {
     color: #606060;
+    text-decoration: none;
 }
 
 .panel__cta a span, .panel__cta a:hover span, .panel__cta a:focus span, .panel__cta a:active span {
@@ -1339,4 +1340,20 @@ body {
 
 .cta__delete, .cta__delete:hover, .cta__delete:focus, .cta__delete:active {
     color: #c05c64;
+}
+
+.header__option-group {
+    position: relative;
+    padding-right: 30px;
+    margin-bottom: 15px;
+}
+
+.header__option-group a {
+    position: absolute;
+    right: 0;
+    top: 30px;
+}
+
+.dd__section__well {
+    margin-bottom: 30px;
 }
