@@ -78,11 +78,19 @@
   span {
     margin-left: 15px;
   }
-  a, &:hover, &:focus, &:active {
-    color: $text-primary;
-    span {
-      text-decoration: underline;
+  a {
+    &, &:hover, &:focus, &:active {
+      color: $text-primary;
+      span {
+        text-decoration: underline;
+      }
     }
+  }
+}
+
+.section__well {
+  .panel__cta {
+    margin-bottom: 0;
   }
 }
 

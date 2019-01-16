@@ -1124,12 +1124,16 @@ body {
     margin-left: 15px;
 }
 
-.panel__cta a, .panel__cta:hover, .panel__cta:focus, .panel__cta:active {
+.panel__cta a, .panel__cta a:hover, .panel__cta a:focus, .panel__cta a:active {
     color: #606060;
 }
 
-.panel__cta a span, .panel__cta:hover span, .panel__cta:focus span, .panel__cta:active span {
+.panel__cta a span, .panel__cta a:hover span, .panel__cta a:focus span, .panel__cta a:active span {
     text-decoration: underline;
+}
+
+.section__well .panel__cta {
+    margin-bottom: 0;
 }
 
 .section__well {
@@ -1301,4 +1305,38 @@ body {
 
 .rs__main-section .rs__main-section__row + .rs__main-section__row {
     margin-top: 15px;
+}
+
+.new__option-item {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.new__option-item label {
+    font-weight: 700;
+}
+
+.new__option-item .cell__layout-table {
+    padding-left: 15px;
+}
+
+.new__option-item .cell__layout-table:first-child {
+    padding-left: 0;
+}
+
+.new__option-item .cell__layout-table:last-child {
+    width: 30px;
+}
+
+.new__option-item .cell__layout-table .cta__delete {
+    margin-top: 23px;
+    display: inline-block;
+}
+
+.cta__delete {
+    font-size: 20px;
+}
+
+.cta__delete, .cta__delete:hover, .cta__delete:focus, .cta__delete:active {
+    color: #c05c64;
 }
