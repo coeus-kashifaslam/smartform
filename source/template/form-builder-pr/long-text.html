@@ -30,7 +30,7 @@
             {% set setupString = ['Show in one column', 'Show in two column'] %}
             {% for setupStringItem in setupString %}
             <div class="col-sm-6">
-                <div class="radio-custom">
+                <div class="radio-custom mb-0">
                     <input id="{{setupClass}}-radio{{loop.index}}" type="radio" name="radio-group">
                     <label for="{{setupClass}}-radio{{loop.index}}"><span>{{setupStringItem}}</span></label>
                 </div>
