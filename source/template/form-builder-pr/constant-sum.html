@@ -23,7 +23,7 @@
         </div>
 
         Setup
-        <div class="row">
+        <div class="row mb-l2-0">
             <div class="col-sm-12">
                 <h4 class="section-pr__sub-title">Setup</h4>
             </div>
@@ -31,7 +31,7 @@
             {% set setupString = ['Show numerical rating', 'Show Caption for Total?', 'Required', 'Allow not to answer'] %}
             {% for setupStringItem in setupString %}
             <div class="col-sm-6">
-                <div class="checkbox-custom {% if loop.last %}mb-0{% endif %}">
+                <div class="checkbox-custom">
                     <input id="{{setupClass}}-checkbox{{loop.index}}" type="checkbox">
                     <label for="{{setupClass}}-checkbox{{loop.index}}"><span>{{setupStringItem}}</span></label>
                 </div>

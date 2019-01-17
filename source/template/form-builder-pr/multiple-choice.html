@@ -72,7 +72,7 @@
             {% set setupString = ['Show conditional question inside this field', 'Required', 'Allow not to answer'] %}
             {% for setupStringItem in setupString %}
             <div class="col-sm-6">
-                <div class="checkbox-custom {% if loop.last %}mb-0{% endif %}">
+                <div class="checkbox-custom">
                     <input id="{{setupClass}}-checkbox{{loop.index}}" type="checkbox">
                     <label for="{{setupClass}}-checkbox{{loop.index}}"><span>{{setupStringItem}}</span></label>
                 </div>
