@@ -1098,10 +1098,6 @@ body {
     margin-bottom: 15px;
 }
 
-.panel-body > .row .checkbox-custom {
-    margin-bottom: 0;
-}
-
 .section-pr__title {
     margin-bottom: 20px;
     margin-top: 0;
@@ -1113,6 +1109,18 @@ body {
 
 .selectpicker__block .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
     width: 100%;
+}
+
+.selectpicker__two-column > .col:nth-child(n+3) {
+    margin-top: 15px;
+}
+
+.mb-l2-0 > *:nth-last-child(3) > *, .mb-l2-0 > *:nth-last-child(2) > * {
+    margin-bottom: 0;
+}
+
+.mb-l1-0 > *:nth-last-child(2) > * {
+    margin-bottom: 0;
 }
 
 .panel__cta {

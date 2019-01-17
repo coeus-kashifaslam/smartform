@@ -1,25 +1,15 @@
 <div class="section-pr section__rs-types">
     <ul class="list-inline list__rs-types">
+        {% set rsTypesID = 'rsT' %}
+        {% set setupString = ['Star rating', 'NPS', 'Custom'] %}
+        {% for setupStringItem in setupString %}
         <li>
             <div class="radio-custom">
-                <input id="radio1" name="radio-group" type="radio">
-                <label for="radio1"><span>Star rating</span></label>
+                <input id="{{rsTypesID}}-radio{{loop.index}}" name="radio-group" type="radio">
+                <label for="{{rsTypesID}}-radio{{loop.index}}"><span>{{setupStringItem}}</span></label>
             </div>
         </li>
-
-        <li>
-            <div class="radio-custom">
-                <input id="radio2" name="radio-group" type="radio">
-                <label for="radio2"><span>NPS</span></label>
-            </div>
-        </li>
-
-        <li>
-            <div class="radio-custom">
-                <input id="radio3" name="radio-group" type="radio">
-                <label for="radio3"><span>Custom</span></label>
-            </div>
-        </li>
+        {% endfor %}
     </ul>
 </div>
 
@@ -91,8 +81,11 @@
                     <div id="collapse-panel-scale" class="panel-collapse collapse panel__collapse-content-pr" role="tabpanel" aria-labelledby="collapse-panel-scale">
                         <div class="panel-body">
 
-                            <div class="row">
-                                <div class="col-sm-6">
+                            <div class="row selectpicker__two-column">
+                                {% set setupClassAsTI = 'rsAsTI' %}
+                                {% set setupString = ['Desktop display', 'Mobile display', 'Alignment', 'Sub-question order'] %}
+                                {% for setupStringItem in setupString %}
+                                <div class="col-sm-6 col">
                                     <div class="col__layout-table">
                                         <div class="article-item-selectpicker selectpicker__lg">
                                             <select class="form-control form-control-pr">
@@ -100,74 +93,26 @@
                                                 <option>Continuous</option>
                                             </select>
                                         </div>
-                                        <label class="pl-15">Desktop display</label>
+                                        <label class="pl-15">{{setupStringItem}}</label>
                                     </div>
                                 </div>
-                                <div class="col-sm-6">
-                                    <div class="col__layout-table">
-                                        <div class="article-item-selectpicker selectpicker__lg">
-                                            <select class="form-control form-control-pr">
-                                                <option>Matrix</option>
-                                                <option>Continuous</option>
-                                            </select>
-                                        </div>
-                                        <label class="pl-15">Mobile display</label>
-                                    </div>
-                                </div>
-                                <div class="clearix"></div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="col__layout-table">
-                                        <div class="article-item-selectpicker selectpicker__lg">
-                                            <select class="form-control form-control-pr">
-                                                <option>Left</option>
-                                                <option>Right</option>
-                                            </select>
-                                        </div>
-                                        <label class="pl-15">Alignment</label>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="col__layout-table">
-                                        <div class="article-item-selectpicker selectpicker__lg">
-                                            <select class="form-control form-control-pr">
-                                                <option>Normal</option>
-                                                <option>Random</option>
-                                            </select>
-                                        </div>
-                                        <label class="pl-15">Sub-question order</label>
-                                    </div>
-                                </div>
+                                {% endfor %}
                                 <div class="clearix"></div>
                             </div>
 
                             <hr class="section-diver">
 
-                            <div class="row">
+                            <div class="row mb-l1-0">
+                                {% set setupClassAs1 = 'rsAs1' %}
+                                {% set setupString = ['Show main rating', 'Show total', 'Show numerical value'] %}
+                                {% for setupStringItem in setupString %}
                                 <div class="col-sm-6">
                                     <div class="checkbox-custom">
-                                        <input id="checkbox1" type="checkbox">
-                                        <label for="checkbox1"><span>Show main rating</span></label>
+                                        <input id="{{setupClassAs1}}-checkbox{{loop.index}}" type="checkbox">
+                                        <label for="{{setupClassAs1}}-checkbox{{loop.index}}"><span>{{setupStringItem}}</span></label>
                                     </div>
                                 </div>
-                                <div class="col-sm-6">
-                                    <div class="checkbox-custom">
-                                        <input id="checkbox2" type="checkbox">
-                                        <label for="checkbox2"><span>Show total</span></label>
-                                    </div>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="checkbox-custom">
-                                        <input id="checkbox3" type="checkbox">
-                                        <label for="checkbox3"><span>Show numerical value</span></label>
-                                    </div>
-                                </div>
+                                {% endfor %}
                                 <div class="clearfix"></div>
                             </div>
 
@@ -191,46 +136,37 @@
     </header>
     <div class="section-pr__body">
 
+        <!--Inputs-->
         <div class="row">
             <div class="section__user-inputs">
+                {% set userInput = ['Question', 'Help text', 'Error text'] %}
+                {% for userInputItem in userInput %}
                 <div class="col-sm-12 section__user-inputs__item">
-                    <h4 class="section-pr__sub-title">Question</h4>
+                    <h4 class="section-pr__sub-title">{{userInputItem}}</h4>
                     <div class="form-group">
                         <input type="text" class="form-control form-control-pr">
                     </div>
                 </div>
-                <div class="col-sm-12 section__user-inputs__item">
-                    <h4 class="section-pr__sub-title">Help text</h4>
-                    <div class="form-group">
-                        <input type="text" class="form-control form-control-pr">
-                    </div>
-                </div>
-                <div class="col-sm-12 section__user-inputs__item">
-                    <h4 class="section-pr__sub-title">Error text</h4>
-                    <div class="form-group">
-                        <input type="text" class="form-control form-control-pr">
-                    </div>
-                </div>
+                {% endfor %}
                 <div class="clearfix"></div>
             </div>
         </div>
 
+        <!--Setup-->
         <div class="row">
             <div class="col-sm-12">
                 <h4 class="section-pr__sub-title">Setup</h4>
             </div>
+            {% set setupClass = 'rs' %}
+            {% set setupString = ['Enable tooltips', 'Use different style for each option'] %}
+            {% for setupStringItem in setupString %}
             <div class="col-sm-6">
                 <div class="checkbox-custom mb-0">
-                    <input id="checkbox10" type="checkbox">
-                    <label for="checkbox10"><span>Enable tooltips</span></label>
+                    <input id="{{setupClass}}-checkbox{{loop.index}}" type="checkbox">
+                    <label for="{{setupClass}}-checkbox{{loop.index}}"><span>{{setupStringItem}}</span></label>
                 </div>
             </div>
-            <div class="col-sm-6">
-                <div class="checkbox-custom mb-0">
-                    <input id="checkbox11" type="checkbox">
-                    <label for="checkbox11"><span>Use different style for each option</span></label>
-                </div>
-            </div>
+            {% endfor %}
             <div class="clearfix"></div>
         </div>
 
@@ -310,34 +246,12 @@
                     </div>
                     <div id="collapse-panel-content" class="panel-collapse collapse panel__collapse-content-pr" role="tabpanel" aria-labelledby="collapse-panel-content">
                         <div class="panel-body">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="col__layout-table">
-                                        <div class="article-item-selectpicker selectpicker__lg">
-                                            <select class="form-control form-control-pr">
-                                                <option>Matrix</option>
-                                                <option>Continuous</option>
-                                            </select>
-                                        </div>
-                                        <label class="pl-15">Desktop shape</label>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="col__layout-table">
-                                        <div class="article-item-selectpicker selectpicker__lg">
-                                            <select class="form-control form-control-pr">
-                                                <option>Matrix</option>
-                                                <option>Continuous</option>
-                                            </select>
-                                        </div>
-                                        <label class="pl-15">Mobile shape</label>
-                                    </div>
-                                </div>
-                                <div class="clearix"></div>
-                            </div>
 
-                            <div class="row">
-                                <div class="col-sm-6">
+                            <div class="row selectpicker__two-column">
+                                {% set setupClassAsTI = 'rsAsTI' %}
+                                {% set setupString = ['Desktop shape', 'Mobile shape', 'Tooltips', 'Sub-questions', 'Shapes column width', 'Help text position'] %}
+                                {% for setupStringItem in setupString %}
+                                <div class="col-sm-6 col">
                                     <div class="col__layout-table">
                                         <div class="article-item-selectpicker selectpicker__lg">
                                             <select class="form-control form-control-pr">
@@ -345,100 +259,28 @@
                                                 <option>Continuous</option>
                                             </select>
                                         </div>
-                                        <label class="pl-15">Tooltips</label>
+                                        <label class="pl-15">{{setupStringItem}}</label>
                                     </div>
                                 </div>
-                                <div class="col-sm-6">
-                                    <div class="col__layout-table">
-                                        <div class="article-item-selectpicker selectpicker__lg">
-                                            <select class="form-control form-control-pr">
-                                                <option>Matrix</option>
-                                                <option>Continuous</option>
-                                            </select>
-                                        </div>
-                                        <label class="pl-15">Sub-questions</label>
-                                    </div>
-                                </div>
-                                <div class="clearix"></div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="col__layout-table">
-                                        <div class="article-item-selectpicker selectpicker__lg">
-                                            <select class="form-control form-control-pr">
-                                                <option>Matrix</option>
-                                                <option>Continuous</option>
-                                            </select>
-                                        </div>
-                                        <label class="pl-15">Shapes column width</label>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="col__layout-table">
-                                        <div class="article-item-selectpicker selectpicker__lg">
-                                            <select class="form-control form-control-pr">
-                                                <option>Matrix</option>
-                                                <option>Continuous</option>
-                                            </select>
-                                        </div>
-                                        <label class="pl-15">Help text position</label>
-                                    </div>
-                                </div>
+                                {% endfor %}
                                 <div class="clearix"></div>
                             </div>
 
                             <hr class="section-diver">
 
-                            <div class="row">
+                            <div class="row mb-l2-0">
+                                {% set setupClassAs2 = 'rsAs2' %}
+                                {% set setupString = ['Use shapes as tooltips', 'Show tooltips in two columns', 'Show tooltips for sub-questions', 'Use centered layout', 'Use segmented view', 'Apply thick borders to shapes'] %}
+                                {% for setupStringItem in setupString %}
                                 <div class="col-sm-6">
                                     <div class="checkbox-custom">
-                                        <input id="checkbox4" type="checkbox">
-                                        <label for="checkbox4"><span>Use shapes as tooltips</span></label>
+                                        <input id="{{setupClassAs2}}-checkbox{{loop.index}}" type="checkbox">
+                                        <label for="{{setupClassAs2}}-checkbox{{loop.index}}"><span>{{setupStringItem}}</span></label>
                                     </div>
                                 </div>
-                                <div class="col-sm-6">
-                                    <div class="checkbox-custom">
-                                        <input id="checkbox5" type="checkbox">
-                                        <label for="checkbox5"><span>Show tooltips in two columns</span></label>
-                                    </div>
-                                </div>
+                                {% endfor %}
                                 <div class="clearfix"></div>
                             </div>
-
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="checkbox-custom">
-                                        <input id="checkbox6" type="checkbox">
-                                        <label for="checkbox6"><span>Shwo tooltips for sub-questions</span></label>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="checkbox-custom">
-                                        <input id="checkbox7" type="checkbox">
-                                        <label for="checkbox7"><span>Use centered layout</span></label>
-                                    </div>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-
-
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="checkbox-custom">
-                                        <input id="checkbox8" type="checkbox">
-                                        <label for="checkbox8"><span>Use segmented view</span></label>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="checkbox-custom">
-                                        <input id="checkbox9" type="checkbox">
-                                        <label for="checkbox9"><span>Apply thick borders to shapes</span></label>
-                                    </div>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-
                         </div>
                     </div>
                 </div>
