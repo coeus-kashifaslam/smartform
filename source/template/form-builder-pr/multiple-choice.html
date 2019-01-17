@@ -5,38 +5,24 @@
     </header>
     <div class="section-pr__body">
 
+        <!--Inputs-->
         <div class="row">
             <div class="section__user-inputs">
+                {% set userInput = ['Question', 'Help text', 'Error text', 'Maximum selection'] %}
+                {% for userInputItem in userInput %}
                 <div class="col-sm-12 section__user-inputs__item">
-                    <h4 class="section-pr__sub-title">Question</h4>
+                    <h4 class="section-pr__sub-title">{{userInputItem}}</h4>
                     <div class="form-group">
                         <input type="text" class="form-control form-control-pr">
                     </div>
                 </div>
-                <div class="col-sm-12 section__user-inputs__item">
-                    <h4 class="section-pr__sub-title">Help text</h4>
-                    <div class="form-group">
-                        <input type="text" class="form-control form-control-pr">
-                    </div>
-                </div>
-                <div class="col-sm-12 section__user-inputs__item">
-                    <h4 class="section-pr__sub-title">Error text</h4>
-                    <div class="form-group">
-                        <input type="text" class="form-control form-control-pr">
-                    </div>
-                </div>
-                <div class="col-sm-12 section__user-inputs__item">
-                    <h4 class="section-pr__sub-title">Maximum selection</h4>
-                    <div class="form-group">
-                        <input type="number" class="form-control form-control-pr">
-                    </div>
-                </div>
+                {% endfor %}
                 <div class="clearfix"></div>
             </div>
         </div>
 
+        <!--Options-->
         <div class="row">
-
             <div class="col-sm-12">
                 <h4 class="section-pr__sub-title">Options</h4>
             </div>
@@ -75,34 +61,23 @@
             </div>
             <div class="clearfix"></div>
         </div>
-        <div class="row">
 
+
+        <!--Setup-->
+        <div class="row">
             <div class="col-sm-12">
                 <h4 class="section-pr__sub-title">Setup</h4>
             </div>
-
+            {% set setupClass = 'mq' %}
+            {% set setupString = ['Show conditional question inside this field', 'Required', 'Allow not to answer'] %}
+            {% for setupStringItem in setupString %}
             <div class="col-sm-6">
-                <div class="checkbox-custom">
-                    <input id="mcq-checkbox1" type="checkbox">
-                    <label for="mcq-checkbox1"><span>Show conditional question inside this field</span></label>
-                </div>
-
-            </div>
-
-            <div class="col-sm-6">
-                <div class="checkbox-custom">
-                    <input id="mcq-checkbox2" type="checkbox">
-                    <label for="mcq-checkbox2"><span>Required</span></label>
+                <div class="checkbox-custom {% if loop.last %}mb-0{% endif %}">
+                    <input id="{{setupClass}}-checkbox{{loop.index}}" type="checkbox">
+                    <label for="{{setupClass}}-checkbox{{loop.index}}"><span>{{setupStringItem}}</span></label>
                 </div>
             </div>
-
-
-            <div class="col-sm-6">
-                <div class="checkbox-custom mb-0">
-                    <input id="mcq-checkbox3" type="checkbox">
-                    <label for="mcq-checkbox3"><span>Allow not to answer</span></label>
-                </div>
-            </div>
+            {% endfor %}
             <div class="clearfix"></div>
         </div>
 

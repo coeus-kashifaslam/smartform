@@ -5,6 +5,7 @@
     </header>
     <div class="section-pr__body">
 
+        <!--Inputs-->
         <div class="row">
             <div class="section__user-inputs">
                 <div class="col-sm-12 section__user-inputs__item">
@@ -17,19 +18,21 @@
             </div>
         </div>
 
+        <!--Setup-->
         <div class="row">
-
             <div class="col-sm-12">
                 <h4 class="section-pr__sub-title">Setup</h4>
             </div>
-
+            {% set setupClass = 'ft' %}
+            {% set setupString = ['Show border'] %}
+            {% for setupStringItem in setupString %}
             <div class="col-sm-6">
-                <div class="checkbox-custom">
-                    <input id="ft-checkbox1" type="checkbox">
-                    <label for="ft-checkbox1"><span>Show border</span></label>
+                <div class="checkbox-custom {% if loop.last %}mb-0{% endif %}">
+                    <input id="{{setupClass}}-checkbox{{loop.index}}" type="checkbox">
+                    <label for="{{setupClass}}-checkbox{{loop.index}}"><span>{{setupStringItem}}</span></label>
                 </div>
             </div>
-
+            {% endfor %}
             <div class="clearfix"></div>
         </div>
 

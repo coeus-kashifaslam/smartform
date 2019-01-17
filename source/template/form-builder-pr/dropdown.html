@@ -5,30 +5,23 @@
     </header>
     <div class="section-pr__body">
 
+        <!--Inputs-->
         <div class="row">
             <div class="section__user-inputs">
+                {% set userInput = ['Question', 'Help text', 'Error text'] %}
+                {% for userInputItem in userInput %}
                 <div class="col-sm-12 section__user-inputs__item">
-                    <h4 class="section-pr__sub-title">Question</h4>
+                    <h4 class="section-pr__sub-title">{{userInputItem}}</h4>
                     <div class="form-group">
                         <input type="text" class="form-control form-control-pr">
                     </div>
                 </div>
-                <div class="col-sm-12 section__user-inputs__item">
-                    <h4 class="section-pr__sub-title">Help text</h4>
-                    <div class="form-group">
-                        <input type="text" class="form-control form-control-pr">
-                    </div>
-                </div>
-                <div class="col-sm-12 section__user-inputs__item">
-                    <h4 class="section-pr__sub-title">Error text</h4>
-                    <div class="form-group">
-                        <input type="text" class="form-control form-control-pr">
-                    </div>
-                </div>
+                {% endfor %}
                 <div class="clearfix"></div>
             </div>
         </div>
 
+        <!--Options-->
         <div class="row">
 
             <div class="col-sm-12">
@@ -85,7 +78,6 @@
                             </div>
 
                             <div class="col-sm-12">
-
                                 {% set mcqOptions = [1,2]%}
                                 {% for mcqOption in mcqOptions %}
                                 <div class="col__layout-table layout__fixed new__option-item">
@@ -107,15 +99,11 @@
                                 </div>
                                 {% endfor %}
                             </div>
-
                             <div class="col-sm-12 panel__cta">
                                 <a href="#"><i class="fa fa-plus-circle"></i> <span>Add new option</span></a>
                             </div>
-
                             <div class="clearfix"></div>
-
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -125,40 +113,24 @@
             </div>
             <div class="clearfix"></div>
         </div>
-        <div class="row">
 
+
+
+        <!--Setup-->
+        <div class="row">
             <div class="col-sm-12">
                 <h4 class="section-pr__sub-title">Setup</h4>
             </div>
-
+            {% set setupClass = 'dd' %}
+            {% set setupString = ['Show conditional question inside this field', 'Group-able options', 'Required', 'Allow not to answer'] %}
+            {% for setupStringItem in setupString %}
             <div class="col-sm-6">
-                <div class="checkbox-custom">
-                    <input id="dd-checkbox1" type="checkbox">
-                    <label for="dd-checkbox1"><span>Show conditional question inside this field</span></label>
+                <div class="checkbox-custom {% if loop.last %}mb-0{% endif %}">
+                    <input id="{{setupClass}}-checkbox{{loop.index}}" type="checkbox">
+                    <label for="{{setupClass}}-checkbox{{loop.index}}"><span>{{setupStringItem}}</span></label>
                 </div>
             </div>
-
-            <div class="col-sm-6">
-                <div class="checkbox-custom">
-                    <input id="dd-checkbox2" type="checkbox">
-                    <label for="dd-checkbox2"><span>Group-able options</span></label>
-                </div>
-            </div>
-
-            <div class="col-sm-6">
-                <div class="checkbox-custom">
-                    <input id="dd-checkbox3" type="checkbox">
-                    <label for="dd-checkbox3"><span>Required</span></label>
-                </div>
-            </div>
-
-
-            <div class="col-sm-6">
-                <div class="checkbox-custom mb-0">
-                    <input id="dd-checkbox4" type="checkbox">
-                    <label for="dd-checkbox4"><span>Allow not to answer</span></label>
-                </div>
-            </div>
+            {% endfor %}
             <div class="clearfix"></div>
         </div>
 

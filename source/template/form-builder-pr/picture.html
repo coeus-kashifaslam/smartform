@@ -5,50 +5,38 @@
     </header>
     <div class="section-pr__body">
 
+        <!--Inputs-->
         <div class="row">
             <div class="section__user-inputs">
+                {% set userInput = ['Question', 'Help text', 'Error text'] %}
+                {% for userInputItem in userInput %}
                 <div class="col-sm-12 section__user-inputs__item">
-                    <h4 class="section-pr__sub-title">Question</h4>
+                    <h4 class="section-pr__sub-title">{{userInputItem}}</h4>
                     <div class="form-group">
                         <input type="text" class="form-control form-control-pr">
                     </div>
                 </div>
-                <div class="col-sm-12 section__user-inputs__item">
-                    <h4 class="section-pr__sub-title">Help text</h4>
-                    <div class="form-group">
-                        <input type="text" class="form-control form-control-pr">
-                    </div>
-                </div>
-                <div class="col-sm-12 section__user-inputs__item">
-                    <h4 class="section-pr__sub-title">Error text</h4>
-                    <div class="form-group">
-                        <input type="text" class="form-control form-control-pr">
-                    </div>
-                </div>
+                {% endfor %}
                 <div class="clearfix"></div>
             </div>
         </div>
 
-        <div class="row">
 
+        <!--Setup-->
+        <div class="row">
             <div class="col-sm-12">
                 <h4 class="section-pr__sub-title">Setup</h4>
             </div>
-
+            {% set setupClass = 'pt' %}
+            {% set setupString = ['Required', 'Allow not to answer'] %}
+            {% for setupStringItem in setupString %}
             <div class="col-sm-6">
-                <div class="checkbox-custom">
-                    <input id="pt-checkbox1" type="checkbox">
-                    <label for="pt-checkbox1"><span>Required</span></label>
+                <div class="checkbox-custom {% if loop.last %}mb-0{% endif %}">
+                    <input id="{{setupClass}}-checkbox{{loop.index}}" type="checkbox">
+                    <label for="{{setupClass}}-checkbox{{loop.index}}"><span>{{setupStringItem}}</span></label>
                 </div>
             </div>
-
-
-            <div class="col-sm-6">
-                <div class="checkbox-custom mb-0">
-                    <input id="pt-checkbox2" type="checkbox">
-                    <label for="pt-checkbox2"><span>Allow not to answer</span></label>
-                </div>
-            </div>
+            {% endfor %}
             <div class="clearfix"></div>
         </div>
 
