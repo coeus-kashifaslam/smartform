@@ -37,19 +37,7 @@
                 <div class="col-sm-12 section__user-inputs__item">
                     <h4 class="section-pr__sub-title">Question</h4>
                     <div class="form-group">
-                        <input type="text" class="form-control form-control-pr">
-                    </div>
-                </div>
-                <div class="col-sm-12 section__user-inputs__item">
-                    <h4 class="section-pr__sub-title">Help text</h4>
-                    <div class="form-group">
-                        <input type="text" class="form-control form-control-pr">
-                    </div>
-                </div>
-                <div class="col-sm-12 section__user-inputs__item">
-                    <h4 class="section-pr__sub-title">Error text</h4>
-                    <div class="form-group">
-                        <input type="text" class="form-control form-control-pr">
+                        <textarea class="elem__ckeditor ckeditor" id="elem__ckeditor-free-text"></textarea>
                     </div>
                 </div>
                 <div class="clearfix"></div>
@@ -59,88 +47,22 @@
         <div class="row">
 
             <div class="col-sm-12">
-                <h4 class="section-pr__sub-title">Options</h4>
-            </div>
-            <div class="col-sm-12">
-                <div class="section__well">
-                    <div class="row">
-                        <div class="col-sm-12">
-
-                            
-                            
-                            <div class="col__layout-table layout__fixed new__option-item">
-                                <div class="cell__layout-table">
-                                    <label class="cell__label">Option 1</label>
-                                    <input type="text" class="form-control form-control-pr">
-                                </div>
-                                <div class="cell__layout-table">
-                                    <a href="#" class="cta__delete"><i class="fa fa-times-circle-o"></i></a>
-                                </div>
-                            </div>
-                            
-                            <div class="col__layout-table layout__fixed new__option-item">
-                                <div class="cell__layout-table">
-                                    <label class="cell__label">Option 2</label>
-                                    <input type="text" class="form-control form-control-pr">
-                                </div>
-                                <div class="cell__layout-table">
-                                    <a href="#" class="cta__delete"><i class="fa fa-times-circle-o"></i></a>
-                                </div>
-                            </div>
-                            
-                            <div class="col__layout-table layout__fixed new__option-item">
-                                <div class="cell__layout-table">
-                                    <label class="cell__label">Option 3</label>
-                                    <input type="text" class="form-control form-control-pr">
-                                </div>
-                                <div class="cell__layout-table">
-                                    <a href="#" class="cta__delete"><i class="fa fa-times-circle-o"></i></a>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="col-sm-12 panel__cta">
-                            <a href="#"><i class="fa fa-plus-circle"></i> <span>Add new option</span></a>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-        <div class="row">
-
-            <div class="col-sm-12">
                 <h4 class="section-pr__sub-title">Setup</h4>
             </div>
 
             <div class="col-sm-6">
                 <div class="checkbox-custom">
-                    <input id="dp-checkbox1" type="checkbox">
-                    <label for="dp-checkbox1"><span>Show Option Labels</span></label>
-                </div>
-
-            </div>
-
-            <div class="col-sm-6">
-                <div class="checkbox-custom">
-                    <input id="dp-checkbox2" type="checkbox">
-                    <label for="dp-checkbox2"><span>Required</span></label>
+                    <input id="ft-checkbox1" type="checkbox">
+                    <label for="ft-checkbox1"><span>Show border</span></label>
                 </div>
             </div>
 
-
-            <div class="col-sm-6">
-                <div class="checkbox-custom mb-0">
-                    <input id="dp-checkbox3" type="checkbox">
-                    <label for="dp-checkbox3"><span>Allow not to answer</span></label>
-                </div>
-            </div>
             <div class="clearfix"></div>
         </div>
 
     </div>
 </section>
+    
     
     
     
@@ -165,6 +87,8 @@
 <script src="js/libs/bootstrap.js"></script>
 <script src="js/libs/bootstrap-select.js"></script>
 <script src="js/libs/spectrum.js"></script>
+<script src="js/ckeditor/ckeditor.js"></script>
+
 <script>
     $(document).ready(function () {
         // Styled HTML 5 Select-Option Element
