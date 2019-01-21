@@ -1,5 +1,8 @@
 $barometer-section-bg: #F7F7F7;
 $barometer-inactive: #ededed;
+$borometer-section-title: $default-text-color;
+$borometer-text-font-size: 14px;
+$borometer-text-color: #969696;
 .barometer-progressbar {
   position: relative;
   padding-right: 60px;
@@ -26,21 +29,6 @@ $barometer-inactive: #ededed;
     opacity: 0.4;
     color: $sudo-rating-color-old;
   }
-  //&.completed {
-  //  &:after {
-  //    opacity: 1;
-  //  }
-  //}
-  //&.in-progress {
-  //  .progress {
-  //    > .progress-bar {
-  //      &.active {
-  //        display: block;
-  //      }
-  //    }
-  //  }
-  //}
-
   &.level__0 {
     .progress {
       > .progress-bar {
@@ -79,20 +67,27 @@ $barometer-inactive: #ededed;
 .barometer__elem__title {
   margin-top: 0;
   margin-bottom: 10px;
-  font-size: $default-subHeader-size;
+  font-size: $default-subHeader-size - 2;
   font-weight: $default-subHeader-font-weight;
-  color: $default-subHeader-color;
+  color: $borometer-section-title;
+}
+
+.barometer__elem__helpt-text {
+  font-size: $borometer-text-font-size;
+  color: $borometer-text-color;
 }
 
 .barometer-progress {
   width: 290px;
   .barometer__elem__title {
     font-weight: 400;
+    font-size: $default-subHeader-size - 4;
   }
 }
 
 .barometer__message {
-  font-size: 14px;
+  font-size: $borometer-text-font-size - 2;
+  color: $borometer-text-color;
   span {
     font-weight: bold;
   }
