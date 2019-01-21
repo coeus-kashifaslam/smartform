@@ -13294,7 +13294,7 @@ html .sff-form__shadow {
 }
 
 .barometer-progress {
-    width: 290px;
+    width: 225px;
 }
 
 .barometer-progress .barometer__elem__title {
@@ -14041,10 +14041,10 @@ html .sff-form__shadow {
         top: 0;
     }
     .elem__barometer {
-        padding-right: 305px;
+        padding-right: 240px;
     }
     .content__rtl .elem__barometer {
-        padding-left: 305px;
+        padding-left: 240px;
         padding-right: 0;
     }
     .content__rtl .barometer-progress {
