@@ -1,8 +1,8 @@
 $barometer-section-bg: #F7F7F7;
 $barometer-inactive: #ededed;
-$borometer-section-title: $default-text-color;
-$borometer-text-font-size: 14px;
-$borometer-text-color: #969696;
+$barometer-section-title: $default-text-color;
+$barometer-text-font-size: 14px;
+$barometer-text-color: #969696;
 .barometer-progressbar {
   position: relative;
   padding-right: 60px;
@@ -69,12 +69,12 @@ $borometer-text-color: #969696;
   margin-bottom: 10px;
   font-size: $default-subHeader-size - 2;
   font-weight: $default-subHeader-font-weight;
-  color: $borometer-section-title;
+  color: $barometer-section-title;
 }
 
 .barometer__elem__helpt-text {
-  font-size: $borometer-text-font-size;
-  color: $borometer-text-color;
+  font-size: $barometer-text-font-size;
+  color: $barometer-text-color;
 }
 
 .barometer-progress {
@@ -86,8 +86,8 @@ $borometer-text-color: #969696;
 }
 
 .barometer__message {
-  font-size: $borometer-text-font-size - 2;
-  color: $borometer-text-color;
+  font-size: $barometer-text-font-size - 2;
+  color: $barometer-text-color;
   span {
     font-weight: bold;
   }
