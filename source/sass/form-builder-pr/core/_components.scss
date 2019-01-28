@@ -312,13 +312,14 @@ body {
 
 
 //Modal
-.modal-open {
+body {
   background-color: rgba($black, .5);
 }
 
 .modal {
   display: block;
   padding-right: 17px;
+  position: relative;
 }
 .modal__pr {
   .modal-lg {

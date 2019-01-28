@@ -927,11 +927,11 @@ body {
 }
 
 .selectpicker__font-family .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn), .selectpicker__lg .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
-    width: 200px;
+    width: 180px;
 }
 
 .selectpicker__font-family .form-control-pr, .selectpicker__lg .form-control-pr {
-    width: 200px;
+    width: 180px;
 }
 
 .selectpicker__font-size .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn), .selectpicker__days .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn), .selectpicker__sm .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
@@ -1041,13 +1041,14 @@ body {
     box-shadow: none;
 }
 
-.modal-open {
+body {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal {
     display: block;
     padding-right: 17px;
+    position: relative;
 }
 
 .modal__pr .modal-lg {

@@ -640,7 +640,7 @@
                 </h4>
                 <div class="col__layout-table mb-15">
                     <div class="selectpicker__container">
-                        <div class="article-item-selectpicker">
+                        <div class="article-item-selectpicker selectpicker__font-family">
                             <select class="form-control form-control-pr">
                                 <option>Uppercase</option>
                                 <option>Lowercase</option>
@@ -722,27 +722,20 @@
         <h3 class="section-pr__title">Layout</h3>
     </header>
     <div class="section-pr__body">
-        <div class="row">
-            <div class="col-sm-6 col__primary-layout">
+        <div class="row mb-l1-0">
+            {% set setupFSLClass = 'fs1' %}
+            {% set setupString = ['Enable breadcrumb', 'Enable quality barometer', 'Enable borders'] %}
+            {% for setupStringItem in setupString %}
+            <div class="col-sm-6">
                 <div class="checkbox-custom">
-                    <input id="layoutCheckbox1" name="checkbox-group" type="checkbox">
-                    <label for="layoutCheckbox1"><span>Enable breadcrumb</span></label>
+                    <input id="{{setupFSLClass}}-checkbox{{loop.index}}" type="checkbox">
+                    <label for="{{setupFSLClass}}-checkbox{{loop.index}}"><span>{{setupStringItem}}</span></label>
                 </div>
             </div>
-            <div class="col-sm-6 col__secondary-layout">
-                <div class="checkbox-custom">
-                    <input id="layoutCheckbox2" name="checkbox-group" type="checkbox">
-                    <label for="layoutCheckbox2"><span>Enable quality barometer</span></label>
-                </div>
-            </div>
-            <div class="col-sm-6 col__primary-layout">
-                <div class="checkbox-custom mb-0">
-                    <input id="layoutCheckbox3" name="checkbox-group" type="checkbox">
-                    <label for="layoutCheckbox3"><span>Enable borders</span></label>
-                </div>
-            </div>
+            {% endfor %}
             <div class="clearfix"></div>
         </div>
+
         <div class="row">
             <div class="col-sm-12">
                 <!--Collapse panel-->
@@ -757,37 +750,19 @@
                     <div id="collapse-panel-layout" class="panel-collapse collapse panel__collapse-content-pr" role="tabpanel" aria-labelledby="collapse-panel-layout">
                         <div class="panel-body">
 
-                            <div class="row">
+                            <div class="row mb-l2-0">
+                                {% set setupClass = 'fsl' %}
+                                {% set setupString = ['Enable custom header', 'Enable custom footer', 'Display an asterisk(*) for required questions', 'Use image for ranking scale shapes'] %}
+                                {% for setupStringItem in setupString %}
                                 <div class="col-sm-6">
                                     <div class="checkbox-custom">
-                                        <input id="layoutCheckbox4" name="checkbox-group" type="checkbox">
-                                        <label for="layoutCheckbox4"><span>Enable custom header</span></label>
+                                        <input id="{{setupClass}}-checkbox{{loop.index}}" type="checkbox">
+                                        <label for="{{setupClass}}-checkbox{{loop.index}}"><span>{{setupStringItem}}</span></label>
                                     </div>
                                 </div>
-                                <div class="col-sm-6">
-                                    <div class="checkbox-custom">
-                                        <input id="layoutCheckbox5" name="checkbox-group" type="checkbox">
-                                        <label for="layoutCheckbox5"><span>Enable custom footer</span></label>
-                                    </div>
-                                </div>
+                                {% endfor %}
                                 <div class="clearfix"></div>
                             </div>
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="checkbox-custom">
-                                        <input id="layoutCheckbox6" name="checkbox-group" type="checkbox">
-                                        <label for="layoutCheckbox6"><span>Display an asterisk(*) for required questions</span></label>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="checkbox-custom">
-                                        <input id="layoutCheckbox7" name="checkbox-group" type="checkbox">
-                                        <label for="layoutCheckbox7"><span>Use image for ranking scale shapes</span></label>
-                                    </div>
-                                </div>
-                                <div class="clearix"></div>
-                            </div>
-
 
                         </div>
                     </div>
