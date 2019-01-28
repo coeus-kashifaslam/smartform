@@ -1050,6 +1050,10 @@ body {
     padding-right: 17px;
 }
 
+.modal__pr .modal-lg {
+    width: 995px;
+}
+
 .modal__pr .modal-title {
     font-size: 24px;
     color: #333;

@@ -321,6 +321,9 @@ body {
   padding-right: 17px;
 }
 .modal__pr {
+  .modal-lg {
+    width: $modal-width;
+  }
   .modal-title {
     font-size: 24px;
     color: $default;
