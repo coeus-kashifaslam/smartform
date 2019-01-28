@@ -1,5 +1,8 @@
 $barometer-section-bg: #F7F7F7;
 $barometer-inactive: #ededed;
+$barometer-section-title: $default-text-color;
+$barometer-text-font-size: 14px;
+$barometer-text-color: #969696;
 .barometer-progressbar {
   position: relative;
   padding-right: 60px;
@@ -53,7 +56,7 @@ $barometer-inactive: #ededed;
 .from__elem-barometer {
   border: 0 none;
   background-color: $barometer-section-bg;
-  min-height: 150px;
+  min-height: 140px;
 }
 
 
@@ -64,20 +67,27 @@ $barometer-inactive: #ededed;
 .barometer__elem__title {
   margin-top: 0;
   margin-bottom: 10px;
-  font-size: $default-subHeader-size;
+  font-size: $default-subHeader-size - 2;
   font-weight: $default-subHeader-font-weight;
-  color: $default-subHeader-color;
+  color: $barometer-section-title;
+}
+
+.barometer__elem__helpt-text {
+  font-size: $barometer-text-font-size;
+  color: $barometer-text-color;
 }
 
 .barometer-progress {
   width: 225px;
   .barometer__elem__title {
     font-weight: 400;
+    font-size: $default-subHeader-size - 4;
   }
 }
 
 .barometer__message {
-  font-size: 14px;
+  font-size: $barometer-text-font-size - 2;
+  color: $barometer-text-color;
   span {
     font-weight: bold;
   }

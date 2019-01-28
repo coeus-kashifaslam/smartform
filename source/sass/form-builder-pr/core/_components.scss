@@ -309,3 +309,49 @@ body {
     box-shadow: none;
   }
 }
+
+
+//Modal
+.modal-open {
+  background-color: rgba($black, .5);
+}
+
+.modal {
+  display: block;
+  padding-right: 17px;
+}
+.modal__pr {
+  .modal-title {
+    font-size: 24px;
+    color: $default;
+  }
+  .modal-header {
+    border-bottom: 2px solid $green-primary;
+  }
+  .modal-footer {
+    border: 0 none;
+  }
+
+  .modal-header,
+  .modal-body,
+  .modal-footer {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+
+//Buttons
+.btn__pr {
+  padding: 5px 40px;
+  color: $white;
+  font-size: 14px;
+  background-color: $green-primary;
+  border: 2px solid $green-primary;
+  &:hover, &:focus, &:active {
+    border: 2px solid $green-primary;
+    outline: none;
+    text-decoration: none;
+    background-color: $green-primary;
+  }
+}

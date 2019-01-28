@@ -957,7 +957,7 @@ body {
     resize: none;
     font-size: 16px;
     color: #606060;
-    height: 40px;
+    height: 35px;
 }
 
 .form-control-pr:focus {
@@ -977,13 +977,13 @@ body {
 
 .sp-replacer .sp-preview {
     margin: 0;
-    width: 42px;
-    height: 42px;
+    width: 37px;
+    height: 37px;
     border: 0 none;
 }
 
 .form-group__spectrum {
-    height: 42px;
+    height: 37px;
 }
 
 .form-group__spectrum .input-group {
@@ -992,7 +992,7 @@ body {
     border: 1px solid #c3c3c3;
     border-radius: 5px;
     box-shadow: 0 1px 0 #d6d6d6;
-    padding-left: 40px;
+    padding-left: 35px;
 }
 
 .form-group__spectrum .input-group .form-control-pr {
@@ -1039,6 +1039,48 @@ body {
 .collapse-toggler:hover, .collapse-toggler:focus, .collapse-toggler:active, .collapse-toggler:active:focus {
     outline: none;
     box-shadow: none;
+}
+
+.modal-open {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+    display: block;
+    padding-right: 17px;
+}
+
+.modal__pr .modal-title {
+    font-size: 24px;
+    color: #333;
+}
+
+.modal__pr .modal-header {
+    border-bottom: 2px solid #2da137;
+}
+
+.modal__pr .modal-footer {
+    border: 0 none;
+}
+
+.modal__pr .modal-header, .modal__pr .modal-body, .modal__pr .modal-footer {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.btn__pr {
+    padding: 5px 40px;
+    color: #fff;
+    font-size: 14px;
+    background-color: #2da137;
+    border: 2px solid #2da137;
+}
+
+.btn__pr:hover, .btn__pr:focus, .btn__pr:active {
+    border: 2px solid #2da137;
+    outline: none;
+    text-decoration: none;
+    background-color: #2da137;
 }
 
 .mb-0 {
@@ -1257,7 +1299,7 @@ body {
 
 .selectpicker__icons .bootstrap-select .btn {
     padding: 4px 30px 4px 10px;
-    height: 42px;
+    height: 37px;
 }
 
 .selectpicker__icons .bootstrap-select .btn:hover, .selectpicker__icons .bootstrap-select .btn:focus, .selectpicker__icons .bootstrap-select .btn:active {
