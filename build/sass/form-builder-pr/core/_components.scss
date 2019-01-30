@@ -3,9 +3,11 @@ body {
 }
 
 //checkbox
-.checkbox-custom {
-  margin-bottom: 10px;
-  [type = "checkbox"] {
+.checkbox-custom,
+.radio-custom {
+  margin-bottom: 15px;
+  [type = "checkbox"],
+  [type = "radio"] {
     &:checked,
     &:not(:checked) {
       position: absolute;
@@ -24,6 +26,7 @@ body {
           margin-left: 10px;
         }
         &:before {
+          color: darken($border, 20%);
           position: absolute;
           left: 0;
           top: 0;
@@ -58,6 +61,24 @@ body {
       }
     }
   }
+
+
+  [type="radio"] {
+    &:not(checked) {
+      + label {
+        &:before {
+          content: $fa-circle-o;
+        }
+      }
+    }
+    &:checked {
+      + label {
+        &:before {
+          content: $fa-dot-circle-o;
+        }
+      }
+    }
+  }
 }
 
 
@@ -66,7 +87,7 @@ body {
 .bootstrap-select {
   &, &.open {
     .dropdown-toggle {
-      border: 1px solid $border;
+      border: $border-width solid $border;
       background: $white;
       box-shadow: none;
       &:hover,
@@ -110,7 +131,7 @@ body {
     padding: 0;
     box-shadow: none;
     margin-top: -3px;
-    border: 1px solid $border;
+    border: $border-width solid $border;
     font-size: $base-font-size;
 
     > li {
@@ -130,7 +151,7 @@ body {
         }
       }
       + li {
-        border-top: 1px solid $border;
+        border-top: $border-width solid $border;
       }
     }
   }
@@ -143,7 +164,8 @@ body {
     }
   }
 }
-.selectpicker__font-family {
+.selectpicker__font-family,
+.selectpicker__lg {
   .bootstrap-select {
     &:not([class*="col-"]) {
       &:not([class*="form-control"]) {
@@ -153,10 +175,14 @@ body {
       }
     }
   }
+  .form-control-pr {
+    width: $selectpicker-font-family;
+  }
 }
 
 .selectpicker__font-size,
-.selectpicker__days  {
+.selectpicker__days,
+.selectpicker__sm {
   .bootstrap-select {
     &:not([class*="col-"]) {
       &:not([class*="form-control"]) {
@@ -166,57 +192,90 @@ body {
       }
     }
   }
+  .form-control-pr {
+    width: $selectpicker-font-size;
+  }
 }
 
 
-//Color Picker
+.selectpicker__xsm {
+  .bootstrap-select {
+    &:not([class*="col-"]) {
+      &:not([class*="form-control"]) {
+        &:not(.input-group-btn) {
+          width: $selectpicker-icons;
+        }
+      }
+    }
+  }
+  .form-control-pr {
+    width: $selectpicker-icons;
+  }
+}
+
+
+//Spectrum Color Picker
 @mixin  box-shadow {
   box-shadow: 0 1px 0 $border-shadow;
 }
-.colorpicker-component {
-  border: 1px solid $border;
-  border-radius: $radius;
-  width: $colorpicker;
-  .input-group-addon {
-    padding: 0;
-  }
-
-  .input-group-addon,
-  .add-on {
-    border: 0 none;
-    i {
-      width: 45px;
-      height: 45px;
-      border-radius: $radius 0 0 $radius;
-    }
-  }
-  .form-control {
-    border: 0 none;
-    box-shadow: none;
-  }
-
-  .form-control-pr {
-    resize: none;
-    font-size: $base-font-size;
-    color: $text-primary;
-    min-height: 45px;
-  }
-}
 
 .form-control-pr {
-  border: 1px solid $border;
+  border: $border-width solid $border;
   border-radius: $radius;
   @include box-shadow();
   resize: none;
   font-size: $base-font-size;
   color: $text-primary;
-  min-height: 45px;
+  height: $form-control-size;
 
   &:focus {
     border-color: $border;
     @include box-shadow();
   }
 }
+
+.sp-replacer {
+  padding: 0;
+  border: 0 none;
+  background-color: transparent;
+  .sp-dd {
+    display: none;
+  }
+  .sp-preview {
+    margin: 0;
+    width: $form-control-size + $double-border;
+    height: $form-control-size + $double-border;
+    border: 0 none;
+  }
+}
+.form-group__spectrum {
+  height: $form-control-size + $double-border;
+  .input-group {
+    position: relative;
+    display: inline-block;
+    border: $border-width solid $border;
+    border-radius: $radius;
+    @include box-shadow();
+    padding-left: $form-control-size;
+    //max-height: $form-control-size;
+    .form-control-pr {
+      width: 105px;
+      border: 0 none;
+      box-shadow: none;
+      border-radius: 0 $radius $radius 0;
+      border-left: $border-width solid $border;
+    }
+    .sp-replacer {
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-radius: $radius 0 0 $radius;
+    }
+  }
+}
+
+
+
 
 //Collapse Panel
 .panel__collapse-pr {
@@ -240,13 +299,70 @@ body {
 
 .collapse-toggler {
   margin-top: -19px;
-  margin-bottom: 20px;
-  padding-top: 0;
-  padding-bottom: 0;
+  margin-bottom: 15px;
   font-size: 24px;
   float: right;
+  padding: 0 8px;
+  line-height: 20px;
+  color: darken($border, 10%);
   &:hover, &:focus, &:active, &:active:focus {
     outline: none;
     box-shadow: none;
+    color: darken($border, 10%);
+  }
+  &[aria-expanded="true"] {
+    .fa {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+
+//Modal
+body {
+  background-color: rgba($black, .5);
+}
+
+.modal {
+  display: block;
+  padding-right: 17px;
+  position: relative;
+}
+.modal__pr {
+  .modal-lg {
+    width: $modal-width;
+  }
+  .modal-title {
+    font-size: 24px;
+    color: $default;
+  }
+  .modal-header {
+    border-bottom: 2px solid $green-primary;
+  }
+  .modal-footer {
+    border: 0 none;
+  }
+
+  .modal-header,
+  .modal-body,
+  .modal-footer {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+
+//Buttons
+.btn__pr {
+  padding: 5px 40px;
+  color: $white;
+  font-size: 14px;
+  background-color: $green-primary;
+  border: 2px solid $green-primary;
+  &:hover, &:focus, &:active {
+    border: 2px solid $green-primary;
+    outline: none;
+    text-decoration: none;
+    background-color: $green-primary;
   }
 }

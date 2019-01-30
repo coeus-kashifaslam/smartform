@@ -1,0 +1,42 @@
+.new__option-item {
+  width: 100%;
+  margin-bottom: 15px;
+  label {
+    font-weight: bold;
+  }
+  .cell__layout-table {
+    padding-left: 15px;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      width: 30px;
+    }
+    .cta__delete {
+      margin-top: 23px;
+      display: inline-block;
+    }
+  }
+}
+
+.cta__delete {
+  font-size: 20px;
+  &, &:hover, &:focus, &:active {
+    color: $danger;
+  }
+}
+
+.header__option-group {
+  position: relative;
+  padding-right: 30px;
+  margin-bottom: 15px;
+  .cta__delete {
+    position: absolute;
+    right: 0;
+    top: 30px;
+  }
+}
+
+.dd__section__well {
+  margin-bottom: 30px;
+}

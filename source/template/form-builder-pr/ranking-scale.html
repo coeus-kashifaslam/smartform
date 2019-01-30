@@ -1,0 +1,293 @@
+<div class="section-pr section__rs-types">
+    <ul class="list-inline list__rs-types">
+        {% set rsTypesID = 'rsT' %}
+        {% set setupString = ['Star rating', 'NPS', 'Custom'] %}
+        {% for setupStringItem in setupString %}
+        <li>
+            <div class="radio-custom">
+                <input id="{{rsTypesID}}-radio{{loop.index}}" name="radio-group" type="radio">
+                <label for="{{rsTypesID}}-radio{{loop.index}}"><span>{{setupStringItem}}</span></label>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+
+<!--Scale Section-->
+<section class="section-pr">
+
+    <header>
+        <h3 class="section-pr__title">Scale</h3>
+    </header>
+    <div class="section-pr__body">
+        <div class="row">
+            <div class="col-sm-6 col__primary-scale">
+                <h4 class="section-pr__sub-title">
+                    Range
+                </h4>
+                <div class="col__layout-table">
+                    <div class="cell__layout-table">
+                        <div class="selectpicker__sm">
+                            <select class="form-control form-control-pr">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="cell__layout-table">
+                        <p class="icon-arrow mb-0 pl-15 pr-15"><i class="fa fa-angle-right"></i></p>
+                    </div>
+                    <div class="cell__layout-table">
+                        <div class="selectpicker__sm">
+                            <select class="form-control form-control-pr">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col__secondary-scale">
+                <h4 class="section-pr__sub-title">
+                    Type
+                </h4>
+                <div class="selectpicker__lg">
+                    <select class="form-control form-control-pr">
+                        <option>Single</option>
+                        <option>Continuous</option>
+                    </select>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <!--Collapse panel-->
+                <div class="panel panel-default panel__collapse-pr">
+                    <div class="panel-heading" role="tab">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-panel-scale" aria-expanded="false" aria-controls="collapse-panel-scale">
+                                Advanced Settings
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse-panel-scale" class="panel-collapse collapse panel__collapse-content-pr" role="tabpanel" aria-labelledby="collapse-panel-scale">
+                        <div class="panel-body">
+
+                            <div class="row selectpicker__two-column">
+                                {% set setupClassAsTI = 'rsAsTI' %}
+                                {% set setupString = ['Desktop display', 'Mobile display', 'Alignment', 'Sub-question order'] %}
+                                {% for setupStringItem in setupString %}
+                                <div class="col-sm-6 col">
+                                    <div class="col__layout-table">
+                                        <div class="article-item-selectpicker selectpicker__lg">
+                                            <select class="form-control form-control-pr">
+                                                <option>Matrix</option>
+                                                <option>Continuous</option>
+                                            </select>
+                                        </div>
+                                        <label class="pl-15">{{setupStringItem}}</label>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                                <div class="clearix"></div>
+                            </div>
+
+                            <hr class="section-diver">
+
+                            <div class="row mb-l1-0">
+                                {% set setupClassAs1 = 'rsAs1' %}
+                                {% set setupString = ['Show main rating', 'Show total', 'Show numerical value'] %}
+                                {% for setupStringItem in setupString %}
+                                <div class="col-sm-6">
+                                    <div class="checkbox-custom">
+                                        <input id="{{setupClassAs1}}-checkbox{{loop.index}}" type="checkbox">
+                                        <label for="{{setupClassAs1}}-checkbox{{loop.index}}"><span>{{setupStringItem}}</span></label>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                                <div class="clearfix"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <button class="btn collapse-toggler" type="button" data-toggle="collapse" data-target="#collapse-panel-scale" aria-expanded="false" aria-controls="collapse-panel-scale">
+                    <i class="fa fa-angle-down"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--Content Section-->
+<section class="section-pr">
+
+    <header>
+        <h3 class="section-pr__title">Content</h3>
+    </header>
+    <div class="section-pr__body">
+
+        <!--Inputs-->
+        <div class="row">
+            <div class="section__user-inputs">
+                {% set userInput = ['Question', 'Help text', 'Error text'] %}
+                {% for userInputItem in userInput %}
+                <div class="col-sm-12 section__user-inputs__item">
+                    <h4 class="section-pr__sub-title">{{userInputItem}}</h4>
+                    <div class="form-group">
+                        <input type="text" class="form-control form-control-pr">
+                    </div>
+                </div>
+                {% endfor %}
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <!--Setup-->
+        <div class="row">
+            <div class="col-sm-12">
+                <h4 class="section-pr__sub-title">Setup</h4>
+            </div>
+            {% set setupClass = 'rs' %}
+            {% set setupString = ['Enable tooltips', 'Use different style for each option'] %}
+            {% for setupStringItem in setupString %}
+            <div class="col-sm-6">
+                <div class="checkbox-custom mb-0">
+                    <input id="{{setupClass}}-checkbox{{loop.index}}" type="checkbox">
+                    <label for="{{setupClass}}-checkbox{{loop.index}}"><span>{{setupStringItem}}</span></label>
+                </div>
+            </div>
+            {% endfor %}
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="rs__main-section section__well">
+                    {% set rankingScaleShapes = [0,1,2,3,4,5,6,7,8,9,10]%}
+                    {% for rankingScaleShapeElement in rankingScaleShapes %}
+                    <div class="rs__main-section__row">
+                        <div class="col__layout-table layout__fixed">
+                            <div class="cell__layout-table">
+                                <div class="article-item-selectpicker selectpicker__xsm selectpicker__icons">
+                                    <select class="selectpicker">
+                                        <option value="star" data-icon="ico-star"></option>
+                                        <option value="heart" data-icon="ico-heart"></option>
+                                        <option value="circle" data-icon="ico-circle"></option>
+                                        <option value="thumb-up" data-icon="ico-thumb-up"></option>
+                                        <option value="thumb-down" data-icon="ico-thumb-down"></option>
+                                        <option value="square" data-icon="ico-square"></option>
+                                        <option value="comment" data-icon="ico-comment"></option>
+                                        <option value="question" data-icon="ico-question"></option>
+                                        <option value="question-circle-o" data-icon="ico-question-circle-o"></option>
+                                        <option value="circle-with-number" data-icon="ico-0"></option>
+                                        <option value="square-with-number" data-icon="ico-square-0"></option>
+                                        <option value="flame" data-icon="ico-flame"></option>
+                                        <option value="smile" data-icon="ico-smile"></option>
+                                        <option value="happy" data-icon="ico-happy"></option>
+                                        <option value="sad" data-icon="ico-sad"></option>
+                                        <option value="serious" data-icon="ico-serious"></option>
+                                        <option value="down" data-icon="ico-down"></option>
+                                        <option value="confused" data-icon="ico-confused"></option>
+                                        <option value="crying" data-icon="ico-crying"></option>
+                                        <option value="frustrated" data-icon="ico-frustrated"></option>
+                                        <option value="angry" data-icon="ico-angry"></option>
+                                        <option value="baffled" data-icon="ico-baffled"></option>
+                                        <option value="grin" data-icon="ico-grin"></option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="cell__layout-table">
+                                <div class="form-group form-group__spectrum mb-0">
+                                    <div class="input-group">
+                                        <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell__layout-table">
+                                <div class="form-group form-group__spectrum mb-0">
+                                    <div class="input-group">
+                                        <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell__layout-table">
+                                <input type="text" class="form-control form-control-pr" placeholder="Placeholder">
+                            </div>
+                            <div class="cell__layout-table">
+                                {{rankingScaleShapeElement}}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <!--Collapse panel-->
+                <div class="panel panel-default panel__collapse-pr">
+                    <div class="panel-heading" role="tab">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-panel-content" aria-expanded="false" aria-controls="collapse-panel-content">
+                                Advanced Settings
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse-panel-content" class="panel-collapse collapse panel__collapse-content-pr" role="tabpanel" aria-labelledby="collapse-panel-content">
+                        <div class="panel-body">
+
+                            <div class="row selectpicker__two-column">
+                                {% set setupClassAsTI = 'rsAsTI' %}
+                                {% set setupString = ['Desktop shape', 'Mobile shape', 'Tooltips', 'Sub-questions', 'Shapes column width', 'Help text position'] %}
+                                {% for setupStringItem in setupString %}
+                                <div class="col-sm-6 col">
+                                    <div class="col__layout-table">
+                                        <div class="article-item-selectpicker selectpicker__lg">
+                                            <select class="form-control form-control-pr">
+                                                <option>Matrix</option>
+                                                <option>Continuous</option>
+                                            </select>
+                                        </div>
+                                        <label class="pl-15">{{setupStringItem}}</label>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                                <div class="clearix"></div>
+                            </div>
+
+                            <hr class="section-diver">
+
+                            <div class="row mb-l2-0">
+                                {% set setupClassAs2 = 'rsAs2' %}
+                                {% set setupString = ['Use shapes as tooltips', 'Show tooltips in two columns', 'Show tooltips for sub-questions', 'Use centered layout', 'Use segmented view', 'Apply thick borders to shapes'] %}
+                                {% for setupStringItem in setupString %}
+                                <div class="col-sm-6">
+                                    <div class="checkbox-custom">
+                                        <input id="{{setupClassAs2}}-checkbox{{loop.index}}" type="checkbox">
+                                        <label for="{{setupClassAs2}}-checkbox{{loop.index}}"><span>{{setupStringItem}}</span></label>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn collapse-toggler" type="button" data-toggle="collapse" data-target="#collapse-panel-content" aria-expanded="false" aria-controls="collapse-panel-content">
+                    <i class="fa fa-angle-down"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>

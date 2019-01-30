@@ -1,9 +1,10 @@
 $font-icons: 'FontAwesome';
-$green-primary: #2DA137;
 $fa-check-square: "\f14a";
 $fa-square-o: "\f096";
 $fa-angle-down: "\f107";
 $fa-times-circle-o: "\f05c";
+$fa-circle-o: "\f10c";
+$fa-dot-circle-o: "\f192";
 
 $font-light: 300;
 $font-regular: 400;
@@ -11,17 +12,28 @@ $font-bold: 700;
 
 $border: #c3c3c3;
 $white: #fff;
+$black: #000;
 $bg-element: #f4f4f4;
+$green-primary: #2DA137;
+$default: #333;
 
 
-$selectpicker-font-family: 200px;
+$form-control-size: 35px;
+$border-width: 1px;
+$double-border: $border-width + $border-width;
+
+
+$selectpicker-font-family: 180px;
 $selectpicker-font-size: 100px;
+$selectpicker-icons: 70px;
 
 $radius: 5px;
 $colorpicker: 150px;
 $border-shadow: #d6d6d6;
 $text-primary: #606060;
-$base-font-size: 16px;
+$base-font-size: 14px;
 
 $well-bg: #f5f5f5;
 $danger: #C05C64;
+
+$modal-width: 995px;

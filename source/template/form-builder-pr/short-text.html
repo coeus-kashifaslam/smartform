@@ -1,0 +1,75 @@
+<!--Content Section-->
+<section class="section-pr">
+    <header>
+        <h3 class="section-pr__title">Content</h3>
+    </header>
+    <div class="section-pr__body">
+
+        <!--Inputs-->
+        <div class="row">
+            <div class="section__user-inputs">
+                {% set userInput = ['Question', 'Help text', 'Placeholder text', 'Error text', 'Minimum number of characters'] %}
+                {% for userInputItem in userInput %}
+                <div class="col-sm-12 section__user-inputs__item">
+                    <h4 class="section-pr__sub-title">{{userInputItem}}</h4>
+                    <div class="form-group">
+                        <input type="text" class="form-control form-control-pr">
+                    </div>
+                </div>
+                {% endfor %}
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <!--Submit to section-->
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="col-sm">
+                    <h4 class="section-pr__sub-title">Submit to core as</h4>
+                </div>
+                {% set setupClassSC = 'stSC' %}
+                {% set setupString = ['Reviewer email address (Will be used for dialog)', 'Reviewer first name (Will be sent to the certificate page)', 'Reviewer last name (Will be sent to the certificate page)'] %}
+                {% for setupStringItem in setupString %}
+                <div class="checkbox-custom {% if loop.last %}mb-0{% endif %}">
+                    <input id="{{setupClassSC}}-checkbox{{loop.index}}" type="checkbox">
+                    <label for="{{setupClassSC}}-checkbox{{loop.index}}"><span>{{setupStringItem}}</span></label>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="col-sm-6">
+                <div class="col-sm">
+                    <h4 class="section-pr__sub-title">Validation rules</h4>
+                </div>
+                {% set setupClassVR = 'stVR' %}
+                {% set setupString = ['Enable numeric validation (Digits only)', 'Enable phone number validation', 'Enable Email Validation'] %}
+                {% for setupStringItem in setupString %}
+                <div class="checkbox-custom {% if loop.last %}mb-0{% endif %}">
+                    <input id="{{setupClassVR}}-checkbox{{loop.index}}" type="checkbox">
+                    <label for="{{setupClassVR}}-checkbox{{loop.index}}"><span>{{setupStringItem}}</span></label>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+
+        <!--Setup-->
+        <div class="row mb-l1-0">
+            <div class="col-sm-12">
+                <h4 class="section-pr__sub-title">Setup</h4>
+            </div>
+            {% set setupClass = 'st' %}
+            {% set setupString = ['Display remaining characters', 'Required', 'Allow not to answer'] %}
+            {% for setupStringItem in setupString %}
+            <div class="col-sm-6">
+                <div class="checkbox-custom">
+                    <input id="{{setupClass}}-checkbox{{loop.index}}" type="checkbox">
+                    <label for="{{setupClass}}-checkbox{{loop.index}}"><span>{{setupStringItem}}</span></label>
+                </div>
+            </div>
+            {% endfor %}
+            <div class="clearfix"></div>
+        </div>
+
+    </div>
+</section>

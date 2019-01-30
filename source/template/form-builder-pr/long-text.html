@@ -1,0 +1,62 @@
+<!--Content Section-->
+<section class="section-pr">
+    <header>
+        <h3 class="section-pr__title">Content</h3>
+    </header>
+    <div class="section-pr__body">
+
+        <!--Inputs-->
+        <div class="row">
+            <div class="section__user-inputs">
+                {% set userInput = ['Question', 'Help text', 'Placeholder text', 'Error text', 'Minimum number of characters'] %}
+                {% for userInputItem in userInput %}
+                <div class="col-sm-12 section__user-inputs__item">
+                    <h4 class="section-pr__sub-title">{{userInputItem}}</h4>
+                    <div class="form-group">
+                        <input type="text" class="form-control form-control-pr">
+                    </div>
+                </div>
+                {% endfor %}
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <!--Layout Options Radio-->
+        <div class="row">
+            <div class="col-sm-12">
+                <h4 class="section-pr__sub-title">Text Box Layout</h4>
+            </div>
+            {% set setupClass = 'lot' %}
+            {% set setupString = ['Show in one column', 'Show in two column'] %}
+            {% for setupStringItem in setupString %}
+            <div class="col-sm-6">
+                <div class="radio-custom mb-0">
+                    <input id="{{setupClass}}-radio{{loop.index}}" type="radio" name="radio-group">
+                    <label for="{{setupClass}}-radio{{loop.index}}"><span>{{setupStringItem}}</span></label>
+                </div>
+            </div>
+            {% endfor %}
+            <div class="clearfix"></div>
+        </div>
+
+
+        <!--Setup-->
+        <div class="row  mb-l2-0">
+            <div class="col-sm-12">
+                <h4 class="section-pr__sub-title">Setup</h4>
+            </div>
+            {% set setupClass = 'dd' %}
+            {% set setupString = ['Show question title', 'Display remaining characters', 'Required', 'Allow not to answer'] %}
+            {% for setupStringItem in setupString %}
+            <div class="col-sm-6">
+                <div class="checkbox-custom">
+                    <input id="{{setupClass}}-checkbox{{loop.index}}" type="checkbox">
+                    <label for="{{setupClass}}-checkbox{{loop.index}}"><span>{{setupStringItem}}</span></label>
+                </div>
+            </div>
+            {% endfor %}
+            <div class="clearfix"></div>
+        </div>
+
+    </div>
+</section>
