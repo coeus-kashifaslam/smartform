@@ -300,13 +300,20 @@ body {
 .collapse-toggler {
   margin-top: -19px;
   margin-bottom: 15px;
-  padding-top: 0;
-  padding-bottom: 0;
   font-size: 24px;
   float: right;
+  padding: 0 8px;
+  line-height: 20px;
+  color: darken($border, 10%);
   &:hover, &:focus, &:active, &:active:focus {
     outline: none;
     box-shadow: none;
+    color: darken($border, 10%);
+  }
+  &[aria-expanded="true"] {
+    .fa {
+      transform: rotate(180deg);
+    }
   }
 }
 
