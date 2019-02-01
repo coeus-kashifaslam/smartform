@@ -36,6 +36,7 @@
   background-color: $well-bg;
   .link-type__weblink {
     padding-right: 30px;
+    position: relative;
     .col__layout-table {
       width: 100%;
       .link-type__input-percentage {
@@ -48,6 +49,18 @@
 .link-type__checkbox {
   .checkbox-custom {
     margin-bottom: 0;
+  }
+}
+
+.link-type__weblink {
+  .col__layout-table {
+    .dlt-weblink {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: $section-subtitle-font-size;
+    }
   }
 }
 

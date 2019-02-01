@@ -1296,6 +1296,7 @@ body {
 
 .row__link-type .link-type__weblink {
     padding-right: 30px;
+    position: relative;
 }
 
 .row__link-type .link-type__weblink .col__layout-table {
@@ -1308,6 +1309,15 @@ body {
 
 .link-type__checkbox .checkbox-custom {
     margin-bottom: 0;
+}
+
+.link-type__weblink .col__layout-table .dlt-weblink {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 18px;
 }
 
 .link-type__deeplink li {
