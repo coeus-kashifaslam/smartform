@@ -1,3 +1,8 @@
+$base-font-size: 14px;
+
+@function calc-size($size) {
+  @return ($size * $base-font-size);
+}
 $font-icons: 'FontAwesome';
 $fa-check-square: "\f14a";
 $fa-square-o: "\f096";
@@ -18,7 +23,6 @@ $green-primary: #2DA137;
 $default: #333;
 
 
-$form-control-size: 35px;
 $border-width: 1px;
 $double-border: $border-width + $border-width;
 
@@ -31,9 +35,12 @@ $radius: 5px;
 $colorpicker: 150px;
 $border-shadow: #d6d6d6;
 $text-primary: #606060;
-$base-font-size: 14px;
-$section-title-font-size: ($base-font-size * 1.714285);
-$section-subtitle-font-size: ($base-font-size * 1.285714);
+
+$form-control-size: calc-size(2.5);  //35
+$section-title-font-size: calc-size(1.71428571); //24
+$custom-control-icon-font-size: calc-size(1.57142856); //22
+$section-subtitle-font-size: calc-size(1.285714);  //18
+
 
 $well-bg: #f5f5f5;
 $danger: #C05C64;

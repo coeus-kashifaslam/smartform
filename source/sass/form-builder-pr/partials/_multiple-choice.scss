@@ -20,7 +20,7 @@
 }
 
 .cta__delete {
-  font-size: 20px;
+  font-size: $custom-control-icon-font-size;
   &, &:hover, &:focus, &:active {
     color: $danger;
   }

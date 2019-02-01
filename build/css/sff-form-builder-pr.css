@@ -1018,8 +1018,26 @@ body {
     position: relative;
 }
 
+.panel__collapse-pr .panel-heading {
+    padding: 0;
+}
+
 .panel__collapse-pr .panel-heading .panel-title {
     text-decoration: underline;
+}
+
+.panel__collapse-pr .panel-heading a {
+    padding: 8px 45px 8px 15px;
+    display: block;
+    position: relative;
+}
+
+.panel__collapse-pr .panel-heading a .fa {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .panel__collapse-pr .panel-body {
@@ -1027,29 +1045,37 @@ body {
     padding-bottom: 0;
 }
 
-.panel__collapse-pr.collapse-open > .panel-heading {
-    display: none;
+.panel__collapse-pr.collapse-open .fa-angle-down {
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.panel__collapse-pr.collapse-open .panel-heading a .fa {
+    -ms-transform: rotate(180deg) translateY(50%);
+    transform: rotate(180deg) translateY(50%);
+}
+
+.panel__collapse-pr .fa-angle-down {
+    font-size: 24px;
+    color: #aaa;
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 .collapse-toggler {
-    margin-top: -19px;
-    margin-bottom: 15px;
-    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 5px;
     float: right;
-    padding: 0 8px;
+    padding: 0;
     line-height: 20px;
-    color: #aaa;
+    background-color: transparent;
 }
 
 .collapse-toggler:hover, .collapse-toggler:focus, .collapse-toggler:active, .collapse-toggler:active:focus {
     outline: none;
     box-shadow: none;
     color: #aaa;
-}
-
-.collapse-toggler[aria-expanded=true] .fa {
-    -ms-transform: rotate(180deg);
-    transform: rotate(180deg);
+    background-color: transparent;
 }
 
 body {
@@ -1171,7 +1197,7 @@ body {
 
 .section-pr__title {
     margin-bottom: 20px;
-    font-size: 23.99999px;
+    font-size: 24px;
 }
 
 .section-pr__sub-title {
@@ -1255,7 +1281,7 @@ body {
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    font-size: 20px;
+    font-size: 22px;
     color: #c05c64;
 }
 
@@ -1419,7 +1445,7 @@ body {
 }
 
 .cta__delete {
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .cta__delete, .cta__delete:hover, .cta__delete:focus, .cta__delete:active {

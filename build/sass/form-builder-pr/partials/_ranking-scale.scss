@@ -17,7 +17,7 @@
 
 .cell__layout-table {
   .icon-arrow {
-    font-size: 22px;
+    font-size: $custom-control-icon-font-size;
     color: $border;
   }
 }
@@ -25,7 +25,7 @@
 .selectpicker__icons {
   .bootstrap-select {
     .dropdown-menu, .btn {
-      font-size: 24px;
+      font-size: $section-title-font-size;
       color: $border;
     }
     .btn {
