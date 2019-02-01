@@ -32,8 +32,10 @@
 }
 
 .row__link-type {
+  padding-bottom: 0;
   background-color: $well-bg;
   .link-type__weblink {
+    padding-right: 30px;
     .col__layout-table {
       width: 100%;
       .link-type__input-percentage {

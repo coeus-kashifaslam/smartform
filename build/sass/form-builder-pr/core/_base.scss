@@ -6,6 +6,10 @@
   margin-top: 0;
 }
 
+.mb-10 {
+  margin-bottom: 10px;
+}
+
 .mb-15 {
   margin-bottom: 15px;
 }
@@ -54,13 +58,19 @@
   }
 }
 
+.section-pr__title,
+.section-pr__sub-title {
+  margin-top: 0;
+  color: $default;
+}
+
 .section-pr__title {
   margin-bottom: 20px;
-  margin-top: 0;
+  font-size: $section-title-font-size;
 }
 
 .section-pr__sub-title {
-  margin-top: 0;
+  font-size: $section-subtitle-font-size;
 }
 
 .selectpicker__block {

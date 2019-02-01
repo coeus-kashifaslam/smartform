@@ -264,6 +264,9 @@ body {
       box-shadow: none;
       border-radius: 0 $radius $radius 0;
       border-left: $border-width solid $border;
+      &[readonly] {
+        background-color: $white;
+      }
     }
     .sp-replacer {
       position: absolute;

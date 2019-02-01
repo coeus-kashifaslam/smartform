@@ -900,7 +900,7 @@ body {
     box-shadow: none;
     margin-top: -3px;
     border: 1px solid #c3c3c3;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .bootstrap-select .dropdown-menu > li > a {
@@ -955,7 +955,7 @@ body {
     border-radius: 5px;
     box-shadow: 0 1px 0 #d6d6d6;
     resize: none;
-    font-size: 16px;
+    font-size: 14px;
     color: #606060;
     height: 35px;
 }
@@ -1001,6 +1001,10 @@ body {
     box-shadow: none;
     border-radius: 0 5px 5px 0;
     border-left: 1px solid #c3c3c3;
+}
+
+.form-group__spectrum .input-group .form-control-pr[readonly] {
+    background-color: #fff;
 }
 
 .form-group__spectrum .input-group .sp-replacer {
@@ -1080,6 +1084,10 @@ body {
     padding-right: 30px;
 }
 
+.modal-body {
+    font-size: 14px;
+}
+
 .btn__pr {
     padding: 5px 40px;
     color: #fff;
@@ -1101,6 +1109,10 @@ body {
 
 .mt-0 {
     margin-top: 0;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
 }
 
 .mb-15 {
@@ -1152,13 +1164,18 @@ body {
     margin-bottom: 15px;
 }
 
+.section-pr__title, .section-pr__sub-title {
+    margin-top: 0;
+    color: #333;
+}
+
 .section-pr__title {
     margin-bottom: 20px;
-    margin-top: 0;
+    font-size: 23.99999px;
 }
 
 .section-pr__sub-title {
-    margin-top: 0;
+    font-size: 18px;
 }
 
 .selectpicker__block .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
@@ -1247,7 +1264,12 @@ body {
 }
 
 .row__link-type {
+    padding-bottom: 0;
     background-color: #f5f5f5;
+}
+
+.row__link-type .link-type__weblink {
+    padding-right: 30px;
 }
 
 .row__link-type .link-type__weblink .col__layout-table {
