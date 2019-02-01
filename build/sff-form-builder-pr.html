@@ -40,125 +40,2527 @@
                     
                     
                     
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <!--Base section-->
+                    <div class="section-pr section__rs-types">
+    <ul class="list-inline list__rs-types">
+        
+        
+        
+        <li>
+            <div class="radio-custom">
+                <input id="rsT-radio1" name="radio-group" type="radio">
+                <label for="rsT-radio1"><span>Star rating</span></label>
+            </div>
+        </li>
+        
+        <li>
+            <div class="radio-custom">
+                <input id="rsT-radio2" name="radio-group" type="radio">
+                <label for="rsT-radio2"><span>NPS</span></label>
+            </div>
+        </li>
+        
+        <li>
+            <div class="radio-custom">
+                <input id="rsT-radio3" name="radio-group" type="radio">
+                <label for="rsT-radio3"><span>Custom</span></label>
+            </div>
+        </li>
+        
+    </ul>
+</div>
+
+
+<!--Scale Section-->
 <section class="section-pr">
+
     <header>
-        <h3 class="section-pr__title">Header</h3>
+        <h3 class="section-pr__title">Scale</h3>
     </header>
     <div class="section-pr__body">
-        <h4 class="section-pr__sub-title">
-            Sub Header
-        </h4>
+        <div class="row">
+            <div class="col-sm-6 col__primary-scale">
+                <h4 class="section-pr__sub-title">
+                    Range
+                </h4>
+                <div class="col__layout-table">
+                    <div class="cell__layout-table">
+                        <div class="selectpicker__sm">
+                            <select class="form-control form-control-pr">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="cell__layout-table">
+                        <p class="icon-arrow mb-0 pl-15 pr-15"><i class="fa fa-angle-right"></i></p>
+                    </div>
+                    <div class="cell__layout-table">
+                        <div class="selectpicker__sm">
+                            <select class="form-control form-control-pr">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col__secondary-scale">
+                <h4 class="section-pr__sub-title">
+                    Type
+                </h4>
+                <div class="selectpicker__lg">
+                    <select class="form-control form-control-pr">
+                        <option>Single</option>
+                        <option>Continuous</option>
+                    </select>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <!--Collapse panel-->
+                <div class="panel panel-default panel__collapse-pr">
+                    <div class="panel-heading" role="tab">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-panel-scale" aria-expanded="false" aria-controls="collapse-panel-scale">
+                                Advanced Settings
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse-panel-scale" class="panel-collapse collapse panel__collapse-content-pr" role="tabpanel" aria-labelledby="collapse-panel-scale">
+                        <div class="panel-body">
+
+                            <div class="row selectpicker__two-column">
+                                
+                                
+                                
+                                <div class="col-sm-6 col">
+                                    <div class="col__layout-table">
+                                        <div class="article-item-selectpicker selectpicker__lg">
+                                            <select class="form-control form-control-pr">
+                                                <option>Matrix</option>
+                                                <option>Continuous</option>
+                                            </select>
+                                        </div>
+                                        <label class="pl-15">Desktop display</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-6 col">
+                                    <div class="col__layout-table">
+                                        <div class="article-item-selectpicker selectpicker__lg">
+                                            <select class="form-control form-control-pr">
+                                                <option>Matrix</option>
+                                                <option>Continuous</option>
+                                            </select>
+                                        </div>
+                                        <label class="pl-15">Mobile display</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-6 col">
+                                    <div class="col__layout-table">
+                                        <div class="article-item-selectpicker selectpicker__lg">
+                                            <select class="form-control form-control-pr">
+                                                <option>Matrix</option>
+                                                <option>Continuous</option>
+                                            </select>
+                                        </div>
+                                        <label class="pl-15">Alignment</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-6 col">
+                                    <div class="col__layout-table">
+                                        <div class="article-item-selectpicker selectpicker__lg">
+                                            <select class="form-control form-control-pr">
+                                                <option>Matrix</option>
+                                                <option>Continuous</option>
+                                            </select>
+                                        </div>
+                                        <label class="pl-15">Sub-question order</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="clearix"></div>
+                            </div>
+
+                            <hr class="section-diver">
+
+                            <div class="row mb-l1-0">
+                                
+                                
+                                
+                                <div class="col-sm-6">
+                                    <div class="checkbox-custom">
+                                        <input id="rsAs1-checkbox1" type="checkbox">
+                                        <label for="rsAs1-checkbox1"><span>Show main rating</span></label>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-6">
+                                    <div class="checkbox-custom">
+                                        <input id="rsAs1-checkbox2" type="checkbox">
+                                        <label for="rsAs1-checkbox2"><span>Show total</span></label>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-6">
+                                    <div class="checkbox-custom">
+                                        <input id="rsAs1-checkbox3" type="checkbox">
+                                        <label for="rsAs1-checkbox3"><span>Show numerical value</span></label>
+                                    </div>
+                                </div>
+                                
+                                <div class="clearfix"></div>
+                            </div>
+
+                            <button class="btn collapse-toggler" type="button" data-toggle="collapse" data-target="#collapse-panel-scale" aria-expanded="false" aria-controls="collapse-panel-scale">
+                                <i class="fa fa-angle-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
-<!--Collapse panel-->
-<div class="panel panel-default panel__collapse-pr">
-    <div class="panel-heading" role="tab">
-        <h4 class="panel-title">
-            <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-panel" aria-expanded="false" aria-controls="collapse-panel">
-                Collapsible Group Item #2
-                <i class="fa fa-angle-down"></i>
-            </a>
-        </h4>
-    </div>
-    <div id="collapse-panel" class="panel-collapse collapse panel__collapse-content-pr" role="tabpanel" aria-labelledby="collapse-panel">
-        <div class="panel-body">
-            <p>
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard.
-            </p>
 
-            <button class="btn collapse-toggler" type="button" data-toggle="collapse" data-target="#collapse-panel" aria-expanded="false" aria-controls="collapse-panel">
-                <i class="fa fa-angle-down"></i>
-            </button>
+<!--Content Section-->
+<section class="section-pr">
+
+    <header>
+        <h3 class="section-pr__title">Content</h3>
+    </header>
+    <div class="section-pr__body">
+
+        <!--Inputs-->
+        <div class="row">
+            <div class="section__user-inputs">
+                
+                
+                <div class="col-sm-12 section__user-inputs__item">
+                    <h4 class="section-pr__sub-title">Question</h4>
+                    <div class="form-group">
+                        <input type="text" class="form-control form-control-pr">
+                    </div>
+                </div>
+                
+                <div class="col-sm-12 section__user-inputs__item">
+                    <h4 class="section-pr__sub-title">Help text</h4>
+                    <div class="form-group">
+                        <input type="text" class="form-control form-control-pr">
+                    </div>
+                </div>
+                
+                <div class="col-sm-12 section__user-inputs__item">
+                    <h4 class="section-pr__sub-title">Error text</h4>
+                    <div class="form-group">
+                        <input type="text" class="form-control form-control-pr">
+                    </div>
+                </div>
+                
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <!--Setup-->
+        <div class="row">
+            <div class="col-sm-12">
+                <h4 class="section-pr__sub-title">Setup</h4>
+            </div>
+            
+            
+            
+            <div class="col-sm-6">
+                <div class="checkbox-custom mb-0">
+                    <input id="rs-checkbox1" type="checkbox">
+                    <label for="rs-checkbox1"><span>Enable tooltips</span></label>
+                </div>
+            </div>
+            
+            <div class="col-sm-6">
+                <div class="checkbox-custom mb-0">
+                    <input id="rs-checkbox2" type="checkbox">
+                    <label for="rs-checkbox2"><span>Use different style for each option</span></label>
+                </div>
+            </div>
+            
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="rs__main-section section__well">
+                    
+                    
+                    <div class="rs__main-section__row">
+                        <div class="col__layout-table layout__fixed">
+                            <div class="cell__layout-table">
+                                <div class="article-item-selectpicker selectpicker__xsm selectpicker__icons">
+                                    <select class="selectpicker">
+                                        <option value="star" data-icon="ico-star"></option>
+                                        <option value="heart" data-icon="ico-heart"></option>
+                                        <option value="circle" data-icon="ico-circle"></option>
+                                        <option value="thumb-up" data-icon="ico-thumb-up"></option>
+                                        <option value="thumb-down" data-icon="ico-thumb-down"></option>
+                                        <option value="square" data-icon="ico-square"></option>
+                                        <option value="comment" data-icon="ico-comment"></option>
+                                        <option value="question" data-icon="ico-question"></option>
+                                        <option value="question-circle-o" data-icon="ico-question-circle-o"></option>
+                                        <option value="circle-with-number" data-icon="ico-0"></option>
+                                        <option value="square-with-number" data-icon="ico-square-0"></option>
+                                        <option value="flame" data-icon="ico-flame"></option>
+                                        <option value="smile" data-icon="ico-smile"></option>
+                                        <option value="happy" data-icon="ico-happy"></option>
+                                        <option value="sad" data-icon="ico-sad"></option>
+                                        <option value="serious" data-icon="ico-serious"></option>
+                                        <option value="down" data-icon="ico-down"></option>
+                                        <option value="confused" data-icon="ico-confused"></option>
+                                        <option value="crying" data-icon="ico-crying"></option>
+                                        <option value="frustrated" data-icon="ico-frustrated"></option>
+                                        <option value="angry" data-icon="ico-angry"></option>
+                                        <option value="baffled" data-icon="ico-baffled"></option>
+                                        <option value="grin" data-icon="ico-grin"></option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="cell__layout-table">
+                                <div class="form-group form-group__spectrum mb-0">
+                                    <div class="input-group">
+                                        <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" readonly/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell__layout-table">
+                                <div class="form-group form-group__spectrum mb-0">
+                                    <div class="input-group">
+                                        <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" readonly/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell__layout-table">
+                                <input type="text" class="form-control form-control-pr" placeholder="Placeholder">
+                            </div>
+                            <div class="cell__layout-table">
+                                0
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="rs__main-section__row">
+                        <div class="col__layout-table layout__fixed">
+                            <div class="cell__layout-table">
+                                <div class="article-item-selectpicker selectpicker__xsm selectpicker__icons">
+                                    <select class="selectpicker">
+                                        <option value="star" data-icon="ico-star"></option>
+                                        <option value="heart" data-icon="ico-heart"></option>
+                                        <option value="circle" data-icon="ico-circle"></option>
+                                        <option value="thumb-up" data-icon="ico-thumb-up"></option>
+                                        <option value="thumb-down" data-icon="ico-thumb-down"></option>
+                                        <option value="square" data-icon="ico-square"></option>
+                                        <option value="comment" data-icon="ico-comment"></option>
+                                        <option value="question" data-icon="ico-question"></option>
+                                        <option value="question-circle-o" data-icon="ico-question-circle-o"></option>
+                                        <option value="circle-with-number" data-icon="ico-0"></option>
+                                        <option value="square-with-number" data-icon="ico-square-0"></option>
+                                        <option value="flame" data-icon="ico-flame"></option>
+                                        <option value="smile" data-icon="ico-smile"></option>
+                                        <option value="happy" data-icon="ico-happy"></option>
+                                        <option value="sad" data-icon="ico-sad"></option>
+                                        <option value="serious" data-icon="ico-serious"></option>
+                                        <option value="down" data-icon="ico-down"></option>
+                                        <option value="confused" data-icon="ico-confused"></option>
+                                        <option value="crying" data-icon="ico-crying"></option>
+                                        <option value="frustrated" data-icon="ico-frustrated"></option>
+                                        <option value="angry" data-icon="ico-angry"></option>
+                                        <option value="baffled" data-icon="ico-baffled"></option>
+                                        <option value="grin" data-icon="ico-grin"></option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="cell__layout-table">
+                                <div class="form-group form-group__spectrum mb-0">
+                                    <div class="input-group">
+                                        <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" readonly/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell__layout-table">
+                                <div class="form-group form-group__spectrum mb-0">
+                                    <div class="input-group">
+                                        <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" readonly/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell__layout-table">
+                                <input type="text" class="form-control form-control-pr" placeholder="Placeholder">
+                            </div>
+                            <div class="cell__layout-table">
+                                1
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="rs__main-section__row">
+                        <div class="col__layout-table layout__fixed">
+                            <div class="cell__layout-table">
+                                <div class="article-item-selectpicker selectpicker__xsm selectpicker__icons">
+                                    <select class="selectpicker">
+                                        <option value="star" data-icon="ico-star"></option>
+                                        <option value="heart" data-icon="ico-heart"></option>
+                                        <option value="circle" data-icon="ico-circle"></option>
+                                        <option value="thumb-up" data-icon="ico-thumb-up"></option>
+                                        <option value="thumb-down" data-icon="ico-thumb-down"></option>
+                                        <option value="square" data-icon="ico-square"></option>
+                                        <option value="comment" data-icon="ico-comment"></option>
+                                        <option value="question" data-icon="ico-question"></option>
+                                        <option value="question-circle-o" data-icon="ico-question-circle-o"></option>
+                                        <option value="circle-with-number" data-icon="ico-0"></option>
+                                        <option value="square-with-number" data-icon="ico-square-0"></option>
+                                        <option value="flame" data-icon="ico-flame"></option>
+                                        <option value="smile" data-icon="ico-smile"></option>
+                                        <option value="happy" data-icon="ico-happy"></option>
+                                        <option value="sad" data-icon="ico-sad"></option>
+                                        <option value="serious" data-icon="ico-serious"></option>
+                                        <option value="down" data-icon="ico-down"></option>
+                                        <option value="confused" data-icon="ico-confused"></option>
+                                        <option value="crying" data-icon="ico-crying"></option>
+                                        <option value="frustrated" data-icon="ico-frustrated"></option>
+                                        <option value="angry" data-icon="ico-angry"></option>
+                                        <option value="baffled" data-icon="ico-baffled"></option>
+                                        <option value="grin" data-icon="ico-grin"></option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="cell__layout-table">
+                                <div class="form-group form-group__spectrum mb-0">
+                                    <div class="input-group">
+                                        <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" readonly/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell__layout-table">
+                                <div class="form-group form-group__spectrum mb-0">
+                                    <div class="input-group">
+                                        <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" readonly/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell__layout-table">
+                                <input type="text" class="form-control form-control-pr" placeholder="Placeholder">
+                            </div>
+                            <div class="cell__layout-table">
+                                2
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="rs__main-section__row">
+                        <div class="col__layout-table layout__fixed">
+                            <div class="cell__layout-table">
+                                <div class="article-item-selectpicker selectpicker__xsm selectpicker__icons">
+                                    <select class="selectpicker">
+                                        <option value="star" data-icon="ico-star"></option>
+                                        <option value="heart" data-icon="ico-heart"></option>
+                                        <option value="circle" data-icon="ico-circle"></option>
+                                        <option value="thumb-up" data-icon="ico-thumb-up"></option>
+                                        <option value="thumb-down" data-icon="ico-thumb-down"></option>
+                                        <option value="square" data-icon="ico-square"></option>
+                                        <option value="comment" data-icon="ico-comment"></option>
+                                        <option value="question" data-icon="ico-question"></option>
+                                        <option value="question-circle-o" data-icon="ico-question-circle-o"></option>
+                                        <option value="circle-with-number" data-icon="ico-0"></option>
+                                        <option value="square-with-number" data-icon="ico-square-0"></option>
+                                        <option value="flame" data-icon="ico-flame"></option>
+                                        <option value="smile" data-icon="ico-smile"></option>
+                                        <option value="happy" data-icon="ico-happy"></option>
+                                        <option value="sad" data-icon="ico-sad"></option>
+                                        <option value="serious" data-icon="ico-serious"></option>
+                                        <option value="down" data-icon="ico-down"></option>
+                                        <option value="confused" data-icon="ico-confused"></option>
+                                        <option value="crying" data-icon="ico-crying"></option>
+                                        <option value="frustrated" data-icon="ico-frustrated"></option>
+                                        <option value="angry" data-icon="ico-angry"></option>
+                                        <option value="baffled" data-icon="ico-baffled"></option>
+                                        <option value="grin" data-icon="ico-grin"></option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="cell__layout-table">
+                                <div class="form-group form-group__spectrum mb-0">
+                                    <div class="input-group">
+                                        <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" readonly/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell__layout-table">
+                                <div class="form-group form-group__spectrum mb-0">
+                                    <div class="input-group">
+                                        <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" readonly/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell__layout-table">
+                                <input type="text" class="form-control form-control-pr" placeholder="Placeholder">
+                            </div>
+                            <div class="cell__layout-table">
+                                3
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="rs__main-section__row">
+                        <div class="col__layout-table layout__fixed">
+                            <div class="cell__layout-table">
+                                <div class="article-item-selectpicker selectpicker__xsm selectpicker__icons">
+                                    <select class="selectpicker">
+                                        <option value="star" data-icon="ico-star"></option>
+                                        <option value="heart" data-icon="ico-heart"></option>
+                                        <option value="circle" data-icon="ico-circle"></option>
+                                        <option value="thumb-up" data-icon="ico-thumb-up"></option>
+                                        <option value="thumb-down" data-icon="ico-thumb-down"></option>
+                                        <option value="square" data-icon="ico-square"></option>
+                                        <option value="comment" data-icon="ico-comment"></option>
+                                        <option value="question" data-icon="ico-question"></option>
+                                        <option value="question-circle-o" data-icon="ico-question-circle-o"></option>
+                                        <option value="circle-with-number" data-icon="ico-0"></option>
+                                        <option value="square-with-number" data-icon="ico-square-0"></option>
+                                        <option value="flame" data-icon="ico-flame"></option>
+                                        <option value="smile" data-icon="ico-smile"></option>
+                                        <option value="happy" data-icon="ico-happy"></option>
+                                        <option value="sad" data-icon="ico-sad"></option>
+                                        <option value="serious" data-icon="ico-serious"></option>
+                                        <option value="down" data-icon="ico-down"></option>
+                                        <option value="confused" data-icon="ico-confused"></option>
+                                        <option value="crying" data-icon="ico-crying"></option>
+                                        <option value="frustrated" data-icon="ico-frustrated"></option>
+                                        <option value="angry" data-icon="ico-angry"></option>
+                                        <option value="baffled" data-icon="ico-baffled"></option>
+                                        <option value="grin" data-icon="ico-grin"></option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="cell__layout-table">
+                                <div class="form-group form-group__spectrum mb-0">
+                                    <div class="input-group">
+                                        <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" readonly/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell__layout-table">
+                                <div class="form-group form-group__spectrum mb-0">
+                                    <div class="input-group">
+                                        <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" readonly/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell__layout-table">
+                                <input type="text" class="form-control form-control-pr" placeholder="Placeholder">
+                            </div>
+                            <div class="cell__layout-table">
+                                4
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="rs__main-section__row">
+                        <div class="col__layout-table layout__fixed">
+                            <div class="cell__layout-table">
+                                <div class="article-item-selectpicker selectpicker__xsm selectpicker__icons">
+                                    <select class="selectpicker">
+                                        <option value="star" data-icon="ico-star"></option>
+                                        <option value="heart" data-icon="ico-heart"></option>
+                                        <option value="circle" data-icon="ico-circle"></option>
+                                        <option value="thumb-up" data-icon="ico-thumb-up"></option>
+                                        <option value="thumb-down" data-icon="ico-thumb-down"></option>
+                                        <option value="square" data-icon="ico-square"></option>
+                                        <option value="comment" data-icon="ico-comment"></option>
+                                        <option value="question" data-icon="ico-question"></option>
+                                        <option value="question-circle-o" data-icon="ico-question-circle-o"></option>
+                                        <option value="circle-with-number" data-icon="ico-0"></option>
+                                        <option value="square-with-number" data-icon="ico-square-0"></option>
+                                        <option value="flame" data-icon="ico-flame"></option>
+                                        <option value="smile" data-icon="ico-smile"></option>
+                                        <option value="happy" data-icon="ico-happy"></option>
+                                        <option value="sad" data-icon="ico-sad"></option>
+                                        <option value="serious" data-icon="ico-serious"></option>
+                                        <option value="down" data-icon="ico-down"></option>
+                                        <option value="confused" data-icon="ico-confused"></option>
+                                        <option value="crying" data-icon="ico-crying"></option>
+                                        <option value="frustrated" data-icon="ico-frustrated"></option>
+                                        <option value="angry" data-icon="ico-angry"></option>
+                                        <option value="baffled" data-icon="ico-baffled"></option>
+                                        <option value="grin" data-icon="ico-grin"></option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="cell__layout-table">
+                                <div class="form-group form-group__spectrum mb-0">
+                                    <div class="input-group">
+                                        <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" readonly/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell__layout-table">
+                                <div class="form-group form-group__spectrum mb-0">
+                                    <div class="input-group">
+                                        <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" readonly/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell__layout-table">
+                                <input type="text" class="form-control form-control-pr" placeholder="Placeholder">
+                            </div>
+                            <div class="cell__layout-table">
+                                5
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="rs__main-section__row">
+                        <div class="col__layout-table layout__fixed">
+                            <div class="cell__layout-table">
+                                <div class="article-item-selectpicker selectpicker__xsm selectpicker__icons">
+                                    <select class="selectpicker">
+                                        <option value="star" data-icon="ico-star"></option>
+                                        <option value="heart" data-icon="ico-heart"></option>
+                                        <option value="circle" data-icon="ico-circle"></option>
+                                        <option value="thumb-up" data-icon="ico-thumb-up"></option>
+                                        <option value="thumb-down" data-icon="ico-thumb-down"></option>
+                                        <option value="square" data-icon="ico-square"></option>
+                                        <option value="comment" data-icon="ico-comment"></option>
+                                        <option value="question" data-icon="ico-question"></option>
+                                        <option value="question-circle-o" data-icon="ico-question-circle-o"></option>
+                                        <option value="circle-with-number" data-icon="ico-0"></option>
+                                        <option value="square-with-number" data-icon="ico-square-0"></option>
+                                        <option value="flame" data-icon="ico-flame"></option>
+                                        <option value="smile" data-icon="ico-smile"></option>
+                                        <option value="happy" data-icon="ico-happy"></option>
+                                        <option value="sad" data-icon="ico-sad"></option>
+                                        <option value="serious" data-icon="ico-serious"></option>
+                                        <option value="down" data-icon="ico-down"></option>
+                                        <option value="confused" data-icon="ico-confused"></option>
+                                        <option value="crying" data-icon="ico-crying"></option>
+                                        <option value="frustrated" data-icon="ico-frustrated"></option>
+                                        <option value="angry" data-icon="ico-angry"></option>
+                                        <option value="baffled" data-icon="ico-baffled"></option>
+                                        <option value="grin" data-icon="ico-grin"></option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="cell__layout-table">
+                                <div class="form-group form-group__spectrum mb-0">
+                                    <div class="input-group">
+                                        <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" readonly/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell__layout-table">
+                                <div class="form-group form-group__spectrum mb-0">
+                                    <div class="input-group">
+                                        <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" readonly/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell__layout-table">
+                                <input type="text" class="form-control form-control-pr" placeholder="Placeholder">
+                            </div>
+                            <div class="cell__layout-table">
+                                6
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="rs__main-section__row">
+                        <div class="col__layout-table layout__fixed">
+                            <div class="cell__layout-table">
+                                <div class="article-item-selectpicker selectpicker__xsm selectpicker__icons">
+                                    <select class="selectpicker">
+                                        <option value="star" data-icon="ico-star"></option>
+                                        <option value="heart" data-icon="ico-heart"></option>
+                                        <option value="circle" data-icon="ico-circle"></option>
+                                        <option value="thumb-up" data-icon="ico-thumb-up"></option>
+                                        <option value="thumb-down" data-icon="ico-thumb-down"></option>
+                                        <option value="square" data-icon="ico-square"></option>
+                                        <option value="comment" data-icon="ico-comment"></option>
+                                        <option value="question" data-icon="ico-question"></option>
+                                        <option value="question-circle-o" data-icon="ico-question-circle-o"></option>
+                                        <option value="circle-with-number" data-icon="ico-0"></option>
+                                        <option value="square-with-number" data-icon="ico-square-0"></option>
+                                        <option value="flame" data-icon="ico-flame"></option>
+                                        <option value="smile" data-icon="ico-smile"></option>
+                                        <option value="happy" data-icon="ico-happy"></option>
+                                        <option value="sad" data-icon="ico-sad"></option>
+                                        <option value="serious" data-icon="ico-serious"></option>
+                                        <option value="down" data-icon="ico-down"></option>
+                                        <option value="confused" data-icon="ico-confused"></option>
+                                        <option value="crying" data-icon="ico-crying"></option>
+                                        <option value="frustrated" data-icon="ico-frustrated"></option>
+                                        <option value="angry" data-icon="ico-angry"></option>
+                                        <option value="baffled" data-icon="ico-baffled"></option>
+                                        <option value="grin" data-icon="ico-grin"></option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="cell__layout-table">
+                                <div class="form-group form-group__spectrum mb-0">
+                                    <div class="input-group">
+                                        <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" readonly/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell__layout-table">
+                                <div class="form-group form-group__spectrum mb-0">
+                                    <div class="input-group">
+                                        <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" readonly/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell__layout-table">
+                                <input type="text" class="form-control form-control-pr" placeholder="Placeholder">
+                            </div>
+                            <div class="cell__layout-table">
+                                7
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="rs__main-section__row">
+                        <div class="col__layout-table layout__fixed">
+                            <div class="cell__layout-table">
+                                <div class="article-item-selectpicker selectpicker__xsm selectpicker__icons">
+                                    <select class="selectpicker">
+                                        <option value="star" data-icon="ico-star"></option>
+                                        <option value="heart" data-icon="ico-heart"></option>
+                                        <option value="circle" data-icon="ico-circle"></option>
+                                        <option value="thumb-up" data-icon="ico-thumb-up"></option>
+                                        <option value="thumb-down" data-icon="ico-thumb-down"></option>
+                                        <option value="square" data-icon="ico-square"></option>
+                                        <option value="comment" data-icon="ico-comment"></option>
+                                        <option value="question" data-icon="ico-question"></option>
+                                        <option value="question-circle-o" data-icon="ico-question-circle-o"></option>
+                                        <option value="circle-with-number" data-icon="ico-0"></option>
+                                        <option value="square-with-number" data-icon="ico-square-0"></option>
+                                        <option value="flame" data-icon="ico-flame"></option>
+                                        <option value="smile" data-icon="ico-smile"></option>
+                                        <option value="happy" data-icon="ico-happy"></option>
+                                        <option value="sad" data-icon="ico-sad"></option>
+                                        <option value="serious" data-icon="ico-serious"></option>
+                                        <option value="down" data-icon="ico-down"></option>
+                                        <option value="confused" data-icon="ico-confused"></option>
+                                        <option value="crying" data-icon="ico-crying"></option>
+                                        <option value="frustrated" data-icon="ico-frustrated"></option>
+                                        <option value="angry" data-icon="ico-angry"></option>
+                                        <option value="baffled" data-icon="ico-baffled"></option>
+                                        <option value="grin" data-icon="ico-grin"></option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="cell__layout-table">
+                                <div class="form-group form-group__spectrum mb-0">
+                                    <div class="input-group">
+                                        <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" readonly/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell__layout-table">
+                                <div class="form-group form-group__spectrum mb-0">
+                                    <div class="input-group">
+                                        <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" readonly/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell__layout-table">
+                                <input type="text" class="form-control form-control-pr" placeholder="Placeholder">
+                            </div>
+                            <div class="cell__layout-table">
+                                8
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="rs__main-section__row">
+                        <div class="col__layout-table layout__fixed">
+                            <div class="cell__layout-table">
+                                <div class="article-item-selectpicker selectpicker__xsm selectpicker__icons">
+                                    <select class="selectpicker">
+                                        <option value="star" data-icon="ico-star"></option>
+                                        <option value="heart" data-icon="ico-heart"></option>
+                                        <option value="circle" data-icon="ico-circle"></option>
+                                        <option value="thumb-up" data-icon="ico-thumb-up"></option>
+                                        <option value="thumb-down" data-icon="ico-thumb-down"></option>
+                                        <option value="square" data-icon="ico-square"></option>
+                                        <option value="comment" data-icon="ico-comment"></option>
+                                        <option value="question" data-icon="ico-question"></option>
+                                        <option value="question-circle-o" data-icon="ico-question-circle-o"></option>
+                                        <option value="circle-with-number" data-icon="ico-0"></option>
+                                        <option value="square-with-number" data-icon="ico-square-0"></option>
+                                        <option value="flame" data-icon="ico-flame"></option>
+                                        <option value="smile" data-icon="ico-smile"></option>
+                                        <option value="happy" data-icon="ico-happy"></option>
+                                        <option value="sad" data-icon="ico-sad"></option>
+                                        <option value="serious" data-icon="ico-serious"></option>
+                                        <option value="down" data-icon="ico-down"></option>
+                                        <option value="confused" data-icon="ico-confused"></option>
+                                        <option value="crying" data-icon="ico-crying"></option>
+                                        <option value="frustrated" data-icon="ico-frustrated"></option>
+                                        <option value="angry" data-icon="ico-angry"></option>
+                                        <option value="baffled" data-icon="ico-baffled"></option>
+                                        <option value="grin" data-icon="ico-grin"></option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="cell__layout-table">
+                                <div class="form-group form-group__spectrum mb-0">
+                                    <div class="input-group">
+                                        <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" readonly/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell__layout-table">
+                                <div class="form-group form-group__spectrum mb-0">
+                                    <div class="input-group">
+                                        <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" readonly/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell__layout-table">
+                                <input type="text" class="form-control form-control-pr" placeholder="Placeholder">
+                            </div>
+                            <div class="cell__layout-table">
+                                9
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="rs__main-section__row">
+                        <div class="col__layout-table layout__fixed">
+                            <div class="cell__layout-table">
+                                <div class="article-item-selectpicker selectpicker__xsm selectpicker__icons">
+                                    <select class="selectpicker">
+                                        <option value="star" data-icon="ico-star"></option>
+                                        <option value="heart" data-icon="ico-heart"></option>
+                                        <option value="circle" data-icon="ico-circle"></option>
+                                        <option value="thumb-up" data-icon="ico-thumb-up"></option>
+                                        <option value="thumb-down" data-icon="ico-thumb-down"></option>
+                                        <option value="square" data-icon="ico-square"></option>
+                                        <option value="comment" data-icon="ico-comment"></option>
+                                        <option value="question" data-icon="ico-question"></option>
+                                        <option value="question-circle-o" data-icon="ico-question-circle-o"></option>
+                                        <option value="circle-with-number" data-icon="ico-0"></option>
+                                        <option value="square-with-number" data-icon="ico-square-0"></option>
+                                        <option value="flame" data-icon="ico-flame"></option>
+                                        <option value="smile" data-icon="ico-smile"></option>
+                                        <option value="happy" data-icon="ico-happy"></option>
+                                        <option value="sad" data-icon="ico-sad"></option>
+                                        <option value="serious" data-icon="ico-serious"></option>
+                                        <option value="down" data-icon="ico-down"></option>
+                                        <option value="confused" data-icon="ico-confused"></option>
+                                        <option value="crying" data-icon="ico-crying"></option>
+                                        <option value="frustrated" data-icon="ico-frustrated"></option>
+                                        <option value="angry" data-icon="ico-angry"></option>
+                                        <option value="baffled" data-icon="ico-baffled"></option>
+                                        <option value="grin" data-icon="ico-grin"></option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="cell__layout-table">
+                                <div class="form-group form-group__spectrum mb-0">
+                                    <div class="input-group">
+                                        <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" readonly/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell__layout-table">
+                                <div class="form-group form-group__spectrum mb-0">
+                                    <div class="input-group">
+                                        <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" readonly/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell__layout-table">
+                                <input type="text" class="form-control form-control-pr" placeholder="Placeholder">
+                            </div>
+                            <div class="cell__layout-table">
+                                10
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <!--Collapse panel-->
+                <div class="panel panel-default panel__collapse-pr">
+                    <div class="panel-heading" role="tab">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-panel-content" aria-expanded="false" aria-controls="collapse-panel-content">
+                                Advanced Settings
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse-panel-content" class="panel-collapse collapse panel__collapse-content-pr" role="tabpanel" aria-labelledby="collapse-panel-content">
+                        <div class="panel-body">
+
+                            <div class="row selectpicker__two-column">
+                                
+                                
+                                
+                                <div class="col-sm-6 col">
+                                    <div class="col__layout-table">
+                                        <div class="article-item-selectpicker selectpicker__lg">
+                                            <select class="form-control form-control-pr">
+                                                <option>Matrix</option>
+                                                <option>Continuous</option>
+                                            </select>
+                                        </div>
+                                        <label class="pl-15">Desktop shape</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-6 col">
+                                    <div class="col__layout-table">
+                                        <div class="article-item-selectpicker selectpicker__lg">
+                                            <select class="form-control form-control-pr">
+                                                <option>Matrix</option>
+                                                <option>Continuous</option>
+                                            </select>
+                                        </div>
+                                        <label class="pl-15">Mobile shape</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-6 col">
+                                    <div class="col__layout-table">
+                                        <div class="article-item-selectpicker selectpicker__lg">
+                                            <select class="form-control form-control-pr">
+                                                <option>Matrix</option>
+                                                <option>Continuous</option>
+                                            </select>
+                                        </div>
+                                        <label class="pl-15">Tooltips</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-6 col">
+                                    <div class="col__layout-table">
+                                        <div class="article-item-selectpicker selectpicker__lg">
+                                            <select class="form-control form-control-pr">
+                                                <option>Matrix</option>
+                                                <option>Continuous</option>
+                                            </select>
+                                        </div>
+                                        <label class="pl-15">Sub-questions</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-6 col">
+                                    <div class="col__layout-table">
+                                        <div class="article-item-selectpicker selectpicker__lg">
+                                            <select class="form-control form-control-pr">
+                                                <option>Matrix</option>
+                                                <option>Continuous</option>
+                                            </select>
+                                        </div>
+                                        <label class="pl-15">Shapes column width</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-6 col">
+                                    <div class="col__layout-table">
+                                        <div class="article-item-selectpicker selectpicker__lg">
+                                            <select class="form-control form-control-pr">
+                                                <option>Matrix</option>
+                                                <option>Continuous</option>
+                                            </select>
+                                        </div>
+                                        <label class="pl-15">Help text position</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="clearix"></div>
+                            </div>
+
+                            <hr class="section-diver">
+
+                            <div class="row mb-l2-0">
+                                
+                                
+                                
+                                <div class="col-sm-6">
+                                    <div class="checkbox-custom">
+                                        <input id="rsAs2-checkbox1" type="checkbox">
+                                        <label for="rsAs2-checkbox1"><span>Use shapes as tooltips</span></label>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-6">
+                                    <div class="checkbox-custom">
+                                        <input id="rsAs2-checkbox2" type="checkbox">
+                                        <label for="rsAs2-checkbox2"><span>Show tooltips in two columns</span></label>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-6">
+                                    <div class="checkbox-custom">
+                                        <input id="rsAs2-checkbox3" type="checkbox">
+                                        <label for="rsAs2-checkbox3"><span>Show tooltips for sub-questions</span></label>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-6">
+                                    <div class="checkbox-custom">
+                                        <input id="rsAs2-checkbox4" type="checkbox">
+                                        <label for="rsAs2-checkbox4"><span>Use centered layout</span></label>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-6">
+                                    <div class="checkbox-custom">
+                                        <input id="rsAs2-checkbox5" type="checkbox">
+                                        <label for="rsAs2-checkbox5"><span>Use segmented view</span></label>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-6">
+                                    <div class="checkbox-custom">
+                                        <input id="rsAs2-checkbox6" type="checkbox">
+                                        <label for="rsAs2-checkbox6"><span>Apply thick borders to shapes</span></label>
+                                    </div>
+                                </div>
+                                
+                                <div class="clearfix"></div>
+                            </div>
+
+                            <button class="btn collapse-toggler" type="button" data-toggle="collapse" data-target="#collapse-panel-content" aria-expanded="false" aria-controls="collapse-panel-content">
+                                <i class="fa fa-angle-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+</section>
+                    
+                    
+                    
+                    
+                    
+                    <!--Colors Section-->
+<section class="section-pr">
+    <header>
+        <h3 class="section-pr__title">Colors</h3>
+    </header>
+    <div class="section-pr__body">
+        <div class="row">
+            <div class="col-sm-6 col__primary-color">
+                <h4 class="section-pr__sub-title">
+                    Primary Color
+                </h4>
+                <div class="form-group__spectrum">
+                    <div class="input-group">
+                        <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col__secondary-color">
+                <h4 class="section-pr__sub-title">
+                    Secondary Color
+                </h4>
+                <div class="form-group__spectrum">
+                    <div class="input-group">
+                        <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" />
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <!--Collapse panel-->
+                <div class="panel panel-default panel__collapse-pr">
+                    <div class="panel-heading" role="tab">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-panel-colors" aria-expanded="false" aria-controls="collapse-panel-colors">
+                                Advanced Settings
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse-panel-colors" class="panel-collapse collapse panel__collapse-content-pr" role="tabpanel" aria-labelledby="collapse-panel-colors">
+                        <div class="panel-body">
 
-<!--Form Input-->
-<div class="form-group">
-    <input type="text" class="form-control-pr form-control" />
-</div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="col__layout-table">
+                                        <div class="picker">
+                                            <div class="form-group form-group__spectrum mb-0">
+                                                <div class="input-group">
+                                                    <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <label class="pl-15">Background</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="col__layout-table">
+                                        <div class="picker">
+                                            <div class="form-group form-group__spectrum mb-0">
+                                                <div class="input-group">
+                                                    <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <label class="pl-15">Answer options</label>
+                                    </div>
+                                </div>
+                                <div class="clearix"></div>
+                            </div>
 
-<!--Spectrum Color Picker-->
-<div class="form-group form-group__spectrum">
-    <div class="input-group">
-        <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" />
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="col__layout-table">
+                                        <div class="picker">
+                                            <div class="form-group form-group__spectrum mb-0">
+                                                <div class="input-group">
+                                                    <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <label class="pl-15">Breadcrumb bar</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="col__layout-table">
+                                        <div class="picker">
+                                            <div class="form-group form-group__spectrum mb-0">
+                                                <div class="input-group">
+                                                    <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <label class="pl-15">Email box border</label>
+                                    </div>
+                                </div>
+                                <div class="clearix"></div>
+                            </div>
+
+                            <hr class="section-diver">
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="col__layout-table">
+                                        <div class="picker">
+                                            <div class="form-group form-group__spectrum mb-0">
+                                                <div class="input-group">
+                                                    <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <label class="pl-15">Main Text</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="col__layout-table">
+                                        <div class="picker">
+                                            <div class="form-group form-group__spectrum mb-0">
+                                                <div class="input-group">
+                                                    <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <label class="pl-15">Label Text</label>
+                                    </div>
+                                </div>
+                                <div class="clearix"></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="col__layout-table">
+                                        <div class="picker">
+                                            <div class="form-group form-group__spectrum mb-0">
+                                                <div class="input-group">
+                                                    <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <label class="pl-15">Help Text</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="col__layout-table">
+                                        <div class="picker">
+                                            <div class="form-group form-group__spectrum mb-0">
+                                                <div class="input-group">
+                                                    <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <label class="pl-15">Placeholder Text</label>
+                                    </div>
+                                </div>
+                                <div class="clearix"></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="col__layout-table">
+                                        <div class="picker">
+                                            <div class="form-group form-group__spectrum mb-0">
+                                                <div class="input-group">
+                                                    <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <label class="pl-15">Input Text</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="col__layout-table">
+                                        <div class="picker">
+                                            <div class="form-group form-group__spectrum mb-0">
+                                                <div class="input-group">
+                                                    <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <label class="pl-15">Breadcrumb Text</label>
+                                    </div>
+                                </div>
+                                <div class="clearix"></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="col__layout-table">
+                                        <div class="picker">
+                                            <div class="form-group form-group__spectrum mb-0">
+                                                <div class="input-group">
+                                                    <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <label class="pl-15">Breadcrumb Text (inactive)</label>
+                                    </div>
+                                </div>
+                                <div class="clearix"></div>
+                            </div>
+
+                            <hr class="section-diver">
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="col__layout-table">
+                                        <div class="picker">
+                                            <div class="form-group form-group__spectrum mb-0">
+                                                <div class="input-group">
+                                                    <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <label class="pl-15">Navigation buttons</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="col__layout-table">
+                                        <div class="picker">
+                                            <div class="form-group form-group__spectrum mb-0">
+                                                <div class="input-group">
+                                                    <input type="text" value="#2da237" class="form-control-pr form-control colorpicker-component" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <label class="pl-15">Submit Button</label>
+                                    </div>
+                                </div>
+                                <div class="clearix"></div>
+                            </div>
+
+                            <button class="btn collapse-toggler" type="button" data-toggle="collapse" data-target="#collapse-panel-colors" aria-expanded="false" aria-controls="collapse-panel-colors">
+                                <i class="fa fa-angle-down"></i>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
+</section>
 
-<!--Select Option-->
-<div class="article-item-selectpicker selectpicker__lg">
-    <select class="form-control form-control-pr">
-        <option>Font Family</option>
-        <option>Mustard Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, sapiente!</option>
-        <option>Ketchup</option>
-        <option>Relish</option>
-        <option>Mustard</option>
-    </select>
-</div>
-<br />
+<!--Fonts Section-->
+<section class="section-pr">
+    <header>
+        <h3 class="section-pr__title">Fonts</h3>
+    </header>
+    <div class="section-pr__body">
+        <div class="row">
+            <div class="col-sm-6 col__primary-font">
+                <h4 class="section-pr__sub-title">
+                    Primary font
+                </h4>
+                <div class="col__layout-table">
+                    <div class="font-family__container">
+                        <div class="article-item-selectpicker selectpicker__font-family">
+                            <select class="form-control form-control-pr">
+                                <option>Roboto</option>
+                                <option>Arial</option>
+                                <option>Helvetica</option>
+                                <option>JosefinSlab</option>
+                                <option>Lato</option>
+                                <option>Ubuntu</option>
+                                <option>Open Sans</option>
+                                <option>Source Sans Pro</option>
+                                <option>Noto Sans Japanese</option>
+                                <option>DinPro</option>
+                                <option>Frankfurter</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="cont-size__container pl-15">
+                        <div class="article-item-selectpicker selectpicker__font-size">
+                            <select class="form-control form-control-pr">
+                                <option value="8">8px</option>
+                                <option value="9">9px</option>
+                                <option value="10">10px</option>
+                                <option value="11">11px</option>
+                                <option value="12">12px</option>
+                                <option value="14">14px</option>
+                                <option selected="" value="16">16px</option>
+                                <option value="18">18px</option>
+                                <option value="20">20px</option>
+                                <option value="24">24px</option>
+                                <option value="28">28px</option>
+                                <option value="33">33px</option>
+                                <option value="36">36px</option>
+                                <option value="48">48px</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
 
-<div class="article-item-selectpicker selectpicker__sm">
-    <select class="form-control form-control-pr">
-        <option>Font Size</option>
-        <option>45px</option>
-        <option>50px</option>
-        <option>60px</option>
-        <option>90px</option>
-    </select>
-</div>
-<br />
+            </div>
+            <div class="col-sm-6 col__secondary-font">
+                <h4 class="section-pr__sub-title">
+                    Secondary font
+                </h4>
+                <div class="col__layout-table">
+                    <div class="font-family__container">
+                        <div class="article-item-selectpicker selectpicker__font-family">
+                            <select class="form-control form-control-pr">
+                                <option>Roboto</option>
+                                <option>Arial</option>
+                                <option>Helvetica</option>
+                                <option>JosefinSlab</option>
+                                <option>Lato</option>
+                                <option>Ubuntu</option>
+                                <option>Open Sans</option>
+                                <option>Source Sans Pro</option>
+                                <option>Noto Sans Japanese</option>
+                                <option>DinPro</option>
+                                <option>Frankfurter</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="cont-size__container pl-15">
+                        <div class="article-item-selectpicker selectpicker__font-size">
+                            <select class="form-control form-control-pr">
+                                <option value="8">8px</option>
+                                <option value="9">9px</option>
+                                <option value="10">10px</option>
+                                <option value="11">11px</option>
+                                <option value="12">12px</option>
+                                <option value="14">14px</option>
+                                <option selected="" value="16">16px</option>
+                                <option value="18">18px</option>
+                                <option value="20">20px</option>
+                                <option value="24">24px</option>
+                                <option value="28">28px</option>
+                                <option value="33">33px</option>
+                                <option value="36">36px</option>
+                                <option value="48">48px</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <!--Collapse panel-->
+                <div class="panel panel-default panel__collapse-pr">
+                    <div class="panel-heading" role="tab">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-panel-fonts" aria-expanded="false" aria-controls="collapse-panel-fonts">
+                                Advanced Settings
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse-panel-fonts" class="panel-collapse collapse panel__collapse-content-pr" role="tabpanel" aria-labelledby="collapse-panel-fonts">
+                        <div class="panel-body">
 
-<!--checkbox-->
-<div class="checkbox-custom">
-    <input id="checkbox1" name="checkbox-group" type="checkbox">
-    <label for="checkbox1"><span>Checkbox</span></label>
-</div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="col__layout-table">
+                                        <div class="font-family__container">
+                                            <div class="article-item-selectpicker selectpicker__font-family">
+                                                <select class="form-control form-control-pr">
+                                                    <option>Roboto</option>
+                                                    <option>Arial</option>
+                                                    <option>Helvetica</option>
+                                                    <option>JosefinSlab</option>
+                                                    <option>Lato</option>
+                                                    <option>Ubuntu</option>
+                                                    <option>Open Sans</option>
+                                                    <option>Source Sans Pro</option>
+                                                    <option>Noto Sans Japanese</option>
+                                                    <option>DinPro</option>
+                                                    <option>Frankfurter</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="cont-size__container pl-15">
+                                            <div class="article-item-selectpicker selectpicker__font-size">
+                                                <select class="form-control form-control-pr">
+                                                    <option value="8">8px</option>
+                                                    <option value="9">9px</option>
+                                                    <option value="10">10px</option>
+                                                    <option value="11">11px</option>
+                                                    <option value="12">12px</option>
+                                                    <option value="14">14px</option>
+                                                    <option selected="" value="16">16px</option>
+                                                    <option value="18">18px</option>
+                                                    <option value="20">20px</option>
+                                                    <option value="24">24px</option>
+                                                    <option value="28">28px</option>
+                                                    <option value="33">33px</option>
+                                                    <option value="36">36px</option>
+                                                    <option value="48">48px</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <label class="pl-15">Main Text</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="col__layout-table">
+                                        <div class="font-family__container">
+                                            <div class="article-item-selectpicker selectpicker__font-family">
+                                                <select class="form-control form-control-pr">
+                                                    <option>Roboto</option>
+                                                    <option>Arial</option>
+                                                    <option>Helvetica</option>
+                                                    <option>JosefinSlab</option>
+                                                    <option>Lato</option>
+                                                    <option>Ubuntu</option>
+                                                    <option>Open Sans</option>
+                                                    <option>Source Sans Pro</option>
+                                                    <option>Noto Sans Japanese</option>
+                                                    <option>DinPro</option>
+                                                    <option>Frankfurter</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="cont-size__container pl-15">
+                                            <div class="article-item-selectpicker selectpicker__font-size">
+                                                <select class="form-control form-control-pr">
+                                                    <option value="8">8px</option>
+                                                    <option value="9">9px</option>
+                                                    <option value="10">10px</option>
+                                                    <option value="11">11px</option>
+                                                    <option value="12">12px</option>
+                                                    <option value="14">14px</option>
+                                                    <option selected="" value="16">16px</option>
+                                                    <option value="18">18px</option>
+                                                    <option value="20">20px</option>
+                                                    <option value="24">24px</option>
+                                                    <option value="28">28px</option>
+                                                    <option value="33">33px</option>
+                                                    <option value="36">36px</option>
+                                                    <option value="48">48px</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <label class="pl-15">Label Text</label>
+                                    </div>
+                                </div>
+                                <div class="clearix"></div>
+                            </div>
 
-<!--radio-->
-<div class="radio-custom">
-    <input id="radio1" name="radio-group" type="radio">
-    <label for="radio1"><span>Radio Button</span></label>
-</div>
-<br />
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="col__layout-table">
+                                        <div class="font-family__container">
+                                            <div class="article-item-selectpicker selectpicker__font-family">
+                                                <select class="form-control form-control-pr">
+                                                    <option>Roboto</option>
+                                                    <option>Arial</option>
+                                                    <option>Helvetica</option>
+                                                    <option>JosefinSlab</option>
+                                                    <option>Lato</option>
+                                                    <option>Ubuntu</option>
+                                                    <option>Open Sans</option>
+                                                    <option>Source Sans Pro</option>
+                                                    <option>Noto Sans Japanese</option>
+                                                    <option>DinPro</option>
+                                                    <option>Frankfurter</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="cont-size__container pl-15">
+                                            <div class="article-item-selectpicker selectpicker__font-size">
+                                                <select class="form-control form-control-pr">
+                                                    <option value="8">8px</option>
+                                                    <option value="9">9px</option>
+                                                    <option value="10">10px</option>
+                                                    <option value="11">11px</option>
+                                                    <option value="12">12px</option>
+                                                    <option value="14">14px</option>
+                                                    <option selected="" value="16">16px</option>
+                                                    <option value="18">18px</option>
+                                                    <option value="20">20px</option>
+                                                    <option value="24">24px</option>
+                                                    <option value="28">28px</option>
+                                                    <option value="33">33px</option>
+                                                    <option value="36">36px</option>
+                                                    <option value="48">48px</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <label class="pl-15">Help Text</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="col__layout-table">
+                                        <div class="font-family__container">
+                                            <div class="article-item-selectpicker selectpicker__font-family">
+                                                <select class="form-control form-control-pr">
+                                                    <option>Roboto</option>
+                                                    <option>Arial</option>
+                                                    <option>Helvetica</option>
+                                                    <option>JosefinSlab</option>
+                                                    <option>Lato</option>
+                                                    <option>Ubuntu</option>
+                                                    <option>Open Sans</option>
+                                                    <option>Source Sans Pro</option>
+                                                    <option>Noto Sans Japanese</option>
+                                                    <option>DinPro</option>
+                                                    <option>Frankfurter</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="cont-size__container pl-15">
+                                            <div class="article-item-selectpicker selectpicker__font-size">
+                                                <select class="form-control form-control-pr">
+                                                    <option value="8">8px</option>
+                                                    <option value="9">9px</option>
+                                                    <option value="10">10px</option>
+                                                    <option value="11">11px</option>
+                                                    <option value="12">12px</option>
+                                                    <option value="14">14px</option>
+                                                    <option selected="" value="16">16px</option>
+                                                    <option value="18">18px</option>
+                                                    <option value="20">20px</option>
+                                                    <option value="24">24px</option>
+                                                    <option value="28">28px</option>
+                                                    <option value="33">33px</option>
+                                                    <option value="36">36px</option>
+                                                    <option value="48">48px</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <label class="pl-15">Placeholder Text</label>
+                                    </div>
+                                </div>
+                                <div class="clearix"></div>
+                            </div>
 
-<!--Icons Dropdown-->
-<div class="article-item-selectpicker selectpicker__xsm selectpicker__icons">
-    <select class="selectpicker">
-        <option value="star" data-icon="ico-star"></option>
-        <option value="heart" data-icon="ico-heart"></option>
-        <option value="circle" data-icon="ico-circle"></option>
-        <option value="thumb-up" data-icon="ico-thumb-up"></option>
-        <option value="thumb-down" data-icon="ico-thumb-down"></option>
-        <option value="square" data-icon="ico-square"></option>
-        <option value="comment" data-icon="ico-comment"></option>
-        <option value="question" data-icon="ico-question"></option>
-        <option value="question-circle-o" data-icon="ico-question-circle-o"></option>
-        <option value="circle-with-number" data-icon="ico-0"></option>
-        <option value="square-with-number" data-icon="ico-square-0"></option>
-        <option value="flame" data-icon="ico-flame"></option>
-        <option value="smile" data-icon="ico-smile"></option>
-        <option value="happy" data-icon="ico-happy"></option>
-        <option value="sad" data-icon="ico-sad"></option>
-        <option value="serious" data-icon="ico-serious"></option>
-        <option value="down" data-icon="ico-down"></option>
-        <option value="confused" data-icon="ico-confused"></option>
-        <option value="crying" data-icon="ico-crying"></option>
-        <option value="frustrated" data-icon="ico-frustrated"></option>
-        <option value="angry" data-icon="ico-angry"></option>
-        <option value="baffled" data-icon="ico-baffled"></option>
-        <option value="grin" data-icon="ico-grin"></option>
-    </select>
-</div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="col__layout-table">
+                                        <div class="font-family__container">
+                                            <div class="article-item-selectpicker selectpicker__font-family">
+                                                <select class="form-control form-control-pr">
+                                                    <option>Roboto</option>
+                                                    <option>Arial</option>
+                                                    <option>Helvetica</option>
+                                                    <option>JosefinSlab</option>
+                                                    <option>Lato</option>
+                                                    <option>Ubuntu</option>
+                                                    <option>Open Sans</option>
+                                                    <option>Source Sans Pro</option>
+                                                    <option>Noto Sans Japanese</option>
+                                                    <option>DinPro</option>
+                                                    <option>Frankfurter</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="cont-size__container pl-15">
+                                            <div class="article-item-selectpicker selectpicker__font-size">
+                                                <select class="form-control form-control-pr">
+                                                    <option value="8">8px</option>
+                                                    <option value="9">9px</option>
+                                                    <option value="10">10px</option>
+                                                    <option value="11">11px</option>
+                                                    <option value="12">12px</option>
+                                                    <option value="14">14px</option>
+                                                    <option selected="" value="16">16px</option>
+                                                    <option value="18">18px</option>
+                                                    <option value="20">20px</option>
+                                                    <option value="24">24px</option>
+                                                    <option value="28">28px</option>
+                                                    <option value="33">33px</option>
+                                                    <option value="36">36px</option>
+                                                    <option value="48">48px</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <label class="pl-15">Breadcrumb Text</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="col__layout-table">
+                                        <div class="font-family__container">
+                                            <div class="article-item-selectpicker selectpicker__font-family">
+                                                <select class="form-control form-control-pr">
+                                                    <option>Roboto</option>
+                                                    <option>Arial</option>
+                                                    <option>Helvetica</option>
+                                                    <option>JosefinSlab</option>
+                                                    <option>Lato</option>
+                                                    <option>Ubuntu</option>
+                                                    <option>Open Sans</option>
+                                                    <option>Source Sans Pro</option>
+                                                    <option>Noto Sans Japanese</option>
+                                                    <option>DinPro</option>
+                                                    <option>Frankfurter</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="cont-size__container pl-15">
+                                            <div class="article-item-selectpicker selectpicker__font-size">
+                                                <select class="form-control form-control-pr">
+                                                    <option value="8">8px</option>
+                                                    <option value="9">9px</option>
+                                                    <option value="10">10px</option>
+                                                    <option value="11">11px</option>
+                                                    <option value="12">12px</option>
+                                                    <option value="14">14px</option>
+                                                    <option selected="" value="16">16px</option>
+                                                    <option value="18">18px</option>
+                                                    <option value="20">20px</option>
+                                                    <option value="24">24px</option>
+                                                    <option value="28">28px</option>
+                                                    <option value="33">33px</option>
+                                                    <option value="36">36px</option>
+                                                    <option value="48">48px</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <label class="pl-15">Button Text</label>
+                                    </div>
+                                </div>
+                                <div class="clearix"></div>
+                            </div>
 
+                            <button class="btn collapse-toggler" type="button" data-toggle="collapse" data-target="#collapse-panel-fonts" aria-expanded="false" aria-controls="collapse-panel-fonts">
+                                <i class="fa fa-angle-down"></i>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Buttons Section-->
+<section class="section-pr">
+    <header>
+        <h3 class="section-pr__title">Buttons</h3>
+    </header>
+    <div class="section-pr__body">
+        <div class="row">
+            <div class="col-sm-6 col__primary-buttons">
+                <h4 class="section-pr__sub-title">
+                    Text Transform
+                </h4>
+                <div class="col__layout-table mb-15">
+                    <div class="selectpicker__container">
+                        <div class="article-item-selectpicker selectpicker__font-family">
+                            <select class="form-control form-control-pr">
+                                <option>Uppercase</option>
+                                <option>Lowercase</option>
+                                <option>Capitalize</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col__secondary-buttons">
+                <h4 class="section-pr__sub-title">
+                    Border Radius
+                </h4>
+                <div class="col__layout-table mb-15">
+                    <div class="selectpicker__container">
+                        <div class="article-item-selectpicker selectpicker__font-family">
+                            <select class="form-control form-control-pr">
+                                <option value="1">1px</option>
+                                <option value="2">2px</option>
+                                <option value="3">3px</option>
+                                <option value="4">4px</option>
+                                <option value="5">5px</option>
+                                <option value="6">6px</option>
+                                <option value="7">7px</option>
+                                <option value="8">8px</option>
+                                <option value="9">9px</option>
+                                <option value="10">10px</option>
+                                <option value="11">11px</option>
+                                <option value="12">12px</option>
+                                <option value="13">13px</option>
+                                <option value="14">14px</option>
+                                <option value="15">15px</option>
+                                <option value="16">16px</option>
+                                <option value="17">17px</option>
+                                <option value="18">18px</option>
+                                <option value="19">19px</option>
+                                <option value="20">20px</option>
+                                <option value="21">21px</option>
+                                <option value="22">22px</option>
+                                <option value="23">23px</option>
+                                <option value="24">24px</option>
+                                <option value="25">25px</option>
+                                <option value="26">26px</option>
+                                <option value="27">27px</option>
+                                <option value="28">28px</option>
+                                <option value="29">29px</option>
+                                <option value="30">30px</option>
+                                <option value="31">31px</option>
+                                <option value="32">32px</option>
+                                <option value="33">33px</option>
+                                <option value="34">34px</option>
+                                <option value="35">35px</option>
+                                <option value="36">36px</option>
+                                <option value="37">37px</option>
+                                <option value="38">38px</option>
+                                <option value="39">39px</option>
+                                <option value="40">40px</option>
+                                <option value="41">41px</option>
+                                <option value="42">42px</option>
+                                <option value="43">43px</option>
+                                <option value="44">44px</option>
+                                <option value="45">45px</option>
+                                <option value="46">46px</option>
+                                <option value="47">47px</option>
+                                <option value="48">48px</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</section>
+
+<!--Layout Section-->
+<section class="section-pr">
+    <header>
+        <h3 class="section-pr__title">Layout</h3>
+    </header>
+    <div class="section-pr__body">
+        <div class="row mb-l1-0">
+            
+            
+            
+            <div class="col-sm-6">
+                <div class="checkbox-custom">
+                    <input id="fs1-checkbox1" type="checkbox">
+                    <label for="fs1-checkbox1"><span>Enable breadcrumb</span></label>
+                </div>
+            </div>
+            
+            <div class="col-sm-6">
+                <div class="checkbox-custom">
+                    <input id="fs1-checkbox2" type="checkbox">
+                    <label for="fs1-checkbox2"><span>Enable quality barometer</span></label>
+                </div>
+            </div>
+            
+            <div class="col-sm-6">
+                <div class="checkbox-custom">
+                    <input id="fs1-checkbox3" type="checkbox">
+                    <label for="fs1-checkbox3"><span>Enable borders</span></label>
+                </div>
+            </div>
+            
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <!--Collapse panel-->
+                <div class="panel panel-default panel__collapse-pr">
+                    <div class="panel-heading" role="tab">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-panel-layout" aria-expanded="false" aria-controls="collapse-panel-layout">
+                                Advanced Settings
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse-panel-layout" class="panel-collapse collapse panel__collapse-content-pr" role="tabpanel" aria-labelledby="collapse-panel-layout">
+                        <div class="panel-body">
+
+                            <div class="row mb-l2-0">
+                                
+                                
+                                
+                                <div class="col-sm-6">
+                                    <div class="checkbox-custom">
+                                        <input id="fsl-checkbox1" type="checkbox">
+                                        <label for="fsl-checkbox1"><span>Enable custom header</span></label>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-6">
+                                    <div class="checkbox-custom">
+                                        <input id="fsl-checkbox2" type="checkbox">
+                                        <label for="fsl-checkbox2"><span>Enable custom footer</span></label>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-6">
+                                    <div class="checkbox-custom">
+                                        <input id="fsl-checkbox3" type="checkbox">
+                                        <label for="fsl-checkbox3"><span>Display an asterisk(*) for required questions</span></label>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-6">
+                                    <div class="checkbox-custom">
+                                        <input id="fsl-checkbox4" type="checkbox">
+                                        <label for="fsl-checkbox4"><span>Use image for ranking scale shapes</span></label>
+                                    </div>
+                                </div>
+                                
+                                <div class="clearfix"></div>
+                            </div>
+
+                            <button class="btn collapse-toggler" type="button" data-toggle="collapse" data-target="#collapse-panel-layout" aria-expanded="false" aria-controls="collapse-panel-layout">
+                                <i class="fa fa-angle-down"></i>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Data Section-->
+<section class="section-pr">
+    <header>
+        <h3 class="section-pr__title">Data</h3>
+    </header>
+    <div class="section-pr__body">
+        <div class="row">
+            <div class="col-sm-6 col__primary-layout">
+                <div class="checkbox-custom">
+                    <input id="dataCheckbox1" name="checkbox-group" type="checkbox">
+                    <label for="dataCheckbox1"><span>Load metadat from SRR(i.e [[FIRST_NAME]])</span></label>
+                </div>
+            </div>
+            <div class="col-sm-6 col__secondary-layout">
+                <div class="checkbox-custom">
+                    <input id="dataCheckbox2" name="checkbox-group" type="checkbox">
+                    <label for="dataCheckbox2"><span>Track click on thank you page links</span></label>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</section>
+
+<!--Flow Section-->
+<section class="section-pr">
+    <header>
+        <h3 class="section-pr__title">Flow</h3>
+    </header>
+    <div class="section-pr__body">
+        <div class="row">
+            <div class="col-sm-6 col__primary-flow">
+                <h4 class="section-pr__sub-title">
+                    Callback
+                </h4>
+                <div class="selectpicker__container mb-15">
+                    <div class="article-item-selectpicker">
+                        <select class="form-control form-control-pr">
+                            <option>No callback</option>
+                            <option>Custom Link</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col__secondary-flow">
+                <h4 class="section-pr__sub-title">
+                    Thank You Page
+                </h4>
+                <div class="selectpicker__container mb-15">
+                    <div class="article-item-selectpicker">
+                        <select class="form-control form-control-pr">
+                            <option>Thank you page 1</option>
+                            <option>Thank you page 2</option>
+                            <option>Thank you page 3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="row__link-type mb-20 section__padded">
+            <div class="link-type__label">
+                <p><strong>Link Type</strong></p>
+            </div>
+            <div class="link-type__selectpicker">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="selectpicker__container selectpicker__block mb-20">
+                            <div class="article-item-selectpicker">
+                                <select class="form-control form-control-pr">
+                                    <option>Web link</option>
+                                    <option>Deep link</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="link-type__weblink">
+                <div class="col__layout-table mb-20">
+                    <div class="link-type__input-location">
+                        <input type="text" class="form-control-pr form-control">
+                    </div>
+                    <div class="link-type__input-percentage pl-15">
+                        <input type="text" class="form-control-pr form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="link-type__deeplink">
+                <ul class="list-unstyled">
+                    <li class="android-link">
+                        <input type="text" class="form-control-pr form-control">
+                        <i class="fa fa-android"></i>
+                    </li>
+                    <li class="ios-link">
+                        <input type="text" class="form-control-pr form-control">
+                        <i class="fa fa-apple"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="link-type__cta panel__cta">
+                <a href="#"><i class="fa fa-plus-circle"></i> <span>Add callback link</span></a>
+            </div>
+            <div class="link-type__checkbox">
+                <div class="checkbox-custom">
+                    <input id="flowCheckbox12" name="checkbox-group" type="checkbox">
+                    <label for="flowCheckbox12"><span>Enable traffic split</span></label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <!--Collapse panel-->
+                <div class="panel panel-default panel__collapse-pr">
+                    <div class="panel-heading" role="tab">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-panel-flow" aria-expanded="false" aria-controls="collapse-panel-flow">
+                                Advanced Settings
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse-panel-flow" class="panel-collapse collapse panel__collapse-content-pr" role="tabpanel" aria-labelledby="collapse-panel-flow">
+                        <div class="panel-body">
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="checkbox-custom">
+                                        <input id="flowCheckbox2" name="checkbox-group" type="checkbox">
+                                        <label for="flowCheckbox2"><span>Enable conditional flow</span></label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="checkbox-custom">
+                                        <input id="flowCheckbox3" name="checkbox-group" type="checkbox">
+                                        <label for="flowCheckbox3"><span>Enable review link expiry</span></label>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <p><strong>Select a question</strong></p>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="selectpicker__container selectpicker__block mb-15">
+                                        <div class="article-item-selectpicker">
+                                            <select class="form-control form-control-pr">
+                                                <option>How would you rate your service?</option>
+                                                <option>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, error?</option>
+                                                <option>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam debitis ducimus laboriosam molestiae sequi.</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            
+                            
+                            <div class="row row__question-option">
+                                <div class="col-sm-12">
+                                    <p class="question-option__title"><strong>1</strong></p>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="selectpicker__container">
+                                                <div class="article-item-selectpicker">
+                                                    <select class="form-control form-control-pr">
+                                                        <option>No callback</option>
+                                                        <option>Web link</option>
+                                                        <option>Deep link</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="selectpicker__container">
+                                                <div class="article-item-selectpicker">
+                                                    <select class="form-control form-control-pr">
+                                                        <option>No Thank You page</option>
+                                                        <option>Thank You page 1</option>
+                                                        <option>Thank You page 2</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="row__link-type section__padded">
+                                    <div class="link-type__label">
+                                        <p><strong>Link Type</strong></p>
+                                    </div>
+                                    <div class="link-type__selectpicker">
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <div class="selectpicker__container selectpicker__block mb-20">
+                                                    <div class="article-item-selectpicker">
+                                                        <select class="form-control form-control-pr">
+                                                            <option>Web link</option>
+                                                            <option>Deep link</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="link-type__weblink">
+                                        <div class="col__layout-table mb-20">
+                                            <div class="link-type__input-location">
+                                                <input type="text" class="form-control-pr form-control">
+                                            </div>
+                                            <div class="link-type__input-percentage pl-15">
+                                                <input type="text" class="form-control-pr form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="link-type__deeplink">
+                                        <ul class="list-unstyled">
+                                            <li class="android-link">
+                                                <input type="text" class="form-control-pr form-control">
+                                                <i class="fa fa-android"></i>
+                                            </li>
+                                            <li class="ios-link">
+                                                <input type="text" class="form-control-pr form-control">
+                                                <i class="fa fa-apple"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="link-type__cta panel__cta">
+                                        <a href="#"><i class="fa fa-plus-circle"></i> <span>Add callback link</span></a>
+                                    </div>
+                                    <div class="link-type__checkbox">
+                                        <div class="checkbox-custom">
+                                            <input id="flowCheckbox1" name="checkbox-group" type="checkbox">
+                                            <label for="flowCheckbox1"><span>Enable traffic split</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row row__question-option">
+                                <div class="col-sm-12">
+                                    <p class="question-option__title"><strong>2</strong></p>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="selectpicker__container">
+                                                <div class="article-item-selectpicker">
+                                                    <select class="form-control form-control-pr">
+                                                        <option>No callback</option>
+                                                        <option>Web link</option>
+                                                        <option>Deep link</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="selectpicker__container">
+                                                <div class="article-item-selectpicker">
+                                                    <select class="form-control form-control-pr">
+                                                        <option>No Thank You page</option>
+                                                        <option>Thank You page 1</option>
+                                                        <option>Thank You page 2</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="row__link-type section__padded">
+                                    <div class="link-type__label">
+                                        <p><strong>Link Type</strong></p>
+                                    </div>
+                                    <div class="link-type__selectpicker">
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <div class="selectpicker__container selectpicker__block mb-20">
+                                                    <div class="article-item-selectpicker">
+                                                        <select class="form-control form-control-pr">
+                                                            <option>Web link</option>
+                                                            <option>Deep link</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="link-type__weblink">
+                                        <div class="col__layout-table mb-20">
+                                            <div class="link-type__input-location">
+                                                <input type="text" class="form-control-pr form-control">
+                                            </div>
+                                            <div class="link-type__input-percentage pl-15">
+                                                <input type="text" class="form-control-pr form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="link-type__deeplink">
+                                        <ul class="list-unstyled">
+                                            <li class="android-link">
+                                                <input type="text" class="form-control-pr form-control">
+                                                <i class="fa fa-android"></i>
+                                            </li>
+                                            <li class="ios-link">
+                                                <input type="text" class="form-control-pr form-control">
+                                                <i class="fa fa-apple"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="link-type__cta panel__cta">
+                                        <a href="#"><i class="fa fa-plus-circle"></i> <span>Add callback link</span></a>
+                                    </div>
+                                    <div class="link-type__checkbox">
+                                        <div class="checkbox-custom">
+                                            <input id="flowCheckbox1" name="checkbox-group" type="checkbox">
+                                            <label for="flowCheckbox1"><span>Enable traffic split</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row row__question-option">
+                                <div class="col-sm-12">
+                                    <p class="question-option__title"><strong>3</strong></p>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="selectpicker__container">
+                                                <div class="article-item-selectpicker">
+                                                    <select class="form-control form-control-pr">
+                                                        <option>No callback</option>
+                                                        <option>Web link</option>
+                                                        <option>Deep link</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="selectpicker__container">
+                                                <div class="article-item-selectpicker">
+                                                    <select class="form-control form-control-pr">
+                                                        <option>No Thank You page</option>
+                                                        <option>Thank You page 1</option>
+                                                        <option>Thank You page 2</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="row__link-type section__padded">
+                                    <div class="link-type__label">
+                                        <p><strong>Link Type</strong></p>
+                                    </div>
+                                    <div class="link-type__selectpicker">
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <div class="selectpicker__container selectpicker__block mb-20">
+                                                    <div class="article-item-selectpicker">
+                                                        <select class="form-control form-control-pr">
+                                                            <option>Web link</option>
+                                                            <option>Deep link</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="link-type__weblink">
+                                        <div class="col__layout-table mb-20">
+                                            <div class="link-type__input-location">
+                                                <input type="text" class="form-control-pr form-control">
+                                            </div>
+                                            <div class="link-type__input-percentage pl-15">
+                                                <input type="text" class="form-control-pr form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="link-type__deeplink">
+                                        <ul class="list-unstyled">
+                                            <li class="android-link">
+                                                <input type="text" class="form-control-pr form-control">
+                                                <i class="fa fa-android"></i>
+                                            </li>
+                                            <li class="ios-link">
+                                                <input type="text" class="form-control-pr form-control">
+                                                <i class="fa fa-apple"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="link-type__cta panel__cta">
+                                        <a href="#"><i class="fa fa-plus-circle"></i> <span>Add callback link</span></a>
+                                    </div>
+                                    <div class="link-type__checkbox">
+                                        <div class="checkbox-custom">
+                                            <input id="flowCheckbox1" name="checkbox-group" type="checkbox">
+                                            <label for="flowCheckbox1"><span>Enable traffic split</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row row__question-option">
+                                <div class="col-sm-12">
+                                    <p class="question-option__title"><strong>4</strong></p>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="selectpicker__container">
+                                                <div class="article-item-selectpicker">
+                                                    <select class="form-control form-control-pr">
+                                                        <option>No callback</option>
+                                                        <option>Web link</option>
+                                                        <option>Deep link</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="selectpicker__container">
+                                                <div class="article-item-selectpicker">
+                                                    <select class="form-control form-control-pr">
+                                                        <option>No Thank You page</option>
+                                                        <option>Thank You page 1</option>
+                                                        <option>Thank You page 2</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="row__link-type section__padded">
+                                    <div class="link-type__label">
+                                        <p><strong>Link Type</strong></p>
+                                    </div>
+                                    <div class="link-type__selectpicker">
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <div class="selectpicker__container selectpicker__block mb-20">
+                                                    <div class="article-item-selectpicker">
+                                                        <select class="form-control form-control-pr">
+                                                            <option>Web link</option>
+                                                            <option>Deep link</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="link-type__weblink">
+                                        <div class="col__layout-table mb-20">
+                                            <div class="link-type__input-location">
+                                                <input type="text" class="form-control-pr form-control">
+                                            </div>
+                                            <div class="link-type__input-percentage pl-15">
+                                                <input type="text" class="form-control-pr form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="link-type__deeplink">
+                                        <ul class="list-unstyled">
+                                            <li class="android-link">
+                                                <input type="text" class="form-control-pr form-control">
+                                                <i class="fa fa-android"></i>
+                                            </li>
+                                            <li class="ios-link">
+                                                <input type="text" class="form-control-pr form-control">
+                                                <i class="fa fa-apple"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="link-type__cta panel__cta">
+                                        <a href="#"><i class="fa fa-plus-circle"></i> <span>Add callback link</span></a>
+                                    </div>
+                                    <div class="link-type__checkbox">
+                                        <div class="checkbox-custom">
+                                            <input id="flowCheckbox1" name="checkbox-group" type="checkbox">
+                                            <label for="flowCheckbox1"><span>Enable traffic split</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row row__question-option">
+                                <div class="col-sm-12">
+                                    <p class="question-option__title"><strong>5</strong></p>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="selectpicker__container">
+                                                <div class="article-item-selectpicker">
+                                                    <select class="form-control form-control-pr">
+                                                        <option>No callback</option>
+                                                        <option>Web link</option>
+                                                        <option>Deep link</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="selectpicker__container">
+                                                <div class="article-item-selectpicker">
+                                                    <select class="form-control form-control-pr">
+                                                        <option>No Thank You page</option>
+                                                        <option>Thank You page 1</option>
+                                                        <option>Thank You page 2</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="row__link-type section__padded">
+                                    <div class="link-type__label">
+                                        <p><strong>Link Type</strong></p>
+                                    </div>
+                                    <div class="link-type__selectpicker">
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <div class="selectpicker__container selectpicker__block mb-20">
+                                                    <div class="article-item-selectpicker">
+                                                        <select class="form-control form-control-pr">
+                                                            <option>Web link</option>
+                                                            <option>Deep link</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="link-type__weblink">
+                                        <div class="col__layout-table mb-20">
+                                            <div class="link-type__input-location">
+                                                <input type="text" class="form-control-pr form-control">
+                                            </div>
+                                            <div class="link-type__input-percentage pl-15">
+                                                <input type="text" class="form-control-pr form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="link-type__deeplink">
+                                        <ul class="list-unstyled">
+                                            <li class="android-link">
+                                                <input type="text" class="form-control-pr form-control">
+                                                <i class="fa fa-android"></i>
+                                            </li>
+                                            <li class="ios-link">
+                                                <input type="text" class="form-control-pr form-control">
+                                                <i class="fa fa-apple"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="link-type__cta panel__cta">
+                                        <a href="#"><i class="fa fa-plus-circle"></i> <span>Add callback link</span></a>
+                                    </div>
+                                    <div class="link-type__checkbox">
+                                        <div class="checkbox-custom">
+                                            <input id="flowCheckbox1" name="checkbox-group" type="checkbox">
+                                            <label for="flowCheckbox1"><span>Enable traffic split</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                            <button class="btn collapse-toggler" type="button" data-toggle="collapse" data-target="#collapse-panel-flow" aria-expanded="false" aria-controls="collapse-panel-flow">
+                                <i class="fa fa-angle-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Localisation Section-->
+<section class="section-pr">
+    <header>
+        <h3 class="section-pr__title">Localisation</h3>
+    </header>
+    <div class="section-pr__body">
+        <div class="row">
+            <div class="col-sm-12">
+                <h4 class="section-pr__sub-title">
+                    Form Language
+                </h4>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <ul class="list-unstyled localisation__languages-list">
+                            <li class="language__default">
+                                <input type="text" class="form-control-pr form-control">
+                            </li>
+                            <li>
+                                <input type="text" class="form-control-pr form-control">
+                                <a href="#"><i class="fa fa-times-circle-o"></i></a>
+                            </li>
+                        </ul>
+                        <div class="selectpicker__container selectpicker__block mb-20">
+                            <div class="article-item-selectpicker">
+                                <select class="form-control form-control-pr">
+                                    <option>Uppercase</option>
+                                    <option>Lowercase</option>
+                                    <option>Capitalize</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="panel__cta">
+                            <a href="#"><i class="fa fa-plus-circle"></i> <span>Add additional language</span></a>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</section>
+
+<!--Styles Editor Section-->
+<section class="section-pr">
+    <header>
+        <h3 class="section-pr__title">Custom Styles</h3>
+    </header>
+    <div class="section-pr__body">
+
+        <div class="row">
+
+            <div class="col-sm-12">
+                <h4 class="section-pr__sub-title">
+                    Style Editor
+                </h4>
+            </div>
+
+            <div class="col-sm-12">
+                <!--Collapse panel-->
+                <div class="panel panel-default panel__collapse-pr mt-15">
+                    <div class="panel-heading" role="tab">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-panel-styles-editor" aria-expanded="false" aria-controls="collapse-panel-styles-editor">
+                                See editor
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse-panel-styles-editor" class="panel-collapse collapse panel__collapse-content-pr" role="tabpanel" aria-labelledby="collapse-panel-styles-editor">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <p><strong>Paste your CSS code</strong></p>
+                                    <div class="styles-editor__textarea">
+                                        <textarea class="form-control" rows="30" placeholder="Enter your custom styles here"></textarea>
+                                    </div>
+                                </div>
+                                <div class="clearix"></div>
+                            </div>
+                            <button class="btn collapse-toggler" type="button" data-toggle="collapse" data-target="#collapse-panel-styles-editor" aria-expanded="false" aria-controls="collapse-panel-styles-editor">
+                                <i class="fa fa-angle-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+                    
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-primary btn__pr">Save</button>
