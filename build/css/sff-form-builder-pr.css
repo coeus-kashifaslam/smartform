@@ -842,6 +842,10 @@ body {
     color: #2da137;
 }
 
+.checkbox-custom [type=checkbox]:checked + label span, .checkbox-custom [type=radio]:checked + label span, .radio-custom [type=checkbox]:checked + label span, .radio-custom [type=radio]:checked + label span {
+    background-image: none;
+}
+
 .checkbox-custom [type=checkbox]:not(checked) + label:before, .radio-custom [type=checkbox]:not(checked) + label:before {
     content: "";
 }
@@ -1202,6 +1206,10 @@ body {
     margin-bottom: 15px;
 }
 
+.section-pr > header {
+    padding: 0;
+}
+
 .section-pr__title, .section-pr__sub-title {
     margin-top: 0;
     color: #333;
@@ -1214,6 +1222,7 @@ body {
 
 .section-pr__sub-title {
     font-size: 18px;
+    margin-bottom: 10px;
 }
 
 .selectpicker__block .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
