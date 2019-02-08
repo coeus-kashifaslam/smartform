@@ -71,6 +71,12 @@
   }
 }
 
+.section-pr {
+  > header {
+    padding: 0;
+  }
+}
+
 .section-pr__title,
 .section-pr__sub-title {
   margin-top: 0;
@@ -84,6 +90,7 @@
 
 .section-pr__sub-title {
   font-size: $section-subtitle-font-size;
+  margin-bottom: 10px;
 }
 
 .selectpicker__block {

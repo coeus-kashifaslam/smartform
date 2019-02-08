@@ -41,6 +41,9 @@ body {
         &:before {
           color: $green-primary;
         }
+        span {
+          background-image: none;
+        }
       }
     }
   }
