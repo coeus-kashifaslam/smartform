@@ -1126,6 +1126,7 @@ body {
 }
 
 .btn__pr:hover, .btn__pr:focus, .btn__pr:active {
+    color: #fff;
     border: 2px solid #2da137;
     outline: none;
     text-decoration: none;
