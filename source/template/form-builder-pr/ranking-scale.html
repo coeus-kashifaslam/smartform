@@ -90,7 +90,9 @@
                                     <div class="col__layout-table">
                                         <div class="article-item-selectpicker selectpicker__lg">
                                             <select class="form-control form-control-pr">
-                                                <option>Matrix</option>
+                                                <option {% if (loop.index ==  1) or (loop.index ==  2) %} selected = 'selected' {% endif %}>Matrix</option>
+                                                <option {% if loop.index ==  3 %} selected = 'selected' {% endif %}>Left</option>
+                                                <option {% if loop.index ==  4 %} selected = 'selected' {% endif %}>Normal</option>
                                                 <option>Continuous</option>
                                             </select>
                                         </div>
@@ -257,8 +259,11 @@
                                     <div class="col__layout-table">
                                         <div class="article-item-selectpicker selectpicker__lg">
                                             <select class="form-control form-control-pr">
-                                                <option>Matrix</option>
-                                                <option>Continuous</option>
+                                                <option {% if (loop.index ==  1) or (loop.index ==  2) %} selected = 'selected' {% endif %}>48px</option>
+                                                <option {% if loop.index ==  3 %} selected = 'selected' {% endif %}>12px</option>
+                                                <option {% if loop.index ==  4 %} selected = 'selected' {% endif %}>16px</option>
+                                                <option {% if loop.index ==  5 %} selected = 'selected' {% endif %}>60px</option>
+                                                <option {% if loop.index ==  6 %} selected = 'selected' {% endif %}>Above</option>
                                             </select>
                                         </div>
                                         <label class="pl-15">{{setupStringItem}}</label>
@@ -285,6 +290,99 @@
                             </div>
 
                             <button class="btn collapse-toggler" type="button" data-toggle="collapse" data-target="#collapse-panel-content" aria-expanded="false" aria-controls="collapse-panel-content">
+                                <i class="fa fa-angle-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!--Make question required settings-->
+
+<section class="section-pr">
+    <header>
+        <h3 class="section-pr__title">Settings</h3>
+    </header>
+    <div class="section-pr__body">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="checkbox-custom mb-0">
+                    <input id="mkq-rqrd" type="checkbox">
+                    <label for="mkq-rqrd"><span>Make question required</span></label>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <!--Collapse panel-->
+                <div class="panel panel-default panel__collapse-pr">
+                    <div class="panel-heading" role="tab">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-panel-mkqrqd" aria-expanded="false" aria-controls="collapse-panel-mkqrqd">
+                                Advanced Settings
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse-panel-mkqrqd" class="panel-collapse collapse panel__collapse-content-pr" role="tabpanel" aria-labelledby="collapse-panel-mkqrqd">
+                        <div class="panel-body">
+
+                            <div class="row mb-l2-0">
+                                {% set mkqrqd1ClassAs1 = 'mkqrqd1' %}
+                                {% set setupString = ['Show Email opt-in on click', 'Make at lease 1 sub-question required'] %}
+                                {% for setupStringItem in setupString %}
+                                <div class="col-sm-6">
+                                    <div class="checkbox-custom">
+                                        <input id="{{mkqrqd1ClassAs1}}-checkbox{{loop.index}}" type="checkbox">
+                                        <label for="{{mkqrqd1ClassAs1}}-checkbox{{loop.index}}"><span>{{setupStringItem}}</span></label>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                                <div class="clearfix"></div>
+                            </div>
+
+                            <div class="row selectpicker__two-column">
+                                {% set setupClassAsTI = 'rsAsTI' %}
+                                {% set setupString = ['Email opt-in', 'Condition'] %}
+                                {% for setupStringItem in setupString %}
+                                <div class="col-sm-6 col">
+                                    <div class="col__layout-table">
+                                        <div class="article-item-selectpicker selectpicker__lg">
+                                            <select class="form-control form-control-pr">
+                                                <option {% if loop.index ==  1 %} selected = 'selected' {% endif %}>1 field</option>
+                                                <option {% if loop.index ==  2 %} selected = 'selected' {% endif %}>5 stars or less</option>
+                                                <option>Continuous</option>
+                                            </select>
+                                        </div>
+                                        <label class="pl-15">{{setupStringItem}}</label>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                                <div class="clearix"></div>
+                            </div>
+
+                            <div class="row mb-l1-0">
+                                {% set mkqrqdClassAs1 = 'mkqrqd' %}
+                                {% set setupString = ['Apply email validation'] %}
+                                {% for setupStringItem in setupString %}
+                                <div class="col-sm-6">
+                                    <div class="checkbox-custom">
+                                        <input id="{{mkqrqdClassAs1}}-checkbox{{loop.index}}" type="checkbox">
+                                        <label for="{{mkqrqdClassAs1}}-checkbox{{loop.index}}"><span>{{setupStringItem}}</span></label>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                                <div class="clearfix"></div>
+                            </div>
+
+                            <button class="btn collapse-toggler" type="button" data-toggle="collapse" data-target="#collapse-panel-mkqrqd" aria-expanded="false" aria-controls="collapse-panel-mkqrqd">
                                 <i class="fa fa-angle-down"></i>
                             </button>
                         </div>
