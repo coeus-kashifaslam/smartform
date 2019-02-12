@@ -5,7 +5,7 @@ body {
 //checkbox
 .checkbox-custom,
 .radio-custom {
-  margin-bottom: 15px;
+  margin-bottom: 7px;
   [type = "checkbox"],
   [type = "radio"] {
     &:checked,
@@ -316,7 +316,8 @@ body {
     .panel-heading {
       a {
         .fa {
-          transform: rotate(180deg) translateY(50%);
+          display: none;
+          //transform: rotate(180deg) translateY(50%);
         }
       }
     }
@@ -331,7 +332,7 @@ body {
 }
 
 .collapse-toggler {
-  margin-top: 10px;
+  margin-top: 0;
   margin-bottom: 5px;
   float: right;
   padding: 0;

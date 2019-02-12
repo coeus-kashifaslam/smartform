@@ -807,7 +807,7 @@ body {
 }
 
 .checkbox-custom, .radio-custom {
-    margin-bottom: 15px;
+    margin-bottom: 7px;
 }
 
 .checkbox-custom [type=checkbox]:checked, .checkbox-custom [type=checkbox]:not(:checked), .checkbox-custom [type=radio]:checked, .checkbox-custom [type=radio]:not(:checked), .radio-custom [type=checkbox]:checked, .radio-custom [type=checkbox]:not(:checked), .radio-custom [type=radio]:checked, .radio-custom [type=radio]:not(:checked) {
@@ -1055,8 +1055,7 @@ body {
 }
 
 .panel__collapse-pr.collapse-open .panel-heading a .fa {
-    -ms-transform: rotate(180deg) translateY(50%);
-    transform: rotate(180deg) translateY(50%);
+    display: none;
 }
 
 .panel__collapse-pr .fa-angle-down {
@@ -1067,7 +1066,7 @@ body {
 }
 
 .collapse-toggler {
-    margin-top: 10px;
+    margin-top: 0;
     margin-bottom: 5px;
     float: right;
     padding: 0;
@@ -1204,6 +1203,10 @@ body {
 
 .panel-body > .row {
     margin-bottom: 15px;
+}
+
+.panel-body > .row:last-of-type {
+    margin-bottom: 10px;
 }
 
 .section-pr > header {

@@ -68,6 +68,9 @@
 .panel-body {
   > .row {
     margin-bottom: 15px;
+    &:last-of-type {
+      margin-bottom: 10px;
+    }
   }
 }
 
