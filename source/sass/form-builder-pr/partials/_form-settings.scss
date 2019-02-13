@@ -14,7 +14,7 @@
 
 
 .localisation__languages-list {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   > li {
     position: relative;
     .fa {
@@ -28,6 +28,9 @@
     + li {
       margin-top: 10px;
     }
+  }
+  + .form-control-pr {
+    margin-bottom: 10px;
   }
 }
 
@@ -75,6 +78,7 @@
       top: 50%;
       transform: translateY(-50%);
       font-size: $section-subtitle-font-size;
+      cursor: auto;
     }
   }
 }
