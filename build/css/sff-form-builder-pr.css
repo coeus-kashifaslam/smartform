@@ -1479,6 +1479,21 @@ body {
     display: inline-block;
 }
 
+.header__option-group + .item__error, .new__option-item + .item__error {
+    margin-top: -10px;
+}
+
+.item__error {
+    color: red;
+    font-size: 11.99999px;
+    font-weight: 700;
+}
+
+.options-group__item-error {
+    text-align: center;
+    padding: 0 15px;
+}
+
 .cta__delete {
     font-size: 22px;
 }

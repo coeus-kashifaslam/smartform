@@ -35,25 +35,27 @@
                         <div class="dd__options-group">
 
                             <div class="col-sm-12">
-
                                 {% set mcqOptions = [1,2]%}
                                 {% for mcqOption in mcqOptions %}
-                                <div class="col__layout-table layout__fixed new__option-item">
-                                    <div class="cell__layout-table">
-                                        <label class="cell__label">Option {{mcqOption}}</label>
-                                        <input type="text" class="form-control form-control-pr">
+                                <div class="new__option-items__container">
+                                    <div class="col__layout-table layout__fixed new__option-item">
+                                        <div class="cell__layout-table">
+                                            <label class="cell__label">Option {{mcqOption}}</label>
+                                            <input type="text" class="form-control form-control-pr">
+                                        </div>
+                                        <div class="cell__layout-table">
+                                            <label class="cell__label">Sentiment value</label>
+                                            <select class="form-control form-control-pr">
+                                                <option>Positive</option>
+                                                <option>Negative</option>
+                                                <option>Neutral</option>
+                                            </select>
+                                        </div>
+                                        <div class="cell__layout-table">
+                                            <a href="#" class="cta__delete" title="Delete Option"><i class="fa fa-times-circle-o"></i></a>
+                                        </div>
                                     </div>
-                                    <div class="cell__layout-table">
-                                        <label class="cell__label">Sentiment value</label>
-                                        <select class="form-control form-control-pr">
-                                            <option>Positive</option>
-                                            <option>Negative</option>
-                                            <option>Neutral</option>
-                                        </select>
-                                    </div>
-                                    <div class="cell__layout-table">
-                                        <a href="#" class="cta__delete" title="Delete Option"><i class="fa fa-times-circle-o"></i></a>
-                                    </div>
+                                    <p class="item__error">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, voluptas.</p>
                                 </div>
                                 {% endfor %}
                             </div>
@@ -75,30 +77,35 @@
                                     <input type="text" class="form-control form-control-pr">
                                     <a href="#" class="cta__delete" title="Delete Group"><i class="fa fa-times-circle-o"></i></a>
                                 </div>
+                                <p class="item__error">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, voluptas.</p>
                             </div>
 
                             <div class="col-sm-12">
                                 {% set mcqOptions = [1,2]%}
                                 {% for mcqOption in mcqOptions %}
-                                <div class="col__layout-table layout__fixed new__option-item">
-                                    <div class="cell__layout-table">
-                                        <label class="cell__label">Option {{mcqOption}}</label>
-                                        <input type="text" class="form-control form-control-pr">
+                                <div class="new__option-items__container">
+                                    <div class="col__layout-table layout__fixed new__option-item">
+                                        <div class="cell__layout-table">
+                                            <label class="cell__label">Option {{mcqOption}}</label>
+                                            <input type="text" class="form-control form-control-pr">
+                                        </div>
+                                        <div class="cell__layout-table">
+                                            <label class="cell__label">Sentiment value</label>
+                                            <select class="form-control form-control-pr">
+                                                <option>Positive</option>
+                                                <option>Negative</option>
+                                                <option>Neutral</option>
+                                            </select>
+                                        </div>
+                                        <div class="cell__layout-table">
+                                            <a href="#" class="cta__delete" title="Delete Option"><i class="fa fa-times-circle-o"></i></a>
+                                        </div>
                                     </div>
-                                    <div class="cell__layout-table">
-                                        <label class="cell__label">Sentiment value</label>
-                                        <select class="form-control form-control-pr">
-                                            <option>Positive</option>
-                                            <option>Negative</option>
-                                            <option>Neutral</option>
-                                        </select>
-                                    </div>
-                                    <div class="cell__layout-table">
-                                        <a href="#" class="cta__delete" title="Delete Option"><i class="fa fa-times-circle-o"></i></a>
-                                    </div>
+                                    <p class="item__error">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, voluptas.</p>
                                 </div>
                                 {% endfor %}
                             </div>
+                            <p class="item__error options-group__item-error col-sm-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, unde.</p>
                             <div class="col-sm-12 panel__cta">
                                 <a href="#"><i class="fa fa-plus-circle"></i> <span>Add new option</span></a>
                             </div>

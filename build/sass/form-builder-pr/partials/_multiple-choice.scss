@@ -19,6 +19,24 @@
   }
 }
 
+.header__option-group,
+.new__option-item {
+  + .item__error {
+    margin-top: -10px;
+  }
+}
+
+.item__error {
+  color: $red;
+  font-size: $error-font-size;
+  font-weight: 700;
+}
+
+.options-group__item-error {
+  text-align: center;
+  padding: 0 15px;
+}
+
 .cta__delete {
   font-size: $custom-control-icon-font-size;
   &, &:hover, &:focus, &:active {
