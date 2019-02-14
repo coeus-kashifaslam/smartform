@@ -2,7 +2,7 @@
   .form-control {
     border-radius: 0;
     border: 0 none;
-    padding: 15px;
+    padding: $default-spacing;
     &:hover,
     &:focus,
     &:active {

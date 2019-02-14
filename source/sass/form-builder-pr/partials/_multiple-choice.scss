@@ -1,11 +1,11 @@
 .new__option-item {
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: $default-spacing;
   label {
     font-weight: bold;
   }
   .cell__layout-table {
-    padding-left: 15px;
+    padding-left: $default-spacing;
     &:first-child {
       padding-left: 0;
     }
@@ -47,7 +47,7 @@
 .header__option-group {
   position: relative;
   padding-right: 30px;
-  margin-bottom: 15px;
+  margin-bottom: $default-spacing;
   .cta__delete {
     position: absolute;
     right: 0;
@@ -57,4 +57,59 @@
 
 .dd__section__well {
   margin-bottom: 30px;
+}
+
+
+.dynamic__section__well {
+  position: relative;
+  border: 1px solid $border;
+  .dynamic__section-ico-bolt {
+    position: absolute;
+    right: $default-spacing;
+    top: $default-spacing;
+    font-size: $section-title-font-size;
+    .fa {
+      color: $bolt-yellow;
+    }
+    &.state__green {
+      .fa {
+        color: $bolt-green;
+      }
+    }
+  }
+  .col__layout-table {
+    width: 100%;
+    label {
+      width: 15%;
+      padding-right: $default-spacing;
+      font-weight: 700;
+      vertical-align: top;
+      padding-top: 7px;
+    }
+    .form-group {
+      width: 85%;
+      .form-control-pr {
+        width: 100%;
+      }
+    }
+  }
+  &.p0 {
+    padding: 0;
+  }
+}
+
+.dynamic__section__example {
+  margin-bottom: 0;
+  margin-top: 5px;
+  font-size: $error-font-size;
+}
+
+.dynamic__section__header {
+  margin-top: 0;
+  font-size: $base-font-size;
+  font-weight: 700;
+}
+
+.dynamic__section__hidden-panel {
+  margin-top: $default-spacing;
 }

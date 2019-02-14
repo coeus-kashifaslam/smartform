@@ -842,10 +842,6 @@ body {
     color: #2da137;
 }
 
-.checkbox-custom [type=checkbox]:checked + label span, .checkbox-custom [type=radio]:checked + label span, .radio-custom [type=checkbox]:checked + label span, .radio-custom [type=radio]:checked + label span {
-    background-image: none;
-}
-
 .checkbox-custom [type=checkbox]:not(checked) + label:before, .radio-custom [type=checkbox]:not(checked) + label:before {
     content: "";
 }
@@ -1220,7 +1216,7 @@ body {
 }
 
 .section-pr__title {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     font-size: 24px;
 }
 
@@ -1246,7 +1242,7 @@ body {
 }
 
 .panel__cta {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     font-size: 14px;
 }
 
@@ -1293,7 +1289,7 @@ body {
 }
 
 .localisation__languages-list {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .localisation__languages-list > li {
@@ -1312,6 +1308,10 @@ body {
 
 .localisation__languages-list > li + li {
     margin-top: 10px;
+}
+
+.localisation__languages-list + .form-control-pr {
+    margin-bottom: 10px;
 }
 
 .row__link-type {
@@ -1358,6 +1358,7 @@ body {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     font-size: 18px;
+    cursor: auto;
 }
 
 .question-option__title {
@@ -1516,4 +1517,64 @@ body {
 
 .dd__section__well {
     margin-bottom: 30px;
+}
+
+.dynamic__section__well {
+    position: relative;
+    border: 1px solid #c3c3c3;
+}
+
+.dynamic__section__well .dynamic__section-ico-bolt {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 24px;
+}
+
+.dynamic__section__well .dynamic__section-ico-bolt .fa {
+    color: #fee923;
+}
+
+.dynamic__section__well .dynamic__section-ico-bolt.state__green .fa {
+    color: #2da137;
+}
+
+.dynamic__section__well .col__layout-table {
+    width: 100%;
+}
+
+.dynamic__section__well .col__layout-table label {
+    width: 15%;
+    padding-right: 15px;
+    font-weight: 700;
+    vertical-align: top;
+    padding-top: 7px;
+}
+
+.dynamic__section__well .col__layout-table .form-group {
+    width: 85%;
+}
+
+.dynamic__section__well .col__layout-table .form-group .form-control-pr {
+    width: 100%;
+}
+
+.dynamic__section__well.p0 {
+    padding: 0;
+}
+
+.dynamic__section__example {
+    margin-bottom: 0;
+    margin-top: 5px;
+    font-size: 11.99999px;
+}
+
+.dynamic__section__header {
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.dynamic__section__hidden-panel {
+    margin-top: 15px;
 }

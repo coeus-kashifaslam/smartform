@@ -294,7 +294,7 @@ body {
       position: relative;
       .fa {
         position: absolute;
-        right: 15px;
+        right: $default-spacing;
         top: 50%;
         transform: translateY(-50%);
       }

@@ -95,7 +95,7 @@
 .rs__main-section {
   .rs__main-section__row {
     + .rs__main-section__row {
-      margin-top: 15px;
+      margin-top: $default-spacing;
     }
   }
 }

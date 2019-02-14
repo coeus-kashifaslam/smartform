@@ -131,10 +131,10 @@
 }
 
 .panel__cta {
-  margin-bottom: 15px;
+  margin-bottom: $default-spacing;
   font-size: $base-font-size;
   span {
-    margin-left: 15px;
+    margin-left: $default-spacing;
   }
   a {
     &, &:hover, &:focus, &:active {
@@ -154,7 +154,7 @@
 }
 
 .section__well {
-  padding: 15px;
+  padding: $default-spacing;
   background-color: $well-bg;
   border-radius: $radius;
 }
@@ -172,7 +172,7 @@
 .section-pr__body {
   > .row {
     + .row {
-      margin-top: 15px;
+      margin-top: $default-spacing;
     }
   }
 }
