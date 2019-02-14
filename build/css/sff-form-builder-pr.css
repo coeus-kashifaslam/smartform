@@ -1273,6 +1273,11 @@ body {
     margin-bottom: 0;
 }
 
+.section__user-inputs .section__user-inputs__item .item__error {
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
 .section-pr__body > .row + .row {
     margin-top: 15px;
 }
