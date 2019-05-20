@@ -9311,6 +9311,18 @@ select.bs-select-hidden, select.selectpicker {
     src: url(../fonts/font-families/arial/Arial-BoldMT.eot?#iefix) format("embedded-opentype"), url(../fonts/font-families/arial/Arial-BoldMT.woff) format("woff"), url(../fonts/font-families/arial/Arial-BoldMT.ttf) format("truetype"), url(../fonts/font-families/arial/Arial-BoldMT.svg#Arial-BoldMT) format("svg");
 }
 
+@font-face {
+    font-family: Neo;
+    src: url(../fonts/font-families/neo/AllianzNeoW04-Regular.eot);
+    src: url(../fonts/font-families/neo/AllianzNeoW04-Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/font-families/neo/AllianzNeoW04-Regular.woff2) format("woff2"), url(../fonts/font-families/neo/AllianzNeoW04-Regular.woff) format("woff"), url(../fonts/font-families/neo/AllianzNeoW04-Regular.ttf) format("truetype"), url(../fonts/font-families/neo/AllianzNeoW04-Regular.svg#neoregular) format("svg");
+}
+
+@font-face {
+    font-family: Neo-Light;
+    src: url(../fonts/font-families/neo/AllianzNeoW04-Light.eot);
+    src: url(../fonts/font-families/neo/AllianzNeoW04-Light.eot?#iefix) format("embedded-opentype"), url(../fonts/font-families/neo/AllianzNeoW04-Light.woff2) format("woff2"), url(../fonts/font-families/neo/AllianzNeoW04-Light.woff) format("woff"), url(../fonts/font-families/neo/AllianzNeoW04-Light.ttf) format("truetype"), url(../fonts/font-families/neo/AllianzNeoW04-Light.svg#neolight) format("svg");
+}
+
 .ico, .form-radio + label:before, .form-checkbox:checked + label span:after, .barometer-progressbar:after {
     font-family: icomoon !important;
     speak: none;
