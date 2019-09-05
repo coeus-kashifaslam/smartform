@@ -36,15 +36,23 @@
 
                             <div class="col-sm-12">
 
+                                <div class="col__layout-table layout__fixed new__option-item dd__options-group__labels">
+                                    <div class="cell__layout-table">
+                                        <label class="cell__label">Option</label>
+                                    </div>
+                                    <div class="cell__layout-table">
+                                        <label class="cell__label">Sentiment value</label>
+                                    </div>
+                                    <div class="cell__layout-table"></div>
+                                </div>
+
                                 {% set mcqOptions = [1,2]%}
                                 {% for mcqOption in mcqOptions %}
                                 <div class="col__layout-table layout__fixed new__option-item">
                                     <div class="cell__layout-table">
-                                        <label class="cell__label">Option {{mcqOption}}</label>
                                         <input type="text" class="form-control form-control-pr">
                                     </div>
                                     <div class="cell__layout-table">
-                                        <label class="cell__label">Sentiment value</label>
                                         <select class="form-control form-control-pr">
                                             <option>Positive</option>
                                             <option>Negative</option>
@@ -78,15 +86,24 @@
                             </div>
 
                             <div class="col-sm-12">
+
+                                <div class="col__layout-table layout__fixed new__option-item dd__options-group__labels">
+                                    <div class="cell__layout-table">
+                                        <label class="cell__label">Option</label>
+                                    </div>
+                                    <div class="cell__layout-table">
+                                        <label class="cell__label">Sentiment value</label>
+                                    </div>
+                                    <div class="cell__layout-table"></div>
+                                </div>
+
                                 {% set mcqOptions = [1,2]%}
                                 {% for mcqOption in mcqOptions %}
                                 <div class="col__layout-table layout__fixed new__option-item">
                                     <div class="cell__layout-table">
-                                        <label class="cell__label">Option {{mcqOption}}</label>
                                         <input type="text" class="form-control form-control-pr">
                                     </div>
                                     <div class="cell__layout-table">
-                                        <label class="cell__label">Sentiment value</label>
                                         <select class="form-control form-control-pr">
                                             <option>Positive</option>
                                             <option>Negative</option>

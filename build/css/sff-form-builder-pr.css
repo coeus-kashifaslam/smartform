@@ -900,7 +900,7 @@ body {
     box-shadow: none;
     margin-top: -3px;
     border: 1px solid #c3c3c3;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .bootstrap-select .dropdown-menu > li > a {
@@ -955,7 +955,7 @@ body {
     border-radius: 5px;
     box-shadow: 0 1px 0 #d6d6d6;
     resize: none;
-    font-size: 16px;
+    font-size: 14px;
     color: #606060;
     height: 35px;
 }
@@ -1078,6 +1078,10 @@ body {
 .modal__pr .modal-header, .modal__pr .modal-body, .modal__pr .modal-footer {
     padding-left: 30px;
     padding-right: 30px;
+}
+
+.modal-body {
+    font-size: 14px;
 }
 
 .btn__pr {
@@ -1392,8 +1396,16 @@ body {
 }
 
 .new__option-item .cell__layout-table .cta__delete {
-    margin-top: 23px;
+    margin-top: 0;
     display: inline-block;
+}
+
+.dd__options-group__labels {
+    margin-bottom: 5px;
+}
+
+.dd__options-group__labels label {
+    margin-bottom: 0;
 }
 
 .cta__delete {

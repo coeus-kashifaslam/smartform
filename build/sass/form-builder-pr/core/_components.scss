@@ -350,7 +350,9 @@ body {
     padding-right: 30px;
   }
 }
-
+.modal-body {
+  font-size: $base-font-size;
+}
 
 //Buttons
 .btn__pr {

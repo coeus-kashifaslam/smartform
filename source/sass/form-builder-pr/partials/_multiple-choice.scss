@@ -13,9 +13,16 @@
       width: 30px;
     }
     .cta__delete {
-      margin-top: 23px;
+      margin-top: 0;
       display: inline-block;
     }
+  }
+}
+
+.dd__options-group__labels {
+  margin-bottom: 5px;
+  label {
+    margin-bottom: 0;
   }
 }
 
