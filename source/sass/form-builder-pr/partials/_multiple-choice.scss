@@ -17,6 +17,17 @@
       display: inline-block;
     }
   }
+  .consent__col {
+    width: 100px;
+    .radio-custom {
+      margin-bottom: 0;
+    }
+  }
+  &:not(.dd__options-group__labels) {
+    .consent__col {
+      text-align: center;
+    }
+  }
 }
 
 .dd__options-group__labels {

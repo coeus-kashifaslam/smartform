@@ -37,6 +37,9 @@
                             <div class="col-sm-12">
 
                                 <div class="col__layout-table layout__fixed new__option-item dd__options-group__labels">
+                                    <div class="cell__layout-table consent__col">
+                                        <label class="cell__label">Consent Given</label>
+                                    </div>
                                     <div class="cell__layout-table">
                                         <label class="cell__label">Option</label>
                                     </div>
@@ -49,6 +52,12 @@
                                 {% set mcqOptions = [1,2]%}
                                 {% for mcqOption in mcqOptions %}
                                 <div class="col__layout-table layout__fixed new__option-item">
+                                    <div class="cell__layout-table consent__col">
+                                        <div class="radio-custom">
+                                            <input id="consent-options-radio{{loop.index}}" name="radio-group" type="radio">
+                                            <label for="consent-options-radio{{loop.index}}"></label>
+                                        </div>
+                                    </div>
                                     <div class="cell__layout-table">
                                         <input type="text" class="form-control form-control-pr">
                                     </div>
@@ -88,6 +97,9 @@
                             <div class="col-sm-12">
 
                                 <div class="col__layout-table layout__fixed new__option-item dd__options-group__labels">
+                                    <div class="cell__layout-table consent__col">
+                                        <label class="cell__label">Consent Given</label>
+                                    </div>
                                     <div class="cell__layout-table">
                                         <label class="cell__label">Option</label>
                                     </div>
@@ -100,6 +112,12 @@
                                 {% set mcqOptions = [1,2]%}
                                 {% for mcqOption in mcqOptions %}
                                 <div class="col__layout-table layout__fixed new__option-item">
+                                    <div class="cell__layout-table consent__col">
+                                        <div class="radio-custom">
+                                            <input id="consent-grouped-radio{{loop.index}}" name="radio-group" type="radio">
+                                            <label for="consent-grouped-radio{{loop.index}}"></label>
+                                        </div>
+                                    </div>
                                     <div class="cell__layout-table">
                                         <input type="text" class="form-control form-control-pr">
                                     </div>

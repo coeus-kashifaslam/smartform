@@ -1400,6 +1400,18 @@ body {
     display: inline-block;
 }
 
+.new__option-item .consent__col {
+    width: 100px;
+}
+
+.new__option-item .consent__col .radio-custom {
+    margin-bottom: 0;
+}
+
+.new__option-item:not(.dd__options-group__labels) .consent__col {
+    text-align: center;
+}
+
 .dd__options-group__labels {
     margin-bottom: 5px;
 }
