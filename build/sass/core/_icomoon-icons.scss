@@ -1,8 +1,13 @@
-//1- Change prefix from icon to ico
-//2- Change numbered icon classes like ico-selected1 to ico-1-selected
-//3- Change the font file path random number
-//4- Remove color code from icon
-//5- find icon codes and replace them in core/vars.scss file
+//1- Open link https://icomoon.io/app/
+//2- Upload all svgs from source/images/SVG/1/ and generat icon
+//3- Donot close tab and add SVGs from source/images/SVG/new/ and generat icon
+//4- Download generated font and updated font files in folder source/fonts/ and build/fonts/
+//5- Replace the content of this file below these comments.
+//6- Change prefix from icon to ico
+//7- Change numbered icon classes like ico-selected1 to ico-1-selected
+//8- Change the font file path random number
+//9- Remove color code from icon
+//10- find icon codes and replace them in core/vars.scss file
 
 @font-face {
   font-family: 'icomoon';
